@@ -1,23 +1,21 @@
-// Configuration de l'app — À COMPLÉTER pour activer l'envoi Google Drive.
+// Configuration de l'app.
 //
-// 1. Va sur https://console.cloud.google.com/ → crée un projet.
-// 2. « API et services » → active « Google Drive API ».
-// 3. « Écran de consentement OAuth » : type External, mode Test,
-//    ajoute ton adresse Gmail comme utilisateur de test, scope drive.file.
-// 4. « Identifiants » → Créer un identifiant → ID client OAuth →
-//    type « Application Web ». Dans « Origines JavaScript autorisées », ajoute :
-//      http://localhost:5500       (pour tester sur ce PC)
-//      https://TON-APP.netlify.app (l'URL exacte une fois déployée)
-// 5. Copie l'ID client (finit par .apps.googleusercontent.com) ci-dessous.
+// GOOGLE_CLIENT_ID : identifiant OAuth « Application Web » (console.cloud.google.com),
+// avec l'origine autorisée https://ultramax333.github.io. Tant qu'il est vide,
+// l'envoi Drive est masqué ; Copier / Télécharger restent disponibles.
 //
-// Tant que ce champ est vide, l'app fonctionne mais l'envoi Drive est masqué ;
-// les boutons « Copier » et « Télécharger » du feedback restent disponibles.
+// APP_VERSION : version affichée en haut de l'app. À INCRÉMENTER à chaque mise à
+// jour (convention dans HUB.md → section « App d'entraînement (quiz-app) »).
+//
+// NB : on assigne explicitement window.CONFIG — un `const` en tête de script
+// n'est PAS exposé sur window, ce qui casserait les gardes `window.CONFIG`.
 
-const CONFIG = {
+window.CONFIG = {
+  APP_VERSION: '1.0',
   GOOGLE_CLIENT_ID: '200483680701-h963rk5t3l7v5j64ojgg2k410av8l9ft.apps.googleusercontent.com',
   DRIVE_FOLDER_NAME: 'QCM Français OP001',
 };
 
 if (typeof module !== 'undefined') {
-  module.exports = { CONFIG };
+  module.exports = { CONFIG: window.CONFIG };
 }

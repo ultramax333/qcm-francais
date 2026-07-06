@@ -4,6 +4,7 @@
   const APP = document.getElementById('app');
   const HISTORY_KEY = 'qcm-op001-history-v1';
   const MIX_ID = 'mix';
+  const APP_VERSION = (window.CONFIG && CONFIG.APP_VERSION) || '';
 
   let state = { view: 'home' };
 
@@ -162,6 +163,7 @@
   // ---------- views ----------
   function renderHome() {
     const wrap = el('div', {});
+    if (APP_VERSION) wrap.appendChild(el('div', { class: 'version-bar', text: 'v' + APP_VERSION }));
     wrap.appendChild(el('div', { class: 'header' }, [
       el('div', { class: 'title', text: 'QCM Français — OP001' }),
       el('div', { class: 'subtitle', text: 'Entraînement par règle, phrases inédites' }),
@@ -227,6 +229,7 @@
 
     const nav = el('div', { class: 'top-nav' }, [
       el('button', { class: 'back', text: '← Accueil' }),
+      el('span', { class: 'version-tag', text: APP_VERSION ? 'v' + APP_VERSION : '' }),
     ]);
     nav.querySelector('.back').addEventListener('click', () => { state = { view: 'home' }; render(); });
     wrap.appendChild(nav);
@@ -535,6 +538,7 @@
     const wrap = el('div', {});
     const nav = el('div', { class: 'top-nav' }, [
       el('button', { class: 'back', text: '← Accueil' }),
+      el('span', { class: 'version-tag', text: APP_VERSION ? 'v' + APP_VERSION : '' }),
     ]);
     nav.querySelector('.back').addEventListener('click', () => { state = { view: 'home' }; render(); });
     wrap.appendChild(nav);
