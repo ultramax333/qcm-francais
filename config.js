@@ -14,7 +14,7 @@
 // les boutons « Copier » et « Télécharger » du feedback restent disponibles.
 
 const CONFIG = {
-  GOOGLE_CLIENT_ID: '',
+  GOOGLE_CLIENT_ID: '200483680701-h963rk5t3l7v5j64ojgg2k410av8l9ft.apps.googleusercontent.com',
   DRIVE_FOLDER_NAME: 'QCM Français OP001',
 };
 
