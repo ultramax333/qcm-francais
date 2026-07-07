@@ -66,9 +66,13 @@
     return r ? r.label : ruleId;
   }
 
+  // Une séance = au plus 20 questions tirées au hasard dans le pool
+  // (les règles à 40 questions et le mix varient donc d'une séance à l'autre).
+  const SESSION_SIZE = 20;
+
   function questionsForRule(ruleId) {
     const pool = ruleId === MIX_ID ? QUESTIONS : QUESTIONS.filter((q) => q.rule === ruleId);
-    return shuffle(pool);
+    return shuffle(pool).slice(0, SESSION_SIZE);
   }
 
   // ---------- Google Drive (scope drive.file : l'app ne voit que ses fichiers) ----------
@@ -192,7 +196,7 @@
     const mixStats = statsForRule(MIX_ID);
     const mix = el('button', { class: 'mix-card' }, [
       el('div', { class: 'rule-name', text: 'Test complet mélangé' }),
-      el('div', { class: 'rule-desc', text: mixStats ? `Meilleur : ${mixStats.best.correct}/${mixStats.best.total} · Dernier : ${mixStats.last.correct}/${mixStats.last.total}` : 'Toutes les questions, dans le désordre' }),
+      el('div', { class: 'rule-desc', text: mixStats ? `Meilleur : ${mixStats.best.correct}/${mixStats.best.total} · Dernier : ${mixStats.last.correct}/${mixStats.last.total}` : '20 questions au hasard, toutes règles mélangées' }),
     ]);
     mix.addEventListener('click', () => startQuiz(MIX_ID));
     wrap.appendChild(mix);
