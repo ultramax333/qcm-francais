@@ -167,11 +167,28 @@
         this.tokenClient.requestAccessToken({ prompt: this.token ? '' : 'consent' });
       });
     },
+    // Construit un message d'erreur exploitable à partir d'une réponse Google
+    // non-OK (au lieu de juste montrer le code HTTP, on remonte la vraie raison).
+    async explainError(res, context) {
+      let reason = '';
+      try {
+        const data = await res.json();
+        reason = (data.error && (data.error.message || (data.error.errors && data.error.errors[0] && data.error.errors[0].reason))) || '';
+      } catch (e) { /* réponse non-JSON, on garde juste le code */ }
+      let hint = '';
+      if (res.status === 403) {
+        hint = reason.toLowerCase().indexOf('disabled') !== -1 || reason.toLowerCase().indexOf('has not been used') !== -1
+          ? ' → l\'API Google Drive n\'est probablement pas activée sur le projet Google Cloud.'
+          : ' → vérifie que le scope drive.file est bien accepté (écran de consentement OAuth → Accès aux données).';
+      }
+      return new Error(`${context} (${res.status})${reason ? ' : ' + reason : ''}${hint}`);
+    },
     async findOrCreateFolder(name) {
       const q = encodeURIComponent(`name='${name}' and mimeType='application/vnd.google-apps.folder' and trashed=false`);
       const res = await fetch(`https://www.googleapis.com/drive/v3/files?q=${q}&fields=files(id,name)`, {
         headers: { Authorization: 'Bearer ' + this.token },
       });
+      if (!res.ok) throw await this.explainError(res, 'Recherche du dossier Drive échouée');
       const data = await res.json();
       if (data.files && data.files.length) return data.files[0].id;
       const create = await fetch('https://www.googleapis.com/drive/v3/files', {
@@ -179,6 +196,7 @@
         headers: { Authorization: 'Bearer ' + this.token, 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, mimeType: 'application/vnd.google-apps.folder' }),
       });
+      if (!create.ok) throw await this.explainError(create, 'Création du dossier Drive échouée');
       const folder = await create.json();
       return folder.id;
     },
@@ -197,7 +215,7 @@
         headers: { Authorization: 'Bearer ' + this.token, 'Content-Type': 'multipart/related; boundary=' + boundary },
         body,
       });
-      if (!res.ok) throw new Error('Échec de l\'envoi (' + res.status + ').');
+      if (!res.ok) throw await this.explainError(res, 'Envoi du fichier échoué');
       return res.json();
     },
   };
