@@ -23,6 +23,47 @@
     localStorage.setItem(HISTORY_KEY, JSON.stringify(h));
   }
 
+  // ---------- notes en attente (mémos/pouces conservés en local, envoi groupé plus tard) ----------
+  // Chaque séance commentée (mémo ou 👍) est gardée ici, indépendamment du fait
+  // qu'on ait réussi ou non à l'envoyer sur Drive tout de suite. On peut ainsi
+  // écrire des notes sur plusieurs séances (même hors ligne / Drive en panne)
+  // et tout envoyer en un seul lot quand on veut, depuis l'accueil.
+  const PENDING_KEY = 'qcm-pending-feedback-v1';
+  function loadPending() {
+    try { return JSON.parse(localStorage.getItem(PENDING_KEY)) || []; }
+    catch (e) { return []; }
+  }
+  function savePending(list) { localStorage.setItem(PENDING_KEY, JSON.stringify(list)); }
+  function pushPending(item) {
+    const list = loadPending();
+    list.push(item);
+    savePending(list);
+  }
+  function removePending(id) {
+    savePending(loadPending().filter((p) => p.id !== id));
+  }
+  function clearPending() { localStorage.removeItem(PENDING_KEY); }
+
+  // Fusionne toutes les notes en attente en un seul document Markdown à envoyer d'un coup.
+  function buildCombinedFeedback(list) {
+    const lines = [];
+    lines.push(`# Notes QCM — lot de ${list.length} séance(s)`);
+    lines.push(`Généré le ${new Date().toLocaleString('fr-CH')}`);
+    list.forEach((p, i) => {
+      lines.push('');
+      lines.push('---');
+      lines.push('');
+      lines.push(`## Séance ${i + 1}/${list.length} — ${new Date(p.date).toLocaleString('fr-CH')}`);
+      lines.push(p.feedback);
+    });
+    return lines.join('\n');
+  }
+  function combinedFeedbackFilename() {
+    const d = new Date();
+    const p = (n) => String(n).padStart(2, '0');
+    return `qcm-notes-${d.getFullYear()}${p(d.getMonth() + 1)}${p(d.getDate())}-${p(d.getHours())}${p(d.getMinutes())}.md`;
+  }
+
   // ---------- suivi des questions déjà vues (par id, dans le navigateur) ----------
   const SEEN_KEY = 'qcm-seen-v1';
   function loadSeen() {
@@ -244,6 +285,7 @@
     else if (state.view === 'quiz') APP.appendChild(renderQuiz());
     else if (state.view === 'result') APP.appendChild(renderResult());
     else if (state.view === 'history') APP.appendChild(renderHistory());
+    else if (state.view === 'pending') APP.appendChild(renderPending());
   }
 
   // ---------- views ----------
@@ -254,6 +296,17 @@
       el('div', { class: 'title', text: 'QCM Français — OP001' }),
       el('div', { class: 'subtitle', text: 'Entraînement par règle, phrases inédites' }),
     ]));
+
+    // Carte « Notes en attente » (mémos/pouces pas encore envoyés)
+    const nPending = loadPending().length;
+    if (nPending > 0) {
+      const pd = el('button', { class: 'special-card pending-card' }, [
+        el('div', { class: 'rule-name', text: `📤 Notes en attente (${nPending} séance${nPending > 1 ? 's' : ''})` }),
+        el('div', { class: 'rule-desc', text: 'Mémos et 👍 déjà écrits, pas encore envoyés — regrouper et envoyer maintenant.' }),
+      ]);
+      pd.addEventListener('click', () => { state = { view: 'pending' }; render(); });
+      wrap.appendChild(pd);
+    }
 
     // Carte « Revoir mes erreurs » (uniquement s'il y a des erreurs en attente)
     const nReview = reviewCount();
@@ -576,6 +629,14 @@
       feedback: buildFeedback(state.ruleId, correct, log.length, log),
     };
     saveAttempt(entry);
+    // Conserve la séance dans les notes en attente si elle contient un mémo ou
+    // un 👍 — indépendamment de l'envoi immédiat, pour pouvoir l'envoyer plus
+    // tard (regroupée avec d'autres séances) depuis l'accueil.
+    const memoCount = log.filter((l) => l.memo).length;
+    const likeCount = log.filter((l) => l.like).length;
+    if (memoCount > 0 || likeCount > 0) {
+      pushPending({ id: entry.date, date: entry.date, ruleId: entry.ruleId, correct, total: log.length, feedback: entry.feedback });
+    }
     state = { view: 'result', entry };
     render();
   }
@@ -690,6 +751,7 @@
           const r = await DRIVE.upload(feedbackFilename(entry), entry.feedback);
           status.textContent = '✅ Envoyé dans le dossier « ' + ((window.CONFIG && CONFIG.DRIVE_FOLDER_NAME) || 'Drive') + ' » : ' + r.name;
           state.memos = {}; state.likes = {}; // reset après envoi réussi
+          removePending(entry.date); // déjà envoyée : plus besoin de la garder en attente
         } catch (e) {
           status.textContent = '❌ ' + (e.message || 'Échec de l\'envoi.') + ' — utilise Copier ou Télécharger.';
           driveBtn.disabled = false;
@@ -764,6 +826,106 @@
       list.appendChild(row);
     });
     wrap.appendChild(list);
+    return wrap;
+  }
+
+  function renderPending() {
+    const wrap = el('div', {});
+    const nav = el('div', { class: 'top-nav' }, [
+      el('button', { class: 'back', text: '← Accueil' }),
+      el('span', { class: 'version-tag', text: APP_VERSION ? 'v' + APP_VERSION : '' }),
+    ]);
+    nav.querySelector('.back').addEventListener('click', () => { state = { view: 'home' }; render(); });
+    wrap.appendChild(nav);
+
+    wrap.appendChild(el('div', { class: 'header' }, [
+      el('div', { class: 'title', text: 'Notes en attente' }),
+      el('div', { class: 'subtitle', text: 'Séances commentées pas encore envoyées' }),
+    ]));
+
+    const pending = loadPending();
+    if (pending.length === 0) {
+      wrap.appendChild(el('div', { class: 'empty-state', text: 'Aucune note en attente.' }));
+      return wrap;
+    }
+
+    const list = el('div', { class: 'history-list' });
+    pending.forEach((p) => {
+      list.appendChild(el('div', { class: 'history-row', style: 'flex-direction:column;align-items:stretch;gap:2px' }, [
+        el('div', { style: 'display:flex;justify-content:space-between' }, [
+          el('span', { text: ruleLabel(p.ruleId) }),
+          el('span', { text: `${p.correct}/${p.total}` }),
+        ]),
+        el('span', { class: 'date', text: formatDate(p.date) }),
+      ]));
+    });
+    wrap.appendChild(list);
+
+    const fb = el('div', { class: 'feedback-box' });
+    fb.appendChild(el('div', { class: 'feedback-title', text: 'Tout envoyer en un lot' }));
+    fb.appendChild(el('div', {
+      class: 'feedback-sub',
+      text: `${pending.length} séance${pending.length > 1 ? 's' : ''} regroupée${pending.length > 1 ? 's' : ''} en un seul fichier.`,
+    }));
+
+    const status = el('div', { class: 'feedback-status' });
+    const fbRow = el('div', { class: 'btn-row' });
+
+    if (DRIVE.configured()) {
+      const driveBtn = el('button', { class: 'btn', text: 'Envoyer vers Google Drive' });
+      driveBtn.addEventListener('click', async () => {
+        driveBtn.disabled = true;
+        status.textContent = 'Connexion à Google Drive…';
+        try {
+          if (!DRIVE.token) await DRIVE.connect();
+          status.textContent = 'Envoi du fichier…';
+          const combined = buildCombinedFeedback(loadPending());
+          const r = await DRIVE.upload(combinedFeedbackFilename(), combined);
+          status.textContent = '✅ Envoyé : ' + r.name;
+          clearPending();
+          setTimeout(() => { state = { view: 'home' }; render(); }, 900);
+        } catch (e) {
+          status.textContent = '❌ ' + (e.message || 'Échec de l\'envoi.') + ' — utilise Copier ou Télécharger.';
+          driveBtn.disabled = false;
+        }
+      });
+      fbRow.appendChild(driveBtn);
+    }
+    const copyBtn = el('button', { class: 'btn secondary', text: 'Copier' });
+    copyBtn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(buildCombinedFeedback(loadPending()));
+        status.textContent = '✅ Copié — tu peux le coller dans le chat.';
+      } catch (e) {
+        status.textContent = 'Copie impossible ; utilise Télécharger.';
+      }
+    });
+    const dlBtn = el('button', { class: 'btn secondary', text: 'Télécharger' });
+    dlBtn.addEventListener('click', () => {
+      const combined = buildCombinedFeedback(loadPending());
+      const blob = new Blob([combined], { type: 'text/markdown' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = combinedFeedbackFilename();
+      document.body.appendChild(a); a.click(); document.body.removeChild(a);
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+      status.textContent = '✅ Fichier téléchargé.';
+    });
+    fbRow.appendChild(copyBtn);
+    fbRow.appendChild(dlBtn);
+    fb.appendChild(fbRow);
+    fb.appendChild(status);
+    if (!DRIVE.configured()) {
+      fb.appendChild(el('div', { class: 'feedback-note', text: 'Google Drive non configuré. En attendant : Copier ou Télécharger.' }));
+    }
+    wrap.appendChild(fb);
+
+    const clearLink = el('div', { class: 'footer-link', text: 'Vider la liste sans envoyer' });
+    clearLink.addEventListener('click', () => {
+      if (confirm('Supprimer ces notes en attente sans les envoyer ?')) { clearPending(); state = { view: 'home' }; render(); }
+    });
+    wrap.appendChild(clearLink);
+
     return wrap;
   }
 
