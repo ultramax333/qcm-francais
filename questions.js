@@ -9176,7 +9176,7 @@ const QUESTIONS = [
       { key: '1', text: 'milles' },
       { key: '2', text: 'mille' },
       { key: '3', text: 'mils' },
-      { key: '4', text: 'milliers de' },
+      { key: '4', text: 'mille de' },
       AUCUNE, TOUTES,
     ],
     answer: '2',
@@ -9185,7 +9185,7 @@ const QUESTIONS = [
       '1': "« milles » : mille ne prend jamais de s (sauf le mille marin).",
       '2': "Correct : mille invariable.",
       '3': "« mils » : « mil » ne sert que dans les dates, sans s.",
-      '4': "« deux milliers de » changerait la construction (redondant avec « de »).",
+      '4': "« deux mille de signatures » : le « de » est agrammatical après le nombre.",
       A: "L'option 2 est correcte.",
       T: "Les options 1, 3 et 4 sont fautives.",
     },
@@ -9948,6 +9948,29 @@ const QUESTIONS = [
     },
   },
 ];
+
+// ---------- Traçabilité de génération (modèle + niveau de réflexion) ----------
+// À partir de la v1.3, toute NOUVELLE question devrait porter un champ `gen`
+// explicite : { model: '...', thinking: '...' }. Pour les questions antérieures
+// au suivi, on attribue au mieux : seuls deux lots sont identifiables avec
+// certitude, le reste est marqué « mixte (pré-suivi) » (le modèle a changé de
+// nombreuses fois en cours de production, sans trace question par question).
+function genForId(id) {
+  const m = /^([a-z]+)-(\d+)$/.exec(id);
+  if (!m) return { model: '—', thinking: 'standard', tracked: false };
+  const prefix = m[1];
+  const n = parseInt(m[2], 10);
+  // Lot d'origine (5 règles fondatrices, questions 1 à 10) : rédigé sous Opus 4.8.
+  if (['orth', 'mode', 'part', 'rel', 'pro'].indexOf(prefix) !== -1 && n <= 10) {
+    return { model: 'Opus 4.8', thinking: 'standard', tracked: true };
+  }
+  // Phrases d'élèves 1 à 40 : rédigées sous Fable 5.
+  if (prefix === 'eleves' && n <= 40) {
+    return { model: 'Fable 5', thinking: 'standard', tracked: true };
+  }
+  return { model: 'mixte (pré-suivi)', thinking: 'standard', tracked: false };
+}
+QUESTIONS.forEach(function (q) { if (!q.gen) q.gen = genForId(q.id); });
 
 if (typeof module !== 'undefined') {
   module.exports = { RULES, QUESTIONS };

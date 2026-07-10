@@ -23,6 +23,24 @@
     localStorage.setItem(HISTORY_KEY, JSON.stringify(h));
   }
 
+  // ---------- suivi des questions déjà vues (par id, dans le navigateur) ----------
+  const SEEN_KEY = 'qcm-seen-v1';
+  function loadSeen() {
+    try { return new Set(JSON.parse(localStorage.getItem(SEEN_KEY)) || []); }
+    catch (e) { return new Set(); }
+  }
+  function markSeen(id) {
+    const s = loadSeen();
+    s.add(id);
+    localStorage.setItem(SEEN_KEY, JSON.stringify(Array.from(s)));
+  }
+  function resetSeen() { localStorage.removeItem(SEEN_KEY); }
+  function seenCount(ruleId) {
+    const s = loadSeen();
+    const pool = ruleId === MIX_ID ? QUESTIONS : QUESTIONS.filter((q) => q.rule === ruleId);
+    return { seen: pool.filter((q) => s.has(q.id)).length, total: pool.length };
+  }
+
   function statsForRule(ruleId) {
     const h = loadHistory().filter((a) => a.ruleId === ruleId);
     if (h.length === 0) return null;
@@ -72,7 +90,12 @@
 
   function questionsForRule(ruleId) {
     const pool = ruleId === MIX_ID ? QUESTIONS : QUESTIONS.filter((q) => q.rule === ruleId);
-    return shuffle(pool).slice(0, SESSION_SIZE);
+    // Priorité aux questions jamais vues ; on ne repioche dans les vues
+    // qu'une fois toutes les nouvelles épuisées.
+    const s = loadSeen();
+    const unseen = shuffle(pool.filter((q) => !s.has(q.id)));
+    const seen = shuffle(pool.filter((q) => s.has(q.id)));
+    return unseen.concat(seen).slice(0, SESSION_SIZE);
   }
 
   // ---------- Google Drive (scope drive.file : l'app ne voit que ses fichiers) ----------
@@ -188,6 +211,8 @@
       } else {
         card.appendChild(el('div', { class: 'rule-stats', text: 'Pas encore tenté' }));
       }
+      const sc = seenCount(rule.id);
+      card.appendChild(el('div', { class: 'seen-stats', text: `Vues : ${sc.seen}/${sc.total}` }));
       card.addEventListener('click', () => startQuiz(rule.id));
       list.appendChild(card);
     });
@@ -201,9 +226,18 @@
     mix.addEventListener('click', () => startQuiz(MIX_ID));
     wrap.appendChild(mix);
 
+    const totalSeen = seenCount(MIX_ID);
+    wrap.appendChild(el('div', { class: 'seen-total', text: `Progression : ${totalSeen.seen}/${totalSeen.total} questions déjà vues` }));
+
     const histLink = el('div', { class: 'footer-link', text: 'Voir l’historique de mes tentatives' });
     histLink.addEventListener('click', () => { state = { view: 'history' }; render(); });
     wrap.appendChild(histLink);
+
+    const resetLink = el('div', { class: 'footer-link', text: 'Réinitialiser les questions vues' });
+    resetLink.addEventListener('click', () => {
+      if (confirm('Remettre à zéro le suivi des questions déjà vues ?')) { resetSeen(); render(); }
+    });
+    wrap.appendChild(resetLink);
 
     return wrap;
   }
@@ -222,6 +256,7 @@
       memos: {},       // mémo écrit par question (clé = id de la question)
       likes: {},       // 👍 « bien construite » par question (clé = id)
       responses: {},   // réponse choisie par question (clé = id)
+      seenAtStart: loadSeen(), // instantané des vues AVANT cette séance (pour le badge)
     };
     render();
   }
@@ -238,9 +273,13 @@
     nav.querySelector('.back').addEventListener('click', () => { state = { view: 'home' }; render(); });
     wrap.appendChild(nav);
 
+    const alreadySeen = state.seenAtStart && state.seenAtStart.has(q.id);
     wrap.appendChild(el('div', { class: 'quiz-meta' }, [
       el('span', { text: ruleLabel(state.ruleId) }),
-      el('span', { text: `Question ${index + 1}/${questions.length}` }),
+      el('span', {}, [
+        alreadySeen ? el('span', { class: 'seen-badge', text: 'déjà vue' }) : null,
+        document.createTextNode(` Question ${index + 1}/${questions.length}`),
+      ]),
     ]));
 
     const progressPct = Math.round((index / questions.length) * 100);
@@ -337,6 +376,14 @@
     memoWrap.appendChild(memoField);
     card.appendChild(memoWrap);
 
+    // Traçabilité : modèle + niveau de réflexion ayant servi à écrire la question
+    if (q.gen) {
+      card.appendChild(el('div', {
+        class: 'gen-tag',
+        text: `✍️ ${q.gen.model} · réflexion ${q.gen.thinking}${q.gen.tracked ? '' : ' (attribution approximative)'}`,
+      }));
+    }
+
     wrap.appendChild(card);
 
     if (state.answered) {
@@ -356,6 +403,7 @@
     state.answered = true;
     state.selectedKey = key;
     state.responses[q.id] = key;
+    markSeen(q.id);
     const rule = q.rule;
     if (!state.perRule[rule]) state.perRule[rule] = { correct: 0, total: 0 };
     state.perRule[rule].total++;
