@@ -80,8 +80,49 @@
 
   function ruleLabel(ruleId) {
     if (ruleId === MIX_ID) return 'Toutes les règles (mélangées)';
+    if (ruleId === 'review') return 'Révision des erreurs';
+    if (ruleId === 'exam') return 'Examen blanc';
     const r = RULES.find((r) => r.id === ruleId);
     return r ? r.label : ruleId;
+  }
+
+  // ---------- révision des erreurs (répétition espacée légère) ----------
+  // qcm-review-v1 = { qid: nbBonnesRéponsesConsécutives }. La présence d'un id
+  // = question à revoir ; on l'en retire après 2 bonnes réponses d'affilée.
+  const REVIEW_KEY = 'qcm-review-v1';
+  function loadReview() {
+    try { return JSON.parse(localStorage.getItem(REVIEW_KEY)) || {}; }
+    catch (e) { return {}; }
+  }
+  function saveReview(r) { localStorage.setItem(REVIEW_KEY, JSON.stringify(r)); }
+  function reviewCount() { return Object.keys(loadReview()).length; }
+
+  // ---------- maîtrise par règle (cumul de toutes les réponses) ----------
+  const MASTERY_KEY = 'qcm-mastery-v1';
+  function loadMastery() {
+    try { return JSON.parse(localStorage.getItem(MASTERY_KEY)) || {}; }
+    catch (e) { return {}; }
+  }
+  function saveMastery(m) { localStorage.setItem(MASTERY_KEY, JSON.stringify(m)); }
+
+  // Enregistre UNE réponse dans les stockages persistants (vu, maîtrise, erreurs).
+  function recordAnswer(q, key) {
+    const correct = key === q.answer;
+    markSeen(q.id);
+    const m = loadMastery();
+    const r = m[q.rule] || { correct: 0, total: 0 };
+    r.total++;
+    if (correct) r.correct++;
+    m[q.rule] = r;
+    saveMastery(m);
+    const rv = loadReview();
+    if (!correct) {
+      rv[q.id] = 0; // (re)mise dans la pile à revoir
+    } else if (q.id in rv) {
+      rv[q.id]++;
+      if (rv[q.id] >= 2) delete rv[q.id]; // maîtrisée : sort de la pile
+    }
+    saveReview(rv);
   }
 
   // Une séance = au plus 20 questions tirées au hasard dans le pool
@@ -196,6 +237,26 @@
       el('div', { class: 'subtitle', text: 'Entraînement par règle, phrases inédites' }),
     ]));
 
+    // Carte « Revoir mes erreurs » (uniquement s'il y a des erreurs en attente)
+    const nReview = reviewCount();
+    if (nReview > 0) {
+      const rv = el('button', { class: 'special-card review-card' }, [
+        el('div', { class: 'rule-name', text: `🎯 Revoir mes erreurs (${nReview})` }),
+        el('div', { class: 'rule-desc', text: 'Seulement les questions ratées ; une question sort après 2 réussites d’affilée.' }),
+      ]);
+      rv.addEventListener('click', () => startReview());
+      wrap.appendChild(rv);
+    }
+
+    // Carte « Examen blanc »
+    const exam = el('button', { class: 'special-card exam-card' }, [
+      el('div', { class: 'rule-name', text: '📝 Examen blanc' }),
+      el('div', { class: 'rule-desc', text: `${EXAM_SIZE} questions en conditions réelles, correction et score à la fin.` }),
+    ]);
+    exam.addEventListener('click', () => startExam());
+    wrap.appendChild(exam);
+
+    const mastery = loadMastery();
     const list = el('div', { class: 'rule-list' });
     RULES.forEach((rule) => {
       const stats = statsForRule(rule.id);
@@ -203,11 +264,12 @@
         el('div', { class: 'rule-name', text: rule.label }),
         el('div', { class: 'rule-desc', text: rule.desc }),
       ]);
-      if (stats) {
-        card.appendChild(el('div', {
-          class: 'rule-stats',
-          text: `Meilleur : ${stats.best.correct}/${stats.best.total} · Dernier : ${stats.last.correct}/${stats.last.total}`,
-        }));
+      const mr = mastery[rule.id];
+      if (mr && mr.total > 0) {
+        const mp = Math.round((mr.correct / mr.total) * 100);
+        card.appendChild(el('div', { class: 'rule-stats', text: `Maîtrise : ${mp}% (${mr.correct}/${mr.total})` }));
+      } else if (stats) {
+        card.appendChild(el('div', { class: 'rule-stats', text: `Meilleur : ${stats.best.correct}/${stats.best.total}` }));
       } else {
         card.appendChild(el('div', { class: 'rule-stats', text: 'Pas encore tenté' }));
       }
@@ -242,23 +304,52 @@
     return wrap;
   }
 
-  function startQuiz(ruleId) {
-    const questions = questionsForRule(ruleId);
+  const EXAM_SIZE = 60; // examen blanc = 60 questions, comme le vrai OP001
+
+  function buildSession(ruleId, mode) {
+    if (ruleId === 'review') {
+      const ids = Object.keys(loadReview());
+      return shuffle(QUESTIONS.filter((q) => ids.indexOf(q.id) !== -1)).slice(0, SESSION_SIZE);
+    }
+    if (mode === 'exam') {
+      return shuffle(QUESTIONS.slice()).slice(0, EXAM_SIZE);
+    }
+    return questionsForRule(ruleId);
+  }
+
+  function startQuiz(ruleId, mode) {
+    mode = mode || 'learn';
     state = {
       view: 'quiz',
       ruleId,
-      questions,
+      mode,
+      questions: buildSession(ruleId, mode),
       index: 0,
-      score: 0,
       answered: false,
       selectedKey: null,
-      perRule: {},
-      memos: {},       // mémo écrit par question (clé = id de la question)
-      likes: {},       // 👍 « bien construite » par question (clé = id)
-      responses: {},   // réponse choisie par question (clé = id)
-      seenAtStart: loadSeen(), // instantané des vues AVANT cette séance (pour le badge)
+      memos: {},         // mémo écrit par question (clé = id de la question)
+      likes: {},         // 👍 « bien construite » par question (clé = id)
+      responses: {},     // réponse choisie par question (clé = id)
+      detailsOpen: {},   // panneau mémo/infos déplié par question
+      recorded: new Set(), // questions déjà enregistrées (vu/maîtrise/erreurs)
+      seenAtStart: loadSeen(),
+      startTime: Date.now(),
     };
     render();
+  }
+  function startReview() { startQuiz('review', 'learn'); }
+  function startExam() { startQuiz('exam', 'exam'); }
+
+  function recordOnce(q, key) {
+    if (state.recorded.has(q.id)) return;
+    state.recorded.add(q.id);
+    recordAnswer(q, key);
+  }
+
+  function formatDuration(ms) {
+    const s = Math.round(ms / 1000);
+    const m = Math.floor(s / 60);
+    return m > 0 ? `${m} min ${s % 60} s` : `${s} s`;
   }
 
   function renderQuiz() {
@@ -301,7 +392,7 @@
       // à plusieurs trous, l'option est du type « x / y » : on répartit chaque
       // segment (séparé par « / ») dans le trou correspondant.
       let fills = null;
-      if (state.answered && state.selectedKey) {
+      if (state.selectedKey && (state.answered || state.mode === 'exam')) {
         const chosen = q.options.find((o) => o.key === state.selectedKey);
         if (chosen && chosen.key !== 'A' && chosen.key !== 'T') {
           const segs = chosen.text.split('/').map((s) => s.trim());
@@ -351,42 +442,46 @@
       card.appendChild(expl);
     }
 
-    // Champ mémo : note libre pour Claude, envoyée en fin de séance
-    const memoWrap = el('div', { class: 'memo-wrap' });
+    // Mode APPRENTISSAGE : barre compacte (pouce + toggle) et détails repliés
+    // pour garder l'écran net. Mode EXAMEN : rien de tout ça (correction à la fin).
+    if (state.mode !== 'exam') {
+      const showDetails = state.detailsOpen[q.id] || !!state.memos[q.id];
 
-    // Pouce vert : marquer la question comme bien construite
-    const likeBtn = el('button', {
-      class: 'like-btn' + (state.likes[q.id] ? ' active' : ''),
-      text: (state.likes[q.id] ? '👍 Bien construite ✓' : '👍 Bien construite'),
-    });
-    likeBtn.addEventListener('click', () => {
-      state.likes[q.id] = !state.likes[q.id];
-      render();
-    });
-    memoWrap.appendChild(likeBtn);
+      const toolbar = el('div', { class: 'q-toolbar' });
+      const likeBtn = el('button', {
+        class: 'like-btn' + (state.likes[q.id] ? ' active' : ''),
+        text: state.likes[q.id] ? '👍 ✓' : '👍',
+        title: 'Question bien construite',
+      });
+      likeBtn.addEventListener('click', () => { state.likes[q.id] = !state.likes[q.id]; render(); });
+      toolbar.appendChild(likeBtn);
 
-    memoWrap.appendChild(el('label', { class: 'memo-label', text: '💬 Mémo pour Claude (facultatif) — ex. « trop facile », « ambigu », « le distracteur 2 marche aussi »' }));
-    const memoField = el('textarea', {
-      class: 'memo-field',
-      rows: '2',
-      placeholder: 'Ton idée de correction sur cette question…',
-    });
-    memoField.value = state.memos[q.id] || '';
-    memoField.addEventListener('input', (e) => { state.memos[q.id] = e.target.value; });
-    memoWrap.appendChild(memoField);
-    card.appendChild(memoWrap);
+      const detBtn = el('button', { class: 'details-btn', text: (showDetails ? '▾' : '▸') + ' mémo / infos' });
+      detBtn.addEventListener('click', () => { state.detailsOpen[q.id] = !showDetails; render(); });
+      toolbar.appendChild(detBtn);
+      card.appendChild(toolbar);
 
-    // Traçabilité : modèle + niveau de réflexion ayant servi à écrire la question
-    if (q.gen) {
-      card.appendChild(el('div', {
-        class: 'gen-tag',
-        text: `✍️ ${q.gen.model} · réflexion ${q.gen.thinking}${q.gen.tracked ? '' : ' (attribution approximative)'}`,
-      }));
+      if (showDetails) {
+        const memoWrap = el('div', { class: 'memo-wrap' });
+        memoWrap.appendChild(el('label', { class: 'memo-label', text: '💬 Mémo pour Claude (facultatif) — « trop facile », « ambigu », « le distracteur 2 marche aussi »…' }));
+        const memoField = el('textarea', { class: 'memo-field', rows: '2', placeholder: 'Ton idée de correction sur cette question…' });
+        memoField.value = state.memos[q.id] || '';
+        memoField.addEventListener('input', (e) => { state.memos[q.id] = e.target.value; });
+        memoWrap.appendChild(memoField);
+        if (q.gen) {
+          memoWrap.appendChild(el('div', {
+            class: 'gen-tag',
+            text: `✍️ ${q.gen.model} · réflexion ${q.gen.thinking}${q.gen.tracked ? '' : ' (approx.)'}`,
+          }));
+        }
+        card.appendChild(memoWrap);
+      }
     }
 
     wrap.appendChild(card);
 
-    if (state.answered) {
+    const canAdvance = state.mode === 'exam' ? !!state.selectedKey : state.answered;
+    if (canAdvance) {
       const isLast = index === questions.length - 1;
       const nextBtn = el('button', { class: 'btn', text: isLast ? 'Voir les résultats' : 'Question suivante' });
       nextBtn.style.marginTop = '16px';
@@ -398,23 +493,26 @@
   }
 
   function selectAnswer(key) {
-    if (state.answered) return;
     const q = state.questions[state.index];
+    if (state.mode === 'exam') {
+      // Examen blanc : pas de correction immédiate, réponse modifiable jusqu'à « Suivant ».
+      state.selectedKey = key;
+      state.responses[q.id] = key;
+      render();
+      return;
+    }
+    if (state.answered) return;
     state.answered = true;
     state.selectedKey = key;
     state.responses[q.id] = key;
-    markSeen(q.id);
-    const rule = q.rule;
-    if (!state.perRule[rule]) state.perRule[rule] = { correct: 0, total: 0 };
-    state.perRule[rule].total++;
-    if (key === q.answer) {
-      state.score++;
-      state.perRule[rule].correct++;
-    }
+    recordOnce(q, key);
     render();
   }
 
   function nextQuestion() {
+    if (state.mode === 'exam' && state.selectedKey) {
+      recordOnce(state.questions[state.index], state.selectedKey);
+    }
     if (state.index + 1 < state.questions.length) {
       state.index++;
       state.answered = false;
@@ -440,14 +538,24 @@
         like: !!state.likes[q.id],
       };
     });
+    const correct = log.filter((l) => l.correct).length;
+    const perRule = {};
+    log.forEach((l) => {
+      const r = perRule[l.rule] || { correct: 0, total: 0 };
+      r.total++;
+      if (l.correct) r.correct++;
+      perRule[l.rule] = r;
+    });
     const entry = {
       date: new Date().toISOString(),
       ruleId: state.ruleId,
-      total: state.questions.length,
-      correct: state.score,
-      perRule: state.perRule,
+      mode: state.mode,
+      total: log.length,
+      correct,
+      perRule,
+      durationMs: Date.now() - state.startTime,
       log,
-      feedback: buildFeedback(state.ruleId, state.score, state.questions.length, log),
+      feedback: buildFeedback(state.ruleId, correct, log.length, log),
     };
     saveAttempt(entry);
     state = { view: 'result', entry };
@@ -503,9 +611,11 @@
     wrap.appendChild(el('div', { class: 'result-score' }, [
       el('div', { class: 'big', text: `${entry.correct} / ${entry.total}` }),
       el('div', { class: 'pct', text: `${pct}% de bonnes réponses` }),
+      entry.durationMs ? el('div', { class: 'result-time', text: `⏱ Temps : ${formatDuration(entry.durationMs)}` }) : null,
     ]));
 
-    if (entry.ruleId === MIX_ID) {
+    // Détail par règle (test mélangé et examen blanc)
+    if (entry.ruleId === MIX_ID || entry.mode === 'exam') {
       const list = el('div', { class: 'history-list' });
       Object.keys(entry.perRule).forEach((rid) => {
         const s = entry.perRule[rid];
@@ -515,6 +625,24 @@
         ]));
       });
       wrap.appendChild(list);
+    }
+
+    // ---- Bilan : les questions ratées, avec l'explication ----
+    const missed = entry.log.filter((l) => !l.correct);
+    if (missed.length) {
+      const box = el('div', { class: 'missed-box' });
+      box.appendChild(el('div', { class: 'missed-title', text: `À revoir — ${missed.length} erreur(s)` }));
+      missed.forEach((l) => {
+        const q = QUESTIONS.find((x) => x.id === l.id);
+        const row = el('div', { class: 'missed-item' });
+        row.appendChild(el('div', { class: 'missed-prompt', text: (q && (q.type === 'blank' ? q.stem : q.instruction)) || l.prompt }));
+        row.appendChild(el('div', { class: 'missed-answers', text: `Ta réponse : ${l.selected || '—'} · Attendue : ${l.answer}` }));
+        if (q && q.explanation) row.appendChild(el('div', { class: 'missed-expl', text: q.explanation }));
+        box.appendChild(row);
+      });
+      wrap.appendChild(box);
+    } else {
+      wrap.appendChild(el('div', { class: 'missed-none', text: '🎉 Aucune erreur — sans faute !' }));
     }
 
     // ---- Section feedback (mémos + pouces + stats) ----

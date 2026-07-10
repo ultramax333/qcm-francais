@@ -315,6 +315,67 @@ p { margin: 0; }
   text-align: right;
 }
 
+/* Cartes spéciales (révision, examen) */
+.special-card {
+  display: block;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  color: #fff;
+  -webkit-tap-highlight-color: transparent;
+}
+.special-card .rule-name { font-weight: 700; font-size: 1.05rem; }
+.special-card .rule-desc { opacity: 0.92; font-size: 0.84rem; margin-top: 4px; }
+.review-card { background: linear-gradient(135deg, #f59e0b, #ef4444); }
+.exam-card { background: linear-gradient(135deg, #6366f1, #0ea5e9); }
+
+/* Barre d'outils compacte sous la question (mode apprentissage) */
+.q-toolbar {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+  align-items: center;
+}
+.details-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.result-time {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  margin-top: 6px;
+}
+
+/* Bilan des erreurs sur l'écran de résultat */
+.missed-box {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.missed-title { font-weight: 600; color: var(--bad); }
+.missed-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--bad);
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+.missed-prompt { font-size: 0.92rem; }
+.missed-answers { font-size: 0.8rem; color: var(--text-dim); margin-top: 4px; }
+.missed-expl { font-size: 0.82rem; color: var(--text-dim); margin-top: 6px; border-top: 1px dashed var(--border); padding-top: 6px; }
+.missed-none { text-align: center; color: var(--good); margin-top: 18px; font-weight: 600; }
+
 .result-score {
   text-align: center;
   padding: 24px 0 8px;
