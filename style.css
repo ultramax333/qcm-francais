@@ -334,6 +334,15 @@ p { margin: 0; }
 .exam-card { background: linear-gradient(135deg, #6366f1, #0ea5e9); }
 .pending-card { background: linear-gradient(135deg, #10b981, #0d9488); }
 
+.drive-test-status {
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  margin-top: -6px;
+  margin-bottom: 8px;
+  padding: 0 12px;
+}
+
 /* Barre d'outils compacte sous la question (mode apprentissage) */
 .q-toolbar {
   display: flex;

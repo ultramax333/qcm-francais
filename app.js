@@ -372,6 +372,18 @@
     });
     wrap.appendChild(resetLink);
 
+    if (DRIVE.configured()) {
+      const testLink = el('div', {
+        class: 'footer-link',
+        text: driveTestRunning ? '⏳ Test en cours…' : '🔧 Tester la connexion Google Drive',
+      });
+      if (!driveTestRunning) testLink.addEventListener('click', () => { testDriveConnection(); });
+      wrap.appendChild(testLink);
+      if (driveTestStatus) {
+        wrap.appendChild(el('div', { class: 'drive-test-status', text: driveTestStatus }));
+      }
+    }
+
     return wrap;
   }
 
@@ -410,6 +422,30 @@
   }
   function startReview() { startQuiz('review', 'learn'); }
   function startExam() { startQuiz('exam', 'exam'); }
+
+  // ---------- test de connexion Google Drive (diagnostic, sur l'accueil) ----------
+  // Statut transitoire (pas persisté) affiché pendant/après le test. Ce n'est
+  // pas un simulacre : ça fait le vrai aller-retour OAuth + une vraie requête
+  // à l'API Drive (recherche/création du dossier), donc un « ✅ » ici garantit
+  // que l'envoi réel fonctionnera.
+  let driveTestStatus = null;
+  let driveTestRunning = false;
+  async function testDriveConnection() {
+    driveTestRunning = true;
+    driveTestStatus = 'Connexion à Google Drive…';
+    render();
+    try {
+      if (!DRIVE.token) await DRIVE.connect();
+      driveTestStatus = 'Vérification de l’accès au dossier…';
+      render();
+      const folderId = await DRIVE.findOrCreateFolder((window.CONFIG && CONFIG.DRIVE_FOLDER_NAME) || 'QCM Français OP001');
+      driveTestStatus = '✅ Connexion Drive fonctionnelle — dossier prêt (id ' + String(folderId).slice(0, 10) + '…).';
+    } catch (e) {
+      driveTestStatus = '❌ ' + (e.message || 'Échec du test.');
+    }
+    driveTestRunning = false;
+    render();
+  }
 
   function recordOnce(q, key) {
     if (state.recorded.has(q.id)) return;
