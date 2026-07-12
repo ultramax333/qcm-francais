@@ -12566,7 +12566,7 @@ const QUESTIONS = [
   {
     id: 'dis-21', rule: 'discours', type: 'sentences',
     gen: { model: 'Fable 5', thinking: 'standard', tracked: true },
-    instruction: "Quelle(s) phrase(s) rapporte(nt) correctement une question au discours indirect ?",
+    instruction: "Quelle(s) phrase(s) emploie(nt) correctement l'interrogation indirecte ?",
     options: [
       { key: '1', text: "Ils demandent pourquoi le cours est annulé." },
       { key: '2', text: "Elle veut savoir si la salle sera libre mardi." },
