@@ -13960,50 +13960,6 @@ const QUESTIONS = [
     },
   },
   {
-    id: 'sv-31', rule: 'sujetverbe', type: 'blank',
-    gen: { model: 'Sol 5.6', thinking: 'high', tracked: true },
-    stem: 'La liste des mesures que ___ les experts ___ encore incomplète.',
-    options: [
-      { key: '1', text: 'propose / reste' },
-      { key: '2', text: 'proposent / restent' },
-      { key: '3', text: 'propose / restent' },
-      { key: '4', text: 'proposent / reste' },
-      AUCUNE, TOUTES,
-    ],
-    answer: '4',
-    explanation: 'Dans la relative, le sujet postposé « les experts » commande « proposent ». Dans la principale, le noyau sujet « la liste » commande « reste ».',
-    why: {
-      '1': 'Le verbe de la relative doit s’accorder avec « les experts ».',
-      '2': 'Le verbe principal s’accorde avec « la liste », non avec « mesures ».',
-      '3': 'Les deux verbes sont accordés avec le mauvais donneur.',
-      '4': 'Correct : pluriel dans la relative, singulier dans la principale.',
-      A: 'L’option 4 est correcte.',
-      T: 'Les options 1, 2 et 3 comportent une erreur d’accord.',
-    },
-  },
-  {
-    id: 'av-30', rule: 'adjverbal', type: 'sentences',
-    gen: { model: 'Sol 5.6', thinking: 'high', tracked: true },
-    instruction: 'Quelle(s) phrase(s) emploie(nt) correctement l’adjectif verbal ou le participe présent ?',
-    options: [
-      { key: '1', text: 'Des analyses divergentes ont été présentées au comité.' },
-      { key: '2', text: 'Les deux analyses, divergeant sur ce point précis, seront comparées.' },
-      { key: '3', text: 'Le rapport contient plusieurs arguments convaincants.' },
-      { key: '4', text: 'Les experts, convainquant le jury par leurs données, ont obtenu son accord.' },
-      AUCUNE, TOUTES,
-    ],
-    answer: 'T',
-    explanation: 'Les adjectifs « divergentes » et « convaincants » sont accordés ; les participes présents « divergeant » et « convainquant » restent invariables et conservent leur graphie verbale.',
-    why: {
-      '1': 'Correct : « divergentes » qualifie durablement « analyses ».',
-      '2': 'Correct : « divergeant sur ce point » exprime une action et reste invariable.',
-      '3': 'Correct : « convaincants » est un adjectif accordé avec « arguments ».',
-      '4': 'Correct : « convainquant le jury » régit un COD et constitue un participe présent.',
-      A: 'Les quatre phrases sont correctes.',
-      T: 'Correct : chaque emploi respecte la catégorie et la graphie attendues.',
-    },
-  },
-  {
     "id": "solh-01-1",
     "rule": "conjugaison",
     "type": "blank",
@@ -14126,13 +14082,13 @@ const QUESTIONS = [
   {
     "id": "solh-08-1",
     "rule": "vocabulaire",
-    "type": "vocabulary",
+    "type": "sentences",
     "gen": {
       "model": "Sol",
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Dans cet extrait, choisissez le sens imposé par le contexte.",
+    "instruction": "« Pour éviter que le débat ne s'étende à tout le programme, la présidente a CIRCONSCRIT la discussion aux seules modalités d'évaluation. » Ici, « circonscrit » signifie :",
     "options": [
       {
         "key": "1",
@@ -14307,6 +14263,198 @@ const QUESTIONS = [
       "writing_situation": null
     },
     "stem": "Les dérogations que les deux responsables se sont ___ après la séance figurent dans le procès-verbal."
+  },
+  {
+    "id": "solmaj-01-1", "rule": "conjugaison", "type": "sentences",
+    "gen": { "model": "Sol 5.6", "thinking": "high", "tracked": true },
+    "instruction": "Dans la note de suivi, choisissez la seule formulation compatible avec les repères donnés.",
+    "options": [
+      { "key": "1", "text": "Si le serveur tombait de nouveau en panne, nous résolvons le problème avec la procédure de secours." },
+      { "key": "2", "text": "Si le serveur tombait de nouveau en panne, nous résoudrions le problème avec la procédure de secours." },
+      { "key": "3", "text": "Si le serveur tombait de nouveau en panne, nous résoudrons le problème avec la procédure de secours." },
+      { "key": "4", "text": "Si le serveur tombait de nouveau en panne, nous résolvions le problème avec la procédure de secours." },
+      { "key": "A", "text": "Aucune" },
+      { "key": "T", "text": "Toutes" }
+    ],
+    "answer": "2",
+    "explanation": "Dans l'hypothèse « si le serveur tombait », la subordonnée est à l'imparfait et la conséquence se met au conditionnel présent : résoudrions.",
+    "why": {
+      "1": "Le présent efface la conséquence hypothétique du couple si + imparfait.",
+      "2": "Le système hypothétique si + imparfait appelle le conditionnel présent résoudrions dans la principale.",
+      "3": "Le futur répondrait à une condition réalisable au présent, non à « tombait ».",
+      "4": "L'imparfait dans la principale ne porte pas la conséquence hypothétique attendue.",
+      "A": "Une option chiffrée est correcte ; Aucune ne convient pas.",
+      "T": "Au moins une option chiffrée est fautive ; Toutes ne convient pas."
+    },
+    "hep": { "family": "conjugaison", "mechanism_id": "conditionnel", "difficulty": "niveau_examen", "source_genre": "rapport", "cognitive_mode": "analyse_structurelle" }
+  },
+  {
+    "id": "solmaj-03-1", "rule": "discours", "type": "blank",
+    "gen": { "model": "Sol 5.6", "thinking": "high", "tracked": true },
+    "stem": "Le rapport doit établir ___ a interrompu la transmission et ___ données ont été perdues.",
+    "options": [
+      { "key": "1", "text": "ce que / quelles" },
+      { "key": "2", "text": "ce qui / quels" },
+      { "key": "3", "text": "ce dont / lesquelles" },
+      { "key": "4", "text": "ce qui / quelles" },
+      { "key": "A", "text": "Aucune" },
+      { "key": "T", "text": "Toutes" }
+    ],
+    "answer": "4",
+    "explanation": "« Ce qui » est sujet de « a interrompu » ; « quelles » est un adjectif interrogatif accordé avec « données », féminin pluriel.",
+    "why": {
+      "1": "« Ce que » ne peut pas être sujet de « a interrompu ».",
+      "2": "« Quels » ne s'accorde pas avec « données », féminin pluriel.",
+      "3": "« Interrompre » n'appelle pas de complément en « de », et « lesquelles » ne détermine pas le nom « données ».",
+      "4": "« Ce qui » est sujet de « a interrompu » ; « quelles » s'accorde avec le nom féminin pluriel « données ».",
+      "A": "Une option chiffrée est correcte ; Aucune ne convient pas.",
+      "T": "Au moins une option chiffrée est fautive ; Toutes ne convient pas."
+    },
+    "hep": { "family": "interrogation_indirecte", "mechanism_id": "ce_qui_ce_que", "difficulty": "difficile", "source_genre": "rapport", "cognitive_mode": "analyse_structurelle" }
+  },
+  {
+    "id": "solmaj-05-1", "rule": "ponctuation", "type": "sentences",
+    "gen": { "model": "Sol 5.6", "thinking": "high", "tracked": true },
+    "instruction": "La note doit indiquer qu'une seule personne est concernée et préciser sa fonction. Choisissez la formulation qui convient.",
+    "options": [
+      { "key": "1", "text": "Mme Rochat et la doyenne présenteront le bilan à seize heures." },
+      { "key": "2", "text": "Mme Rochat, la doyenne, présentera le bilan à seize heures." },
+      { "key": "3", "text": "Mme Rochat; la doyenne présentera le bilan à seize heures." },
+      { "key": "4", "text": "Mme Rochat la doyenne, présentera le bilan à seize heures." },
+      { "key": "A", "text": "Aucune" },
+      { "key": "T", "text": "Toutes" }
+    ],
+    "answer": "2",
+    "explanation": "« La doyenne » est une apposition qui renomme Mme Rochat : elle doit être encadrée par deux virgules, ce qui signale une personne unique.",
+    "why": {
+      "1": "« Et » coordonne deux désignations et présente deux personnes distinctes, contrairement au sens demandé.",
+      "2": "Les deux virgules encadrent « la doyenne » comme apposition à Mme Rochat et signalent une personne unique.",
+      "3": "Le point-virgule sépare le nom de sa fonction au lieu de les identifier.",
+      "4": "Une apposition médiane doit être ouverte et fermée par deux virgules.",
+      "A": "Une option chiffrée est correcte ; Aucune ne convient pas.",
+      "T": "Au moins une option chiffrée est fautive ; Toutes ne convient pas."
+    },
+    "hep": { "family": "ponctuation", "mechanism_id": "apposition", "difficulty": "difficile", "source_genre": "note_administrative", "cognitive_mode": "jugement_semantique" }
+  },
+  {
+    "id": "solmaj-06-1", "rule": "vocabulaire", "type": "sentences",
+    "gen": { "model": "Sol 5.6", "thinking": "high", "tracked": true },
+    "instruction": "« Deux registres tenus séparément ont CORROBORÉ le témoignage en indiquant les mêmes dates et les mêmes montants. » Ici, « corroboré » signifie :",
+    "options": [
+      { "key": "1", "text": "complété par des détails nouveaux" },
+      { "key": "2", "text": "rendu plus vraisemblable sans preuve concordante" },
+      { "key": "3", "text": "reformulé avec davantage de prudence" },
+      { "key": "4", "text": "confirmé par des éléments concordants" },
+      { "key": "A", "text": "Aucune" },
+      { "key": "T", "text": "Toutes" }
+    ],
+    "answer": "4",
+    "explanation": "Corroborer signifie confirmer par des éléments indépendants et concordants — ici, les mêmes dates et les mêmes montants fournis par deux registres distincts.",
+    "why": {
+      "1": "Le contexte n'ajoute aucun détail nouveau au témoignage.",
+      "2": "Des dates et montants identiques constituent des preuves concordantes, pas une simple vraisemblance.",
+      "3": "Aucun adoucissement ou changement de formulation n'est décrit.",
+      "4": "Corroborer signifie confirmer par des éléments indépendants et concordants, ici mêmes dates et mêmes montants.",
+      "A": "Une option chiffrée est correcte ; Aucune ne convient pas.",
+      "T": "Au moins une option chiffrée est fautive ; Toutes ne convient pas."
+    },
+    "hep": { "family": "vocabulaire_contexte", "mechanism_id": "synonyme_exact", "difficulty": "difficile", "source_genre": "article", "cognitive_mode": "jugement_semantique" }
+  },
+  {
+    "id": "solmaj-07-1", "rule": "sujetverbe", "type": "sentences",
+    "gen": { "model": "Sol 5.6", "thinking": "high", "tracked": true },
+    "instruction": "Dans ce commentaire d'élève, choisissez la seule phrase qui respecte les accords du verbe.",
+    "options": [
+      { "key": "1", "text": "Chacune des hypothèses que les élèves examinent mérite une vérification séparée." },
+      { "key": "2", "text": "Le détail des réponses apparaissent dans l'annexe méthodologique." },
+      { "key": "3", "text": "Parmi les annexes figure trois tableaux comparatifs." },
+      { "key": "4", "text": "Les remarques de la tutrice confirme la faiblesse de cette hypothèse." },
+      { "key": "A", "text": "Aucune" },
+      { "key": "T", "text": "Toutes" }
+    ],
+    "answer": "1",
+    "explanation": "Le noyau « chacune » est singulier et commande « mérite » ; dans la relative, le sujet « élèves » commande « examinent ».",
+    "why": {
+      "1": "« Chacune » est le noyau singulier et commande « mérite » ; « élèves » commande correctement « examinent » dans la relative.",
+      "2": "Le noyau « détail » est singulier.",
+      "3": "Le sujet inversé « trois tableaux » est pluriel : il faut « figurent ».",
+      "4": "Le sujet « remarques » est pluriel ; « tutrice » appartient au complément.",
+      "A": "Une option chiffrée est correcte ; Aucune ne convient pas.",
+      "T": "Au moins une option chiffrée est fautive ; Toutes ne convient pas."
+    },
+    "hep": { "family": "accord_sujet_verbe", "mechanism_id": "sujet_inverse", "difficulty": "niveau_examen", "source_genre": "copie_eleve", "cognitive_mode": "revision_authentique" }
+  },
+  {
+    "id": "solmaj-08-1", "rule": "prepositions", "type": "blank",
+    "gen": { "model": "Sol 5.6", "thinking": "high", "tracked": true },
+    "stem": "Le succès dépend ___ cette coordination, tandis que la décision finale incombe ___ la doyenne.",
+    "options": [
+      { "key": "1", "text": "à / de" },
+      { "key": "2", "text": "sur / pour" },
+      { "key": "3", "text": "de / à" },
+      { "key": "4", "text": "pour / sur" },
+      { "key": "A", "text": "Aucune" },
+      { "key": "T", "text": "Toutes" }
+    ],
+    "answer": "3",
+    "explanation": "Dépendre se construit avec « de » ; incomber se construit avec « à ».",
+    "why": {
+      "1": "Les prépositions de « dépendre de » et « incomber à » sont permutées.",
+      "2": "Ni « dépendre sur » ni « incomber pour » ne conviennent.",
+      "3": "Dépendre se construit avec « de » ; incomber se construit avec « à ».",
+      "4": "« Dépendre pour » et « incomber sur » ne sont pas les régimes requis.",
+      "A": "Une option chiffrée est correcte ; Aucune ne convient pas.",
+      "T": "Au moins une option chiffrée est fautive ; Toutes ne convient pas."
+    },
+    "hep": { "family": "prepositions_regies", "mechanism_id": "regime_verbal_de", "difficulty": "difficile", "source_genre": "rapport", "cognitive_mode": "analyse_structurelle" }
+  },
+  {
+    "id": "bench-ponc-03", "rule": "ponctuation", "type": "sentences",
+    "gen": { "model": "Sol 5.6", "thinking": "high", "tracked": true },
+    "instruction": "Quelle phrase est correctement ponctuée ?",
+    "options": [
+      { "key": "1", "text": "À ce stade deux solutions, restent possibles : reporter le vote ou réduire son périmètre." },
+      { "key": "2", "text": "À ce stade, deux solutions restent possibles ; reporter le vote ou réduire son périmètre." },
+      { "key": "3", "text": "À ce stade, deux solutions restent, possibles : reporter le vote ou réduire son périmètre." },
+      { "key": "4", "text": "À ce stade : deux solutions restent possibles, reporter le vote ou réduire son périmètre." },
+      { "key": "A", "text": "Aucune" },
+      { "key": "T", "text": "Toutes" }
+    ],
+    "answer": "A",
+    "explanation": "La formulation attendue est : « À ce stade, deux solutions restent possibles : reporter le vote ou réduire son périmètre. » Elle n'est pas proposée.",
+    "why": {
+      "1": "La virgule sépare le sujet « deux solutions » du verbe « restent ».",
+      "2": "Une énumération annoncée par « deux solutions » doit être introduite par deux-points, non par un point-virgule.",
+      "3": "La virgule sépare le verbe « restent » de son attribut « possibles ».",
+      "4": "Les deux-points sont mal placés après le complément initial, et la liste n'est pas correctement introduite.",
+      "A": "Aucune option ne reproduit la ponctuation syntaxiquement attendue.",
+      "T": "Les quatre options sont fautives."
+    },
+    "hep": { "family": "ponctuation", "mechanism_id": "enumeration_deux_points", "difficulty": "difficile", "source_genre": "rapport", "cognitive_mode": "analyse_structurelle" }
+  },
+  {
+    "id": "bench-con-02", "rule": "connecteurs", "type": "blank",
+    "gen": { "model": "Sol 5.6", "thinking": "high", "tracked": true },
+    "stem": "Le dossier était complet. Le comité a pourtant reporté le vote, ___ le dossier présentait une lacune, ___ deux membres étaient absents.",
+    "options": [
+      { "key": "1", "text": "parce que / mais parce que" },
+      { "key": "2", "text": "non pas parce que / par conséquent" },
+      { "key": "3", "text": "bien que / puisque" },
+      { "key": "4", "text": "non seulement parce que / mais aussi parce que" },
+      { "key": "A", "text": "Aucune" },
+      { "key": "T", "text": "Toutes" }
+    ],
+    "answer": "A",
+    "explanation": "La paire attendue est « non pas parce que / mais parce que », absente des propositions : elle seule écarte la lacune (le dossier était complet) et donne la vraie cause.",
+    "why": {
+      "1": "Cette option affirme que le dossier présentait une lacune et contredit la première phrase.",
+      "2": "« Par conséquent » ne peut pas compléter la corrélation ouverte par « non pas parce que ».",
+      "3": "La relation causale corrective attendue n'est pas construite ; de plus, « bien que » appellerait le subjonctif.",
+      "4": "Cette paire additionne deux causes et contredit donc le fait que le dossier était complet.",
+      "A": "La paire logique exacte « non pas parce que / mais parce que » n'est pas proposée.",
+      "T": "Aucune des quatre combinaisons ne respecte à la fois le contexte et la corrélation."
+    },
+    "hep": { "family": "connecteurs_logiques", "mechanism_id": "correlation", "difficulty": "difficile", "source_genre": "rapport", "cognitive_mode": "jugement_semantique" }
   },
 ];
 
