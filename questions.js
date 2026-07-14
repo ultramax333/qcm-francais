@@ -14003,6 +14003,311 @@ const QUESTIONS = [
       T: 'Correct : chaque emploi respecte la catégorie et la graphie attendues.',
     },
   },
+  {
+    "id": "solh-01-1",
+    "rule": "conjugaison",
+    "type": "blank",
+    "gen": {
+      "model": "Sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Complétez la phrase avec la forme qui convient.",
+    "options": [
+      {
+        "key": "1",
+        "text": "transmettiez"
+      },
+      {
+        "key": "2",
+        "text": "transmetterez"
+      },
+      {
+        "key": "3",
+        "text": "transmettez"
+      },
+      {
+        "key": "4",
+        "text": "transmetez"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "3",
+    "explanation": "À l'impératif présent, transmettre prend la forme transmettez à la deuxième personne du pluriel. Avec des pronoms postposés, on écrit donc transmettez-lui.",
+    "why": {
+      "1": "transmettiez peut être un imparfait de l’indicatif ou un présent du subjonctif; ce n’est pas un impératif.",
+      "2": "transmetterez n'est ni la bonne valeur modale ni une forme correcte du futur.",
+      "3": "L'impératif présent de transmettre à la deuxième personne du pluriel est transmettez; les pronoms postposés sont correctement reliés.",
+      "4": "transmetez omet un t du radical transmet-.",
+      "A": "Une option chiffrée est entièrement correcte; Aucune ne peut donc pas être la réponse.",
+      "T": "Au moins une option chiffrée contrevient à la règle contrôlée; Toutes ne peut donc pas être la réponse."
+    },
+    "hep": {
+      "slot_id": "slot-01-conjugaison",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "conjugaison",
+      "mechanism_id": "imperatif_et_pronoms",
+      "difficulty": "niveau_examen",
+      "source_genre": "courriel",
+      "communicative_purpose": "donner une instruction puis annoncer une étape administrative",
+      "cognitive_mode": "rappel_regle",
+      "writing_situation": null
+    },
+    "stem": "Pour que le secrétariat puisse classer votre demande, ___-lui les deux attestations originales avant jeudi."
+  },
+  {
+    "id": "solh-05-1",
+    "rule": "connecteurs",
+    "type": "blank",
+    "gen": {
+      "model": "Sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Complétez la phrase avec la forme qui convient.",
+    "options": [
+      {
+        "key": "1",
+        "text": "pourtant"
+      },
+      {
+        "key": "2",
+        "text": "d'ailleurs"
+      },
+      {
+        "key": "3",
+        "text": "en revanche"
+      },
+      {
+        "key": "4",
+        "text": "par conséquent"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "4",
+    "explanation": "À nombre de groupes et effectif enseignant stables, la hausse de 18 % des inscriptions entraîne mécaniquement davantage d'élèves par groupe. Par conséquent exprime cette conséquence nécessaire.",
+    "why": {
+      "1": "Pourtant annoncerait une concession absente; le dernier fait découle des deux premiers.",
+      "2": "D'ailleurs ajouterait un argument sans exprimer la conséquence mécanique annoncée.",
+      "3": "En revanche marquerait une opposition, alors que le dernier fait résulte des données précédentes.",
+      "4": "La hausse des inscriptions à nombre de groupes inchangé produit directement l'augmentation de l'effectif par groupe: par conséquent.",
+      "A": "Une option chiffrée est entièrement correcte; Aucune ne peut donc pas être la réponse.",
+      "T": "Au moins une option chiffrée contrevient à la règle contrôlée; Toutes ne peut donc pas être la réponse."
+    },
+    "hep": {
+      "slot_id": "slot-05-connecteurs",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "connecteurs_logiques",
+      "mechanism_id": "consequence",
+      "difficulty": "difficile",
+      "source_genre": "rapport",
+      "communicative_purpose": "interpréter des résultats et justifier une décision",
+      "cognitive_mode": "jugement_semantique",
+      "writing_situation": null
+    },
+    "stem": "Les inscriptions ont augmenté de 18 %, tandis que l'effectif enseignant est resté stable ; ___, chaque groupe accueille désormais davantage d'élèves."
+  },
+  {
+    "id": "solh-08-1",
+    "rule": "vocabulaire",
+    "type": "vocabulary",
+    "gen": {
+      "model": "Sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Dans cet extrait, choisissez le sens imposé par le contexte.",
+    "options": [
+      {
+        "key": "1",
+        "text": "limitée précisément"
+      },
+      {
+        "key": "2",
+        "text": "résumée sans prendre position"
+      },
+      {
+        "key": "3",
+        "text": "reportée à une autre séance"
+      },
+      {
+        "key": "4",
+        "text": "ouverte à de nouveaux sujets"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "1",
+    "explanation": "Circonscrire une discussion à un objet signifie en fixer précisément les limites. Le complément aux seules modalités d'évaluation exclut les sens de résumer, reporter ou élargir.",
+    "why": {
+      "1": "Le complément aux seules modalités impose le sens limiter précisément.",
+      "2": "Circonscrire ne signifie pas résumer; le complément fixe une limite thématique.",
+      "3": "Aucun report temporel n'est exprimé.",
+      "4": "La discussion est restreinte, non ouverte.",
+      "A": "Une option chiffrée est entièrement correcte; Aucune ne peut donc pas être la réponse.",
+      "T": "Au moins une option chiffrée contrevient à la règle contrôlée; Toutes ne peut donc pas être la réponse."
+    },
+    "hep": {
+      "slot_id": "slot-08-vocabulaire",
+      "profile": "perfectionnement",
+      "domain": "vocabulaire",
+      "family": "vocabulaire_contexte",
+      "mechanism_id": "polysemie_contextuelle",
+      "difficulty": "difficile",
+      "source_genre": "article",
+      "communicative_purpose": "expliquer l'effet précis d'une décision ou la qualité d'un document",
+      "cognitive_mode": "jugement_semantique",
+      "writing_situation": null
+    },
+    "stem": "« Pour éviter que le débat ne s'étende à tout le programme, la présidente a CIRCONSCRIT la discussion aux seules modalités d'évaluation. » Ici, « circonscrit » signifie :"
+  },
+  {
+    "id": "solh-09-1",
+    "rule": "sujetverbe",
+    "type": "sentences",
+    "gen": {
+      "model": "Sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Choisissez la seule phrase correctement rédigée.",
+    "options": [
+      {
+        "key": "1",
+        "text": "La série de graphiques montrent une baisse régulière des absences."
+      },
+      {
+        "key": "2",
+        "text": "Les remarques que formulent la tutrice soulignent deux écarts importants."
+      },
+      {
+        "key": "3",
+        "text": "Au bas du tableau figure les résultats du second semestre."
+      },
+      {
+        "key": "4",
+        "text": "Au bas du tableau figurent les résultats que la tutrice commente dans sa synthèse."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "4",
+    "explanation": "Dans la proposition principale inversée, le sujet pluriel les résultats commande figurent. Dans la relative, le sujet singulier la tutrice commande commente.",
+    "why": {
+      "1": "Le noyau singulier série commande montre.",
+      "2": "Dans la relative, le sujet singulier la tutrice commande formule.",
+      "3": "Dans l'inversion, le sujet pluriel les résultats commande figurent.",
+      "4": "Dans l'inversion, le sujet pluriel les résultats commande figurent; la relative a pour sujet singulier la tutrice, d'où commente.",
+      "A": "Une option chiffrée est entièrement correcte; Aucune ne peut donc pas être la réponse.",
+      "T": "Au moins une option chiffrée contrevient à la règle contrôlée; Toutes ne peut donc pas être la réponse."
+    },
+    "hep": {
+      "slot_id": "slot-09-sujetverbe",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "accord_sujet_verbe",
+      "mechanism_id": "sujet_inverse",
+      "difficulty": "niveau_examen",
+      "source_genre": "copie_eleve",
+      "communicative_purpose": "commenter des résultats présentés dans des graphiques",
+      "cognitive_mode": "revision_authentique",
+      "writing_situation": {
+        "level": "gymnase, élève sérieux en relecture",
+        "genre": "passage de rapport réflexif",
+        "topic": "comparaison de résultats scolaires",
+        "intended_function": "commenter des graphiques dans un rapport",
+        "writer_profile": "élève attentif qui hésite sur une règle peu visible"
+      }
+    }
+  },
+  {
+    "id": "solh-10-1",
+    "rule": "participe",
+    "type": "blank",
+    "gen": {
+      "model": "Sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Complétez la phrase avec la forme qui convient.",
+    "options": [
+      {
+        "key": "1",
+        "text": "accordé"
+      },
+      {
+        "key": "2",
+        "text": "accordées"
+      },
+      {
+        "key": "3",
+        "text": "accordés"
+      },
+      {
+        "key": "4",
+        "text": "accordée"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "2",
+    "explanation": "Règle précise du pronominal réciproque: dans s'accorder quelque chose, se est COI; le CVD dérogations est repris par que et placé avant le participe. Le participe passé s'accorde donc avec ce CVD féminin pluriel: accordées.",
+    "why": {
+      "1": "L'absence d'accord ignore le CVD féminin pluriel placé avant.",
+      "2": "Pronominal réciproque: se est COI dans accorder quelque chose à quelqu'un; le CVD dérogations, repris par que et placé avant, commande accordées.",
+      "3": "Le masculin pluriel ne correspond pas à dérogations.",
+      "4": "Le singulier ne correspond pas à dérogations.",
+      "A": "Une option chiffrée est entièrement correcte; Aucune ne peut donc pas être la réponse.",
+      "T": "Au moins une option chiffrée contrevient à la règle contrôlée; Toutes ne peut donc pas être la réponse."
+    },
+    "hep": {
+      "slot_id": "slot-10-participe",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "accord_participe_passe",
+      "mechanism_id": "pronominal_cvd_avant",
+      "difficulty": "difficile",
+      "source_genre": "rapport",
+      "communicative_purpose": "consigner les décisions et échanges d'une commission",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null
+    },
+    "stem": "Les dérogations que les deux responsables se sont ___ après la séance figurent dans le procès-verbal."
+  },
 ];
 
 // ---------- Traçabilité de génération (modèle + niveau de réflexion) ----------
