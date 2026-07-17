@@ -14456,6 +14456,5132 @@ const QUESTIONS = [
     },
     "hep": { "family": "connecteurs_logiques", "mechanism_id": "correlation", "difficulty": "difficile", "source_genre": "rapport", "cognitive_mode": "jugement_semantique" }
   },
+{
+  "id": "solmaj-02-1",
+  "rule": "nombres",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5.6-sol",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Dans ce rapport d'élève, choisissez la seule phrase correctement orthographiée.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Le questionnaire a recueilli deux milles réponses exploitables."
+    },
+    {
+      "key": "2",
+      "text": "L'annexe compte quatre-vingts-deux tableaux commentés."
+    },
+    {
+      "key": "3",
+      "text": "Le corpus comprend trois mille huit cent douze réponses."
+    },
+    {
+      "key": "4",
+      "text": "La page quatre-vingts présente les résultats détaillés."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "Mille est toujours invariable; cent ne prend pas de s lorsqu'il est suivi d'un autre nombre. On écrit donc trois mille huit cent douze.",
+  "why": {
+    "1": "Chaîne recomposée: « Le questionnaire a recueilli deux milles réponses exploitables. » Incorrect: Mille est invariable dans les adjectifs numéraux.",
+    "2": "Chaîne recomposée: « L'annexe compte quatre-vingts-deux tableaux commentés. » Incorrect: Vingt ne prend pas de s quand deux le suit.",
+    "3": "Chaîne recomposée: « Le corpus comprend trois mille huit cent douze réponses. » Correct: Mille est invariable; cent reste sans s parce que douze suit dans trois mille huit cent douze.",
+    "4": "Chaîne recomposée: « La page quatre-vingts présente les résultats détaillés. » Incorrect: Dans un numéro de page, quatre-vingt a valeur ordinale et reste invariable.",
+    "A": "Une option chiffrée est correcte; Aucune ne convient pas.",
+    "T": "Au moins une option chiffrée est fautive; Toutes ne convient pas."
+  },
+  "hep": {
+    "slot_id": "maj-slot-02-nombres",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "nombres_traits_union",
+    "mechanism_id": "mille_invariable",
+    "difficulty": "niveau_examen",
+    "source_genre": "copie_eleve",
+    "communicative_purpose": "présenter les effectifs et renvoyer à des pages d'un rapport",
+    "cognitive_mode": "revision_authentique",
+    "writing_situation": {
+      "level": "gymnase, élève sérieux en relecture",
+      "genre": "passage de rapport réflexif",
+      "topic": "résultats d'un questionnaire",
+      "intended_function": "présenter des effectifs et citer des pages du dossier",
+      "writer_profile": "élève attentif qui applique une règle plausible mais parfois inadéquate"
+    }
+  }
+},
+{
+  "id": "solmaj-04-1",
+  "rule": "adjverbal",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5.6-sol",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Dans cet extrait de rapport, choisissez la seule phrase correctement orthographiée.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Les résultats différant d'une cohorte à l'autre, le groupe a repris ses calculs."
+    },
+    {
+      "key": "2",
+      "text": "Les résultats différants ont conduit le groupe à reprendre ses calculs."
+    },
+    {
+      "key": "3",
+      "text": "Le tableau de l'année précédant contient moins de données."
+    },
+    {
+      "key": "4",
+      "text": "Une analyse équivalant a été menée dans la seconde classe."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Différant est ici le participe présent invariable du verbe différer et garde le complément d'une cohorte à l'autre. Les autres phrases confondent participe présent et adjectif verbal.",
+  "why": {
+    "1": "Chaîne recomposée: « Les résultats différant d'une cohorte à l'autre, le groupe a repris ses calculs. » Correct: Différant est le participe présent invariable du verbe différer et garde son complément.",
+    "2": "Chaîne recomposée: « Les résultats différants ont conduit le groupe à reprendre ses calculs. » Incorrect: L'adjectif est différents, non différants.",
+    "3": "Chaîne recomposée: « Le tableau de l'année précédant contient moins de données. » Incorrect: Année appelle l'adjectif précédente, non le participe précédant.",
+    "4": "Chaîne recomposée: « Une analyse équivalant a été menée dans la seconde classe. » Incorrect: Analyse appelle l'adjectif équivalente, non le participe équivalant.",
+    "A": "Une option chiffrée est correcte; Aucune ne convient pas.",
+    "T": "Au moins une option chiffrée est fautive; Toutes ne convient pas."
+  },
+  "hep": {
+    "slot_id": "maj-slot-04-adjverbal",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "adjectif_verbal_participe_present",
+    "mechanism_id": "accord_adjectif_invariabilite_participe",
+    "difficulty": "difficile",
+    "source_genre": "copie_eleve",
+    "communicative_purpose": "décrire des tendances et la conduite d'une analyse",
+    "cognitive_mode": "revision_authentique",
+    "writing_situation": {
+      "level": "gymnase, élève sérieux en relecture",
+      "genre": "passage de rapport réflexif",
+      "topic": "comparaison de cohortes",
+      "intended_function": "décrire les écarts observés et la méthode suivie",
+      "writer_profile": "élève attentif qui applique une règle plausible mais parfois inadéquate"
+    }
+  }
+},
+{
+  "id": "solmaj-09-1",
+  "rule": "connecteurs",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5.6-sol",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Dans cette synthèse, quelles formulations articulent correctement les constats ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Le local est indisponible; par conséquent, la séance aura lieu à distance."
+    },
+    {
+      "key": "2",
+      "text": "Les absences ont reculé; en revanche, les retards ont augmenté."
+    },
+    {
+      "key": "3",
+      "text": "Certes, l'échantillon est restreint; néanmoins, les résultats concordent avec l'enquête précédente."
+    },
+    {
+      "key": "4",
+      "text": "La procédure coûte moins cher; de plus, elle réduit le délai de traitement."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "T",
+  "explanation": "Les quatre phrases articulent correctement leurs constats: conséquence avec par conséquent, opposition avec en revanche, concession avec certes… néanmoins et addition avec de plus. La réponse est Toutes.",
+  "why": {
+    "1": "Chaîne recomposée: « Le local est indisponible; par conséquent, la séance aura lieu à distance. » Correct: Les quatre connecteurs expriment correctement, dans l'ordre, conséquence, opposition, concession et addition.",
+    "2": "Chaîne recomposée: « Les absences ont reculé; en revanche, les retards ont augmenté. » Correct: Les quatre connecteurs expriment correctement, dans l'ordre, conséquence, opposition, concession et addition.",
+    "3": "Chaîne recomposée: « Certes, l'échantillon est restreint; néanmoins, les résultats concordent avec l'enquête précédente. » Correct: Les quatre connecteurs expriment correctement, dans l'ordre, conséquence, opposition, concession et addition.",
+    "4": "Chaîne recomposée: « La procédure coûte moins cher; de plus, elle réduit le délai de traitement. » Correct: Les quatre connecteurs expriment correctement, dans l'ordre, conséquence, opposition, concession et addition.",
+    "A": "Aucune est impossible puisque les quatre articulations logiques sont correctes.",
+    "T": "Les quatre options ont été vérifiées séparément et sont correctes; Toutes est la réponse."
+  },
+  "hep": {
+    "slot_id": "maj-slot-09-connecteurs",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "connecteurs_logiques",
+    "mechanism_id": "consequence",
+    "difficulty": "difficile",
+    "source_genre": "rapport",
+    "communicative_purpose": "articuler quatre constats indépendants dans une synthèse évaluative",
+    "cognitive_mode": "jugement_semantique",
+    "writing_situation": null
+  }
+},
+{
+  "id": "solmaj-10-1",
+  "rule": "participe",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5.6-sol",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Dans ce procès-verbal d'élève, quelle phrase applique correctement la règle du participe passé ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Les décisions que la commission a prise hier seront publiées vendredi."
+    },
+    {
+      "key": "2",
+      "text": "Après la séance, les deux responsables se sont téléphonés pour comparer leurs notes."
+    },
+    {
+      "key": "3",
+      "text": "Les affiches que le service a faites imprimer seront livrées lundi."
+    },
+    {
+      "key": "4",
+      "text": "Les délégués sont arrivé avant l'ouverture des portes."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "A",
+  "explanation": "Aucune phrase n'est correcte. Règles précises: avec avoir, le CVD décisions placé avant impose prises; dans le pronominal réciproque se téléphoner, se est COI et téléphoné reste invariable; fait suivi d'un infinitif est invariable; avec être, arrivé s'accorde avec le sujet pluriel délégués et devient arrivés.",
+  "why": {
+    "1": "Chaîne recomposée: « Les décisions que la commission a prise hier seront publiées vendredi. » Incorrect: Avec avoir, le CVD décisions placé avant impose prises.",
+    "2": "Chaîne recomposée: « Après la séance, les deux responsables se sont téléphonés pour comparer leurs notes. » Incorrect: Dans se téléphoner, se est COI; téléphoné reste invariable.",
+    "3": "Chaîne recomposée: « Les affiches que le service a faites imprimer seront livrées lundi. » Incorrect: Fait suivi immédiatement d'un infinitif est invariable.",
+    "4": "Chaîne recomposée: « Les délégués sont arrivé avant l'ouverture des portes. » Incorrect: Avec être, arrivé s'accorde avec le sujet pluriel délégués.",
+    "A": "Les quatre options chiffrées contreviennent chacune à une règle précise du participe passé; Aucune est la réponse correcte.",
+    "T": "Toutes est impossible puisque les quatre phrases sont fautives."
+  },
+  "hep": {
+    "slot_id": "maj-slot-10-participe",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "accord_participe_passe",
+    "mechanism_id": "avoir_cvd_avant",
+    "difficulty": "difficile",
+    "source_genre": "copie_eleve",
+    "communicative_purpose": "relire les décisions et actions consignées dans un procès-verbal",
+    "cognitive_mode": "revision_authentique",
+    "writing_situation": {
+      "level": "gymnase, élève sérieux en relecture",
+      "genre": "passage de rapport réflexif",
+      "topic": "procès-verbal d'une commission",
+      "intended_function": "consigner les décisions, échanges et documents produits",
+      "writer_profile": "élève attentif qui applique une règle plausible mais parfois inadéquate"
+    }
+  }
+},
+{
+  "id": "drill40h-01-4",
+  "rule": "participe",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "envoyé"
+    },
+    {
+      "key": "2",
+      "text": "envoyée"
+    },
+    {
+      "key": "3",
+      "text": "envoyées"
+    },
+    {
+      "key": "4",
+      "text": "envoyer"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "Avec avoir, le participe passé s'accorde avec le CVD placé avant; le pronom relatif reprend ici un nom féminin singulier.",
+  "why": {
+    "1": "Chaîne/reconstruction : Que reprend un CVD féminin singulier antéposé; avec avoir, le participe s'accorde donc au féminin singulier. Option 1 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "2": "Chaîne/reconstruction : Que reprend un CVD féminin singulier antéposé; avec avoir, le participe s'accorde donc au féminin singulier. Option 2 : La forme applique exactement la chaîne reconstruite.",
+    "3": "Chaîne/reconstruction : Que reprend un CVD féminin singulier antéposé; avec avoir, le participe s'accorde donc au féminin singulier. Option 3 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "4": "Chaîne/reconstruction : Que reprend un CVD féminin singulier antéposé; avec avoir, le participe s'accorde donc au féminin singulier. Option 4 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-01",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "accord_participe_passe",
+    "mechanism_id": "avoir_cvd_avant",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "indiquer quel document féminin singulier a été transmis",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "La grille d'évaluation que l'équipe a ___ aux jurés sera testée demain."
+},
+{
+  "id": "drill40h-02-1",
+  "rule": "participe",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "arrivées"
+    },
+    {
+      "key": "2",
+      "text": "arrivé"
+    },
+    {
+      "key": "3",
+      "text": "arrivés"
+    },
+    {
+      "key": "4",
+      "text": "arrivée"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Avec être, le participe passé s'accorde avec le sujet, ici féminin pluriel.",
+  "why": {
+    "1": "Chaîne/reconstruction : Avec être, le participe s'accorde avec le sujet féminin pluriel. Option 1 : La forme applique exactement la chaîne reconstruite.",
+    "2": "Chaîne/reconstruction : Avec être, le participe s'accorde avec le sujet féminin pluriel. Option 2 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "3": "Chaîne/reconstruction : Avec être, le participe s'accorde avec le sujet féminin pluriel. Option 3 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "4": "Chaîne/reconstruction : Avec être, le participe s'accorde avec le sujet féminin pluriel. Option 4 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-02",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "accord_participe_passe",
+    "mechanism_id": "etre_accord_sujet",
+    "difficulty": "niveau_examen",
+    "source_genre": "recit",
+    "communicative_purpose": "relater l'arrivée de plusieurs participantes",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Les deux observatrices sont ___ avant l'ouverture de la classe."
+},
+{
+  "id": "drill40h-03-2",
+  "rule": "participe",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "examinées"
+    },
+    {
+      "key": "2",
+      "text": "examinés"
+    },
+    {
+      "key": "3",
+      "text": "examiné"
+    },
+    {
+      "key": "4",
+      "text": "examinée"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "Avec avoir, aucun accord n'est fait avec le sujet; le CVD placé après laisse le participe invariable.",
+  "why": {
+    "1": "Chaîne/reconstruction : Le CVD suit avoir; le participe demeure à la forme non marquée du masculin singulier. Option 1 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "2": "Chaîne/reconstruction : Le CVD suit avoir; le participe demeure à la forme non marquée du masculin singulier. Option 2 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "3": "Chaîne/reconstruction : Le CVD suit avoir; le participe demeure à la forme non marquée du masculin singulier. Option 3 : La forme applique exactement la chaîne reconstruite.",
+    "4": "Chaîne/reconstruction : Le CVD suit avoir; le participe demeure à la forme non marquée du masculin singulier. Option 4 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-03",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "accord_participe_passe",
+    "mechanism_id": "avoir_cvd_apres",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "rendre compte d'une relecture achevée",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Les tutrices ont ___ les productions pendant l'après-midi."
+},
+{
+  "id": "drill40h-04-3",
+  "rule": "participe",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "écrites"
+    },
+    {
+      "key": "2",
+      "text": "écrits"
+    },
+    {
+      "key": "3",
+      "text": "écrite"
+    },
+    {
+      "key": "4",
+      "text": "écrit"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "Dans se parler, se est un complément indirect; aucun CVD antéposé ne commande l'accord.",
+  "why": {
+    "1": "Chaîne/reconstruction : Parler, téléphoner, écrire et sourire se construisent ici avec à quelqu'un; se est CVI et le participe reste invariable. Option 1 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "2": "Chaîne/reconstruction : Parler, téléphoner, écrire et sourire se construisent ici avec à quelqu'un; se est CVI et le participe reste invariable. Option 2 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "3": "Chaîne/reconstruction : Parler, téléphoner, écrire et sourire se construisent ici avec à quelqu'un; se est CVI et le participe reste invariable. Option 3 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "4": "Chaîne/reconstruction : Parler, téléphoner, écrire et sourire se construisent ici avec à quelqu'un; se est CVI et le participe reste invariable. Option 4 : La forme applique exactement la chaîne reconstruite.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-04",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "accord_participe_passe",
+    "mechanism_id": "pronominal_se_coi",
+    "difficulty": "niveau_examen",
+    "source_genre": "recit",
+    "communicative_purpose": "relater un échange réciproque",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Les candidates se sont ___ pour comparer leurs horaires."
+},
+{
+  "id": "drill40h-05-2",
+  "rule": "participe",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "coupé"
+    },
+    {
+      "key": "2",
+      "text": "coupée"
+    },
+    {
+      "key": "3",
+      "text": "coupés"
+    },
+    {
+      "key": "4",
+      "text": "couper"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "Le pronom se est ici le CVD de blesser et reprend un sujet féminin singulier; le participe s'accorde en conséquence.",
+  "why": {
+    "1": "Chaîne/reconstruction : Se est CVD réfléchi antéposé et renvoie au sujet féminin singulier; le participe s'accorde. Option 1 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "2": "Chaîne/reconstruction : Se est CVD réfléchi antéposé et renvoie au sujet féminin singulier; le participe s'accorde. Option 2 : La forme applique exactement la chaîne reconstruite.",
+    "3": "Chaîne/reconstruction : Se est CVD réfléchi antéposé et renvoie au sujet féminin singulier; le participe s'accorde. Option 3 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "4": "Chaîne/reconstruction : Se est CVD réfléchi antéposé et renvoie au sujet féminin singulier; le participe s'accorde. Option 4 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-05",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "accord_participe_passe",
+    "mechanism_id": "pronominal_cvd_avant",
+    "difficulty": "niveau_examen",
+    "source_genre": "recit",
+    "communicative_purpose": "signaler un incident concernant une participante",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Pendant l'atelier, la participante s'est ___ à la main."
+},
+{
+  "id": "drill40h-06-4",
+  "rule": "participe",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "aidé"
+    },
+    {
+      "key": "2",
+      "text": "aidés"
+    },
+    {
+      "key": "3",
+      "text": "aidées"
+    },
+    {
+      "key": "4",
+      "text": "aider"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "Se est le CVD réciproque de rencontrer et reprend un sujet féminin pluriel; le participe s'accorde.",
+  "why": {
+    "1": "Chaîne/reconstruction : Rencontrer, retrouver, saluer et aider sont directs; se est CVD réciproque féminin pluriel. Option 1 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "2": "Chaîne/reconstruction : Rencontrer, retrouver, saluer et aider sont directs; se est CVD réciproque féminin pluriel. Option 2 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "3": "Chaîne/reconstruction : Rencontrer, retrouver, saluer et aider sont directs; se est CVD réciproque féminin pluriel. Option 3 : La forme applique exactement la chaîne reconstruite.",
+    "4": "Chaîne/reconstruction : Rencontrer, retrouver, saluer et aider sont directs; se est CVD réciproque féminin pluriel. Option 4 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-06",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "accord_participe_passe",
+    "mechanism_id": "pronominal_cvd_avant",
+    "difficulty": "niveau_examen",
+    "source_genre": "recit",
+    "communicative_purpose": "rapporter une rencontre entre plusieurs femmes",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Les représentantes se sont ___ après plusieurs mois de travail à distance."
+},
+{
+  "id": "drill40h-07-4",
+  "rule": "participe",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Les fenêtres qu'elle a fait remplacer ferment correctement."
+    },
+    {
+      "key": "2",
+      "text": "Les serrures qu'il a faites vérifier sont neuves."
+    },
+    {
+      "key": "3",
+      "text": "Les stores qu'elle a faits réparer fonctionnent."
+    },
+    {
+      "key": "4",
+      "text": "Les portes qu'il a faite repeindre sont sèches."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Le participe fait reste invariable lorsqu'il est immédiatement suivi d'un infinitif.",
+  "why": {
+    "1": "Chaîne/reconstruction : Fait suivi d'un infinitif reste invariable, même avec un CVD antéposé. Option 1 : La forme applique exactement la chaîne reconstruite.",
+    "2": "Chaîne/reconstruction : Fait suivi d'un infinitif reste invariable, même avec un CVD antéposé. Option 2 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "3": "Chaîne/reconstruction : Fait suivi d'un infinitif reste invariable, même avec un CVD antéposé. Option 3 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "4": "Chaîne/reconstruction : Fait suivi d'un infinitif reste invariable, même avec un CVD antéposé. Option 4 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-07",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "accord_participe_passe",
+    "mechanism_id": "fait_suivi_infinitif",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "préciser quelles actions ont été commandées",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Quatre formulations relatent des interventions confiées à des prestataires."
+},
+{
+  "id": "drill40h-08-2",
+  "rule": "participe",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "entendue"
+    },
+    {
+      "key": "2",
+      "text": "entendu"
+    },
+    {
+      "key": "3",
+      "text": "entendues"
+    },
+    {
+      "key": "4",
+      "text": "entendus"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "Le CVD antéposé désigne les personnes qui accomplissent l'action de l'infinitif; vu s'accorde ici au masculin pluriel.",
+  "why": {
+    "1": "Chaîne/reconstruction : Le CVD pluriel antéposé accomplit l'action de l'infinitif de perception; le participe s'accorde au masculin pluriel. Option 1 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "2": "Chaîne/reconstruction : Le CVD pluriel antéposé accomplit l'action de l'infinitif de perception; le participe s'accorde au masculin pluriel. Option 2 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "3": "Chaîne/reconstruction : Le CVD pluriel antéposé accomplit l'action de l'infinitif de perception; le participe s'accorde au masculin pluriel. Option 3 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "4": "Chaîne/reconstruction : Le CVD pluriel antéposé accomplit l'action de l'infinitif de perception; le participe s'accorde au masculin pluriel. Option 4 : La forme applique exactement la chaîne reconstruite.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-08",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "accord_participe_passe",
+    "mechanism_id": "avoir_cvd_avant",
+    "difficulty": "niveau_examen",
+    "source_genre": "recit",
+    "communicative_purpose": "identifier les personnes perçues en train d'agir",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Les musiciens que le public a ___ jouer ont reçu une longue ovation."
+},
+{
+  "id": "drill40u-09-1",
+  "rule": "participe",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Les analyses qu'elle a faites relire seront publiées."
+    },
+    {
+      "key": "2",
+      "text": "Les deux responsables se sont téléphonées hier."
+    },
+    {
+      "key": "3",
+      "text": "Les pièces qu'ils ont joint au dossier seront classées."
+    },
+    {
+      "key": "4",
+      "text": "Les deux déléguées sont arrivé avant midi."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "A",
+  "explanation": "Aucune phrase n'est correcte: chaque série oblige à distinguer quatre constructions centrales au lieu de réciter une règle annoncée par l'amorce.",
+  "why": {
+    "1": "Fait suivi d'un infinitif est invariable: il faut les analyses qu'elle a fait relire.",
+    "2": "Se téléphoner se construit avec un complément indirect; le participe téléphoné reste invariable.",
+    "3": "Le CVD pièces précède avoir; le participe doit s'accorder au féminin pluriel: jointes.",
+    "4": "Avec être, arrivé s'accorde avec les deux déléguées: arrivées.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-09",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "accord_participe_passe",
+    "mechanism_id": "matrice_avoir_etre",
+    "difficulty": "niveau_examen",
+    "source_genre": "copie_eleve",
+    "communicative_purpose": "relire quatre formulations d'une copie avant sa remise",
+    "cognitive_mode": "revision_authentique",
+    "writing_situation": {
+      "level": "adulte en formation HEP",
+      "genre": "copie de français argumentatif ou compte rendu",
+      "topic": "organisation d'une réunion",
+      "intended_function": "réviser une formulation avant remise",
+      "writer_profile": "scripteur sérieux qui se relit et applique parfois une règle par hypercorrection"
+    }
+  },
+  "stem": "Une synthèse mêle quatre constructions différentes; vérifiez chaque participe à partir de sa fonction."
+},
+{
+  "id": "drill40h-10-2",
+  "rule": "sujetverbe",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "L'ensemble des corrections proposées demeure lisible."
+    },
+    {
+      "key": "2",
+      "text": "La liste des pièces jointes figurent en annexe."
+    },
+    {
+      "key": "3",
+      "text": "Une partie des consignes affichées manquent de clarté."
+    },
+    {
+      "key": "4",
+      "text": "La qualité des arguments présentés convainquent le jury."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Dans la phrase correcte, le verbe s'accorde avec le noyau singulier du groupe sujet, malgré les pluriels enchâssés.",
+  "why": {
+    "1": "Chaîne/reconstruction : Dans chaque phrase, le noyau sujet est singulier malgré un complément pluriel; seul le verbe singulier est correct. Option 1 : La forme applique exactement la chaîne reconstruite.",
+    "2": "Chaîne/reconstruction : Dans chaque phrase, le noyau sujet est singulier malgré un complément pluriel; seul le verbe singulier est correct. Option 2 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "3": "Chaîne/reconstruction : Dans chaque phrase, le noyau sujet est singulier malgré un complément pluriel; seul le verbe singulier est correct. Option 3 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "4": "Chaîne/reconstruction : Dans chaque phrase, le noyau sujet est singulier malgré un complément pluriel; seul le verbe singulier est correct. Option 4 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-10",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "accord_sujet_verbe",
+    "mechanism_id": "noyau_singulier_complement_pluriel",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "évaluer l'effet d'un ensemble organisé sur son destinataire",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Dans un rapport, une seule phrase résiste à l'attraction d'un nom pluriel voisin."
+},
+{
+  "id": "drill40h-11-4",
+  "rule": "sujetverbe",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "relit"
+    },
+    {
+      "key": "2",
+      "text": "relisez"
+    },
+    {
+      "key": "3",
+      "text": "relisons"
+    },
+    {
+      "key": "4",
+      "text": "relisent"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "Le verbe de la relative introduite par qui s'accorde en personne et en nombre avec l'antécédent du relatif.",
+  "why": {
+    "1": "Chaîne/reconstruction : Qui reprend moi, toi, nous ou vous et transmet sa personne grammaticale au verbe. Option 1 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "2": "Chaîne/reconstruction : Qui reprend moi, toi, nous ou vous et transmet sa personne grammaticale au verbe. Option 2 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "3": "Chaîne/reconstruction : Qui reprend moi, toi, nous ou vous et transmet sa personne grammaticale au verbe. Option 3 : La forme applique exactement la chaîne reconstruite.",
+    "4": "Chaîne/reconstruction : Qui reprend moi, toi, nous ou vous et transmet sa personne grammaticale au verbe. Option 4 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-11",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "accord_sujet_verbe",
+    "mechanism_id": "relative_qui_antecedent_personne",
+    "difficulty": "niveau_examen",
+    "source_genre": "courriel",
+    "communicative_purpose": "attribuer clairement une responsabilité à l'interlocuteur",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Nous qui ___ les productions, nous signalerons les omissions."
+},
+{
+  "id": "drill40h-12-1",
+  "rule": "sujetverbe",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "vérifient / transmet"
+    },
+    {
+      "key": "2",
+      "text": "vérifie / transmettent"
+    },
+    {
+      "key": "3",
+      "text": "vérifie / transmet"
+    },
+    {
+      "key": "4",
+      "text": "vérifient / transmettent"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "Chaque verbe s'accorde avec son propre sujet: le premier est singulier et le second pluriel.",
+  "why": {
+    "1": "Chaîne/reconstruction : Le premier sujet est singulier et le second pluriel; chaque verbe se reconstruit avec son propre sujet. Option 1 : Les deux accords sont inversés.",
+    "2": "Chaîne/reconstruction : Le premier sujet est singulier et le second pluriel; chaque verbe se reconstruit avec son propre sujet. Option 2 : Les deux accords singulier puis pluriel sont corrects.",
+    "3": "Chaîne/reconstruction : Le premier sujet est singulier et le second pluriel; chaque verbe se reconstruit avec son propre sujet. Option 3 : Le second verbe reste à tort au singulier.",
+    "4": "Chaîne/reconstruction : Le premier sujet est singulier et le second pluriel; chaque verbe se reconstruit avec son propre sujet. Option 4 : Le premier verbe subit l'attraction du pluriel.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-12",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "accord_sujet_verbe",
+    "mechanism_id": "deux_sujets_deux_verbes",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "distinguer les tâches de deux responsables grammaticaux",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "La responsable du module ___ les formulaires, tandis que ses adjointes les ___ aux candidates."
+},
+{
+  "id": "drill40q-13-4",
+  "rule": "sujetverbe",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Au dossier figurent les signatures requises."
+    },
+    {
+      "key": "2",
+      "text": "Sous le tableau apparaît la source consultée."
+    },
+    {
+      "key": "3",
+      "text": "À ces motifs s'ajoutent deux contraintes nouvelles."
+    },
+    {
+      "key": "4",
+      "text": "Dans la dernière partie sont présentées les conclusions."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "T",
+  "explanation": "Toutes les phrases accordent correctement le verbe selon le mécanisme canonique isolé dans leur candidat.",
+  "why": {
+    "1": "La formulation respecte l'accord du verbe avec le noyau, la personne ou le sujet postposé; aucun autre défaut décisif n'apparaît.",
+    "2": "La formulation respecte l'accord du verbe avec le noyau, la personne ou le sujet postposé; aucun autre défaut décisif n'apparaît.",
+    "3": "La formulation respecte l'accord du verbe avec le noyau, la personne ou le sujet postposé; aucun autre défaut décisif n'apparaît.",
+    "4": "La formulation respecte l'accord du verbe avec le noyau, la personne ou le sujet postposé; aucun autre défaut décisif n'apparaît.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-13",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "accord_sujet_verbe",
+    "mechanism_id": "sujet_inverse",
+    "difficulty": "niveau_examen",
+    "source_genre": "copie_eleve",
+    "communicative_purpose": "vérifier quatre accords sujet-verbe avant remise",
+    "cognitive_mode": "revision_authentique",
+    "writing_situation": {
+      "level": "adulte en formation HEP",
+      "genre": "copie de français argumentatif ou compte rendu",
+      "topic": "bilan d'une commission",
+      "intended_function": "réviser une formulation avant remise",
+      "writer_profile": "scripteur sérieux qui se relit et applique parfois une règle par hypercorrection"
+    }
+  },
+  "stem": "Vérifiez quatre accords dont le sujet est postposé."
+},
+{
+  "id": "drill40h-14-1",
+  "rule": "modes",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "vérifiera / contienne"
+    },
+    {
+      "key": "2",
+      "text": "vérifie / contienne"
+    },
+    {
+      "key": "3",
+      "text": "vérifiera / contient"
+    },
+    {
+      "key": "4",
+      "text": "vérifie / contient"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "L'exigence appelle le subjonctif; la proposition qui rapporte un constat autonome reste à l'indicatif.",
+  "why": {
+    "1": "Chaîne/reconstruction : La proposition de nécessité prend le subjonctif, tandis que le constat factuel prend l'indicatif. Option 1 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "2": "Chaîne/reconstruction : La proposition de nécessité prend le subjonctif, tandis que le constat factuel prend l'indicatif. Option 2 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "3": "Chaîne/reconstruction : La proposition de nécessité prend le subjonctif, tandis que le constat factuel prend l'indicatif. Option 3 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "4": "Chaîne/reconstruction : La proposition de nécessité prend le subjonctif, tandis que le constat factuel prend l'indicatif. Option 4 : La forme applique exactement la chaîne reconstruite.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-14",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "subjonctif_indicatif",
+    "mechanism_id": "double_contraste_modes",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "rappeler une exigence avant une échéance",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Il faut que le secrétariat ___ le formulaire, alors que la tutrice constate qu'il ___ toutes les signatures."
+},
+{
+  "id": "drill40s-15-1",
+  "rule": "modes",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "ait délibéré / signe"
+    },
+    {
+      "key": "2",
+      "text": "a délibéré / signe"
+    },
+    {
+      "key": "3",
+      "text": "a délibéré / signera"
+    },
+    {
+      "key": "4",
+      "text": "ait délibéré / signera"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "Après que présente ici un fait accompli à l'indicatif; avant que introduit le fait attendu au subjonctif.",
+  "why": {
+    "1": "Après que appelle ici l'indicatif; le subjonctif passé est fautif, même si le subjonctif après avant que est correct.",
+    "2": "Le passé composé à l'indicatif après après que et le subjonctif présent signe après avant que respectent les deux régimes.",
+    "3": "L'indicatif après après que est correct, mais le futur après avant que remplace à tort le subjonctif attendu.",
+    "4": "Le subjonctif après après que et le futur après avant que contreviennent tous deux aux régimes ciblés.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-15",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "subjonctif_indicatif",
+    "mechanism_id": "apres_que_indicatif",
+    "difficulty": "niveau_examen",
+    "source_genre": "recit",
+    "communicative_purpose": "situer un fait achevé avant un autre fait passé",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Après que le jury ___, la secrétaire a relu le procès-verbal avant que la présidente le ___."
+},
+{
+  "id": "drill40h-16-3",
+  "rule": "modes",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "soit / connaît"
+    },
+    {
+      "key": "2",
+      "text": "est / connaisse"
+    },
+    {
+      "key": "3",
+      "text": "soit / connaisse"
+    },
+    {
+      "key": "4",
+      "text": "est / connaît"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Bien que et quoique commandent le subjonctif; la proposition factuelle gouvernée par montrer, confirmer ou révéler reste à l'indicatif.",
+  "why": {
+    "1": "Chaîne/reconstruction : Bien que/quoique régit le subjonctif, tandis que montre/confirme/atteste/révèle un fait à l'indicatif. Option 1 : La forme applique exactement la chaîne reconstruite.",
+    "2": "Chaîne/reconstruction : Bien que/quoique régit le subjonctif, tandis que montre/confirme/atteste/révèle un fait à l'indicatif. Option 2 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "3": "Chaîne/reconstruction : Bien que/quoique régit le subjonctif, tandis que montre/confirme/atteste/révèle un fait à l'indicatif. Option 3 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "4": "Chaîne/reconstruction : Bien que/quoique régit le subjonctif, tandis que montre/confirme/atteste/révèle un fait à l'indicatif. Option 4 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-16",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "subjonctif_indicatif",
+    "mechanism_id": "concession_et_constat",
+    "difficulty": "niveau_examen",
+    "source_genre": "article",
+    "communicative_purpose": "nuancer l'appréciation d'une décision prudente",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Quoique la procédure ___ complexe, le compte rendu atteste que l'équipe la ___."
+},
+{
+  "id": "drill40h-17-2",
+  "rule": "modes",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "est signé / comporte"
+    },
+    {
+      "key": "2",
+      "text": "soit signé / comporterait"
+    },
+    {
+      "key": "3",
+      "text": "soit signé / comporte"
+    },
+    {
+      "key": "4",
+      "text": "est signé / comporterait"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "L'exigence commande le subjonctif, tandis que le constat présente un fait et appelle l'indicatif.",
+  "why": {
+    "1": "Comporte convient après observe que, mais est signé est fautif après souhaite que.",
+    "2": "Soit signé convient après souhaite que, mais comporterait introduit un conditionnel injustifié après observe que.",
+    "3": "Soit signé est au subjonctif après souhaite que et comporte à l'indicatif après observe que.",
+    "4": "Est signé évite à tort le subjonctif de volonté et comporterait évite à tort l'indicatif du constat.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-17",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "subjonctif_indicatif",
+    "mechanism_id": "double_contraste_modes",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "distinguer une exigence d'un constat dans la même note",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Le jury souhaite que le rapport ___ ce soir et observe qu'il ___ les signatures requises."
+},
+{
+  "id": "drill40h-18-4",
+  "rule": "modes",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Le jury annonça qu'il publiera sa décision le 7 décembre."
+    },
+    {
+      "key": "2",
+      "text": "Le jury annonça qu'il publierait sa décision le 7 décembre."
+    },
+    {
+      "key": "3",
+      "text": "Le jury annonça qu'il publiait sa décision le 7 décembre."
+    },
+    {
+      "key": "4",
+      "text": "Le jury annonça qu'il avait publié sa décision le 7 décembre."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "L'action est future par rapport à une annonce passée; le conditionnel présent exprime ce futur dans le passé.",
+  "why": {
+    "1": "Chaîne/reconstruction : Le rapport est postérieur à toutes les dates; l'action annoncée était future depuis le repère passé, donc au conditionnel. Option 1 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "2": "Chaîne/reconstruction : Le rapport est postérieur à toutes les dates; l'action annoncée était future depuis le repère passé, donc au conditionnel. Option 2 : La forme applique exactement la chaîne reconstruite.",
+    "3": "Chaîne/reconstruction : Le rapport est postérieur à toutes les dates; l'action annoncée était future depuis le repère passé, donc au conditionnel. Option 3 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "4": "Chaîne/reconstruction : Le rapport est postérieur à toutes les dates; l'action annoncée était future depuis le repère passé, donc au conditionnel. Option 4 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-18",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "concordance_temps",
+    "mechanism_id": "futur_dans_le_passe",
+    "difficulty": "niveau_examen",
+    "source_genre": "recit",
+    "communicative_purpose": "rapporter une annonce passée et son échéance ultérieure",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Le bilan du 12 décembre reprend une annonce du jury faite le 3 décembre à propos du 7 décembre. Choisissez la restitution temporelle correcte."
+},
+{
+  "id": "drill40u-19-1",
+  "rule": "modes",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Le 2 juin 2026, elle déclara que la réunion aura lieu le 5 juin 2026."
+    },
+    {
+      "key": "2",
+      "text": "Le 8 juin 2026, il constata que la panne commencerait le 6 juin 2026."
+    },
+    {
+      "key": "3",
+      "text": "Le 10 juin 2026, elle annonça qu'elle avait transmis le dossier le 12 juin 2026."
+    },
+    {
+      "key": "4",
+      "text": "Le 14 juin 2026, il expliqua que la formation durera depuis le 1er juin 2026."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "A",
+  "explanation": "Aucune phrase n'est correcte: les dates imposent respectivement le conditionnel, le plus-que-parfait ou l'imparfait selon le rapport temporel.",
+  "why": {
+    "1": "Le 5 juin est postérieur à la déclaration du 2; le futur dans le passé exige aurait lieu, non aura lieu.",
+    "2": "Le début du 6 juin est antérieur au constat du 8; commencerait devrait être avait commencé.",
+    "3": "La transmission du 12 est postérieure à l'annonce du 10; avait transmis inverse l'ordre temporel.",
+    "4": "Depuis le 1er juin décrit une durée déjà en cours le 14; durera au futur simple est incompatible.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-19",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "concordance_temps",
+    "mechanism_id": "reperage_temporel",
+    "difficulty": "niveau_examen",
+    "source_genre": "copie_eleve",
+    "communicative_purpose": "corriger la chronologie d'un récit rétrospectif",
+    "cognitive_mode": "revision_authentique",
+    "writing_situation": {
+      "level": "adulte en formation HEP",
+      "genre": "copie de français argumentatif ou compte rendu",
+      "topic": "récit d'une procédure de sélection",
+      "intended_function": "réviser une formulation avant remise",
+      "writer_profile": "scripteur sérieux qui se relit et applique parfois une règle par hypercorrection"
+    }
+  },
+  "stem": "Le bilan est rédigé le 20 juin 2026; chaque phrase rapporte au passé un fait dont la date fixe l'antériorité, la simultanéité ou la postériorité."
+},
+{
+  "id": "drill40q-20-3",
+  "rule": "modes",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "restera / retenait"
+    },
+    {
+      "key": "2",
+      "text": "restait / retiendra"
+    },
+    {
+      "key": "3",
+      "text": "resterait / retiendrait"
+    },
+    {
+      "key": "4",
+      "text": "resterait / retenait"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "Une hypothèse à l'imparfait appelle ici une ou plusieurs conséquences au conditionnel présent.",
+  "why": {
+    "1": "La formulation contrevient à le rapport temporel ou hypothétique imposé par les repères du contexte; elle ne convient pas dans le contexte imposé.",
+    "2": "La formulation contrevient à le rapport temporel ou hypothétique imposé par les repères du contexte; elle ne convient pas dans le contexte imposé.",
+    "3": "La formulation contrevient à le rapport temporel ou hypothétique imposé par les repères du contexte; elle ne convient pas dans le contexte imposé.",
+    "4": "La formulation respecte le rapport temporel ou hypothétique imposé par les repères du contexte; aucun autre défaut décisif n'apparaît.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-20",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "concordance_temps",
+    "mechanism_id": "hypothese_si_imparfait_conditionnel",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "examiner une solution conditionnelle sans employer un gabarit isolé",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Le rapport envisage la fermeture de la salle sans la tenir pour acquise: la solution ___ applicable si la direction la ___."
+},
+{
+  "id": "drill40q-21-4",
+  "rule": "conjugaison",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Souviens-en."
+    },
+    {
+      "key": "2",
+      "text": "T'en souviens."
+    },
+    {
+      "key": "3",
+      "text": "Souviens-t'en."
+    },
+    {
+      "key": "4",
+      "text": "Souviens t'en."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "À l'impératif affirmatif, le pronom suit le verbe et s'y relie par un trait d'union; certaines formes prennent un s devant en ou y.",
+  "why": {
+    "1": "Le verbe pronominal exige le pronom réfléchi t' avant en: Souviens-t'en.",
+    "2": "T'en souviens a l'ordre de l'indicatif, non celui de l'impératif affirmatif.",
+    "3": "Souviens-t'en respecte la postposition des pronoms et les deux traits d'union.",
+    "4": "Les traits d'union obligatoires de l'impératif affirmatif sont absents.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-21",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "conjugaison",
+    "mechanism_id": "imperatif_et_pronoms",
+    "difficulty": "niveau_examen",
+    "source_genre": "consigne",
+    "communicative_purpose": "donner une instruction comportant le pronom en",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "La consigne principale a été expliquée; choisissez l'ordre qui demande à l'interlocuteur de s'en souvenir."
+},
+{
+  "id": "drill40r-22-4",
+  "rule": "conjugaison",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "verrez / tiendrons"
+    },
+    {
+      "key": "2",
+      "text": "voirrez / tiendrons"
+    },
+    {
+      "key": "3",
+      "text": "verrez / tiendrions"
+    },
+    {
+      "key": "4",
+      "text": "voyez / tenions"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Les deux actions appartiennent à une chronologie future certaine; les radicaux irréguliers et, le cas échéant, le futur antérieur doivent tous être correctement formés.",
+  "why": {
+    "1": "Verrez et tiendrons sont les deux futurs simples irréguliers requis par la visite confirmée de lundi.",
+    "2": "Voirrez applique à tort le radical de l'infinitif; le futur normatif est verrez.",
+    "3": "Tiendrions est un conditionnel et rend incertaine une réunion annoncée comme confirmée.",
+    "4": "Voyez au présent et tenions à l'imparfait ne situent pas les deux actions lors de la visite future.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-22",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "conjugaison",
+    "mechanism_id": "futur_irregulier",
+    "difficulty": "niveau_examen",
+    "source_genre": "note_administrative",
+    "communicative_purpose": "annoncer une action rendue possible ultérieurement",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "La visite de lundi est confirmée: vous ___ les nouveaux locaux et nous y ___ la réunion de clôture."
+},
+{
+  "id": "drill40q-23-4",
+  "rule": "conjugaison",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "La directrice annonçait qu'elle transmettra le rapport en mars."
+    },
+    {
+      "key": "2",
+      "text": "La directrice annonçait qu'elle transmettait le rapport en mars."
+    },
+    {
+      "key": "3",
+      "text": "La directrice annonçait qu'elle aurait transmis le rapport en mars."
+    },
+    {
+      "key": "4",
+      "text": "La directrice annonçait qu'elle transmettrait le rapport en mars."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "Le conditionnel prend ici une valeur précisée par le contexte: conséquence hypothétique, atténuation, information sous réserve ou futur dans le passé.",
+  "why": {
+    "1": "La formulation contrevient à la personne, le temps, le mode et l'ordre des pronoms imposés par le contexte; elle ne convient pas dans le contexte imposé.",
+    "2": "La formulation contrevient à la personne, le temps, le mode et l'ordre des pronoms imposés par le contexte; elle ne convient pas dans le contexte imposé.",
+    "3": "La formulation contrevient à la personne, le temps, le mode et l'ordre des pronoms imposés par le contexte; elle ne convient pas dans le contexte imposé.",
+    "4": "La formulation respecte la personne, le temps, le mode et l'ordre des pronoms imposés par le contexte; aucun autre défaut décisif n'apparaît.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-23",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "conjugaison",
+    "mechanism_id": "conditionnel",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "interpréter la valeur contextuelle du conditionnel dans plusieurs écrits professionnels",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "En janvier, la directrice annonçait une transmission prévue pour mars. Choisissez la restitution correcte depuis ce repère passé."
+},
+{
+  "id": "drill40h-24-3",
+  "rule": "relatifs",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "que"
+    },
+    {
+      "key": "2",
+      "text": "dont"
+    },
+    {
+      "key": "3",
+      "text": "pour laquelle"
+    },
+    {
+      "key": "4",
+      "text": "sur laquelle"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "Dont reprend un complément construit avec de: les conclusions de l'étude.",
+  "why": {
+    "1": "Chaîne/reconstruction : Le nom interne se reconstruit avec de l'antécédent; le relatif possessif est dont. Option 1 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "2": "Chaîne/reconstruction : Le nom interne se reconstruit avec de l'antécédent; le relatif possessif est dont. Option 2 : La forme applique exactement la chaîne reconstruite.",
+    "3": "Chaîne/reconstruction : Le nom interne se reconstruit avec de l'antécédent; le relatif possessif est dont. Option 3 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "4": "Chaîne/reconstruction : Le nom interne se reconstruit avec de l'antécédent; le relatif possessif est dont. Option 4 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-24",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "pronoms_relatifs",
+    "mechanism_id": "regime_de_dont",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "identifier un document par l'un de ses contenus",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "La recherche ___ les résultats ont surpris le jury sera publiée cet automne."
+},
+{
+  "id": "drill40h-25-4",
+  "rule": "relatifs",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "lequel"
+    },
+    {
+      "key": "2",
+      "text": "sur lequel"
+    },
+    {
+      "key": "3",
+      "text": "auquel"
+    },
+    {
+      "key": "4",
+      "text": "dont"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "Le verbe ou la locution se construit avec à; le relatif composé correspondant est auquel.",
+  "why": {
+    "1": "Chaîne/reconstruction : Se conformer à, se référer à et tenir à imposent auquel. Option 1 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "2": "Chaîne/reconstruction : Se conformer à, se référer à et tenir à imposent auquel. Option 2 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "3": "Chaîne/reconstruction : Se conformer à, se référer à et tenir à imposent auquel. Option 3 : La forme applique exactement la chaîne reconstruite.",
+    "4": "Chaîne/reconstruction : Se conformer à, se référer à et tenir à imposent auquel. Option 4 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-25",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "pronoms_relatifs",
+    "mechanism_id": "regime_a_auquel",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "désigner la norme à laquelle une équipe se réfère",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Le principe ___ la direction tient figure dans la charte."
+},
+{
+  "id": "drill40t-26-4",
+  "rule": "relatifs",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Le dossier dont nous en avons parlé sera transmis."
+    },
+    {
+      "key": "2",
+      "text": "La mesure à laquelle le conseil en débat sera modifiée."
+    },
+    {
+      "key": "3",
+      "text": "Le projet que la direction en finance la première phase sera lancé."
+    },
+    {
+      "key": "4",
+      "text": "Le règlement dont les membres en contestent l'article final sera corrigé."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "A",
+  "explanation": "Aucune phrase n'est correcte: le relatif doit reproduire exactement le régime direct, en à ou en de du verbe, sans reprise redondante.",
+  "why": {
+    "1": "Dont et en reprennent tous deux le dossier comme complément de parler de; la reprise est redondante.",
+    "2": "Débattre de la mesure appelle dont sans en; à laquelle est de mauvais régime et en rend la reprise superflue.",
+    "3": "La première phase du projet appelle dont; que est sans fonction tandis que en reprend déjà le projet.",
+    "4": "Dont et en reprennent tous deux le règlement dans le groupe l'article du règlement; le cumul est fautif.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-26",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "pronoms_relatifs",
+    "mechanism_id": "redondance_relative_pronom",
+    "difficulty": "niveau_examen",
+    "source_genre": "copie_eleve",
+    "communicative_purpose": "corriger des relatifs dans une copie argumentée",
+    "cognitive_mode": "revision_authentique",
+    "writing_situation": {
+      "level": "adulte en formation HEP",
+      "genre": "copie de français argumentatif ou compte rendu",
+      "topic": "analyse d'un règlement scolaire",
+      "intended_function": "réviser une formulation avant remise",
+      "writer_profile": "scripteur sérieux qui se relit et applique parfois une règle par hypercorrection"
+    }
+  },
+  "stem": "Le nom repris doit remplir une seule fonction dans la relative; vérifiez le relatif et toute reprise pronominale."
+},
+{
+  "id": "drill40h-27-4",
+  "rule": "pronoms",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "en"
+    },
+    {
+      "key": "2",
+      "text": "lui"
+    },
+    {
+      "key": "3",
+      "text": "le"
+    },
+    {
+      "key": "4",
+      "text": "y"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Le verbe se construit avec de; le pronom en reprend ce complément.",
+  "why": {
+    "1": "Chaîne/reconstruction : Discuter de, débattre de, traiter de et parler de reprennent le complément par en. Option 1 : La forme applique exactement la chaîne reconstruite.",
+    "2": "Chaîne/reconstruction : Discuter de, débattre de, traiter de et parler de reprennent le complément par en. Option 2 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "3": "Chaîne/reconstruction : Discuter de, débattre de, traiter de et parler de reprennent le complément par en. Option 3 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "4": "Chaîne/reconstruction : Discuter de, débattre de, traiter de et parler de reprennent le complément par en. Option 4 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-27",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "pronoms_reprise",
+    "mechanism_id": "complement_de_en",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "reprendre un thème déjà nommé sans répétition",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Cette difficulté, les tutrices ___ parlent souvent en formation."
+},
+{
+  "id": "drill40h-28-4",
+  "rule": "pronoms",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "en a ensuite"
+    },
+    {
+      "key": "2",
+      "text": "y a ensuite"
+    },
+    {
+      "key": "3",
+      "text": "lui a ensuite"
+    },
+    {
+      "key": "4",
+      "text": "l'a ensuite"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "Une proposition entière annoncée auparavant se reprend par le pronom neutre le, élidé devant a.",
+  "why": {
+    "1": "Chaîne/reconstruction : Une proposition entière se reprend par le pronom neutre le, élidé devant l'auxiliaire. Option 1 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "2": "Chaîne/reconstruction : Une proposition entière se reprend par le pronom neutre le, élidé devant l'auxiliaire. Option 2 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "3": "Chaîne/reconstruction : Une proposition entière se reprend par le pronom neutre le, élidé devant l'auxiliaire. Option 3 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "4": "Chaîne/reconstruction : Une proposition entière se reprend par le pronom neutre le, élidé devant l'auxiliaire. Option 4 : La forme applique exactement la chaîne reconstruite.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-28",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "pronoms_reprise",
+    "mechanism_id": "reprise_proposition_le",
+    "difficulty": "niveau_examen",
+    "source_genre": "courriel",
+    "communicative_purpose": "confirmer une information annoncée dans la phrase précédente",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Les résultats resteront confidentiels; le jury nous ___ précisé avant l'entretien."
+},
+{
+  "id": "drill40h-29-3",
+  "rule": "prepositions",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Elle doute à la méthode, mais elle s'y fie."
+    },
+    {
+      "key": "2",
+      "text": "Elle doute de la méthode, mais elle s'y fie."
+    },
+    {
+      "key": "3",
+      "text": "Elle doute de la méthode, mais elle s'en fie."
+    },
+    {
+      "key": "4",
+      "text": "Elle doute à la méthode, mais elle s'en fie."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "Le premier et le second verbes n'imposent pas le même régime; chaque complément doit être reconstruit séparément.",
+  "why": {
+    "1": "Chaîne/reconstruction : Le premier verbe régit de et le second à; il faut de/du puis y. Option 1 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "2": "Chaîne/reconstruction : Le premier verbe régit de et le second à; il faut de/du puis y. Option 2 : La forme applique exactement la chaîne reconstruite.",
+    "3": "Chaîne/reconstruction : Le premier verbe régit de et le second à; il faut de/du puis y. Option 3 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "4": "Chaîne/reconstruction : Le premier verbe régit de et le second à; il faut de/du puis y. Option 4 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-29",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "prepositions_regies",
+    "mechanism_id": "coordination_regimes_differents",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "décrire sans rupture de régime deux actions liées à un projet",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "La phrase doit relier un doute sur la méthode et la confiance finalement accordée à celle-ci."
+},
+{
+  "id": "drill40h-30-4",
+  "rule": "prepositions",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "La procédure est identique avec l'ancienne."
+    },
+    {
+      "key": "2",
+      "text": "La tutrice est consciente aux difficultés."
+    },
+    {
+      "key": "3",
+      "text": "Le dispositif est utile aux équipes de terrain."
+    },
+    {
+      "key": "4",
+      "text": "Le rapport est riche avec des exemples précis."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "La phrase correcte associe l'adjectif à sa préposition régie; les autres procèdent par analogie fautive.",
+  "why": {
+    "1": "Chaîne/reconstruction : Chaque adjectif possède son régime propre; une seule phrase de chaque série le respecte. Option 1 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "2": "Chaîne/reconstruction : Chaque adjectif possède son régime propre; une seule phrase de chaque série le respecte. Option 2 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "3": "Chaîne/reconstruction : Chaque adjectif possède son régime propre; une seule phrase de chaque série le respecte. Option 3 : La forme applique exactement la chaîne reconstruite.",
+    "4": "Chaîne/reconstruction : Chaque adjectif possède son régime propre; une seule phrase de chaque série le respecte. Option 4 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-30",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "prepositions_regies",
+    "mechanism_id": "adjectif_et_preposition",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "certifier qu'un document respecte des exigences officielles",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Une seule formulation respecte le régime propre de l'adjectif."
+},
+{
+  "id": "drill40q-31-4",
+  "rule": "prepositions",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "La commission participe à la réunion et se souvient de la décision."
+    },
+    {
+      "key": "2",
+      "text": "Le jury renonce au report mais doute de son utilité."
+    },
+    {
+      "key": "3",
+      "text": "La responsable tient à l'entretien et dispose du dossier."
+    },
+    {
+      "key": "4",
+      "text": "L'équipe se conforme au protocole et se méfie des raccourcis."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "T",
+  "explanation": "Toutes les propositions respectent le régime canonique isolé dans leur candidat; les coordinations reconstruisent chaque complément séparément.",
+  "why": {
+    "1": "La formulation respecte le régime prépositionnel propre au verbe ou à l'adjectif; aucun autre défaut décisif n'apparaît.",
+    "2": "La formulation respecte le régime prépositionnel propre au verbe ou à l'adjectif; aucun autre défaut décisif n'apparaît.",
+    "3": "La formulation respecte le régime prépositionnel propre au verbe ou à l'adjectif; aucun autre défaut décisif n'apparaît.",
+    "4": "La formulation respecte le régime prépositionnel propre au verbe ou à l'adjectif; aucun autre défaut décisif n'apparaît.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-31",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "prepositions_regies",
+    "mechanism_id": "coordination_regimes_differents",
+    "difficulty": "niveau_examen",
+    "source_genre": "copie_eleve",
+    "communicative_purpose": "valider quatre régimes dans une copie",
+    "cognitive_mode": "revision_authentique",
+    "writing_situation": {
+      "level": "adulte en formation HEP",
+      "genre": "copie de français argumentatif ou compte rendu",
+      "topic": "compte rendu d'un projet collectif",
+      "intended_function": "réviser une formulation avant remise",
+      "writer_profile": "scripteur sérieux qui se relit et applique parfois une règle par hypercorrection"
+    }
+  },
+  "stem": "Relisez quatre autres coordinations de régimes différents."
+},
+{
+  "id": "drill40q-32-3",
+  "rule": "discours",
+  "type": "transformation",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Karim a demandé quand il recevrait ses résultats."
+    },
+    {
+      "key": "2",
+      "text": "Karim a demandé quand recevrait-il ses résultats."
+    },
+    {
+      "key": "3",
+      "text": "Karim a demandé s'il recevrait quand ses résultats."
+    },
+    {
+      "key": "4",
+      "text": "Karim a demandé quand il recevra mes résultats."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Le discours indirect adapte le temps, les personnes et, selon le cas, les repères de lieu et de date ou la syntaxe interrogative.",
+  "why": {
+    "1": "La formulation respecte la transposition des temps, personnes, possessifs et déictiques; aucun autre défaut décisif n'apparaît.",
+    "2": "La formulation contrevient à la transposition des temps, personnes, possessifs et déictiques; elle ne convient pas dans le contexte imposé.",
+    "3": "La formulation contrevient à la transposition des temps, personnes, possessifs et déictiques; elle ne convient pas dans le contexte imposé.",
+    "4": "La formulation contrevient à la transposition des temps, personnes, possessifs et déictiques; elle ne convient pas dans le contexte imposé.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-32",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "discours_indirect",
+    "mechanism_id": "futur_vers_conditionnel",
+    "difficulty": "niveau_examen",
+    "source_genre": "dialogue",
+    "communicative_purpose": "rapporter fidèlement une promesse passée",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Karim a demandé lundi: « Quand recevrai-je mes résultats? » Le compte rendu rapporte maintenant sa question."
+},
+{
+  "id": "drill40t-33-4",
+  "rule": "discours",
+  "type": "transformation",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Les jurés ont annoncé que nous vous enverrons nos avis la semaine prochaine."
+    },
+    {
+      "key": "2",
+      "text": "Les jurés ont annoncé à la secrétaire qu'ils lui enverront leurs avis la semaine suivante."
+    },
+    {
+      "key": "3",
+      "text": "Les jurés ont annoncé à la secrétaire qu'ils lui enverraient leurs avis la semaine prochaine."
+    },
+    {
+      "key": "4",
+      "text": "Les jurés ont annoncé à la secrétaire qu'ils lui enverraient leurs avis la semaine suivante."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "L'option 4 adapte les personnes et le temps, puis remplace les déictiques par les dates ou les lieux explicitement ancrés dans l'amorce.",
+  "why": {
+    "1": "Les personnes, les possessifs, le futur et le repère de semaine restent ceux du discours direct.",
+    "2": "Les personnes et la semaine sont adaptés, mais enverront reste au futur simple après l'annonce passée.",
+    "3": "Les personnes et le conditionnel sont adaptés, mais la semaine prochaine reste ancrée dans le discours direct.",
+    "4": "Ils, lui, leurs, enverraient et la semaine suivante transposent correctement toute l'annonce.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-33",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "discours_indirect",
+    "mechanism_id": "deictiques_ancres",
+    "difficulty": "niveau_examen",
+    "source_genre": "dialogue",
+    "communicative_purpose": "rapporter des paroles en adaptant tous les embrayeurs",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Le 18 novembre, la secrétaire rapporte l'annonce que les jurés lui ont faite le 3 novembre: « Nous vous enverrons nos avis la semaine prochaine. »"
+},
+{
+  "id": "drill40q-34-2",
+  "rule": "connecteurs",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "La plateforme simplifie l'accès; ainsi, elle exige une formation longue."
+    },
+    {
+      "key": "2",
+      "text": "La plateforme simplifie l'accès; de plus, elle exige une formation longue."
+    },
+    {
+      "key": "3",
+      "text": "La plateforme simplifie l'accès; cependant, elle exige une formation longue."
+    },
+    {
+      "key": "4",
+      "text": "La plateforme simplifie l'accès; par conséquent, elle exige une formation longue."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "Le contexte oppose un avantage à son coût ou à sa contrepartie; le connecteur de l'option 3 rend cette relation.",
+  "why": {
+    "1": "Ainsi exprime une conséquence et ne contredit pas l'inférence formulée.",
+    "2": "De plus juxtapose les faits sans coder la contradiction demandée.",
+    "3": "Cependant marque explicitement la contrainte inattendue malgré l'accès simplifié.",
+    "4": "Par conséquent transforme à tort la formation en conséquence logique de la simplification.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-34",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "connecteurs_logiques",
+    "mechanism_id": "opposition",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "opposer explicitement un avantage à une contrepartie",
+    "cognitive_mode": "jugement_semantique",
+    "writing_situation": null
+  },
+  "stem": "La plateforme simplifie l'accès. La seconde proposition doit contredire l'inférence selon laquelle cette simplification réduit toutes les contraintes."
+},
+{
+  "id": "drill40q-35-2",
+  "rule": "connecteurs",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Quelque limité que soit le budget, le projet continuera."
+    },
+    {
+      "key": "2",
+      "text": "Pour limité qu'il soit, le budget permettra au projet de continuer."
+    },
+    {
+      "key": "3",
+      "text": "Quand bien même le budget diminuerait, le projet continuerait."
+    },
+    {
+      "key": "4",
+      "text": "Le budget aurait beau diminuer, le projet continuerait."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "T",
+  "explanation": "Les quatre formulations expriment correctement la concession, avec le mode requis par chaque construction.",
+  "why": {
+    "1": "La formulation respecte la relation logique explicitement imposée par les deux propositions; aucun autre défaut décisif n'apparaît.",
+    "2": "La formulation respecte la relation logique explicitement imposée par les deux propositions; aucun autre défaut décisif n'apparaît.",
+    "3": "La formulation respecte la relation logique explicitement imposée par les deux propositions; aucun autre défaut décisif n'apparaît.",
+    "4": "La formulation respecte la relation logique explicitement imposée par les deux propositions; aucun autre défaut décisif n'apparaît.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-35",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "connecteurs_logiques",
+    "mechanism_id": "concession",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "exprimer une concession stable sous quatre formes",
+    "cognitive_mode": "jugement_semantique",
+    "writing_situation": null
+  },
+  "stem": "Relisez quatre formulations visant à maintenir le projet malgré un budget limité."
+},
+{
+  "id": "drill40h-36-1",
+  "rule": "adjverbal",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "fatigantes"
+    },
+    {
+      "key": "2",
+      "text": "fatiguant"
+    },
+    {
+      "key": "3",
+      "text": "fatiguantes"
+    },
+    {
+      "key": "4",
+      "text": "fatigant"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "Avec un complément direct, fatiguant est un participe présent, invariable et écrit avec -guant.",
+  "why": {
+    "1": "Chaîne/reconstruction : Le complément verbal qui suit impose le participe présent invariable en -quant/-guant. Option 1 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "2": "Chaîne/reconstruction : Le complément verbal qui suit impose le participe présent invariable en -quant/-guant. Option 2 : La forme applique exactement la chaîne reconstruite.",
+    "3": "Chaîne/reconstruction : Le complément verbal qui suit impose le participe présent invariable en -quant/-guant. Option 3 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "4": "Chaîne/reconstruction : Le complément verbal qui suit impose le participe présent invariable en -quant/-guant. Option 4 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-36",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "adjectif_verbal_participe_present",
+    "mechanism_id": "fatigant_fatiguant",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "expliquer pourquoi certains supports seront adaptés",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Les consignes, ___ les débutants par leur longueur, ont été raccourcies."
+},
+{
+  "id": "drill40h-37-4",
+  "rule": "adjverbal",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "intriguant"
+    },
+    {
+      "key": "2",
+      "text": "intrigants"
+    },
+    {
+      "key": "3",
+      "text": "intriguantes"
+    },
+    {
+      "key": "4",
+      "text": "intrigant"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "La forme en -ant gouverne ici un complément verbal; c'est un participe présent invariable.",
+  "why": {
+    "1": "Chaîne/reconstruction : Le mot régit un CVD ou autre complément verbal; seul le participe présent invariable convient. Option 1 : La forme applique exactement la chaîne reconstruite.",
+    "2": "Chaîne/reconstruction : Le mot régit un CVD ou autre complément verbal; seul le participe présent invariable convient. Option 2 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "3": "Chaîne/reconstruction : Le mot régit un CVD ou autre complément verbal; seul le participe présent invariable convient. Option 3 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "4": "Chaîne/reconstruction : Le mot régit un CVD ou autre complément verbal; seul le participe présent invariable convient. Option 4 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-37",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "adjectif_verbal_participe_present",
+    "mechanism_id": "participe_present_avec_complement",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "distinguer deux moments successifs d'une procédure",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Les questions ___ les candidates seront reformulées."
+},
+{
+  "id": "drill40h-38-1",
+  "rule": "pronoms",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "En relisant le rapport, plusieurs erreurs sont apparues."
+    },
+    {
+      "key": "2",
+      "text": "Après avoir consulté le dossier, la décision a été prise."
+    },
+    {
+      "key": "3",
+      "text": "En comparant les versions, la tutrice a repéré deux omissions."
+    },
+    {
+      "key": "4",
+      "text": "Convaincue par l'argument, une révision du texte s'imposa."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "Le sujet exprimé de la principale est aussi l'agent logique de la construction détachée dans la seule phrase correcte.",
+  "why": {
+    "1": "Chaîne/reconstruction : Le sujet implicite du gérondif ou du groupe détaché doit être le sujet grammatical de la principale. Option 1 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "2": "Chaîne/reconstruction : Le sujet implicite du gérondif ou du groupe détaché doit être le sujet grammatical de la principale. Option 2 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "3": "Chaîne/reconstruction : Le sujet implicite du gérondif ou du groupe détaché doit être le sujet grammatical de la principale. Option 3 : La forme applique exactement la chaîne reconstruite.",
+    "4": "Chaîne/reconstruction : Le sujet implicite du gérondif ou du groupe détaché doit être le sujet grammatical de la principale. Option 4 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-38",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "rupture_syntaxique",
+    "mechanism_id": "gerondif_sujet_implicite",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "éliminer une rupture de construction qui attribue l'action au mauvais agent",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Une seule phrase attribue clairement au même agent l'action du gérondif et celle de la principale."
+},
+{
+  "id": "drill40q-39-4",
+  "rule": "ponctuation",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Validé par le jury le rapport sera publié lundi."
+    },
+    {
+      "key": "2",
+      "text": "Validé par le jury le rapport, sera publié lundi."
+    },
+    {
+      "key": "3",
+      "text": "Validé, par le jury, le rapport sera publié lundi."
+    },
+    {
+      "key": "4",
+      "text": "Validé par le jury, le rapport sera publié lundi."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "L'apposition ou le groupe détaché est encadré ou séparé par les virgules attendues sans rompre le lien sujet-verbe.",
+  "why": {
+    "1": "La formulation contrevient à la frontière syntaxique de l'apposition, du sujet, du verbe ou du complément; elle ne convient pas dans le contexte imposé.",
+    "2": "La formulation contrevient à la frontière syntaxique de l'apposition, du sujet, du verbe ou du complément; elle ne convient pas dans le contexte imposé.",
+    "3": "La formulation contrevient à la frontière syntaxique de l'apposition, du sujet, du verbe ou du complément; elle ne convient pas dans le contexte imposé.",
+    "4": "La formulation respecte la frontière syntaxique de l'apposition, du sujet, du verbe ou du complément; aucun autre défaut décisif n'apparaît.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-39",
+    "profile": "perfectionnement",
+    "domain": "ponctuation",
+    "family": "ponctuation",
+    "mechanism_id": "apposition",
+    "difficulty": "niveau_examen",
+    "source_genre": "copie_eleve",
+    "communicative_purpose": "corriger l'emploi des virgules dans une copie",
+    "cognitive_mode": "revision_authentique",
+    "writing_situation": {
+      "level": "adulte en formation HEP",
+      "genre": "copie de français argumentatif ou compte rendu",
+      "topic": "synthèse d'une observation de classe",
+      "intended_function": "réviser une formulation avant remise",
+      "writer_profile": "scripteur sérieux qui se relit et applique parfois une règle par hypercorrection"
+    }
+  },
+  "stem": "Une seule phrase détache correctement le groupe participial placé en tête."
+},
+{
+  "id": "drill40q-40-4",
+  "rule": "sujetverbe",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Près de l'entrée se trouve les deux panneaux d'information."
+    },
+    {
+      "key": "2",
+      "text": "Dans l'annexe apparaît les résultats détaillés."
+    },
+    {
+      "key": "3",
+      "text": "À la fin du tableau figure les sources consultées."
+    },
+    {
+      "key": "4",
+      "text": "De cette analyse ressortent une conclusion principale."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "A",
+  "explanation": "Aucune phrase n'est correcte; chaque candidat isole un mécanisme canonique d'accord sujet-verbe.",
+  "why": {
+    "1": "La formulation contrevient à l'accord du verbe avec le noyau, la personne ou le sujet postposé; elle ne convient pas dans le contexte imposé.",
+    "2": "La formulation contrevient à l'accord du verbe avec le noyau, la personne ou le sujet postposé; elle ne convient pas dans le contexte imposé.",
+    "3": "La formulation contrevient à l'accord du verbe avec le noyau, la personne ou le sujet postposé; elle ne convient pas dans le contexte imposé.",
+    "4": "La formulation contrevient à l'accord du verbe avec le noyau, la personne ou le sujet postposé; elle ne convient pas dans le contexte imposé.",
+    "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+    "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+  },
+  "hep": {
+    "slot_id": "drill40-40",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "accord_sujet_verbe",
+    "mechanism_id": "sujet_inverse",
+    "difficulty": "niveau_examen",
+    "source_genre": "copie_eleve",
+    "communicative_purpose": "corriger des accords sujet-verbe dans une copie",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": {
+      "level": "adulte en formation HEP",
+      "genre": "copie de français argumentatif ou compte rendu",
+      "topic": "bilan d'une commission",
+      "intended_function": "réviser une formulation avant remise",
+      "writer_profile": "scripteur sérieux qui se relit et applique parfois une règle par hypercorrection"
+    }
+  },
+  "stem": "Relisez quatre phrases dont le sujet suit le verbe."
+},
+{
+  "id": "pond40rrrrrrrrr-01-3",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Quelques"
+    },
+    {
+      "key": "2",
+      "text": "Quelles que"
+    },
+    {
+      "key": "3",
+      "text": "Quoi que"
+    },
+    {
+      "key": "4",
+      "text": "Quelque"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "Devant un adjectif suivi de « que soient », quelque est un adverbe concessif signifiant « si »; il reste donc invariable.",
+  "why": {
+    "1": "Le candidat accorde quelques avec l'adjectif, alors que quelque est ici un adverbe invariable signifiant « si ».",
+    "2": "Le candidat emploie la locution attributive quelles que, qui devrait être suivie directement de soient et de son sujet.",
+    "3": "Le candidat emploie quoi que, qui ne peut pas modifier le degré de l'adjectif placé immédiatement après.",
+    "4": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-01",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "homophones_grammaticaux",
+    "mechanism_id": "quel_que_quelque",
+    "difficulty": "niveau_examen",
+    "source_genre": "courriel",
+    "communicative_purpose": "indiquer qu'une règle vaut indépendamment des décisions prises",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "___ ambitieuses que soient les propositions adoptées, le procès-verbal les énumérera."
+},
+{
+  "id": "pond40-02-1",
+  "rule": "orthographe",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Les stagiaires joindront leurs attestations et leur formulaire personnel."
+    },
+    {
+      "key": "2",
+      "text": "Les stagiaires joindront leur attestations et leurs formulaire personnel."
+    },
+    {
+      "key": "3",
+      "text": "Les stagiaires leurs joindront leurs attestations et leur formulaire personnel."
+    },
+    {
+      "key": "4",
+      "text": "Les stagiaires joindront leurs attestations et leurs formulaire personnel."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Le déterminant possessif s'accorde avec le nom possédé: leurs devant le pluriel et leur devant le singulier.",
+  "why": {
+    "1": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "2": "Le candidat accorde chaque possessif avec le nombre des possesseurs au lieu du nom possédé.",
+    "3": "Le candidat traite leurs comme un pronom complément alors qu'il détermine ici un nom.",
+    "4": "Le candidat met au pluriel le possessif devant un nom possédé singulier.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-02",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "homophones_grammaticaux",
+    "mechanism_id": "leur_leurs",
+    "difficulty": "niveau_examen",
+    "source_genre": "note_administrative",
+    "communicative_purpose": "préciser les documents que plusieurs personnes doivent apporter",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Une note rappelle les pièces demandées."
+},
+{
+  "id": "pond40rrr-03-1",
+  "rule": "orthographe",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Le comité a examiné prudamment le risque et répondu pertinemment aux objections."
+    },
+    {
+      "key": "2",
+      "text": "Le comité a examiné prudemment le risque et répondu pertinamment aux objections."
+    },
+    {
+      "key": "3",
+      "text": "Le comité a examiné prudemment le risque et répondu pertinemment aux objections."
+    },
+    {
+      "key": "4",
+      "text": "Le comité a examiné prudemment le risque et répondu pertinnemment aux objections."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "Prudemment se forme sur prudent avec -emment, tandis que pertinemment se forme sur pertinent; les deux adverbes doivent conserver leur graphie attestée.",
+  "why": {
+    "1": "Le candidat généralise -amment à prudent alors que l'adverbe attesté est prudemment.",
+    "2": "Le candidat forme pertinamment par analogie au lieu de pertinemment.",
+    "3": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "4": "Le candidat conserve prudemment mais double à tort le n dans pertinnemment.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-03",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "orthographe_lexicale",
+    "mechanism_id": "adverbes_amment_emment",
+    "difficulty": "niveau_examen",
+    "source_genre": "copie_eleve",
+    "communicative_purpose": "relire une phrase de rapport rédigée dans une copie",
+    "cognitive_mode": "revision_authentique",
+    "writing_situation": null
+  },
+  "stem": "Avant publication, cette phrase du rapport doit être relue; choisissez sa seule version admissible."
+},
+{
+  "id": "pond40-04-1",
+  "rule": "orthographe",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Les belges de la délégation ont salué leurs collègues Suissesses en Français."
+    },
+    {
+      "key": "2",
+      "text": "Les Suissesses ont accueilli leurs collègues belges, puis toutes ont parlé français."
+    },
+    {
+      "key": "3",
+      "text": "Les participantes suisses ont accueilli leurs collègues Belges, puis toutes ont parlé français."
+    },
+    {
+      "key": "4",
+      "text": "Les suissesses de la délégation ont accueilli leurs collègues belges en français."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "Le nom désignant une personne par sa nationalité prend une majuscule; l'adjectif de nationalité et le nom de langue gardent la minuscule.",
+  "why": {
+    "1": "Le candidat met une minuscule au nom de peuple et des majuscules à l'adjectif et au nom de langue.",
+    "2": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "3": "Le candidat applique la majuscule au nom de peuple mais aussi, à tort, à l'adjectif de nationalité.",
+    "4": "Le candidat met une minuscule au nom de peuple employé comme nom, malgré sa fonction clairement nominale.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-04",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "gentiles_majuscules",
+    "mechanism_id": "nom_peuple_adjectif_langue",
+    "difficulty": "niveau_examen",
+    "source_genre": "article",
+    "communicative_purpose": "présenter des participantes et la langue d'un échange",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Une brève présente une délégation."
+},
+{
+  "id": "pond40-05-1",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "complet"
+    },
+    {
+      "key": "2",
+      "text": "complètes"
+    },
+    {
+      "key": "3",
+      "text": "complets"
+    },
+    {
+      "key": "4",
+      "text": "complète"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "L'attribut s'accorde avec le noyau singulier du sujet, non avec le nom pluriel placé dans son complément.",
+  "why": {
+    "1": "Le candidat accorde l'attribut au masculin comme s'il qualifiait le complément voisin.",
+    "2": "Le candidat fait un accord de proximité au pluriel avec le nom inclus dans le complément.",
+    "3": "Le candidat cumule un accord de proximité et un genre qui ne correspond pas au noyau du sujet.",
+    "4": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-05",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "accord_adjectif_nom",
+    "mechanism_id": "donneur_eloigne",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "décrire l'état d'un ensemble de pièces après vérification",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "La série de pièces justificatives est désormais ___."
+},
+{
+  "id": "pond40-06-1",
+  "rule": "eleves",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Ces bibliothèques de quartier offrent aux jeunes des espaces qu'ils apprécient."
+    },
+    {
+      "key": "2",
+      "text": "Ses bibliothèques de quartier offre aux jeunes des espaces qu'ils apprécient."
+    },
+    {
+      "key": "3",
+      "text": "Ces bibliothèques de quartier offrent aux jeunes des espaces qu'il apprécie."
+    },
+    {
+      "key": "4",
+      "text": "C'est bibliothèques de quartier offrent aux jeunes des espaces qu'ils apprécient."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "La première phrase respecte à la fois le déterminant démonstratif, l'accord du verbe et la reprise pronominale ou relative.",
+  "why": {
+    "1": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "2": "Le scripteur confond le démonstratif avec le possessif et rompt en plus l'accord du verbe avec le sujet pluriel.",
+    "3": "Le scripteur accorde le pronom ou choisit le relatif d'après un nom voisin au lieu de reconstruire sa fonction.",
+    "4": "Le scripteur remplace le déterminant démonstratif pluriel par la tournure présentative c'est.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-06",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "revision_transversale",
+    "mechanism_id": "revision_homophones_et_accords",
+    "difficulty": "niveau_examen",
+    "source_genre": "copie_eleve",
+    "communicative_purpose": "introduire un bilan de lecture dans une copie argumentative",
+    "cognitive_mode": "revision_authentique",
+    "writing_situation": {
+      "level": "gymnase",
+      "genre": "paragraphe argumentatif",
+      "topic": "accès à la culture",
+      "intended_function": "introduire un argument étayé",
+      "writer_profile": "élève de gymnase sérieux qui se relit"
+    }
+  },
+  "stem": "Quatre élèves introduisent un argument."
+},
+{
+  "id": "pond40-07-1",
+  "rule": "eleves",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "La mesure dont nous pensons profiterait aux personnes qui dépendent au bus."
+    },
+    {
+      "key": "2",
+      "text": "La mesure à laquelle nous pensons profiterait aux personnes dont dépendent du bus."
+    },
+    {
+      "key": "3",
+      "text": "La mesure à laquelle nous pensons profiterait aux personnes qui dépendent du bus."
+    },
+    {
+      "key": "4",
+      "text": "La mesure que nous y pensons profiterait aux personnes qui dépendent du bus."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "La phrase correcte reconstruit séparément le régime de chaque verbe et n'ajoute aucune reprise au relatif.",
+  "why": {
+    "1": "Le scripteur attribue aux deux verbes un régime qu'ils n'ont pas et choisit les relatifs par analogie.",
+    "2": "Le scripteur emploie un relatif direct alors que le verbe de la relative impose une préposition.",
+    "3": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "4": "Le scripteur redouble le complément déjà représenté par le pronom relatif.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-07",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "revision_transversale",
+    "mechanism_id": "revision_regimes_et_relatives",
+    "difficulty": "niveau_examen",
+    "source_genre": "copie_eleve",
+    "communicative_purpose": "proposer une amélioration concrète dans une lettre ouverte",
+    "cognitive_mode": "revision_authentique",
+    "writing_situation": {
+      "level": "gymnase",
+      "genre": "lettre ouverte",
+      "topic": "mobilité locale",
+      "intended_function": "proposer un aménagement",
+      "writer_profile": "élève de gymnase sérieux qui se relit"
+    }
+  },
+  "stem": "Quatre élèves formulent une proposition."
+},
+{
+  "id": "pond40-08-1",
+  "rule": "eleves",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Les affiches que nous avons préparer ont aidées les bénévoles à orienté le public."
+    },
+    {
+      "key": "2",
+      "text": "Les affiches que nous avons préparées ont aidé les bénévoles à orienter le public."
+    },
+    {
+      "key": "3",
+      "text": "Les affiches que nous avons préparé ont aidé les bénévoles à orienter le public."
+    },
+    {
+      "key": "4",
+      "text": "Les affiches que nous avons préparées ont aider les bénévoles à orienté le public."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "La phrase correcte distingue les infinitifs des participes et accorde avec le CVD antéposé le participe employé avec avoir.",
+  "why": {
+    "1": "Le scripteur confond plusieurs infinitifs et participes en se fiant à leur finale sonore.",
+    "2": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "3": "Le scripteur omet l'accord du participe avec le complément direct placé avant avoir.",
+    "4": "Le scripteur choisit une forme verbale non conforme après l'auxiliaire ou après la préposition à.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-08",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "revision_transversale",
+    "mechanism_id": "revision_participes_et_infinitifs",
+    "difficulty": "niveau_examen",
+    "source_genre": "copie_eleve",
+    "communicative_purpose": "raconter une activité collective dans un compte rendu",
+    "cognitive_mode": "revision_authentique",
+    "writing_situation": {
+      "level": "gymnase",
+      "genre": "compte rendu",
+      "topic": "activité collective",
+      "intended_function": "décrire les résultats obtenus",
+      "writer_profile": "élève de gymnase sérieux qui se relit"
+    }
+  },
+  "stem": "Quatre élèves racontent la fin d'une collecte."
+},
+{
+  "id": "pond40-09-1",
+  "rule": "eleves",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Bien que la règle est exigeante, elle resterait utile si chacun la comprendra."
+    },
+    {
+      "key": "2",
+      "text": "Bien que la règle soit exigeante, elle restera utile si chacun la comprendra."
+    },
+    {
+      "key": "3",
+      "text": "Bien que la règle serait exigeante, elle restera utile si chacun la comprend."
+    },
+    {
+      "key": "4",
+      "text": "Bien que la règle soit exigeante, elle restera utile si chacun la comprend."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "La phrase correcte respecte le mode imposé par la concession et le système temporel explicitement construit.",
+  "why": {
+    "1": "Le scripteur remplace les modes requis par des formes attirées par le futur ou le conditionnel voisin.",
+    "2": "Le scripteur emploie le futur dans une subordonnée introduite par si ou altère le mode concessif.",
+    "3": "Le scripteur met au conditionnel la concession alors que le contexte n'exprime pas une hypothèse.",
+    "4": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-09",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "revision_transversale",
+    "mechanism_id": "revision_modes_et_temps",
+    "difficulty": "niveau_examen",
+    "source_genre": "copie_eleve",
+    "communicative_purpose": "nuancer une proposition dans une conclusion",
+    "cognitive_mode": "revision_authentique",
+    "writing_situation": {
+      "level": "gymnase",
+      "genre": "conclusion argumentative",
+      "topic": "règlement collectif",
+      "intended_function": "nuancer puis conclure",
+      "writer_profile": "élève de gymnase sérieux qui se relit"
+    }
+  },
+  "stem": "Quatre élèves formulent une réserve."
+},
+{
+  "id": "pond40r-10-1",
+  "rule": "eleves",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Le projet, adopté en juin sera, selon la direction, évalué en décembre."
+    },
+    {
+      "key": "2",
+      "text": "Le projet, adopté en juin, sera selon la direction, évalué en décembre."
+    },
+    {
+      "key": "3",
+      "text": "Le projet, adopté en juin, sera, selon la direction, évalué en décembre."
+    },
+    {
+      "key": "4",
+      "text": "Le projet adopté en juin, sera, selon la direction, évalué en décembre."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "Les virgules encadrent d'abord l'apposition « adopté en juin », puis l'incise « selon la direction », sans séparer le sujet de son verbe.",
+  "why": {
+    "1": "Le scripteur ouvre l'apposition sans la refermer avant le verbe principal.",
+    "2": "Le scripteur ne détache pas entièrement l'incise selon la direction et place une virgule dans le groupe verbal.",
+    "3": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "4": "Le scripteur sépare par une virgule le groupe sujet développé et son verbe.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-10",
+    "profile": "perfectionnement",
+    "domain": "ponctuation",
+    "family": "revision_transversale",
+    "mechanism_id": "revision_ponctuation_et_syntaxe",
+    "difficulty": "niveau_examen",
+    "source_genre": "copie_eleve",
+    "communicative_purpose": "présenter une observation dans un rapport de stage",
+    "cognitive_mode": "revision_authentique",
+    "writing_situation": {
+      "level": "gymnase",
+      "genre": "rapport de stage",
+      "topic": "observation professionnelle",
+      "intended_function": "présenter une observation",
+      "writer_profile": "élève de gymnase sérieux qui se relit"
+    }
+  },
+  "stem": "Quatre élèves ponctuent une phrase contenant une apposition et une incise."
+},
+{
+  "id": "pond40r-11-1",
+  "rule": "modes",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Après que le technicien a vérifié le capteur, l'équipe attendra que l'alarme s'éteigne avant de fermer le boîtier."
+    },
+    {
+      "key": "2",
+      "text": "Après que le technicien ait vérifié le capteur, l'équipe attendra que l'alarme s'éteigne avant de fermer le boîtier."
+    },
+    {
+      "key": "3",
+      "text": "Après que le technicien a vérifié le capteur, l'équipe attendra que l'alarme s'éteint avant de fermer le boîtier."
+    },
+    {
+      "key": "4",
+      "text": "Après que le technicien aurait vérifié le capteur, l'équipe attendra que l'alarme s'éteigne avant de fermer le boîtier."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Après que introduit le fait certain à l'indicatif; attendre que introduit l'événement encore visé au subjonctif.",
+  "why": {
+    "1": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "2": "Le candidat applique par hypercorrection le subjonctif après après que.",
+    "3": "Le candidat met à l'indicatif la proposition encore attendue introduite par attendre que.",
+    "4": "Le candidat emploie le conditionnel après après que sans hypothèse ni information non confirmée.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-11",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "subjonctif_indicatif",
+    "mechanism_id": "apres_que_indicatif",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "ordonner deux faits constatés",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Le rapport ordonne deux faits certains et une action encore attendue."
+},
+{
+  "id": "pond40r-12-1",
+  "rule": "modes",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Même si le coût soit élevé, le dispositif reste utile; si faible que soit le gain, il est mesurable."
+    },
+    {
+      "key": "2",
+      "text": "Bien que le coût est élevé, le dispositif reste utile; si faible que soit le gain, il est mesurable."
+    },
+    {
+      "key": "3",
+      "text": "Même si le coût demeure élevé, le dispositif reste utile; si faible que soit le gain, il est mesurable."
+    },
+    {
+      "key": "4",
+      "text": "Même si le coût demeure élevé, le dispositif reste utile; si faible que serait le gain, il est mesurable."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "Même si se construit ici avec l'indicatif, tandis que la concession « si faible que » exige le subjonctif.",
+  "why": {
+    "1": "Le candidat emploie le subjonctif après même si, qui appelle ici l'indicatif.",
+    "2": "Le candidat conserve l'indicatif après bien que au lieu du subjonctif.",
+    "3": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "4": "Le candidat met au conditionnel la proposition concessive introduite par si faible que.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-12",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "subjonctif_indicatif",
+    "mechanism_id": "concession_bien_que",
+    "difficulty": "niveau_examen",
+    "source_genre": "article",
+    "communicative_purpose": "opposer un résultat observé à une limite mesurée",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "L'article nuance un résultat présent par deux concessions."
+},
+{
+  "id": "pond40r-13-1",
+  "rule": "modes",
+  "type": "transformation",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Le 12 juin, l'équipe a signé le rapport après qu'elle recueillera les données le 10 et les corrigera le 11."
+    },
+    {
+      "key": "2",
+      "text": "Avant de signer le rapport le 12 juin, l'équipe avait recueilli les données le 10 et les avait corrigées le 11."
+    },
+    {
+      "key": "3",
+      "text": "Le 12 juin, l'équipe signait le rapport avant d'avoir recueilli le 10 les données corrigées le 11."
+    },
+    {
+      "key": "4",
+      "text": "Le rapport avait été signé le 12 juin lorsque l'équipe recueillait encore les données du 10 le 11."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "Les dates imposent la collecte le 10, la correction le 11, puis la signature le 12; le plus-que-parfait marque les deux faits antérieurs.",
+  "why": {
+    "1": "Le candidat projette au futur des faits datés des 10 et 11 juin alors que le rapport est déjà signé le 12.",
+    "2": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "3": "Le candidat présente la signature comme antérieure à la collecte malgré l'ordre daté explicitement donné.",
+    "4": "Le candidat place la signature avant une collecte encore en cours, en contradiction avec les trois dates.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-13",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "concordance_temps",
+    "mechanism_id": "anteriorite_plus_que_parfait",
+    "difficulty": "niveau_examen",
+    "source_genre": "recit",
+    "communicative_purpose": "rétablir l'ordre des événements dans un récit",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Les données ont été recueillies le 10 juin, corrigées le 11 et le rapport a été signé le 12."
+},
+{
+  "id": "pond40r-14-1",
+  "rule": "modes",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Si la liaison tomberait en panne, le relais prendrait le service; si elle reste stable, le système continuera normalement demain."
+    },
+    {
+      "key": "2",
+      "text": "Si la liaison tombait en panne, le relais prendra le service; si elle reste stable, le système continuera normalement demain."
+    },
+    {
+      "key": "3",
+      "text": "Si la liaison tombe en panne, le relais prendrait le service; si elle reste stable, le système continuera normalement demain."
+    },
+    {
+      "key": "4",
+      "text": "Si la liaison tombait en panne, le relais prendrait le service; si elle reste stable, le système continuera normalement demain."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "Dans l'hypothèse actuelle, si est suivi de l'imparfait et la conséquence du conditionnel; le scénario normal reste au présent puis au futur.",
+  "why": {
+    "1": "Le candidat place le conditionnel dans la subordonnée introduite par si.",
+    "2": "Le candidat met au futur la conséquence d'une hypothèse construite avec si et l'imparfait.",
+    "3": "Le candidat associe le présent de l'hypothèse au conditionnel de conséquence sans repère irréel.",
+    "4": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-14",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "concordance_temps",
+    "mechanism_id": "hypothese_si_imparfait_conditionnel",
+    "difficulty": "niveau_examen",
+    "source_genre": "courriel",
+    "communicative_purpose": "indiquer la conséquence d'une éventualité contraire au scénario retenu",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Le plan oppose un scénario hypothétique au fonctionnement normal prévu demain."
+},
+{
+  "id": "pond40-15-1",
+  "rule": "relatifs",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "dont"
+    },
+    {
+      "key": "2",
+      "text": "qu'"
+    },
+    {
+      "key": "3",
+      "text": "où"
+    },
+    {
+      "key": "4",
+      "text": "à laquelle"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "Le verbe de la relative se construit avec à; la préposition est portée par auquel ou laquelle selon l'antécédent.",
+  "why": {
+    "1": "Le candidat choisit dont par attraction d'un complément prépositionnel sans reconstruire le régime en à.",
+    "2": "Le candidat emploie un relatif direct alors que le verbe exige la préposition à.",
+    "3": "Le candidat utilise où sans antécédent de lieu ni de temps.",
+    "4": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-15",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "pronoms_relatifs",
+    "mechanism_id": "regime_a_auquel",
+    "difficulty": "niveau_examen",
+    "source_genre": "courriel",
+    "communicative_purpose": "identifier un document auquel une équipe se réfère",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "La procédure ___ le groupe se réfère figure en annexe."
+},
+{
+  "id": "pond40r-16-1",
+  "rule": "relatifs",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Cette décision, dont les effets seront évalués en décembre, entre en vigueur lundi."
+    },
+    {
+      "key": "2",
+      "text": "Cette décision, que ses effets seront évalués en décembre, entre en vigueur lundi."
+    },
+    {
+      "key": "3",
+      "text": "Cette décision, dont ses effets seront évalués en décembre, entre en vigueur lundi."
+    },
+    {
+      "key": "4",
+      "text": "Cette décision, à laquelle les effets seront évalués en décembre, entre en vigueur lundi."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Dont reprend le complément en de du nom « effets » et exclut toute reprise possessive supplémentaire.",
+  "why": {
+    "1": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "2": "Le candidat emploie que devant un groupe où le relatif doit exprimer le complément du nom effets.",
+    "3": "Le candidat redouble la relation de possession par dont et le possessif ses.",
+    "4": "Le candidat choisit à laquelle alors que le nom effets se construit avec un complément introduit par de.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-16",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "pronoms_relatifs",
+    "mechanism_id": "possession_dont",
+    "difficulty": "niveau_examen",
+    "source_genre": "article",
+    "communicative_purpose": "présenter une initiative par l'un de ses effets",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "L'article présente une décision par l'un de ses effets."
+},
+{
+  "id": "pond40r-17-1",
+  "rule": "relatifs",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "auquel"
+    },
+    {
+      "key": "2",
+      "text": "dont"
+    },
+    {
+      "key": "3",
+      "text": "sur lequel"
+    },
+    {
+      "key": "4",
+      "text": "avec lequel"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "Le verbe reposer se construit avec sur; avec un antécédent masculin, la reprise correcte est donc « sur lequel ».",
+  "why": {
+    "1": "Le candidat remplace par à la préposition sur exigée par le verbe reposer.",
+    "2": "Le candidat emploie dont alors que reposer se construit ici avec sur.",
+    "3": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "4": "Le candidat choisit avec lequel, qui ne respecte pas le régime de reposer sur.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-17",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "pronoms_relatifs",
+    "mechanism_id": "preposition_plus_lequel",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "désigner un outil utilisé pour une opération précise",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Le rapport mentionne le protocole ___ la consignation repose juridiquement."
+},
+{
+  "id": "pond40r-18-1",
+  "rule": "relatifs",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Le rapport précise ce que bloque l'envoi et ce qui le service propose."
+    },
+    {
+      "key": "2",
+      "text": "Le rapport précise ce qui bloque l'envoi et ce que le service propose."
+    },
+    {
+      "key": "3",
+      "text": "Le rapport précise qu'est-ce qui bloque l'envoi et qu'est-ce que le service propose."
+    },
+    {
+      "key": "4",
+      "text": "Le rapport précise ce qui bloque l'envoi et ce qui le service propose."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "Ce qui est sujet de « bloque », tandis que ce que est le complément direct de « propose ».",
+  "why": {
+    "1": "Le candidat inverse les fonctions de ce qui sujet et ce que complément dans les deux relatives.",
+    "2": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "3": "Le candidat conserve les locutions de l'interrogation directe dans une phrase déclarative.",
+    "4": "Le candidat emploie ce qui comme sujet alors que le service est déjà le sujet de propose.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-18",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "pronoms_relatifs",
+    "mechanism_id": "ce_qui_ce_que",
+    "difficulty": "niveau_examen",
+    "source_genre": "dialogue",
+    "communicative_purpose": "rapporter précisément le contenu d'une demande",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Le compte rendu distingue la cause du blocage et la solution proposée."
+},
+{
+  "id": "pond40-19-1",
+  "rule": "pronoms",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "La responsable a parlé de la prolongation, mais le comité ne l'a pas encore discutée."
+    },
+    {
+      "key": "2",
+      "text": "La responsable a parlé de la prolongation, mais le comité n'y a pas encore discuté."
+    },
+    {
+      "key": "3",
+      "text": "La responsable a parlé de la prolongation, mais le comité n'en a pas encore discuté."
+    },
+    {
+      "key": "4",
+      "text": "La responsable a parlé de la prolongation, mais le comité n'en a pas encore discuté de ce point."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "En reprend le complément introduit par de et ne doit pas être redoublé par le groupe nominal déjà représenté.",
+  "why": {
+    "1": "Le candidat choisit un pronom direct alors que la reprise porte sur un complément introduit par de.",
+    "2": "Le candidat utilise y, qui reprend normalement un lieu ou un complément introduit par à.",
+    "3": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "4": "Le candidat redouble le complément déjà repris par en au moyen d'un groupe nominal exprimé.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-19",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "pronoms_reprise",
+    "mechanism_id": "complement_de_en",
+    "difficulty": "niveau_examen",
+    "source_genre": "courriel",
+    "communicative_purpose": "éviter une répétition en reprenant une information déjà donnée",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Le courriel reprend le groupe « de la prolongation »."
+},
+{
+  "id": "pond40-20-1",
+  "rule": "pronoms",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "les"
+    },
+    {
+      "key": "2",
+      "text": "lui"
+    },
+    {
+      "key": "3",
+      "text": "en"
+    },
+    {
+      "key": "4",
+      "text": "leur"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "Le verbe appelle un complément indirect humain; leur reprend correctement un antécédent pluriel.",
+  "why": {
+    "1": "Le candidat emploie un pronom direct alors que le verbe se construit avec un complément indirect.",
+    "2": "Le candidat choisit le singulier lui malgré un antécédent pluriel.",
+    "3": "Le candidat utilise en ou y, qui ne reprend pas les destinataires humains introduits par à.",
+    "4": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-20",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "pronoms_reprise",
+    "mechanism_id": "coi_lui_leur",
+    "difficulty": "niveau_examen",
+    "source_genre": "note_administrative",
+    "communicative_purpose": "indiquer à qui une information a été transmise",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Les candidates attendaient la décision; la présidente ___ a téléphoné dès midi."
+},
+{
+  "id": "pond40-21-1",
+  "rule": "pronoms",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Le taux d'erreur a diminué; les nouvelles mesures le confirment."
+    },
+    {
+      "key": "2",
+      "text": "Le taux d'erreur a diminué; les nouvelles mesures la confirment."
+    },
+    {
+      "key": "3",
+      "text": "Le taux d'erreur a diminué; les nouvelles mesures lui confirment."
+    },
+    {
+      "key": "4",
+      "text": "Le taux d'erreur a diminué; les nouvelles mesures en confirment."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Le pronom neutre le reprend une proposition ou un jugement entier et demeure invariable.",
+  "why": {
+    "1": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "2": "Le candidat accorde le pronom neutre avec un nom féminin présent dans la proposition.",
+    "3": "Le candidat emploie un pronom indirect alors que la proposition reprise est complément direct.",
+    "4": "Le candidat choisit en sans complément introduit par de et laisse la construction incomplète.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-21",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "pronoms_reprise",
+    "mechanism_id": "reprise_proposition_le",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "confirmer un constat formulé dans la phrase précédente",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "La reprise porte sur tout le constat précédent."
+},
+{
+  "id": "pond40-22-1",
+  "rule": "pronoms",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Après avoir comparé les réponses, le tableau a été corrigé par l'équipe."
+    },
+    {
+      "key": "2",
+      "text": "Après avoir comparé les réponses, l'équipe a corrigé le tableau."
+    },
+    {
+      "key": "3",
+      "text": "Après avoir comparé les réponses, une erreur est apparue dans le tableau."
+    },
+    {
+      "key": "4",
+      "text": "Après avoir comparé les réponses, la correction du tableau a commencé."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "Le sujet sous-entendu du groupe participial ou gérondif doit être le sujet grammatical de la proposition principale.",
+  "why": {
+    "1": "Le sujet grammatical de la principale n'est pas l'agent qui accomplit l'action du groupe détaché.",
+    "2": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "3": "La principale a pour sujet un résultat ou un événement incapable d'effectuer l'action initiale.",
+    "4": "Le nom d'action placé comme sujet crée une rupture entre l'agent implicite et la principale.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-22",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "rupture_syntaxique",
+    "mechanism_id": "participe_detache_sujet_implicite",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "décrire la méthode suivie avant de présenter un résultat",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Le groupe détaché doit qualifier le sujet de la principale."
+},
+{
+  "id": "pond40-23-1",
+  "rule": "participe",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "vérifié"
+    },
+    {
+      "key": "2",
+      "text": "vérifier"
+    },
+    {
+      "key": "3",
+      "text": "vérifiées"
+    },
+    {
+      "key": "4",
+      "text": "vérifiée"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "Avec avoir, le participe passé s'accorde avec le CVD lorsqu'il est placé avant le verbe; ici, le relatif que reprend un nom féminin pluriel.",
+  "why": {
+    "1": "Le candidat laisse le participe invariable malgré le complément direct féminin pluriel placé avant l'auxiliaire.",
+    "2": "Le candidat emploie l'infinitif après l'auxiliaire avoir.",
+    "3": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "4": "Le candidat accorde le participe au féminin singulier en négligeant le nombre du complément antéposé.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-23",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "accord_participe_passe",
+    "mechanism_id": "avoir_cvd_avant",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "consigner la vérification de pièces déjà identifiées",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Les attestations que la responsable a ___ hier sont désormais classées."
+},
+{
+  "id": "pond40-24-1",
+  "rule": "participe",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Les responsables se sont téléphonées chaque matin pendant la crise."
+    },
+    {
+      "key": "2",
+      "text": "Les responsables se sont téléphonés chaque matin pendant la crise."
+    },
+    {
+      "key": "3",
+      "text": "Les responsables se sont téléphoner chaque matin pendant la crise."
+    },
+    {
+      "key": "4",
+      "text": "Les responsables se sont téléphoné chaque matin pendant la crise."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "Dans ces verbes pronominaux, se est complément indirect parce qu'on téléphone, parle, nuit ou répond à quelqu'un; le participe reste donc invariable.",
+  "why": {
+    "1": "Le candidat accorde le participe avec le sujet féminin pluriel sans analyser la fonction indirecte de se.",
+    "2": "Le candidat applique un accord masculin pluriel au sujet alors que le participe doit rester invariable.",
+    "3": "Le candidat conserve l'infinitif après l'auxiliaire être.",
+    "4": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-24",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "accord_participe_passe",
+    "mechanism_id": "pronominal_se_coi",
+    "difficulty": "niveau_examen",
+    "source_genre": "recit",
+    "communicative_purpose": "relater un échange réciproque entre plusieurs personnes",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Le récit porte sur des appels réciproques."
+},
+{
+  "id": "pond40-25-1",
+  "rule": "participe",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "fait"
+    },
+    {
+      "key": "2",
+      "text": "faites"
+    },
+    {
+      "key": "3",
+      "text": "faite"
+    },
+    {
+      "key": "4",
+      "text": "faits"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Le participe passé fait est invariable lorsqu'il est immédiatement suivi d'un infinitif, même si un CVD est placé avant.",
+  "why": {
+    "1": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "2": "Le candidat accorde fait avec le complément direct féminin pluriel malgré l'infinitif qui suit.",
+    "3": "Le candidat applique un accord féminin singulier par attraction d'un nom proche.",
+    "4": "Le candidat choisit le masculin pluriel en traitant fait comme un adjectif.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-25",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "accord_participe_passe",
+    "mechanism_id": "fait_suivi_infinitif",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "décrire des travaux confiés à un prestataire",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Les cloisons que la direction a ___ déplacer libèrent désormais l'espace."
+},
+{
+  "id": "pond40-26-1",
+  "rule": "sujetverbe",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "révèlent"
+    },
+    {
+      "key": "2",
+      "text": "révèle"
+    },
+    {
+      "key": "3",
+      "text": "révéleront-elles"
+    },
+    {
+      "key": "4",
+      "text": "ont révélé"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "Le verbe s'accorde au singulier avec le noyau du groupe sujet; le complément pluriel introduit par de n'en commande pas l'accord.",
+  "why": {
+    "1": "Le candidat accorde le verbe avec le nom pluriel du complément plutôt qu'avec le noyau singulier.",
+    "2": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "3": "Le candidat introduit une inversion et un futur sans appui dans le contexte présent.",
+    "4": "Le candidat choisit un passé composé qui modifie la valeur de constat actuel du rapport.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-26",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "accord_sujet_verbe",
+    "mechanism_id": "noyau_singulier_complement_pluriel",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "présenter un résultat synthétique",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "La comparaison des trois séries ___ un écart stable."
+},
+{
+  "id": "pond40-27-1",
+  "rule": "sujetverbe",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Vous qui suivront le dossier recevrez une alerte à chaque étape."
+    },
+    {
+      "key": "2",
+      "text": "Vous qui suivra le dossier recevrez une alerte à chaque étape."
+    },
+    {
+      "key": "3",
+      "text": "Vous qui suivriez le dossier recevrez une alerte à chaque étape."
+    },
+    {
+      "key": "4",
+      "text": "Vous qui suivrez le dossier recevrez une alerte à chaque étape."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "Le relatif qui a pour antécédent le pronom vous ou nous; le verbe de la relative s'accorde donc à la deuxième ou à la première personne du pluriel.",
+  "why": {
+    "1": "Le candidat accorde le verbe à la troisième personne du pluriel au lieu de suivre le pronom antécédent.",
+    "2": "Le candidat met le verbe au singulier malgré l'antécédent pluriel de qui.",
+    "3": "Le candidat emploie le conditionnel dans la relative sans hypothèse qui le justifie.",
+    "4": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-27",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "accord_sujet_verbe",
+    "mechanism_id": "relative_qui_antecedent",
+    "difficulty": "niveau_examen",
+    "source_genre": "courriel",
+    "communicative_purpose": "attribuer une tâche à plusieurs destinataires",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Le courriel interpelle plusieurs personnes."
+},
+{
+  "id": "pond40rrrrrrrr-28-1",
+  "rule": "connecteurs",
+  "type": "vocabulary",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "En conséquence"
+    },
+    {
+      "key": "2",
+      "text": "Autrement dit"
+    },
+    {
+      "key": "3",
+      "text": "Pourtant"
+    },
+    {
+      "key": "4",
+      "text": "En effet"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "Le premier indicateur s'améliore, mais le second contredit l'effet attendu; seul un connecteur concessif marque cette opposition sans inventer de causalité.",
+  "why": {
+    "1": "Le candidat présente l'absence de hausse des bénéficiaires comme l'effet de la baisse des frais, relation que les données démentent.",
+    "2": "Le candidat reformule la baisse des frais alors que la seconde proposition apporte un résultat distinct et défavorable.",
+    "3": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "4": "Le candidat introduit une justification, mais l'absence de hausse ne prouve pas la baisse des frais déjà mesurée.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-28",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "connecteurs_logiques",
+    "mechanism_id": "concession",
+    "difficulty": "niveau_examen",
+    "source_genre": "article",
+    "communicative_purpose": "opposer un résultat mesuré à l'effet attendu d'une mesure",
+    "cognitive_mode": "jugement_semantique",
+    "writing_situation": null
+  },
+  "stem": "Les frais d'inscription ont baissé de 20 %. ___, le nombre de bénéficiaires n'a pas augmenté et le rapport refuse de conclure à un meilleur accès."
+},
+{
+  "id": "pond40rrrrrrrrrrr-29-3",
+  "rule": "connecteurs",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Le candidat joindra soit l'original signé, soit une copie certifiée."
+    },
+    {
+      "key": "2",
+      "text": "Le candidat joindra soit l'original signé, ou une copie certifiée."
+    },
+    {
+      "key": "3",
+      "text": "Le candidat joindra ou bien l'original signé, soit une copie certifiée."
+    },
+    {
+      "key": "4",
+      "text": "Le candidat joindra soit l'original signé et une copie certifiée."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Dans une alternative corrélative, les deux branches parallèles sont introduites symétriquement par soit : « soit X, soit Y ».",
+  "why": {
+    "1": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "2": "Le candidat mélange soit avec ou et rompt la corrélation attendue entre les deux branches de l'alternative.",
+    "3": "Le candidat ouvre l'alternative par ou bien puis la ferme par soit, au lieu de reprendre le même corrélatif.",
+    "4": "Le candidat coordonne les deux moyens par et après un seul soit, ce qui supprime l'alternative et laisse la corrélation inachevée.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-29",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "connecteurs_logiques",
+    "mechanism_id": "alternative_correlation",
+    "difficulty": "niveau_examen",
+    "source_genre": "consigne",
+    "communicative_purpose": "présenter deux moyens exclusifs admis pour une même démarche",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Une seule des deux formes de justificatif est requise."
+},
+{
+  "id": "pond40-30-1",
+  "rule": "prepositions",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Le comité s'intéresse de cette solution et y débattra demain."
+    },
+    {
+      "key": "2",
+      "text": "Le comité s'intéresse à cette solution et en débattra demain."
+    },
+    {
+      "key": "3",
+      "text": "Le comité s'intéresse à cette solution et y débattra demain."
+    },
+    {
+      "key": "4",
+      "text": "Le comité s'intéresse de cette solution et en débattra demain."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "Chaque verbe doit être reconstruit séparément: le premier se construit avec à, tandis que en reprend le complément en de du second.",
+  "why": {
+    "1": "Le candidat attribue au premier verbe un régime en de et reprend ensuite à tort par y.",
+    "2": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "3": "Le candidat reprend par y un complément direct ou un complément en de du second verbe.",
+    "4": "Le candidat choisit le mauvais régime pour le premier verbe malgré une reprise correcte par en.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-30",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "prepositions_regies",
+    "mechanism_id": "coordination_regimes_differents",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "décrire deux attitudes envers une même proposition",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Les deux verbes n'ont pas le même régime."
+},
+{
+  "id": "pond40rr-31-1",
+  "rule": "prepositions",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Le protocole est conforme avec les normes annoncées et compatible avec les appareils installés."
+    },
+    {
+      "key": "2",
+      "text": "Le protocole est conforme aux normes annoncées et compatible aux appareils installés."
+    },
+    {
+      "key": "3",
+      "text": "Le protocole est conforme pour les normes annoncées et compatible avec les appareils installés."
+    },
+    {
+      "key": "4",
+      "text": "Le protocole est conforme aux normes annoncées et compatible avec les appareils installés."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "Conforme se construit avec à et compatible avec avec; les deux régimes doivent être reconstruits séparément.",
+  "why": {
+    "1": "Le candidat construit conforme avec au lieu de conforme à, tout en conservant compatible avec.",
+    "2": "Le candidat conserve conforme à mais construit à tort compatible avec à.",
+    "3": "Le candidat construit conforme pour au lieu de conforme à.",
+    "4": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-31",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "prepositions_regies",
+    "mechanism_id": "adjectif_et_preposition",
+    "difficulty": "niveau_examen",
+    "source_genre": "courriel",
+    "communicative_purpose": "caractériser l'aptitude d'une personne à une tâche",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "La note combine deux adjectifs dont les régimes doivent être reconstruits séparément."
+},
+{
+  "id": "pond40r-32-1",
+  "rule": "ponctuation",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "« Les résultats, déclara la présidente, seront publiés demain. »"
+    },
+    {
+      "key": "2",
+      "text": "« Les résultats, déclara la présidente seront publiés demain. »"
+    },
+    {
+      "key": "3",
+      "text": "« Les résultats déclara la présidente, seront publiés demain. »"
+    },
+    {
+      "key": "4",
+      "text": "« Les résultats déclara, la présidente, seront publiés demain. »"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Dans la citation, l'incise « déclara la présidente » doit être encadrée par deux virgules sans couper le verbe de son sujet.",
+  "why": {
+    "1": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "2": "Le candidat ouvre l'incise de discours direct sans la fermer avant la reprise de la citation.",
+    "3": "Le candidat omet la virgule d'ouverture de l'incise et ne conserve que la fermeture.",
+    "4": "Le candidat place une virgule entre le verbe de parole et son sujet dans l'incise.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-32",
+    "profile": "perfectionnement",
+    "domain": "ponctuation",
+    "family": "ponctuation",
+    "mechanism_id": "incise_double_virgule",
+    "difficulty": "niveau_examen",
+    "source_genre": "article",
+    "communicative_purpose": "attribuer une appréciation à une source dans une phrase informative",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "L'article cite directement l'annonce de la présidente."
+},
+{
+  "id": "pond40-33-1",
+  "rule": "ponctuation",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Le dossier doit contenir: trois pièces, le formulaire signé, l'attestation et la copie du passeport."
+    },
+    {
+      "key": "2",
+      "text": "Le dossier doit contenir trois pièces, le formulaire signé: l'attestation et la copie du passeport."
+    },
+    {
+      "key": "3",
+      "text": "Le dossier doit: contenir trois pièces, le formulaire signé, l'attestation et la copie du passeport."
+    },
+    {
+      "key": "4",
+      "text": "Le dossier doit contenir trois pièces: le formulaire signé, l'attestation et la copie du passeport."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "Les deux-points suivent le groupe complet qui annonce l'énumération et ne séparent jamais le verbe de son complément ni le sujet du verbe.",
+  "why": {
+    "1": "Le candidat sépare le verbe de son complément nominal avant que l'annonce soit complète.",
+    "2": "Le candidat place les deux-points à l'intérieur de l'énumération au lieu de les mettre après le terme annonciateur.",
+    "3": "Le candidat coupe le sujet du verbe par des deux-points.",
+    "4": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-33",
+    "profile": "perfectionnement",
+    "domain": "ponctuation",
+    "family": "ponctuation",
+    "mechanism_id": "enumeration_deux_points",
+    "difficulty": "niveau_examen",
+    "source_genre": "note_administrative",
+    "communicative_purpose": "énumérer les pièces obligatoires d'un dossier",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "La phrase annonce une liste exhaustive."
+},
+{
+  "id": "pond40rrrrrrrr-34-4",
+  "rule": "vocabulaire",
+  "type": "vocabulary",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "ratifié"
+    },
+    {
+      "key": "2",
+      "text": "adopté"
+    },
+    {
+      "key": "3",
+      "text": "abrogé"
+    },
+    {
+      "key": "4",
+      "text": "promulgué"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "Le conseil est la première instance à voter la proposition : il l'adopte. La ratification confirme un acte antérieur, l'abrogation supprime un texte existant et la promulgation intervient après l'adoption.",
+  "why": {
+    "1": "Le candidat emploie ratifier, qui confirme un acte ou un accord antérieur plutôt que de désigner le vote initial.",
+    "2": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "3": "Le candidat emploie abroger, qui supprime un texte en vigueur alors que la proposition est nouvelle.",
+    "4": "Le candidat emploie promulguer, qui rend exécutoire une loi déjà adoptée au lieu de désigner la première décision du conseil.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-34",
+    "profile": "perfectionnement",
+    "domain": "vocabulaire",
+    "family": "vocabulaire_contexte",
+    "mechanism_id": "polysemie_contextuelle",
+    "difficulty": "niveau_examen",
+    "source_genre": "article",
+    "communicative_purpose": "relater précisément une décision institutionnelle",
+    "cognitive_mode": "jugement_semantique",
+    "writing_situation": null
+  },
+  "stem": "Le parlement cantonal examinait ce projet pour la première fois; au terme du vote, la majorité l'a ___."
+},
+{
+  "id": "pond40rrrrrrrrr-35-4",
+  "rule": "vocabulaire",
+  "type": "vocabulary",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "validées"
+    },
+    {
+      "key": "2",
+      "text": "réfutées"
+    },
+    {
+      "key": "3",
+      "text": "consignées"
+    },
+    {
+      "key": "4",
+      "text": "édulcorées"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "Consigner des réserves signifie les inscrire fidèlement dans un document; cela n'implique ni approbation, ni réfutation, ni modification de leur portée.",
+  "why": {
+    "1": "Le candidat affirme que la secrétaire a approuvé les réserves, alors que le procès-verbal se borne à les reproduire fidèlement.",
+    "2": "Le candidat lui attribue une réfutation, bien qu'aucune réponse argumentative ne soit rapportée.",
+    "3": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "4": "Le candidat suppose une atténuation du contenu, alors que la reproduction est annoncée comme intégrale ou fidèle.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-35",
+    "profile": "perfectionnement",
+    "domain": "vocabulaire",
+    "family": "vocabulaire_contexte",
+    "mechanism_id": "polysemie_contextuelle",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "décrire fidèlement le traitement de réserves exprimées en séance",
+    "cognitive_mode": "jugement_semantique",
+    "writing_situation": null
+  },
+  "stem": "Le rapport de séance restitue exactement les remarques critiques des membres, sans réponse de la présidence. La secrétaire les a ___."
+},
+{
+  "id": "pond40-36-1",
+  "rule": "adjverbal",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "convaincantes"
+    },
+    {
+      "key": "2",
+      "text": "convainquantes"
+    },
+    {
+      "key": "3",
+      "text": "convaincant"
+    },
+    {
+      "key": "4",
+      "text": "convainquant"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Convaincant est ici un adjectif verbal: il qualifie un nom féminin pluriel, s'accorde et s'écrit avec c.",
+  "why": {
+    "1": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "2": "Le candidat applique au qualificatif la graphie en -quant du participe présent.",
+    "3": "Le candidat conserve le singulier de l'adjectif malgré le nom féminin pluriel qualifié.",
+    "4": "Le candidat choisit le participe présent invariable alors qu'aucun complément verbal n'est construit.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-36",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "adjectif_verbal_participe_present",
+    "mechanism_id": "convaincant_convainquant",
+    "difficulty": "niveau_examen",
+    "source_genre": "article",
+    "communicative_purpose": "évaluer la force d'arguments présentés dans une analyse",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Les données, particulièrement ___, ont modifié l'avis du comité."
+},
+{
+  "id": "pond40r-37-1",
+  "rule": "adjverbal",
+  "type": "blank",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "convaincantes le jury par leur expérience"
+    },
+    {
+      "key": "2",
+      "text": "convainquantes le jury de leur expérience"
+    },
+    {
+      "key": "3",
+      "text": "convaincante le jury de leur expérience"
+    },
+    {
+      "key": "4",
+      "text": "convainquant clairement le jury de leur expérience"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "Convainquant est ici un participe présent invariable qui régit directement « le jury » et son complément.",
+  "why": {
+    "1": "Le candidat emploie l'adjectif convaincantes dans une construction où convaincre régit directement le jury.",
+    "2": "Le candidat donne au participe présent la graphie fautive convainquant au lieu de convaincant avec c.",
+    "3": "Le candidat emploie un adjectif singulier et une construction transitive incompatible avec le sujet pluriel.",
+    "4": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-37",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "adjectif_verbal_participe_present",
+    "mechanism_id": "participe_present_avec_complement",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "décrire une action simultanée qui justifie une décision",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Les candidates ___ ont été retenues."
+},
+{
+  "id": "pond40rrrr-38-1",
+  "rule": "discours",
+  "type": "transformation",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Le coordinateur a demandé aux bénévoles qu'ils vérifient vos badges et ne me remettent les clés qu'après la fermeture."
+    },
+    {
+      "key": "2",
+      "text": "Le coordinateur a demandé aux bénévoles de vérifier leurs badges et de ne lui remettre les clés qu'après la fermeture."
+    },
+    {
+      "key": "3",
+      "text": "Le coordinateur a demandé aux bénévoles de vérifiez leurs badges et de ne lui remettez les clés qu'après la fermeture."
+    },
+    {
+      "key": "4",
+      "text": "Le coordinateur a demandé aux bénévoles de vérifier leurs badges et de ne leur remettre les clés qu'après la fermeture."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "Le futur devient conditionnel dans le récit rapporté, les personnes s'adaptent au nouveau locuteur et les dates ainsi que le lieu explicites remplacent les déictiques.",
+  "why": {
+    "1": "Le candidat conserve les personnes du discours direct au lieu de les adapter au nouveau locuteur.",
+    "2": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "3": "Le candidat garde les formes impératives après la préposition de.",
+    "4": "Le candidat inverse les rôles de destinataire et de bénéficiaire au moyen du pronom leur.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-38",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "discours_indirect",
+    "mechanism_id": "imperatif_vers_de_infinitif",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "rapporter précisément une consigne adressée à un groupe",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Le coordinateur a dit aux bénévoles: « Vérifiez vos badges et ne me remettez les clés qu'après la fermeture. »"
+},
+{
+  "id": "pond40-39-1",
+  "rule": "discours",
+  "type": "transformation",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "La responsable demande qui est-ce qui dirigera l'atelier et de quel matériel aura-t-il besoin."
+    },
+    {
+      "key": "2",
+      "text": "La responsable demande qui dirigera l'atelier et de quel matériel aura cette personne besoin."
+    },
+    {
+      "key": "3",
+      "text": "La responsable demande qui dirigera l'atelier et de quel matériel cette personne aura besoin."
+    },
+    {
+      "key": "4",
+      "text": "La responsable demande que qui dirigera l'atelier et ce que le matériel sera nécessaire."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "L'interrogation indirecte conserve les mots interrogatifs, adopte l'ordre déclaratif dans chaque membre coordonné et adapte la reprise de personne.",
+  "why": {
+    "1": "Le candidat conserve est-ce que et l'inversion du sujet propres à l'interrogation directe.",
+    "2": "Le candidat supprime une marque du direct mais conserve l'inversion dans la seconde interrogation.",
+    "3": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "4": "Le candidat introduit les interrogatives par que et remplace les groupes interrogatifs par des structures non équivalentes.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-39",
+    "profile": "perfectionnement",
+    "domain": "syntaxe",
+    "family": "interrogation_indirecte",
+    "mechanism_id": "coordination_interrogative",
+    "difficulty": "niveau_examen",
+    "source_genre": "dialogue",
+    "communicative_purpose": "rapporter deux informations demandées pendant un entretien",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "La responsable demande: « Qui dirigera l'atelier et de quel matériel aura-t-il besoin? »"
+},
+{
+  "id": "pond40-40-1",
+  "rule": "nombres",
+  "type": "sentences",
+  "gen": {
+    "model": "gpt-5-codex-sol-high",
+    "thinking": "high",
+    "tracked": true
+  },
+  "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "L'association a reçu deux cents quatre-vingt dossiers et distribué trois milles deux cent brochures."
+    },
+    {
+      "key": "2",
+      "text": "L'association a reçu deux cent quatre-vingt dossiers et distribué trois mille deux cents brochures."
+    },
+    {
+      "key": "3",
+      "text": "L'association a reçu deux cents quatre-vingts dossiers et distribué trois milles deux cents brochures."
+    },
+    {
+      "key": "4",
+      "text": "L'association a reçu deux cent quatre-vingts dossiers et distribué trois mille deux cents brochures."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "Mille est toujours invariable; cent prend un s seulement lorsqu'il est multiplié et non suivi; vingt prend un s dans quatre-vingts seulement lorsqu'aucun autre numéral ne suit.",
+  "why": {
+    "1": "Le candidat accorde cent lorsqu'il est suivi et laisse vingt invariable alors qu'il termine quatre-vingts; il pluralise aussi mille.",
+    "2": "Le candidat oublie le s de quatre-vingts lorsqu'il est final dans le premier nombre.",
+    "3": "Le candidat accorde cent et vingt malgré les éléments qui les suivent et pluralise mille, toujours invariable.",
+    "4": "Cette formulation respecte la règle déterminante et tous les repères du contexte.",
+    "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
+    "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+  },
+  "hep": {
+    "slot_id": "pond40-40",
+    "profile": "perfectionnement",
+    "domain": "orthographe",
+    "family": "nombres_traits_union",
+    "mechanism_id": "cent_vingt_mille",
+    "difficulty": "niveau_examen",
+    "source_genre": "rapport",
+    "communicative_purpose": "consigner plusieurs quantités exactes dans un bilan",
+    "cognitive_mode": "analyse_structurelle",
+    "writing_situation": null
+  },
+  "stem": "Le bilan réunit trois quantités."
+}
 ];
 
 // ---------- Traçabilité de génération (modèle + niveau de réflexion) ----------
