@@ -19581,6 +19581,9876 @@ const QUESTIONS = [
     "writing_situation": null
   },
   "stem": "Le bilan réunit trois quantités."
+},
+{
+  "id": "orth-92",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "___ dernières semaines, l'équipe ___ montrée à la hauteur des attentes.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Ses / s'est"
+    },
+    {
+      "key": "2",
+      "text": "Ces / s'est"
+    },
+    {
+      "key": "3",
+      "text": "Ces / c'est"
+    },
+    {
+      "key": "4",
+      "text": "Ses / c'est"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "« Ces » est un démonstratif (= celles-là) ; « s'est » appartient au verbe pronominal « se montrer » : elle s'est montrée.",
+  "why": {
+    "1": "« Ses » est un possessif (les siennes) : rien ne possède ces semaines ici, il faut le démonstratif « ces ».",
+    "2": "Correct : démonstratif « ces » (= celles-là) et pronominal « s'est » (se montrer).",
+    "3": "« c'est » (= cela est) ne peut pas construire « l'équipe c'est montrée » : le verbe est pronominal, « s'est ».",
+    "4": "Cumule le possessif fautif et « c'est » à la place du pronominal « s'est ».",
+    "A": "L'option 2 est correcte.",
+    "T": "Les options 1, 3 et 4 contiennent chacune au moins une confusion d'homophone."
+  }
+},
+{
+  "id": "orth-93",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le secrétariat ___ enverra ___ attestations dès la fin du module.",
+  "options": [
+    {
+      "key": "1",
+      "text": "leurs / leurs"
+    },
+    {
+      "key": "2",
+      "text": "leur / leur"
+    },
+    {
+      "key": "3",
+      "text": "leurs / leur"
+    },
+    {
+      "key": "4",
+      "text": "leur / leurs"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "Devant le verbe, « leur » est un pronom personnel invariable (= à eux) ; devant le nom pluriel « attestations », « leurs » est un déterminant qui s'accorde.",
+  "why": {
+    "1": "« leurs enverra » : le pronom personnel devant le verbe ne prend jamais de s.",
+    "2": "« leur attestations » : le déterminant doit s'accorder avec le nom pluriel → « leurs ».",
+    "3": "Inverse les deux règles : pronom avec s et déterminant sans s.",
+    "4": "Correct : pronom invariable « leur » (= à eux) + déterminant accordé « leurs ».",
+    "A": "L'option 4 est correcte.",
+    "T": "Les options 1, 2 et 3 violent l'une ou l'autre des deux règles."
+  }
+},
+{
+  "id": "orth-94",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "___ les classes ont rendu leurs projets ; le jury les a ___ examinés.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Toutes / toutes"
+    },
+    {
+      "key": "2",
+      "text": "Tous / tous"
+    },
+    {
+      "key": "3",
+      "text": "Toute / tous"
+    },
+    {
+      "key": "4",
+      "text": "Tous / tout"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "A",
+  "explanation": "Il faut « Toutes les classes » (déterminant accordé avec « classes », féminin pluriel) et « les a tous examinés » (pronom repris de « les projets », masculin pluriel, s prononcé). Cette combinaison n'est pas proposée.",
+  "why": {
+    "1": "« Toutes » est correct, mais « les a toutes examinés » accroche le pronom à « les classes » alors que « les » reprend « leurs projets », masculin (« examinés ») → « tous ».",
+    "2": "« Tous les classes » ne s'accorde pas avec le féminin « classes ».",
+    "3": "« Toute les classes » : devant un pluriel, le déterminant doit être pluriel.",
+    "4": "Cumule l'erreur de genre et le « tout » invariable fautif.",
+    "A": "Correct : la combinaison attendue « Toutes / tous » ne figure dans aucune option.",
+    "T": "Chaque option contient au moins une forme fautive."
+  }
+},
+{
+  "id": "orth-95",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Il a ___ recalculer la somme ___ au titre des heures supplémentaires.",
+  "options": [
+    {
+      "key": "1",
+      "text": "du / due"
+    },
+    {
+      "key": "2",
+      "text": "dû / dûe"
+    },
+    {
+      "key": "3",
+      "text": "dû / due"
+    },
+    {
+      "key": "4",
+      "text": "dû / dû"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "Participe passé de « devoir » : « dû » ne porte l'accent qu'au masculin singulier ; au féminin, on écrit « due » sans accent.",
+  "why": {
+    "1": "« a du recalculer » : sans accent, c'est l'article ; le participe de devoir s'écrit « dû ».",
+    "2": "« dûe » : hypercorrection ; l'accent disparaît dès que le mot s'accorde (due, dus, dues).",
+    "3": "Correct : « a dû » (participe masculin singulier) et « somme due » (féminin sans accent).",
+    "4": "« somme dû » : le participe adjectif doit s'accorder avec « somme » → « due ».",
+    "A": "L'option 3 est correcte.",
+    "T": "Les options 1, 2 et 4 comportent chacune une erreur d'accent ou d'accord."
+  }
+},
+{
+  "id": "orth-96",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Les manifestants ont fait ___ dans le studio pendant le flash consacré à l'___ du volcan islandais.",
+  "options": [
+    {
+      "key": "1",
+      "text": "irruption / éruption"
+    },
+    {
+      "key": "2",
+      "text": "éruption / irruption"
+    },
+    {
+      "key": "3",
+      "text": "irruption / irruption"
+    },
+    {
+      "key": "4",
+      "text": "éruption / éruption"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "« Faire irruption » = entrer brusquement quelque part ; une « éruption » = un jaillissement soudain (volcan, boutons).",
+  "why": {
+    "1": "Correct : entrée soudaine = irruption ; jaillissement volcanique = éruption.",
+    "2": "Inverse les deux paronymes.",
+    "3": "Un volcan n'entre nulle part : il s'agit d'une éruption.",
+    "4": "« Faire éruption » : confusion classique ; des personnes qui entrent de force font irruption.",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options confondent les deux paronymes dans au moins une des deux places."
+  }
+},
+{
+  "id": "orth-97",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Dans une ___ économique aussi instable, les analystes en sont réduits aux ___.",
+  "options": [
+    {
+      "key": "1",
+      "text": "conjecture / conjonctures"
+    },
+    {
+      "key": "2",
+      "text": "conjoncture / conjectures"
+    },
+    {
+      "key": "3",
+      "text": "conjoncture / conjonctures"
+    },
+    {
+      "key": "4",
+      "text": "conjecture / conjectures"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "La « conjoncture » est la situation d'ensemble d'un moment ; une « conjecture » est une supposition fondée sur des probabilités.",
+  "why": {
+    "1": "Inverse les deux mots : on ne parle pas d'une « conjecture économique ».",
+    "2": "Correct : situation économique = conjoncture ; suppositions = conjectures.",
+    "3": "« réduits aux conjonctures » : être réduit à des suppositions, donc « conjectures ».",
+    "4": "« conjecture économique » : la situation d'un moment est la « conjoncture ».",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options placent au moins un des deux paronymes à contre-emploi."
+  }
+},
+{
+  "id": "conj-03",
+  "rule": "conjugaison",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Après trois heures de délibération, les jurés ___ à l'unanimité que le prix ne serait pas attribué.",
+  "options": [
+    {
+      "key": "1",
+      "text": "concluèrent"
+    },
+    {
+      "key": "2",
+      "text": "conclut"
+    },
+    {
+      "key": "3",
+      "text": "conclurèrent"
+    },
+    {
+      "key": "4",
+      "text": "conclurent"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "Au passé simple, « conclure » se conjugue sur le modèle en -u- : ils conclurent (comme ils coururent), sans terminaison en -èrent.",
+  "why": {
+    "1": "« concluèrent » applique la terminaison -èrent des verbes en -er à un verbe en -re.",
+    "2": "« conclut » est un singulier : le sujet « les jurés » exige le pluriel.",
+    "3": "« conclurèrent » ajoute une syllabe parasite : la forme mélange conclurent et -èrent.",
+    "4": "Correct : passé simple en -urent → ils conclurent.",
+    "A": "L'option 4 est correcte.",
+    "T": "Les options 1, 2 et 3 sont morphologiquement fautives ou mal accordées."
+  }
+},
+{
+  "id": "orth-98",
+  "rule": "orthographe",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Je vous saurais gré de me confirmer votre présence avant vendredi."
+    },
+    {
+      "key": "2",
+      "text": "Si vous vous contredisez devant la commission, elle s’en apercevra."
+    },
+    {
+      "key": "3",
+      "text": "Il s’est ensuivi un long échange de courriers entre les deux offices."
+    },
+    {
+      "key": "4",
+      "text": "Après deux mois de convalescence, elle a recouvré toutes ses forces."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "T",
+  "explanation": "Quatre formes correctes malgré leur allure suspecte : « saurais gré » (savoir gré), « vous contredisez » (seul « dire » fait « dites »), « il s'est ensuivi » (s'ensuivre) et « recouvré » (= retrouvé). Réponse : Toutes.",
+  "why": {
+    "1": "Correcte : la locution est « savoir gré » → je vous saurais gré (jamais « serais »).",
+    "2": "Correcte : « contredire » fait « vous contredisez » ; seul « dire » (et « redire ») fait « -dites ».",
+    "3": "Correcte : le verbe est « s'ensuivre » → il s'est ensuivi (et non « il s'en est suivi »).",
+    "4": "Correcte : « recouvrer » = retrouver (la santé, ses forces) ; « recouvrir » = couvrir de nouveau.",
+    "A": "Les quatre phrases sont correctes.",
+    "T": "Correct : chacune des quatre formes, souvent soupçonnée à tort, est irréprochable."
+  }
+},
+{
+  "id": "dis-29",
+  "rule": "discours",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "Mardi, le greffier nous a confié : « J'ai transmis votre recours avant-hier. » Un mois plus tard, l'un de nous rapporte ces propos. Quelle transposition est correcte ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Il nous a confié qu'il avait transmis notre recours la veille."
+    },
+    {
+      "key": "2",
+      "text": "Il nous a confié qu'il a transmis notre recours avant-hier."
+    },
+    {
+      "key": "3",
+      "text": "Il nous a confié qu'il avait transmis notre recours l'avant-veille."
+    },
+    {
+      "key": "4",
+      "text": "Il nous a confié qu'il avait transmis votre recours l'avant-veille."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "Rapporté un mois plus tard : passé composé → plus-que-parfait (« avait transmis »), « avant-hier » → « l'avant-veille », et « votre recours » → « notre recours » (celui des personnes qui rapportent).",
+  "why": {
+    "1": "« la veille » traduit « hier » ; « avant-hier » devient « l'avant-veille ».",
+    "2": "Ni le temps ni le déictique ne sont transposés alors que les propos sont rapportés un mois plus tard.",
+    "3": "Correct : plus-que-parfait, « l'avant-veille » et possessif transposé « notre ».",
+    "4": "« votre recours » garde le possessif du discours direct : rapporté par nous, il devient « notre recours ».",
+    "A": "L'option 3 est correcte.",
+    "T": "Les options 1, 2 et 4 laissent chacune un élément non transposé ou mal transposé."
+  }
+},
+{
+  "id": "rel-74",
+  "rule": "relatifs",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "La réduction d'horaire ___ la direction s'est finalement résolue prendra effet en janvier.",
+  "options": [
+    {
+      "key": "1",
+      "text": "à laquelle"
+    },
+    {
+      "key": "2",
+      "text": "dont"
+    },
+    {
+      "key": "3",
+      "text": "qu'"
+    },
+    {
+      "key": "4",
+      "text": "pour laquelle"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "« Se résoudre À quelque chose » : le complément est introduit par « à », d'où le relatif « à laquelle » (se résoudre à cette réduction).",
+  "why": {
+    "1": "Correct : se résoudre À une mesure → la mesure à laquelle on se résout.",
+    "2": "« dont » supposerait « se résoudre de », construction qui n'existe pas avec un nom.",
+    "3": "« qu' » traiterait la réduction comme complément direct : « se résoudre quelque chose » est impossible.",
+    "4": "« pour laquelle » calque « la raison pour laquelle » : le verbe exige « à », pas « pour ».",
+    "A": "L'option 1 est correcte.",
+    "T": "Une seule option restitue le régime du verbe."
+  }
+},
+{
+  "id": "orth-L13-1",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Une ___ d'encre macule la couverture du rapport ; la ___ de le réimprimer revient au secrétariat.",
+  "options": [
+    {
+      "key": "1",
+      "text": "tâche / tache"
+    },
+    {
+      "key": "2",
+      "text": "tache / tache"
+    },
+    {
+      "key": "3",
+      "text": "tache / tâche"
+    },
+    {
+      "key": "4",
+      "text": "tâche / tâche"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "Une « tache » (sans accent) est une salissure ; une « tâche » (avec accent circonflexe) est un travail à accomplir.",
+  "why": {
+    "1": "Inverse les deux mots : la salissure s'écrit sans accent, le travail avec accent.",
+    "2": "« la tache de le réimprimer » : le travail à accomplir prend l'accent circonflexe.",
+    "3": "Correct : salissure = tache ; mission = tâche.",
+    "4": "« une tâche d'encre » : la salissure s'écrit sans accent.",
+    "A": "L'option 3 est correcte.",
+    "T": "Trois options placent au moins un des deux mots à contre-emploi."
+  }
+},
+{
+  "id": "orth-L13-2",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Elle a été retenue ___ son dossier était complet, et non ___ elle a laissé entendre en séance.",
+  "options": [
+    {
+      "key": "1",
+      "text": "parce que / par ce qu'"
+    },
+    {
+      "key": "2",
+      "text": "par ce que / parce qu'"
+    },
+    {
+      "key": "3",
+      "text": "parce que / parce qu'"
+    },
+    {
+      "key": "4",
+      "text": "par ce que / par ce qu'"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "« Parce que » (soudé) introduit une cause ; « par ce que » (détaché) signifie « par la chose que » : et non par ce qu'elle a laissé entendre.",
+  "why": {
+    "1": "Correct : cause = « parce que » soudé ; « par la chose que » = « par ce que » détaché.",
+    "2": "Inverse les deux : la cause s'écrit soudée, le relatif « ce que » reste détaché.",
+    "3": "« non parce qu'elle a laissé entendre » : ici « entendre » a un complément (« ce que ») → forme détachée.",
+    "4": "« par ce que son dossier était complet » : la cause s'écrit « parce que » en un seul bloc.",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options confondent la conjonction de cause et la suite préposition + relatif."
+  }
+},
+{
+  "id": "orth-L13-3",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Mieux vaut ___ par excès de prudence que devoir s'excuser ; dimanche, il préfère ___ au bord du lac.",
+  "options": [
+    {
+      "key": "1",
+      "text": "pêcher / pécher"
+    },
+    {
+      "key": "2",
+      "text": "pécher / pêcher"
+    },
+    {
+      "key": "3",
+      "text": "pécher / pécher"
+    },
+    {
+      "key": "4",
+      "text": "pêcher / pêcher"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "« Pécher » (accent aigu) = commettre une faute (pécher par excès) ; « pêcher » (accent circonflexe) = prendre du poisson.",
+  "why": {
+    "1": "Inverse les deux accents : la faute prend l'aigu, le poisson le circonflexe.",
+    "2": "Correct : pécher par excès de prudence ; pêcher au bord du lac.",
+    "3": "« pécher au bord du lac » : l'activité de pêche s'écrit avec circonflexe.",
+    "4": "« pêcher par excès de prudence » : commettre une faute s'écrit « pécher ».",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options placent au moins un accent à contre-emploi."
+  }
+},
+{
+  "id": "orth-L13-4",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le local a été ouvert par ___ pendant la nuit ; stationner devant l'issue de secours constitue déjà une ___.",
+  "options": [
+    {
+      "key": "1",
+      "text": "infraction / effraction"
+    },
+    {
+      "key": "2",
+      "text": "infraction / infraction"
+    },
+    {
+      "key": "3",
+      "text": "effraction / effraction"
+    },
+    {
+      "key": "4",
+      "text": "effraction / infraction"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "L'« effraction » est le bris d'une fermeture pour entrer (ouvrir par effraction) ; l'« infraction » est la violation d'une règle.",
+  "why": {
+    "1": "Inverse les deux : on entre par effraction, on commet une infraction.",
+    "2": "« ouvert par infraction » : le bris d'une serrure est une effraction.",
+    "3": "« constitue une effraction » : violer une règle de stationnement est une infraction.",
+    "4": "Correct : bris de fermeture = effraction ; violation d'une règle = infraction.",
+    "A": "L'option 4 est correcte.",
+    "T": "Trois options confondent les deux paronymes dans au moins une des deux places."
+  }
+},
+{
+  "id": "orth-L13-5",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Dans son ___ de rentrée, le directeur a annoncé une ___ exceptionnelle pour la formation continue.",
+  "options": [
+    {
+      "key": "1",
+      "text": "allocation / allocution"
+    },
+    {
+      "key": "2",
+      "text": "allocution / allocation"
+    },
+    {
+      "key": "3",
+      "text": "allocution / allocution"
+    },
+    {
+      "key": "4",
+      "text": "allocation / allocation"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "Une « allocution » est un discours bref ; une « allocation » est une somme attribuée.",
+  "why": {
+    "1": "Inverse les deux : le discours est une allocution, la somme une allocation.",
+    "2": "Correct : discours de rentrée = allocution ; somme versée = allocation.",
+    "3": "« une allocution exceptionnelle pour la formation » : la somme attribuée est une allocation.",
+    "4": "« dans son allocation de rentrée » : le discours prononcé est une allocution.",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options placent au moins un des deux paronymes à contre-emploi."
+  }
+},
+{
+  "id": "orth-L13-6",
+  "rule": "orthographe",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "Quelle phrase est correctement orthographiée ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Nous avons apperçu une incohérence dans le budget annexé."
+    },
+    {
+      "key": "2",
+      "text": "Ce quartier se dévelope plus vite que prévu."
+    },
+    {
+      "key": "3",
+      "text": "Elle a attrapé un rhume en surveillant la récréation."
+    },
+    {
+      "key": "4",
+      "text": "Son professionalisme est reconnu par toute l’équipe."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "« Attraper » s'écrit avec deux t et un seul p. Les autres phrases fautent sur les consonnes doubles : apercevoir (un seul p), développer (deux p), professionnalisme (deux n).",
+  "why": {
+    "1": "« apperçu » : apercevoir ne prend qu'un p (comme apéritif).",
+    "2": "« dévelope » : développer prend deux p (un seul l).",
+    "3": "Correct : attraper, deux t et un seul p.",
+    "4": "« professionalisme » : le mot se forme sur « professionnel » et garde ses deux n.",
+    "A": "L'option 3 est correcte.",
+    "T": "Les options 1, 2 et 4 comportent chacune une erreur de consonne double."
+  }
+},
+{
+  "id": "orth-L13-7",
+  "rule": "orthographe",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Ils ont eu maille à partir avec la gérance de l’immeuble."
+    },
+    {
+      "key": "2",
+      "text": "Il s’en est fallu de peu que la séance soit annulée."
+    },
+    {
+      "key": "3",
+      "text": "Pris de court, le comité a reporté sa décision."
+    },
+    {
+      "key": "4",
+      "text": "Elle a pris fait et cause pour sa collègue mise en cause."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "T",
+  "explanation": "Quatre locutions correctes malgré leur allure suspecte : « avoir maille à partir », « il s'en est fallu de peu », « pris de court » et « prendre fait et cause ». Réponse : Toutes.",
+  "why": {
+    "1": "Correcte : « maille à partir » (la maille = ancienne monnaie ; partir = partager), sans s.",
+    "2": "Correcte : « s'en falloir de peu » ; le tour impersonnel « il s'en est fallu » est la forme attestée.",
+    "3": "Correcte : « prendre de court » s'écrit avec « court » (adjectif), pas « cours » ni « courre ».",
+    "4": "Correcte : « prendre fait et cause pour » = se ranger du côté de quelqu'un.",
+    "A": "Les quatre phrases sont correctes.",
+    "T": "Correct : chacune de ces locutions, souvent soupçonnée à tort, est irréprochable."
+  }
+},
+{
+  "id": "conj-L13-8",
+  "rule": "conjugaison",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Sans soutien financier durable, ce petit festival ___ avant même sa cinquième édition.",
+  "options": [
+    {
+      "key": "1",
+      "text": "mourira"
+    },
+    {
+      "key": "2",
+      "text": "moura"
+    },
+    {
+      "key": "3",
+      "text": "mourrira"
+    },
+    {
+      "key": "4",
+      "text": "meurra"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "A",
+  "explanation": "Le futur de « mourir » est « mourra », avec deux r et sans i : il ne figure dans aucune option.",
+  "why": {
+    "1": "« mourira » régularise le verbe sur le modèle de « finira » : le futur est « mourra ».",
+    "2": "« moura » : il manque le second r caractéristique du futur (mourra, courra).",
+    "3": "« mourrira » cumule le double r et la terminaison régulière en -ira.",
+    "4": "« meurra » construit le futur sur le radical du présent (« meurt ») : le futur garde « mour- ».",
+    "A": "Correct : la forme attendue « mourra » n'est pas proposée.",
+    "T": "Aucune des quatre formes n'existe."
+  }
+},
+{
+  "id": "dis-L13-9",
+  "rule": "discours",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "Lucie a dit à Marc : « Je passerai te prendre chez ta sœur. » Marc rapporte ces propos à sa sœur. Quelle version est correcte ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Lucie a dit qu'elle passerait te prendre chez ta sœur."
+    },
+    {
+      "key": "2",
+      "text": "Lucie a dit qu'elle passera me prendre chez ta sœur."
+    },
+    {
+      "key": "3",
+      "text": "Lucie a dit qu'elle passerait la prendre chez sa sœur."
+    },
+    {
+      "key": "4",
+      "text": "Lucie a dit qu'elle passerait me prendre chez toi."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "Rapporté par Marc à sa sœur : « te prendre » (= Marc) devient « me prendre », « chez ta sœur » (= l'interlocutrice actuelle) devient « chez toi », et après « a dit » le futur se transpose en « passerait ».",
+  "why": {
+    "1": "Recopie les pronoms du discours direct : pour Marc qui parle, « te » désigne désormais lui-même (« me »), et « ta sœur » est la personne à qui il s'adresse (« toi »).",
+    "2": "« chez ta sœur » garde le possessif du discours direct : Marc s'adresse justement à sa sœur, donc « chez toi ».",
+    "3": "« la prendre chez sa sœur » bascule tout à la 3e personne : c'est bien Marc (« me ») que Lucie doit prendre, chez l'interlocutrice (« toi »).",
+    "4": "Correct : conditionnel « passerait », « me prendre » (= Marc) et « chez toi » (= sa sœur, à qui il parle).",
+    "A": "L'option 4 est correcte.",
+    "T": "Les options 1, 2 et 3 laissent chacune un pronom ou un temps non ajusté."
+  }
+},
+{
+  "id": "rel-L13-10",
+  "rule": "relatifs",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Les cultures maraîchères ___ le gel tardif a nui seront indemnisées par le canton.",
+  "options": [
+    {
+      "key": "1",
+      "text": "auxquelles"
+    },
+    {
+      "key": "2",
+      "text": "que"
+    },
+    {
+      "key": "3",
+      "text": "dont"
+    },
+    {
+      "key": "4",
+      "text": "sur lesquelles"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "« Nuire À quelque chose » : le complément est introduit par « à », d'où « auxquelles » (le gel a nui à ces cultures).",
+  "why": {
+    "1": "Correct : nuire À → les cultures auxquelles le gel a nui.",
+    "2": "« que » traiterait « nuire » comme un verbe à complément direct : « nuire quelque chose » n'existe pas.",
+    "3": "« dont » supposerait « nuire de », construction inexistante.",
+    "4": "« sur lesquelles » calque « peser sur » : « nuire » exige « à », pas « sur ».",
+    "A": "L'option 1 est correcte.",
+    "T": "Une seule option restitue le régime du verbe."
+  }
+},
+{
+  "id": "orth-L14-1",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Les délégués se sont installés ___ de la table ronde ; c'est maintenant ___ de la commission de se prononcer.",
+  "options": [
+    {
+      "key": "1",
+      "text": "au tour / autour"
+    },
+    {
+      "key": "2",
+      "text": "autour / au tour"
+    },
+    {
+      "key": "3",
+      "text": "autour / autour"
+    },
+    {
+      "key": "4",
+      "text": "au tour / au tour"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "« Autour » (soudé) marque la position dans l'espace ; « au tour de » (détaché) signifie que c'est le moment de quelqu'un (son tour).",
+  "why": {
+    "1": "Inverse les deux : la position s'écrit soudée, le tour de rôle en deux mots.",
+    "2": "Correct : position autour de la table ; moment venu = c'est au tour de la commission.",
+    "3": "« c'est autour de la commission de se prononcer » confond la position et le tour de rôle.",
+    "4": "« installés au tour de la table » : la position dans l'espace s'écrit « autour ».",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options confondent position et tour de rôle dans au moins une des deux places."
+  }
+},
+{
+  "id": "orth-L14-2",
+  "rule": "orthographe",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Cette estimation chiffrée reste sujette à caution."
+    },
+    {
+      "key": "2",
+      "text": "Le comité a rétabli le fonctionnaire dans ses droits séance tenante."
+    },
+    {
+      "key": "3",
+      "text": "Le protocole est entaché d’une erreur de procédure."
+    },
+    {
+      "key": "4",
+      "text": "Ce visa fait foi jusqu’à preuve du contraire."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "T",
+  "explanation": "Quatre locutions correctes malgré leur allure suspecte : « sujette à caution » (accordé avec estimation), « séance tenante », « entaché de » et « faire foi jusqu'à preuve du contraire ». Réponse : Toutes.",
+  "why": {
+    "1": "Correcte : « sujet à caution » s'accorde (estimation → sujette) ; « caution » y garde son sens ancien de garantie.",
+    "2": "Correcte : « séance tenante » (= pendant que la séance se tient) est figée au participe présent.",
+    "3": "Correcte : « entaché de » (souillé de) s'écrit avec un seul t initial et se construit avec « de ».",
+    "4": "Correcte : « faire foi » reste invariable et la locution est « jusqu'à preuve du contraire ».",
+    "A": "Les quatre phrases sont correctes.",
+    "T": "Correct : chacune de ces locutions administratives, souvent soupçonnée à tort, est irréprochable."
+  }
+},
+{
+  "id": "orth-L14-3",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le rapport dénonce une ___ entre le fournisseur et l'adjudicateur ; l'autre dossier concerne une ___ entre deux rames de tram.",
+  "options": [
+    {
+      "key": "1",
+      "text": "collision / collusion"
+    },
+    {
+      "key": "2",
+      "text": "collusion / collusion"
+    },
+    {
+      "key": "3",
+      "text": "collusion / collision"
+    },
+    {
+      "key": "4",
+      "text": "collision / collision"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "La « collusion » est une entente secrète au détriment d'un tiers ; la « collision » est un choc matériel entre deux corps.",
+  "why": {
+    "1": "Inverse les deux : l'entente secrète est une collusion, le choc une collision.",
+    "2": "« collusion entre deux rames » : deux véhicules qui se heurtent entrent en collision.",
+    "3": "Correct : entente frauduleuse = collusion ; choc de véhicules = collision.",
+    "4": "« collision entre le fournisseur et l'adjudicateur » : l'entente secrète se nomme collusion.",
+    "A": "L'option 3 est correcte.",
+    "T": "Trois options placent au moins un des deux paronymes à contre-emploi."
+  }
+},
+{
+  "id": "orth-L14-4",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le cambriolage a été ___ pendant les vacances scolaires ; cette bourse veut ___ l'œuvre de sa fondatrice.",
+  "options": [
+    {
+      "key": "1",
+      "text": "perpétué / perpétrer"
+    },
+    {
+      "key": "2",
+      "text": "perpétré / perpétrer"
+    },
+    {
+      "key": "3",
+      "text": "perpétué / perpétuer"
+    },
+    {
+      "key": "4",
+      "text": "perpétré / perpétuer"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "« Perpétrer » = commettre (un méfait) ; « perpétuer » = faire durer. On perpètre un cambriolage, on perpétue une œuvre.",
+  "why": {
+    "1": "Inverse les deux : le méfait est perpétré, la mémoire perpétuée.",
+    "2": "« perpétrer l'œuvre » : faire durer se dit perpétuer.",
+    "3": "« un cambriolage perpétué » : commettre un méfait se dit perpétrer.",
+    "4": "Correct : méfait commis = perpétré ; œuvre prolongée = perpétuer.",
+    "A": "L'option 4 est correcte.",
+    "T": "Trois options confondent les deux paronymes dans au moins une des deux places."
+  }
+},
+{
+  "id": "orth-L14-5",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Pour faire annuler la décision, l'avocate a ___ un vice de forme ; le préambule, lui, se borne à ___ le contexte de la réforme.",
+  "options": [
+    {
+      "key": "1",
+      "text": "invoqué / évoquer"
+    },
+    {
+      "key": "2",
+      "text": "évoqué / invoquer"
+    },
+    {
+      "key": "3",
+      "text": "invoqué / invoquer"
+    },
+    {
+      "key": "4",
+      "text": "évoqué / évoquer"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "« Invoquer » = faire valoir comme argument ou appui ; « évoquer » = mentionner, rappeler à l'esprit.",
+  "why": {
+    "1": "Correct : on invoque un vice de forme (argument) ; on évoque un contexte (mention).",
+    "2": "Inverse les deux : l'argument juridique s'invoque, le contexte s'évoque.",
+    "3": "« invoquer le contexte » : le préambule ne s'en sert pas comme argument, il le mentionne → évoquer.",
+    "4": "« évoqué un vice de forme » : l'avocate ne fait pas que le mentionner, elle le fait valoir → invoquer.",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options placent au moins un des deux verbes à contre-emploi."
+  }
+},
+{
+  "id": "orth-L14-6",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Elle s'exprime ___ en allemand et a ___ obtenu son diplôme d'interprète.",
+  "options": [
+    {
+      "key": "1",
+      "text": "couremment / récemment"
+    },
+    {
+      "key": "2",
+      "text": "couramment / récamment"
+    },
+    {
+      "key": "3",
+      "text": "couremment / récamment"
+    },
+    {
+      "key": "4",
+      "text": "courramment / récemment"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "A",
+  "explanation": "L'adverbe se forme sur l'adjectif : courant → couramment (-amment), récent → récemment (-emment). La paire correcte « couramment / récemment » n'est pas proposée.",
+  "why": {
+    "1": "« couremment » : l'adjectif « courant » se termine en -ant → adverbe en -amment.",
+    "2": "« récamment » : l'adjectif « récent » se termine en -ent → adverbe en -emment.",
+    "3": "Cumule les deux terminaisons fautives.",
+    "4": "« courramment » double le r : courant n'en a qu'un (couramment).",
+    "A": "Correct : la paire attendue « couramment / récemment » ne figure dans aucune option.",
+    "T": "Chaque option contient au moins une graphie fautive."
+  }
+},
+{
+  "id": "orth-L14-7",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "À dix ans, c'était un petit ___ du violon ; devenu célèbre, il se montre ___ envers les jeunes musiciens de sa région.",
+  "options": [
+    {
+      "key": "1",
+      "text": "prodigue / prodige"
+    },
+    {
+      "key": "2",
+      "text": "prodige / prodige"
+    },
+    {
+      "key": "3",
+      "text": "prodigue / prodigue"
+    },
+    {
+      "key": "4",
+      "text": "prodige / prodigue"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "Un « prodige » est un être aux dons exceptionnels ; « prodigue » signifie qui donne sans compter (prodiguer).",
+  "why": {
+    "1": "Inverse les deux : l'enfant doué est un prodige, le généreux est prodigue.",
+    "2": "« il se montre prodige envers les jeunes » : la générosité se dit « prodigue ».",
+    "3": "« un petit prodigue du violon » : le talent exceptionnel se dit « prodige ».",
+    "4": "Correct : talent hors norme = prodige ; générosité = prodigue.",
+    "A": "L'option 4 est correcte.",
+    "T": "Trois options confondent les deux paronymes dans au moins une des deux places."
+  }
+},
+{
+  "id": "conj-L14-8",
+  "rule": "conjugaison",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "___ excuser ce contretemps indépendant de notre volonté ; ___ néanmoins à respecter le délai initial.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Veillez / veillez"
+    },
+    {
+      "key": "2",
+      "text": "Veuillez / veillez"
+    },
+    {
+      "key": "3",
+      "text": "Veuillez / veuillez"
+    },
+    {
+      "key": "4",
+      "text": "Veillez / veuillez"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "« Veuillez » (impératif de vouloir) introduit un infinitif de politesse ; « veillez » (impératif de veiller) se construit avec « à » : veiller à faire quelque chose.",
+  "why": {
+    "1": "« Veillez excuser » : devant l'infinitif de politesse, c'est l'impératif de vouloir → veuillez.",
+    "2": "Correct : veuillez + infinitif (politesse) ; veillez à + infinitif (vigilance).",
+    "3": "« veuillez à respecter » : la construction avec « à » appartient à veiller, pas à vouloir.",
+    "4": "Inverse les deux verbes dans les deux constructions.",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options branchent au moins un des deux impératifs sur la mauvaise construction."
+  }
+},
+{
+  "id": "dis-L14-9",
+  "rule": "discours",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "La formatrice nous a demandé : « Qu'attendez-vous de ce stage ? » Quelle transposition est correcte ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Elle nous a demandé qu'est-ce que nous attendions de ce stage."
+    },
+    {
+      "key": "2",
+      "text": "Elle nous a demandé ce qui nous attendions de ce stage."
+    },
+    {
+      "key": "3",
+      "text": "Elle nous a demandé ce que nous attendions de ce stage."
+    },
+    {
+      "key": "4",
+      "text": "Elle nous a demandé quoi nous attendions de ce stage."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "« Que » interrogatif direct devient « ce que » en interrogation indirecte quand il est complément du verbe (nous attendions quelque chose) ; « est-ce que » disparaît.",
+  "why": {
+    "1": "« qu'est-ce que » est une marque de l'interrogation directe : elle disparaît dans la subordonnée.",
+    "2": "« ce qui » serait sujet ; or « nous » est le sujet d'« attendions » : le pronom est complément → « ce que ».",
+    "3": "Correct : complément du verbe → « ce que », ordre déclaratif, imparfait de concordance.",
+    "4": "« quoi nous attendions » calque l'oral : après un verbe comme demander, le neutre complément se dit « ce que ».",
+    "A": "L'option 3 est correcte.",
+    "T": "Les options 1, 2 et 4 conservent une marque directe ou confondent sujet et complément."
+  }
+},
+{
+  "id": "rel-L14-10",
+  "rule": "relatifs",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Les activités créatrices ___ les élèves s'adonnent le mercredi après-midi seront maintenues à la rentrée.",
+  "options": [
+    {
+      "key": "1",
+      "text": "auxquelles"
+    },
+    {
+      "key": "2",
+      "text": "dont"
+    },
+    {
+      "key": "3",
+      "text": "qu'"
+    },
+    {
+      "key": "4",
+      "text": "dans lesquelles"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "« S'adonner À quelque chose » : le complément est introduit par « à », d'où « auxquelles » (ils s'adonnent à ces activités).",
+  "why": {
+    "1": "Correct : s'adonner À → les activités auxquelles ils s'adonnent.",
+    "2": "« dont » supposerait « s'adonner de », construction inexistante.",
+    "3": "« qu' » traiterait le verbe comme transitif direct : « s'adonner quelque chose » est impossible.",
+    "4": "« dans lesquelles » calque « s'investir dans » : « s'adonner » exige « à ».",
+    "A": "L'option 1 est correcte.",
+    "T": "Une seule option restitue le régime du verbe."
+  }
+},
+{
+  "id": "orth-L15-1",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le règlement prévoit une exception, ___ pour les stagiaires de première année.",
+  "options": [
+    {
+      "key": "1",
+      "text": "en l'occurence"
+    },
+    {
+      "key": "2",
+      "text": "en l'occurance"
+    },
+    {
+      "key": "3",
+      "text": "en l'ocurrence"
+    },
+    {
+      "key": "4",
+      "text": "en l'occurrance"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "A",
+  "explanation": "La locution s'écrit « en l'occurrence » : deux c et deux r, finale en -ence. Aucune option ne porte cette graphie.",
+  "why": {
+    "1": "« occurence » : il manque le second r (occurrence, comme concurrence).",
+    "2": "« occurance » : la finale est -ence, jamais -ance.",
+    "3": "« ocurrence » : il manque le second c.",
+    "4": "« occurrance » : doubles consonnes justes, mais finale -ance fautive.",
+    "A": "Correct : la graphie attendue « en l'occurrence » ne figure dans aucune option.",
+    "T": "Chaque option écorche la locution d'une façon différente."
+  }
+},
+{
+  "id": "orth-L15-2",
+  "rule": "orthographe",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Les deux services sont convenus d’une procédure commune."
+    },
+    {
+      "key": "2",
+      "text": "La déléguée a fait montre d’un sang-froid remarquable."
+    },
+    {
+      "key": "3",
+      "text": "Elle s’est fait fort d’obtenir un délai supplémentaire."
+    },
+    {
+      "key": "4",
+      "text": "Les riverains ont eu vent du projet avant son annonce officielle."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "T",
+  "explanation": "Quatre tournures correctes malgré leur allure suspecte : « sont convenus de » (auxiliaire être soutenu), « faire montre de », « se faire fort de » (fait et fort invariables) et « avoir vent de ». Réponse : Toutes.",
+  "why": {
+    "1": "Correcte : « convenir de » se conjugue avec être dans l'usage soigné : ils sont convenus d'une procédure.",
+    "2": "Correcte : « faire montre de » (= manifester) est la locution attestée, sans rapport avec la montre-bracelet.",
+    "3": "Correcte : dans « se faire fort de », « fait » et « fort » restent invariables.",
+    "4": "Correcte : « avoir vent de » (= apprendre par des bruits) est la locution consacrée.",
+    "A": "Les quatre phrases sont correctes.",
+    "T": "Correct : chacune de ces tournures, souvent soupçonnée à tort, est irréprochable."
+  }
+},
+{
+  "id": "orth-L15-3",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Dans toutes les ___ du terme, cette réforme fait débat ; quant à l'___ du recours par la cour, elle reste incertaine.",
+  "options": [
+    {
+      "key": "1",
+      "text": "acceptions / acceptation"
+    },
+    {
+      "key": "2",
+      "text": "acceptations / acception"
+    },
+    {
+      "key": "3",
+      "text": "acceptions / acception"
+    },
+    {
+      "key": "4",
+      "text": "acceptations / acceptation"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Une « acception » est un sens d'un mot ; une « acceptation » est le fait d'accepter.",
+  "why": {
+    "1": "Correct : sens du mot = acceptions ; fait d'accepter le recours = acceptation.",
+    "2": "Inverse les deux : les sens d'un terme sont ses acceptions, l'accueil favorable une acceptation.",
+    "3": "« l'acception du recours » : la cour n'examine pas un sens du mot, elle accepte ou non → acceptation.",
+    "4": "« les acceptations du terme » : les sens d'un mot sont ses acceptions.",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options placent au moins un des deux paronymes à contre-emploi."
+  }
+},
+{
+  "id": "orth-L15-4",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "L'annonce du déménagement l'a ___ ; elle en est restée ___ toute la matinée.",
+  "options": [
+    {
+      "key": "1",
+      "text": "stupéfaite / stupéfiée"
+    },
+    {
+      "key": "2",
+      "text": "stupéfaite / stupéfaite"
+    },
+    {
+      "key": "3",
+      "text": "stupéfiée / stupéfiée"
+    },
+    {
+      "key": "4",
+      "text": "stupéfiée / stupéfaite"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "Après l'auxiliaire avoir, il faut le participe du verbe « stupéfier » : l'a stupéfiée. « Stupéfait » est un adjectif : rester stupéfaite.",
+  "why": {
+    "1": "Inverse les deux : le verbe conjugué exige « stupéfiée », l'attribut exige l'adjectif « stupéfaite ».",
+    "2": "« l'a stupéfaite » : « stupéfait » n'est pas un participe ; le verbe est stupéfier → stupéfiée.",
+    "3": "« restée stupéfiée » : après « rester », on emploie l'adjectif « stupéfaite ».",
+    "4": "Correct : verbe stupéfier au participe (l'a stupéfiée) ; adjectif stupéfait en attribut (restée stupéfaite).",
+    "A": "L'option 4 est correcte.",
+    "T": "Trois options confondent l'adjectif et le participe dans au moins une des deux places."
+  }
+},
+{
+  "id": "orth-L15-5",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "L'incendie a ___ l'entrepôt en moins d'une heure ; les réparations ont ___ la moitié du budget annuel.",
+  "options": [
+    {
+      "key": "1",
+      "text": "consommé / consumé"
+    },
+    {
+      "key": "2",
+      "text": "consumé / consumé"
+    },
+    {
+      "key": "3",
+      "text": "consumé / consommé"
+    },
+    {
+      "key": "4",
+      "text": "consommé / consommé"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "« Consumer » = détruire par le feu ou user complètement ; « consommer » = utiliser, absorber (un bien, un budget).",
+  "why": {
+    "1": "Inverse les deux : le feu consume, les dépenses consomment.",
+    "2": "« consumé la moitié du budget » : dépenser un budget se dit consommer.",
+    "3": "Correct : détruit par le feu = consumé ; budget dépensé = consommé.",
+    "4": "« consommé l'entrepôt » : la destruction par le feu se dit consumer.",
+    "A": "L'option 3 est correcte.",
+    "T": "Trois options confondent les deux verbes dans au moins une des deux places."
+  }
+},
+{
+  "id": "orth-L15-6",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le règlement prévoit une ___ des sanctions selon la gravité des faits ; la ___ de l'éprouvette est devenue illisible.",
+  "options": [
+    {
+      "key": "1",
+      "text": "graduation / gradation"
+    },
+    {
+      "key": "2",
+      "text": "gradation / graduation"
+    },
+    {
+      "key": "3",
+      "text": "gradation / gradation"
+    },
+    {
+      "key": "4",
+      "text": "graduation / graduation"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "La « gradation » est une progression par degrés ; la « graduation » est l'échelle de mesure tracée sur un instrument.",
+  "why": {
+    "1": "Inverse les deux : la progression est une gradation, l'échelle gravée une graduation.",
+    "2": "Correct : progression des sanctions = gradation ; repères de l'éprouvette = graduation.",
+    "3": "« la gradation de l'éprouvette » : les traits de mesure forment la graduation.",
+    "4": "« une graduation des sanctions » : la progression par degrés est une gradation.",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options placent au moins un des deux paronymes à contre-emploi."
+  }
+},
+{
+  "id": "orth-L15-7",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Seule la municipalité est ___ à signer cette convention ; elle a d'ailleurs mené la négociation avec ___.",
+  "options": [
+    {
+      "key": "1",
+      "text": "habilitée / habileté"
+    },
+    {
+      "key": "2",
+      "text": "habilitée / habilité"
+    },
+    {
+      "key": "3",
+      "text": "habileté / habileté"
+    },
+    {
+      "key": "4",
+      "text": "habileté / habilité"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "« Habilité » (de habiliter) = juridiquement autorisé ; l'« habileté » = l'adresse, le savoir-faire.",
+  "why": {
+    "1": "Correct : autorisée à signer = habilitée ; adresse dans la négociation = habileté.",
+    "2": "« avec habilité » : le savoir-faire se nomme habileté ; « habilité » est le participe d'habiliter.",
+    "3": "« est habileté à signer » : l'autorisation juridique se dit être habilité(e) à.",
+    "4": "Cumule les deux confusions : autorisation et adresse sont interverties.",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options confondent l'autorisation (habiliter) et l'adresse (habileté)."
+  }
+},
+{
+  "id": "conj-L15-8",
+  "rule": "conjugaison",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Dès la rentrée, les ateliers du mercredi ___ deux moniteurs supplémentaires.",
+  "options": [
+    {
+      "key": "1",
+      "text": "employeront"
+    },
+    {
+      "key": "2",
+      "text": "emploiront"
+    },
+    {
+      "key": "3",
+      "text": "emploierons"
+    },
+    {
+      "key": "4",
+      "text": "emploieront"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "Au futur, les verbes en -yer changent le y en i devant e muet : employer → ils emploieront.",
+  "why": {
+    "1": "« employeront » garde le y : devant e muet, il devient i (emploieront).",
+    "2": "« emploiront » perd le e du radical du futur : la forme est emploie + ront.",
+    "3": "« emploierons » est une 1re personne du pluriel : le sujet « les ateliers » exige -ont.",
+    "4": "Correct : y → i devant e muet, 3e personne du pluriel → emploieront.",
+    "A": "L'option 4 est correcte.",
+    "T": "Les options 1, 2 et 3 sont mal orthographiées ou mal accordées."
+  }
+},
+{
+  "id": "dis-L15-9",
+  "rule": "discours",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "À l'audience du 3 mars, le tribunal a annoncé aux parties : « Vous recevrez notre décision dans trois jours. » Le compte rendu, rédigé bien plus tard, rapporte cette annonce. Quelle formulation est correcte ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Le tribunal a annoncé aux parties qu'elles recevraient sa décision dans trois jours."
+    },
+    {
+      "key": "2",
+      "text": "Le tribunal a annoncé aux parties que nous recevrions sa décision trois jours plus tard."
+    },
+    {
+      "key": "3",
+      "text": "Le tribunal a annoncé aux parties qu'elles recevraient sa décision trois jours plus tard."
+    },
+    {
+      "key": "4",
+      "text": "Le tribunal a annoncé aux parties qu'elles recevraient sa décision le surlendemain."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "Rapporté bien après coup : futur → conditionnel (« recevraient »), « vous » → « elles » (les parties), et « dans trois jours » → « trois jours plus tard ».",
+  "why": {
+    "1": "« dans trois jours » garde le repère du discours direct : rapporté plus tard, il devient « trois jours plus tard ».",
+    "2": "« nous » recopie le pronom des destinataires : dans un compte rendu à la 3e personne, ce sont « elles » (les parties).",
+    "3": "Correct : conditionnel, pronom de 3e personne et repère temporel transposé.",
+    "4": "« le surlendemain » correspond à deux jours après, pas à trois.",
+    "A": "L'option 3 est correcte.",
+    "T": "Les options 1, 2 et 4 laissent chacune un élément non transposé ou mal calculé."
+  }
+},
+{
+  "id": "rel-L15-10",
+  "rule": "relatifs",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Les usages ___ le comité a dérogé en validant ce dossier hors délai créent un précédent.",
+  "options": [
+    {
+      "key": "1",
+      "text": "que"
+    },
+    {
+      "key": "2",
+      "text": "auxquels"
+    },
+    {
+      "key": "3",
+      "text": "dont"
+    },
+    {
+      "key": "4",
+      "text": "sur lesquels"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "« Déroger À quelque chose » : le complément est introduit par « à », d'où « auxquels » (le comité a dérogé à ces usages).",
+  "why": {
+    "1": "« que » traiterait « déroger » comme transitif direct : « déroger quelque chose » n'existe pas.",
+    "2": "Correct : déroger À → les usages auxquels le comité a dérogé.",
+    "3": "« dont » supposerait « déroger de », construction inexistante.",
+    "4": "« sur lesquels » calque « s'asseoir sur les usages » : « déroger » exige « à ».",
+    "A": "L'option 2 est correcte.",
+    "T": "Une seule option restitue le régime du verbe."
+  }
+},
+{
+  "id": "orth-L16-1",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Un ___ chaleureux a été réservé aux nouvelles volées d'étudiants.",
+  "options": [
+    {
+      "key": "1",
+      "text": "acceuil"
+    },
+    {
+      "key": "2",
+      "text": "accueuil"
+    },
+    {
+      "key": "3",
+      "text": "acueil"
+    },
+    {
+      "key": "4",
+      "text": "accueille"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "A",
+  "explanation": "Le nom s'écrit « accueil » : deux c, puis -ueil (le u précède le e pour garder le son [k] dur). Aucune option ne porte cette graphie.",
+  "why": {
+    "1": "« acceuil » inverse le u et le e : c'est -ueil (accueil, recueil, écueil).",
+    "2": "« accueuil » ajoute un u parasite après le e.",
+    "3": "« acueil » : il manque le second c.",
+    "4": "« accueille » est la forme conjuguée du verbe (il accueille), pas le nom.",
+    "A": "Correct : la graphie attendue « accueil » ne figure dans aucune option.",
+    "T": "Chaque option écorche le mot d'une façon différente."
+  }
+},
+{
+  "id": "orth-L16-2",
+  "rule": "orthographe",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Elle s’est trouvée en butte aux critiques de ses pairs."
+    },
+    {
+      "key": "2",
+      "text": "De guerre lasse, il a fini par signer l’avenant."
+    },
+    {
+      "key": "3",
+      "text": "L’audience s’est tenue à huis clos."
+    },
+    {
+      "key": "4",
+      "text": "Cette pratique a désormais droit de cité dans les écoles."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "T",
+  "explanation": "Quatre locutions correctes malgré leur allure suspecte : « en butte à » (la butte, pas le but), « de guerre lasse » (figée au féminin), « à huis clos » (huis = porte) et « avoir droit de cité ». Réponse : Toutes.",
+  "why": {
+    "1": "Correcte : « en butte à » vient de la butte de tir (être exposé comme une cible), pas de « but ».",
+    "2": "Correcte : « de guerre lasse » est figée avec « lasse » au féminin, quel que soit le sujet.",
+    "3": "Correcte : « huis » (porte, comme dans huissier) donne « à huis clos » = portes fermées.",
+    "4": "Correcte : « avoir droit de cité » = être admis, locution consacrée.",
+    "A": "Les quatre phrases sont correctes.",
+    "T": "Correct : chacune de ces locutions, souvent soupçonnée à tort, est irréprochable."
+  }
+},
+{
+  "id": "orth-L16-3",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Impossible ___ sortir avant la pause : la séance reprend ___ dix minutes à peine.",
+  "options": [
+    {
+      "key": "1",
+      "text": "dans / d'en"
+    },
+    {
+      "key": "2",
+      "text": "d'en / dans"
+    },
+    {
+      "key": "3",
+      "text": "d'en / d'en"
+    },
+    {
+      "key": "4",
+      "text": "dans / dans"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "« D'en » = de + en (impossible DE EN sortir) ; « dans » est la préposition de temps ou de lieu (dans dix minutes).",
+  "why": {
+    "1": "Inverse les deux : après « impossible de », le pronom « en » s'élide en « d'en ».",
+    "2": "Correct : impossible d'en sortir (de + en) ; reprise dans dix minutes (préposition).",
+    "3": "« reprend d'en dix minutes » : le repère temporel exige la préposition « dans ».",
+    "4": "« impossible dans sortir » : il faut « de » + « en » élidés → d'en.",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options confondent la préposition et la contraction dans au moins une place."
+  }
+},
+{
+  "id": "orth-L16-4",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Tu ___ signalé l'erreur avant que ___ propre cheffe ne la découvre.",
+  "options": [
+    {
+      "key": "1",
+      "text": "m'as / ma"
+    },
+    {
+      "key": "2",
+      "text": "m'a / ma"
+    },
+    {
+      "key": "3",
+      "text": "m'as / m'a"
+    },
+    {
+      "key": "4",
+      "text": "ma / ma"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "« Tu m'as » = me + avoir à la 2e personne (tu as) ; « ma » est le déterminant possessif devant « cheffe ».",
+  "why": {
+    "1": "Correct : tu m'as signalé (2e personne, -s) ; ma propre cheffe (possessif).",
+    "2": "« tu m'a » : avec « tu », le verbe avoir prend un s (tu as → tu m'as).",
+    "3": "« m'a propre cheffe » : devant le nom, il faut le possessif « ma », pas me + verbe.",
+    "4": "« tu ma signalé » : il faut le pronom élidé + verbe (m'as), pas le possessif.",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options confondent pronom + verbe et déterminant possessif."
+  }
+},
+{
+  "id": "orth-L16-5",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "L'avis du ___ des impôts est arrivé ce matin ; autrefois, un ___ instruisait les enfants du domaine.",
+  "options": [
+    {
+      "key": "1",
+      "text": "précepteur / percepteur"
+    },
+    {
+      "key": "2",
+      "text": "percepteur / percepteur"
+    },
+    {
+      "key": "3",
+      "text": "percepteur / précepteur"
+    },
+    {
+      "key": "4",
+      "text": "précepteur / précepteur"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "Le « percepteur » perçoit les impôts ; le « précepteur » enseigne à domicile (il donne des préceptes).",
+  "why": {
+    "1": "Inverse les deux : celui qui perçoit l'impôt est le percepteur, l'enseignant privé le précepteur.",
+    "2": "« un percepteur instruisait les enfants » : l'enseignant à domicile est un précepteur.",
+    "3": "Correct : impôts = percepteur (percevoir) ; enseignement = précepteur (précepte).",
+    "4": "« le précepteur des impôts » : la perception fiscale relève du percepteur.",
+    "A": "L'option 3 est correcte.",
+    "T": "Trois options confondent les deux paronymes dans au moins une des deux places."
+  }
+},
+{
+  "id": "orth-L16-6",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "La roche ___ au milieu du pré, à peine visible ; le conférencier, lui, n'a fait qu'___ le sujet.",
+  "options": [
+    {
+      "key": "1",
+      "text": "effleure / affleurer"
+    },
+    {
+      "key": "2",
+      "text": "affleure / affleurer"
+    },
+    {
+      "key": "3",
+      "text": "effleure / effleurer"
+    },
+    {
+      "key": "4",
+      "text": "affleure / effleurer"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "« Affleurer » = apparaître au niveau de la surface (la roche affleure) ; « effleurer » = toucher ou aborder à peine (effleurer un sujet).",
+  "why": {
+    "1": "Inverse les deux : la roche apparaît en surface (affleure), le sujet est à peine abordé (effleuré).",
+    "2": "« affleurer le sujet » : aborder superficiellement se dit effleurer.",
+    "3": "« la roche effleure au milieu du pré » : émerger au ras de la surface se dit affleurer.",
+    "4": "Correct : la roche affleure ; le conférencier effleure le sujet.",
+    "A": "L'option 4 est correcte.",
+    "T": "Trois options confondent les deux verbes dans au moins une des deux places."
+  }
+},
+{
+  "id": "orth-L16-7",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Ce champignon ___ provoque de graves intoxications ; sa remarque ___ a glacé l'assemblée.",
+  "options": [
+    {
+      "key": "1",
+      "text": "venimeux / vénéneuse"
+    },
+    {
+      "key": "2",
+      "text": "vénéneux / venimeuse"
+    },
+    {
+      "key": "3",
+      "text": "vénéneux / vénéneuse"
+    },
+    {
+      "key": "4",
+      "text": "venimeux / venimeuse"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "« Vénéneux » se dit des végétaux toxiques qu'on ingère ; « venimeux » se dit des animaux qui inoculent un venin et, au figuré, des propos malveillants.",
+  "why": {
+    "1": "Inverse les deux : la plante est vénéneuse, la parole blessante venimeuse.",
+    "2": "Correct : champignon vénéneux (toxique à l'ingestion) ; remarque venimeuse (fig. : pleine de venin).",
+    "3": "« remarque vénéneuse » : au figuré, la malveillance se dit venimeuse (comme la vipère).",
+    "4": "« champignon venimeux » : un végétal n'inocule pas de venin, il est vénéneux.",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options confondent les deux adjectifs dans au moins une des deux places."
+  }
+},
+{
+  "id": "conj-L16-8",
+  "rule": "conjugaison",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "N'oublie rien : tu ___ le formulaire signé au dossier avant de le déposer au greffe.",
+  "options": [
+    {
+      "key": "1",
+      "text": "joins"
+    },
+    {
+      "key": "2",
+      "text": "joint"
+    },
+    {
+      "key": "3",
+      "text": "joind"
+    },
+    {
+      "key": "4",
+      "text": "joints"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Au présent, « joindre » fait : je joins, tu joins, il joint. Avec « tu », la terminaison est -s, sans t ni d.",
+  "why": {
+    "1": "Correct : tu joins (présent de joindre, 2e personne du singulier).",
+    "2": "« tu joint » : le t appartient à la 3e personne (il joint).",
+    "3": "« joind » garde le d de l'infinitif : les verbes en -indre le perdent au singulier.",
+    "4": "« tu joints » ajoute un t parasite avant le s : la forme est « joins ».",
+    "A": "L'option 1 est correcte.",
+    "T": "Les options 2, 3 et 4 attribuent au verbe une terminaison qui n'est pas la sienne."
+  }
+},
+{
+  "id": "dis-L16-9",
+  "rule": "discours",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "L'organisatrice a demandé aux participants : « Viendrez-vous en train ou prendrez-vous la navette ? » Le compte rendu rapporte cette question. Quelle formulation est correcte ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Elle leur a demandé s'ils viendraient en train ou s'ils prendraient la navette."
+    },
+    {
+      "key": "2",
+      "text": "Elle leur a demandé s'ils viendraient en train ou prendraient-ils la navette."
+    },
+    {
+      "key": "3",
+      "text": "Elle leur a demandé est-ce qu'ils viendraient en train ou la navette."
+    },
+    {
+      "key": "4",
+      "text": "Elle leur a demandé s'ils viendraient en train ou s'ils prendraient la navette ?"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Chaque membre de l'alternative est introduit par « si » à l'ordre déclaratif ; l'inversion, « est-ce que » et le point d'interrogation disparaissent.",
+  "why": {
+    "1": "Correct : si… ou si…, ordre déclaratif, conditionnel de futur du passé, point final.",
+    "2": "« prendraient-ils » conserve l'inversion de l'interrogation directe dans le second membre.",
+    "3": "« est-ce que » est une marque directe et l'alternative est amputée du second verbe.",
+    "4": "La phrase est bien construite, mais l'assertion qui rapporte une question se termine par un point, pas par « ? ».",
+    "A": "L'option 1 est correcte.",
+    "T": "Les options 2, 3 et 4 conservent chacune une marque de l'interrogation directe."
+  }
+},
+{
+  "id": "rel-L16-10",
+  "rule": "relatifs",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Les objectifs intermédiaires ___ l'équipe est parvenue avant l'été figurent au tableau de bord.",
+  "options": [
+    {
+      "key": "1",
+      "text": "que"
+    },
+    {
+      "key": "2",
+      "text": "dont"
+    },
+    {
+      "key": "3",
+      "text": "vers lesquels"
+    },
+    {
+      "key": "4",
+      "text": "auxquels"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "« Parvenir À quelque chose » : le complément est introduit par « à », d'où « auxquels » (l'équipe est parvenue à ces objectifs).",
+  "why": {
+    "1": "« que » traiterait « parvenir » comme transitif direct : « parvenir quelque chose » n'existe pas.",
+    "2": "« dont » supposerait « parvenir de », construction inexistante.",
+    "3": "« vers lesquels » évoque la direction : « parvenir » marque l'aboutissement et exige « à ».",
+    "4": "Correct : parvenir À → les objectifs auxquels l'équipe est parvenue.",
+    "A": "L'option 4 est correcte.",
+    "T": "Une seule option restitue le régime du verbe."
+  }
+},
+{
+  "id": "orth-L17-1",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Depuis l'inondation des archives, le classement des dossiers est devenu un vrai ___.",
+  "options": [
+    {
+      "key": "1",
+      "text": "cauchemard"
+    },
+    {
+      "key": "2",
+      "text": "cauchemare"
+    },
+    {
+      "key": "3",
+      "text": "cochemar"
+    },
+    {
+      "key": "4",
+      "text": "cauchemart"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "A",
+  "explanation": "Le mot s'écrit « cauchemar », sans consonne finale muette. Aucune option ne porte cette graphie.",
+  "why": {
+    "1": "« cauchemard » : le d final est la faute la plus répandue, induite par « cauchemarder ».",
+    "2": "« cauchemare » : pas de e final (le mot n'est pas féminin).",
+    "3": "« cochemar » : la première syllabe s'écrit cau- (de « caucher », presser).",
+    "4": "« cauchemart » : aucun t final, contrairement à « départ » ou « rempart ».",
+    "A": "Correct : la graphie attendue « cauchemar » ne figure dans aucune option.",
+    "T": "Chaque option ajoute ou déforme une lettre du mot."
+  }
+},
+{
+  "id": "orth-L17-2",
+  "rule": "orthographe",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Elle a versé des arrhes pour réserver la salle de conférence."
+    },
+    {
+      "key": "2",
+      "text": "Sa réponse a montré un bel esprit d’à-propos."
+    },
+    {
+      "key": "3",
+      "text": "Les fournisseurs ont été payés rubis sur l’ongle."
+    },
+    {
+      "key": "4",
+      "text": "Il connaît les tenants et les aboutissants du dossier."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "T",
+  "explanation": "Quatre graphies correctes malgré leur allure suspecte : « des arrhes » (deux r, h), « esprit d'à-propos », « rubis sur l'ongle » et « les tenants et les aboutissants ». Réponse : Toutes.",
+  "why": {
+    "1": "Correcte : « arrhes » (acompte) s'écrit avec deux r et un h, toujours au pluriel.",
+    "2": "Correcte : « à-propos » (pertinence) se soude d'un trait d'union en emploi nominal.",
+    "3": "Correcte : « payer rubis sur l'ongle » (= comptant et intégralement) est la locution consacrée.",
+    "4": "Correcte : « les tenants et les aboutissants » (origines et conséquences), tous deux au pluriel.",
+    "A": "Les quatre phrases sont correctes.",
+    "T": "Correct : chacune de ces expressions, souvent soupçonnée à tort, est irréprochable."
+  }
+},
+{
+  "id": "orth-L17-3",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "___ inscription validée, les étudiants ___ convoqués à la séance d'introduction.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Sont / son"
+    },
+    {
+      "key": "2",
+      "text": "Son / son"
+    },
+    {
+      "key": "3",
+      "text": "Leur / sont"
+    },
+    {
+      "key": "4",
+      "text": "Son / sont"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "« Leur inscription » : le possesseur est pluriel (les étudiants), chacun ayant une inscription → « leur » ; « sont convoqués » est le verbe être.",
+  "why": {
+    "1": "« Sont inscription » : en tête de groupe nominal, il faut un possessif, pas le verbe être.",
+    "2": "« les étudiants son convoqués » : devant le participe, c'est le verbe être → sont.",
+    "3": "Correct : possessif « leur » (chaque étudiant, une inscription) + verbe « sont convoqués ».",
+    "4": "« Son inscription validée, les étudiants… » : le possesseur « les étudiants » impose « leur », pas « son ».",
+    "A": "L'option 3 est correcte.",
+    "T": "Trois options confondent possessif et verbe être, ou le nombre du possesseur."
+  }
+},
+{
+  "id": "orth-L17-4",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Il nous ___ les oreilles avec sa réorganisation ; qu'il pense plutôt à ___ le store avant l'orage.",
+  "options": [
+    {
+      "key": "1",
+      "text": "rabat / rebattre"
+    },
+    {
+      "key": "2",
+      "text": "rebat / rabattre"
+    },
+    {
+      "key": "3",
+      "text": "rebat / rebattre"
+    },
+    {
+      "key": "4",
+      "text": "rabat / rabattre"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "« Rebattre les oreilles » = répéter jusqu'à lasser (battre de nouveau) ; « rabattre » = ramener vers le bas (un store, un capot).",
+  "why": {
+    "1": "Inverse les deux : la locution est « rebattre les oreilles », l'abaissement « rabattre ».",
+    "2": "Correct : il rebat les oreilles (répétition) ; rabattre le store (vers le bas).",
+    "3": "« rebattre le store » : abaisser un objet se dit rabattre.",
+    "4": "« il nous rabat les oreilles » : la locution consacrée est « rebattre les oreilles ».",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options confondent les deux verbes dans au moins une des deux places."
+  }
+},
+{
+  "id": "orth-L17-5",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "La ___ du délai d'inscription a été refusée ; en revanche, le ___ de la ligne de bus jusqu'au campus est à l'étude.",
+  "options": [
+    {
+      "key": "1",
+      "text": "prolongation / prolongation"
+    },
+    {
+      "key": "2",
+      "text": "prolongement / prolongation"
+    },
+    {
+      "key": "3",
+      "text": "prolongement / prolongement"
+    },
+    {
+      "key": "4",
+      "text": "prolongation / prolongement"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "La « prolongation » porte sur une durée (délai, match) ; le « prolongement » porte sur une étendue spatiale (ligne, route) ou sur une suite.",
+  "why": {
+    "1": "« prolongation de la ligne » : l'extension dans l'espace se dit prolongement.",
+    "2": "Inverse les deux : la durée se prolonge en prolongation, l'espace en prolongement.",
+    "3": "« prolongement du délai » : l'allongement d'une durée se dit prolongation.",
+    "4": "Correct : délai (durée) = prolongation ; ligne de bus (espace) = prolongement.",
+    "A": "L'option 4 est correcte.",
+    "T": "Trois options confondent durée et étendue dans au moins une des deux places."
+  }
+},
+{
+  "id": "orth-L17-6",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Il craignait de se montrer ___ en rappelant sa demande un dimanche ; le moment était pourtant ___, la décision tombant lundi.",
+  "options": [
+    {
+      "key": "1",
+      "text": "opportun / importun"
+    },
+    {
+      "key": "2",
+      "text": "importun / opportun"
+    },
+    {
+      "key": "3",
+      "text": "importun / importun"
+    },
+    {
+      "key": "4",
+      "text": "opportun / opportun"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "« Importun » = qui dérange, mal venu (personne ou geste) ; « opportun » = qui tombe au bon moment.",
+  "why": {
+    "1": "Inverse les deux : celui qui dérange est importun, le moment favorable est opportun.",
+    "2": "Correct : se montrer importun (gênant) ; moment opportun (bien choisi).",
+    "3": "« le moment était importun » : un moment favorable se dit opportun.",
+    "4": "« se montrer opportun en rappelant un dimanche » : celui qui dérange est importun.",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options confondent les deux adjectifs dans au moins une des deux places."
+  }
+},
+{
+  "id": "orth-L17-7",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "L'exposé retrace le sens ___ du mot « collège », bien éloigné de l'usage actuel ; la nouvelle filière, elle, propose un cursus très ___.",
+  "options": [
+    {
+      "key": "1",
+      "text": "original / originel"
+    },
+    {
+      "key": "2",
+      "text": "originel / originel"
+    },
+    {
+      "key": "3",
+      "text": "originel / original"
+    },
+    {
+      "key": "4",
+      "text": "original / original"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "« Originel » = qui remonte à l'origine (le sens originel d'un mot) ; « original » = neuf, inédit (un cursus original).",
+  "why": {
+    "1": "Inverse les deux : le sens des origines est originel, la formule inédite est originale.",
+    "2": "« un cursus très originel » : la nouveauté se dit original.",
+    "3": "Correct : sens premier du mot = originel ; cursus inédit = original.",
+    "4": "« le sens original du mot » signifierait un sens inédit ; or on retrace ici son sens premier → originel.",
+    "A": "L'option 3 est correcte.",
+    "T": "Trois options gomment la différence entre origine et nouveauté."
+  }
+},
+{
+  "id": "conj-L17-8",
+  "rule": "conjugaison",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "L'an dernier encore, nous ___ les salles de sport avec le collège voisin.",
+  "options": [
+    {
+      "key": "1",
+      "text": "partagions"
+    },
+    {
+      "key": "2",
+      "text": "partageions"
+    },
+    {
+      "key": "3",
+      "text": "partageons"
+    },
+    {
+      "key": "4",
+      "text": "partagerions"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "À l'imparfait, le e intercalaire des verbes en -ger disparaît devant i : nous partagions (mais nous partageons au présent).",
+  "why": {
+    "1": "Correct : imparfait « nous partagions » ; le e ne s'intercale que devant a et o.",
+    "2": "« partageions » garde un e parasite : devant i, le g reste doux sans e.",
+    "3": "« partageons » est un présent : « l'an dernier encore » impose l'imparfait.",
+    "4": "« partagerions » est un conditionnel : le repère passé demande un fait réel, à l'imparfait.",
+    "A": "L'option 1 est correcte.",
+    "T": "Les options 2, 3 et 4 fautent sur la graphie ou sur le temps."
+  }
+},
+{
+  "id": "dis-L17-9",
+  "rule": "discours",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "Jeudi passé, le concierge a signalé au secrétariat : « L'alarme s'est déclenchée ce matin. » Le rapport hebdomadaire, rédigé plusieurs jours après, rapporte ce signalement. Quelle formulation est correcte ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Il a signalé que l'alarme s'était déclenchée le matin même."
+    },
+    {
+      "key": "2",
+      "text": "Il a signalé que l'alarme s'est déclenchée ce matin."
+    },
+    {
+      "key": "3",
+      "text": "Il a signalé que l'alarme s'était déclenchée ce matin."
+    },
+    {
+      "key": "4",
+      "text": "Il a signalé que l'alarme s'était déclenchée la veille au matin."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Rapporté plusieurs jours après : passé composé → plus-que-parfait (« s'était déclenchée ») et « ce matin » → « le matin même » (le matin du jour du signalement).",
+  "why": {
+    "1": "Correct : plus-que-parfait et déictique recalculé sur le jour du signalement.",
+    "2": "Ni le temps ni « ce matin » ne sont transposés alors que le rapport est rédigé plus tard.",
+    "3": "Le temps est transposé, mais « ce matin » renverrait au matin du rapport, pas à celui du signalement.",
+    "4": "« la veille au matin » décale d'un jour : l'alarme s'est déclenchée le matin du signalement lui-même.",
+    "A": "L'option 1 est correcte.",
+    "T": "Les options 2, 3 et 4 laissent un élément non transposé ou mal calculé."
+  }
+},
+{
+  "id": "rel-L17-10",
+  "rule": "relatifs",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Les obligations de service ___ il a tenté de se soustraire lui seront rappelées par écrit.",
+  "options": [
+    {
+      "key": "1",
+      "text": "que"
+    },
+    {
+      "key": "2",
+      "text": "dont"
+    },
+    {
+      "key": "3",
+      "text": "desquelles"
+    },
+    {
+      "key": "4",
+      "text": "auxquelles"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "« Se soustraire À quelque chose » : le complément est introduit par « à », d'où « auxquelles » (se soustraire à ces obligations).",
+  "why": {
+    "1": "« que » traiterait le verbe comme transitif direct : « se soustraire quelque chose » n'existe pas.",
+    "2": "« dont » supposerait « se soustraire de », construction inexistante.",
+    "3": "« desquelles » habille la même erreur de régime en « de » d'une forme composée.",
+    "4": "Correct : se soustraire À → les obligations auxquelles il a tenté de se soustraire.",
+    "A": "L'option 4 est correcte.",
+    "T": "Une seule option restitue le régime du verbe."
+  }
+},
+{
+  "id": "orth-L18-1",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Accepter le poste à Berne ou rester auprès de sa famille : un vrai ___ pour elle.",
+  "options": [
+    {
+      "key": "1",
+      "text": "dilemne"
+    },
+    {
+      "key": "2",
+      "text": "dillemme"
+    },
+    {
+      "key": "3",
+      "text": "dilème"
+    },
+    {
+      "key": "4",
+      "text": "dilemme"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "Le mot s'écrit « dilemme » : un seul l, puis -emme (du grec lêmma, comme « lemme »).",
+  "why": {
+    "1": "« dilemne » : le n est la faute la plus répandue, par contamination d'« indemne ».",
+    "2": "« dillemme » double le l à tort.",
+    "3": "« dilème » : il manque le double m de la finale -emme.",
+    "4": "Correct : dilemme, un l et deux m.",
+    "A": "L'option 4 est correcte.",
+    "T": "Les options 1, 2 et 3 déforment chacune la graphie du mot."
+  }
+},
+{
+  "id": "orth-L18-2",
+  "rule": "orthographe",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Les candidates ont révisé d’arrache-pied tout l’été."
+    },
+    {
+      "key": "2",
+      "text": "Au demeurant, le budget de la manifestation reste équilibré."
+    },
+    {
+      "key": "3",
+      "text": "Elle utilise sa marge de manœuvre à bon escient."
+    },
+    {
+      "key": "4",
+      "text": "La clause litigieuse avait été ajoutée en catimini."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "T",
+  "explanation": "Quatre locutions correctes malgré leur allure suspecte : « d'arrache-pied », « au demeurant », « à bon escient » et « en catimini ». Réponse : Toutes.",
+  "why": {
+    "1": "Correcte : « d'arrache-pied » (avec trait d'union) = sans relâche.",
+    "2": "Correcte : « au demeurant » (= au reste) est la locution consacrée.",
+    "3": "Correcte : « à bon escient » (en connaissance de cause), avec -scient comme « science ».",
+    "4": "Correcte : « en catimini » (= en cachette) s'écrit bien ainsi.",
+    "A": "Les quatre phrases sont correctes.",
+    "T": "Correct : chacune de ces locutions, souvent soupçonnée à tort, est irréprochable."
+  }
+},
+{
+  "id": "orth-L18-3",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Les marmottes ___ six mois par année ; la flotte de bateaux, elle, ___ dans le hangar du port.",
+  "options": [
+    {
+      "key": "1",
+      "text": "hibernent / hiverne"
+    },
+    {
+      "key": "2",
+      "text": "hivernent / hiberne"
+    },
+    {
+      "key": "3",
+      "text": "hibernent / hiberne"
+    },
+    {
+      "key": "4",
+      "text": "hivernent / hiverne"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "« Hiberner » = passer l'hiver en léthargie (animaux) ; « hiverner » = passer l'hiver à l'abri (bateaux, troupeaux, matériel).",
+  "why": {
+    "1": "Correct : léthargie animale = hiberner ; mise à l'abri saisonnière = hiverner.",
+    "2": "Inverse les deux : la marmotte hiberne, le bateau hiverne.",
+    "3": "« la flotte hiberne » : un objet ne tombe pas en léthargie, il hiverne à l'abri.",
+    "4": "« les marmottes hivernent » : leur sommeil hivernal se dit hiberner.",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options confondent les deux verbes dans au moins une des deux places."
+  }
+},
+{
+  "id": "orth-L18-4",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "La commission lui a ___ un blâme ; la fermeture du site a durablement ___ toute la vallée.",
+  "options": [
+    {
+      "key": "1",
+      "text": "affligé / infligé"
+    },
+    {
+      "key": "2",
+      "text": "infligé / infligé"
+    },
+    {
+      "key": "3",
+      "text": "infligé / affligé"
+    },
+    {
+      "key": "4",
+      "text": "affligé / affligé"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "« Infliger » = imposer une peine (à quelqu'un) ; « affliger » = plonger dans la peine, attrister.",
+  "why": {
+    "1": "Inverse les deux : la sanction s'inflige, le chagrin afflige.",
+    "2": "« infligé toute la vallée » : attrister se dit affliger (et « infliger » exigerait un complément de peine).",
+    "3": "Correct : blâme imposé = infligé ; vallée attristée = affligée.",
+    "4": "« affligé un blâme » : imposer une sanction se dit infliger.",
+    "A": "L'option 3 est correcte.",
+    "T": "Trois options confondent les deux verbes dans au moins une des deux places."
+  }
+},
+{
+  "id": "orth-L18-5",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "L'___ phonique des salles de musique sera refaite ; le protocole prévoit l'___ des patients contagieux.",
+  "options": [
+    {
+      "key": "1",
+      "text": "isolement / isolation"
+    },
+    {
+      "key": "2",
+      "text": "isolation / isolement"
+    },
+    {
+      "key": "3",
+      "text": "isolation / isolation"
+    },
+    {
+      "key": "4",
+      "text": "isolement / isolement"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "L'« isolation » est technique (thermique, phonique : matériaux) ; l'« isolement » est l'état d'une personne ou d'un lieu séparé des autres.",
+  "why": {
+    "1": "Inverse les deux : les travaux relèvent de l'isolation, la mise à l'écart de l'isolement.",
+    "2": "Correct : traitement phonique = isolation ; mise à l'écart des patients = isolement.",
+    "3": "« l'isolation des patients » : la séparation de personnes se dit isolement.",
+    "4": "« l'isolement phonique des salles » : le procédé technique se dit isolation.",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options confondent le procédé technique et l'état de séparation."
+  }
+},
+{
+  "id": "orth-L18-6",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Depuis l'___ du numérique, l'archivage a changé d'échelle ; l'inauguration du nouveau bâtiment fut un ___ très suivi.",
+  "options": [
+    {
+      "key": "1",
+      "text": "événement / avènement"
+    },
+    {
+      "key": "2",
+      "text": "avènement / avènement"
+    },
+    {
+      "key": "3",
+      "text": "événement / événement"
+    },
+    {
+      "key": "4",
+      "text": "avènement / événement"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "L'« avènement » est l'arrivée, l'accession (d'une ère, d'un règne) ; un « événement » est un fait marquant.",
+  "why": {
+    "1": "Inverse les deux : l'arrivée d'une ère est un avènement, le fait marquant un événement.",
+    "2": "« l'inauguration fut un avènement » : un fait ponctuel marquant est un événement.",
+    "3": "« l'événement du numérique » : l'installation d'une ère nouvelle se dit avènement.",
+    "4": "Correct : arrivée du numérique = avènement ; inauguration marquante = événement.",
+    "A": "L'option 4 est correcte.",
+    "T": "Trois options confondent l'accession d'une ère et le fait marquant."
+  }
+},
+{
+  "id": "orth-L18-7",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "L'___ du toit ne permet pas d'installer les panneaux ; son ___ pour les langues anciennes l'a menée au latin.",
+  "options": [
+    {
+      "key": "1",
+      "text": "inclination / inclinaison"
+    },
+    {
+      "key": "2",
+      "text": "inclinaison / inclination"
+    },
+    {
+      "key": "3",
+      "text": "inclinaison / inclinaison"
+    },
+    {
+      "key": "4",
+      "text": "inclination / inclination"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "L'« inclinaison » est la pente matérielle (toit, plan) ; l'« inclination » est le penchant, le goût.",
+  "why": {
+    "1": "Inverse les deux : la pente est l'inclinaison, le goût l'inclination.",
+    "2": "Correct : pente du toit = inclinaison ; penchant pour les langues = inclination.",
+    "3": "« son inclinaison pour les langues » : le goût se dit inclination.",
+    "4": "« l'inclination du toit » : la pente matérielle se dit inclinaison.",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options confondent la pente matérielle et le penchant."
+  }
+},
+{
+  "id": "conj-L18-8",
+  "rule": "conjugaison",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "___ attentif aux consignes de sécurité ; et quoi qu'il en ___, préviens-moi avant d'agir.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Sois / soit"
+    },
+    {
+      "key": "2",
+      "text": "Soit / soit"
+    },
+    {
+      "key": "3",
+      "text": "Sois / sois"
+    },
+    {
+      "key": "4",
+      "text": "Soit / sois"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "« Sois » est l'impératif 2e personne (sois attentif) ; « soit » est le subjonctif 3e personne exigé par « quoi qu'il en soit ».",
+  "why": {
+    "1": "Correct : impératif « sois attentif » ; subjonctif figé « quoi qu'il en soit ».",
+    "2": "« Soit attentif » : l'ordre adressé à « tu » prend un s (sois).",
+    "3": "« quoi qu'il en sois » : avec le sujet « il », la forme est « soit ».",
+    "4": "Inverse les deux personnes.",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options attribuent au moins une forme à la mauvaise personne."
+  }
+},
+{
+  "id": "dis-L18-9",
+  "rule": "discours",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "L'intendant a demandé : « Quelle est la capacité maximale de l'aula ? » Le procès-verbal rapporte sa question. Quelle formulation est correcte ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Il a demandé quelle capacité l'aula avait-elle au maximum."
+    },
+    {
+      "key": "2",
+      "text": "Il a demandé qu'est-ce que la capacité maximale de l'aula était."
+    },
+    {
+      "key": "3",
+      "text": "Il a demandé quelle la capacité maximale de l'aula était."
+    },
+    {
+      "key": "4",
+      "text": "Il a demandé quelle était la capacité maximale de l'aula."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "Avec l'attribut « quelle », l'interrogation indirecte garde l'ordre « quelle était + sujet » : cette inversion du sujet nominal est correcte ; seuls « est-ce que » et la reprise pronominale disparaissent.",
+  "why": {
+    "1": "« l'aula avait-elle » conserve la reprise pronominale de l'interrogation directe.",
+    "2": "« qu'est-ce que » est une marque directe : elle disparaît dans la subordonnée.",
+    "3": "« quelle la capacité… était » applique mécaniquement l'ordre déclaratif : avec l'attribut « quelle », on écrit « quelle était la capacité ».",
+    "4": "Correct : « quelle était + sujet nominal », tour normal de l'interrogative indirecte à attribut.",
+    "A": "L'option 4 est correcte.",
+    "T": "Les options 1, 2 et 3 conservent une marque directe ou brisent l'ordre attendu."
+  }
+},
+{
+  "id": "rel-L18-10",
+  "rule": "relatifs",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Les exigences du cahier des charges ___ le prestataire a fini par se plier étaient connues dès l'appel d'offres.",
+  "options": [
+    {
+      "key": "1",
+      "text": "que"
+    },
+    {
+      "key": "2",
+      "text": "dont"
+    },
+    {
+      "key": "3",
+      "text": "auxquelles"
+    },
+    {
+      "key": "4",
+      "text": "devant lesquelles"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "« Se plier À quelque chose » : le complément est introduit par « à », d'où « auxquelles » (se plier à ces exigences).",
+  "why": {
+    "1": "« que » traiterait le verbe comme transitif direct : « se plier quelque chose » n'existe pas.",
+    "2": "« dont » supposerait « se plier de », construction inexistante.",
+    "3": "Correct : se plier À → les exigences auxquelles il a fini par se plier.",
+    "4": "« devant lesquelles » calque « s'incliner devant » : « se plier » exige « à ».",
+    "A": "L'option 3 est correcte.",
+    "T": "Une seule option restitue le régime du verbe."
+  }
+},
+{
+  "id": "orth-L19-1",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Renvoyez le formulaire ___ , sans le corriger : ___ annotations fausseraient le contrôle.",
+  "options": [
+    {
+      "key": "1",
+      "text": "tel quel / de telles"
+    },
+    {
+      "key": "2",
+      "text": "tel que / de telles"
+    },
+    {
+      "key": "3",
+      "text": "tel quel / de tels"
+    },
+    {
+      "key": "4",
+      "text": "telle quelle / de telles"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "« Tel quel » (= sans modification) s'accorde avec le nom : un formulaire tel quel ; « de telles annotations » s'accorde avec « annotations », féminin pluriel.",
+  "why": {
+    "1": "Correct : tel quel (masc. sing., accordé avec formulaire) ; de telles annotations (fém. plur.).",
+    "2": "« tel que » introduit une comparaison ou un exemple : au sens « en l'état », la locution est « tel quel ».",
+    "3": "« de tels annotations » : le déterminant doit suivre le féminin d'« annotations » → telles.",
+    "4": "« telle quelle » : l'accord se fait avec « formulaire », masculin → tel quel.",
+    "A": "L'option 1 est correcte.",
+    "T": "Les options 2, 3 et 4 fautent sur la locution ou sur un accord."
+  }
+},
+{
+  "id": "orth-L19-2",
+  "rule": "orthographe",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Le chantier de rénovation avance tambour battant."
+    },
+    {
+      "key": "2",
+      "text": "Ils ont fait fi des mises en garde du service juridique."
+    },
+    {
+      "key": "3",
+      "text": "Bon an mal an, l’effectif des classes reste stable."
+    },
+    {
+      "key": "4",
+      "text": "Les coûts d’entretien ont, peu ou prou, doublé en dix ans."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "T",
+  "explanation": "Quatre locutions correctes malgré leur allure suspecte : « tambour battant », « faire fi de », « bon an mal an » et « peu ou prou ». Réponse : Toutes.",
+  "why": {
+    "1": "Correcte : « tambour battant » (= rondement) est figée au singulier.",
+    "2": "Correcte : « faire fi de » (= mépriser) s'écrit bien « fi ».",
+    "3": "Correcte : « bon an mal an » (= en moyenne), sans virgule ni s.",
+    "4": "Correcte : « peu ou prou » (= plus ou moins) ; « prou » vient de l'ancien français « assez ».",
+    "A": "Les quatre phrases sont correctes.",
+    "T": "Correct : chacune de ces locutions, souvent soupçonnée à tort, est irréprochable."
+  }
+},
+{
+  "id": "orth-L19-3",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Cette exigence n'a rien de choquant en ___ ; ___ dit en passant, elle figurait déjà dans l'ancien règlement.",
+  "options": [
+    {
+      "key": "1",
+      "text": "soit / soit"
+    },
+    {
+      "key": "2",
+      "text": "soi / soi"
+    },
+    {
+      "key": "3",
+      "text": "soi / soit"
+    },
+    {
+      "key": "4",
+      "text": "soit / soi"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "« En soi » (= par sa nature) s'écrit avec le pronom « soi » ; « soit dit en passant » emploie le subjonctif du verbe être.",
+  "why": {
+    "1": "« en soit » : après la préposition, c'est le pronom réfléchi « soi », sans t.",
+    "2": "« soi dit en passant » : la formule contient le verbe être au subjonctif → soit.",
+    "3": "Correct : pronom « en soi » ; subjonctif « soit dit en passant ».",
+    "4": "Inverse les deux formes.",
+    "A": "L'option 3 est correcte.",
+    "T": "Trois options confondent le pronom et le verbe dans au moins une place."
+  }
+},
+{
+  "id": "orth-L19-4",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "___ la notification du résultat, le délai de trente jours s'applique ; ___ prolongations ne sont accordées qu'en cas de force majeure.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Des / dès"
+    },
+    {
+      "key": "2",
+      "text": "Dès / des"
+    },
+    {
+      "key": "3",
+      "text": "Dès / dès"
+    },
+    {
+      "key": "4",
+      "text": "Des / des"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "« Dès » (accent grave) = à partir de ; « des » est l'article devant « prolongations ».",
+  "why": {
+    "1": "Inverse les deux : le point de départ temporel s'écrit « dès », l'article « des ».",
+    "2": "Correct : dès la notification (à partir de) ; des prolongations (article).",
+    "3": "« dès prolongations » : devant le nom sans idée de point de départ, c'est l'article « des ».",
+    "4": "« Des la notification » : le sens « à partir de » exige l'accent → dès.",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options confondent la préposition accentuée et l'article."
+  }
+},
+{
+  "id": "orth-L19-5",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le clocher ___ enfin de la brume ; les caissons de fondation, eux, restent ___ à dix mètres.",
+  "options": [
+    {
+      "key": "1",
+      "text": "immerge / immergés"
+    },
+    {
+      "key": "2",
+      "text": "émerge / immergés"
+    },
+    {
+      "key": "3",
+      "text": "immerge / émergés"
+    },
+    {
+      "key": "4",
+      "text": "émerge / émergés"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "« Émerger » = sortir d'un milieu (eau, brume) ; « immerger » = plonger dans un liquide.",
+  "why": {
+    "1": "« le clocher immerge de la brume » : sortir d'un milieu se dit émerger.",
+    "2": "Correct : le clocher émerge (sort) ; les caissons sont immergés (plongés).",
+    "3": "Inverse les deux : sortir = émerger, être plongé = immergé.",
+    "4": "« émergés à dix mètres » : des caissons enfoncés sous l'eau sont immergés.",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options confondent la sortie et la plongée dans au moins une place."
+  }
+},
+{
+  "id": "orth-L19-6",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Son ___ au collège de Nyon prend effet lundi ; elle soigne encore une ___ pulmonaire contractée cet hiver.",
+  "options": [
+    {
+      "key": "1",
+      "text": "affection / affectation"
+    },
+    {
+      "key": "2",
+      "text": "affectation / affectation"
+    },
+    {
+      "key": "3",
+      "text": "affectation / affection"
+    },
+    {
+      "key": "4",
+      "text": "affection / affection"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "L'« affectation » est la nomination à un poste (ou une attitude étudiée) ; l'« affection » est un attachement ou, en médecine, une maladie.",
+  "why": {
+    "1": "Inverse les deux : la nomination est une affectation, la maladie une affection.",
+    "2": "« une affectation pulmonaire » : la maladie se dit affection.",
+    "3": "Correct : nomination = affectation ; maladie = affection.",
+    "4": "« son affection au collège » : la nomination à un poste se dit affectation.",
+    "A": "L'option 3 est correcte.",
+    "T": "Trois options confondent la nomination et la maladie."
+  }
+},
+{
+  "id": "orth-L19-7",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le parchemin porte encore le ___ de l'évêché ; il refuse de passer pour un ___ en signant sans lire.",
+  "options": [
+    {
+      "key": "1",
+      "text": "sceau / sot"
+    },
+    {
+      "key": "2",
+      "text": "seau / sot"
+    },
+    {
+      "key": "3",
+      "text": "sceau / saut"
+    },
+    {
+      "key": "4",
+      "text": "seau / saut"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Le « sceau » est le cachet officiel ; le « sot » est le nigaud ; le « seau » contient un liquide et le « saut » est un bond.",
+  "why": {
+    "1": "Correct : cachet officiel = sceau ; nigaud = sot.",
+    "2": "« le seau de l'évêché » : le cachet apposé s'écrit sceau.",
+    "3": "« passer pour un saut » : la personne crédule est un sot.",
+    "4": "Cumule les deux confusions.",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "conj-L19-8",
+  "rule": "conjugaison",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Dès lundi, tu ___ les demandes de dérogation au guichet des admissions.",
+  "options": [
+    {
+      "key": "1",
+      "text": "recueillira"
+    },
+    {
+      "key": "2",
+      "text": "recueillera"
+    },
+    {
+      "key": "3",
+      "text": "recueillra"
+    },
+    {
+      "key": "4",
+      "text": "recueilleras"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "« Cueillir » et ses composés font leur futur comme les verbes en -er : tu recueilleras (radical recueille- + -ras).",
+  "why": {
+    "1": "« recueillira » traite le verbe comme « finir » : cueillir emprunte le futur des verbes en -er.",
+    "2": "« recueillera » est une 3e personne : le sujet « tu » exige -as.",
+    "3": "« recueillra » perd le e du radical : la forme est recueille + ras.",
+    "4": "Correct : futur en -era(s) sur le modèle des verbes en -er → tu recueilleras.",
+    "A": "L'option 4 est correcte.",
+    "T": "Les options 1, 2 et 3 fautent sur le radical ou la personne."
+  }
+},
+{
+  "id": "dis-L19-9",
+  "rule": "discours",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "L'agente de sécurité leur a demandé : « Ne touchez à rien avant l'arrivée de la police. » Quelle transposition est correcte ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Elle leur a demandé de ne toucher à rien avant l'arrivée de la police."
+    },
+    {
+      "key": "2",
+      "text": "Elle leur a demandé de ne pas toucher à rien avant l'arrivée de la police."
+    },
+    {
+      "key": "3",
+      "text": "Elle leur a demandé de ne toucher rien avant l'arrivée de la police."
+    },
+    {
+      "key": "4",
+      "text": "Elle leur a demandé de ne touchez à rien avant l'arrivée de la police."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "L'impératif devient « de + infinitif » ; la négation « ne … à rien » encadre l'infinitif : de ne toucher à rien.",
+  "why": {
+    "1": "Correct : de + infinitif, négation « ne … rien » avec le régime « toucher à » conservé.",
+    "2": "« ne pas … rien » cumule deux négations : « rien » suffit avec « ne ».",
+    "3": "« ne toucher rien » abandonne le régime « toucher à » et place mal « rien » : on écrit « ne toucher à rien » (ou « ne rien toucher », mais avec un autre verbe de construction directe).",
+    "4": "« de ne touchez » garde la terminaison d'impératif : après « de », le verbe est à l'infinitif.",
+    "A": "L'option 1 est correcte.",
+    "T": "Les options 2, 3 et 4 fautent sur la négation, le régime ou le mode."
+  }
+},
+{
+  "id": "rel-L19-10",
+  "rule": "relatifs",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Les coupes budgétaires ___ l'atelier de reliure a survécu l'ont pourtant durablement affaibli.",
+  "options": [
+    {
+      "key": "1",
+      "text": "que"
+    },
+    {
+      "key": "2",
+      "text": "auxquelles"
+    },
+    {
+      "key": "3",
+      "text": "dont"
+    },
+    {
+      "key": "4",
+      "text": "à qui"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "« Survivre À quelque chose » : le complément est introduit par « à », d'où « auxquelles » (l'atelier a survécu à ces coupes).",
+  "why": {
+    "1": "« que » traiterait « survivre » comme transitif direct : « survivre quelque chose » n'existe pas.",
+    "2": "Correct : survivre À → les coupes auxquelles l'atelier a survécu.",
+    "3": "« dont » supposerait « survivre de », construction inexistante.",
+    "4": "« à qui » se réserve aux personnes : pour un antécédent inanimé comme « les coupes », on emploie « auxquelles ».",
+    "A": "L'option 2 est correcte.",
+    "T": "Une seule option restitue le régime du verbe."
+  }
+},
+{
+  "id": "orth-L20-1",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le cours d'introduction retrace l'___ des principaux termes pédagogiques.",
+  "options": [
+    {
+      "key": "1",
+      "text": "éthymologie"
+    },
+    {
+      "key": "2",
+      "text": "étymollogie"
+    },
+    {
+      "key": "3",
+      "text": "éthimologie"
+    },
+    {
+      "key": "4",
+      "text": "étimologie"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "A",
+  "explanation": "Le mot s'écrit « étymologie » : pas de h, un y après le t, un seul l. Aucune option ne porte cette graphie.",
+  "why": {
+    "1": "« éthymologie » : le h est la faute la plus répandue, par contamination de « mythe » ou « thème ».",
+    "2": "« étymollogie » double le l à tort.",
+    "3": "« éthimologie » cumule le h parasite et le i à la place du y.",
+    "4": "« étimologie » remplace le y (du grec etumos) par un i.",
+    "A": "Correct : la graphie attendue « étymologie » ne figure dans aucune option.",
+    "T": "Chaque option déforme le mot d'une façon différente."
+  }
+},
+{
+  "id": "orth-L20-2",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le ___ de l'église répète chaque jeudi ; les élèves, eux, apprennent la partition par ___.",
+  "options": [
+    {
+      "key": "1",
+      "text": "chœur / cœur"
+    },
+    {
+      "key": "2",
+      "text": "cœur / chœur"
+    },
+    {
+      "key": "3",
+      "text": "chœur / chœur"
+    },
+    {
+      "key": "4",
+      "text": "cœur / cœur"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Le « chœur » est l'ensemble des chanteurs (ou la partie de l'église) ; « par cœur » = de mémoire, avec « cœur ».",
+  "why": {
+    "1": "Correct : ensemble de chanteurs = chœur ; de mémoire = par cœur.",
+    "2": "Inverse les deux homophones.",
+    "3": "« par chœur » : la locution de mémoire s'écrit « par cœur ».",
+    "4": "« le cœur de l'église répète » : les chanteurs forment un chœur.",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "orth-L20-3",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "La procession s'est arrêtée devant l'___ de la chapelle avant de rejoindre la place de l'___ de ville.",
+  "options": [
+    {
+      "key": "1",
+      "text": "hôtel / autel"
+    },
+    {
+      "key": "2",
+      "text": "autel / hôtel"
+    },
+    {
+      "key": "3",
+      "text": "autel / autel"
+    },
+    {
+      "key": "4",
+      "text": "hôtel / hôtel"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "L'« autel » est la table de culte ; l'« hôtel » (hôtel de ville) est l'édifice.",
+  "why": {
+    "1": "Inverse les deux : la table de culte est l'autel, le bâtiment l'hôtel.",
+    "2": "Correct : autel de la chapelle ; hôtel de ville.",
+    "3": "« l'autel de ville » : le bâtiment communal est l'hôtel de ville.",
+    "4": "« l'hôtel de la chapelle » : la table de culte s'écrit autel.",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "orth-L20-4",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Un ___ de fièvre l'a cloué au lit ; son remplaçant, par ___ de zèle, a réorganisé tout le classement.",
+  "options": [
+    {
+      "key": "1",
+      "text": "excès / accès"
+    },
+    {
+      "key": "2",
+      "text": "excès / excès"
+    },
+    {
+      "key": "3",
+      "text": "accès / excès"
+    },
+    {
+      "key": "4",
+      "text": "accès / accès"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "Un « accès » de fièvre est une poussée soudaine ; un « excès » de zèle est un dépassement de la mesure.",
+  "why": {
+    "1": "Inverse les deux : la poussée soudaine est un accès, le trop-plein un excès.",
+    "2": "« un excès de fièvre » : la poussée brutale se dit accès.",
+    "3": "Correct : poussée de fièvre = accès ; zèle démesuré = excès.",
+    "4": "« par accès de zèle » : le dépassement de la juste mesure se dit excès.",
+    "A": "L'option 3 est correcte.",
+    "T": "Trois options confondent la poussée et le dépassement."
+  }
+},
+{
+  "id": "orth-L20-5",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Il faut d'abord ___ ces deux notions voisines ; le comité pourra ensuite ___ sa décision jusqu'en mars.",
+  "options": [
+    {
+      "key": "1",
+      "text": "différer / différencier"
+    },
+    {
+      "key": "2",
+      "text": "différencier / différencier"
+    },
+    {
+      "key": "3",
+      "text": "différer / différer"
+    },
+    {
+      "key": "4",
+      "text": "différencier / différer"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "« Différencier » = distinguer l'un de l'autre ; « différer » = repousser dans le temps (ou être différent).",
+  "why": {
+    "1": "Inverse les deux : on distingue (différencie) des notions, on repousse (diffère) une décision.",
+    "2": "« différencier sa décision jusqu'en mars » : repousser se dit différer.",
+    "3": "« différer ces deux notions » : les distinguer se dit différencier.",
+    "4": "Correct : distinguer = différencier ; repousser = différer.",
+    "A": "L'option 4 est correcte.",
+    "T": "Trois options confondent la distinction et le report."
+  }
+},
+{
+  "id": "orth-L20-6",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le récit fondateur du canton relève du ___ ; les ___ , elles, ont troué les costumes d'époque du musée.",
+  "options": [
+    {
+      "key": "1",
+      "text": "mythe / mites"
+    },
+    {
+      "key": "2",
+      "text": "mite / mythes"
+    },
+    {
+      "key": "3",
+      "text": "mythe / mythes"
+    },
+    {
+      "key": "4",
+      "text": "mite / mites"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Le « mythe » est le récit légendaire (avec y et th, du grec) ; la « mite » est l'insecte qui ronge les tissus.",
+  "why": {
+    "1": "Correct : récit légendaire = mythe ; insecte = mites.",
+    "2": "Inverse les deux homophones.",
+    "3": "« les mythes ont troué les costumes » : l'insecte s'écrit mite.",
+    "4": "« le récit relève de la mite » : la légende s'écrit mythe.",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "orth-L20-7",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Mieux ___ annoncer le retard sans attendre ; les contrôleurs, eux, sillonnent le district par monts et par ___.",
+  "options": [
+    {
+      "key": "1",
+      "text": "vaux / vaut"
+    },
+    {
+      "key": "2",
+      "text": "vaut / vaux"
+    },
+    {
+      "key": "3",
+      "text": "vaut / vaut"
+    },
+    {
+      "key": "4",
+      "text": "vaux / vaux"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "« Mieux vaut » = le verbe valoir à la 3e personne ; « par monts et par vaux » contient « vaux », pluriel ancien de « val ».",
+  "why": {
+    "1": "Inverse les deux : le verbe s'écrit « vaut », la locution « par vaux ».",
+    "2": "Correct : mieux vaut (valoir) ; par monts et par vaux (vallées).",
+    "3": "« par monts et par vaut » : la locution garde le vieux pluriel « vaux ».",
+    "4": "« mieux vaux annoncer » : avec le sujet impersonnel, le verbe prend -t (vaut).",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options confondent le verbe et le nom dans au moins une place."
+  }
+},
+{
+  "id": "conj-L20-8",
+  "rule": "conjugaison",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Dans ce genre de négociation, la patience ___ toujours la précipitation.",
+  "options": [
+    {
+      "key": "1",
+      "text": "vaint"
+    },
+    {
+      "key": "2",
+      "text": "vaincs"
+    },
+    {
+      "key": "3",
+      "text": "vainc"
+    },
+    {
+      "key": "4",
+      "text": "vainct"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "Au présent, « vaincre » fait : je vaincs, tu vaincs, il vainc — la 3e personne garde le c final, sans t.",
+  "why": {
+    "1": "« vaint » remplace le c par un t, sur le modèle de « craint ».",
+    "2": "« vaincs » est la forme des 1re et 2e personnes : le sujet « la patience » exige « vainc ».",
+    "3": "Correct : 3e personne du singulier → vainc (c final, pas de t).",
+    "4": "« vainct » ajoute un t parasite après le c.",
+    "A": "L'option 3 est correcte.",
+    "T": "Les options 1, 2 et 4 attribuent au verbe une terminaison qui n'est pas la sienne."
+  }
+},
+{
+  "id": "dis-L20-9",
+  "rule": "discours",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "Quelle(s) transposition(s) au discours ou à l'interrogation indirects est (sont) correcte(s) ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Elle a demandé où en était le dossier de subvention."
+    },
+    {
+      "key": "2",
+      "text": "On leur a demandé de ne pas éteindre les serveurs pendant la sauvegarde."
+    },
+    {
+      "key": "3",
+      "text": "Il voulait savoir ce qu'il adviendrait du fonds de rénovation."
+    },
+    {
+      "key": "4",
+      "text": "Elle demande qui l'accompagnera à l'audience de mardi."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "T",
+  "explanation": "Quatre transpositions correctes malgré leur allure suspecte : inversion du sujet nominal après « où » (admise), « de + infinitif » nié, tour impersonnel « ce qu'il adviendrait » et futur conservé après un verbe introducteur au présent. Réponse : Toutes.",
+  "why": {
+    "1": "Correcte : « où en était le dossier » — l'inversion du sujet nominal est admise en interrogative indirecte.",
+    "2": "Correcte : ordre négatif rapporté par « de ne pas + infinitif ».",
+    "3": "Correcte : avec « advenir », le tour impersonnel « ce qu'il adviendrait » est reçu (comme « ce qui adviendrait »).",
+    "4": "Correcte : le verbe introducteur « demande » est au présent, le futur « accompagnera » se conserve.",
+    "A": "Les quatre phrases sont correctes.",
+    "T": "Correct : chaque phrase contient une tournure suspecte mais parfaitement admise."
+  }
+},
+{
+  "id": "rel-L20-10",
+  "rule": "relatifs",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Les poursuites ___ le prévenu a échappé de justesse pourraient être rouvertes sur appel du parquet.",
+  "options": [
+    {
+      "key": "1",
+      "text": "que"
+    },
+    {
+      "key": "2",
+      "text": "dont"
+    },
+    {
+      "key": "3",
+      "text": "desquelles"
+    },
+    {
+      "key": "4",
+      "text": "auxquelles"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "« Échapper À quelque chose » : le complément est introduit par « à », d'où « auxquelles » (échapper à ces poursuites).",
+  "why": {
+    "1": "« que » traiterait « échapper » comme transitif direct : hors de la locution figée « l'échapper belle », « échapper quelque chose » n'existe pas.",
+    "2": "« dont » supposerait « échapper de », employé pour un lieu (« échapper de prison »), pas pour des poursuites.",
+    "3": "« desquelles » habille la même erreur de régime en « de » d'une forme composée.",
+    "4": "Correct : échapper À → les poursuites auxquelles il a échappé.",
+    "A": "L'option 4 est correcte.",
+    "T": "Une seule option restitue le régime du verbe."
+  }
+},
+{
+  "id": "orth-L21-1",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Avant toute décision, la direction veut prendre le ___ des équipes de terrain.",
+  "options": [
+    {
+      "key": "1",
+      "text": "poul"
+    },
+    {
+      "key": "2",
+      "text": "pou"
+    },
+    {
+      "key": "3",
+      "text": "poult"
+    },
+    {
+      "key": "4",
+      "text": "poulx"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "A",
+  "explanation": "Le mot s'écrit « pouls » (du latin pulsus), avec -ls final muet : prendre le pouls. Aucune option ne porte cette graphie.",
+  "why": {
+    "1": "« poul » : la graphie phonétique omet le -s final hérité du latin pulsus.",
+    "2": "« pou » désigne l'insecte parasite : prendre le pou des équipes est un contresens.",
+    "3": "« poult » : aucun t dans ce mot.",
+    "4": "« poulx » : le x est une fantaisie graphique ; la finale est -ls.",
+    "A": "Correct : la graphie attendue « pouls » ne figure dans aucune option.",
+    "T": "Chaque option déforme le mot d'une façon différente."
+  }
+},
+{
+  "id": "orth-L21-2",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "La pédiatre a ___ du repos complet ; quant au règlement interne, il ___ l'usage du téléphone en classe.",
+  "options": [
+    {
+      "key": "1",
+      "text": "prescrit / proscrit"
+    },
+    {
+      "key": "2",
+      "text": "proscrit / prescrit"
+    },
+    {
+      "key": "3",
+      "text": "prescrit / prescrit"
+    },
+    {
+      "key": "4",
+      "text": "proscrit / proscrit"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "« Prescrire » = ordonner, recommander (une ordonnance) ; « proscrire » = interdire, bannir.",
+  "why": {
+    "1": "Correct : le repos est ordonné (prescrit), le téléphone interdit (proscrit).",
+    "2": "Inverse les deux : la médecin ordonne, le règlement interdit.",
+    "3": "« le règlement prescrit l'usage du téléphone » : il l'imposerait au lieu de l'interdire.",
+    "4": "« la pédiatre a proscrit du repos » : elle l'aurait interdit au lieu de l'ordonner.",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options confondent l'ordre et l'interdiction dans au moins une place."
+  }
+},
+{
+  "id": "orth-L21-3",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Ses grands-parents ont ___ d'Italie en 1952 ; aujourd'hui, le canton facilite la tâche de ceux qui ___ pour leurs études.",
+  "options": [
+    {
+      "key": "1",
+      "text": "immigré / émigrent"
+    },
+    {
+      "key": "2",
+      "text": "émigré / immigrent"
+    },
+    {
+      "key": "3",
+      "text": "émigré / émigrent"
+    },
+    {
+      "key": "4",
+      "text": "immigré / immigrent"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "« Émigrer » = quitter son pays (regard depuis le départ : émigrer d'Italie) ; « immigrer » = s'installer dans un pays d'accueil (regard depuis l'arrivée).",
+  "why": {
+    "1": "Inverse les deux points de vue : on émigre d'un pays, on immigre dans un pays.",
+    "2": "Correct : partis d'Italie = émigré ; arrivant dans le canton = immigrent.",
+    "3": "« ceux qui émigrent » vus depuis le canton d'accueil : c'est l'arrivée qui compte → immigrent.",
+    "4": "« immigré d'Italie » : le départ du pays d'origine se dit émigrer.",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options confondent le point de vue du départ et celui de l'arrivée."
+  }
+},
+{
+  "id": "orth-L21-4",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Elle a analysé la situation avec beaucoup de ___ ; le litige, lui, finira devant la ___ de paix.",
+  "options": [
+    {
+      "key": "1",
+      "text": "justice / justesse"
+    },
+    {
+      "key": "2",
+      "text": "justice / justice"
+    },
+    {
+      "key": "3",
+      "text": "justesse / justice"
+    },
+    {
+      "key": "4",
+      "text": "justesse / justesse"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "La « justesse » est l'exactitude, la précision ; la « justice » est l'institution (justice de paix) ou la vertu d'équité.",
+  "why": {
+    "1": "Inverse les deux : l'analyse précise relève de la justesse, l'institution de la justice.",
+    "2": "« analysé avec justice » : l'exactitude d'une analyse se dit justesse.",
+    "3": "Correct : précision = justesse ; institution = justice de paix.",
+    "4": "« la justesse de paix » : l'autorité judiciaire est la justice de paix.",
+    "A": "L'option 3 est correcte.",
+    "T": "Trois options confondent l'exactitude et l'institution."
+  }
+},
+{
+  "id": "orth-L21-5",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Un examen ___ portera sur les chapitres 1 à 3 ; l'arbitre, accusé d'être ___ , a été récusé.",
+  "options": [
+    {
+      "key": "1",
+      "text": "partial / partiel"
+    },
+    {
+      "key": "2",
+      "text": "partiel / partiel"
+    },
+    {
+      "key": "3",
+      "text": "partial / partial"
+    },
+    {
+      "key": "4",
+      "text": "partiel / partial"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "« Partiel » = qui ne porte que sur une partie ; « partial » = qui manque d'impartialité, qui prend parti.",
+  "why": {
+    "1": "Inverse les deux : l'examen incomplet est partiel, l'arbitre orienté est partial.",
+    "2": "« un arbitre partiel » : celui qui favorise un camp est partial.",
+    "3": "« un examen partial » : une épreuve limitée à quelques chapitres est partielle.",
+    "4": "Correct : examen sur une partie = partiel ; arbitre orienté = partial.",
+    "A": "L'option 4 est correcte.",
+    "T": "Trois options confondent l'incomplet et le parti pris."
+  }
+},
+{
+  "id": "orth-L21-6",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le comité s'est perdu en débats ___ ; on ne le dira jamais assez : un retraité actif n'est pas un ___.",
+  "options": [
+    {
+      "key": "1",
+      "text": "oisifs / oiseux"
+    },
+    {
+      "key": "2",
+      "text": "oiseux / oisif"
+    },
+    {
+      "key": "3",
+      "text": "oiseux / oiseux"
+    },
+    {
+      "key": "4",
+      "text": "oisifs / oisif"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "« Oiseux » = inutile, vain (débats oiseux) ; « oisif » = désœuvré, sans activité (personne).",
+  "why": {
+    "1": "Inverse les deux : les débats vains sont oiseux, la personne désœuvrée oisive.",
+    "2": "Correct : débats stériles = oiseux ; personne inactive = oisif.",
+    "3": "« un retraité oiseux » : la personne sans occupation se dit oisive.",
+    "4": "« débats oisifs » : des propos vains se disent oiseux.",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options appliquent l'un des deux adjectifs à un support qui ne lui convient pas."
+  }
+},
+{
+  "id": "orth-L21-7",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "La ___ limite de dépôt approche ; au marché, les ___ fourrées partaient par cageots entiers.",
+  "options": [
+    {
+      "key": "1",
+      "text": "datte / dates"
+    },
+    {
+      "key": "2",
+      "text": "date / dattes"
+    },
+    {
+      "key": "3",
+      "text": "date / dates"
+    },
+    {
+      "key": "4",
+      "text": "datte / dattes"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "La « date » (un t) est le repère calendaire ; la « datte » (deux t) est le fruit du palmier.",
+  "why": {
+    "1": "Inverse les deux : le repère du calendrier prend un t, le fruit deux.",
+    "2": "Correct : date limite (calendrier) ; dattes fourrées (fruit).",
+    "3": "« les dates fourrées » : le fruit s'écrit avec deux t.",
+    "4": "« la datte limite » : le repère calendaire s'écrit avec un t.",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "conj-L21-8",
+  "rule": "conjugaison",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "Quelle(s) phrase(s) est (sont) correctement conjuguée(s) ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Elle bout d’impatience avant chaque soutenance."
+    },
+    {
+      "key": "2",
+      "text": "Ils moulent encore le café à l’ancienne, à la main."
+    },
+    {
+      "key": "3",
+      "text": "Tu couds les écussons sur les uniformes des cadets."
+    },
+    {
+      "key": "4",
+      "text": "D’énormes vérins meuvent lentement les vannes du barrage."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "T",
+  "explanation": "Quatre présents corrects malgré leur allure suspecte : bouillir → elle bout ; moudre → ils moulent ; coudre → tu couds ; mouvoir → ils meuvent. Réponse : Toutes.",
+  "why": {
+    "1": "Correcte : bouillir fait « je bous, tu bous, elle bout » au présent.",
+    "2": "Correcte : moudre fait « ils moulent » (radical moul-), sans rapport avec « mouler ».",
+    "3": "Correcte : coudre garde le d après le s : « tu couds ».",
+    "4": "Correcte : mouvoir fait « ils meuvent », comme « émouvoir → émeuvent ».",
+    "A": "Les quatre phrases sont correctes.",
+    "T": "Correct : chacune de ces formes, souvent soupçonnée à tort, est le présent régulier du verbe."
+  }
+},
+{
+  "id": "dis-L21-9",
+  "rule": "discours",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "La restauratrice a dit aux apprentis : « Passez chez moi récupérer les clés demain matin. » Le journal de stage, rédigé des semaines après, rapporte cette consigne. Quelle formulation est correcte ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Elle leur a dit de passer chez moi récupérer les clés le lendemain matin."
+    },
+    {
+      "key": "2",
+      "text": "Elle leur a dit de passer chez elle récupérer les clés demain matin."
+    },
+    {
+      "key": "3",
+      "text": "Elle leur a dit de passer chez elle récupérer les clés le lendemain matin."
+    },
+    {
+      "key": "4",
+      "text": "Elle leur a dit de passer chez eux récupérer les clés le lendemain matin."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "L'impératif devient « de + infinitif » ; « chez moi » (la restauratrice) devient « chez elle » et « demain matin » devient « le lendemain matin ».",
+  "why": {
+    "1": "« chez moi » garde le pronom du discours direct : rapporté à la 3e personne, c'est « chez elle ».",
+    "2": "« demain matin » garde le repère du discours direct : rapporté des semaines après, c'est « le lendemain matin ».",
+    "3": "Correct : infinitif, « chez elle » (la locutrice d'origine) et repère temporel transposé.",
+    "4": "« chez eux » renvoie aux apprentis : les clés sont chez la restauratrice → chez elle.",
+    "A": "L'option 3 est correcte.",
+    "T": "Les options 1, 2 et 4 laissent un pronom ou un repère non transposé."
+  }
+},
+{
+  "id": "rel-L21-10",
+  "rule": "relatifs",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Les points de sécurité ___ l'inspectrice a insisté figureront en tête du prochain audit.",
+  "options": [
+    {
+      "key": "1",
+      "text": "dont"
+    },
+    {
+      "key": "2",
+      "text": "qu'"
+    },
+    {
+      "key": "3",
+      "text": "auxquels"
+    },
+    {
+      "key": "4",
+      "text": "sur lesquels"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "« Insister SUR quelque chose » : le complément est introduit par « sur », d'où « sur lesquels » (elle a insisté sur ces points).",
+  "why": {
+    "1": "« dont » supposerait « insister de », construction inexistante.",
+    "2": "« qu' » traiterait « insister » comme transitif direct : « insister quelque chose » n'existe pas.",
+    "3": "« auxquels » supposerait « insister à », construction inexistante.",
+    "4": "Correct : insister SUR → les points sur lesquels elle a insisté.",
+    "A": "L'option 4 est correcte.",
+    "T": "Une seule option restitue le régime du verbe."
+  }
+},
+{
+  "id": "orth-L22-1",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "L'avocate a soulevé un ___ de procédure ; pendant ce temps, l'ouvrier resserrait la dernière ___ du portail.",
+  "options": [
+    {
+      "key": "1",
+      "text": "vice / vis"
+    },
+    {
+      "key": "2",
+      "text": "vis / vice"
+    },
+    {
+      "key": "3",
+      "text": "vice / vice"
+    },
+    {
+      "key": "4",
+      "text": "vis / vis"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Le « vice » est le défaut (vice de procédure) ; la « vis » est la pièce filetée qu'on serre.",
+  "why": {
+    "1": "Correct : défaut juridique = vice ; pièce filetée = vis.",
+    "2": "Inverse les deux homophones.",
+    "3": "« resserrer le vice du portail » : la pièce qu'on serre est une vis.",
+    "4": "« un vis de procédure » : le défaut s'écrit vice.",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "orth-L22-2",
+  "rule": "orthographe",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Les deux offices ont mené l’enquête de conserve."
+    },
+    {
+      "key": "2",
+      "text": "Interrogée à brûle-pourpoint, elle a gardé son calme."
+    },
+    {
+      "key": "3",
+      "text": "La motion a été adoptée sans coup férir."
+    },
+    {
+      "key": "4",
+      "text": "Au grand dam des collectionneurs, la vente a été annulée."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "T",
+  "explanation": "Quatre locutions correctes malgré leur allure suspecte : « de conserve » (ensemble), « à brûle-pourpoint », « sans coup férir » et « au grand dam de ». Réponse : Toutes.",
+  "why": {
+    "1": "Correcte : « de conserve » (vocabulaire de marine : naviguer de compagnie) = ensemble.",
+    "2": "Correcte : « à brûle-pourpoint » (= sans prévenir), avec trait d'union.",
+    "3": "Correcte : « sans coup férir » (= sans combattre), « férir » étant un vieux verbe (frapper).",
+    "4": "Correcte : « au grand dam de » (= au détriment de), « dam » signifiant dommage.",
+    "A": "Les quatre phrases sont correctes.",
+    "T": "Correct : chacune de ces locutions, souvent soupçonnée à tort, est irréprochable."
+  }
+},
+{
+  "id": "orth-L22-3",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le ___ des merles réveille le quartier dès cinq heures ; cette mesure n'entre pas dans le ___ d'application de la loi.",
+  "options": [
+    {
+      "key": "1",
+      "text": "champ / chant"
+    },
+    {
+      "key": "2",
+      "text": "chant / champ"
+    },
+    {
+      "key": "3",
+      "text": "chant / chant"
+    },
+    {
+      "key": "4",
+      "text": "champ / champ"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "Le « chant » relève du verbe chanter ; le « champ » (avec p) est le domaine, l'étendue (champ d'application).",
+  "why": {
+    "1": "Inverse les deux homophones.",
+    "2": "Correct : chant des merles (chanter) ; champ d'application (domaine).",
+    "3": "« le chant d'application » : le domaine couvert s'écrit champ.",
+    "4": "« le champ des merles » : la mélodie des oiseaux s'écrit chant.",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "orth-L22-4",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Oublier une signature reste une faute ___ ; en revanche, un expert ___ , prêt à vendre son avis, doit être exclu.",
+  "options": [
+    {
+      "key": "1",
+      "text": "vénale / véniel"
+    },
+    {
+      "key": "2",
+      "text": "vénielle / véniel"
+    },
+    {
+      "key": "3",
+      "text": "vénielle / vénal"
+    },
+    {
+      "key": "4",
+      "text": "vénale / vénal"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "« Véniel » = pardonnable, sans gravité (faute vénielle) ; « vénal » = qui se vend, corruptible.",
+  "why": {
+    "1": "Inverse les deux : la faute légère est vénielle, l'expert corruptible vénal.",
+    "2": "« un expert véniel » : celui qui monnaye son avis est vénal.",
+    "3": "Correct : faute pardonnable = vénielle ; expert corruptible = vénal.",
+    "4": "« une faute vénale » : une erreur bénigne se dit vénielle.",
+    "A": "L'option 3 est correcte.",
+    "T": "Trois options confondent la légèreté de la faute et la corruption."
+  }
+},
+{
+  "id": "orth-L22-5",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Son père a été hospitalisé pour un ___ du myocarde au début du mois.",
+  "options": [
+    {
+      "key": "1",
+      "text": "infractus"
+    },
+    {
+      "key": "2",
+      "text": "enfarctus"
+    },
+    {
+      "key": "3",
+      "text": "infarcus"
+    },
+    {
+      "key": "4",
+      "text": "infarctus"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "Le terme médical s'écrit « infarctus » (du latin infarcire, bourrer) : -farc-, puis -tus.",
+  "why": {
+    "1": "« infractus » : métathèse très répandue, par contamination de « fracture ».",
+    "2": "« enfarctus » : le préfixe est in-, pas en-.",
+    "3": "« infarcus » : il manque le t du groupe -ctus.",
+    "4": "Correct : infarctus, avec -arc- puis -tus.",
+    "A": "L'option 4 est correcte.",
+    "T": "Les options 1, 2 et 3 déforment chacune le mot."
+  }
+},
+{
+  "id": "orth-L22-6",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Un ___ de spécialistes internationaux se réunira pour évaluer le projet de rénovation.",
+  "options": [
+    {
+      "key": "1",
+      "text": "aéropage"
+    },
+    {
+      "key": "2",
+      "text": "aréopage"
+    },
+    {
+      "key": "3",
+      "text": "aéréopage"
+    },
+    {
+      "key": "4",
+      "text": "aropage"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "Le mot s'écrit « aréopage » (de l'Aréopage, colline d'Arès à Athènes) : aré-, sans rapport avec l'air.",
+  "why": {
+    "1": "« aéropage » : contamination d'« aéroport » ; le mot vient d'Arès, pas de l'air.",
+    "2": "Correct : aréopage (assemblée de personnes compétentes).",
+    "3": "« aéréopage » cumule la contamination et une syllabe parasite.",
+    "4": "« aropage » ampute la voyelle du radical.",
+    "A": "L'option 2 est correcte.",
+    "T": "Les options 1, 3 et 4 déforment chacune le mot."
+  }
+},
+{
+  "id": "orth-L22-7",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "___ ! le procès-verbal est enfin validé ; les annexes sont désormais classées ___ répertoriées.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Et bien / eh bien"
+    },
+    {
+      "key": "2",
+      "text": "Et bien / et bien"
+    },
+    {
+      "key": "3",
+      "text": "Eh bien / et"
+    },
+    {
+      "key": "4",
+      "text": "Eh bien / eh"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "L'interjection s'écrit « Eh bien ! » (avec h) ; « et » est la conjonction qui coordonne « classées et répertoriées ».",
+  "why": {
+    "1": "« Et bien ! » : l'interjection s'écrit avec « eh », pas avec la conjonction.",
+    "2": "Cumule l'interjection fautive et une coordination alourdie en « et bien ».",
+    "3": "Correct : interjection « Eh bien » ; conjonction « et » entre les deux participes.",
+    "4": "« classées eh répertoriées » : la coordination s'écrit « et ».",
+    "A": "L'option 3 est correcte.",
+    "T": "Trois options confondent l'interjection et la conjonction."
+  }
+},
+{
+  "id": "conj-L22-8",
+  "rule": "conjugaison",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Consultée sur le nouvel horaire, la commission ___ sans réserve.",
+  "options": [
+    {
+      "key": "1",
+      "text": "acquiesce"
+    },
+    {
+      "key": "2",
+      "text": "acquiesse"
+    },
+    {
+      "key": "3",
+      "text": "aquiesce"
+    },
+    {
+      "key": "4",
+      "text": "acquièce"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Le verbe s'écrit « acquiescer » : acqu-, puis -sc- (comme « science ») : elle acquiesce.",
+  "why": {
+    "1": "Correct : acquiescer → elle acquiesce (groupe -sce).",
+    "2": "« acquiesse » remplace le groupe -sc- par -ss-.",
+    "3": "« aquiesce » : il manque le c d'« acqu- » (comme « acquérir »).",
+    "4": "« acquièce » : accent parasite et perte du s du groupe -sc-.",
+    "A": "L'option 1 est correcte.",
+    "T": "Les options 2, 3 et 4 déforment la graphie du verbe."
+  }
+},
+{
+  "id": "dis-L22-9",
+  "rule": "discours",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "En avril, à Aigle, le doyen a annoncé : « La cérémonie aura lieu ici même dans un mois. » Bien plus tard, le bulletin de l'école, imprimé à Lausanne, rapporte cette annonce. Quelle transposition est correcte ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Le doyen a annoncé que la cérémonie aurait lieu ici même un mois plus tard."
+    },
+    {
+      "key": "2",
+      "text": "Le doyen a annoncé que la cérémonie aura lieu là même un mois plus tard."
+    },
+    {
+      "key": "3",
+      "text": "Le doyen a annoncé que la cérémonie aurait lieu là même dans un mois."
+    },
+    {
+      "key": "4",
+      "text": "Le doyen a annoncé que la cérémonie aurait lieu là même le mois précédent."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "A",
+  "explanation": "La transposition complète exige à la fois le conditionnel (« aurait lieu »), « là même » (le bulletin est imprimé ailleurs) et « un mois plus tard ». Aucune option ne cumule les trois.",
+  "why": {
+    "1": "« ici même » garde le repère de lieu du discours direct alors que le bulletin est rédigé ailleurs.",
+    "2": "« aura lieu » garde le futur alors que l'annonce est rapportée bien plus tard.",
+    "3": "« dans un mois » garde le repère temporel du discours direct.",
+    "4": "« le mois précédent » inverse le calcul : l'événement suivait l'annonce.",
+    "A": "Correct : chaque option laisse au moins un élément non transposé ou mal calculé.",
+    "T": "Chaque option contient au moins une transposition manquée."
+  }
+},
+{
+  "id": "rel-L22-10",
+  "rule": "relatifs",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Les vérifications comptables ___ le greffe a procédé n'ont révélé aucune irrégularité.",
+  "options": [
+    {
+      "key": "1",
+      "text": "dont"
+    },
+    {
+      "key": "2",
+      "text": "qu'"
+    },
+    {
+      "key": "3",
+      "text": "sur lesquelles"
+    },
+    {
+      "key": "4",
+      "text": "auxquelles"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "« Procéder À quelque chose » : le complément est introduit par « à », d'où « auxquelles » (procéder à ces vérifications).",
+  "why": {
+    "1": "« dont » supposerait « procéder de » (= découler de), qui a un tout autre sens.",
+    "2": "« qu' » traiterait « procéder » comme transitif direct : « procéder quelque chose » n'existe pas.",
+    "3": "« sur lesquelles » calque « travailler sur » : « procéder » exige « à ».",
+    "4": "Correct : procéder À → les vérifications auxquelles le greffe a procédé.",
+    "A": "L'option 4 est correcte.",
+    "T": "Une seule option restitue le régime du verbe."
+  }
+},
+{
+  "id": "orth-L23-1",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le rapport recense chaque ___ du système de badge depuis janvier.",
+  "options": [
+    {
+      "key": "1",
+      "text": "disfonctionnement"
+    },
+    {
+      "key": "2",
+      "text": "dysfonctionement"
+    },
+    {
+      "key": "3",
+      "text": "dysfontionnement"
+    },
+    {
+      "key": "4",
+      "text": "disfonctionement"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "A",
+  "explanation": "Le mot s'écrit « dysfonctionnement » : préfixe grec dys- (trouble) et deux n comme dans « fonctionnement ». Aucune option ne porte cette graphie.",
+  "why": {
+    "1": "« disfonctionnement » : le préfixe est dys- (anomalie), pas dis- (séparation).",
+    "2": "« dysfonctionement » : il manque un n (fonctionnement en prend deux).",
+    "3": "« dysfontionnement » : il manque le c de « fonction ».",
+    "4": "« disfonctionement » cumule le mauvais préfixe et le n manquant.",
+    "A": "Correct : la graphie attendue « dysfonctionnement » ne figure dans aucune option.",
+    "T": "Chaque option déforme le mot d'une façon différente."
+  }
+},
+{
+  "id": "orth-L23-2",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "La cloche de la cour ___ encore à la main ; l'atelier de samedi apprendra aux élèves à ___ le verre.",
+  "options": [
+    {
+      "key": "1",
+      "text": "teinte / tinter"
+    },
+    {
+      "key": "2",
+      "text": "tinte / teinter"
+    },
+    {
+      "key": "3",
+      "text": "tinte / tinter"
+    },
+    {
+      "key": "4",
+      "text": "teinte / teinter"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "« Tinter » = produire un son clair (cloche) ; « teinter » = colorer (une teinte).",
+  "why": {
+    "1": "Inverse les deux : la cloche tinte (son), le verre se teinte (couleur).",
+    "2": "Correct : la cloche tinte ; on teinte le verre.",
+    "3": "« tinter le verre » : lui donner une couleur se dit teinter.",
+    "4": "« la cloche teinte » : produire un son se dit tinter.",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options confondent le son et la couleur dans au moins une place."
+  }
+},
+{
+  "id": "orth-L23-3",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le crépi tombe par plaques : le préau est ___ ; quant au concierge, il se dit trop ___ pour remonter à l'échafaudage.",
+  "options": [
+    {
+      "key": "1",
+      "text": "décrépit / décrépi"
+    },
+    {
+      "key": "2",
+      "text": "décrépit / décrépit"
+    },
+    {
+      "key": "3",
+      "text": "décrépi / décrépit"
+    },
+    {
+      "key": "4",
+      "text": "décrépi / décrépi"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "« Décrépi » (sans t) = qui a perdu son crépi (mur, façade) ; « décrépit » (avec t) = usé par l'âge (personne).",
+  "why": {
+    "1": "Inverse les deux : le mur sans crépi est décrépi, la personne affaiblie décrépite.",
+    "2": "« un préau décrépit » : la façade qui perd son enduit est décrépie.",
+    "3": "Correct : préau sans crépi = décrépi ; concierge vieilli = décrépit.",
+    "4": "« un concierge décrépi » : l'usure de l'âge s'écrit décrépit.",
+    "A": "L'option 3 est correcte.",
+    "T": "Trois options confondent l'enduit et la vieillesse."
+  }
+},
+{
+  "id": "orth-L23-4",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le discours de clôture ___ le travail des bénévoles ; dans les gradins, le public ___ après la victoire.",
+  "options": [
+    {
+      "key": "1",
+      "text": "exulte / exalte"
+    },
+    {
+      "key": "2",
+      "text": "exalte / exalte"
+    },
+    {
+      "key": "3",
+      "text": "exulte / exulte"
+    },
+    {
+      "key": "4",
+      "text": "exalte / exulte"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "« Exalter » = célébrer, glorifier (transitif) ; « exulter » = déborder de joie (intransitif).",
+  "why": {
+    "1": "Inverse les deux : on exalte des mérites, un public exulte.",
+    "2": "« le public exalte après la victoire » : déborder de joie se dit exulter.",
+    "3": "« le discours exulte le travail » : glorifier se dit exalter (et exulter n'admet pas de complément).",
+    "4": "Correct : le discours exalte (célèbre) ; le public exulte (jubile).",
+    "A": "L'option 4 est correcte.",
+    "T": "Trois options confondent la glorification et la jubilation."
+  }
+},
+{
+  "id": "orth-L23-5",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Personne n'aurait ___ que le niveau du lac aurait autant ___ en une seule nuit.",
+  "options": [
+    {
+      "key": "1",
+      "text": "cru / crû"
+    },
+    {
+      "key": "2",
+      "text": "crû / cru"
+    },
+    {
+      "key": "3",
+      "text": "cru / cru"
+    },
+    {
+      "key": "4",
+      "text": "crû / crû"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "« Cru » (sans accent) est le participe de croire ; « crû » (avec accent) est celui de croître — l'accent le distingue de son homographe.",
+  "why": {
+    "1": "Correct : croire → cru ; croître → crû (accent distinctif conservé).",
+    "2": "Inverse les deux participes.",
+    "3": "« le niveau aurait cru » : le participe de croître garde son accent → crû.",
+    "4": "« personne n'aurait crû » : le participe de croire s'écrit sans accent.",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options placent au moins un participe à contre-emploi."
+  }
+},
+{
+  "id": "orth-L23-6",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Un tuteur ___ vaut mieux qu'un tuteur complaisant ; encore faut-il que ses consignes restent ___.",
+  "options": [
+    {
+      "key": "1",
+      "text": "compréhensible / compréhensives"
+    },
+    {
+      "key": "2",
+      "text": "compréhensif / compréhensibles"
+    },
+    {
+      "key": "3",
+      "text": "compréhensif / compréhensives"
+    },
+    {
+      "key": "4",
+      "text": "compréhensible / compréhensibles"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "« Compréhensif » = qui fait preuve de compréhension (personne) ; « compréhensible » = qui peut être compris (chose).",
+  "why": {
+    "1": "Inverse les deux : la personne indulgente est compréhensive, la consigne claire compréhensible.",
+    "2": "Correct : tuteur bienveillant = compréhensif ; consignes claires = compréhensibles.",
+    "3": "« des consignes compréhensives » : une chose ne fait pas preuve de compréhension, elle est compréhensible.",
+    "4": "« un tuteur compréhensible » : l'indulgence d'une personne se dit compréhensif.",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options appliquent l'un des adjectifs au mauvais support."
+  }
+},
+{
+  "id": "orth-L23-7",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Il est revenu de vacances gai comme un ___ ; seul souvenir douloureux : un ___ de moniteur mal placé sur l'avant-bras.",
+  "options": [
+    {
+      "key": "1",
+      "text": "pinçon / pinson"
+    },
+    {
+      "key": "2",
+      "text": "pinçon / pinçon"
+    },
+    {
+      "key": "3",
+      "text": "pinson / pinçon"
+    },
+    {
+      "key": "4",
+      "text": "pinson / pinson"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "Le « pinson » est l'oiseau (gai comme un pinson) ; le « pinçon » est la marque laissée sur la peau par un pincement.",
+  "why": {
+    "1": "Inverse les deux homophones.",
+    "2": "« gai comme un pinçon » : la locution invoque l'oiseau, pinson.",
+    "3": "Correct : oiseau = pinson ; trace de pincement = pinçon.",
+    "4": "« un pinson sur l'avant-bras » : la marque de pincement s'écrit pinçon.",
+    "A": "L'option 3 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "conj-L23-8",
+  "rule": "conjugaison",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Les annexes budgétaires sont ___ dans l'envoi ; l'accord-cadre, lui, a été ___ hier soir.",
+  "options": [
+    {
+      "key": "1",
+      "text": "inclues / conclu"
+    },
+    {
+      "key": "2",
+      "text": "incluses / conclus"
+    },
+    {
+      "key": "3",
+      "text": "inclues / conclus"
+    },
+    {
+      "key": "4",
+      "text": "incluses / conclu"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "« Inclure » fait « inclus, incluse » (avec s) ; « conclure » fait « conclu, conclue » (sans s) — les deux participes ne suivent pas le même modèle.",
+  "why": {
+    "1": "« inclues » : le participe d'inclure garde le s → incluses (contrairement à conclu).",
+    "2": "« a été conclus » : le participe de conclure s'écrit sans s au masculin singulier.",
+    "3": "Cumule les deux erreurs, en croisant les deux modèles.",
+    "4": "Correct : incluses (avec s) ; conclu (sans s).",
+    "A": "L'option 4 est correcte.",
+    "T": "Trois options appliquent à l'un des verbes le modèle de l'autre."
+  }
+},
+{
+  "id": "dis-L23-9",
+  "rule": "discours",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "La trésorière a déclaré au comité : « Le budget est bouclé ; qu'en pensez-vous ? » Le procès-verbal rapporte ses propos. Quelle formulation est correcte ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Elle a déclaré que le budget était bouclé et a demandé ce que le comité en pensait."
+    },
+    {
+      "key": "2",
+      "text": "Elle a déclaré que le budget était bouclé et a demandé qu'est-ce que le comité en pensait."
+    },
+    {
+      "key": "3",
+      "text": "Elle a déclaré que le budget était bouclé et a demandé ce que le comité y pensait."
+    },
+    {
+      "key": "4",
+      "text": "Elle a déclaré que le budget était bouclé et a demandé ce dont le comité en pensait."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "La déclaration passe par « que + imparfait » ; la question devient « ce que » + ordre déclaratif, et « en » (penser DE cela) est conservé.",
+  "why": {
+    "1": "Correct : complétive à l'imparfait, puis interrogative indirecte en « ce que … en pensait ».",
+    "2": "« qu'est-ce que » est une marque de l'interrogation directe : elle disparaît.",
+    "3": "« y pensait » : on pense À quelque chose (y), mais ici on pense quelque chose DE ce budget → en.",
+    "4": "« ce dont … en pensait » cumule « dont » et « en », qui reprennent tous deux le complément en « de ».",
+    "A": "L'option 1 est correcte.",
+    "T": "Les options 2, 3 et 4 fautent sur la marque directe ou sur le pronom."
+  }
+},
+{
+  "id": "rel-L23-10",
+  "rule": "relatifs",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "Quelle(s) phrase(s) emploie(nt) correctement le pronom relatif ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "L’association au sein de laquelle il milite fête ses vingt ans."
+    },
+    {
+      "key": "2",
+      "text": "Le délai au-delà duquel toute demande devient caduque échoit vendredi."
+    },
+    {
+      "key": "3",
+      "text": "Les critères au regard desquels le dossier sera jugé sont publics."
+    },
+    {
+      "key": "4",
+      "text": "La somme à concurrence de laquelle l’assurance intervient est plafonnée."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "T",
+  "explanation": "Quatre relatifs composés corrects derrière des locutions prépositives : au sein de, au-delà de, au regard de, à concurrence de. Réponse : Toutes.",
+  "why": {
+    "1": "Correcte : au sein de + laquelle (il milite au sein de l'association).",
+    "2": "Correcte : au-delà de + lequel → au-delà duquel (au-delà du délai).",
+    "3": "Correcte : au regard de + lesquels → au regard desquels (au regard des critères).",
+    "4": "Correcte : à concurrence de + laquelle (l'assurance intervient à concurrence de cette somme).",
+    "A": "Les quatre phrases sont correctes.",
+    "T": "Correct : chaque locution prépositive entraîne la forme composée attendue du relatif."
+  }
+},
+{
+  "id": "orth-L24-1",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Pour la kermesse, la commune installera un ___ ancien sur la place du marché.",
+  "options": [
+    {
+      "key": "1",
+      "text": "carroussel"
+    },
+    {
+      "key": "2",
+      "text": "carousel"
+    },
+    {
+      "key": "3",
+      "text": "carrouzel"
+    },
+    {
+      "key": "4",
+      "text": "carousselle"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "A",
+  "explanation": "Le mot s'écrit « carrousel » : deux r, un seul s (prononcé [z] entre voyelles). Aucune option ne porte cette graphie.",
+  "why": {
+    "1": "« carroussel » : le double s se prononcerait [s] ; le son [z] s'écrit ici avec un seul s.",
+    "2": "« carousel » est la graphie anglaise : le français double le r.",
+    "3": "« carrouzel » : le son [z] s'écrit s entre deux voyelles, pas z.",
+    "4": "« carousselle » cumule le r simple, le double s et une finale inventée.",
+    "A": "Correct : la graphie attendue « carrousel » ne figure dans aucune option.",
+    "T": "Chaque option déforme le mot d'une façon différente."
+  }
+},
+{
+  "id": "orth-L24-2",
+  "rule": "orthographe",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Force est de constater que le calendrier a glissé."
+    },
+    {
+      "key": "2",
+      "text": "D’aucuns jugent la réforme prématurée."
+    },
+    {
+      "key": "3",
+      "text": "Le local est exigu et, qui plus est, mal aéré."
+    },
+    {
+      "key": "4",
+      "text": "En tout état de cause, le recours reste ouvert."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "T",
+  "explanation": "Quatre tournures correctes malgré leur allure suspecte : « force est de », « d'aucuns » (= certains), « qui plus est » et « en tout état de cause ». Réponse : Toutes.",
+  "why": {
+    "1": "Correcte : « force est de + infinitif » (= on ne peut que), tournure figée sans article.",
+    "2": "Correcte : « d'aucuns » (= certains), pronom archaïque parfaitement vivant à l'écrit.",
+    "3": "Correcte : « qui plus est » (= de surcroît), locution figée.",
+    "4": "Correcte : « en tout état de cause » (= quoi qu'il arrive), formule consacrée.",
+    "A": "Les quatre phrases sont correctes.",
+    "T": "Correct : chacune de ces tournures, souvent soupçonnée à tort, est irréprochable."
+  }
+},
+{
+  "id": "orth-L24-3",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "___ du contrat de bail, l'entretien courant incombe au locataire ; ___ son apprentissage, il pourra reprendre l'atelier familial.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Aux termes / au terme de"
+    },
+    {
+      "key": "2",
+      "text": "Au terme / aux termes de"
+    },
+    {
+      "key": "3",
+      "text": "Au terme / au terme de"
+    },
+    {
+      "key": "4",
+      "text": "Aux termes / aux termes de"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "« Aux termes de » (pluriel) = selon le texte, la lettre d'un document ; « au terme de » (singulier) = à la fin de.",
+  "why": {
+    "1": "Correct : selon le texte du bail = aux termes de ; à la fin de l'apprentissage = au terme de.",
+    "2": "Inverse les deux : la référence au texte est au pluriel, la fin au singulier.",
+    "3": "« au terme du contrat, l'entretien incombe… » signifierait « à la fin du bail », contresens : c'est le texte qui le prévoit.",
+    "4": "« aux termes de son apprentissage » : la fin d'une période se dit au terme de.",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options confondent la lettre du texte et la fin d'une période."
+  }
+},
+{
+  "id": "orth-L24-4",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Après trois défaites, le ___ de l'équipe est au plus bas ; la ___ de cette mésaventure, c'est qu'il faut préparer les déplacements plus tôt.",
+  "options": [
+    {
+      "key": "1",
+      "text": "morale / moral"
+    },
+    {
+      "key": "2",
+      "text": "moral / morale"
+    },
+    {
+      "key": "3",
+      "text": "moral / moral"
+    },
+    {
+      "key": "4",
+      "text": "morale / morale"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "Le « moral » (masculin) est l'état d'esprit ; la « morale » (féminin) est la leçon ou l'éthique.",
+  "why": {
+    "1": "Inverse les deux : l'état d'esprit est le moral, la leçon la morale.",
+    "2": "Correct : moral en berne (état d'esprit) ; morale de l'histoire (leçon).",
+    "3": "« le moral de cette mésaventure » : la leçon tirée se dit la morale.",
+    "4": "« la morale de l'équipe est au plus bas » : l'état d'esprit se dit le moral.",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options confondent l'état d'esprit et la leçon."
+  }
+},
+{
+  "id": "orth-L24-5",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "L'accueil du guichet a été ___ ce matin-là ; la course d'école longera pourtant une vallée ___ classée.",
+  "options": [
+    {
+      "key": "1",
+      "text": "glaciaire / glacial"
+    },
+    {
+      "key": "2",
+      "text": "glaciaire / glaciaire"
+    },
+    {
+      "key": "3",
+      "text": "glacial / glaciaire"
+    },
+    {
+      "key": "4",
+      "text": "glacial / glacial"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "« Glacial » = d'une froideur extrême (accueil, vent, ton) ; « glaciaire » = relatif aux glaciers (vallée, ère).",
+  "why": {
+    "1": "Inverse les deux : la froideur d'un accueil est glaciale, la vallée façonnée par les glaciers est glaciaire.",
+    "2": "« un accueil glaciaire » : la froideur figurée se dit glaciale.",
+    "3": "Correct : accueil glacial (froideur) ; vallée glaciaire (glaciers).",
+    "4": "« une vallée glaciale » : le relief dû aux glaciers se dit glaciaire.",
+    "A": "L'option 3 est correcte.",
+    "T": "Trois options confondent la froideur et le relief glaciaire."
+  }
+},
+{
+  "id": "orth-L24-6",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le service veut ___ ses courriers types pour chaque famille ; quant à la doyenne, elle ___ la ponctualité même.",
+  "options": [
+    {
+      "key": "1",
+      "text": "personnifier / personnalise"
+    },
+    {
+      "key": "2",
+      "text": "personnifier / personnifie"
+    },
+    {
+      "key": "3",
+      "text": "personnaliser / personnalise"
+    },
+    {
+      "key": "4",
+      "text": "personnaliser / personnifie"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "« Personnaliser » = adapter à une personne ; « personnifier » = incarner (être l'image vivante de).",
+  "why": {
+    "1": "Inverse les deux : on adapte (personnalise) un courrier, on incarne (personnifie) une qualité.",
+    "2": "« personnifier ses courriers » : les adapter aux destinataires se dit personnaliser.",
+    "3": "« elle personnalise la ponctualité » : en être l'incarnation se dit personnifier.",
+    "4": "Correct : adapter les courriers = personnaliser ; incarner la ponctualité = personnifier.",
+    "A": "L'option 4 est correcte.",
+    "T": "Trois options confondent l'adaptation et l'incarnation."
+  }
+},
+{
+  "id": "orth-L24-7",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Une séance suffira à ___ ce malentendu ; ensuite, il faudra mieux ___ le couloir des casiers, trop sombre.",
+  "options": [
+    {
+      "key": "1",
+      "text": "éclairer / éclaircir"
+    },
+    {
+      "key": "2",
+      "text": "éclaircir / éclairer"
+    },
+    {
+      "key": "3",
+      "text": "éclaircir / éclaircir"
+    },
+    {
+      "key": "4",
+      "text": "éclairer / éclairer"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "« Éclaircir » = rendre clair ce qui était confus (un malentendu, un mystère) ; « éclairer » = donner de la lumière (ou renseigner quelqu'un).",
+  "why": {
+    "1": "Inverse les deux : on éclaircit une affaire confuse, on éclaire un lieu sombre.",
+    "2": "Correct : éclaircir un malentendu ; éclairer un couloir.",
+    "3": "« éclaircir le couloir » : lui donner de la lumière se dit éclairer.",
+    "4": "« éclairer ce malentendu » : le dissiper se dit éclaircir.",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options confondent la clarification et l'éclairage."
+  }
+},
+{
+  "id": "conj-L24-8",
+  "rule": "conjugaison",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Les litiges de ce type ___ à la commission paritaire, et non aux prud'hommes.",
+  "options": [
+    {
+      "key": "1",
+      "text": "ressortent"
+    },
+    {
+      "key": "2",
+      "text": "ressortes"
+    },
+    {
+      "key": "3",
+      "text": "ressortissent"
+    },
+    {
+      "key": "4",
+      "text": "ressortiront"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "« Ressortir à » (= relever de la compétence de) se conjugue comme « finir » : ils ressortissent. « Ressortir » (= sortir de nouveau) se conjugue comme « sortir », mais n'a pas ce sens ici.",
+  "why": {
+    "1": "« ressortent » conjugue comme « sortir » : au sens de « relever de », le verbe suit « finir » → ressortissent.",
+    "2": "« ressortes » est un subjonctif singulier : rien ne l'appelle ici.",
+    "3": "Correct : ressortir à (relever de) → 2e groupe → ils ressortissent à la commission.",
+    "4": "« ressortiront » met un futur là où l'énoncé décrit une règle générale au présent.",
+    "A": "L'option 3 est correcte.",
+    "T": "Les options 1, 2 et 4 fautent sur le groupe, le mode ou le temps."
+  }
+},
+{
+  "id": "dis-L24-9",
+  "rule": "discours",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "Mercredi, le service de presse a annoncé : « Nous allons publier les résultats demain. » Le communiqué de synthèse, diffusé un mois après, rapporte cette annonce. Quelle formulation est correcte ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Le service a annoncé qu'il allait publier les résultats le lendemain."
+    },
+    {
+      "key": "2",
+      "text": "Le service a annoncé qu'il va publier les résultats demain."
+    },
+    {
+      "key": "3",
+      "text": "Le service a annoncé qu'il allait publier les résultats demain."
+    },
+    {
+      "key": "4",
+      "text": "Le service a annoncé qu'il irait publier les résultats le lendemain."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Le futur proche « allons publier » devient « allait publier » (imparfait d'aller + infinitif) et « demain » devient « le lendemain ».",
+  "why": {
+    "1": "Correct : futur proche transposé à l'imparfait et déictique recalculé.",
+    "2": "Ni le temps ni « demain » ne sont transposés alors que l'annonce est rapportée un mois après.",
+    "3": "Le temps est transposé, mais « demain » garde le repère du discours direct.",
+    "4": "« irait publier » met « aller » au conditionnel : le futur proche du passé se forme avec l'imparfait (allait publier).",
+    "A": "L'option 1 est correcte.",
+    "T": "Les options 2, 3 et 4 laissent un élément non transposé ou déforment le futur proche."
+  }
+},
+{
+  "id": "rel-L24-10",
+  "rule": "relatifs",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Les horaires d'ouverture ___ ce nouveau contrat est compatible seront affichés à la rentrée.",
+  "options": [
+    {
+      "key": "1",
+      "text": "auxquels"
+    },
+    {
+      "key": "2",
+      "text": "dont"
+    },
+    {
+      "key": "3",
+      "text": "qu'"
+    },
+    {
+      "key": "4",
+      "text": "avec lesquels"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "« Compatible AVEC quelque chose » : l'adjectif impose « avec », d'où « avec lesquels » (compatible avec ces horaires).",
+  "why": {
+    "1": "« auxquels » supposerait « compatible à », construction fautive.",
+    "2": "« dont » supposerait « compatible de », construction inexistante.",
+    "3": "« qu' » ne peut pas dépendre d'un adjectif : « compatible quelque chose » n'existe pas.",
+    "4": "Correct : compatible AVEC → les horaires avec lesquels le contrat est compatible.",
+    "A": "L'option 4 est correcte.",
+    "T": "Une seule option restitue la préposition exigée par l'adjectif."
+  }
+},
+{
+  "id": "orth-L25-1",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Son salaire d'appoint lui permet tout juste de ___ aux besoins du ménage ; aucun incident n'est ___ pendant la garde de nuit.",
+  "options": [
+    {
+      "key": "1",
+      "text": "subvenir / survenu"
+    },
+    {
+      "key": "2",
+      "text": "survenir / subvenu"
+    },
+    {
+      "key": "3",
+      "text": "subvenir / subvenu"
+    },
+    {
+      "key": "4",
+      "text": "survenir / survenu"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "« Subvenir à » = pourvoir (aux besoins) ; « survenir » = se produire de façon inattendue.",
+  "why": {
+    "1": "Correct : pourvoir aux besoins = subvenir ; incident inattendu = survenu.",
+    "2": "Inverse les deux : on subvient aux besoins, un incident survient.",
+    "3": "« aucun incident n'est subvenu » : se produire se dit survenir.",
+    "4": "« survenir aux besoins » : pourvoir se dit subvenir.",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options confondent les deux verbes dans au moins une place."
+  }
+},
+{
+  "id": "orth-L25-2",
+  "rule": "orthographe",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "C’est à son corps défendant qu’elle a signé le compromis."
+    },
+    {
+      "key": "2",
+      "text": "Les riverains réclament à cor et à cri un passage sécurisé."
+    },
+    {
+      "key": "3",
+      "text": "Cette réforme des horaires a été préparée de longue main."
+    },
+    {
+      "key": "4",
+      "text": "Il affirme, en son âme et conscience, n’avoir rien signé."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "T",
+  "explanation": "Quatre locutions correctes malgré leur allure suspecte : « à son corps défendant », « à cor et à cri » (le cor de chasse), « de longue main » et « en son âme et conscience ». Réponse : Toutes.",
+  "why": {
+    "1": "Correcte : « à son corps défendant » (= à contrecœur), avec le participe présent figé.",
+    "2": "Correcte : « à cor et à cri » invoque le cor de chasse, pas le corps.",
+    "3": "Correcte : « de longue main » (= de longue date, avec soin) est la locution consacrée.",
+    "4": "Correcte : « en son âme et conscience », formule figée du serment.",
+    "A": "Les quatre phrases sont correctes.",
+    "T": "Correct : chacune de ces locutions, souvent soupçonnée à tort, est irréprochable."
+  }
+},
+{
+  "id": "orth-L25-3",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le trésorier doit encore ___ les comptes de l'exercice ; la station voisine, elle, continue d'___ les eaux usées.",
+  "options": [
+    {
+      "key": "1",
+      "text": "épurer / apurer"
+    },
+    {
+      "key": "2",
+      "text": "apurer / épurer"
+    },
+    {
+      "key": "3",
+      "text": "apurer / apurer"
+    },
+    {
+      "key": "4",
+      "text": "épurer / épurer"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "« Apurer » = vérifier et solder des comptes ; « épurer » = purifier (un liquide) ou expurger.",
+  "why": {
+    "1": "Inverse les deux : on apure des comptes, on épure des eaux.",
+    "2": "Correct : comptes soldés = apurer ; eaux purifiées = épurer.",
+    "3": "« apurer les eaux usées » : les purifier se dit épurer.",
+    "4": "« épurer les comptes » : les vérifier et les solder se dit apurer.",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options confondent le solde comptable et la purification."
+  }
+},
+{
+  "id": "orth-L25-4",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "L'électricien a repéré un fil ___ derrière le tableau ; quant à la rumeur, elle est ___ de tout fondement.",
+  "options": [
+    {
+      "key": "1",
+      "text": "dénué / dénudé"
+    },
+    {
+      "key": "2",
+      "text": "dénué / dénué"
+    },
+    {
+      "key": "3",
+      "text": "dénudé / dénuée"
+    },
+    {
+      "key": "4",
+      "text": "dénudé / dénudée"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "« Dénudé » = mis à nu (fil, sol) ; « dénué de » = dépourvu de (abstrait).",
+  "why": {
+    "1": "Inverse les deux : le fil est dénudé, la rumeur dénuée de fondement.",
+    "2": "« un fil dénué » : privé de sa gaine, il est dénudé.",
+    "3": "Correct : fil mis à nu = dénudé ; rumeur sans fondement = dénuée.",
+    "4": "« une rumeur dénudée de tout fondement » : dépourvue se dit dénuée.",
+    "A": "L'option 3 est correcte.",
+    "T": "Trois options confondent la mise à nu et la privation."
+  }
+},
+{
+  "id": "orth-L25-5",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Pendant la dictée, il s'est penché pour ___ la réponse à son voisin de pupitre.",
+  "options": [
+    {
+      "key": "1",
+      "text": "sussurer"
+    },
+    {
+      "key": "2",
+      "text": "susurer"
+    },
+    {
+      "key": "3",
+      "text": "sussurrer"
+    },
+    {
+      "key": "4",
+      "text": "susurrer"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "Le verbe s'écrit « susurrer » : un seul s après le u initial, puis deux r.",
+  "why": {
+    "1": "« sussurer » double le s au lieu du r.",
+    "2": "« susurer » : il manque le double r.",
+    "3": "« sussurrer » double les deux consonnes à la fois.",
+    "4": "Correct : susurrer (un s intérieur, deux r).",
+    "A": "L'option 4 est correcte.",
+    "T": "Les options 1, 2 et 3 déplacent ou omettent une consonne double."
+  }
+},
+{
+  "id": "orth-L25-6",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Au bord de l'étang, la ___ surveille ses canetons ; le vieux jardinier, lui, s'appuie sur sa ___ pour les regarder.",
+  "options": [
+    {
+      "key": "1",
+      "text": "cane / canne"
+    },
+    {
+      "key": "2",
+      "text": "canne / cane"
+    },
+    {
+      "key": "3",
+      "text": "cane / cane"
+    },
+    {
+      "key": "4",
+      "text": "canne / canne"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "La « cane » (un n) est la femelle du canard ; la « canne » (deux n) est le bâton d'appui.",
+  "why": {
+    "1": "Correct : femelle du canard = cane ; bâton = canne.",
+    "2": "Inverse les deux homophones.",
+    "3": "« s'appuie sur sa cane » : le bâton s'écrit canne.",
+    "4": "« la canne surveille ses canetons » : l'oiseau s'écrit cane.",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "orth-L25-7",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Elle feuillette un ___ de vulgarisation scientifique en attendant que le ___ de matériel rouvre à treize heures.",
+  "options": [
+    {
+      "key": "1",
+      "text": "magasin / magazine"
+    },
+    {
+      "key": "2",
+      "text": "magazine / magazine"
+    },
+    {
+      "key": "3",
+      "text": "magazine / magasin"
+    },
+    {
+      "key": "4",
+      "text": "magasin / magasin"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "Le « magazine » (avec z, de l'anglais) est la revue ; le « magasin » (avec s) est le lieu de vente ou de stockage.",
+  "why": {
+    "1": "Inverse les deux : la revue s'écrit magazine, le lieu magasin.",
+    "2": "« le magazine de matériel rouvre » : le lieu de stockage s'écrit magasin.",
+    "3": "Correct : revue = magazine ; local = magasin.",
+    "4": "« feuilleter un magasin » : la revue s'écrit magazine.",
+    "A": "L'option 3 est correcte.",
+    "T": "Trois options placent au moins un des deux mots à contre-emploi."
+  }
+},
+{
+  "id": "conj-L25-8",
+  "rule": "conjugaison",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Chaque fois qu'il cède à la précipitation, il s'en ___ aussitôt.",
+  "options": [
+    {
+      "key": "1",
+      "text": "repentit"
+    },
+    {
+      "key": "2",
+      "text": "repent"
+    },
+    {
+      "key": "3",
+      "text": "repends"
+    },
+    {
+      "key": "4",
+      "text": "repente"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "« Se repentir » (3e groupe) fait au présent : je me repens, tu te repens, il se repent — sans t intérieur ni terminaison en -it.",
+  "why": {
+    "1": "« il se repentit » est un passé simple : « chaque fois que » décrit une habitude au présent.",
+    "2": "Correct : présent de se repentir, 3e personne → il se repent.",
+    "3": "« repends » est la forme des 1re et 2e personnes (avec s), pas de la 3e.",
+    "4": "« repente » est un subjonctif : rien ne l'appelle dans cette principale.",
+    "A": "L'option 2 est correcte.",
+    "T": "Les options 1, 3 et 4 fautent sur le temps, la personne ou le mode."
+  }
+},
+{
+  "id": "dis-L25-9",
+  "rule": "discours",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "Le greffier a demandé aux parties : « Avez-vous reçu ma convocation ? » L'audience est close depuis longtemps quand le dossier de synthèse rapporte sa question. Quelle formulation est correcte ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Il leur a demandé s'ils avaient reçu ma convocation."
+    },
+    {
+      "key": "2",
+      "text": "Il leur a demandé s'ils avaient reçu sa convocation."
+    },
+    {
+      "key": "3",
+      "text": "Il leur a demandé s'ils eurent reçu sa convocation."
+    },
+    {
+      "key": "4",
+      "text": "Il leur a demandé est-ce qu'ils avaient reçu sa convocation."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "Interrogation totale → « si » ; passé composé → plus-que-parfait (« avaient reçu ») ; « ma convocation » (celle du greffier) → « sa convocation ».",
+  "why": {
+    "1": "« ma convocation » garde le possessif du discours direct : rapporté à la 3e personne, c'est « sa ».",
+    "2": "Correct : si + plus-que-parfait + possessif transposé.",
+    "3": "« eurent reçu » est un passé antérieur : la concordance demande le plus-que-parfait.",
+    "4": "« est-ce que » est une marque de l'interrogation directe : après « si »… elle disparaît purement.",
+    "A": "L'option 2 est correcte.",
+    "T": "Les options 1, 3 et 4 fautent sur le possessif, le temps ou la marque directe."
+  }
+},
+{
+  "id": "rel-L25-10",
+  "rule": "relatifs",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Les quelques certitudes ___ il se raccroche depuis l'annonce de la restructuration s'effritent l'une après l'autre.",
+  "options": [
+    {
+      "key": "1",
+      "text": "dont"
+    },
+    {
+      "key": "2",
+      "text": "qu'"
+    },
+    {
+      "key": "3",
+      "text": "desquelles"
+    },
+    {
+      "key": "4",
+      "text": "sur lesquelles"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "A",
+  "explanation": "« Se raccrocher À quelque chose » : il faudrait « auxquelles », qui n'est pas proposé.",
+  "why": {
+    "1": "« dont » supposerait « se raccrocher de », construction inexistante.",
+    "2": "« qu' » traiterait le verbe comme transitif direct : « se raccrocher quelque chose » n'existe pas.",
+    "3": "« desquelles » habille la même erreur de régime en « de » d'une forme composée.",
+    "4": "« sur lesquelles » calque « s'appuyer sur » : « se raccrocher » exige « à ».",
+    "A": "Correct : le relatif attendu « auxquelles » ne figure dans aucune option.",
+    "T": "Aucune option ne restitue le régime du verbe."
+  }
+},
+{
+  "id": "orth-L26-1",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "L'infirmerie signale une ___ des angines depuis le retour des vacances.",
+  "options": [
+    {
+      "key": "1",
+      "text": "recrudessence"
+    },
+    {
+      "key": "2",
+      "text": "recrudescance"
+    },
+    {
+      "key": "3",
+      "text": "reccrudescence"
+    },
+    {
+      "key": "4",
+      "text": "recrudecence"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "A",
+  "explanation": "Le mot s'écrit « recrudescence » : groupe -sc- (comme « adolescence ») et finale -ence. Aucune option ne porte cette graphie.",
+  "why": {
+    "1": "« recrudessence » remplace le groupe -sc- par -ss-.",
+    "2": "« recrudescance » : la finale est -ence, jamais -ance.",
+    "3": "« reccrudescence » double le c du préfixe à tort.",
+    "4": "« recrudecence » : il manque le s du groupe -sc-.",
+    "A": "Correct : la graphie attendue « recrudescence » ne figure dans aucune option.",
+    "T": "Chaque option déforme le mot d'une façon différente."
+  }
+},
+{
+  "id": "orth-L26-2",
+  "rule": "orthographe",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "Quelle(s) phrase(s) accorde(nt) correctement le déterminant avec le nom ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Un pétale s’est détaché de la rose offerte à la jubilaire."
+    },
+    {
+      "key": "2",
+      "text": "Un astérisque renvoie aux conditions générales du contrat."
+    },
+    {
+      "key": "3",
+      "text": "Ils cherchaient une échappatoire pour éviter la séance plénière."
+    },
+    {
+      "key": "4",
+      "text": "Le bureau vitré reste une oasis de calme au milieu du chantier."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "T",
+  "explanation": "Quatre genres corrects malgré l'intuition : « pétale » et « astérisque » sont masculins, « échappatoire » et « oasis » sont féminins. Réponse : Toutes.",
+  "why": {
+    "1": "Correcte : « pétale » est masculin (un pétale), malgré la fleur.",
+    "2": "Correcte : « astérisque » est masculin (un astérisque).",
+    "3": "Correcte : « échappatoire » est féminin (une échappatoire).",
+    "4": "Correcte : « oasis » est féminin (une oasis).",
+    "A": "Les quatre phrases sont correctes.",
+    "T": "Correct : chaque nom porte le genre que l'usage soupçonne à tort d'être l'inverse."
+  }
+},
+{
+  "id": "orth-L26-3",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Sa voiture dort dans un ___ loué au sous-sol ; le jeudi soir, il suit un cours de ___ éducative.",
+  "options": [
+    {
+      "key": "1",
+      "text": "box / boxe"
+    },
+    {
+      "key": "2",
+      "text": "boxe / box"
+    },
+    {
+      "key": "3",
+      "text": "box / box"
+    },
+    {
+      "key": "4",
+      "text": "boxe / boxe"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Le « box » (sans e) est le compartiment fermé (garage, écurie) ; la « boxe » (avec e) est le sport de combat.",
+  "why": {
+    "1": "Correct : compartiment = box ; sport = boxe.",
+    "2": "Inverse les deux homophones.",
+    "3": "« un cours de box » : le sport s'écrit boxe.",
+    "4": "« un boxe loué au sous-sol » : le compartiment s'écrit box.",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "orth-L26-4",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Sa chronique est une ___ féroce du jargon administratif ; l'exposé sur la mythologie, lui, montrait un ___ jouant de la flûte.",
+  "options": [
+    {
+      "key": "1",
+      "text": "satyre / satire"
+    },
+    {
+      "key": "2",
+      "text": "satire / satyre"
+    },
+    {
+      "key": "3",
+      "text": "satire / satire"
+    },
+    {
+      "key": "4",
+      "text": "satyre / satyre"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "La « satire » (avec i) est l'écrit moqueur ; le « satyre » (avec y) est la créature mythologique.",
+  "why": {
+    "1": "Inverse les deux homophones.",
+    "2": "Correct : écrit moqueur = satire ; créature mi-homme mi-bouc = satyre.",
+    "3": "« un satire jouant de la flûte » : la créature mythologique s'écrit satyre.",
+    "4": "« une satyre du jargon » : le texte moqueur s'écrit satire.",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "orth-L26-5",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le cuisinier cueille du ___ frais pour la sauce ; la sortie culturelle visitera ensuite la ___ romane du bourg.",
+  "options": [
+    {
+      "key": "1",
+      "text": "basilique / basilic"
+    },
+    {
+      "key": "2",
+      "text": "basilique / basilique"
+    },
+    {
+      "key": "3",
+      "text": "basilic / basilique"
+    },
+    {
+      "key": "4",
+      "text": "basilic / basilic"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "Le « basilic » est la plante aromatique ; la « basilique » est l'édifice religieux.",
+  "why": {
+    "1": "Inverse les deux : la plante s'écrit basilic, l'édifice basilique.",
+    "2": "« cueillir de la basilique » : la plante s'écrit basilic.",
+    "3": "Correct : plante = basilic ; édifice = basilique.",
+    "4": "« le basilic roman du bourg » : l'édifice s'écrit basilique.",
+    "A": "L'option 3 est correcte.",
+    "T": "Trois options placent au moins un des deux noms à contre-emploi."
+  }
+},
+{
+  "id": "orth-L26-6",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le gel a épargné les vieux ___ de la parcelle ; au marché, les ___ séchés se vendaient au prix fort.",
+  "options": [
+    {
+      "key": "1",
+      "text": "cèpes / ceps"
+    },
+    {
+      "key": "2",
+      "text": "cèpes / cèpes"
+    },
+    {
+      "key": "3",
+      "text": "ceps / ceps"
+    },
+    {
+      "key": "4",
+      "text": "ceps / cèpes"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "Le « cep » (sans accent) est le pied de vigne ; le « cèpe » (avec accent) est le champignon.",
+  "why": {
+    "1": "Inverse les deux : la vigne porte des ceps, le panier des cèpes.",
+    "2": "« les cèpes de la parcelle » gelés : les pieds de vigne s'écrivent ceps.",
+    "3": "« des ceps séchés au marché » : le champignon s'écrit cèpe.",
+    "4": "Correct : pieds de vigne = ceps ; champignons = cèpes.",
+    "A": "L'option 4 est correcte.",
+    "T": "Trois options placent au moins un des deux noms à contre-emploi."
+  }
+},
+{
+  "id": "orth-L26-7",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "___ , le préau et la salle des maîtres seront repeints pendant l'été.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Entre autres"
+    },
+    {
+      "key": "2",
+      "text": "Entre autre"
+    },
+    {
+      "key": "3",
+      "text": "Entres autres"
+    },
+    {
+      "key": "4",
+      "text": "Entre-autres"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "La locution s'écrit « entre autres » : « entre » invariable, « autres » au pluriel, sans trait d'union.",
+  "why": {
+    "1": "Correct : entre (préposition invariable) + autres (pluriel, car parmi d'autres choses).",
+    "2": "« entre autre » : « autres » renvoie à plusieurs éléments et prend le pluriel.",
+    "3": "« entres autres » : une préposition ne s'accorde jamais.",
+    "4": "« entre-autres » : la locution ne prend pas de trait d'union.",
+    "A": "L'option 1 est correcte.",
+    "T": "Les options 2, 3 et 4 fautent sur l'accord ou le trait d'union."
+  }
+},
+{
+  "id": "conj-L26-8",
+  "rule": "conjugaison",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Depuis l'ouverture de la ligne directe, la demande de places d'accueil ___ sans discontinuer.",
+  "options": [
+    {
+      "key": "1",
+      "text": "croit"
+    },
+    {
+      "key": "2",
+      "text": "croît"
+    },
+    {
+      "key": "3",
+      "text": "croie"
+    },
+    {
+      "key": "4",
+      "text": "croisse"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "« Croître » (grandir) garde son accent circonflexe au présent quand la forme se confond avec « croire » : elle croît.",
+  "why": {
+    "1": "« croit » est la forme de « croire » : la demande ne « croit » rien, elle grandit → croît.",
+    "2": "Correct : croître → elle croît (accent distinctif).",
+    "3": "« croie » est un subjonctif de croire : rien ne l'appelle ici.",
+    "4": "« croisse » est un subjonctif de croître : la principale exige l'indicatif.",
+    "A": "L'option 2 est correcte.",
+    "T": "Les options 1, 3 et 4 fautent sur le verbe ou le mode."
+  }
+},
+{
+  "id": "dis-L26-9",
+  "rule": "discours",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "La conseillère a demandé aux apprentis : « Lequel des deux horaires préférez-vous ? » Le compte rendu rapporte sa question. Quelle formulation est correcte ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Elle leur a demandé lequel des deux horaires préféraient-ils."
+    },
+    {
+      "key": "2",
+      "text": "Elle leur a demandé lequel des deux horaires est-ce qu'ils préféraient."
+    },
+    {
+      "key": "3",
+      "text": "Elle leur a demandé lequel des deux horaires ils préféraient."
+    },
+    {
+      "key": "4",
+      "text": "Elle leur a demandé quel des deux horaires ils préféraient."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "« Lequel » se conserve en interrogation indirecte, suivi de l'ordre déclaratif : lequel des deux horaires ils préféraient.",
+  "why": {
+    "1": "« préféraient-ils » conserve l'inversion de l'interrogation directe.",
+    "2": "« est-ce que » est une marque directe : elle disparaît dans la subordonnée.",
+    "3": "Correct : « lequel » + ordre déclaratif + imparfait de concordance.",
+    "4": "« quel des deux horaires » : devant « des deux », le pronom est « lequel », pas le déterminant « quel ».",
+    "A": "L'option 3 est correcte.",
+    "T": "Les options 1, 2 et 4 gardent une marque directe ou déforment le pronom."
+  }
+},
+{
+  "id": "rel-L26-10",
+  "rule": "relatifs",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Les appuis logistiques ___ l'institut ne peut se passer figurent dans la convention cantonale.",
+  "options": [
+    {
+      "key": "1",
+      "text": "auxquels"
+    },
+    {
+      "key": "2",
+      "text": "qu'"
+    },
+    {
+      "key": "3",
+      "text": "sur lesquels"
+    },
+    {
+      "key": "4",
+      "text": "dont"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "« Se passer DE quelque chose » : le complément est introduit par « de », d'où « dont » (se passer de ces appuis).",
+  "why": {
+    "1": "« auxquels » supposerait « se passer à », construction inexistante.",
+    "2": "« qu' » traiterait le verbe comme transitif direct : « se passer quelque chose » a un autre sens (se passer de = renoncer à).",
+    "3": "« sur lesquels » calque « compter sur » : « se passer » exige « de ».",
+    "4": "Correct : se passer DE → les appuis dont l'institut ne peut se passer.",
+    "A": "L'option 4 est correcte.",
+    "T": "Une seule option restitue le régime du verbe."
+  }
+},
+{
+  "id": "orth-L27-1",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Depuis la publication du classement intercantonal, le directeur en est ___ au point d'en oublier le reste.",
+  "options": [
+    {
+      "key": "1",
+      "text": "omnibulé"
+    },
+    {
+      "key": "2",
+      "text": "obnibulé"
+    },
+    {
+      "key": "3",
+      "text": "obnubulé"
+    },
+    {
+      "key": "4",
+      "text": "omnubilé"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "A",
+  "explanation": "Le verbe s'écrit « obnubiler » (du latin obnubilare, couvrir de nuages) : ob-nu-bi-lé. Aucune option ne porte cette graphie.",
+  "why": {
+    "1": "« omnibulé » : contamination très répandue d'« omnibus » ; le préfixe est ob-.",
+    "2": "« obnibulé » intervertit les voyelles du radical (-nubi-).",
+    "3": "« obnubulé » répète le u au lieu du i.",
+    "4": "« omnubilé » cumule le préfixe fautif et une voyelle déplacée.",
+    "A": "Correct : la graphie attendue « obnubilé » ne figure dans aucune option.",
+    "T": "Chaque option déforme le mot d'une façon différente."
+  }
+},
+{
+  "id": "orth-L27-2",
+  "rule": "orthographe",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Les stagiaires sont fin prêts pour la visite d’inspection."
+    },
+    {
+      "key": "2",
+      "text": "Des responsables haut placés ont validé cette dérogation."
+    },
+    {
+      "key": "3",
+      "text": "Ces gabarits se révèlent fort utiles au montage des stands."
+    },
+    {
+      "key": "4",
+      "text": "La benne de déchets verts était remplie à ras bord."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "T",
+  "explanation": "Quatre emplois adverbiaux corrects malgré l'envie d'accorder : « fin prêts » (fin = tout à fait), « haut placés », « fort utiles » (fort = très) et « à ras bord ». Réponse : Toutes.",
+  "why": {
+    "1": "Correcte : « fin » est ici adverbe (= complètement) et reste invariable devant « prêts ».",
+    "2": "Correcte : « haut » adverbe (= à un haut niveau) reste invariable devant « placés ».",
+    "3": "Correcte : « fort » adverbe (= très) reste invariable devant « utiles ».",
+    "4": "Correcte : « à ras bord » est une locution figée, sans accord ni trait d'union.",
+    "A": "Les quatre phrases sont correctes.",
+    "T": "Correct : chaque adverbe soupçonné de devoir s'accorder est bien invariable."
+  }
+},
+{
+  "id": "orth-L27-3",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Sous la pluie, impossible de ___ un taxi ; le chauffeur qui s'arrête enfin arbore un teint ___ de vacancier.",
+  "options": [
+    {
+      "key": "1",
+      "text": "héler / hâlé"
+    },
+    {
+      "key": "2",
+      "text": "hâler / hélé"
+    },
+    {
+      "key": "3",
+      "text": "héler / hélé"
+    },
+    {
+      "key": "4",
+      "text": "hâler / hâlé"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "« Héler » = appeler de loin (un taxi) ; « hâler » = bronzer (le hâle du soleil).",
+  "why": {
+    "1": "Correct : appeler un taxi = héler ; teint bruni = hâlé.",
+    "2": "Inverse les deux verbes.",
+    "3": "« un teint hélé » : bruni par le soleil se dit hâlé.",
+    "4": "« hâler un taxi » : l'appeler de loin se dit héler.",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options confondent l'appel et le bronzage."
+  }
+},
+{
+  "id": "orth-L27-4",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Au cortège de la Saint-Nicolas, l'ânier tenait fermement les ___ de l'attelage, tandis qu'un ___ de carton trônait sur le char.",
+  "options": [
+    {
+      "key": "1",
+      "text": "rennes / rêne"
+    },
+    {
+      "key": "2",
+      "text": "rênes / renne"
+    },
+    {
+      "key": "3",
+      "text": "reines / renne"
+    },
+    {
+      "key": "4",
+      "text": "rênes / rêne"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "Les « rênes » (accent circonflexe) sont les lanières de conduite ; le « renne » (deux n) est l'animal ; la « reine » est la souveraine.",
+  "why": {
+    "1": "Inverse les deux : les lanières s'écrivent rênes, l'animal renne.",
+    "2": "Correct : lanières = rênes ; animal = renne.",
+    "3": "« les reines de l'attelage » : les lanières s'écrivent rênes.",
+    "4": "« un rêne de carton » : l'animal s'écrit renne.",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "orth-L27-5",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le laboratoire a isolé le ___ responsable de cette résistance ; l'annonce a toutefois créé une ___ perceptible dans l'assemblée.",
+  "options": [
+    {
+      "key": "1",
+      "text": "gêne / gène"
+    },
+    {
+      "key": "2",
+      "text": "gène / gène"
+    },
+    {
+      "key": "3",
+      "text": "gène / gêne"
+    },
+    {
+      "key": "4",
+      "text": "gêne / gêne"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "Le « gène » (accent grave) est l'unité d'hérédité ; la « gêne » (accent circonflexe) est l'embarras.",
+  "why": {
+    "1": "Inverse les deux : l'unité biologique s'écrit gène, l'embarras gêne.",
+    "2": "« une gène perceptible » : l'embarras s'écrit gêne (et il est féminin).",
+    "3": "Correct : unité d'hérédité = gène ; embarras = gêne.",
+    "4": "« isoler le gêne » : l'unité biologique s'écrit gène.",
+    "A": "L'option 3 est correcte.",
+    "T": "Trois options placent au moins un accent à contre-emploi."
+  }
+},
+{
+  "id": "orth-L27-6",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Ces négociations lui donnent des ___ de tête ; il apprend, à ses dépens, à peser ses ___ en séance.",
+  "options": [
+    {
+      "key": "1",
+      "text": "mots / maux"
+    },
+    {
+      "key": "2",
+      "text": "maux / maux"
+    },
+    {
+      "key": "3",
+      "text": "mots / mots"
+    },
+    {
+      "key": "4",
+      "text": "maux / mots"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "Les « maux » (pluriel de mal) sont les douleurs ; les « mots » sont les paroles (peser ses mots).",
+  "why": {
+    "1": "Inverse les deux : les douleurs s'écrivent maux, les paroles mots.",
+    "2": "« peser ses maux » : les paroles qu'on choisit s'écrivent mots.",
+    "3": "« des mots de tête » : les douleurs s'écrivent maux.",
+    "4": "Correct : douleurs = maux ; paroles = mots.",
+    "A": "L'option 4 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "orth-L27-7",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "___ que l'enquête administrative dure, le poste reste gelé ; or le ___ presse pour la rentrée.",
+  "options": [
+    {
+      "key": "1",
+      "text": "Tant / temps"
+    },
+    {
+      "key": "2",
+      "text": "Temps / temps"
+    },
+    {
+      "key": "3",
+      "text": "Tant / tant"
+    },
+    {
+      "key": "4",
+      "text": "Temps / tant"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "« Tant que » = aussi longtemps que (adverbe) ; « le temps presse » = la durée (nom).",
+  "why": {
+    "1": "Correct : tant que (aussi longtemps que) ; le temps presse (durée).",
+    "2": "« Temps que l'enquête dure » : la locution de durée conditionnelle s'écrit « tant que ».",
+    "3": "« le tant presse » : la durée est un nom, « temps ».",
+    "4": "Inverse les deux formes.",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options confondent l'adverbe et le nom."
+  }
+},
+{
+  "id": "conj-L27-8",
+  "rule": "conjugaison",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Patience : sur ce réchaud d'appoint, l'eau ___ bien avant la fin de la pause.",
+  "options": [
+    {
+      "key": "1",
+      "text": "bouillera"
+    },
+    {
+      "key": "2",
+      "text": "bouillira"
+    },
+    {
+      "key": "3",
+      "text": "boura"
+    },
+    {
+      "key": "4",
+      "text": "bouillra"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "Le futur de « bouillir » se forme sur l'infinitif : elle bouillira (comme dormir → dormira).",
+  "why": {
+    "1": "« bouillera » construit le futur sur le modèle des verbes en -er.",
+    "2": "Correct : bouillir + -a → l'eau bouillira.",
+    "3": "« boura » ampute le radical du verbe.",
+    "4": "« bouillra » perd la voyelle de liaison de l'infinitif.",
+    "A": "L'option 2 est correcte.",
+    "T": "Les options 1, 3 et 4 déforment le radical du futur."
+  }
+},
+{
+  "id": "dis-L27-9",
+  "rule": "discours",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "En septembre, un parent a demandé au concierge : « Est-ce que la grille sera réparée demain ? » Le rapport annuel, rédigé des mois plus tard, rapporte cette question. Quelle formulation est correcte ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Il a demandé si est-ce que la grille serait réparée le lendemain."
+    },
+    {
+      "key": "2",
+      "text": "Il a demandé si la grille serait réparée demain."
+    },
+    {
+      "key": "3",
+      "text": "Il a demandé si la grille serait réparée le lendemain."
+    },
+    {
+      "key": "4",
+      "text": "Il a demandé si la grille aurait été réparée le lendemain."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "« Est-ce que » disparaît au profit de « si » ; le futur devient conditionnel (« serait ») et « demain » devient « le lendemain ».",
+  "why": {
+    "1": "« si est-ce que » cumule la conjonction et la marque directe : « est-ce que » disparaît.",
+    "2": "« demain » garde le repère du discours direct : rapporté des mois plus tard, c'est « le lendemain ».",
+    "3": "Correct : si + conditionnel de futur du passé + déictique recalculé.",
+    "4": "« aurait été réparée » (conditionnel passé) marque une antériorité que la question ne contenait pas.",
+    "A": "L'option 3 est correcte.",
+    "T": "Les options 1, 2 et 4 gardent une marque directe ou déforment le temps."
+  }
+},
+{
+  "id": "rel-L27-10",
+  "rule": "relatifs",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Les économies d'énergie ___ chaque service songe depuis l'automne feront l'objet d'une directive.",
+  "options": [
+    {
+      "key": "1",
+      "text": "dont"
+    },
+    {
+      "key": "2",
+      "text": "qu'"
+    },
+    {
+      "key": "3",
+      "text": "sur lesquelles"
+    },
+    {
+      "key": "4",
+      "text": "auxquelles"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "« Songer À quelque chose » : le complément est introduit par « à », d'où « auxquelles » (songer à ces économies).",
+  "why": {
+    "1": "« dont » supposerait « songer de », construction inexistante.",
+    "2": "« qu' » traiterait « songer » comme transitif direct : « songer quelque chose » n'existe pas.",
+    "3": "« sur lesquelles » calque « réfléchir sur » : « songer » exige « à ».",
+    "4": "Correct : songer À → les économies auxquelles chaque service songe.",
+    "A": "L'option 4 est correcte.",
+    "T": "Une seule option restitue le régime du verbe."
+  }
+},
+{
+  "id": "orth-L28-1",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "L'eau du vieux ___ n'est plus potable ; ___ , les analyses du laboratoire le confirmeront.",
+  "options": [
+    {
+      "key": "1",
+      "text": "puits / puis"
+    },
+    {
+      "key": "2",
+      "text": "puis / puits"
+    },
+    {
+      "key": "3",
+      "text": "puit / puis"
+    },
+    {
+      "key": "4",
+      "text": "puits / puit"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Le « puits » (forage) s'écrit avec -ts final, même au singulier ; « puis » (ensuite) est l'adverbe.",
+  "why": {
+    "1": "Correct : le puits (avec ts) ; puis (ensuite).",
+    "2": "Inverse les deux : le forage prend -ts, l'adverbe non.",
+    "3": "« puit » n'existe pas : le nom garde son -s étymologique au singulier.",
+    "4": "« puit » en seconde place : l'adverbe s'écrit « puis ».",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options écorchent l'un des deux homophones."
+  }
+},
+{
+  "id": "orth-L28-2",
+  "rule": "orthographe",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Advienne que pourra, la candidature part ce soir."
+    },
+    {
+      "key": "2",
+      "text": "Vaille que vaille, le chantier du réfectoire avance."
+    },
+    {
+      "key": "3",
+      "text": "Coûte que coûte, il faut boucler le budget avant Noël."
+    },
+    {
+      "key": "4",
+      "text": "Qu’à cela ne tienne, on déplacera la séance au vendredi."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "T",
+  "explanation": "Quatre subjonctifs figés corrects : « advienne que pourra », « vaille que vaille », « coûte que coûte » et « qu'à cela ne tienne ». Réponse : Toutes.",
+  "why": {
+    "1": "Correcte : « advienne que pourra » (= quoi qu'il arrive), subjonctif figé.",
+    "2": "Correcte : « vaille que vaille » (= tant bien que mal), du verbe valoir au subjonctif.",
+    "3": "Correcte : « coûte que coûte » (= à tout prix), subjonctif figé sans accord.",
+    "4": "Correcte : « qu'à cela ne tienne » (= peu importe), du verbe tenir au subjonctif.",
+    "A": "Les quatre phrases sont correctes.",
+    "T": "Correct : chaque tournure figée au subjonctif, d'allure étrange, est irréprochable."
+  }
+},
+{
+  "id": "orth-L28-3",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Un ___ de terre s'est glissé dans le compost de la classe verte ; pendant ce temps, les élèves apprenaient des ___ de Ramuz.",
+  "options": [
+    {
+      "key": "1",
+      "text": "vers / vers"
+    },
+    {
+      "key": "2",
+      "text": "ver / vers"
+    },
+    {
+      "key": "3",
+      "text": "ver / verres"
+    },
+    {
+      "key": "4",
+      "text": "verre / vers"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "Le « ver » (de terre) s'écrit sans s ; les « vers » d'un poème en prennent un ; le « verre » est la matière ou le récipient.",
+  "why": {
+    "1": "« un vers de terre » : l'animal s'écrit ver, sans s au singulier.",
+    "2": "Correct : ver de terre ; vers d'un poème.",
+    "3": "« apprendre des verres » : les lignes d'un poème s'écrivent vers.",
+    "4": "« un verre de terre » : l'animal s'écrit ver.",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "orth-L28-4",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "La brocante proposait de la vaisselle en ___ ; à la fermeture, le dernier projecteur fut enfin ___.",
+  "options": [
+    {
+      "key": "1",
+      "text": "éteint / étain"
+    },
+    {
+      "key": "2",
+      "text": "étain / étain"
+    },
+    {
+      "key": "3",
+      "text": "étain / éteint"
+    },
+    {
+      "key": "4",
+      "text": "éteint / éteint"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "L'« étain » est le métal (vaisselle d'étain) ; « éteint » est le participe d'éteindre.",
+  "why": {
+    "1": "Inverse les deux : le métal s'écrit étain, le participe éteint.",
+    "2": "« le projecteur fut étain » : le participe d'éteindre s'écrit éteint.",
+    "3": "Correct : métal = étain ; lampe coupée = éteint.",
+    "4": "« de la vaisselle en éteint » : le métal s'écrit étain.",
+    "A": "L'option 3 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "orth-L28-5",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "L'exposé retraçait la vie des premiers ___ du hameau ; la leçon suivante, consacrée à la digestion, décrivait le ___.",
+  "options": [
+    {
+      "key": "1",
+      "text": "côlons / colon"
+    },
+    {
+      "key": "2",
+      "text": "colons / colon"
+    },
+    {
+      "key": "3",
+      "text": "côlons / côlon"
+    },
+    {
+      "key": "4",
+      "text": "colons / côlon"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "Le « colon » (sans accent) est le pionnier qui s'installe ; le « côlon » (avec accent) est l'organe digestif.",
+  "why": {
+    "1": "Inverse les deux : les pionniers s'écrivent colons, l'organe côlon.",
+    "2": "« décrire le colon » : l'organe s'écrit côlon.",
+    "3": "« les côlons du hameau » : les pionniers s'écrivent colons.",
+    "4": "Correct : pionniers = colons ; organe = côlon.",
+    "A": "L'option 4 est correcte.",
+    "T": "Trois options placent au moins un accent à contre-emploi."
+  }
+},
+{
+  "id": "orth-L28-6",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Excédée par le bruit du chantier voisin, la locataire a déposé ___ ; le menuisier, lui, refixait la ___ du couloir.",
+  "options": [
+    {
+      "key": "1",
+      "text": "plainte / plinthe"
+    },
+    {
+      "key": "2",
+      "text": "plinthe / plainte"
+    },
+    {
+      "key": "3",
+      "text": "plainte / plainte"
+    },
+    {
+      "key": "4",
+      "text": "plinthe / plinthe"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "La « plainte » (de plaindre) est la réclamation ; la « plinthe » est la baguette au bas des murs.",
+  "why": {
+    "1": "Correct : réclamation = plainte ; baguette murale = plinthe.",
+    "2": "Inverse les deux homophones.",
+    "3": "« refixer la plainte du couloir » : la baguette s'écrit plinthe.",
+    "4": "« déposer plinthe » : la réclamation s'écrit plainte.",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "orth-L28-7",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le discours du recteur a trouvé une forte ___ dans la presse régionale.",
+  "options": [
+    {
+      "key": "1",
+      "text": "résonnance"
+    },
+    {
+      "key": "2",
+      "text": "résonance"
+    },
+    {
+      "key": "3",
+      "text": "résonnence"
+    },
+    {
+      "key": "4",
+      "text": "rézonance"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "Le nom s'écrit « résonance », avec un seul n — contrairement au verbe « résonner » qui en prend deux.",
+  "why": {
+    "1": "« résonnance » calque le double n du verbe résonner : le nom n'en garde qu'un.",
+    "2": "Correct : résonance (un seul n).",
+    "3": "« résonnence » cumule le double n et une finale fautive.",
+    "4": "« rézonance » : le son [z] s'écrit s entre voyelles.",
+    "A": "L'option 2 est correcte.",
+    "T": "Les options 1, 3 et 4 déforment la graphie du nom."
+  }
+},
+{
+  "id": "conj-L28-8",
+  "rule": "conjugaison",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "C'est dans ce bâtiment que ___ , en 1833, la première école normale du canton.",
+  "options": [
+    {
+      "key": "1",
+      "text": "naissa"
+    },
+    {
+      "key": "2",
+      "text": "naqui"
+    },
+    {
+      "key": "3",
+      "text": "naquît"
+    },
+    {
+      "key": "4",
+      "text": "naquirent"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "A",
+  "explanation": "Le passé simple de « naître » à la 3e personne du singulier est « naquit » (sans accent). Aucune option ne porte cette forme.",
+  "why": {
+    "1": "« naissa » construit le passé simple sur le présent (nais-) avec la terminaison des verbes en -er.",
+    "2": "« naqui » : il manque le -t de la 3e personne du singulier.",
+    "3": "« naquît » porte l'accent du subjonctif imparfait : rien ne l'appelle dans cette relative de fait.",
+    "4": "« naquirent » est un pluriel : le sujet « la première école normale » est singulier.",
+    "A": "Correct : la forme attendue « naquit » ne figure dans aucune option.",
+    "T": "Aucune des quatre formes ne convient."
+  }
+},
+{
+  "id": "dis-L28-9",
+  "rule": "discours",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "À la fin de la séance, la greffière a prévenu : « Je pars tôt ce soir parce que je dois récupérer ma fille à la crèche. » Le procès-verbal rapporte ses propos. Quelle formulation est correcte ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Elle a prévenu qu'elle partait tôt ce soir-là parce que je devais récupérer ma fille à la crèche."
+    },
+    {
+      "key": "2",
+      "text": "Elle a prévenu qu'elle partait tôt ce soir-là parce qu'elle devait récupérer ma fille à la crèche."
+    },
+    {
+      "key": "3",
+      "text": "Elle a prévenu qu'elle partait tôt ce soir-là parce qu'elle devait récupérer sa fille à la crèche."
+    },
+    {
+      "key": "4",
+      "text": "Elle a prévenu qu'elle partait tôt ce soir-là parce que sa fille devait la récupérer à la crèche."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "Tous les embrayeurs de la 1re personne passent à la 3e : « je pars » → « elle partait », « je dois » → « elle devait », « ma fille » → « sa fille ».",
+  "why": {
+    "1": "La causale garde « je devais » et « ma fille » : le second membre n'est pas transposé.",
+    "2": "« ma fille » garde le possessif du discours direct : c'est la fille de la greffière → « sa ».",
+    "3": "Correct : les deux verbes et le possessif sont transposés à la 3e personne.",
+    "4": "« sa fille devait la récupérer » inverse les rôles : c'est la greffière qui va chercher l'enfant.",
+    "A": "L'option 3 est correcte.",
+    "T": "Les options 1, 2 et 4 laissent un embrayeur non transposé ou inversent les rôles."
+  }
+},
+{
+  "id": "rel-L28-10",
+  "rule": "relatifs",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Les prérogatives ___ la présidence a usé pendant la crise seront réexaminées par le comité.",
+  "options": [
+    {
+      "key": "1",
+      "text": "auxquelles"
+    },
+    {
+      "key": "2",
+      "text": "dont"
+    },
+    {
+      "key": "3",
+      "text": "qu'"
+    },
+    {
+      "key": "4",
+      "text": "sur lesquelles"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "« User DE quelque chose » (= se servir de) : le complément est introduit par « de », d'où « dont » (user de ces prérogatives).",
+  "why": {
+    "1": "« auxquelles » supposerait « user à », construction inexistante.",
+    "2": "Correct : user DE → les prérogatives dont la présidence a usé.",
+    "3": "« qu' » traiterait « user » comme transitif direct : « user quelque chose » signifie « détériorer », contresens ici.",
+    "4": "« sur lesquelles » calque « s'appuyer sur » : « user » exige « de ».",
+    "A": "L'option 2 est correcte.",
+    "T": "Une seule option restitue le régime du verbe."
+  }
+},
+{
+  "id": "orth-L29-1",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Pour la fête de fin d'année, chaque classe tiendra un stand de ___ maison.",
+  "options": [
+    {
+      "key": "1",
+      "text": "gauffres"
+    },
+    {
+      "key": "2",
+      "text": "gofres"
+    },
+    {
+      "key": "3",
+      "text": "gaufrres"
+    },
+    {
+      "key": "4",
+      "text": "gauphres"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "A",
+  "explanation": "Le mot s'écrit « gaufre » : un seul f, malgré « gouffre » qui en prend deux. Aucune option ne porte cette graphie.",
+  "why": {
+    "1": "« gauffres » double le f par contamination de « gouffre » : gaufre n'en prend qu'un.",
+    "2": "« gofres » perd la voyelle du radical (gau-).",
+    "3": "« gaufrres » double le r à tort.",
+    "4": "« gauphres » : le son [f] s'écrit ici f, pas ph (le mot n'est pas d'origine grecque).",
+    "A": "Correct : la graphie attendue « gaufres » ne figure dans aucune option.",
+    "T": "Chaque option déforme le mot d'une façon différente."
+  }
+},
+{
+  "id": "orth-L29-2",
+  "rule": "orthographe",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "Quelle(s) phrase(s) traite(nt) correctement l’élision devant le h ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Le hameau du Planchamp est desservi par le car postal."
+    },
+    {
+      "key": "2",
+      "text": "La hausse des effectifs inquiète le secrétariat général."
+    },
+    {
+      "key": "3",
+      "text": "L’hommage aux enseignants retraités aura lieu en juin."
+    },
+    {
+      "key": "4",
+      "text": "Le haricot du potager pédagogique figure au menu de mercredi."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "T",
+  "explanation": "« Hameau », « hausse » et « haricot » ont un h aspiré (pas d'élision : le, la) ; « hommage » a un h muet (élision : l'). Les quatre phrases sont correctes. Réponse : Toutes.",
+  "why": {
+    "1": "Correcte : h aspiré de « hameau » → pas d'élision (le hameau).",
+    "2": "Correcte : h aspiré de « hausse » → la hausse, jamais « l'hausse ».",
+    "3": "Correcte : h muet de « hommage » → élision obligatoire (l'hommage).",
+    "4": "Correcte : h aspiré de « haricot » → le haricot.",
+    "A": "Les quatre phrases sont correctes.",
+    "T": "Correct : chaque nom applique la règle d'élision qui correspond à son h."
+  }
+},
+{
+  "id": "orth-L29-3",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Un ___ glisse sur le lac devant la volée émerveillée ; aucun ___ de fatigue chez les marcheurs au retour.",
+  "options": [
+    {
+      "key": "1",
+      "text": "cygne / signe"
+    },
+    {
+      "key": "2",
+      "text": "signe / cygne"
+    },
+    {
+      "key": "3",
+      "text": "cygne / cygne"
+    },
+    {
+      "key": "4",
+      "text": "signe / signe"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Le « cygne » (avec y) est l'oiseau ; le « signe » (avec i) est l'indice ou la marque.",
+  "why": {
+    "1": "Correct : oiseau = cygne ; indice = signe.",
+    "2": "Inverse les deux homophones.",
+    "3": "« aucun cygne de fatigue » : l'indice s'écrit signe.",
+    "4": "« un signe glisse sur le lac » : l'oiseau s'écrit cygne.",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "orth-L29-4",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Au chalet de la course d'école, ___ à bois ronfle depuis l'aube et ___ en fonte attache déjà.",
+  "options": [
+    {
+      "key": "1",
+      "text": "la poêle / le poêle"
+    },
+    {
+      "key": "2",
+      "text": "le poêle / la poêle"
+    },
+    {
+      "key": "3",
+      "text": "le poêle / le poêle"
+    },
+    {
+      "key": "4",
+      "text": "la poêle / la poêle"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "« Poêle » change de sens avec le genre : LE poêle chauffe la pièce, LA poêle sert à cuire.",
+  "why": {
+    "1": "Inverse les deux genres : l'appareil de chauffage est masculin, l'ustensile féminin.",
+    "2": "Correct : le poêle (chauffage) ; la poêle (cuisson).",
+    "3": "« le poêle en fonte attache » : l'ustensile de cuisson est féminin.",
+    "4": "« la poêle à bois ronfle » : l'appareil de chauffage est masculin.",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options attribuent au moins un mauvais genre."
+  }
+},
+{
+  "id": "orth-L29-5",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le sentier didactique traverse une allée de ___ argentés ; les bûcherons y voient surtout du ___ d'appoint pour l'hiver.",
+  "options": [
+    {
+      "key": "1",
+      "text": "boulots / bouleau"
+    },
+    {
+      "key": "2",
+      "text": "bouleaux / bouleau"
+    },
+    {
+      "key": "3",
+      "text": "bouleaux / boulot"
+    },
+    {
+      "key": "4",
+      "text": "boulots / boulot"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "Le « bouleau » (pluriel bouleaux) est l'arbre à écorce claire ; le « boulot » (familier) est le travail.",
+  "why": {
+    "1": "Inverse les deux : l'arbre s'écrit bouleau, le travail boulot.",
+    "2": "« du bouleau d'appoint » : le travail (familier) s'écrit boulot.",
+    "3": "Correct : arbres = bouleaux ; travail = boulot.",
+    "4": "« une allée de boulots » : les arbres s'écrivent bouleaux.",
+    "A": "L'option 3 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "orth-L29-6",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "La brume rendait la forêt étonnamment ___ ; à la salle communale, le cours de ___ folklorique battait son plein.",
+  "options": [
+    {
+      "key": "1",
+      "text": "danse / dense"
+    },
+    {
+      "key": "2",
+      "text": "danse / danse"
+    },
+    {
+      "key": "3",
+      "text": "dense / dense"
+    },
+    {
+      "key": "4",
+      "text": "dense / danse"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "« Dense » (avec e) = épais, compact ; la « danse » (avec a) est l'activité rythmée.",
+  "why": {
+    "1": "Inverse les deux homophones.",
+    "2": "« une forêt danse » : l'épaisseur s'écrit dense.",
+    "3": "« un cours de dense » : l'activité s'écrit danse.",
+    "4": "Correct : forêt compacte = dense ; cours de danse.",
+    "A": "L'option 4 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "orth-L29-7",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le premier ___ de l'encyclopédie manque à la bibliothèque ; à la cave d'alpage, la ___ vaudoise s'affine sur des planches d'épicéa.",
+  "options": [
+    {
+      "key": "1",
+      "text": "tome / tomme"
+    },
+    {
+      "key": "2",
+      "text": "tomme / tome"
+    },
+    {
+      "key": "3",
+      "text": "tome / tome"
+    },
+    {
+      "key": "4",
+      "text": "tomme / tomme"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Le « tome » (un m) est le volume d'un ouvrage ; la « tomme » (deux m) est le fromage.",
+  "why": {
+    "1": "Correct : volume = tome ; fromage = tomme.",
+    "2": "Inverse les deux homophones.",
+    "3": "« la tome vaudoise » : le fromage s'écrit tomme.",
+    "4": "« le premier tomme » : le volume s'écrit tome.",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "conj-L29-8",
+  "rule": "conjugaison",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Entre deux épreuves écrites, les candidats se ___ comme ils peuvent dans le couloir.",
+  "options": [
+    {
+      "key": "1",
+      "text": "distraisent"
+    },
+    {
+      "key": "2",
+      "text": "distraient"
+    },
+    {
+      "key": "3",
+      "text": "distrayent"
+    },
+    {
+      "key": "4",
+      "text": "distragent"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "« Distraire » fait au présent : ils se distraient (comme traire → ils traient), sans s ni y intérieur.",
+  "why": {
+    "1": "« distraisent » calque le modèle de « plaire » (plaisent) : distraire suit « traire ».",
+    "2": "Correct : présent de distraire → ils se distraient.",
+    "3": "« distrayent » garde le y des personnes du pluriel en nous/vous (distrayons) là où il n'a pas cours.",
+    "4": "« distragent » invente un radical en -g-.",
+    "A": "L'option 2 est correcte.",
+    "T": "Les options 1, 3 et 4 déforment le radical du verbe."
+  }
+},
+{
+  "id": "dis-L29-9",
+  "rule": "discours",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "Au printemps, une élève a demandé au concierge : « Depuis quand la fontaine de la cour fuit-elle ? » La fuite est colmatée depuis longtemps quand le journal de l'école rapporte cette question. Quelle formulation est correcte ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Elle a demandé depuis quand la fontaine de la cour fuyait-elle."
+    },
+    {
+      "key": "2",
+      "text": "Elle a demandé depuis quand est-ce que la fontaine de la cour fuyait."
+    },
+    {
+      "key": "3",
+      "text": "Elle a demandé depuis quand la fontaine de la cour fuyait."
+    },
+    {
+      "key": "4",
+      "text": "Elle a demandé depuis quand la fontaine de la cour fuit."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "« Depuis quand » se conserve, suivi de l'ordre déclaratif ; la reprise pronominale et « est-ce que » disparaissent, et l'imparfait s'impose pour un fait révolu.",
+  "why": {
+    "1": "« fuyait-elle » conserve la reprise pronominale de l'interrogation directe.",
+    "2": "« est-ce que » est une marque directe : elle disparaît dans la subordonnée.",
+    "3": "Correct : mot interrogatif + ordre déclaratif + imparfait de concordance.",
+    "4": "« fuit » au présent : la fuite est réparée depuis longtemps, le fait est révolu → imparfait.",
+    "A": "L'option 3 est correcte.",
+    "T": "Les options 1, 2 et 4 gardent une marque directe ou un temps inadapté."
+  }
+},
+{
+  "id": "rel-L29-10",
+  "rule": "relatifs",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Les revues pédagogiques ___ le centre de documentation s'est abonné arriveront dès janvier.",
+  "options": [
+    {
+      "key": "1",
+      "text": "dont"
+    },
+    {
+      "key": "2",
+      "text": "qu'"
+    },
+    {
+      "key": "3",
+      "text": "desquelles"
+    },
+    {
+      "key": "4",
+      "text": "auxquelles"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "« S'abonner À quelque chose » : le complément est introduit par « à », d'où « auxquelles » (s'abonner à ces revues).",
+  "why": {
+    "1": "« dont » supposerait « s'abonner de », construction inexistante.",
+    "2": "« qu' » traiterait le verbe comme transitif direct : « s'abonner quelque chose » n'existe pas.",
+    "3": "« desquelles » habille la même erreur de régime en « de » d'une forme composée.",
+    "4": "Correct : s'abonner À → les revues auxquelles le centre s'est abonné.",
+    "A": "L'option 4 est correcte.",
+    "T": "Une seule option restitue le régime du verbe."
+  }
+},
+{
+  "id": "orth-L30-1",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Sa version des faits paraît tout à fait ___ aux enquêteurs.",
+  "options": [
+    {
+      "key": "1",
+      "text": "vraissemblable"
+    },
+    {
+      "key": "2",
+      "text": "vraisemblabe"
+    },
+    {
+      "key": "3",
+      "text": "vressemblable"
+    },
+    {
+      "key": "4",
+      "text": "vraisenblable"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "A",
+  "explanation": "Le mot s'écrit « vraisemblable » (vrai + semblable) : un seul s entre les deux radicaux. Aucune option ne porte cette graphie.",
+  "why": {
+    "1": "« vraissemblable » double le s à la jonction : vrai + semblable n'en demande qu'un.",
+    "2": "« vraisemblabe » ampute le l de « semblable ».",
+    "3": "« vressemblable » déforme le radical « vrai ».",
+    "4": "« vraisenblable » : devant b, la nasale s'écrit m (sembler).",
+    "A": "Correct : la graphie attendue « vraisemblable » ne figure dans aucune option.",
+    "T": "Chaque option déforme le mot d'une façon différente."
+  }
+},
+{
+  "id": "orth-L30-2",
+  "rule": "orthographe",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "La cime des sapins ploie sous la neige de mars."
+    },
+    {
+      "key": "2",
+      "text": "Une odeur d’égout remonte du sous-sol de l’aile ouest."
+    },
+    {
+      "key": "3",
+      "text": "Le pédiatre de garde consulte le mercredi matin."
+    },
+    {
+      "key": "4",
+      "text": "La zone artisanale sera raccordée au réseau de bus."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "T",
+  "explanation": "Aucun de ces mots ne prend d'accent circonflexe : cime, égout, pédiatre et zone s'écrivent sans accent, malgré l'envie d'en mettre un. Réponse : Toutes.",
+  "why": {
+    "1": "Correcte : « cime » s'écrit sans accent (contrairement à « abîme »).",
+    "2": "Correcte : « égout » (de égoutter) ne prend pas d'accent sur le u.",
+    "3": "Correcte : « pédiatre » s'écrit sans accent (comme psychiatre).",
+    "4": "Correcte : « zone » ne prend pas d'accent (contrairement à « cône » qui en prend un).",
+    "A": "Les quatre phrases sont correctes.",
+    "T": "Correct : chacun de ces mots, souvent coiffé d'un circonflexe fautif, s'écrit sans accent."
+  }
+},
+{
+  "id": "orth-L30-3",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le moniteur fait ___ les chaussures de marche avant le départ ; ces contrôles répétés commencent à ___ les élèves.",
+  "options": [
+    {
+      "key": "1",
+      "text": "lacer / lasser"
+    },
+    {
+      "key": "2",
+      "text": "lasser / lacer"
+    },
+    {
+      "key": "3",
+      "text": "lacer / lacer"
+    },
+    {
+      "key": "4",
+      "text": "lasser / lasser"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "« Lacer » (avec c) = nouer des lacets ; « lasser » (avec ss) = fatiguer.",
+  "why": {
+    "1": "Correct : nouer les lacets = lacer ; fatiguer = lasser.",
+    "2": "Inverse les deux homophones.",
+    "3": "« lacer les élèves » : les fatiguer se dit lasser.",
+    "4": "« lasser les chaussures » : les nouer se dit lacer.",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "orth-L30-4",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Les bouteilles du domaine vieillissent dans le ___ voûté ; la ferme voisine, elle, a confié ses harnais au ___ du bourg.",
+  "options": [
+    {
+      "key": "1",
+      "text": "sellier / cellier"
+    },
+    {
+      "key": "2",
+      "text": "cellier / sellier"
+    },
+    {
+      "key": "3",
+      "text": "cellier / cellier"
+    },
+    {
+      "key": "4",
+      "text": "sellier / sellier"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "Le « cellier » (de cella, cave) abrite vins et provisions ; le « sellier » (de selle) est l'artisan du cuir.",
+  "why": {
+    "1": "Inverse les deux : la cave s'écrit cellier, l'artisan sellier.",
+    "2": "Correct : cave à vins = cellier ; artisan des harnais = sellier.",
+    "3": "« confier ses harnais au cellier » : l'artisan s'écrit sellier.",
+    "4": "« le sellier voûté » : la cave s'écrit cellier.",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "orth-L30-5",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le garagiste conseille de ___ le moteur neuf en douceur ; le soir, un renard vient ___ autour du poulailler.",
+  "options": [
+    {
+      "key": "1",
+      "text": "rôder / roder"
+    },
+    {
+      "key": "2",
+      "text": "rôder / rôder"
+    },
+    {
+      "key": "3",
+      "text": "roder / rôder"
+    },
+    {
+      "key": "4",
+      "text": "roder / roder"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "« Roder » (sans accent) = user, mettre au point (un moteur, un spectacle) ; « rôder » (avec accent) = errer avec insistance.",
+  "why": {
+    "1": "Inverse les deux : le moteur se rode, le renard rôde.",
+    "2": "« rôder le moteur » : le mettre au point se dit roder.",
+    "3": "Correct : roder un moteur ; rôder autour du poulailler.",
+    "4": "« roder autour du poulailler » : errer se dit rôder.",
+    "A": "L'option 3 est correcte.",
+    "T": "Trois options placent au moins un accent à contre-emploi."
+  }
+},
+{
+  "id": "orth-L30-6",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Au sprint final, le coureur ___ visiblement ; dans la salle voisine, la sage-femme explique comment ___ un nouveau-né.",
+  "options": [
+    {
+      "key": "1",
+      "text": "allaite / haleter"
+    },
+    {
+      "key": "2",
+      "text": "halète / haleter"
+    },
+    {
+      "key": "3",
+      "text": "allaite / allaiter"
+    },
+    {
+      "key": "4",
+      "text": "halète / allaiter"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "« Haleter » = respirer précipitamment (il halète) ; « allaiter » = nourrir au sein.",
+  "why": {
+    "1": "Inverse les deux : le coureur halète, le nourrisson est allaité.",
+    "2": "« haleter un nouveau-né » : le nourrir se dit allaiter.",
+    "3": "« le coureur allaite au sprint » : respirer vite se dit haleter.",
+    "4": "Correct : le coureur halète ; on allaite un nouveau-né.",
+    "A": "L'option 4 est correcte.",
+    "T": "Trois options confondent la respiration et l'allaitement."
+  }
+},
+{
+  "id": "orth-L30-7",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le manège présente un cheval ___ à la robe brune ; derrière la ___ vitrée, les visiteurs suivent la démonstration.",
+  "options": [
+    {
+      "key": "1",
+      "text": "bai / baie"
+    },
+    {
+      "key": "2",
+      "text": "baie / bai"
+    },
+    {
+      "key": "3",
+      "text": "bai / bai"
+    },
+    {
+      "key": "4",
+      "text": "baie / baie"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "« Bai » (sans e) qualifie la robe brun-rouge d'un cheval ; la « baie » (avec e) est l'ouverture vitrée (ou le fruit, ou l'anse).",
+  "why": {
+    "1": "Correct : cheval bai ; baie vitrée.",
+    "2": "Inverse les deux homophones.",
+    "3": "« la bai vitrée » : l'ouverture s'écrit baie.",
+    "4": "« un cheval baie » : la robe s'écrit bai.",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "conj-L30-8",
+  "rule": "conjugaison",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Avant de rejoindre Lausanne, elle ___ vingt ans à Moudon, où elle tenait la papeterie de la Grand-Rue.",
+  "options": [
+    {
+      "key": "1",
+      "text": "vivit"
+    },
+    {
+      "key": "2",
+      "text": "vécut"
+    },
+    {
+      "key": "3",
+      "text": "vécua"
+    },
+    {
+      "key": "4",
+      "text": "vécurent"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "Le passé simple de « vivre » se forme sur le radical véc- : elle vécut (comme elle reçut).",
+  "why": {
+    "1": "« vivit » construit le passé simple sur le présent (vi-) avec une terminaison en -it.",
+    "2": "Correct : vivre → elle vécut (radical véc- + -ut).",
+    "3": "« vécua » plaque la terminaison des verbes en -er sur le radical véc-.",
+    "4": "« vécurent » est un pluriel : le sujet « elle » est singulier.",
+    "A": "L'option 2 est correcte.",
+    "T": "Les options 1, 3 et 4 fautent sur le radical, la terminaison ou l'accord."
+  }
+},
+{
+  "id": "dis-L30-9",
+  "rule": "discours",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "En visitant l'aula, l'architecte s'est écriée : « Comme cette salle est sombre ! » Le compte rendu de visite rapporte sa remarque : « Elle a fait observer ___ ». Quelle suite est correcte ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "combien la salle était-elle sombre."
+    },
+    {
+      "key": "2",
+      "text": "comme la salle est sombre !"
+    },
+    {
+      "key": "3",
+      "text": "combien la salle était sombre."
+    },
+    {
+      "key": "4",
+      "text": "combien que la salle était sombre."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "L'exclamation rapportée s'introduit par « combien » suivi de l'ordre déclaratif et de l'imparfait de concordance.",
+  "why": {
+    "1": "« était-elle » conserve la reprise pronominale de la phrase directe.",
+    "2": "Le point d'exclamation et le présent conservent l'exclamation directe telle quelle.",
+    "3": "Correct : combien + ordre déclaratif + imparfait.",
+    "4": "« combien que » ajoute un que parasite après le mot exclamatif.",
+    "A": "L'option 3 est correcte.",
+    "T": "Les options 1, 2 et 4 gardent une marque directe ou ajoutent un mot parasite."
+  }
+},
+{
+  "id": "rel-L30-10",
+  "rule": "relatifs",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Les titres pédagogiques ___ elle peut se prévaloir sont reconnus dans toute la Suisse romande.",
+  "options": [
+    {
+      "key": "1",
+      "text": "auxquels"
+    },
+    {
+      "key": "2",
+      "text": "qu'"
+    },
+    {
+      "key": "3",
+      "text": "sur lesquels"
+    },
+    {
+      "key": "4",
+      "text": "dont"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "« Se prévaloir DE quelque chose » : le complément est introduit par « de », d'où « dont » (se prévaloir de ces titres).",
+  "why": {
+    "1": "« auxquels » supposerait « se prévaloir à », construction inexistante.",
+    "2": "« qu' » traiterait le verbe comme transitif direct : « se prévaloir quelque chose » n'existe pas.",
+    "3": "« sur lesquels » calque « s'appuyer sur » : « se prévaloir » exige « de ».",
+    "4": "Correct : se prévaloir DE → les titres dont elle peut se prévaloir.",
+    "A": "L'option 4 est correcte.",
+    "T": "Une seule option restitue le régime du verbe."
+  }
+},
+{
+  "id": "orth-L31-1",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "L'exercice d'évacuation simule un début d'___ dans la chaufferie.",
+  "options": [
+    {
+      "key": "1",
+      "text": "asphixie"
+    },
+    {
+      "key": "2",
+      "text": "asfixie"
+    },
+    {
+      "key": "3",
+      "text": "aspyxie"
+    },
+    {
+      "key": "4",
+      "text": "asphyxsie"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "A",
+  "explanation": "Le mot s'écrit « asphyxie » : groupe -sph- puis y (du grec sphuxis, pouls). Aucune option ne porte cette graphie.",
+  "why": {
+    "1": "« asphixie » remplace le y par un i.",
+    "2": "« asfixie » simplifie le groupe grec -sph- en f.",
+    "3": "« aspyxie » : il manque le h du groupe -sph-.",
+    "4": "« asphyxsie » ajoute un s parasite après le x.",
+    "A": "Correct : la graphie attendue « asphyxie » ne figure dans aucune option.",
+    "T": "Chaque option déforme le mot d'une façon différente."
+  }
+},
+{
+  "id": "orth-L31-2",
+  "rule": "orthographe",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "Quelle(s) phrase(s) forme(nt) correctement le pluriel ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Deux festivals de cinéma se partagent l’affiche cet été."
+    },
+    {
+      "key": "2",
+      "text": "La pianiste donnera trois récitals à l’aula du gymnase."
+    },
+    {
+      "key": "3",
+      "text": "Les bals des sociétés locales se tiendront en juillet."
+    },
+    {
+      "key": "4",
+      "text": "Des chacals rôdaient autour du campement de la réserve."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "T",
+  "explanation": "Festival, récital, bal et chacal font leur pluriel en -als (et non en -aux) : ce sont les exceptions classiques. Réponse : Toutes.",
+  "why": {
+    "1": "Correcte : festival → festivals (exception à la règle des -al → -aux).",
+    "2": "Correcte : récital → récitals.",
+    "3": "Correcte : bal → bals.",
+    "4": "Correcte : chacal → chacals.",
+    "A": "Les quatre phrases sont correctes.",
+    "T": "Correct : ces quatre noms en -al font précisément leur pluriel en -als."
+  }
+},
+{
+  "id": "orth-L31-3",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "La course d'école franchira le ___ du Marchairuz ; prévoir un tube de ___ pour l'atelier de cartographie.",
+  "options": [
+    {
+      "key": "1",
+      "text": "col / colle"
+    },
+    {
+      "key": "2",
+      "text": "colle / col"
+    },
+    {
+      "key": "3",
+      "text": "col / col"
+    },
+    {
+      "key": "4",
+      "text": "colle / colle"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "Le « col » (sans e) est le passage de montagne ; la « colle » (avec deux l et un e) est l'adhésif.",
+  "why": {
+    "1": "Correct : passage de montagne = col ; adhésif = colle.",
+    "2": "Inverse les deux homophones.",
+    "3": "« un tube de col » : l'adhésif s'écrit colle.",
+    "4": "« la colle du Marchairuz » : le passage s'écrit col.",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "orth-L31-4",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "La serre du jardin botanique abrite une végétation ___ qui impressionne les classes en visite.",
+  "options": [
+    {
+      "key": "1",
+      "text": "luxuriant"
+    },
+    {
+      "key": "2",
+      "text": "luxuriante"
+    },
+    {
+      "key": "3",
+      "text": "luxurieuse"
+    },
+    {
+      "key": "4",
+      "text": "luxueuse"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "« Luxuriant » = qui pousse en abondance (végétation) ; accordé au féminin : luxuriante. « Luxurieux » relève de la luxure, « luxueux » du luxe.",
+  "why": {
+    "1": "« luxuriant » ne s'accorde pas avec « végétation », féminin.",
+    "2": "Correct : végétation luxuriante (abondante).",
+    "3": "« luxurieuse » renvoie à la luxure (débauche), contresens ici.",
+    "4": "« luxueuse » renvoie au luxe (richesse), pas à l'abondance végétale.",
+    "A": "L'option 2 est correcte.",
+    "T": "Les options 1, 3 et 4 fautent sur l'accord ou confondent les paronymes."
+  }
+},
+{
+  "id": "orth-L31-5",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Ce tableau tronqué risque d'___ le lecteur en erreur ; en parallèle, le maçon viendra ___ le mur nord de crépi isolant.",
+  "options": [
+    {
+      "key": "1",
+      "text": "enduire / induire"
+    },
+    {
+      "key": "2",
+      "text": "enduire / enduire"
+    },
+    {
+      "key": "3",
+      "text": "induire / enduire"
+    },
+    {
+      "key": "4",
+      "text": "induire / induire"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "« Induire en erreur » = tromper ; « enduire » = recouvrir d'une couche (enduit).",
+  "why": {
+    "1": "Inverse les deux : on induit en erreur, on enduit un mur.",
+    "2": "« enduire le lecteur en erreur » : tromper se dit induire.",
+    "3": "Correct : induire en erreur ; enduire de crépi.",
+    "4": "« induire le mur de crépi » : recouvrir se dit enduire.",
+    "A": "L'option 3 est correcte.",
+    "T": "Trois options confondent la tromperie et le revêtement."
+  }
+},
+{
+  "id": "orth-L31-6",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Son refus repose sur un calcul parfaitement ___ ; pendant la pénurie, le mazout était ___ dans tout le district.",
+  "options": [
+    {
+      "key": "1",
+      "text": "rationné / rationnel"
+    },
+    {
+      "key": "2",
+      "text": "rationné / rationné"
+    },
+    {
+      "key": "3",
+      "text": "rationnel / rationnel"
+    },
+    {
+      "key": "4",
+      "text": "rationnel / rationné"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "« Rationnel » = conforme à la raison ; « rationné » = limité à une ration.",
+  "why": {
+    "1": "Inverse les deux : le calcul est rationnel, le carburant rationné.",
+    "2": "« un calcul rationné » : conforme à la raison se dit rationnel.",
+    "3": "« le mazout était rationnel » : limité en quantité se dit rationné.",
+    "4": "Correct : calcul rationnel ; mazout rationné.",
+    "A": "L'option 4 est correcte.",
+    "T": "Trois options confondent la raison et la ration."
+  }
+},
+{
+  "id": "orth-L31-7",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le minibus attend sa ___ de secours au garage ; pendant ce temps, le chat ___ du concierge surveille le préau.",
+  "options": [
+    {
+      "key": "1",
+      "text": "roue / roux"
+    },
+    {
+      "key": "2",
+      "text": "roux / roue"
+    },
+    {
+      "key": "3",
+      "text": "roue / roue"
+    },
+    {
+      "key": "4",
+      "text": "roux / roux"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "La « roue » est la pièce circulaire ; « roux » (avec x) est la couleur fauve.",
+  "why": {
+    "1": "Correct : pièce du véhicule = roue ; pelage fauve = roux.",
+    "2": "Inverse les deux homophones.",
+    "3": "« le chat roue » : la couleur s'écrit roux.",
+    "4": "« sa roux de secours » : la pièce s'écrit roue.",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "conj-L31-8",
+  "rule": "conjugaison",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "À l'époque des répétitions, nous ___ tellement que le régisseur devait frapper les trois coups deux fois.",
+  "options": [
+    {
+      "key": "1",
+      "text": "rions"
+    },
+    {
+      "key": "2",
+      "text": "riions"
+    },
+    {
+      "key": "3",
+      "text": "riyons"
+    },
+    {
+      "key": "4",
+      "text": "ririons"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "À l'imparfait, « rire » garde le i du radical devant la terminaison -ions : nous riions (deux i).",
+  "why": {
+    "1": "« rions » est le présent : « à l'époque » impose l'imparfait, avec ses deux i.",
+    "2": "Correct : imparfait de rire → nous riions (radical ri- + -ions).",
+    "3": "« riyons » invente un y que le verbe n'a jamais.",
+    "4": "« ririons » est un conditionnel : le récit au passé demande l'imparfait.",
+    "A": "L'option 2 est correcte.",
+    "T": "Les options 1, 3 et 4 fautent sur le temps ou le radical."
+  }
+},
+{
+  "id": "dis-L31-9",
+  "rule": "discours",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "L'ancienne doyenne nous a demandé : « Que devient votre projet de médiathèque ? » L'un de nous rapporte sa question. Quelle formulation est correcte ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Elle nous a demandé qu'est-ce que devenait notre projet de médiathèque."
+    },
+    {
+      "key": "2",
+      "text": "Elle nous a demandé ce qui devenait notre projet de médiathèque."
+    },
+    {
+      "key": "3",
+      "text": "Elle nous a demandé ce que devenait notre projet de médiathèque."
+    },
+    {
+      "key": "4",
+      "text": "Elle nous a demandé quoi devenait notre projet de médiathèque."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "« Que » attribut de « devenir » se transpose en « ce que » ; le possessif « votre » devient « notre » (le projet des personnes qui rapportent).",
+  "why": {
+    "1": "« qu'est-ce que » est une marque de l'interrogation directe : elle disparaît.",
+    "2": "« ce qui » serait sujet ; or le sujet est « notre projet » : le pronom est attribut → « ce que ».",
+    "3": "Correct : ce que + imparfait + possessif transposé « notre ».",
+    "4": "« quoi devenait » calque l'oral : après un verbe introducteur, le neutre se dit « ce que ».",
+    "A": "L'option 3 est correcte.",
+    "T": "Les options 1, 2 et 4 gardent une marque directe ou confondent les fonctions."
+  }
+},
+{
+  "id": "rel-L31-10",
+  "rule": "relatifs",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "La variante d'horaire ___ le comité a finalement opté entrera en vigueur à la rentrée d'août.",
+  "options": [
+    {
+      "key": "1",
+      "text": "à laquelle"
+    },
+    {
+      "key": "2",
+      "text": "dont"
+    },
+    {
+      "key": "3",
+      "text": "qu'"
+    },
+    {
+      "key": "4",
+      "text": "pour laquelle"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "« Opter POUR quelque chose » : le complément est introduit par « pour », d'où « pour laquelle » (opter pour cette variante).",
+  "why": {
+    "1": "« à laquelle » supposerait « opter à », construction inexistante.",
+    "2": "« dont » supposerait « opter de », construction inexistante.",
+    "3": "« qu' » traiterait « opter » comme transitif direct : « opter quelque chose » n'existe pas.",
+    "4": "Correct : opter POUR → la variante pour laquelle le comité a opté.",
+    "A": "L'option 4 est correcte.",
+    "T": "Une seule option restitue le régime du verbe."
+  }
+},
+{
+  "id": "orth-L32-1",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le jury attend un exposé ___ : cinq minutes, pas une de plus.",
+  "options": [
+    {
+      "key": "1",
+      "text": "succint"
+    },
+    {
+      "key": "2",
+      "text": "sucsinct"
+    },
+    {
+      "key": "3",
+      "text": "succain"
+    },
+    {
+      "key": "4",
+      "text": "sussinct"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "A",
+  "explanation": "Le mot s'écrit « succinct » : deux c, puis -inct avec un c muet (comme « distinct »). Aucune option ne porte cette graphie.",
+  "why": {
+    "1": "« succint » : il manque le c muet du groupe final -inct.",
+    "2": "« sucsinct » remplace le double c par cs.",
+    "3": "« succain » déforme entièrement la finale.",
+    "4": "« sussinct » remplace le double c par un double s.",
+    "A": "Correct : la graphie attendue « succinct » ne figure dans aucune option.",
+    "T": "Chaque option déforme le mot d'une façon différente."
+  }
+},
+{
+  "id": "orth-L32-2",
+  "rule": "orthographe",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Des gobelets traînaient çà et là après la fête de quartier."
+    },
+    {
+      "key": "2",
+      "text": "Les résultats du test restent en deçà des attentes."
+    },
+    {
+      "key": "3",
+      "text": "Ça ira pour cette fois, a tranché la doyenne."
+    },
+    {
+      "key": "4",
+      "text": "Au-delà de trois absences, un entretien s’impose."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "T",
+  "explanation": "Quatre graphies correctes : « çà et là » (adverbe, avec accent), « en deçà », « ça » (pronom, sans accent) et « au-delà ». Réponse : Toutes.",
+  "why": {
+    "1": "Correcte : dans la locution « çà et là », « çà » est adverbe et prend l'accent grave.",
+    "2": "Correcte : « en deçà de » (= en dessous de) s'écrit avec l'accent.",
+    "3": "Correcte : le pronom « ça » (= cela) s'écrit sans accent.",
+    "4": "Correcte : « au-delà de », avec trait d'union et accent.",
+    "A": "Les quatre phrases sont correctes.",
+    "T": "Correct : chaque forme en ça/çà/deçà/delà porte exactement la graphie attendue."
+  }
+},
+{
+  "id": "orth-L32-3",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "L'exposition consacre une salle à un peintre ___ du XVIIe siècle ; l'affiche, elle, montre un ___ rose de Camargue.",
+  "options": [
+    {
+      "key": "1",
+      "text": "flamand / flamant"
+    },
+    {
+      "key": "2",
+      "text": "flamant / flamand"
+    },
+    {
+      "key": "3",
+      "text": "flamand / flamand"
+    },
+    {
+      "key": "4",
+      "text": "flamant / flamant"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "« Flamand » (avec d) = de Flandre ; le « flamant » (avec t) est l'oiseau rose.",
+  "why": {
+    "1": "Correct : peintre des Flandres = flamand ; oiseau = flamant.",
+    "2": "Inverse les deux homophones.",
+    "3": "« un flamand rose » : l'oiseau s'écrit flamant.",
+    "4": "« un peintre flamant » : l'habitant de Flandre s'écrit flamand.",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "orth-L32-4",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "La soupe du camp mijote avec du ___ chiche ; au retour, chacun pèse le ___ de son sac sur la balance du vestiaire.",
+  "options": [
+    {
+      "key": "1",
+      "text": "poids / pois"
+    },
+    {
+      "key": "2",
+      "text": "pois / poids"
+    },
+    {
+      "key": "3",
+      "text": "pois / pois"
+    },
+    {
+      "key": "4",
+      "text": "poids / poids"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "Le « pois » (sans d) est le légume (pois chiche) ; le « poids » (avec d, de pondus) est la masse.",
+  "why": {
+    "1": "Inverse les deux homophones.",
+    "2": "Correct : légume = pois ; masse = poids.",
+    "3": "« le pois du sac » : la masse s'écrit poids.",
+    "4": "« du poids chiche » : le légume s'écrit pois.",
+    "A": "L'option 2 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "orth-L32-5",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le serrurier ajuste le ___ de la porte blindée ; ce n'est pas la ___ de changer tout le bâti, dit-il.",
+  "options": [
+    {
+      "key": "1",
+      "text": "peine / pêne"
+    },
+    {
+      "key": "2",
+      "text": "peine / peine"
+    },
+    {
+      "key": "3",
+      "text": "pêne / peine"
+    },
+    {
+      "key": "4",
+      "text": "pêne / pêne"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "Le « pêne » (avec circonflexe) est la pièce mobile de la serrure ; la « peine » est l'effort ou le chagrin (valoir la peine).",
+  "why": {
+    "1": "Inverse les deux homophones.",
+    "2": "« la peine de la serrure » : la pièce mobile s'écrit pêne.",
+    "3": "Correct : pièce de serrure = pêne ; valoir la peine.",
+    "4": "« ce n'est pas le pêne de changer » : l'effort s'écrit peine.",
+    "A": "L'option 3 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "orth-L32-6",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Le cours d'histoire évoque le ___ attaché à la terre du seigneur ; au petit matin, un ___ a traversé la clairière du vallon.",
+  "options": [
+    {
+      "key": "1",
+      "text": "cerf / serf"
+    },
+    {
+      "key": "2",
+      "text": "cerf / cerf"
+    },
+    {
+      "key": "3",
+      "text": "serf / serf"
+    },
+    {
+      "key": "4",
+      "text": "serf / cerf"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "Le « serf » (avec s) est le paysan du régime féodal ; le « cerf » (avec c) est l'animal des forêts.",
+  "why": {
+    "1": "Inverse les deux homophones.",
+    "2": "« le cerf attaché à la terre » : le paysan féodal s'écrit serf.",
+    "3": "« un serf a traversé la clairière » : l'animal s'écrit cerf.",
+    "4": "Correct : paysan féodal = serf ; animal = cerf.",
+    "A": "L'option 4 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "orth-L32-7",
+  "rule": "orthographe",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Il ne se soucie ___ des rumeurs de fusion ; le musée local, lui, prépare une exposition sur l'après-___.",
+  "options": [
+    {
+      "key": "1",
+      "text": "guère / guerre"
+    },
+    {
+      "key": "2",
+      "text": "guerre / guère"
+    },
+    {
+      "key": "3",
+      "text": "guère / guère"
+    },
+    {
+      "key": "4",
+      "text": "guerre / guerre"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "1",
+  "explanation": "« Guère » (avec accent, adverbe) = pas beaucoup, s'emploie avec « ne » ; la « guerre » (deux r) est le conflit.",
+  "why": {
+    "1": "Correct : ne… guère (adverbe) ; l'après-guerre (conflit).",
+    "2": "Inverse les deux homophones.",
+    "3": "« l'après-guère » : le conflit s'écrit guerre.",
+    "4": "« il ne se soucie guerre » : l'adverbe s'écrit guère.",
+    "A": "L'option 1 est correcte.",
+    "T": "Trois options placent au moins un homophone à contre-emploi."
+  }
+},
+{
+  "id": "conj-L32-8",
+  "rule": "conjugaison",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "Quand tu ___ la séance pour la pause, note l'heure exacte au procès-verbal.",
+  "options": [
+    {
+      "key": "1",
+      "text": "interrompt"
+    },
+    {
+      "key": "2",
+      "text": "interromps"
+    },
+    {
+      "key": "3",
+      "text": "interrompts"
+    },
+    {
+      "key": "4",
+      "text": "interront"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "2",
+  "explanation": "« Interrompre » garde son p muet et prend s à la 2e personne : tu interromps (comme tu romps).",
+  "why": {
+    "1": "« tu interrompt » : le t appartient à la 3e personne (il interrompt).",
+    "2": "Correct : tu interromps (p muet + s de la 2e personne).",
+    "3": "« interrompts » cumule le t et le s en une terminaison inexistante.",
+    "4": "« interront » ampute le radical de son p et de son m.",
+    "A": "L'option 2 est correcte.",
+    "T": "Les options 1, 3 et 4 attribuent au verbe une terminaison qui n'est pas la sienne."
+  }
+},
+{
+  "id": "dis-L32-9",
+  "rule": "discours",
+  "type": "sentences",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "instruction": "Avant l'été, des locataires ont demandé à la gérance : « Pourrons-nous récupérer nos affaires avant les travaux ? » Les travaux sont terminés depuis des mois quand le rapport de gestion rapporte cette question. Quelle formulation est correcte ?",
+  "options": [
+    {
+      "key": "1",
+      "text": "Ils ont demandé s'ils pourraient récupérer nos affaires avant les travaux."
+    },
+    {
+      "key": "2",
+      "text": "Ils ont demandé s'ils pourront récupérer leurs affaires avant les travaux."
+    },
+    {
+      "key": "3",
+      "text": "Ils ont demandé s'ils pourraient récupérer leurs affaires avant les travaux."
+    },
+    {
+      "key": "4",
+      "text": "Ils ont demandé est-ce qu'ils pourraient récupérer leurs affaires avant les travaux."
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "3",
+  "explanation": "Interrogation totale → « si » ; « pourrons-nous » → « s'ils pourraient » (conditionnel de futur du passé) ; « nos affaires » → « leurs affaires ».",
+  "why": {
+    "1": "« nos affaires » garde le possessif du discours direct : rapporté à la 3e personne, c'est « leurs ».",
+    "2": "« pourront » garde le futur : les travaux sont finis depuis des mois, le futur du passé s'impose (pourraient).",
+    "3": "Correct : si + conditionnel + possessif transposé.",
+    "4": "« est-ce que » est une marque directe : après « demander », c'est « si » seul.",
+    "A": "L'option 3 est correcte.",
+    "T": "Les options 1, 2 et 4 fautent sur le possessif, le temps ou la marque directe."
+  }
+},
+{
+  "id": "rel-L32-10",
+  "rule": "relatifs",
+  "type": "blank",
+  "gen": {
+    "model": "Fable 5",
+    "thinking": "standard",
+    "tracked": true
+  },
+  "stem": "La ferme du plateau, ___ elle a hérité l'an dernier, accueillera des classes vertes dès septembre.",
+  "options": [
+    {
+      "key": "1",
+      "text": "qu'"
+    },
+    {
+      "key": "2",
+      "text": "à laquelle"
+    },
+    {
+      "key": "3",
+      "text": "sur laquelle"
+    },
+    {
+      "key": "4",
+      "text": "dont"
+    },
+    {
+      "key": "A",
+      "text": "Aucune"
+    },
+    {
+      "key": "T",
+      "text": "Toutes"
+    }
+  ],
+  "answer": "4",
+  "explanation": "« Hériter DE quelque chose » : le complément est introduit par « de », d'où « dont » (hériter de cette ferme).",
+  "why": {
+    "1": "« qu'elle a hérité » traiterait « hériter » comme transitif direct : la construction usuelle est « hériter de ».",
+    "2": "« à laquelle » supposerait « hériter à », construction inexistante.",
+    "3": "« sur laquelle » calque « mettre la main sur » : « hériter » exige « de ».",
+    "4": "Correct : hériter DE → la ferme dont elle a hérité.",
+    "A": "L'option 4 est correcte.",
+    "T": "Une seule option restitue le régime du verbe."
+  }
 }
 ];
 
