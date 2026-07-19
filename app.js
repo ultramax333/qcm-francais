@@ -970,8 +970,16 @@
   render();
 
   if ('serviceWorker' in navigator) {
+    let refreshingForUpdate = false;
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (refreshingForUpdate || state.view !== 'home') return;
+      refreshingForUpdate = true;
+      window.location.reload();
+    });
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('sw.js').catch(() => {});
+      navigator.serviceWorker.register('sw.js')
+        .then((registration) => registration.update())
+        .catch(() => {});
     });
   }
 })();

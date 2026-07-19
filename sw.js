@@ -1,4 +1,4 @@
-const CACHE = 'qcm-op001-v17';
+const CACHE = 'qcm-op001-v18';
 const ASSETS = [
   './',
   './index.html',
@@ -25,7 +25,26 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
-  event.respondWith(
-    caches.match(event.request).then((cached) => cached || fetch(event.request))
-  );
+  if (event.request.method !== 'GET') return;
+
+  const url = new URL(event.request.url);
+  if (url.origin !== self.location.origin) return;
+
+  event.respondWith((async () => {
+    try {
+      const response = await fetch(event.request);
+      if (response.ok) {
+        const copy = response.clone();
+        await caches.open(CACHE).then((cache) => cache.put(event.request, copy));
+      }
+      return response;
+    } catch (_) {
+      const cached = await caches.match(event.request, { ignoreSearch: true });
+      if (cached) return cached;
+      if (event.request.mode === 'navigate') {
+        return caches.match('./index.html');
+      }
+      return Response.error();
+    }
+  })());
 });
