@@ -473,7 +473,9 @@
 
     const alreadySeen = state.seenAtStart && state.seenAtStart.has(q.id);
     wrap.appendChild(el('div', { class: 'quiz-meta' }, [
-      el('span', { text: ruleLabel(state.ruleId) }),
+      // Ne pas révéler la règle pendant la réponse : elle donnerait un indice
+      // de résolution avant que l'utilisateur analyse réellement l'énoncé.
+      el('span', { text: 'Entraînement' }),
       el('span', {}, [
         alreadySeen ? el('span', { class: 'seen-badge', text: 'déjà vue' }) : null,
         document.createTextNode(` Question ${index + 1}/${questions.length}`),
