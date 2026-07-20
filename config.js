@@ -6,12 +6,15 @@
 //
 // APP_VERSION : version affichée en haut de l'app. À INCRÉMENTER à chaque mise à
 // jour (convention dans HUB.md → section « App d'entraînement (quiz-app) »).
+// BANK_RELEASE : empreinte courte de la banque chargée, conservée dans les exports
+// de séance afin de rendre leur classification reproductible.
 //
 // NB : on assigne explicitement window.CONFIG — un `const` en tête de script
 // n'est PAS exposé sur window, ce qui casserait les gardes `window.CONFIG`.
 
 window.CONFIG = {
-  APP_VERSION: '1.8',
+  APP_VERSION: '1.9',
+  BANK_RELEASE: 'questions-20260720-839c0f7e',
   GOOGLE_CLIENT_ID: '200483680701-h963rk5t3l7v5j64ojgg2k410av8l9ft.apps.googleusercontent.com',
   DRIVE_FOLDER_NAME: 'QCM Français OP001',
 };

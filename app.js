@@ -5,6 +5,7 @@
   const HISTORY_KEY = 'qcm-op001-history-v1';
   const MIX_ID = 'mix';
   const APP_VERSION = (window.CONFIG && CONFIG.APP_VERSION) || '';
+  const BANK_RELEASE = (window.CONFIG && CONFIG.BANK_RELEASE) || 'UNK';
 
   let state = { view: 'home' };
 
@@ -60,8 +61,7 @@
   }
   function combinedFeedbackFilename() {
     const d = new Date();
-    const p = (n) => String(n).padStart(2, '0');
-    return `qcm-notes-${d.getFullYear()}${p(d.getMonth() + 1)}${p(d.getDate())}-${p(d.getHours())}${p(d.getMinutes())}.md`;
+    return `qcm-feedback-bundle--${utcCompact(d)}--${randomHex8()}.md`;
   }
 
   // ---------- suivi des questions déjà vues (par id, dans le navigateur) ----------
@@ -117,6 +117,27 @@
     const d = new Date(iso);
     return d.toLocaleDateString('fr-CH', { day: '2-digit', month: '2-digit', year: 'numeric' }) +
       ' ' + d.toLocaleTimeString('fr-CH', { hour: '2-digit', minute: '2-digit' });
+  }
+
+  function utcCompact(date) {
+    return date.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}Z$/, 'Z');
+  }
+
+  function randomHex8() {
+    if (window.crypto && window.crypto.getRandomValues) {
+      const value = new Uint32Array(1);
+      window.crypto.getRandomValues(value);
+      return value[0].toString(16).padStart(8, '0');
+    }
+    return Math.floor(Math.random() * 0x100000000).toString(16).padStart(8, '0');
+  }
+
+  function makeTraceId(kind, date) {
+    return `hep-${kind}1-${utcCompact(date)}-${randomHex8()}`;
+  }
+
+  function tsvCell(value) {
+    return String(value == null ? '' : value).replace(/[\t\r\n]/g, ' ');
   }
 
   function ruleLabel(ruleId) {
@@ -262,6 +283,9 @@
   };
 
   function feedbackFilename(entry) {
+    if (entry.sessionId && entry.quizId) {
+      return `qcm-feedback--${entry.sessionId}--${entry.quizId}.md`;
+    }
     const d = new Date(entry.date);
     const p = (n) => String(n).padStart(2, '0');
     return `qcm-feedback-${d.getFullYear()}${p(d.getMonth() + 1)}${p(d.getDate())}-${p(d.getHours())}${p(d.getMinutes())}.md`;
@@ -402,6 +426,7 @@
 
   function startQuiz(ruleId, mode) {
     mode = mode || 'learn';
+    const startedAt = new Date();
     state = {
       view: 'quiz',
       ruleId,
@@ -416,7 +441,9 @@
       detailsOpen: {},   // panneau mémo/infos déplié par question
       recorded: new Set(), // questions déjà enregistrées (vu/maîtrise/erreurs)
       seenAtStart: loadSeen(),
-      startTime: Date.now(),
+      startTime: startedAt.getTime(),
+      quizId: makeTraceId('q', startedAt),
+      sessionId: makeTraceId('s', startedAt),
     };
     render();
   }
@@ -636,6 +663,14 @@
     // Log détaillé par question (pour le feedback à envoyer)
     const log = state.questions.map((q) => {
       const sel = state.responses[q.id] || null;
+      const hep = q.hep || {};
+      const optionCodes = hep.option_misconceptions || {};
+      let misconception = null;
+      if (sel && sel !== q.answer) {
+        misconception = ['1', '2', '3', '4'].includes(sel)
+          ? (typeof optionCodes[sel] === 'string' ? optionCodes[sel] : 'UNK')
+          : 'UNK';
+      }
       return {
         id: q.id,
         rule: q.rule,
@@ -643,6 +678,13 @@
         selected: sel,
         answer: q.answer,
         correct: sel === q.answer,
+        sourceBatchId: hep.source_batch_id || null,
+        family: hep.family || null,
+        mechanismId: hep.mechanism_id || null,
+        misconceptionId: misconception,
+        grammarConfidence: hep.family && hep.mechanism_id ? 'high' : 'unknown',
+        misconceptionConfidence: misconception && misconception !== 'UNK' ? 'high' : 'unknown',
+        classificationSource: hep.family && hep.mechanism_id ? 'bank_metadata' : 'missing',
         memo: (state.memos[q.id] || '').trim(),
         like: !!state.likes[q.id],
       };
@@ -657,6 +699,9 @@
     });
     const entry = {
       date: new Date().toISOString(),
+      quizId: state.quizId,
+      sessionId: state.sessionId,
+      bankRelease: BANK_RELEASE,
       ruleId: state.ruleId,
       mode: state.mode,
       total: log.length,
@@ -664,7 +709,12 @@
       perRule,
       durationMs: Date.now() - state.startTime,
       log,
-      feedback: buildFeedback(state.ruleId, correct, log.length, log),
+      feedback: buildFeedback(state.ruleId, correct, log.length, log, {
+        quizId: state.quizId,
+        sessionId: state.sessionId,
+        attemptedAt: new Date().toISOString(),
+        mode: state.mode,
+      }),
     };
     saveAttempt(entry);
     // Conserve la séance dans les notes en attente si elle contient un mémo ou
@@ -681,12 +731,40 @@
 
   // Construit le texte Markdown envoyé/exporté en fin de séance :
   // stats globales + toutes les questions COMMENTÉES (avec ta réponse et ton mémo).
-  function buildFeedback(ruleId, correct, total, log) {
+  function buildFeedback(ruleId, correct, total, log, trace) {
     const d = new Date();
     const stamp = d.toLocaleString('fr-CH');
     const memoed = log.filter((l) => l.memo);
     const liked = log.filter((l) => l.like);
     const lines = [];
+    const meta = {
+      schema_version: 'hep-feedback/1.0',
+      quiz_id: trace.quizId,
+      session_id: trace.sessionId,
+      attempted_at: trace.attemptedAt,
+      quiz_rule: ruleId,
+      mode: trace.mode,
+      app_version: APP_VERSION || 'UNK',
+      bank_release: BANK_RELEASE,
+    };
+    const columns = [
+      'attempt_number', 'question_id', 'rule', 'selected', 'expected', 'correct',
+      'source_batch_id', 'family', 'mechanism_id', 'misconception_id',
+      'grammar_confidence', 'misconception_confidence', 'classification_source',
+      'positive_feedback',
+    ];
+    lines.push(`<!-- HEP_FEEDBACK_META ${JSON.stringify(meta)} -->`);
+    lines.push('```tsv hep-feedback/1.0');
+    lines.push(columns.join('\t'));
+    log.forEach((l, index) => {
+      lines.push([
+        index + 1, l.id, l.rule, l.selected || '', l.answer, l.correct,
+        l.sourceBatchId, l.family, l.mechanismId, l.misconceptionId,
+        l.grammarConfidence, l.misconceptionConfidence, l.classificationSource, l.like,
+      ].map(tsvCell).join('\t'));
+    });
+    lines.push('```');
+    lines.push('');
     lines.push(`# Feedback QCM — ${stamp}`);
     lines.push(`Règle : ${ruleLabel(ruleId)} · Score : ${correct}/${total}`);
     lines.push('');

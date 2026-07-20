@@ -5,6 +5,11 @@ de grammaire. Phrases originales au format de l'examen (options 1-4 + « Aucune 
 correction immédiate avec explication par option, suivi de progression, mémo par question
 et pouce « bien construite » exportables en fin de séance.
 
+État local vérifié le 20.07.2026 : version `1.9`, cache
+`qcm-op001-v19`, 1 164 questions uniques et release
+`questions-20260720-839c0f7e`. Cet état est présent sur la branche de travail
+`codex/hep-error-trace-hardening` et n'est pas encore déployé.
+
 ## Utilisation locale
 Ouvre `index.html` via un petit serveur statique (les Service Workers ne fonctionnent pas
 en `file://`). Par exemple, avec le script fourni sous Windows :
@@ -24,9 +29,20 @@ Pour l'envoi automatique des mémos/stats vers Google Drive, renseigne `GOOGLE_C
 dans `config.js` (voir les instructions détaillées en tête de ce fichier). Tant que c'est
 vide, les boutons **Copier** et **Télécharger** du feedback restent disponibles.
 
+Chaque nouvelle séance exporte un Markdown humain avec un bloc machine
+`hep-feedback/1.0`. Le fichier est nommé
+`qcm-feedback--<session_id>--<quiz_id>.md`; un envoi regroupé utilise
+`qcm-feedback-bundle--<horodatage UTC>--<suffixe>.md`. La version courte de la
+banque, les classifications disponibles et les codes de distracteur sont conservés
+dans cet export sans texte historique supplémentaire.
+
+La banque doit être enrichie avec `analyse_gpt/pipeline_HEP.py integrate-js`.
+Cette commande met automatiquement `BANK_RELEASE` à jour dans `config.js`; une
+intégration manuelle de `questions.js` rendrait l'identifiant de banque obsolète.
+
 ## Fichiers
 - `index.html`, `style.css`, `app.js` — l'application
-- `questions.js` — la banque de questions (5 règles × 10)
+- `questions.js` — la banque active de 1 164 questions
 - `config.js` — configuration (ID client Google Drive)
 - `manifest.json`, `sw.js`, `icon.svg` — installation PWA / hors-ligne
 - `static-server.ps1` — serveur statique local (développement, Windows)

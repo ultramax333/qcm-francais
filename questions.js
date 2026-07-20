@@ -24847,53 +24847,6 @@ const QUESTIONS = [
   }
 },
 {
-  "id": "orth-L23-3",
-  "rule": "orthographe",
-  "type": "blank",
-  "gen": {
-    "model": "Fable 5",
-    "thinking": "standard",
-    "tracked": true
-  },
-  "stem": "Le crépi tombe par plaques : le préau est ___ ; quant au concierge, il se dit trop ___ pour remonter à l'échafaudage.",
-  "options": [
-    {
-      "key": "1",
-      "text": "décrépit / décrépi"
-    },
-    {
-      "key": "2",
-      "text": "décrépit / décrépit"
-    },
-    {
-      "key": "3",
-      "text": "décrépi / décrépit"
-    },
-    {
-      "key": "4",
-      "text": "décrépi / décrépi"
-    },
-    {
-      "key": "A",
-      "text": "Aucune"
-    },
-    {
-      "key": "T",
-      "text": "Toutes"
-    }
-  ],
-  "answer": "3",
-  "explanation": "« Décrépi » (sans t) = qui a perdu son crépi (mur, façade) ; « décrépit » (avec t) = usé par l'âge (personne).",
-  "why": {
-    "1": "Inverse les deux : le mur sans crépi est décrépi, la personne affaiblie décrépite.",
-    "2": "« un préau décrépit » : la façade qui perd son enduit est décrépie.",
-    "3": "Correct : préau sans crépi = décrépi ; concierge vieilli = décrépit.",
-    "4": "« un concierge décrépi » : l'usure de l'âge s'écrit décrépit.",
-    "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-    "T": "Trois options confondent l'enduit et la vieillesse."
-  }
-},
-{
   "id": "orth-L23-4",
   "rule": "orthographe",
   "type": "blank",
@@ -28231,53 +28184,6 @@ const QUESTIONS = [
   }
 },
 {
-  "id": "orth-L30-5",
-  "rule": "orthographe",
-  "type": "blank",
-  "gen": {
-    "model": "Fable 5",
-    "thinking": "standard",
-    "tracked": true
-  },
-  "stem": "Le garagiste conseille de ___ le moteur neuf en douceur ; le soir, un renard vient ___ autour du poulailler.",
-  "options": [
-    {
-      "key": "1",
-      "text": "rôder / roder"
-    },
-    {
-      "key": "2",
-      "text": "rôder / rôder"
-    },
-    {
-      "key": "3",
-      "text": "roder / rôder"
-    },
-    {
-      "key": "4",
-      "text": "roder / roder"
-    },
-    {
-      "key": "A",
-      "text": "Aucune"
-    },
-    {
-      "key": "T",
-      "text": "Toutes"
-    }
-  ],
-  "answer": "3",
-  "explanation": "« Roder » (sans accent) = user, mettre au point (un moteur, un spectacle) ; « rôder » (avec accent) = errer avec insistance.",
-  "why": {
-    "1": "Inverse les deux : le moteur se rode, le renard rôde.",
-    "2": "« rôder le moteur » : le mettre au point se dit roder.",
-    "3": "Correct : roder un moteur ; rôder autour du poulailler.",
-    "4": "« roder autour du poulailler » : errer se dit rôder.",
-    "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-    "T": "Trois options placent au moins un accent à contre-emploi."
-  }
-},
-{
   "id": "orth-L30-6",
   "rule": "orthographe",
   "type": "blank",
@@ -28322,53 +28228,6 @@ const QUESTIONS = [
     "4": "Correct : le coureur halète ; on allaite un nouveau-né.",
     "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
     "T": "Trois options confondent la respiration et l'allaitement."
-  }
-},
-{
-  "id": "orth-L30-7",
-  "rule": "orthographe",
-  "type": "blank",
-  "gen": {
-    "model": "Fable 5",
-    "thinking": "standard",
-    "tracked": true
-  },
-  "stem": "Le manège présente un cheval ___ à la robe brune ; derrière la ___ vitrée, les visiteurs suivent la démonstration.",
-  "options": [
-    {
-      "key": "1",
-      "text": "bai / baie"
-    },
-    {
-      "key": "2",
-      "text": "baie / bai"
-    },
-    {
-      "key": "3",
-      "text": "bai / bai"
-    },
-    {
-      "key": "4",
-      "text": "baie / baie"
-    },
-    {
-      "key": "A",
-      "text": "Aucune"
-    },
-    {
-      "key": "T",
-      "text": "Toutes"
-    }
-  ],
-  "answer": "1",
-  "explanation": "« Bai » (sans e) qualifie la robe brun-rouge d'un cheval ; la « baie » (avec e) est l'ouverture vitrée (ou le fruit, ou l'anse).",
-  "why": {
-    "1": "Correct : cheval bai ; baie vitrée.",
-    "2": "Inverse les deux homophones.",
-    "3": "« la bai vitrée » : l'ouverture s'écrit baie.",
-    "4": "« un cheval baie » : la robe s'écrit bai.",
-    "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-    "T": "Trois options placent au moins un homophone à contre-emploi."
   }
 },
 {
@@ -29743,28 +29602,6 @@ const QUESTIONS = [
       '3': "« le bris du plateau a remplacé le gruyère » : le fromage s'écrit brie.",
       '4': "« un brie de verre » : la casse s'écrit bris.",
       A: "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      T: "Trois options placent au moins un homophone à contre-emploi.",
-    },
-  },
-  {
-    id: 'orth-L34-4', rule: 'orthographe', type: 'blank',
-    gen: { model: 'Fable 5', thinking: 'standard', tracked: true },
-    stem: "L'alarme s'est déclenchée pour une fuite de ___ ; à l'infirmerie, on a couvert la plaie d'une compresse de ___.",
-    options: [
-      { key: '1', text: 'gaze / gaz' },
-      { key: '2', text: 'gaz / gaze' },
-      { key: '3', text: 'gaz / gaz' },
-      { key: '4', text: 'gaze / gaze' },
-      AUCUNE, TOUTES,
-    ],
-    answer: '2',
-    explanation: "Le « gaz » (sans e) est le fluide ; la « gaze » (avec e) est le tissu léger des pansements.",
-    why: {
-      '1': "Inverse les deux homophones.",
-      '2': "Correct : fluide = gaz ; tissu = gaze.",
-      '3': "« une compresse de gaz » : le tissu s'écrit gaze.",
-      '4': "« une fuite de gaze » : le fluide s'écrit gaz.",
-      A: "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
       T: "Trois options placent au moins un homophone à contre-emploi.",
     },
   },
