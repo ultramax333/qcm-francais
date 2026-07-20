@@ -5,10 +5,9 @@ de grammaire. Phrases originales au format de l'examen (options 1-4 + « Aucune 
 correction immédiate avec explication par option, suivi de progression, mémo par question
 et pouce « bien construite » exportables en fin de séance.
 
-État local vérifié le 20.07.2026 : version `1.9`, cache
+État publié et vérifié le 20.07.2026 : version `1.9`, cache
 `qcm-op001-v19`, 1 164 questions uniques et release
-`questions-20260720-839c0f7e`. Cet état est présent sur la branche de travail
-`codex/hep-error-trace-hardening` et n'est pas encore déployé.
+`questions-20260720-839c0f7e`, sur `main` au commit `1fe6f6b`.
 
 ## Utilisation locale
 Ouvre `index.html` via un petit serveur statique (les Service Workers ne fonctionnent pas
