@@ -5,9 +5,10 @@ de grammaire. Phrases originales au format de l'examen (options 1-4 + « Aucune 
 correction immédiate avec explication par option, suivi de progression, mémo par question
 et pouce « bien construite » exportables en fin de séance.
 
-État publié et vérifié le 20.07.2026 : version `1.9`, cache
-`qcm-op001-v19`, 1 164 questions uniques et release
-`questions-20260720-839c0f7e`, sur `main` au commit `1fe6f6b`.
+État local vérifié le 21.07.2026 : version `1.10`, cache
+`qcm-op001-v110`, 1 249 questions uniques et release
+`questions-20260721-9776333a`. La publication sur `main` est effectuée après les
+contrôles décrits ci-dessous.
 
 ## Utilisation locale
 Ouvre `index.html` via un petit serveur statique (les Service Workers ne fonctionnent pas
@@ -41,7 +42,7 @@ intégration manuelle de `questions.js` rendrait l'identifiant de banque obsolè
 
 ## Fichiers
 - `index.html`, `style.css`, `app.js` — l'application
-- `questions.js` — la banque active de 1 164 questions
+- `questions.js` — la banque active de 1 249 questions
 - `config.js` — configuration (ID client Google Drive)
 - `manifest.json`, `sw.js`, `icon.svg` — installation PWA / hors-ligne
 - `static-server.ps1` — serveur statique local (développement, Windows)
