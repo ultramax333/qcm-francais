@@ -21181,53 +21181,6 @@ const QUESTIONS = [
   }
 },
 {
-  "id": "orth-L15-5",
-  "rule": "orthographe",
-  "type": "blank",
-  "gen": {
-    "model": "Fable 5",
-    "thinking": "standard",
-    "tracked": true
-  },
-  "stem": "L'incendie a ___ l'entrepôt en moins d'une heure ; les réparations ont ___ la moitié du budget annuel.",
-  "options": [
-    {
-      "key": "1",
-      "text": "consommé / consumé"
-    },
-    {
-      "key": "2",
-      "text": "consumé / consumé"
-    },
-    {
-      "key": "3",
-      "text": "consumé / consommé"
-    },
-    {
-      "key": "4",
-      "text": "consommé / consommé"
-    },
-    {
-      "key": "A",
-      "text": "Aucune"
-    },
-    {
-      "key": "T",
-      "text": "Toutes"
-    }
-  ],
-  "answer": "3",
-  "explanation": "« Consumer » = détruire par le feu ou user complètement ; « consommer » = utiliser, absorber (un bien, un budget).",
-  "why": {
-    "1": "Inverse les deux : le feu consume, les dépenses consomment.",
-    "2": "« consumé la moitié du budget » : dépenser un budget se dit consommer.",
-    "3": "Correct : détruit par le feu = consumé ; budget dépensé = consommé.",
-    "4": "« consommé l'entrepôt » : la destruction par le feu se dit consumer.",
-    "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-    "T": "Trois options confondent les deux verbes dans au moins une des deux places."
-  }
-},
-{
   "id": "orth-L15-6",
   "rule": "orthographe",
   "type": "blank",
@@ -21695,53 +21648,6 @@ const QUESTIONS = [
     "4": "« le précepteur des impôts » : la perception fiscale relève du percepteur.",
     "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
     "T": "Trois options confondent les deux paronymes dans au moins une des deux places."
-  }
-},
-{
-  "id": "orth-L16-6",
-  "rule": "orthographe",
-  "type": "blank",
-  "gen": {
-    "model": "Fable 5",
-    "thinking": "standard",
-    "tracked": true
-  },
-  "stem": "La roche ___ au milieu du pré, à peine visible ; le conférencier, lui, n'a fait qu'___ le sujet.",
-  "options": [
-    {
-      "key": "1",
-      "text": "effleure / affleurer"
-    },
-    {
-      "key": "2",
-      "text": "affleure / affleurer"
-    },
-    {
-      "key": "3",
-      "text": "effleure / effleurer"
-    },
-    {
-      "key": "4",
-      "text": "affleure / effleurer"
-    },
-    {
-      "key": "A",
-      "text": "Aucune"
-    },
-    {
-      "key": "T",
-      "text": "Toutes"
-    }
-  ],
-  "answer": "4",
-  "explanation": "« Affleurer » = apparaître au niveau de la surface (la roche affleure) ; « effleurer » = toucher ou aborder à peine (effleurer un sujet).",
-  "why": {
-    "1": "Inverse les deux : la roche apparaît en surface (affleure), le sujet est à peine abordé (effleuré).",
-    "2": "« affleurer le sujet » : aborder superficiellement se dit effleurer.",
-    "3": "« la roche effleure au milieu du pré » : émerger au ras de la surface se dit affleurer.",
-    "4": "Correct : la roche affleure ; le conférencier effleure le sujet.",
-    "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-    "T": "Trois options confondent les deux verbes dans au moins une des deux places."
   }
 },
 {
@@ -22494,53 +22400,6 @@ const QUESTIONS = [
     "4": "Correcte : « en catimini » (= en cachette) s'écrit bien ainsi.",
     "A": "Les quatre phrases sont correctes.",
     "T": "Correct : chacune de ces locutions, souvent soupçonnée à tort, est irréprochable."
-  }
-},
-{
-  "id": "orth-L18-3",
-  "rule": "orthographe",
-  "type": "blank",
-  "gen": {
-    "model": "Fable 5",
-    "thinking": "standard",
-    "tracked": true
-  },
-  "stem": "Les marmottes ___ six mois par année ; la flotte de bateaux, elle, ___ dans le hangar du port.",
-  "options": [
-    {
-      "key": "1",
-      "text": "hibernent / hiverne"
-    },
-    {
-      "key": "2",
-      "text": "hivernent / hiberne"
-    },
-    {
-      "key": "3",
-      "text": "hibernent / hiberne"
-    },
-    {
-      "key": "4",
-      "text": "hivernent / hiverne"
-    },
-    {
-      "key": "A",
-      "text": "Aucune"
-    },
-    {
-      "key": "T",
-      "text": "Toutes"
-    }
-  ],
-  "answer": "1",
-  "explanation": "« Hiberner » = passer l'hiver en léthargie (animaux) ; « hiverner » = passer l'hiver à l'abri (bateaux, troupeaux, matériel).",
-  "why": {
-    "1": "Correct : léthargie animale = hiberner ; mise à l'abri saisonnière = hiverner.",
-    "2": "Inverse les deux : la marmotte hiberne, le bateau hiverne.",
-    "3": "« la flotte hiberne » : un objet ne tombe pas en léthargie, il hiverne à l'abri.",
-    "4": "« les marmottes hivernent » : leur sommeil hivernal se dit hiberner.",
-    "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-    "T": "Trois options confondent les deux verbes dans au moins une des deux places."
   }
 },
 {
@@ -24048,53 +23907,6 @@ const QUESTIONS = [
   }
 },
 {
-  "id": "orth-L21-6",
-  "rule": "orthographe",
-  "type": "blank",
-  "gen": {
-    "model": "Fable 5",
-    "thinking": "standard",
-    "tracked": true
-  },
-  "stem": "Le comité s'est perdu en débats ___ ; on ne le dira jamais assez : un retraité actif n'est pas un ___.",
-  "options": [
-    {
-      "key": "1",
-      "text": "oisifs / oiseux"
-    },
-    {
-      "key": "2",
-      "text": "oiseux / oisif"
-    },
-    {
-      "key": "3",
-      "text": "oiseux / oiseux"
-    },
-    {
-      "key": "4",
-      "text": "oisifs / oisif"
-    },
-    {
-      "key": "A",
-      "text": "Aucune"
-    },
-    {
-      "key": "T",
-      "text": "Toutes"
-    }
-  ],
-  "answer": "2",
-  "explanation": "« Oiseux » = inutile, vain (débats oiseux) ; « oisif » = désœuvré, sans activité (personne).",
-  "why": {
-    "1": "Inverse les deux : les débats vains sont oiseux, la personne désœuvrée oisive.",
-    "2": "Correct : débats stériles = oiseux ; personne inactive = oisif.",
-    "3": "« un retraité oiseux » : la personne sans occupation se dit oisive.",
-    "4": "« débats oisifs » : des propos vains se disent oiseux.",
-    "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-    "T": "Trois options appliquent l'un des deux adjectifs à un support qui ne lui convient pas."
-  }
-},
-{
   "id": "orth-L21-7",
   "rule": "orthographe",
   "type": "blank",
@@ -24421,53 +24233,6 @@ const QUESTIONS = [
     "4": "« le champ des merles » : la mélodie des oiseaux s'écrit chant.",
     "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
     "T": "Trois options placent au moins un homophone à contre-emploi."
-  }
-},
-{
-  "id": "orth-L22-4",
-  "rule": "orthographe",
-  "type": "blank",
-  "gen": {
-    "model": "Fable 5",
-    "thinking": "standard",
-    "tracked": true
-  },
-  "stem": "Oublier une signature reste une faute ___ ; en revanche, un expert ___ , prêt à vendre son avis, doit être exclu.",
-  "options": [
-    {
-      "key": "1",
-      "text": "vénale / véniel"
-    },
-    {
-      "key": "2",
-      "text": "vénielle / véniel"
-    },
-    {
-      "key": "3",
-      "text": "vénielle / vénal"
-    },
-    {
-      "key": "4",
-      "text": "vénale / vénal"
-    },
-    {
-      "key": "A",
-      "text": "Aucune"
-    },
-    {
-      "key": "T",
-      "text": "Toutes"
-    }
-  ],
-  "answer": "3",
-  "explanation": "« Véniel » = pardonnable, sans gravité (faute vénielle) ; « vénal » = qui se vend, corruptible.",
-  "why": {
-    "1": "Inverse les deux : la faute légère est vénielle, l'expert corruptible vénal.",
-    "2": "« un expert véniel » : celui qui monnaye son avis est vénal.",
-    "3": "Correct : faute pardonnable = vénielle ; expert corruptible = vénal.",
-    "4": "« une faute vénale » : une erreur bénigne se dit vénielle.",
-    "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-    "T": "Trois options confondent la légèreté de la faute et la corruption."
   }
 },
 {
@@ -24985,53 +24750,6 @@ const QUESTIONS = [
     "4": "« un tuteur compréhensible » : l'indulgence d'une personne se dit compréhensif.",
     "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
     "T": "Trois options appliquent l'un des adjectifs au mauvais support."
-  }
-},
-{
-  "id": "orth-L23-7",
-  "rule": "orthographe",
-  "type": "blank",
-  "gen": {
-    "model": "Fable 5",
-    "thinking": "standard",
-    "tracked": true
-  },
-  "stem": "Il est revenu de vacances gai comme un ___ ; seul souvenir douloureux : un ___ de moniteur mal placé sur l'avant-bras.",
-  "options": [
-    {
-      "key": "1",
-      "text": "pinçon / pinson"
-    },
-    {
-      "key": "2",
-      "text": "pinçon / pinçon"
-    },
-    {
-      "key": "3",
-      "text": "pinson / pinçon"
-    },
-    {
-      "key": "4",
-      "text": "pinson / pinson"
-    },
-    {
-      "key": "A",
-      "text": "Aucune"
-    },
-    {
-      "key": "T",
-      "text": "Toutes"
-    }
-  ],
-  "answer": "3",
-  "explanation": "Le « pinson » est l'oiseau (gai comme un pinson) ; le « pinçon » est la marque laissée sur la peau par un pincement.",
-  "why": {
-    "1": "Inverse les deux homophones.",
-    "2": "« gai comme un pinçon » : la locution invoque l'oiseau, pinson.",
-    "3": "Correct : oiseau = pinson ; trace de pincement = pinçon.",
-    "4": "« un pinson sur l'avant-bras » : la marque de pincement s'écrit pinçon.",
-    "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-    "T": "Trois options placent au moins un homophone à contre-emploi."
   }
 },
 {
@@ -25740,53 +25458,6 @@ const QUESTIONS = [
   }
 },
 {
-  "id": "orth-L25-3",
-  "rule": "orthographe",
-  "type": "blank",
-  "gen": {
-    "model": "Fable 5",
-    "thinking": "standard",
-    "tracked": true
-  },
-  "stem": "Le trésorier doit encore ___ les comptes de l'exercice ; la station voisine, elle, continue d'___ les eaux usées.",
-  "options": [
-    {
-      "key": "1",
-      "text": "épurer / apurer"
-    },
-    {
-      "key": "2",
-      "text": "apurer / épurer"
-    },
-    {
-      "key": "3",
-      "text": "apurer / apurer"
-    },
-    {
-      "key": "4",
-      "text": "épurer / épurer"
-    },
-    {
-      "key": "A",
-      "text": "Aucune"
-    },
-    {
-      "key": "T",
-      "text": "Toutes"
-    }
-  ],
-  "answer": "2",
-  "explanation": "« Apurer » = vérifier et solder des comptes ; « épurer » = purifier (un liquide) ou expurger.",
-  "why": {
-    "1": "Inverse les deux : on apure des comptes, on épure des eaux.",
-    "2": "Correct : comptes soldés = apurer ; eaux purifiées = épurer.",
-    "3": "« apurer les eaux usées » : les purifier se dit épurer.",
-    "4": "« épurer les comptes » : les vérifier et les solder se dit apurer.",
-    "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-    "T": "Trois options confondent le solde comptable et la purification."
-  }
-},
-{
   "id": "orth-L25-4",
   "rule": "orthographe",
   "type": "blank",
@@ -26257,53 +25928,6 @@ const QUESTIONS = [
   }
 },
 {
-  "id": "orth-L26-4",
-  "rule": "orthographe",
-  "type": "blank",
-  "gen": {
-    "model": "Fable 5",
-    "thinking": "standard",
-    "tracked": true
-  },
-  "stem": "Sa chronique est une ___ féroce du jargon administratif ; l'exposé sur la mythologie, lui, montrait un ___ jouant de la flûte.",
-  "options": [
-    {
-      "key": "1",
-      "text": "satyre / satire"
-    },
-    {
-      "key": "2",
-      "text": "satire / satyre"
-    },
-    {
-      "key": "3",
-      "text": "satire / satire"
-    },
-    {
-      "key": "4",
-      "text": "satyre / satyre"
-    },
-    {
-      "key": "A",
-      "text": "Aucune"
-    },
-    {
-      "key": "T",
-      "text": "Toutes"
-    }
-  ],
-  "answer": "2",
-  "explanation": "La « satire » (avec i) est l'écrit moqueur ; le « satyre » (avec y) est la créature mythologique.",
-  "why": {
-    "1": "Inverse les deux homophones.",
-    "2": "Correct : écrit moqueur = satire ; créature mi-homme mi-bouc = satyre.",
-    "3": "« un satire jouant de la flûte » : la créature mythologique s'écrit satyre.",
-    "4": "« une satyre du jargon » : le texte moqueur s'écrit satire.",
-    "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-    "T": "Trois options placent au moins un homophone à contre-emploi."
-  }
-},
-{
   "id": "orth-L26-5",
   "rule": "orthographe",
   "type": "blank",
@@ -26347,53 +25971,6 @@ const QUESTIONS = [
     "3": "Correct : plante = basilic ; édifice = basilique.",
     "4": "« le basilic roman du bourg » : l'édifice s'écrit basilique.",
     "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-    "T": "Trois options placent au moins un des deux noms à contre-emploi."
-  }
-},
-{
-  "id": "orth-L26-6",
-  "rule": "orthographe",
-  "type": "blank",
-  "gen": {
-    "model": "Fable 5",
-    "thinking": "standard",
-    "tracked": true
-  },
-  "stem": "Le gel a épargné les vieux ___ de la parcelle ; au marché, les ___ séchés se vendaient au prix fort.",
-  "options": [
-    {
-      "key": "1",
-      "text": "cèpes / ceps"
-    },
-    {
-      "key": "2",
-      "text": "cèpes / cèpes"
-    },
-    {
-      "key": "3",
-      "text": "ceps / ceps"
-    },
-    {
-      "key": "4",
-      "text": "ceps / cèpes"
-    },
-    {
-      "key": "A",
-      "text": "Aucune"
-    },
-    {
-      "key": "T",
-      "text": "Toutes"
-    }
-  ],
-  "answer": "4",
-  "explanation": "Le « cep » (sans accent) est le pied de vigne ; le « cèpe » (avec accent) est le champignon.",
-  "why": {
-    "1": "Inverse les deux : la vigne porte des ceps, le panier des cèpes.",
-    "2": "« les cèpes de la parcelle » gelés : les pieds de vigne s'écrivent ceps.",
-    "3": "« des ceps séchés au marché » : le champignon s'écrit cèpe.",
-    "4": "Correct : pieds de vigne = ceps ; champignons = cèpes.",
-    "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
     "T": "Trois options placent au moins un des deux noms à contre-emploi."
   }
 },
@@ -29030,100 +28607,6 @@ const QUESTIONS = [
   }
 },
 {
-  "id": "orth-L32-5",
-  "rule": "orthographe",
-  "type": "blank",
-  "gen": {
-    "model": "Fable 5",
-    "thinking": "standard",
-    "tracked": true
-  },
-  "stem": "Le serrurier ajuste le ___ de la porte blindée ; ce n'est pas la ___ de changer tout le bâti, dit-il.",
-  "options": [
-    {
-      "key": "1",
-      "text": "peine / pêne"
-    },
-    {
-      "key": "2",
-      "text": "peine / peine"
-    },
-    {
-      "key": "3",
-      "text": "pêne / peine"
-    },
-    {
-      "key": "4",
-      "text": "pêne / pêne"
-    },
-    {
-      "key": "A",
-      "text": "Aucune"
-    },
-    {
-      "key": "T",
-      "text": "Toutes"
-    }
-  ],
-  "answer": "3",
-  "explanation": "Le « pêne » (avec circonflexe) est la pièce mobile de la serrure ; la « peine » est l'effort ou le chagrin (valoir la peine).",
-  "why": {
-    "1": "Inverse les deux homophones.",
-    "2": "« la peine de la serrure » : la pièce mobile s'écrit pêne.",
-    "3": "Correct : pièce de serrure = pêne ; valoir la peine.",
-    "4": "« ce n'est pas le pêne de changer » : l'effort s'écrit peine.",
-    "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-    "T": "Trois options placent au moins un homophone à contre-emploi."
-  }
-},
-{
-  "id": "orth-L32-6",
-  "rule": "orthographe",
-  "type": "blank",
-  "gen": {
-    "model": "Fable 5",
-    "thinking": "standard",
-    "tracked": true
-  },
-  "stem": "Le cours d'histoire évoque le ___ attaché à la terre du seigneur ; au petit matin, un ___ a traversé la clairière du vallon.",
-  "options": [
-    {
-      "key": "1",
-      "text": "cerf / serf"
-    },
-    {
-      "key": "2",
-      "text": "cerf / cerf"
-    },
-    {
-      "key": "3",
-      "text": "serf / serf"
-    },
-    {
-      "key": "4",
-      "text": "serf / cerf"
-    },
-    {
-      "key": "A",
-      "text": "Aucune"
-    },
-    {
-      "key": "T",
-      "text": "Toutes"
-    }
-  ],
-  "answer": "4",
-  "explanation": "Le « serf » (avec s) est le paysan du régime féodal ; le « cerf » (avec c) est l'animal des forêts.",
-  "why": {
-    "1": "Inverse les deux homophones.",
-    "2": "« le cerf attaché à la terre » : le paysan féodal s'écrit serf.",
-    "3": "« un serf a traversé la clairière » : l'animal s'écrit cerf.",
-    "4": "Correct : paysan féodal = serf ; animal = cerf.",
-    "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-    "T": "Trois options placent au moins un homophone à contre-emploi."
-  }
-},
-{
   "id": "orth-L32-7",
   "rule": "orthographe",
   "type": "blank",
@@ -29448,28 +28931,6 @@ const QUESTIONS = [
     },
   },
   {
-    id: 'orth-L33-7', rule: 'orthographe', type: 'blank',
-    gen: { model: 'Fable 5', thinking: 'standard', tracked: true },
-    stem: "Un ___ des chênes niche près du parking ; les enfants préfèrent le ___ d'eau de la cour d'honneur.",
-    options: [
-      { key: '1', text: 'geai / jet' },
-      { key: '2', text: 'jet / geai' },
-      { key: '3', text: 'geai / geai' },
-      { key: '4', text: 'jet / jet' },
-      AUCUNE, TOUTES,
-    ],
-    answer: '1',
-    explanation: "Le « geai » est l'oiseau des chênes ; le « jet » (de jeter) est la projection d'eau.",
-    why: {
-      '1': "Correct : oiseau = geai ; projection d'eau = jet.",
-      '2': "Inverse les deux homophones.",
-      '3': "« le geai d'eau » : la projection s'écrit jet.",
-      '4': "« un jet des chênes niche » : l'oiseau s'écrit geai.",
-      A: "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      T: "Trois options placent au moins un homophone à contre-emploi.",
-    },
-  },
-  {
     id: 'conj-L33-8', rule: 'conjugaison', type: 'blank',
     gen: { model: 'Fable 5', thinking: 'standard', tracked: true },
     stem: "En joignant le mauvais fichier à l'envoi groupé, il ___ compromettre toute la procédure d'admission.",
@@ -29603,28 +29064,6 @@ const QUESTIONS = [
       '4': "« un brie de verre » : la casse s'écrit bris.",
       A: "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
       T: "Trois options placent au moins un homophone à contre-emploi.",
-    },
-  },
-  {
-    id: 'orth-L34-5', rule: 'orthographe', type: 'blank',
-    gen: { model: 'Fable 5', thinking: 'standard', tracked: true },
-    stem: "Le conflit s'est réglé grâce à l'___ de la médiatrice cantonale ; le vote, lui, est renvoyé après l'___ parlementaire.",
-    options: [
-      { key: '1', text: 'intersession / intercession' },
-      { key: '2', text: 'intercession / intercession' },
-      { key: '3', text: 'intercession / intersession' },
-      { key: '4', text: 'intersession / intersession' },
-      AUCUNE, TOUTES,
-    ],
-    answer: '3',
-    explanation: "L'« intercession » (de intercéder) est l'intervention en faveur de quelqu'un ; l'« intersession » est l'intervalle entre deux sessions.",
-    why: {
-      '1': "Inverse les deux : la médiatrice intercède, le parlement suspend ses sessions.",
-      '2': "« l'intercession parlementaire » : l'intervalle entre sessions s'écrit intersession.",
-      '3': "Correct : intervention = intercession ; intervalle = intersession.",
-      '4': "« l'intersession de la médiatrice » : son intervention se dit intercession.",
-      A: "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      T: "Trois options confondent l'intervention et l'intervalle.",
     },
   },
   {
@@ -29783,28 +29222,6 @@ const QUESTIONS = [
       '4': "Correcte : « manu militari » (= par la force publique) s'écrit sans liaison graphique.",
       A: "Les quatre phrases sont correctes.",
       T: "Correct : chaque latinisme est orthographié exactement comme le veut l'usage.",
-    },
-  },
-  {
-    id: 'orth-L35-3', rule: 'orthographe', type: 'blank',
-    gen: { model: 'Fable 5', thinking: 'standard', tracked: true },
-    stem: "Trois bureaux d'architectes sont entrés en ___ pour le concours ; le vainqueur promet une façade ___ , sans moulures.",
-    options: [
-      { key: '1', text: 'lice / lisse' },
-      { key: '2', text: 'lisse / lice' },
-      { key: '3', text: 'lice / lice' },
-      { key: '4', text: 'lisse / lisse' },
-      AUCUNE, TOUTES,
-    ],
-    answer: '1',
-    explanation: "« Entrer en lice » = entrer en compétition (la lice était le champ clos des tournois) ; « lisse » = sans aspérité.",
-    why: {
-      '1': "Correct : compétition = lice ; surface unie = lisse.",
-      '2': "Inverse les deux homophones.",
-      '3': "« une façade lice » : sans aspérité s'écrit lisse.",
-      '4': "« entrer en lisse » : la compétition s'écrit lice.",
-      A: "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      T: "Trois options placent au moins un homophone à contre-emploi.",
     },
   },
   {
@@ -31763,28 +31180,6 @@ const QUESTIONS = [
 // orth ×3, rel ×1, eleves ×1, modes ×1, dis ×1, pronoms ×1, prépositions ×1 (T), conjugaison ×1 (A).
 // A/T : 2/10 (conj-L44-8 = A verbe défectif, prep-L44-9 = T). Vérification rapide : mécanique + passe Sonnet.
 // Ids provisoires : à renuméroter à l'intégration.
-  {
-    id: 'orth-L44-1', rule: 'orthographe', type: 'blank',
-    gen: { model: 'Fable 5', thinking: 'standard', tracked: true },
-    stem: "D'une traite, l'archiviste ___ le procès-verbal contesté ; au conservatoire voisin, un élève accordait son ___.",
-    options: [
-      { key: '1', text: 'lut / luth' },
-      { key: '2', text: 'luth / lut' },
-      { key: '3', text: 'lut / lut' },
-      { key: '4', text: 'luth / luth' },
-      AUCUNE, TOUTES,
-    ],
-    answer: '1',
-    explanation: "« Lut » est le passé simple de lire ; le « luth » (avec -th) est l'instrument à cordes.",
-    why: {
-      '1': "Correct : il lut (lire) ; un luth (instrument).",
-      '2': "Inverse les deux homophones.",
-      '3': "« accorder son lut » : l'instrument s'écrit luth.",
-      '4': "« l'archiviste luth le procès-verbal » : le verbe lire s'écrit lut.",
-      A: "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      T: "Trois options placent au moins un homophone à contre-emploi.",
-    },
-  },
   {
     id: 'orth-L44-2', rule: 'orthographe', type: 'blank',
     gen: { model: 'Fable 5', thinking: 'standard', tracked: true },
