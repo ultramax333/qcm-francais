@@ -711,27 +711,6 @@ const QUESTIONS = [
     },
   },
   {
-    id: 'orth-33', rule: 'orthographe', type: 'blank',
-    stem: "Une ___ s'impose à l'équipe après la ___ du nouveau revêtement.",
-    options: [
-      { key: '1', text: 'pause / pose' },
-      { key: '2', text: 'pose / pause' },
-      { key: '3', text: 'pause / pause' },
-      { key: '4', text: 'pose / pose' },
-      AUCUNE, TOUTES,
-    ],
-    answer: '1',
-    explanation: "« une pause » (un arrêt, un repos) ; « la pose » (l'action de poser, l'installation).",
-    why: {
-      '1': "Correct : pause (repos) + pose (installation).",
-      '2': "Inversé.",
-      '3': "2e « pause » fautif : installer = poser → pose.",
-      '4': "1er « pose » fautif : se reposer = pause.",
-      A: "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      T: "Les options 2, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée.",
-    },
-  },
-  {
     id: 'orth-34', rule: 'orthographe', type: 'blank',
     stem: "Après une ___ au bord du lac, elle a joué une ___ de Chopin.",
     options: [
@@ -880,69 +859,6 @@ const QUESTIONS = [
   },
 
   {
-    id: 'orth-41', rule: 'orthographe', type: 'blank',
-    stem: "Ce café est devenu le ___ de la bande ; j'y ai tous mes ___.",
-    options: [
-      { key: '1', text: 'repère / repaires' },
-      { key: '2', text: 'repaire / repères' },
-      { key: '3', text: 'repère / repères' },
-      { key: '4', text: 'repaire / repaires' },
-      AUCUNE, TOUTES,
-    ],
-    answer: '2',
-    explanation: "« repaire » (le refuge, l'antre) ; « repères » (les points de référence).",
-    why: {
-      '1': "Inversé.",
-      '2': "Correct : repaire (refuge) + repères (références).",
-      '3': "1er « repère » fautif : le lieu de retrouvailles = repaire.",
-      '4': "2e « repaires » fautif : mes habitudes = repères.",
-      A: "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      T: "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée.",
-    },
-  },
-  {
-    id: 'orth-42', rule: 'orthographe', type: 'blank',
-    stem: "Sa tenue décontractée ___ dans une assemblée aussi solennelle.",
-    options: [
-      { key: '1', text: 'détone' },
-      { key: '2', text: 'détonne' },
-      { key: '3', text: 'détonnent' },
-      { key: '4', text: 'détonent' },
-      AUCUNE, TOUTES,
-    ],
-    answer: '2',
-    explanation: "« détonner » (deux n) = contraster, ne pas être dans le ton ; « détoner » (un n) = exploser.",
-    why: {
-      '1': "« détone » = explose : contresens.",
-      '2': "Correct : contraster → détonner (deux n).",
-      '3': "« détonnent » : pluriel, or le sujet est « sa tenue ».",
-      '4': "« détonent » : pluriel ET mauvais verbe.",
-      A: "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      T: "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée.",
-    },
-  },
-  {
-    id: 'orth-43', rule: 'orthographe', type: 'blank',
-    stem: "Il a reçu une ___ salée pour avoir grignoté des ___ au volant.",
-    options: [
-      { key: '1', text: 'amande / amendes' },
-      { key: '2', text: 'amende / amendes' },
-      { key: '3', text: 'amende / amandes' },
-      { key: '4', text: 'amande / amandes' },
-      AUCUNE, TOUTES,
-    ],
-    answer: '3',
-    explanation: "« une amende » (la sanction) ; « des amandes » (les fruits secs).",
-    why: {
-      '1': "Inversé.",
-      '2': "2e « amendes » fautif : on grignote des amandes.",
-      '3': "Correct : amende (sanction) + amandes (fruits).",
-      '4': "1er « amande » fautif : la sanction = amende.",
-      A: "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      T: "Les options 1, 2 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée.",
-    },
-  },
-  {
     id: 'orth-44', rule: 'orthographe', type: 'blank',
     stem: "Le projet démarre sous les meilleurs ___ : tout le monde y croit.",
     options: [
@@ -1001,48 +917,6 @@ const QUESTIONS = [
       '2': "Correct : prémisses (logique) + prémices (premiers signes).",
       '3': "2e « prémisses » fautif : les signes avant-coureurs = prémices.",
       '4': "1er « prémices » fautif : un raisonnement a des prémisses.",
-      A: "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      T: "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée.",
-    },
-  },
-  {
-    id: 'orth-47', rule: 'orthographe', type: 'blank',
-    stem: "Ils ont longé le ___ du Lion avant d'aller jouer au ___ en fin de journée.",
-    options: [
-      { key: '1', text: 'golf / golfe' },
-      { key: '2', text: 'golfe / golf' },
-      { key: '3', text: 'golfe / golfe' },
-      { key: '4', text: 'golf / golf' },
-      AUCUNE, TOUTES,
-    ],
-    answer: '2',
-    explanation: "« le golfe » (l'échancrure du littoral) ; « le golf » (le sport).",
-    why: {
-      '1': "Inversé.",
-      '2': "Correct : golfe (mer) + golf (sport).",
-      '3': "2e « golfe » fautif : on joue au golf.",
-      '4': "1er « golf » fautif : la côte forme un golfe.",
-      A: "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      T: "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée.",
-    },
-  },
-  {
-    id: 'orth-48', rule: 'orthographe', type: 'blank',
-    stem: "Secoués par les ___ de la piste, ils ont découvert un pays en plein ___.",
-    options: [
-      { key: '1', text: 'chaos / cahots' },
-      { key: '2', text: 'cahots / chaos' },
-      { key: '3', text: 'cahots / cahots' },
-      { key: '4', text: 'chaos / chaos' },
-      AUCUNE, TOUTES,
-    ],
-    answer: '2',
-    explanation: "« les cahots » (les secousses d'un véhicule) ; « le chaos » (le désordre profond).",
-    why: {
-      '1': "Inversé.",
-      '2': "Correct : cahots (secousses) + chaos (désordre).",
-      '3': "2e « cahots » fautif : le désordre politique = chaos.",
-      '4': "1er « chaos » fautif : la route secoue par ses cahots.",
       A: "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
       T: "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée.",
     },
@@ -1133,27 +1007,6 @@ const QUESTIONS = [
     },
   },
   {
-    id: 'orth-53', rule: 'orthographe', type: 'blank',
-    stem: "Au bout du ___, ce ___ de fées se termine plutôt bien.",
-    options: [
-      { key: '1', text: 'conte / compte' },
-      { key: '2', text: 'comte / conte' },
-      { key: '3', text: 'compte / conte' },
-      { key: '4', text: 'compte / comte' },
-      AUCUNE, TOUTES,
-    ],
-    answer: '3',
-    explanation: "« au bout du compte » (le calcul, avec -pte) ; « un conte de fées » (le récit). « comte » = le titre de noblesse.",
-    why: {
-      '1': "Inversé.",
-      '2': "« comte » : le noble, hors sujet ici.",
-      '3': "Correct : compte (calcul) + conte (récit).",
-      '4': "2e « comte » fautif : le récit = conte.",
-      A: "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      T: "Les options 1, 2 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée.",
-    },
-  },
-  {
     id: 'orth-54', rule: 'orthographe', type: 'blank',
     stem: "___ deux signatures manquantes, le dossier est complet.",
     options: [
@@ -1217,27 +1070,6 @@ const QUESTIONS = [
     },
   },
   {
-    id: 'orth-57', rule: 'orthographe', type: 'blank',
-    stem: "Son discours, ___ de gravité, évoquait le remboursement du dernier ___.",
-    options: [
-      { key: '1', text: 'emprunt / empreint' },
-      { key: '2', text: 'empreint / emprunt' },
-      { key: '3', text: 'empreint / empreint' },
-      { key: '4', text: 'emprunt / emprunt' },
-      AUCUNE, TOUTES,
-    ],
-    answer: '2',
-    explanation: "« empreint de » (marqué de, imprégné — de « empreinte ») ; « un emprunt » (l'argent emprunté).",
-    why: {
-      '1': "Inversé.",
-      '2': "Correct : empreint de gravité + un emprunt bancaire.",
-      '3': "2e « empreint » fautif : l'argent = emprunt.",
-      '4': "1er « emprunt » fautif : marqué de = empreint.",
-      A: "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      T: "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée.",
-    },
-  },
-  {
     id: 'orth-58', rule: 'orthographe', type: 'blank',
     stem: "___ la séance levée, il a filé ; je ne pensais pas partir ___ .",
     options: [
@@ -1280,28 +1112,6 @@ const QUESTIONS = [
     },
   },
   {
-    id: 'orth-60', rule: 'orthographe', type: 'blank',
-    stem: "Au lieu de réviser, il passe l'après-midi à ___ aux corneilles.",
-    options: [
-      { key: '1', text: 'bâiller' },
-      { key: '2', text: 'bailler' },
-      { key: '3', text: 'bayer' },
-      { key: '4', text: 'béer' },
-      AUCUNE, TOUTES,
-    ],
-    answer: '3',
-    explanation: "La locution est « BAYER aux corneilles » (= rêvasser bouche bée). « bâiller » (de sommeil) est la faute quasi universelle ; « bailler » = donner (vieilli).",
-    why: {
-      '1': "« bâiller » : ouvrir la bouche de fatigue — la faute classique.",
-      '2': "« bailler » : donner (la bailler belle), autre verbe.",
-      '3': "Correct : bayer aux corneilles (rester bouche bée).",
-      '4': "« béer » existe (bouche bée) mais pas dans cette locution.",
-      A: "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      T: "Les options 1, 2 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée.",
-    },
-  },
-
-  {
     id: 'orth-61', rule: 'orthographe', type: 'blank',
     gen: { model: 'Fable 5', thinking: 'standard', tracked: true },
     stem: "Ce peuple a subi un long ___ ; chaque ___ a été honoré d'une stèle.",
@@ -1319,50 +1129,6 @@ const QUESTIONS = [
       '2': "Correct : martyre (supplice) + martyr (personne).",
       '3': "2e « martyre » fautif : la personne = martyr.",
       '4': "1er « martyr » fautif : la souffrance = martyre.",
-      A: "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      T: "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée.",
-    },
-  },
-  {
-    id: 'orth-62', rule: 'orthographe', type: 'blank',
-    gen: { model: 'Fable 5', thinking: 'standard', tracked: true },
-    stem: "Le ___ préparatoire de l'artiste servait un grand ___ politique.",
-    options: [
-      { key: '1', text: 'dessein / dessin' },
-      { key: '2', text: 'dessin / dessein' },
-      { key: '3', text: 'dessin / dessin' },
-      { key: '4', text: 'dessein / dessein' },
-      AUCUNE, TOUTES,
-    ],
-    answer: '2',
-    explanation: "« un dessin » (le tracé, l'œuvre graphique) ; « un dessein » (l'intention, le projet).",
-    why: {
-      '1': "Inversé.",
-      '2': "Correct : dessin (tracé) + dessein (intention).",
-      '3': "2e « dessin » fautif : le projet = dessein.",
-      '4': "1er « dessein » fautif : l'œuvre graphique = dessin.",
-      A: "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      T: "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée.",
-    },
-  },
-  {
-    id: 'orth-63', rule: 'orthographe', type: 'blank',
-    gen: { model: 'Fable 5', thinking: 'standard', tracked: true },
-    stem: "Dans le conte, un ___ d'amour ; dans la cuisine, un simple ___ à café.",
-    options: [
-      { key: '1', text: 'filtre / philtre' },
-      { key: '2', text: 'philtre / filtre' },
-      { key: '3', text: 'philtre / philtre' },
-      { key: '4', text: 'filtre / filtre' },
-      AUCUNE, TOUTES,
-    ],
-    answer: '2',
-    explanation: "« un philtre » (le breuvage magique, avec ph) ; « un filtre » (le dispositif qui filtre).",
-    why: {
-      '1': "Inversé.",
-      '2': "Correct : philtre (magique) + filtre (café).",
-      '3': "2e « philtre » fautif : l'ustensile = filtre.",
-      '4': "1er « filtre » fautif : le breuvage magique = philtre.",
       A: "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
       T: "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée.",
     },
@@ -12610,28 +12376,6 @@ const QUESTIONS = [
     },
   },
   {
-    id: 'orth-79', rule: 'orthographe', type: 'sentences',
-    gen: { model: 'Fable 5', thinking: 'standard', tracked: true },
-    instruction: 'Quelle phrase est correctement orthographiée ?',
-    options: [
-      { key: '1', text: "Ce chalet isolé servait de repaire aux contrebandiers de la vallée." },
-      { key: '2', text: "Ils ont finalement réglé leur différent devant le juge de paix." },
-      { key: '3', text: "Elle nourrit le dessin secret de reprendre l'exploitation familiale." },
-      { key: '4', text: "Cette balise sert de repaire aux randonneurs qui montent de nuit." },
-      AUCUNE, TOUTES,
-    ],
-    answer: '1',
-    explanation: "« repaire » = refuge, cachette (les contrebandiers s'y cachent) ; « repère » = point de référence (la balise). Un désaccord se dit « différend » ; un projet secret, un « dessein ».",
-    why: {
-      '1': "Correct : un repaire est bien la cachette des contrebandiers.",
-      '2': "« différent » : le désaccord juridique s'écrit « différend ».",
-      '3': "« dessin » : le projet, l'intention s'écrit « dessein ».",
-      '4': "« repaire » : une balise est un point de référence → « repère ».",
-      A: "La phrase 1 est correcte.",
-      T: "Les phrases 2, 3 et 4 contiennent chacune un paronyme fautif.",
-    },
-  },
-  {
     id: 'orth-80', rule: 'orthographe', type: 'blank',
     gen: { model: 'Fable 5', thinking: 'standard', tracked: true },
     stem: "Elle ___ remet à la décision du comité, non ___ avoir exprimé de sérieuses réserves.",
@@ -12829,28 +12573,6 @@ const QUESTIONS = [
       '4': "1er segment : « tirer parti de » (masculin).",
       A: "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
       T: "Les options 1, 2 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée.",
-    },
-  },
-  {
-    id: 'orth-83', rule: 'orthographe', type: 'sentences',
-    gen: { model: 'Fable 5', thinking: 'standard', tracked: true },
-    instruction: 'Quelle(s) phrase(s) est/sont correctement orthographiée(s) ?',
-    options: [
-      { key: '1', text: "La professeure occupe une chair de didactique depuis 2020." },
-      { key: '2', text: "Les négociations sont en pose depuis lundi matin." },
-      { key: '3', text: "La session de la parcelle a été signée chez le notaire." },
-      { key: '4', text: "Le recours suivra la voix hiérarchique habituelle." },
-      AUCUNE, TOUTES,
-    ],
-    answer: 'A',
-    explanation: "Quatre paronymes fautifs : une CHAIRE (poste de professeur), une PAUSE (interruption), une CESSION (transfert de propriété), la VOIE (le chemin). Aucune phrase n'est correcte.",
-    why: {
-      '1': "« chair » (la matière vivante) : le poste universitaire est une « chaire ».",
-      '2': "« pose » (action de poser) : l'interruption s'écrit « pause ».",
-      '3': "« session » (période de séances) : le transfert de propriété est une « cession ».",
-      '4': "« voix » (organe, suffrage) : le canal administratif est la « voie ».",
-      A: "Correct : les quatre phrases contiennent chacune un paronyme fautif.",
-      T: "Aucune phrase n'est correcte.",
     },
   },
   {
@@ -23296,53 +23018,6 @@ const QUESTIONS = [
   }
 },
 {
-  "id": "orth-L20-3",
-  "rule": "orthographe",
-  "type": "blank",
-  "gen": {
-    "model": "Fable 5",
-    "thinking": "standard",
-    "tracked": true
-  },
-  "stem": "La procession s'est arrêtée devant l'___ de la chapelle avant de rejoindre la place de l'___ de ville.",
-  "options": [
-    {
-      "key": "1",
-      "text": "hôtel / autel"
-    },
-    {
-      "key": "2",
-      "text": "autel / hôtel"
-    },
-    {
-      "key": "3",
-      "text": "autel / autel"
-    },
-    {
-      "key": "4",
-      "text": "hôtel / hôtel"
-    },
-    {
-      "key": "A",
-      "text": "Aucune"
-    },
-    {
-      "key": "T",
-      "text": "Toutes"
-    }
-  ],
-  "answer": "2",
-  "explanation": "L'« autel » est la table de culte ; l'« hôtel » (hôtel de ville) est l'édifice.",
-  "why": {
-    "1": "Inverse les deux : la table de culte est l'autel, le bâtiment l'hôtel.",
-    "2": "Correct : autel de la chapelle ; hôtel de ville.",
-    "3": "« l'autel de ville » : le bâtiment communal est l'hôtel de ville.",
-    "4": "« l'hôtel de la chapelle » : la table de culte s'écrit autel.",
-    "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-    "T": "Trois options placent au moins un homophone à contre-emploi."
-  }
-},
-{
   "id": "orth-L20-4",
   "rule": "orthographe",
   "type": "blank",
@@ -23810,53 +23485,6 @@ const QUESTIONS = [
     "4": "« immigré d'Italie » : le départ du pays d'origine se dit émigrer.",
     "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
     "T": "Trois options confondent le point de vue du départ et celui de l'arrivée."
-  }
-},
-{
-  "id": "orth-L21-4",
-  "rule": "orthographe",
-  "type": "blank",
-  "gen": {
-    "model": "Fable 5",
-    "thinking": "standard",
-    "tracked": true
-  },
-  "stem": "Elle a analysé la situation avec beaucoup de ___ ; le litige, lui, finira devant la ___ de paix.",
-  "options": [
-    {
-      "key": "1",
-      "text": "justice / justesse"
-    },
-    {
-      "key": "2",
-      "text": "justice / justice"
-    },
-    {
-      "key": "3",
-      "text": "justesse / justice"
-    },
-    {
-      "key": "4",
-      "text": "justesse / justesse"
-    },
-    {
-      "key": "A",
-      "text": "Aucune"
-    },
-    {
-      "key": "T",
-      "text": "Toutes"
-    }
-  ],
-  "answer": "3",
-  "explanation": "La « justesse » est l'exactitude, la précision ; la « justice » est l'institution (justice de paix) ou la vertu d'équité.",
-  "why": {
-    "1": "Inverse les deux : l'analyse précise relève de la justesse, l'institution de la justice.",
-    "2": "« analysé avec justice » : l'exactitude d'une analyse se dit justesse.",
-    "3": "Correct : précision = justesse ; institution = justice de paix.",
-    "4": "« la justesse de paix » : l'autorité judiciaire est la justice de paix.",
-    "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-    "T": "Trois options confondent l'exactitude et l'institution."
   }
 },
 {
@@ -25552,53 +25180,6 @@ const QUESTIONS = [
   }
 },
 {
-  "id": "orth-L25-6",
-  "rule": "orthographe",
-  "type": "blank",
-  "gen": {
-    "model": "Fable 5",
-    "thinking": "standard",
-    "tracked": true
-  },
-  "stem": "Au bord de l'étang, la ___ surveille ses canetons ; le vieux jardinier, lui, s'appuie sur sa ___ pour les regarder.",
-  "options": [
-    {
-      "key": "1",
-      "text": "cane / canne"
-    },
-    {
-      "key": "2",
-      "text": "canne / cane"
-    },
-    {
-      "key": "3",
-      "text": "cane / cane"
-    },
-    {
-      "key": "4",
-      "text": "canne / canne"
-    },
-    {
-      "key": "A",
-      "text": "Aucune"
-    },
-    {
-      "key": "T",
-      "text": "Toutes"
-    }
-  ],
-  "answer": "1",
-  "explanation": "La « cane » (un n) est la femelle du canard ; la « canne » (deux n) est le bâton d'appui.",
-  "why": {
-    "1": "Correct : femelle du canard = cane ; bâton = canne.",
-    "2": "Inverse les deux homophones.",
-    "3": "« s'appuie sur sa cane » : le bâton s'écrit canne.",
-    "4": "« la canne surveille ses canetons » : l'oiseau s'écrit cane.",
-    "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-    "T": "Trois options placent au moins un homophone à contre-emploi."
-  }
-},
-{
   "id": "orth-L25-7",
   "rule": "orthographe",
   "type": "blank",
@@ -26630,53 +26211,6 @@ const QUESTIONS = [
     "4": "Correct : songer À → les économies auxquelles chaque service songe.",
     "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
     "T": "Une seule option restitue le régime du verbe."
-  }
-},
-{
-  "id": "orth-L28-1",
-  "rule": "orthographe",
-  "type": "blank",
-  "gen": {
-    "model": "Fable 5",
-    "thinking": "standard",
-    "tracked": true
-  },
-  "stem": "L'eau du vieux ___ n'est plus potable ; ___ , les analyses du laboratoire le confirmeront.",
-  "options": [
-    {
-      "key": "1",
-      "text": "puits / puis"
-    },
-    {
-      "key": "2",
-      "text": "puis / puits"
-    },
-    {
-      "key": "3",
-      "text": "puit / puis"
-    },
-    {
-      "key": "4",
-      "text": "puits / puit"
-    },
-    {
-      "key": "A",
-      "text": "Aucune"
-    },
-    {
-      "key": "T",
-      "text": "Toutes"
-    }
-  ],
-  "answer": "1",
-  "explanation": "Le « puits » (forage) s'écrit avec -ts final, même au singulier ; « puis » (ensuite) est l'adverbe.",
-  "why": {
-    "1": "Correct : le puits (avec ts) ; puis (ensuite).",
-    "2": "Inverse les deux : le forage prend -ts, l'adverbe non.",
-    "3": "« puit » n'existe pas : le nom garde son -s étymologique au singulier.",
-    "4": "« puit » en seconde place : l'adverbe s'écrit « puis ».",
-    "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-    "T": "Trois options écorchent l'un des deux homophones."
   }
 },
 {
@@ -28607,53 +28141,6 @@ const QUESTIONS = [
   }
 },
 {
-  "id": "orth-L32-7",
-  "rule": "orthographe",
-  "type": "blank",
-  "gen": {
-    "model": "Fable 5",
-    "thinking": "standard",
-    "tracked": true
-  },
-  "stem": "Il ne se soucie ___ des rumeurs de fusion ; le musée local, lui, prépare une exposition sur l'après-___.",
-  "options": [
-    {
-      "key": "1",
-      "text": "guère / guerre"
-    },
-    {
-      "key": "2",
-      "text": "guerre / guère"
-    },
-    {
-      "key": "3",
-      "text": "guère / guère"
-    },
-    {
-      "key": "4",
-      "text": "guerre / guerre"
-    },
-    {
-      "key": "A",
-      "text": "Aucune"
-    },
-    {
-      "key": "T",
-      "text": "Toutes"
-    }
-  ],
-  "answer": "1",
-  "explanation": "« Guère » (avec accent, adverbe) = pas beaucoup, s'emploie avec « ne » ; la « guerre » (deux r) est le conflit.",
-  "why": {
-    "1": "Correct : ne… guère (adverbe) ; l'après-guerre (conflit).",
-    "2": "Inverse les deux homophones.",
-    "3": "« l'après-guère » : le conflit s'écrit guerre.",
-    "4": "« il ne se soucie guerre » : l'adverbe s'écrit guère.",
-    "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-    "T": "Trois options placent au moins un homophone à contre-emploi."
-  }
-},
-{
   "id": "conj-L32-8",
   "rule": "conjugaison",
   "type": "blank",
@@ -29691,28 +29178,6 @@ const QUESTIONS = [
       '3': "« le gril du parc » : la clôture s'écrit grille.",
       '4': "« la grille du réfectoire » à gratter : l'ustensile s'écrit gril.",
       A: "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      T: "Trois options placent au moins un homophone à contre-emploi.",
-    },
-  },
-  {
-    id: 'orth-L37-5', rule: 'orthographe', type: 'blank',
-    gen: { model: 'Fable 5', thinking: 'standard', tracked: true },
-    stem: "Une ___ de perche s'est plantée dans le filet ; pendant ce temps, l'exécutif ___ les mesures d'application du règlement.",
-    options: [
-      { key: '1', text: 'arrête / arête' },
-      { key: '2', text: 'arête / arête' },
-      { key: '3', text: 'arête / arrête' },
-      { key: '4', text: 'arrête / arrête' },
-      AUCUNE, TOUTES,
-    ],
-    answer: '3',
-    explanation: "L'« arête » (un seul r) est l'os du poisson (ou l'angle vif) ; « arrête » (deux r) est le verbe arrêter — ici au sens juridique de fixer par décision.",
-    why: {
-      '1': "Inverse les deux homophones.",
-      '2': "« l'exécutif arête les mesures » : le verbe s'écrit avec deux r.",
-      '3': "Correct : arête de poisson ; l'exécutif arrête (fixe) les mesures.",
-      '4': "« une arrête de perche » : l'os s'écrit arête.",
-      A: "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
       T: "Trois options placent au moins un homophone à contre-emploi.",
     },
   },
@@ -30978,28 +30443,6 @@ const QUESTIONS = [
     },
   },
   {
-    id: 'orth-L43-2', rule: 'orthographe', type: 'blank',
-    gen: { model: 'Fable 5', thinking: 'standard', tracked: true },
-    stem: "Les géologues ont repéré une ___ de quartz dans la galerie ; la tentative de la cacher aux élèves était ___ , ils l'avaient déjà photographiée.",
-    options: [
-      { key: '1', text: 'vaine / veine' },
-      { key: '2', text: 'veine / vaine' },
-      { key: '3', text: 'veine / veine' },
-      { key: '4', text: 'vaine / vaine' },
-      AUCUNE, TOUTES,
-    ],
-    answer: '2',
-    explanation: "La « veine » (nom) est le filon (ou le vaisseau sanguin, ou la chance) ; « vaine » (adjectif) = inutile, sans effet.",
-    why: {
-      '1': "Inverse les deux homophones.",
-      '2': "Correct : veine de quartz (filon) ; tentative vaine (inutile).",
-      '3': "« la tentative était veine » : inutile s'écrit vaine.",
-      '4': "« une vaine de quartz » : le filon s'écrit veine.",
-      A: "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      T: "Trois options placent au moins un homophone à contre-emploi.",
-    },
-  },
-  {
     id: 'orth-L43-3', rule: 'orthographe', type: 'blank',
     gen: { model: 'Fable 5', thinking: 'standard', tracked: true },
     stem: "Depuis la jetée, on aperçoit le ___ du bout du môle ; dans la loge, la maquilleuse cherche un ___ moins brillant.",
@@ -31180,28 +30623,6 @@ const QUESTIONS = [
 // orth ×3, rel ×1, eleves ×1, modes ×1, dis ×1, pronoms ×1, prépositions ×1 (T), conjugaison ×1 (A).
 // A/T : 2/10 (conj-L44-8 = A verbe défectif, prep-L44-9 = T). Vérification rapide : mécanique + passe Sonnet.
 // Ids provisoires : à renuméroter à l'intégration.
-  {
-    id: 'orth-L44-2', rule: 'orthographe', type: 'blank',
-    gen: { model: 'Fable 5', thinking: 'standard', tracked: true },
-    stem: "La clôture du verger repose sur un ___ de chêne ; réussir sans travailler reste un vœu ___.",
-    options: [
-      { key: '1', text: 'pieux / pieu' },
-      { key: '2', text: 'pieu / pieux' },
-      { key: '3', text: 'pieu / pieu' },
-      { key: '4', text: 'pieux / pieux' },
-      AUCUNE, TOUTES,
-    ],
-    answer: '2',
-    explanation: "Le « pieu » (pluriel pieux) est le poteau ; « pieux » (adjectif) = dévot — un « vœu pieux » est un souhait sans effet.",
-    why: {
-      '1': "Inverse les deux homophones.",
-      '2': "Correct : un pieu de chêne (poteau) ; un vœu pieux (locution figée).",
-      '3': "« un vœu pieu » : l'adjectif s'écrit pieux, même au singulier.",
-      '4': "« un pieux de chêne » : le poteau singulier s'écrit pieu.",
-      A: "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      T: "Trois options placent au moins un homophone à contre-emploi.",
-    },
-  },
   {
     id: 'orth-L44-3', rule: 'orthographe', type: 'blank',
     gen: { model: 'Fable 5', thinking: 'standard', tracked: true },
@@ -31650,28 +31071,6 @@ const QUESTIONS = [
       '4': "Correcte : « en l'état » (= tel quel) est la locution consacrée.",
       A: "Les quatre phrases sont correctes.",
       T: "Correct : chaque locution adverbiale porte exactement sa graphie attendue.",
-    },
-  },
-  {
-    id: 'orth-L46-3', rule: 'orthographe', type: 'blank',
-    gen: { model: 'Fable 5', thinking: 'standard', tracked: true },
-    stem: "L'arbitre a sanctionné le coup de ___ ; à la mi-temps, l'entraîneuse a réuni l'équipe pour faire le ___.",
-    options: [
-      { key: '1', text: 'point / poing' },
-      { key: '2', text: 'poing / point' },
-      { key: '3', text: 'poing / poing' },
-      { key: '4', text: 'point / point' },
-      AUCUNE, TOUTES,
-    ],
-    answer: '2',
-    explanation: "Le « poing » (avec g) est la main fermée ; le « point » (avec t) est le bilan (faire le point) ou le signe.",
-    why: {
-      '1': "Inverse les deux homophones.",
-      '2': "Correct : coup de poing ; faire le point.",
-      '3': "« faire le poing » : le bilan s'écrit point.",
-      '4': "« un coup de point » : la main fermée s'écrit poing.",
-      A: "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      T: "Trois options placent au moins un homophone à contre-emploi.",
     },
   },
   {
@@ -32553,28 +31952,6 @@ const QUESTIONS = [
     },
   },
   {
-    id: 'orth-L50-3', rule: 'orthographe', type: 'blank',
-    gen: { model: 'Fable 5', thinking: 'standard', tracked: true },
-    stem: "La ___ de rythmique est réservée jusqu'à midi ; merci de ne pas laisser le vestiaire ___ après votre passage.",
-    options: [
-      { key: '1', text: 'salle / sale' },
-      { key: '2', text: 'sale / salle' },
-      { key: '3', text: 'salle / salle' },
-      { key: '4', text: 'sale / sale' },
-      AUCUNE, TOUTES,
-    ],
-    answer: '1',
-    explanation: "La « salle » (deux l) est la pièce ; « sale » (un l) signifie malpropre.",
-    why: {
-      '1': "Correct : salle (pièce) ; sale (malpropre).",
-      '2': "Inverse les deux homophones.",
-      '3': "« laisser le vestiaire salle » : malpropre s'écrit sale.",
-      '4': "« la sale de rythmique » : la pièce s'écrit salle.",
-      A: "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      T: "Trois options placent au moins un homophone à contre-emploi.",
-    },
-  },
-  {
     id: 'mode-L50-4', rule: 'modes', type: 'blank',
     gen: { model: 'Fable 5', thinking: 'standard', tracked: true },
     stem: "Le comité d'organisation souhaite que chaque famille ___ l'information dans les deux langues.",
@@ -33176,29 +32553,7 @@ const QUESTIONS = [
   },
 
 // Lot 53 — 10 questions (Fable 5) — croisière + retours espacés. Vérification groupée 51-53.
-// A/T : 2/10 (orth-L53-1 = A, part-L53-8 = T). Ids provisoires : à renuméroter à l'intégration.
-  {
-    id: 'orth-L53-1', rule: 'orthographe', type: 'blank',
-    gen: { model: 'Fable 5', thinking: 'standard', tracked: true },
-    stem: "Malgré la sortie de route du minibus, le chauffeur est ressorti ___ de l'habitacle.",
-    options: [
-      { key: '1', text: 'indemme' },
-      { key: '2', text: 'indène' },
-      { key: '3', text: 'indemn' },
-      { key: '4', text: 'indenme' },
-      AUCUNE, TOUTES,
-    ],
-    answer: 'A',
-    explanation: "Le mot s'écrit « indemne » : -mn-, comme « automne ». Aucune option ne porte cette graphie.",
-    why: {
-      '1': "« indemme » : contamination de « dilemme » — le groupe est -mn-, pas -mm-.",
-      '2': "« indène » perd le m du groupe -mn-.",
-      '3': "« indemn » ampute le e final.",
-      '4': "« indenme » inverse les deux consonnes du groupe.",
-      A: "Correct : la graphie attendue « indemne » ne figure dans aucune option.",
-      T: "Chaque option déforme le mot d'une façon différente.",
-    },
-  },
+// A/T : 1/9 (part-L53-8 = T). Ids provisoires : à renuméroter à l'intégration.
   {
     id: 'orth-L53-2', rule: 'orthographe', type: 'blank',
     gen: { model: 'Fable 5', thinking: 'standard', tracked: true },
