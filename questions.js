@@ -317,7 +317,7 @@ const QUESTIONS = [
     "id": "orth-6",
     "rule": "orthographe",
     "type": "blank",
-    "stem": "Il réclame ___ de temps, persuadé d'en tirer ___ à long terme.",
+    "stem": "Il réclame ___ de temps, persuadé d'y trouver plus ___ que d'inconvénients.",
     "options": [
       {
         "key": "1",
@@ -345,12 +345,12 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "« davantage » = adverbe (= plus) : « davantage de temps ». « d'avantages » = nom (bénéfices) : « en tirer des avantages ».",
+    "explanation": "« davantage » = adverbe (= plus) : « réclamer davantage de temps ». « d'avantages » = nom précédé de « de » : « plus d'avantages que d'inconvénients ».",
     "why": {
-      "1": "1er « d'avantage » fautif : ici « plus de temps » → adverbe « davantage ».",
-      "2": "2e « davantage » discutable : « en tirer des avantages » appelle le nom « d'avantages ».",
-      "3": "Correct : adverbe « davantage » (de temps) + nom « d'avantages » (à en tirer).",
-      "4": "1er « d'avantage » fautif : il faut l'adverbe « davantage ».",
+      "1": "« réclame d'avantage de temps » : l'adverbe (= plus) s'écrit davantage, en un mot.",
+      "2": "« plus davantage que d'inconvénients » est agrammatical : après « plus », il faut le nom d'avantages.",
+      "3": "Correct : adverbe « davantage de temps » + nom « plus d'avantages que d'inconvénients ».",
+      "4": "« réclame d'avantage de temps » : l'adverbe s'écrit davantage.",
       "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
       "T": "Les options 1, 2 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
     },
@@ -474,7 +474,7 @@ const QUESTIONS = [
       },
       {
         "key": "4",
-        "text": "Il en sait plus qu'il ne le paraît."
+        "text": "Il en sait plus qu'il n'y paraît."
       },
       {
         "key": "A",
@@ -486,12 +486,12 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Les quatre sont correctes : « Quant à » (1), « censée » = supposée (2), « Quoique » = bien que + ellipse (3), « ne » explétif + « le » neutre (4). Réponse : Toutes.",
+    "explanation": "Les quatre sont correctes : « Quant à » (1), « censée » = supposée (2), « Quoique » = bien que + ellipse (3), « ne » explétif dans la locution figée « il n'y paraît » (4). Réponse : Toutes.",
     "why": {
       "1": "Correcte : « Quant à » (en ce qui concerne).",
       "2": "Correcte : « censée » (= supposée), accordé au féminin.",
       "3": "Correcte : « Quoique fatigué » (= bien que fatigué).",
-      "4": "Correcte : « ne » explétif + « le » neutre invariable.",
+      "4": "Correcte : la locution impersonnelle figée est « plus qu'il n'y paraît ».",
       "A": "Les quatre phrases sont correctes, donc « Aucune » est faux.",
       "T": "Correct : aucune ne contient de faute."
     },
@@ -17942,7 +17942,7 @@ const QUESTIONS = [
     "id": "av-2",
     "rule": "adjverbal",
     "type": "blank",
-    "stem": "Des slogans ___ , ___ chaque fois de vives réactions dans la salle.",
+    "stem": "Des slogans ___ , ___ chaque fois de vives réactions, ont marqué toute la campagne.",
     "options": [
       {
         "key": "1",
@@ -18130,7 +18130,7 @@ const QUESTIONS = [
     "id": "av-6",
     "rule": "adjverbal",
     "type": "blank",
-    "stem": "Une pâtissière ___ , ___ particulièrement dans les desserts glacés.",
+    "stem": "Une pâtissière ___ , ___ particulièrement dans les desserts glacés, a reçu le premier prix.",
     "options": [
       {
         "key": "1",
@@ -18459,23 +18459,23 @@ const QUESTIONS = [
     "id": "av-13",
     "rule": "adjverbal",
     "type": "blank",
-    "stem": "Des titres ___ , ___ à un master local, ouvrent les mêmes portes.",
+    "stem": "Des surveillants ___ , ___ les consignes les plus simples, ont laissé la porte ouverte.",
     "options": [
       {
         "key": "1",
-        "text": "équivalant / équivalents"
+        "text": "négligeant / négligents"
       },
       {
         "key": "2",
-        "text": "équivalents / équivalant"
+        "text": "négligents / négligeant"
       },
       {
         "key": "3",
-        "text": "équivalents / équivalents"
+        "text": "négligents / négligents"
       },
       {
         "key": "4",
-        "text": "équivalant / équivalant"
+        "text": "négligeant / négligeant"
       },
       {
         "key": "A",
@@ -18487,12 +18487,12 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Adjectif « équivalents » (variable) ; participe « équivalant » (suivi de son complément « à un master »).",
+    "explanation": "Adjectif verbal « négligents » (variable, qualité) ; participe présent « négligeant » (invariable, suivi de son complément d'objet « les consignes »).",
     "why": {
-      "1": "Inversé.",
-      "2": "Correct : adjectif accordé + participe invariable.",
-      "3": "2e segment : + complément → participe équivalant.",
-      "4": "1er segment : qualité → équivalents.",
+      "1": "Les deux formes sont inversées : l'adjectif s'accorde, le participe reste invariable.",
+      "2": "Correct : adjectif accordé « négligents » + participe invariable « négligeant les consignes ».",
+      "3": "« négligents les consignes » : un adjectif ne peut pas recevoir de complément d'objet.",
+      "4": "« des surveillants négligeant » sans complément : la qualité s'exprime par l'adjectif accordé.",
       "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
       "T": "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
     },
@@ -21091,7 +21091,7 @@ const QUESTIONS = [
     "id": "dis-9",
     "rule": "discours",
     "type": "sentences",
-    "instruction": "Quelle(s) transposition(s) est/sont correcte(s) ?",
+    "instruction": "Quelle(s) phrase(s) rapporte(nt) correctement des propos au discours indirect ?",
     "options": [
       {
         "key": "1",
