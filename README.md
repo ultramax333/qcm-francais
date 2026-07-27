@@ -5,9 +5,9 @@ de grammaire. Phrases originales au format de l'examen (options 1-4 + « Aucune 
 correction immédiate avec explication par option, suivi de progression, mémo par question
 et pouce « bien construite » exportables en fin de séance.
 
-État local vérifié le 25.07.2026 : version `1.10`, cache
-`qcm-op001-v110`, 1 690 questions uniques et release
-`questions-20260725-bdca833d`. La publication sur `main` est effectuée après les
+État local vérifié le 27.07.2026 : version `1.11`, cache
+`qcm-op001-v111`, 1 690 questions uniques et release
+`questions-20260727-fd4bdfd8`. La publication sur `main` est effectuée après les
 contrôles décrits ci-dessous.
 
 ## Utilisation locale
