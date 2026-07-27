@@ -31623,7 +31623,7 @@ const QUESTIONS = [
       },
       {
         "key": "3",
-        "text": "Une partie des consignes affichées manquent de clarté."
+        "text": "Le choix des méthodes retenues surprennent une partie des parents."
       },
       {
         "key": "4",
@@ -31643,7 +31643,7 @@ const QUESTIONS = [
     "why": {
       "1": "Chaîne/reconstruction : Dans chaque phrase, le noyau sujet est singulier malgré un complément pluriel; seul le verbe singulier est correct. Option 1 : La forme applique exactement la chaîne reconstruite.",
       "2": "Chaîne/reconstruction : Dans chaque phrase, le noyau sujet est singulier malgré un complément pluriel; seul le verbe singulier est correct. Option 2 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
-      "3": "Chaîne/reconstruction : Dans chaque phrase, le noyau sujet est singulier malgré un complément pluriel; seul le verbe singulier est correct. Option 3 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+      "3": "Le noyau du sujet est « le choix », singulier : le verbe cède à l'attraction du pluriel voisin « méthodes » et devrait être « surprend ».",
       "4": "Chaîne/reconstruction : Dans chaque phrase, le noyau sujet est singulier malgré un complément pluriel; seul le verbe singulier est correct. Option 4 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
       "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
       "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
@@ -33719,7 +33719,7 @@ const QUESTIONS = [
     "why": {
       "1": "Le candidat met une minuscule au nom de peuple et des majuscules à l'adjectif et au nom de langue.",
       "2": "La réponse « Les Suissesses ont accueilli leurs collègues belges, puis toutes ont parlé français. » est correcte : Le nom désignant une personne par sa nationalité prend une majuscule; l'adjectif de nationalité et le nom de langue gardent la minuscule.",
-      "3": "Le candidat applique la majuscule au nom de peuple mais aussi, à tort, à l'adjectif de nationalité.",
+      "3": "« collègues Belges » : le mot qualifie « collègues », c'est un adjectif de nationalité et il prend la minuscule. Aucun nom de peuple ne figure dans cette phrase.",
       "4": "Le candidat met une minuscule au nom de peuple employé comme nom, malgré sa fonction clairement nominale.",
       "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
       "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
@@ -33904,7 +33904,7 @@ const QUESTIONS = [
     "explanation": "La phrase correcte reconstruit séparément le régime de chaque verbe et n'ajoute aucune reprise au relatif.",
     "why": {
       "1": "Le scripteur attribue aux deux verbes un régime qu'ils n'ont pas et choisit les relatifs par analogie.",
-      "2": "Le scripteur emploie un relatif direct alors que le verbe de la relative impose une préposition.",
+      "2": "« les personnes dont dépendent du bus » redouble la préposition : « dont » contient déjà le « de » de « dépendre de ». Il faut « les personnes qui dépendent du bus ».",
       "3": "La réponse « La mesure à laquelle nous pensons profiterait aux personnes qui dépendent du bus. » est correcte : La phrase correcte reconstruit séparément le régime de chaque verbe et n'ajoute aucune reprise au relatif.",
       "4": "Le scripteur redouble le complément déjà représenté par le pronom relatif.",
       "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
@@ -34621,19 +34621,19 @@ const QUESTIONS = [
     "options": [
       {
         "key": "1",
-        "text": "La responsable a parlé de la prolongation, mais le comité ne l'a pas encore discutée."
+        "text": "La responsable a parlé de la prolongation, mais le comité ne l'a pas encore tenu compte."
       },
       {
         "key": "2",
-        "text": "La responsable a parlé de la prolongation, mais le comité n'y a pas encore discuté."
+        "text": "La responsable a parlé de la prolongation, mais le comité n'y a pas encore tenu compte."
       },
       {
         "key": "3",
-        "text": "La responsable a parlé de la prolongation, mais le comité n'en a pas encore discuté."
+        "text": "La responsable a parlé de la prolongation, mais le comité n'en a pas encore tenu compte."
       },
       {
         "key": "4",
-        "text": "La responsable a parlé de la prolongation, mais le comité n'en a pas encore discuté de ce point."
+        "text": "La responsable a parlé de la prolongation, mais le comité n'en a pas encore tenu compte de ce point."
       },
       {
         "key": "A",
@@ -34645,12 +34645,12 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "En reprend le complément introduit par de et ne doit pas être redoublé par le groupe nominal déjà représenté.",
+    "explanation": "« tenir compte » se construit uniquement avec « de » : le complément « de la prolongation » se reprend donc par le pronom « en ». Réponse : n'en a pas encore tenu compte.",
     "why": {
-      "1": "Le candidat choisit un pronom direct alors que la reprise porte sur un complément introduit par de.",
-      "2": "Le candidat utilise y, qui reprend normalement un lieu ou un complément introduit par à.",
-      "3": "La réponse « La responsable a parlé de la prolongation, mais le comité n'en a pas encore discuté. » est correcte : En reprend le complément introduit par de et ne doit pas être redoublé par le groupe nominal déjà représenté.",
-      "4": "Le candidat redouble le complément déjà repris par en au moyen d'un groupe nominal exprimé.",
+      "1": "« ne l'a pas tenu compte » : le pronom direct est impossible, « tenir compte » exige « de », repris par « en ».",
+      "2": "« n'y a pas tenu compte » : « y » reprend un complément en « à », or la locution se construit avec « de ».",
+      "3": "La réponse « le comité n'en a pas encore tenu compte » est correcte : « en » reprend le complément en « de » de la locution « tenir compte de ».",
+      "4": "« n'en a pas tenu compte de ce point » redouble le complément déjà repris par « en ».",
       "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
       "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
     },
@@ -35489,7 +35489,7 @@ const QUESTIONS = [
     "why": {
       "1": "Le candidat sépare le verbe de son complément nominal avant que l'annonce soit complète.",
       "2": "Le candidat place les deux-points à l'intérieur de l'énumération au lieu de les mettre après le terme annonciateur.",
-      "3": "Le candidat coupe le sujet du verbe par des deux-points.",
+      "3": "Les deux-points coupent l'auxiliaire modal « doit » de l'infinitif « contenir » qu'il commande ; le sujet « Le dossier », lui, reste bien accolé à son verbe.",
       "4": "La réponse « Le dossier doit contenir trois pièces: le formulaire signé, l'attestation et la copie du passeport. » est correcte : Les deux-points suivent le groupe complet qui annonce l'énumération et ne séparent jamais le verbe de son complément ni le sujet du verbe.",
       "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
       "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
@@ -35728,8 +35728,8 @@ const QUESTIONS = [
     "explanation": "Convainquant est ici un participe présent invariable qui régit directement « le jury » et son complément.",
     "why": {
       "1": "Le candidat emploie l'adjectif convaincantes dans une construction où convaincre régit directement le jury.",
-      "2": "Le candidat donne au participe présent la graphie fautive convainquant au lieu de convaincant avec c.",
-      "3": "Le candidat emploie un adjectif singulier et une construction transitive incompatible avec le sujet pluriel.",
+      "2": "« convainquantes » accorde un participe présent qui doit rester invariable : la graphie en -qu- est bien celle du participe, c'est la marque du pluriel qui est fautive.",
+      "3": "« convaincante » est un adjectif : il ne peut pas régir le complément direct « le jury ». Il est de plus au singulier, alors que le sujet « Les candidates » est au pluriel.",
       "4": "La réponse « convainquant clairement le jury de leur expérience » est correcte : Convainquant est ici un participe présent invariable qui régit directement « le jury » et son complément.",
       "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
       "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
@@ -35909,7 +35909,7 @@ const QUESTIONS = [
     "why": {
       "1": "Le candidat accorde cent lorsqu'il est suivi et laisse vingt invariable alors qu'il termine quatre-vingts; il pluralise aussi mille.",
       "2": "Le candidat oublie le s de quatre-vingts lorsqu'il est final dans le premier nombre.",
-      "3": "Le candidat accorde cent et vingt malgré les éléments qui les suivent et pluralise mille, toujours invariable.",
+      "3": "Deux fautes : « deux cents » devrait rester invariable devant « quatre-vingts », et « milles » est impossible, mille ne prenant jamais de s. « quatre-vingts », final devant le nom, est en revanche correct.",
       "4": "La réponse « L'association a reçu deux cent quatre-vingts dossiers et distribué trois mille deux cents brochures. » est correcte : Mille est toujours invariable; cent prend un s seulement lorsqu'il est multiplié et non suivi; vingt prend un s dans quatre-vingts seulement lorsqu'aucun autre numéral ne suit.",
       "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
       "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
