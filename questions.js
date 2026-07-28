@@ -2578,7 +2578,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "Les orateurs vantaient le projet à l'___ , chacun renchérissant sur l'autre.",
+    "stem": "Les orateurs vantaient le projet à l'___, chacun renchérissant sur l'autre.",
     "options": [
       {
         "key": "1",
@@ -7038,7 +7038,7 @@ const QUESTIONS = [
     "id": "part-30",
     "rule": "participe",
     "type": "blank",
-    "stem": "Les deux équipes se sont ___ , puis se sont ___ leurs coordonnées.",
+    "stem": "Les deux équipes se sont ___, puis se sont ___ leurs coordonnées.",
     "options": [
       {
         "key": "1",
@@ -17942,7 +17942,7 @@ const QUESTIONS = [
     "id": "av-2",
     "rule": "adjverbal",
     "type": "blank",
-    "stem": "Des slogans ___ , ___ chaque fois de vives réactions, ont marqué toute la campagne.",
+    "stem": "Des slogans ___, ___ chaque fois de vives réactions, ont marqué toute la campagne.",
     "options": [
       {
         "key": "1",
@@ -17989,7 +17989,7 @@ const QUESTIONS = [
     "id": "av-3",
     "rule": "adjverbal",
     "type": "blank",
-    "stem": "Un collaborateur ___ , ___ régulièrement les consignes, fait courir un risque à tous.",
+    "stem": "Un collaborateur ___, ___ régulièrement les consignes, fait courir un risque à tous.",
     "options": [
       {
         "key": "1",
@@ -18036,7 +18036,7 @@ const QUESTIONS = [
     "id": "av-4",
     "rule": "adjverbal",
     "type": "blank",
-    "stem": "Un exposé ___ , ___ même les plus réticents, a clos le débat.",
+    "stem": "Un exposé ___, ___ même les plus réticents, a clos le débat.",
     "options": [
       {
         "key": "1",
@@ -18130,7 +18130,7 @@ const QUESTIONS = [
     "id": "av-6",
     "rule": "adjverbal",
     "type": "blank",
-    "stem": "Une pâtissière ___ , ___ particulièrement dans les desserts glacés, a reçu le premier prix.",
+    "stem": "Une pâtissière ___, ___ particulièrement dans les desserts glacés, a reçu le premier prix.",
     "options": [
       {
         "key": "1",
@@ -18459,7 +18459,7 @@ const QUESTIONS = [
     "id": "av-13",
     "rule": "adjverbal",
     "type": "blank",
-    "stem": "Des surveillants ___ , ___ les consignes les plus simples, ont laissé la porte ouverte.",
+    "stem": "Des surveillants ___, ___ les consignes les plus simples, ont laissé la porte ouverte.",
     "options": [
       {
         "key": "1",
@@ -18506,7 +18506,7 @@ const QUESTIONS = [
     "id": "av-14",
     "rule": "adjverbal",
     "type": "blank",
-    "stem": "Un comité ___ , ___ discrètement sur chaque nomination, faisait la pluie et le beau temps.",
+    "stem": "Un comité ___, ___ discrètement sur chaque nomination, faisait la pluie et le beau temps.",
     "options": [
       {
         "key": "1",
@@ -18553,7 +18553,7 @@ const QUESTIONS = [
     "id": "av-15",
     "rule": "adjverbal",
     "type": "blank",
-    "stem": "Des élèves ___ , ___ sur leurs cahiers dès la première heure, inquiètent l'infirmière scolaire.",
+    "stem": "Des élèves ___, ___ sur leurs cahiers dès la première heure, inquiètent l'infirmière scolaire.",
     "options": [
       {
         "key": "1",
@@ -18835,7 +18835,7 @@ const QUESTIONS = [
     "id": "con-1",
     "rule": "connecteurs",
     "type": "blank",
-    "stem": "Il a plu sans discontinuer ; ___ , la sortie en forêt a été annulée.",
+    "stem": "Il a plu sans discontinuer ; ___, la sortie en forêt a été annulée.",
     "options": [
       {
         "key": "1",
@@ -18882,7 +18882,7 @@ const QUESTIONS = [
     "id": "con-2",
     "rule": "connecteurs",
     "type": "blank",
-    "stem": "Le budget est très serré ; ___ , le projet reste réalisable cette année.",
+    "stem": "Le budget est très serré ; ___, le projet reste réalisable cette année.",
     "options": [
       {
         "key": "1",
@@ -18976,7 +18976,7 @@ const QUESTIONS = [
     "id": "con-4",
     "rule": "connecteurs",
     "type": "blank",
-    "stem": "Il paraissait ravi du poste ; ___ , il cherchait déjà à partir.",
+    "stem": "Il paraissait ravi du poste ; ___, il cherchait déjà à partir.",
     "options": [
       {
         "key": "1",
@@ -19117,7 +19117,7 @@ const QUESTIONS = [
     "id": "con-7",
     "rule": "connecteurs",
     "type": "blank",
-    "stem": "Tous les badges ont été rendus ; ___ , il en manque trois au décompte : quelqu'un se trompe.",
+    "stem": "Tous les badges ont été rendus ; ___, il en manque trois au décompte : quelqu'un se trompe.",
     "options": [
       {
         "key": "1",
@@ -19540,7 +19540,7 @@ const QUESTIONS = [
     "id": "con-16",
     "rule": "connecteurs",
     "type": "blank",
-    "stem": "Il pleut à verse ; ___ , le match est maintenu.",
+    "stem": "Il pleut à verse ; ___, le match est maintenu.",
     "options": [
       {
         "key": "1",
@@ -20322,7 +20322,7 @@ const QUESTIONS = [
     "answer": "1",
     "explanation": "« etc. » : virgule avant, UN point abréviatif, jamais de points de suspension ni de double point.",
     "why": {
-      "1": "Correcte : « , etc. ».",
+      "1": "Correcte : «, etc. ».",
       "2": "« etc… » : points de suspension interdits.",
       "3": "« ect. » : coquille classique.",
       "4": "Virgule manquante + double point final.",
@@ -20402,7 +20402,7 @@ const QUESTIONS = [
       },
       {
         "key": "4",
-        "text": "Le budget — , voté hier soir — entre en vigueur au 1er janvier."
+        "text": "Le budget —, voté hier soir — entre en vigueur au 1er janvier."
       },
       {
         "key": "A",
@@ -39086,7 +39086,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "Renvoyez le formulaire ___ , sans le corriger : ___ annotations fausseraient le contrôle.",
+    "stem": "Renvoyez le formulaire ___, sans le corriger : ___ annotations fausseraient le contrôle.",
     "options": [
       {
         "key": "1",
@@ -39744,7 +39744,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "Le récit fondateur du canton relève du ___ ; les ___ , elles, ont troué les costumes d'époque du musée.",
+    "stem": "Le récit fondateur du canton relève du ___ ; les ___, elles, ont troué les costumes d'époque du musée.",
     "options": [
       {
         "key": "1",
@@ -40120,7 +40120,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "Un examen ___ portera sur les chapitres 1 à 3 ; l'arbitre, accusé d'être ___ , a été récusé.",
+    "stem": "Un examen ___ portera sur les chapitres 1 à 3 ; l'arbitre, accusé d'être ___, a été récusé.",
     "options": [
       {
         "key": "1",
@@ -42188,7 +42188,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "___ , le préau et la salle des maîtres seront repeints pendant l'été.",
+    "stem": "___, le préau et la salle des maîtres seront repeints pendant l'été.",
     "options": [
       {
         "key": "1",
@@ -43128,7 +43128,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "C'est dans ce bâtiment que ___ , en 1833, la première école normale du canton.",
+    "stem": "C'est dans ce bâtiment que ___, en 1833, la première école normale du canton.",
     "options": [
       {
         "key": "1",
@@ -46700,7 +46700,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "Le parquet de l'aula, fraîchement ___ , brille sous les projecteurs ; interdiction d'y marcher avec du ___ à ongles frais, plaisante le concierge.",
+    "stem": "Le parquet de l'aula, fraîchement ___, brille sous les projecteurs ; interdiction d'y marcher avec du ___ à ongles frais, plaisante le concierge.",
     "options": [
       {
         "key": "1",
@@ -47687,7 +47687,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "Qu'il ___ beau ou que l'orage ___ , la cérémonie des promotions aura lieu dans la cour couverte.",
+    "stem": "Qu'il ___ beau ou que l'orage ___, la cérémonie des promotions aura lieu dans la cour couverte.",
     "options": [
       {
         "key": "1",
@@ -48251,7 +48251,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "Chaque parti promet de désengorger la ligne ; ___ , rien n'a changé pour les pendulaires depuis un an.",
+    "stem": "Chaque parti promet de désengorger la ligne ; ___, rien n'a changé pour les pendulaires depuis un an.",
     "options": [
       {
         "key": "1",
@@ -48721,7 +48721,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "Le gros œuvre de la salle triple est terminé ; ___ , les finitions occuperont tout l'automne.",
+    "stem": "Le gros œuvre de la salle triple est terminé ; ___, les finitions occuperont tout l'automne.",
     "options": [
       {
         "key": "1",
@@ -49050,7 +49050,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "Où que votre stage d'observation vous ___ , le même contrat type s'applique.",
+    "stem": "Où que votre stage d'observation vous ___, le même contrat type s'applique.",
     "options": [
       {
         "key": "1",
@@ -50272,7 +50272,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "Pour le camp, chaque groupe montera sa ___ ; ma ___ , monitrice de longue date, supervisera l'installation.",
+    "stem": "Pour le camp, chaque groupe montera sa ___ ; ma ___, monitrice de longue date, supervisera l'installation.",
     "options": [
       {
         "key": "1",
@@ -50977,7 +50977,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "___ , le calendrier des travaux est serré ; mais l'équipe de conciergerie est rodée à ce genre d'été.",
+    "stem": "___, le calendrier des travaux est serré ; mais l'équipe de conciergerie est rodée à ce genre d'été.",
     "options": [
       {
         "key": "1",
@@ -52763,7 +52763,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "La séance plénière a été écourtée d'une heure ; ___ , plus de la moitié des membres étaient excusés.",
+    "stem": "La séance plénière a été écourtée d'une heure ; ___, plus de la moitié des membres étaient excusés.",
     "options": [
       {
         "key": "1",
@@ -53233,7 +53233,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "Le dossier de rénovation est solide et bien chiffré ; ___ , il faudra traiter la question du parking, qui en est indépendante.",
+    "stem": "Le dossier de rénovation est solide et bien chiffré ; ___, il faudra traiter la question du parking, qui en est indépendante.",
     "options": [
       {
         "key": "1",
@@ -53844,7 +53844,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "Elle a rangé ___ raquette dans le local ; ___ , personne ne l'a revue depuis le tournoi.",
+    "stem": "Elle a rangé ___ raquette dans le local ; ___, personne ne l'a revue depuis le tournoi.",
     "options": [
       {
         "key": "1",
@@ -53891,7 +53891,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "___ , le car scolaire a du retard ; il en a d'ailleurs eu ___ ce mois-ci, exactement trois.",
+    "stem": "___, le car scolaire a du retard ; il en a d'ailleurs eu ___ ce mois-ci, exactement trois.",
     "options": [
       {
         "key": "1",
@@ -54173,7 +54173,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "Le gymnase est en travaux jusqu'en octobre ; ___ , les cours d'éducation physique auront lieu en plein air.",
+    "stem": "Le gymnase est en travaux jusqu'en octobre ; ___, les cours d'éducation physique auront lieu en plein air.",
     "options": [
       {
         "key": "1",
@@ -54596,7 +54596,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "Les débats budgétaires furent vifs, parfois houleux ; le résultat, ___ , reste conforme aux prévisions de septembre.",
+    "stem": "Les débats budgétaires furent vifs, parfois houleux ; le résultat, ___, reste conforme aux prévisions de septembre.",
     "options": [
       {
         "key": "1",
@@ -55536,7 +55536,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "Les crédits de rénovation sont votés depuis mars ; ___ , le chantier ne commencera qu'en 2028.",
+    "stem": "Les crédits de rénovation sont votés depuis mars ; ___, le chantier ne commencera qu'en 2028.",
     "options": [
       {
         "key": "1",
@@ -56006,7 +56006,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "Les effectifs du collège baissent depuis trois rentrées ; ___ , rien ne justifie une fermeture immédiate.",
+    "stem": "Les effectifs du collège baissent depuis trois rentrées ; ___, rien ne justifie une fermeture immédiate.",
     "options": [
       {
         "key": "1",
@@ -56946,7 +56946,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "L'original du diplôme est exigé pour l'inscription ; ___ , une copie certifiée conforme sera acceptée.",
+    "stem": "L'original du diplôme est exigé pour l'inscription ; ___, une copie certifiée conforme sera acceptée.",
     "options": [
       {
         "key": "1",
@@ -57792,7 +57792,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "La salle de gymnastique sera fermée pour désamiantage ; ___ , les cours auront lieu au centre sportif voisin.",
+    "stem": "La salle de gymnastique sera fermée pour désamiantage ; ___, les cours auront lieu au centre sportif voisin.",
     "options": [
       {
         "key": "1",
@@ -58544,7 +58544,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "La séance de reprise est fixée à ___ , comme convenu lors du dernier conseil.",
+    "stem": "La séance de reprise est fixée à ___, comme convenu lors du dernier conseil.",
     "options": [
       {
         "key": "1",
@@ -58826,7 +58826,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "Le stock de fournitures est presque épuisé ; ___ , une commande urgente a été passée ce matin.",
+    "stem": "Le stock de fournitures est presque épuisé ; ___, une commande urgente a été passée ce matin.",
     "options": [
       {
         "key": "1",
@@ -59202,7 +59202,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "Quand on télétravaille depuis chez ___ , la frontière entre vie privée et vie professionnelle s'estompe vite.",
+    "stem": "Quand on télétravaille depuis chez ___, la frontière entre vie privée et vie professionnelle s'estompe vite.",
     "options": [
       {
         "key": "1",
@@ -60706,7 +60706,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "La chaudière a été révisée en septembre ; ___ , les pannes se sont multipliées tout l'hiver.",
+    "stem": "La chaudière a été révisée en septembre ; ___, les pannes se sont multipliées tout l'hiver.",
     "options": [
       {
         "key": "1",
@@ -61646,7 +61646,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "Le sentier du bisse reste officiellement déconseillé ; ___ , plusieurs classes l'empruntent chaque semaine.",
+    "stem": "Le sentier du bisse reste officiellement déconseillé ; ___, plusieurs classes l'empruntent chaque semaine.",
     "options": [
       {
         "key": "1",
@@ -62586,7 +62586,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "Le comité tablait sur une salle comble pour financer le voyage ; ___ , la moitié des billets restent invendus.",
+    "stem": "Le comité tablait sur une salle comble pour financer le voyage ; ___, la moitié des billets restent invendus.",
     "options": [
       {
         "key": "1",
@@ -63244,7 +63244,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "Merci de ___ vos disponibilités dans le tableau ; une fois ___ , elles ne pourront plus être modifiées.",
+    "stem": "Merci de ___ vos disponibilités dans le tableau ; une fois ___, elles ne pourront plus être modifiées.",
     "options": [
       {
         "key": "1",
@@ -63432,7 +63432,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "Ton badge ouvre encore la salle des maîtres ; ___ , en revanche, reste bloqué depuis la mise à jour.",
+    "stem": "Ton badge ouvre encore la salle des maîtres ; ___, en revanche, reste bloqué depuis la mise à jour.",
     "options": [
       {
         "key": "1",
@@ -63761,7 +63761,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "stem": "___ vous ___ , présentez une pièce d'identité à l'entrée du centre d'examen.",
+    "stem": "___ vous ___, présentez une pièce d'identité à l'entrée du centre d'examen.",
     "options": [
       {
         "key": "1",
@@ -65171,7 +65171,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "stem": "___ , rien ne presse : le délai de recours court encore jusqu'à la fin du mois de mars.",
+    "stem": "___, rien ne presse : le délai de recours court encore jusqu'à la fin du mois de mars.",
     "options": [
       {
         "key": "1",
@@ -66064,7 +66064,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "stem": "Les inscriptions dépassent déjà toutes les prévisions ; ___ , une seconde session devra sans doute être ouverte.",
+    "stem": "Les inscriptions dépassent déjà toutes les prévisions ; ___, une seconde session devra sans doute être ouverte.",
     "options": [
       {
         "key": "1",
@@ -66205,7 +66205,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "stem": "Les documents demandés se trouvent ___ , dans le tiroir du bas ; range-les ___ après consultation.",
+    "stem": "Les documents demandés se trouvent ___, dans le tiroir du bas ; range-les ___ après consultation.",
     "options": [
       {
         "key": "1",
@@ -66863,7 +66863,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "stem": "Le crédit de rénovation a été voté à l'unanimité ; ___ , les travaux pourront démarrer sans le moindre retard.",
+    "stem": "Le crédit de rénovation a été voté à l'unanimité ; ___, les travaux pourront démarrer sans le moindre retard.",
     "options": [
       {
         "key": "1",
@@ -68179,7 +68179,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "stem": "Le nouveau règlement a été jugé équilibré ; ___ , personne au sein du corps enseignant n'a demandé sa révision.",
+    "stem": "Le nouveau règlement a été jugé équilibré ; ___, personne au sein du corps enseignant n'a demandé sa révision.",
     "options": [
       {
         "key": "1",
@@ -69307,7 +69307,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "stem": "Rends ton dossier d'inscription avant vendredi ; ___ , ta participation au concours sera annulée.",
+    "stem": "Rends ton dossier d'inscription avant vendredi ; ___, ta participation au concours sera annulée.",
     "options": [
       {
         "key": "1",
@@ -69401,7 +69401,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "stem": "Par ses remarques sans cesse ___ , l'élève cherchait l'attention ; en ___ ouvertement le surveillant, il a envenimé la scène.",
+    "stem": "Par ses remarques sans cesse ___, l'élève cherchait l'attention ; en ___ ouvertement le surveillant, il a envenimé la scène.",
     "options": [
       {
         "key": "1",
@@ -71328,7 +71328,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "stem": "___ nouvelle remplaçante ___ tout de suite bien accueilli ; ___ , au moins, chacun s'est senti à l'aise.",
+    "stem": "___ nouvelle remplaçante ___ tout de suite bien accueilli ; ___, au moins, chacun s'est senti à l'aise.",
     "options": [
       {
         "key": "1",
@@ -71356,7 +71356,7 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : « la » est l'article (ou le pronom) ; « l'a » = le pronom « l' » + le verbe « a » (avoir) ; « là » avec accent marque le lieu. Test : « l'a » se développe en « l'avait » ; « là » se remplace par « ici ». Dans cette phrase : « ___ remplaçante » = article → La ; « ___ bien accueilli » = l'avait accueilli → l'a ; « ___ , au moins » = ici → là. Donc : La / l'a / là — option 4.",
+    "explanation": "Règle : « la » est l'article (ou le pronom) ; « l'a » = le pronom « l' » + le verbe « a » (avoir) ; « là » avec accent marque le lieu. Test : « l'a » se développe en « l'avait » ; « là » se remplace par « ici ». Dans cette phrase : « ___ remplaçante » = article → La ; « ___ bien accueilli » = l'avait accueilli → l'a ; « ___, au moins » = ici → là. Donc : La / l'a / là — option 4.",
     "why": {
       "1": "« La bien accueilli » : « l'avait accueilli » s'écrit l'a (pronom + verbe).",
       "2": "« L'a nouvelle remplaçante » : devant le nom, c'est l'article La.",
@@ -74806,7 +74806,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "stem": "Les causes exactes de cette amélioration restent discutées ; ___ , les résultats scolaires de la classe ont nettement progressé.",
+    "stem": "Les causes exactes de cette amélioration restent discutées ; ___, les résultats scolaires de la classe ont nettement progressé.",
     "options": [
       {
         "key": "1",
@@ -74900,7 +74900,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "stem": "Les jours ___ immédiatement la rentrée sont toujours chargés ; la semaine ___ , au contraire, tout paraît calme.",
+    "stem": "Les jours ___ immédiatement la rentrée sont toujours chargés ; la semaine ___, au contraire, tout paraît calme.",
     "options": [
       {
         "key": "1",
@@ -75793,7 +75793,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "stem": "Les enseignants ___ à ce syndicat votent aujourd'hui ; en y ___ , chacun accepte d'en respecter la charte.",
+    "stem": "Les enseignants ___ à ce syndicat votent aujourd'hui ; en y ___, chacun accepte d'en respecter la charte.",
     "options": [
       {
         "key": "1",
@@ -77062,7 +77062,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "stem": "Il faut désigner un référent numérique par bâtiment ; ___ , ce sera le maître titulaire de la classe la plus équipée.",
+    "stem": "Il faut désigner un référent numérique par bâtiment ; ___, ce sera le maître titulaire de la classe la plus équipée.",
     "options": [
       {
         "key": "1",
@@ -77250,7 +77250,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "stem": "___ salle de classe est bien plus lumineuse que la ___ , qui donne malheureusement sur la cour intérieure.",
+    "stem": "___ salle de classe est bien plus lumineuse que la ___, qui donne malheureusement sur la cour intérieure.",
     "options": [
       {
         "key": "1",
@@ -78848,7 +78848,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "stem": "Le maître a donné les toutes dernières consignes pour la sortie ; ___ , il a rapidement quitté la salle des maîtres.",
+    "stem": "Le maître a donné les toutes dernières consignes pour la sortie ; ___, il a rapidement quitté la salle des maîtres.",
     "options": [
       {
         "key": "1",
