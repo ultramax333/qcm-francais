@@ -5,10 +5,14 @@ de grammaire. Phrases originales au format de l'examen (options 1-4 + « Aucune 
 correction immédiate avec explication par option, suivi de progression, mémo par question,
 pouce « bien construite » et demande explicite « À supprimer » exportables en fin de
 séance. Le bilan regroupe les erreurs par mécanisme grammatical canonique et explique
-chaque règle pas à pas.
+chaque règle pas à pas. La page permanente **Mes erreurs** recalcule un tableau
+cumulatif depuis l'historique local : erreurs identiques regroupées, tentatives,
+taux d'erreur, séances concernées, récence, réussites depuis la dernière erreur
+et distribution des distracteurs choisis. Chaque distracteur conserve son option,
+son `misconception_id` et son compteur ; une cause absente reste `UNK`.
 
-État local vérifié le 28.07.2026 : version `1.13`, cache
-`qcm-op001-v113`, 1 690 questions uniques et release
+État local vérifié le 28.07.2026 : version `1.14`, cache
+`qcm-op001-v114`, 1 690 questions uniques et release
 `questions-20260727-fd4bdfd8`. La publication sur `main` est effectuée après les
 contrôles décrits ci-dessous.
 
@@ -46,6 +50,13 @@ Le fichier est nommé
 banque, les classifications disponibles et les codes de distracteur sont conservés
 dans cet export sans texte historique supplémentaire.
 
+À partir de la version 1.14, toute séance terminée reste dans **Séances à
+synchroniser** jusqu'à un envoi confirmé. Le tableau local est immédiat et
+rétroactif pour les historiques qui contiennent encore leur journal détaillé.
+La génération future n'utilise pas ce tableau comme un second compteur : elle
+importe les séances brutes, les déduplique par `session_id`, puis applique les
+seuils, la récence et la confiance définis dans le pipeline.
+
 La banque doit être enrichie avec `analyse_gpt/pipeline_HEP.py integrate-js`.
 Cette commande met automatiquement `BANK_RELEASE` à jour dans `config.js`; une
 intégration manuelle de `questions.js` rendrait l'identifiant de banque obsolète.
@@ -57,6 +68,8 @@ intégration manuelle de `questions.js` rendrait l'identifiant de banque obsolè
   prévoit aussi des identifiants encore absents de la banque (`avoir_suivi_infinitif_sujet_action`,
   `laisse_suivi_infinitif`, pronominaux réfléchi/réciproque/essentiellement pronominal);
   ils ne sont jamais appliqués sans métadonnée canonique correspondante.
+- `error-profile.js` — agrégation cumulative locale, sans dupliquer les séances
+  dans la mémoire de génération
 - `questions.js` — la banque active de 1 690 questions
 - `config.js` — configuration (ID client Google Drive)
 - `manifest.json`, `sw.js`, `icon.svg` — installation PWA / hors-ligne
@@ -66,5 +79,6 @@ intégration manuelle de `questions.js` rendrait l'identifiant de banque obsolè
 
 ```powershell
 node test_pedagogy.js
+node test_error_profile.js
 python -m pytest ..\analyse_gpt\test_feedback_import_HEP.py -q
 ```

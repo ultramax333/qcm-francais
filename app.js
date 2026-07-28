@@ -7,6 +7,7 @@
   const APP_VERSION = (window.CONFIG && CONFIG.APP_VERSION) || '';
   const BANK_RELEASE = (window.CONFIG && CONFIG.BANK_RELEASE) || 'UNK';
   const PEDAGOGY = window.HEP_PEDAGOGY;
+  const ERROR_PROFILE = window.HEP_ERROR_PROFILE;
 
   let state = { view: 'home' };
 
@@ -38,7 +39,9 @@
   function savePending(list) { localStorage.setItem(PENDING_KEY, JSON.stringify(list)); }
   function pushPending(item) {
     const list = loadPending();
-    list.push(item);
+    const index = list.findIndex((pending) => pending.id === item.id);
+    if (index >= 0) list[index] = item;
+    else list.push(item);
     savePending(list);
   }
   function removePending(id) {
@@ -49,7 +52,7 @@
   // Fusionne toutes les notes en attente en un seul document Markdown à envoyer d'un coup.
   function buildCombinedFeedback(list) {
     const lines = [];
-    lines.push(`# Notes QCM — lot de ${list.length} séance(s)`);
+    lines.push(`# Feedback QCM — lot de ${list.length} séance(s)`);
     lines.push(`Généré le ${new Date().toLocaleString('fr-CH')}`);
     list.forEach((p, i) => {
       lines.push('');
@@ -311,6 +314,7 @@
     else if (state.view === 'result') APP.appendChild(renderResult());
     else if (state.view === 'history') APP.appendChild(renderHistory());
     else if (state.view === 'pending') APP.appendChild(renderPending());
+    else if (state.view === 'errors') APP.appendChild(renderErrorDashboard());
   }
 
   // ---------- views ----------
@@ -322,12 +326,13 @@
       el('div', { class: 'subtitle', text: 'Entraînement par règle, phrases inédites' }),
     ]));
 
-    // Carte « Notes en attente » (mémos/pouces pas encore envoyés)
+    // Séances brutes non encore synchronisées. Le pipeline importe ensuite
+    // chaque session de façon idempotente pour éviter tout double comptage.
     const nPending = loadPending().length;
     if (nPending > 0) {
       const pd = el('button', { class: 'special-card pending-card' }, [
-        el('div', { class: 'rule-name', text: `📤 Notes en attente (${nPending} séance${nPending > 1 ? 's' : ''})` }),
-        el('div', { class: 'rule-desc', text: 'Mémos et 👍 déjà écrits, pas encore envoyés — regrouper et envoyer maintenant.' }),
+        el('div', { class: 'rule-name', text: `📤 Séances à synchroniser (${nPending})` }),
+        el('div', { class: 'rule-desc', text: 'Envoie-les pour que tes erreurs puissent peser sur les futurs quiz.' }),
       ]);
       pd.addEventListener('click', () => { state = { view: 'pending' }; render(); });
       wrap.appendChild(pd);
@@ -343,6 +348,20 @@
       rv.addEventListener('click', () => startReview());
       wrap.appendChild(rv);
     }
+
+    const errorProfile = ERROR_PROFILE ? ERROR_PROFILE.build(loadHistory()) : null;
+    const errorRows = errorProfile ? errorProfile.rows.filter((row) => row.errors > 0).length : 0;
+    const errorCard = el('button', { class: 'special-card errors-card' }, [
+      el('div', { class: 'rule-name', text: '📊 Mes erreurs' }),
+      el('div', {
+        class: 'rule-desc',
+        text: errorProfile && errorProfile.attempts
+          ? `${errorProfile.errors} erreur(s) sur ${errorProfile.attempts} réponse(s) · ${errorRows} mécanisme(s)`
+          : 'Tableau cumulatif détaillé par mécanisme grammatical.',
+      }),
+    ]);
+    errorCard.addEventListener('click', () => { state = { view: 'errors' }; render(); });
+    wrap.appendChild(errorCard);
 
     // Carte « Examen blanc »
     const exam = el('button', { class: 'special-card exam-card' }, [
@@ -738,16 +757,17 @@
       }),
     };
     saveAttempt(entry);
-    // Conserve la séance dans les notes en attente si elle contient un mémo,
-    // un 👍 ou une demande de suppression — indépendamment de l'envoi immédiat,
-    // pour pouvoir l'envoyer plus
-    // tard (regroupée avec d'autres séances) depuis l'accueil.
-    const memoCount = log.filter((l) => l.memo).length;
-    const likeCount = log.filter((l) => l.like).length;
-    const deletionCount = log.filter((l) => l.deletionRequested).length;
-    if (memoCount > 0 || likeCount > 0 || deletionCount > 0) {
-      pushPending({ id: entry.date, date: entry.date, ruleId: entry.ruleId, correct, total: log.length, feedback: entry.feedback });
-    }
+    // Toute séance terminée reste synchronisable. Le tableau est immédiat en
+    // local; la génération future ne reçoit que les sessions effectivement
+    // envoyées puis importées, avec leur session_id idempotent.
+    pushPending({
+      id: entry.date,
+      date: entry.date,
+      ruleId: entry.ruleId,
+      correct,
+      total: log.length,
+      feedback: entry.feedback,
+    });
     state = { view: 'result', entry };
     render();
   }
@@ -994,6 +1014,162 @@
     return wrap;
   }
 
+  function renderErrorDashboard() {
+    const wrap = el('div', {});
+    const nav = el('div', { class: 'top-nav' }, [
+      el('button', { class: 'back', text: '← Accueil' }),
+      el('span', { class: 'version-tag', text: APP_VERSION ? 'v' + APP_VERSION : '' }),
+    ]);
+    nav.querySelector('.back').addEventListener('click', () => { state = { view: 'home' }; render(); });
+    wrap.appendChild(nav);
+
+    wrap.appendChild(el('div', { class: 'header' }, [
+      el('div', { class: 'title', text: 'Mes erreurs' }),
+      el('div', {
+        class: 'subtitle',
+        text: 'Cumul détaillé des séances conservées sur cet appareil.',
+      }),
+    ]));
+
+    if (!ERROR_PROFILE) {
+      wrap.appendChild(el('div', {
+        class: 'empty-state',
+        text: 'Le module de statistiques détaillées n’est pas disponible.',
+      }));
+      return wrap;
+    }
+
+    const profile = ERROR_PROFILE.build(loadHistory());
+    const rows = profile.rows.filter((row) => row.errors > 0);
+    const rate = profile.attempts ? Math.round(profile.errorRate * 100) : 0;
+    const repeatedSignals = rows.filter((row) => row.errors >= 2 && row.errorSessions >= 2).length;
+
+    const summary = el('div', { class: 'error-summary-grid' }, [
+      el('div', { class: 'error-summary-stat' }, [
+        el('strong', { text: String(profile.errors) }),
+        el('span', { text: 'erreurs' }),
+      ]),
+      el('div', { class: 'error-summary-stat' }, [
+        el('strong', { text: String(profile.attempts) }),
+        el('span', { text: 'réponses' }),
+      ]),
+      el('div', { class: 'error-summary-stat' }, [
+        el('strong', { text: `${rate} %` }),
+        el('span', { text: 'taux d’erreur' }),
+      ]),
+      el('div', { class: 'error-summary-stat' }, [
+        el('strong', { text: String(repeatedSignals) }),
+        el('span', { text: 'signaux répétés' }),
+      ]),
+    ]);
+    wrap.appendChild(summary);
+
+    const syncCount = loadPending().length;
+    const syncBox = el('div', { class: 'error-sync-note' }, [
+      el('div', {
+        text: syncCount
+          ? `${syncCount} séance(s) attendent encore leur synchronisation.`
+          : 'Toutes les séances marquées pour synchronisation ont été envoyées depuis cet appareil.',
+      }),
+      el('div', {
+        class: 'error-sync-detail',
+        text: 'Le tableau local est immédiat. Pour la génération, le pipeline utilise les séances envoyées, les déduplique par session, puis applique récence, confiance et importance d’examen.',
+      }),
+    ]);
+    if (syncCount) {
+      const syncButton = el('button', { class: 'btn secondary', text: 'Synchroniser maintenant' });
+      syncButton.addEventListener('click', () => { state = { view: 'pending' }; render(); });
+      syncBox.appendChild(syncButton);
+    }
+    wrap.appendChild(syncBox);
+
+    if (!rows.length) {
+      wrap.appendChild(el('div', {
+        class: 'empty-state',
+        text: profile.attempts
+          ? 'Aucune erreur enregistrée — bravo !'
+          : 'Termine un quiz pour commencer ton tableau cumulatif.',
+      }));
+      return wrap;
+    }
+
+    const tableWrap = el('div', { class: 'error-table-wrap' });
+    const table = el('table', { class: 'error-table' });
+    const head = el('thead', {}, [
+      el('tr', {}, [
+        el('th', { text: 'Règle précise' }),
+        el('th', { text: 'Erreurs' }),
+        el('th', { text: 'Essais' }),
+        el('th', { text: 'Taux' }),
+        el('th', { text: 'Séances' }),
+        el('th', { text: 'Distracteurs choisis' }),
+        el('th', { text: 'Progrès' }),
+        el('th', { text: 'Dernière erreur' }),
+      ]),
+    ]);
+    table.appendChild(head);
+    const body = el('tbody', {});
+
+    rows.forEach((row) => {
+      const description = PEDAGOGY
+        ? PEDAGOGY.describe(
+          row.family === 'UNK' ? null : row.family,
+          row.mechanismId === 'UNK' ? null : row.mechanismId,
+          row.tenseId === 'UNK' ? null : row.tenseId,
+          row.detailId === 'UNK' ? null : row.detailId
+        )
+        : null;
+      const label = description
+        ? `${description.familyLabel} — ${description.mechanismLabel}`
+        : `${row.family} — ${row.mechanismId}`;
+      const path = description ? description.path.join(' → ') : 'Métadonnées non disponibles';
+      const streak = row.currentCorrectStreak
+        ? `${row.currentCorrectStreak} réussite(s) depuis`
+        : 'À retravailler';
+      const distractorCell = el('td', { class: 'error-distractors' });
+      row.distractors.forEach((distractor) => {
+        const readableCode = distractor.misconceptionId === 'UNK'
+          ? 'cause non classée'
+          : distractor.misconceptionId.replace(/_/g, ' ');
+        distractorCell.appendChild(el('div', {
+          class: 'error-distractor',
+          text: `choix ${distractor.selected} · ${readableCode} × ${distractor.count}`,
+          title: `misconception_id=${distractor.misconceptionId}`,
+        }));
+      });
+
+      body.appendChild(el('tr', {}, [
+        el('td', { class: 'error-rule-cell' }, [
+          el('div', { class: 'error-rule-label', text: label }),
+          el('div', { class: 'error-rule-path', text: path }),
+        ]),
+        el('td', { class: 'error-number bad-number', text: String(row.errors) }),
+        el('td', { class: 'error-number', text: String(row.attempts) }),
+        el('td', { class: 'error-number', text: `${Math.round(row.errorRate * 100)} %` }),
+        el('td', {
+          class: 'error-number',
+          text: `${row.errorSessions}/${row.sessions}`,
+          title: 'Séances avec au moins une erreur / séances où ce mécanisme a été rencontré',
+        }),
+        distractorCell,
+        el('td', { class: 'error-progress', text: streak }),
+        el('td', {
+          class: 'error-date',
+          text: row.lastError ? formatDate(row.lastError) : '—',
+        }),
+      ]));
+    });
+
+    table.appendChild(body);
+    tableWrap.appendChild(table);
+    wrap.appendChild(tableWrap);
+    wrap.appendChild(el('div', {
+      class: 'error-footnote',
+      text: 'Une ligne correspond à un même chemin famille + mécanisme + détail + temps. Les distracteurs indiquent le choix erroné et sa cause codée ; UNK reste non classé, sans interprétation inventée.',
+    }));
+    return wrap;
+  }
+
   function renderHistory() {
     const wrap = el('div', {});
     const nav = el('div', { class: 'top-nav' }, [
@@ -1039,13 +1215,13 @@
     wrap.appendChild(nav);
 
     wrap.appendChild(el('div', { class: 'header' }, [
-      el('div', { class: 'title', text: 'Notes en attente' }),
-      el('div', { class: 'subtitle', text: 'Séances commentées pas encore envoyées' }),
+      el('div', { class: 'title', text: 'Séances à synchroniser' }),
+      el('div', { class: 'subtitle', text: 'Tentatives pas encore envoyées au système de pondération' }),
     ]));
 
     const pending = loadPending();
     if (pending.length === 0) {
-      wrap.appendChild(el('div', { class: 'empty-state', text: 'Aucune note en attente.' }));
+      wrap.appendChild(el('div', { class: 'empty-state', text: 'Aucune séance en attente.' }));
       return wrap;
     }
 
@@ -1122,7 +1298,11 @@
 
     const clearLink = el('div', { class: 'footer-link', text: 'Vider la liste sans envoyer' });
     clearLink.addEventListener('click', () => {
-      if (confirm('Supprimer ces notes en attente sans les envoyer ?')) { clearPending(); state = { view: 'home' }; render(); }
+      if (confirm('Supprimer ces séances en attente sans les envoyer ? Elles resteront visibles dans le tableau local, mais ne pèseront pas sur la génération.')) {
+        clearPending();
+        state = { view: 'home' };
+        render();
+      }
     });
     wrap.appendChild(clearLink);
 

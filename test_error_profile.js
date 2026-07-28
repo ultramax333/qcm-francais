@@ -1,0 +1,86 @@
+'use strict';
+
+const assert = require('assert');
+const profile = require('./error-profile.js');
+
+const history = [
+  {
+    date: '2026-07-20T10:00:00Z',
+    sessionId: 's1',
+    log: [
+      {
+        id: 'q1', correct: false, selected: '2', misconceptionId: 'cod_apres_suppose',
+        family: 'accord_participe_passe',
+        mechanismId: 'avoir_cvd_avant', detailId: 'pronom_relatif_que', tenseId: 'passe_compose',
+      },
+      {
+        id: 'q2', correct: true, family: 'accord_participe_passe',
+        mechanismId: 'avoir_cvd_avant', detailId: 'pronom_relatif_que', tenseId: 'passe_compose',
+      },
+    ],
+  },
+  {
+    date: '2026-07-21T10:00:00Z',
+    sessionId: 's2',
+    log: [
+      {
+        id: 'q3', correct: false, selected: '2', misconceptionId: 'cod_apres_suppose',
+        family: 'accord_participe_passe',
+        mechanismId: 'avoir_cvd_avant', detailId: 'pronom_relatif_que', tenseId: 'passe_compose',
+      },
+      {
+        id: 'q4', correct: false, selected: '4', misconceptionId: null,
+        family: null, mechanismId: null,
+        detailId: null, tenseId: null,
+      },
+    ],
+  },
+  {
+    date: '2026-07-22T10:00:00Z',
+    sessionId: 's3',
+    log: [
+      {
+        id: 'q5', correct: true, family: 'accord_participe_passe',
+        mechanismId: 'avoir_cvd_avant', detailId: 'pronom_relatif_que', tenseId: 'passe_compose',
+      },
+    ],
+  },
+];
+
+const result = profile.build(history);
+assert.strictEqual(result.schemaVersion, 'hep-local-error-profile/1.0');
+assert.strictEqual(result.sessions, 3);
+assert.strictEqual(result.attempts, 5);
+assert.strictEqual(result.errors, 3);
+assert.strictEqual(result.knownErrors, 2);
+assert.strictEqual(result.rows.length, 2);
+
+const known = result.rows.find((row) => row.mechanismId === 'avoir_cvd_avant');
+assert.strictEqual(known.attempts, 4);
+assert.strictEqual(known.errors, 2);
+assert.strictEqual(known.sessions, 3);
+assert.strictEqual(known.errorSessions, 2);
+assert.strictEqual(known.currentCorrectStreak, 1);
+assert.deepStrictEqual(known.questionIds, ['q1', 'q2', 'q3', 'q5']);
+assert.deepStrictEqual(known.distractors, [
+  { misconceptionId: 'cod_apres_suppose', selected: '2', count: 2 },
+]);
+
+const unknown = result.rows.find((row) => row.mechanismId === 'UNK');
+assert.strictEqual(unknown.errors, 1);
+assert.strictEqual(unknown.errorRate, 1);
+assert.deepStrictEqual(unknown.distractors, [
+  { misconceptionId: 'UNK', selected: '4', count: 1 },
+]);
+
+assert.deepStrictEqual(profile.build([]), {
+  schemaVersion: 'hep-local-error-profile/1.0',
+  sessions: 0,
+  attempts: 0,
+  errors: 0,
+  errorRate: 0,
+  knownErrors: 0,
+  rows: [],
+});
+
+console.log('OK — profil cumulatif des erreurs.');
