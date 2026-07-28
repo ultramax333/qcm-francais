@@ -250,6 +250,23 @@ p { margin: 0; }
   color: #86efac;
   font-weight: 600;
 }
+.deletion-btn {
+  align-self: flex-start;
+  background: transparent;
+  color: #fca5a5;
+  border: 1px solid rgba(239, 68, 68, 0.55);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.82rem;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.deletion-btn.active {
+  background: rgba(239, 68, 68, 0.18);
+  border-color: var(--bad);
+  color: #fecaca;
+  font-weight: 700;
+}
 
 .memo-label {
   font-size: 0.78rem;
@@ -346,6 +363,7 @@ p { margin: 0; }
 /* Barre d'outils compacte sous la question (mode apprentissage) */
 .q-toolbar {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin-top: 16px;
   align-items: center;
@@ -385,6 +403,71 @@ p { margin: 0; }
 .missed-answers { font-size: 0.8rem; color: var(--text-dim); margin-top: 4px; }
 .missed-expl { font-size: 0.82rem; color: var(--text-dim); margin-top: 6px; border-top: 1px dashed var(--border); padding-top: 6px; }
 .missed-none { text-align: center; color: var(--good); margin-top: 18px; font-weight: 600; }
+
+.pedagogy-box {
+  margin-top: 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+.pedagogy-title { font-weight: 700; font-size: 1rem; }
+.pedagogy-version {
+  color: var(--text-dim);
+  font-size: 0.75rem;
+  line-height: 1.35;
+  margin-top: 4px;
+}
+.pedagogy-item {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+.pedagogy-mechanism {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--accent);
+  font-weight: 650;
+  line-height: 1.35;
+}
+.pedagogy-count {
+  flex: 0 0 auto;
+  color: var(--text);
+  background: var(--bg-card-2);
+  border-radius: 999px;
+  padding: 1px 8px;
+}
+.pedagogy-path {
+  color: #c4b5fd;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  margin-top: 5px;
+}
+.pedagogy-steps {
+  color: var(--text-dim);
+  font-size: 0.84rem;
+  line-height: 1.45;
+  margin: 8px 0 0;
+  padding-left: 22px;
+}
+.pedagogy-questions {
+  color: var(--text-dim);
+  font-size: 0.72rem;
+  margin-top: 6px;
+}
+.deletion-recap {
+  margin-top: 18px;
+  padding: 12px 14px;
+  border: 1px solid rgba(239, 68, 68, 0.55);
+  border-radius: 10px;
+  background: rgba(239, 68, 68, 0.1);
+  color: #fecaca;
+  font-size: 0.86rem;
+}
+.deletion-recap-title { font-weight: 700; margin-bottom: 6px; }
+.deletion-recap-note { color: var(--text-dim); font-size: 0.76rem; margin-top: 6px; }
 
 .result-score {
   text-align: center;

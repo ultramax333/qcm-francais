@@ -6,6 +6,7 @@
   const MIX_ID = 'mix';
   const APP_VERSION = (window.CONFIG && CONFIG.APP_VERSION) || '';
   const BANK_RELEASE = (window.CONFIG && CONFIG.BANK_RELEASE) || 'UNK';
+  const PEDAGOGY = window.HEP_PEDAGOGY;
 
   let state = { view: 'home' };
 
@@ -437,6 +438,7 @@
       selectedKey: null,
       memos: {},         // mémo écrit par question (clé = id de la question)
       likes: {},         // 👍 « bien construite » par question (clé = id)
+      deletionRequests: {}, // demande de revue en vue d'une suppression (jamais automatique)
       responses: {},     // réponse choisie par question (clé = id)
       detailsOpen: {},   // panneau mémo/infos déplié par question
       recorded: new Set(), // questions déjà enregistrées (vu/maîtrise/erreurs)
@@ -578,26 +580,42 @@
       card.appendChild(expl);
     }
 
-    // Mode APPRENTISSAGE : barre compacte (pouce + toggle) et détails repliés
-    // pour garder l'écran net. Mode EXAMEN : rien de tout ça (correction à la fin).
-    if (state.mode !== 'exam') {
+    // Outils de feedback. La suppression est une demande de revue distincte :
+    // elle ne modifie ni la réponse, ni la pile d'erreurs, ni la banque.
+    {
       const showDetails = state.detailsOpen[q.id] || !!state.memos[q.id];
 
       const toolbar = el('div', { class: 'q-toolbar' });
-      const likeBtn = el('button', {
-        class: 'like-btn' + (state.likes[q.id] ? ' active' : ''),
-        text: state.likes[q.id] ? '👍 ✓' : '👍',
-        title: 'Question bien construite',
-      });
-      likeBtn.addEventListener('click', () => { state.likes[q.id] = !state.likes[q.id]; render(); });
-      toolbar.appendChild(likeBtn);
+      if (state.mode !== 'exam') {
+        const likeBtn = el('button', {
+          class: 'like-btn' + (state.likes[q.id] ? ' active' : ''),
+          text: state.likes[q.id] ? '👍 ✓' : '👍',
+          title: 'Question bien construite',
+        });
+        likeBtn.addEventListener('click', () => { state.likes[q.id] = !state.likes[q.id]; render(); });
+        toolbar.appendChild(likeBtn);
+      }
 
-      const detBtn = el('button', { class: 'details-btn', text: (showDetails ? '▾' : '▸') + ' mémo / infos' });
-      detBtn.addEventListener('click', () => { state.detailsOpen[q.id] = !showDetails; render(); });
-      toolbar.appendChild(detBtn);
+      const deletionBtn = el('button', {
+        class: 'deletion-btn' + (state.deletionRequests[q.id] ? ' active' : ''),
+        text: state.deletionRequests[q.id] ? 'À supprimer ✓' : 'À supprimer',
+        title: 'Demander une revue de cette question en vue de sa suppression',
+        'aria-pressed': state.deletionRequests[q.id] ? 'true' : 'false',
+      });
+      deletionBtn.addEventListener('click', () => {
+        state.deletionRequests[q.id] = !state.deletionRequests[q.id];
+        render();
+      });
+      toolbar.appendChild(deletionBtn);
+
+      if (state.mode !== 'exam') {
+        const detBtn = el('button', { class: 'details-btn', text: (showDetails ? '▾' : '▸') + ' mémo / infos' });
+        detBtn.addEventListener('click', () => { state.detailsOpen[q.id] = !showDetails; render(); });
+        toolbar.appendChild(detBtn);
+      }
       card.appendChild(toolbar);
 
-      if (showDetails) {
+      if (state.mode !== 'exam' && showDetails) {
         const memoWrap = el('div', { class: 'memo-wrap' });
         memoWrap.appendChild(el('label', { class: 'memo-label', text: '💬 Mémo pour Claude (facultatif) — « trop facile », « ambigu », « le distracteur 2 marche aussi »…' }));
         const memoField = el('textarea', { class: 'memo-field', rows: '2', placeholder: 'Ton idée de correction sur cette question…' });
@@ -681,12 +699,14 @@
         sourceBatchId: hep.source_batch_id || null,
         family: hep.family || null,
         mechanismId: hep.mechanism_id || null,
+        tenseId: hep.tense_id || null,
         misconceptionId: misconception,
         grammarConfidence: hep.family && hep.mechanism_id ? 'high' : 'unknown',
         misconceptionConfidence: misconception && misconception !== 'UNK' ? 'high' : 'unknown',
         classificationSource: hep.family && hep.mechanism_id ? 'bank_metadata' : 'missing',
         memo: (state.memos[q.id] || '').trim(),
         like: !!state.likes[q.id],
+        deletionRequested: !!state.deletionRequests[q.id],
       };
     });
     const correct = log.filter((l) => l.correct).length;
@@ -717,12 +737,14 @@
       }),
     };
     saveAttempt(entry);
-    // Conserve la séance dans les notes en attente si elle contient un mémo ou
-    // un 👍 — indépendamment de l'envoi immédiat, pour pouvoir l'envoyer plus
+    // Conserve la séance dans les notes en attente si elle contient un mémo,
+    // un 👍 ou une demande de suppression — indépendamment de l'envoi immédiat,
+    // pour pouvoir l'envoyer plus
     // tard (regroupée avec d'autres séances) depuis l'accueil.
     const memoCount = log.filter((l) => l.memo).length;
     const likeCount = log.filter((l) => l.like).length;
-    if (memoCount > 0 || likeCount > 0) {
+    const deletionCount = log.filter((l) => l.deletionRequested).length;
+    if (memoCount > 0 || likeCount > 0 || deletionCount > 0) {
       pushPending({ id: entry.date, date: entry.date, ruleId: entry.ruleId, correct, total: log.length, feedback: entry.feedback });
     }
     state = { view: 'result', entry };
@@ -736,9 +758,10 @@
     const stamp = d.toLocaleString('fr-CH');
     const memoed = log.filter((l) => l.memo);
     const liked = log.filter((l) => l.like);
+    const deletionRequested = log.filter((l) => l.deletionRequested);
     const lines = [];
     const meta = {
-      schema_version: 'hep-feedback/1.0',
+      schema_version: 'hep-feedback/1.1',
       quiz_id: trace.quizId,
       session_id: trace.sessionId,
       attempted_at: trace.attemptedAt,
@@ -746,21 +769,23 @@
       mode: trace.mode,
       app_version: APP_VERSION || 'UNK',
       bank_release: BANK_RELEASE,
+      pedagogy_labels_version: PEDAGOGY ? PEDAGOGY.LABELS_VERSION : 'UNK',
     };
     const columns = [
       'attempt_number', 'question_id', 'rule', 'selected', 'expected', 'correct',
-      'source_batch_id', 'family', 'mechanism_id', 'misconception_id',
+      'source_batch_id', 'family', 'mechanism_id', 'tense_id', 'misconception_id',
       'grammar_confidence', 'misconception_confidence', 'classification_source',
-      'positive_feedback',
+      'positive_feedback', 'deletion_requested',
     ];
     lines.push(`<!-- HEP_FEEDBACK_META ${JSON.stringify(meta)} -->`);
-    lines.push('```tsv hep-feedback/1.0');
+    lines.push('```tsv hep-feedback/1.1');
     lines.push(columns.join('\t'));
     log.forEach((l, index) => {
       lines.push([
         index + 1, l.id, l.rule, l.selected || '', l.answer, l.correct,
-        l.sourceBatchId, l.family, l.mechanismId, l.misconceptionId,
+        l.sourceBatchId, l.family, l.mechanismId, l.tenseId, l.misconceptionId,
         l.grammarConfidence, l.misconceptionConfidence, l.classificationSource, l.like,
+        l.deletionRequested,
       ].map(tsvCell).join('\t'));
     });
     lines.push('```');
@@ -773,13 +798,20 @@
       liked.forEach((l) => lines.push(`- ${l.id} : ${l.prompt}`));
       lines.push('');
     }
+    if (deletionRequested.length) {
+      lines.push(`## À revoir avant suppression (${deletionRequested.length})`);
+      deletionRequested.forEach((l) => lines.push(`- ${l.id} : ${l.prompt}`));
+      lines.push('');
+      lines.push('_Ces demandes alimentent la file de revue ; elles ne suppriment pas automatiquement la banque._');
+      lines.push('');
+    }
     if (memoed.length === 0) {
       lines.push('_(Aucun mémo écrit durant cette séance.)_');
     } else {
       lines.push(`## Questions commentées (${memoed.length})`);
       memoed.forEach((l) => {
         lines.push('');
-        lines.push(`### ${l.id} — ${l.correct ? '✅ juste' : '❌ faux'}${l.like ? ' · 👍' : ''}`);
+        lines.push(`### ${l.id} — ${l.correct ? '✅ juste' : '❌ faux'}${l.like ? ' · 👍' : ''}${l.deletionRequested ? ' · À supprimer' : ''}`);
         lines.push(`Énoncé : ${l.prompt}`);
         lines.push(`Ta réponse : ${l.selected || '—'} · Attendu : ${l.answer}`);
         lines.push(`Mémo : ${l.memo}`);
@@ -789,7 +821,7 @@
     lines.push('---');
     lines.push('## Récap complet des réponses');
     log.forEach((l) => {
-      lines.push(`- ${l.id} : ${l.correct ? 'OK' : 'KO'} (choix ${l.selected || '—'}, attendu ${l.answer})${l.like ? ' 👍' : ''}`);
+      lines.push(`- ${l.id} : ${l.correct ? 'OK' : 'KO'} (choix ${l.selected || '—'}, attendu ${l.answer})${l.like ? ' 👍' : ''}${l.deletionRequested ? ' · À supprimer' : ''}`);
     });
     return lines.join('\n');
   }
@@ -840,14 +872,62 @@
       wrap.appendChild(el('div', { class: 'missed-none', text: '🎉 Aucune erreur — sans faute !' }));
     }
 
-    // ---- Section feedback (mémos + pouces + stats) ----
+    // ---- Résumé pédagogique prudent, agrégé par mécanisme canonique ----
+    if (missed.length && PEDAGOGY) {
+      const summary = PEDAGOGY.summarize(entry.log);
+      const box = el('section', { class: 'pedagogy-box' });
+      box.appendChild(el('div', { class: 'pedagogy-title', text: 'Résumé pédagogique de tes erreurs' }));
+      box.appendChild(el('div', {
+        class: 'pedagogy-version',
+        text: `Libellés ${PEDAGOGY.LABELS_VERSION} · aucune intention ni “fausse croyance” n’est déduite d’une seule réponse.`,
+      }));
+      summary.forEach((item) => {
+        const row = el('div', { class: 'pedagogy-item' });
+        row.appendChild(el('div', { class: 'pedagogy-mechanism' }, [
+          el('span', { text: `${item.familyLabel} — ${item.mechanismLabel}` }),
+          el('span', { class: 'pedagogy-count', text: `× ${item.count}` }),
+        ]));
+        row.appendChild(el('div', {
+          class: 'pedagogy-path',
+          text: item.path.join(' → '),
+        }));
+        const steps = el('ol', { class: 'pedagogy-steps' });
+        item.steps.forEach((step) => steps.appendChild(el('li', { text: step })));
+        row.appendChild(steps);
+        row.appendChild(el('div', {
+          class: 'pedagogy-questions',
+          text: `Question${item.questionIds.length > 1 ? 's' : ''} : ${item.questionIds.join(', ')}`,
+        }));
+        box.appendChild(row);
+      });
+      wrap.appendChild(box);
+    }
+
+    // ---- Section feedback (mémos + pouces + suppressions demandées + stats) ----
     const memoCount = entry.log.filter((l) => l.memo).length;
     const likeCount = entry.log.filter((l) => l.like).length;
+    const deletionCount = entry.log.filter((l) => l.deletionRequested).length;
+    if (deletionCount) {
+      const deletionBox = el('div', { class: 'deletion-recap' });
+      deletionBox.appendChild(el('div', {
+        class: 'deletion-recap-title',
+        text: `À supprimer — ${deletionCount} demande${deletionCount > 1 ? 's' : ''} de revue`,
+      }));
+      entry.log.filter((l) => l.deletionRequested).forEach((l) => {
+        deletionBox.appendChild(el('div', { text: `• ${l.id}` }));
+      });
+      deletionBox.appendChild(el('div', {
+        class: 'deletion-recap-note',
+        text: 'La banque reste inchangée jusqu’à une décision de revue.',
+      }));
+      wrap.appendChild(deletionBox);
+    }
     const fb = el('div', { class: 'feedback-box' });
     fb.appendChild(el('div', { class: 'feedback-title', text: 'Feedback de la séance' }));
     const bits = [];
     if (memoCount) bits.push(`${memoCount} mémo(s)`);
     if (likeCount) bits.push(`${likeCount} 👍`);
+    if (deletionCount) bits.push(`${deletionCount} à supprimer`);
     fb.appendChild(el('div', {
       class: 'feedback-sub',
       text: bits.length ? `${bits.join(' + ')} à envoyer, avec le récap des réponses.` : 'Aucun mémo ni pouce — tu peux quand même envoyer les stats.',
@@ -866,7 +946,7 @@
           status.textContent = 'Envoi du fichier…';
           const r = await DRIVE.upload(feedbackFilename(entry), entry.feedback);
           status.textContent = '✅ Envoyé dans le dossier « ' + ((window.CONFIG && CONFIG.DRIVE_FOLDER_NAME) || 'Drive') + ' » : ' + r.name;
-          state.memos = {}; state.likes = {}; // reset après envoi réussi
+          state.memos = {}; state.likes = {}; state.deletionRequests = {}; // reset après envoi réussi
           removePending(entry.date); // déjà envoyée : plus besoin de la garder en attente
         } catch (e) {
           status.textContent = '❌ ' + (e.message || 'Échec de l\'envoi.') + ' — utilise Copier ou Télécharger.';
