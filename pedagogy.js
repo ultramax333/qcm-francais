@@ -5,14 +5,21 @@
 }(typeof window !== 'undefined' ? window : globalThis, function () {
   'use strict';
 
-  const LABELS_VERSION = 'hep-pedagogy-labels/1.1';
+  const LABELS_VERSION = 'hep-pedagogy-labels/2.0';
 
   const TENSES = {
+    present: 'présent',
+    imparfait: 'imparfait',
+    passe_simple: 'passé simple',
     passe_compose: 'passé composé',
     plus_que_parfait: 'plus-que-parfait',
+    futur_simple: 'futur simple',
     futur_anterieur: 'futur antérieur',
+    conditionnel_present: 'conditionnel présent',
     conditionnel_passe: 'conditionnel passé',
+    subjonctif_present: 'subjonctif présent',
     subjonctif_passe: 'subjonctif passé',
+    imperatif_present: 'impératif présent',
   };
 
   const FAMILIES = {
@@ -118,10 +125,161 @@
     synonyme_exact: ['synonyme exact en contexte', 'Compare le sens, le registre et la construction : un synonyme doit convenir dans cette phrase précise.'],
   };
 
-  function describe(family, mechanismId, tenseId) {
+  // Copie générée des chemins par défaut de pedagogy_HEP.json. Les questions
+  // ne stockent que le detail_id court; aucun long texte n'est dupliqué dans
+  // les observations.
+  const PATHS = {
+    donneur_eloigne: ['adjectif qualificatif', 'nom donneur éloigné', 'genre et nombre du nom', 'accord de l’adjectif'],
+    avoir_cvd_apres: ['temps composé non précisé', 'auxiliaire avoir', 'COD placé après', 'participe passé invariable'],
+    avoir_cvd_avant: ['temps composé non précisé', 'auxiliaire avoir', 'COD placé avant', 'accord avec le COD'],
+    etre_accord_sujet: ['temps composé non précisé', 'auxiliaire être', 'sujet donneur', 'accord avec le sujet'],
+    fait_suivi_infinitif: ['participe passé', 'construction factitive', 'fait + infinitif', 'fait invariable'],
+    matrice_avoir_etre: ['temps composé non précisé', 'auxiliaire non précisé', 'donneur d’accord à identifier', 'règle de l’auxiliaire'],
+    pronominal_cvd_avant: ['verbe pronominal', 'fonction de se', 'se COD placé avant', 'accord avec le COD'],
+    pronominal_se_coi: ['verbe pronominal', 'fonction de se', 'se COI', 'accord selon l’éventuel COD'],
+    avoir_suivi_infinitif_sujet_action: ['participe passé avec avoir', 'COD placé avant', 'infinitif après', 'auteur de l’infinitif à établir', 'accord conditionnel'],
+    laisse_suivi_infinitif: ['participe passé', 'laissé + infinitif', 'norme rectifiée', 'laissé invariable'],
+    pronominal_reflechi: ['verbe pronominal', 'emploi réfléchi', 'fonction de se non précisée', 'règle du COD'],
+    pronominal_reciproque: ['verbe pronominal', 'emploi réciproque', 'fonction de se non précisée', 'règle du COD'],
+    pronominal_essentiellement: ['verbe pronominal', 'emploi essentiellement pronominal', 'sujet donneur', 'accord avec le sujet'],
+    deux_sujets_deux_verbes: ['propositions coordonnées', 'deux couples sujet-verbe', 'personne et nombre de chaque sujet', 'deux accords distincts'],
+    noyau_singulier_complement_pluriel: ['sujet complexe', 'noyau singulier + complément pluriel', '3e personne du singulier', 'accord avec le noyau'],
+    relative_qui_antecedent: ['proposition relative', 'qui sujet', 'antécédent donneur', 'accord en nombre avec l’antécédent'],
+    relative_qui_antecedent_personne: ['proposition relative', 'qui sujet', 'personne de l’antécédent', 'terminaison à cette personne'],
+    sujet_inverse: ['ordre inversé', 'sujet placé après le verbe', 'personne et nombre du sujet', 'accord du verbe'],
+    accord_adjectif_invariabilite_participe: ['forme en -ant', 'nature non précisée', 'fonction à établir', 'accord ou invariabilité'],
+    convaincant_convainquant: ['opposition lexicale exacte', 'adjectif convaincant', 'participe présent convainquant', 'nature dictée par la syntaxe'],
+    fatigant_fatiguant: ['opposition lexicale exacte', 'adjectif fatigant', 'participe présent fatiguant', 'nature dictée par la syntaxe'],
+    participe_present_avec_complement: ['forme en -ant', 'complément du verbe conservé', 'participe présent', 'forme invariable'],
+    anteriorite_plus_que_parfait: ['deux actions passées', 'action antérieure', 'antériorité accomplie', 'plus-que-parfait'],
+    futur_dans_le_passe: ['repère principal au passé', 'action postérieure', 'futur dans le passé', 'conditionnel présent'],
+    hypothese_si_imparfait_conditionnel: ['hypothèse présente irréelle', 'si + imparfait', 'résultat envisagé', 'conditionnel présent'],
+    reperage_temporel: ['repère temporel', 'relation non précisée', 'aspect non précisé', 'temps à établir'],
+    conditionnel: ['conditionnel non précisé', 'régularité non précisée', 'personne non précisée', 'terminaison à établir'],
+    futur_irregulier: ['futur simple', 'radical irrégulier du verbe', 'personne à relever', 'terminaison du futur'],
+    imperatif_et_pronoms: ['impératif présent', 'polarité non précisée', 'ordre des pronoms à établir', 'graphie à vérifier'],
+    alternative_correlation: ['relation d’alternative', 'paire corrélative', 'deux possibilités parallèles', 'connecteurs appariés'],
+    concession: ['relation concessive', 'fait admis', 'résultat inattendu', 'connecteur de concession'],
+    consequence: ['relation cause-résultat', 'fait source', 'résultat logique', 'connecteur de conséquence'],
+    correlation: ['relation corrélative', 'premier marqueur', 'structure parallèle', 'second marqueur'],
+    opposition: ['relation d’opposition', 'deux faits contrastés', 'absence de causalité', 'connecteur oppositif'],
+    deictiques_ancres: ['discours indirect', 'nouvelle ancre énonciative', 'repère non précisé', 'déictique transposé'],
+    futur_vers_conditionnel: ['introducteur au passé', 'futur du discours direct', 'transposition des temps', 'conditionnel au discours indirect'],
+    imperatif_vers_de_infinitif: ['ordre au discours direct', 'verbe introducteur de demande', 'suppression de l’impératif', 'de + infinitif'],
+    nom_peuple_adjectif_langue: ['gentilé', 'nature non précisée', 'fonction à établir', 'majuscule ou minuscule'],
+    leur_leurs: ['opposition leur / leurs', 'nature non précisée', 'test du nom suivant', 'variation ou invariabilité'],
+    quel_que_quelque: ['opposition quel que / quelque', 'construction non précisée', 'nature à établir', 'graphie et accord'],
+    ce_qui_ce_que: ['antécédent neutre ce', 'fonction non précisée', 'test sujet ou COD', 'ce qui ou ce que'],
+    coordination_interrogative: ['verbe interrogatif introducteur', 'deux interrogatives coordonnées', 'subordination de chaque membre', 'ordre déclaratif'],
+    cent_vingt_mille: ['nombre composé', 'cent / vingt / mille', 'position et multiplication à établir', 'marque du pluriel'],
+    mille_invariable: ['nombre composé', 'mille', 'multiplication éventuelle', 'mille invariable'],
+    adverbes_amment_emment: ['adjectif source', 'finale non précisée', 'dérivation adverbiale', '-amment ou -emment'],
+    apposition: ['groupe nominal apposé', 'précision détachable', 'lien au nom support', 'virgules d’encadrement'],
+    enumeration_deux_points: ['phrase d’annonce complète', 'relation d’explicitation', 'énumération annoncée', 'deux-points'],
+    incise_double_virgule: ['phrase matrice', 'segment médian détachable', 'continuité sans l’incise', 'deux virgules'],
+    adjectif_et_preposition: ['adjectif recteur attesté', 'complément de l’adjectif', 'régime lexical imposé', 'préposition attendue'],
+    coordination_regimes_differents: ['deux mots recteurs', 'compléments coordonnés', 'deux régimes à vérifier séparément', 'préposition propre à chaque recteur'],
+    regime_verbal_de: ['verbe recteur attesté', 'complément du verbe', 'régime en de', 'préposition de'],
+    possession_dont: ['antécédent', 'nom régi par de', 'complément du nom possessif', 'pronom relatif dont'],
+    preposition_plus_lequel: ['antécédent nominal', 'préposition régie', 'complément prépositionnel', 'préposition + lequel accordé'],
+    redondance_relative_pronom: ['antécédent', 'pronom relatif déjà fonctionnel', 'fonction remplie dans la relative', 'absence de pronom redondant'],
+    regime_a_auquel: ['antécédent nominal', 'recteur construit avec à', 'complément indirect', 'auquel / à laquelle / auxquels / auxquelles'],
+    regime_de_dont: ['antécédent', 'recteur construit avec de', 'complément en de', 'pronom relatif dont'],
+    coi_lui_leur: ['référent humain', 'COI introduit par à', 'nombre non précisé', 'lui ou leur'],
+    complement_de_en: ['référent non humain', 'complément introduit par de', 'reprise pronominale', 'pronom en'],
+    reprise_proposition_le: ['proposition référente', 'contenu propositionnel', 'reprise neutre', 'pronom le'],
+    revision_homophones_et_accords: ['révision multizone', 'opposition homophonique exacte', 'donneur d’accord distinct', 'deux validations indépendantes'],
+    revision_modes_et_temps: ['révision multizone', 'construction déclencheuse du mode', 'relation temporelle', 'mode puis temps'],
+    revision_participes_et_infinitifs: ['révision multizone', 'nature de chaque forme verbale', 'construction propre à chaque forme', 'accord ou invariabilité séparés'],
+    revision_ponctuation_et_syntaxe: ['révision multizone', 'groupes syntaxiques', 'relation entre les groupes', 'ponctuation correspondante'],
+    revision_regimes_et_relatives: ['révision multizone', 'mot recteur', 'régime prépositionnel', 'pronom relatif compatible'],
+    gerondif_sujet_implicite: ['gérondif détaché', 'sujet implicite', 'sujet du verbe principal', 'coréférence obligatoire'],
+    participe_detache_sujet_implicite: ['participe détaché', 'support implicite', 'sujet ou nom de la principale', 'rattachement syntaxique cohérent'],
+    apres_que_indicatif: ['construction après que', 'fait présenté comme réalisé', 'mode indicatif', 'temps selon la relation temporelle'],
+    concession_bien_que: ['construction bien que', 'valeur concessive', 'mode subjonctif', 'temps selon le repère'],
+    concession_et_constat: ['construction déclencheuse', 'valeur non précisée', 'mode à établir', 'temps selon le repère'],
+    double_contraste_modes: ['deux subordonnées', 'deux constructions déclencheuses', 'deux valeurs de sens', 'modes vérifiés séparément'],
+    polysemie_contextuelle: ['mot polysémique exact', 'sens candidats', 'indices sémantiques du contexte', 'sens compatible'],
+    synonyme_exact: ['mot source exact', 'candidats synonymiques', 'sens + registre + construction', 'synonyme compatible'],
+  };
+
+  const DETAIL_PATHS = {
+    matrice_avoir_etre: {
+      avoir: ['temps composé non précisé', 'auxiliaire avoir', 'position du COD à établir', 'règle du COD'],
+      etre: ['temps composé non précisé', 'auxiliaire être', 'sujet donneur', 'accord avec le sujet'],
+    },
+    pronominal_reflechi: {
+      se_cod: ['verbe pronominal', 'emploi réfléchi', 'se COD placé avant', 'accord avec se'],
+      se_coi: ['verbe pronominal', 'emploi réfléchi', 'se COI', 'accord selon l’éventuel COD'],
+    },
+    pronominal_reciproque: {
+      se_cod: ['verbe pronominal', 'emploi réciproque', 'se COD placé avant', 'accord avec se'],
+      se_coi: ['verbe pronominal', 'emploi réciproque', 'se COI', 'accord selon l’éventuel COD'],
+    },
+    accord_adjectif_invariabilite_participe: {
+      adjectif: ['forme en -ant', 'propriété d’un nom', 'adjectif verbal', 'accord avec le nom'],
+      participe: ['forme en -ant', 'action verbale', 'participe présent', 'forme invariable'],
+    },
+    reperage_temporel: {
+      anterieur: ['repère temporel', 'action antérieure', 'accomplissement à vérifier', 'temps d’antériorité'],
+      simultane: ['repère temporel', 'action simultanée', 'aspect à vérifier', 'temps de simultanéité'],
+      posterieur: ['repère temporel', 'action postérieure', 'point de vue du repère', 'temps de postériorité'],
+    },
+    conditionnel: {
+      present_regulier: ['conditionnel présent', 'radical régulier du futur', 'personne à relever', 'terminaison de l’imparfait'],
+      present_irregulier: ['conditionnel présent', 'radical irrégulier du futur', 'personne à relever', 'terminaison de l’imparfait'],
+      passe: ['conditionnel passé', 'auxiliaire au conditionnel présent', 'personne à relever', 'participe passé et accord éventuel'],
+    },
+    imperatif_et_pronoms: {
+      affirmatif: ['impératif affirmatif', 'pronoms postposés', 'ordre impératif', 'traits d’union'],
+      negatif: ['impératif négatif', 'pronoms antéposés', 'ordre déclaratif des pronoms', 'ne…pas autour du groupe verbal'],
+    },
+    deictiques_ancres: {
+      temps: ['discours indirect', 'nouvelle date de narration', 'repère temporel direct', 'repère temporel transposé'],
+      lieu: ['discours indirect', 'nouveau lieu de narration', 'repère spatial direct', 'repère spatial transposé'],
+    },
+    nom_peuple_adjectif_langue: {
+      peuple: ['gentilé', 'nom de personne ou de peuple', 'emploi nominal', 'majuscule'],
+      adjectif: ['gentilé', 'adjectif relationnel', 'emploi adjectival', 'minuscule'],
+      langue: ['gentilé', 'nom de langue', 'désignation linguistique', 'minuscule'],
+    },
+    leur_leurs: {
+      determinant: ['opposition leur / leurs', 'déterminant devant un nom', 'nombre du nom', 'leur ou leurs'],
+      pronom: ['opposition leur / leurs', 'pronom personnel COI', 'remplacement par lui', 'leur invariable'],
+    },
+    quel_que_quelque: {
+      quel_que: ['opposition quel que / quelque', 'quel que + être', 'accord de quel avec le sujet', 'graphie en deux mots'],
+      determinant: ['opposition quel que / quelque', 'quelque devant un nom', 'déterminant indéfini', 'accord en nombre'],
+      adverbe: ['opposition quel que / quelque', 'quelque devant adjectif ou nombre', 'adverbe', 'forme invariable'],
+    },
+    ce_qui_ce_que: {
+      sujet: ['antécédent neutre ce', 'aucune préposition', 'sujet du verbe suivant', 'ce qui'],
+      cod: ['antécédent neutre ce', 'aucune préposition', 'COD du verbe suivant', 'ce que'],
+    },
+    cent_vingt_mille: {
+      cent: ['nombre composé', 'cent multiplié', 'position finale ou suivie', 'cents ou cent'],
+      vingt: ['nombre composé', 'vingt multiplié', 'position finale ou suivie', 'vingts ou vingt'],
+      mille: ['nombre composé', 'mille', 'valeur multiplicative', 'mille invariable'],
+    },
+    adverbes_amment_emment: {
+      ant: ['adjectif en -ant', 'base morphologique', 'dérivation adverbiale', 'adverbe en -amment'],
+      ent: ['adjectif en -ent', 'base morphologique', 'dérivation adverbiale', 'adverbe en -emment'],
+    },
+    coi_lui_leur: {
+      singulier: ['référent humain singulier', 'COI introduit par à', 'remplacement indirect', 'pronom lui'],
+      pluriel: ['référent humain pluriel', 'COI introduit par à', 'remplacement indirect', 'pronom leur'],
+    },
+    concession_et_constat: {
+      concession: ['construction concessive', 'fait admis malgré un obstacle', 'mode subjonctif', 'temps selon le repère'],
+      constat: ['construction de constat', 'fait présenté comme avéré', 'mode indicatif', 'temps selon le repère'],
+    },
+  };
+
+  function describe(family, mechanismId, tenseId, detailId) {
     const known = family && mechanismId && family !== 'UNK' && mechanismId !== 'UNK';
     const mechanism = known ? MECHANISMS[mechanismId] : null;
-    if (!known || !mechanism) {
+    const canonicalPath = known ? PATHS[mechanismId] : null;
+    if (!known || !mechanism || !canonicalPath) {
       const knownTense = tenseId
         ? (TENSES[tenseId] || `temps canonique non libellé : ${tenseId}`)
         : null;
@@ -140,20 +298,28 @@
         fallback: true,
       };
     }
-    const canonicalPath = mechanism[2] || [FAMILIES[family] || family, mechanism[0]];
-    const path = canonicalPath.slice();
-    if (tenseId && path[0] === 'forme composée') {
+    const detailPath = detailId && DETAIL_PATHS[mechanismId]
+      ? DETAIL_PATHS[mechanismId][detailId]
+      : null;
+    const path = (detailPath || canonicalPath).slice();
+    if (
+      tenseId
+      && ['temps composé non précisé', 'conditionnel non précisé'].includes(path[0])
+    ) {
       path[0] = TENSES[tenseId] || `temps canonique non libellé : ${tenseId}`;
     }
+    const middle = path.slice(1, -1).join(' → ');
     return {
       familyLabel: FAMILIES[family] || family,
       mechanismLabel: mechanism[0],
+      detailId: detailPath ? detailId : 'core',
       tenseLabel: tenseId ? (TENSES[tenseId] || null) : null,
       path,
       steps: [
-        `Repère le mécanisme : ${mechanism[0]}.`,
+        `Repère : ${path[0]}.`,
+        `Vérifie : ${middle}.`,
         mechanism[1],
-        'Reprends ensuite la phrase mot par mot et vérifie que chaque condition de la règle est remplie.',
+        `Conclusion attendue : ${path[path.length - 1]}.`,
       ],
       fallback: false,
     };
@@ -165,10 +331,12 @@
       const family = attempt.family || 'UNK';
       const mechanismId = attempt.mechanismId || 'UNK';
       const tenseId = attempt.tenseId || null;
-      const key = `${family}\u0000${mechanismId}\u0000${tenseId || ''}`;
+      const detailId = attempt.detailId || null;
+      const key = `${family}\u0000${mechanismId}\u0000${detailId || ''}\u0000${tenseId || ''}`;
       const current = groups.get(key) || {
         family,
         mechanismId,
+        detailId,
         tenseId,
         count: 0,
         questionIds: [],
@@ -180,10 +348,19 @@
     return Array.from(groups.values())
       .map((group) => Object.assign(
         group,
-        describe(group.family, group.mechanismId, group.tenseId)
+        describe(group.family, group.mechanismId, group.tenseId, group.detailId)
       ))
       .sort((a, b) => b.count - a.count || a.mechanismLabel.localeCompare(b.mechanismLabel, 'fr'));
   }
 
-  return { LABELS_VERSION, TENSES, FAMILIES, MECHANISMS, describe, summarize };
+  return {
+    LABELS_VERSION,
+    TENSES,
+    FAMILIES,
+    MECHANISMS,
+    PATHS,
+    DETAIL_PATHS,
+    describe,
+    summarize,
+  };
 }));

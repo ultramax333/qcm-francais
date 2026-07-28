@@ -699,6 +699,7 @@
         sourceBatchId: hep.source_batch_id || null,
         family: hep.family || null,
         mechanismId: hep.mechanism_id || null,
+        detailId: hep.detail_id || null,
         tenseId: hep.tense_id || null,
         misconceptionId: misconception,
         grammarConfidence: hep.family && hep.mechanism_id ? 'high' : 'unknown',
@@ -761,7 +762,7 @@
     const deletionRequested = log.filter((l) => l.deletionRequested);
     const lines = [];
     const meta = {
-      schema_version: 'hep-feedback/1.1',
+      schema_version: 'hep-feedback/1.2',
       quiz_id: trace.quizId,
       session_id: trace.sessionId,
       attempted_at: trace.attemptedAt,
@@ -770,20 +771,23 @@
       app_version: APP_VERSION || 'UNK',
       bank_release: BANK_RELEASE,
       pedagogy_labels_version: PEDAGOGY ? PEDAGOGY.LABELS_VERSION : 'UNK',
+      pedagogy_dict_version: 'hep-pedagogy-dict/2.0',
     };
     const columns = [
       'attempt_number', 'question_id', 'rule', 'selected', 'expected', 'correct',
-      'source_batch_id', 'family', 'mechanism_id', 'tense_id', 'misconception_id',
+      'source_batch_id', 'family', 'mechanism_id', 'detail_id', 'tense_id',
+      'misconception_id',
       'grammar_confidence', 'misconception_confidence', 'classification_source',
       'positive_feedback', 'deletion_requested',
     ];
     lines.push(`<!-- HEP_FEEDBACK_META ${JSON.stringify(meta)} -->`);
-    lines.push('```tsv hep-feedback/1.1');
+    lines.push('```tsv hep-feedback/1.2');
     lines.push(columns.join('\t'));
     log.forEach((l, index) => {
       lines.push([
         index + 1, l.id, l.rule, l.selected || '', l.answer, l.correct,
-        l.sourceBatchId, l.family, l.mechanismId, l.tenseId, l.misconceptionId,
+        l.sourceBatchId, l.family, l.mechanismId, l.detailId, l.tenseId,
+        l.misconceptionId,
         l.grammarConfidence, l.misconceptionConfidence, l.classificationSource, l.like,
         l.deletionRequested,
       ].map(tsvCell).join('\t'));

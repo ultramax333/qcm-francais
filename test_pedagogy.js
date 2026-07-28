@@ -18,8 +18,18 @@ canonicalPairs.forEach((pair) => {
     false,
     `Libellé pédagogique manquant pour ${family}/${mechanismId}`
   );
-  assert.ok(description.steps.length >= 3);
-  assert.ok(description.path.length >= 2);
+  assert.ok(description.steps.length >= 4);
+  assert.ok(description.path.length >= 3);
+  assert.notDeepStrictEqual(
+    description.path,
+    [description.familyLabel],
+    `Repli générique sur la famille interdit pour ${family}/${mechanismId}`
+  );
+  assert.notStrictEqual(
+    description.path.join(' → '),
+    description.familyLabel,
+    `Le chemin doit être plus précis que la famille pour ${family}/${mechanismId}`
+  );
 });
 
 assert.match(
@@ -36,7 +46,7 @@ assert.match(
 );
 assert.deepStrictEqual(
   pedagogy.describe('accord_participe_passe', 'avoir_cvd_avant').path,
-  ['forme composée', 'auxiliaire avoir', 'COD avant', 'accord avec le COD']
+  ['temps composé non précisé', 'auxiliaire avoir', 'COD placé avant', 'accord avec le COD']
 );
 assert.deepStrictEqual(
   pedagogy.describe(
@@ -44,7 +54,7 @@ assert.deepStrictEqual(
     'avoir_cvd_avant',
     'passe_compose'
   ).path,
-  ['passé composé', 'auxiliaire avoir', 'COD avant', 'accord avec le COD']
+  ['passé composé', 'auxiliaire avoir', 'COD placé avant', 'accord avec le COD']
 );
 assert.strictEqual(
   pedagogy.describe('accord_participe_passe', 'laisse_suivi_infinitif').fallback,
@@ -53,6 +63,38 @@ assert.strictEqual(
 assert.match(
   pedagogy.describe('accord_participe_passe', 'pronominal_essentiellement').path.join(' → '),
   /essentiellement pronominal/
+);
+assert.deepStrictEqual(
+  pedagogy.describe(
+    'conjugaison',
+    'conditionnel',
+    'conditionnel_present',
+    'present_irregulier'
+  ).path,
+  [
+    'conditionnel présent',
+    'radical irrégulier du futur',
+    'personne à relever',
+    'terminaison de l’imparfait',
+  ]
+);
+assert.deepStrictEqual(
+  pedagogy.describe(
+    'accord_participe_passe',
+    'pronominal_reciproque',
+    null,
+    'se_coi'
+  ).path,
+  ['verbe pronominal', 'emploi réciproque', 'se COI', 'accord selon l’éventuel COD']
+);
+assert.deepStrictEqual(
+  pedagogy.describe('pronoms_relatifs', 'regime_a_auquel').path,
+  [
+    'antécédent nominal',
+    'recteur construit avec à',
+    'complément indirect',
+    'auquel / à laquelle / auxquels / auxquelles',
+  ]
 );
 
 const summary = pedagogy.summarize([

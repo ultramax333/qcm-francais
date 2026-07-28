@@ -7,8 +7,8 @@ pouce « bien construite » et demande explicite « À supprimer » exportables 
 séance. Le bilan regroupe les erreurs par mécanisme grammatical canonique et explique
 chaque règle pas à pas.
 
-État local vérifié le 28.07.2026 : version `1.12`, cache
-`qcm-op001-v112`, 1 690 questions uniques et release
+État local vérifié le 28.07.2026 : version `1.13`, cache
+`qcm-op001-v113`, 1 690 questions uniques et release
 `questions-20260727-fd4bdfd8`. La publication sur `main` est effectuée après les
 contrôles décrits ci-dessous.
 
@@ -32,13 +32,15 @@ dans `config.js` (voir les instructions détaillées en tête de ce fichier). Ta
 vide, les boutons **Copier** et **Télécharger** du feedback restent disponibles.
 
 Chaque nouvelle séance exporte un Markdown humain avec un bloc machine
-`hep-feedback/1.1`. Le booléen `deletion_requested` est indépendant de la justesse
+`hep-feedback/1.2`. Le booléen `deletion_requested` est indépendant de la justesse
 de la réponse : il alimente la file de revue à l'import et ne supprime jamais une
 question automatiquement. L'importeur reste compatible avec `hep-feedback/1.0`
-(`deletion_requested=false` et `tense_id=null` par défaut). Le champ nullable
+et `hep-feedback/1.1` (`detail_id=null` pour ces historiques). Le champ nullable
 `tense_id` permet de conserver un temps canonique futur dans le chemin pédagogique
-(`passé composé → auxiliaire avoir → COD avant`) ; sans preuve, l'application garde
-« forme composée » au lieu d'inventer un temps. Le fichier est nommé
+(`passé composé → auxiliaire avoir → COD placé avant → accord avec le COD`) ;
+`detail_id` sélectionne une variante courte du dictionnaire versionné. Sans preuve,
+l’application affiche explicitement « non précisé » au lieu d’inventer une dimension.
+Le fichier est nommé
 `qcm-feedback--<session_id>--<quiz_id>.md`; un envoi regroupé utilise
 `qcm-feedback-bundle--<horodatage UTC>--<suffixe>.md`. La version courte de la
 banque, les classifications disponibles et les codes de distracteur sont conservés
@@ -50,8 +52,8 @@ intégration manuelle de `questions.js` rendrait l'identifiant de banque obsolè
 
 ## Fichiers
 - `index.html`, `style.css`, `app.js` — l'application
-- `pedagogy.js` — libellés pédagogiques versionnés, chemins
-  `famille → construction → règle` et agrégation prudente des erreurs. Le catalogue
+- `pedagogy.js` — libellés pédagogiques versionnés, chemins grammaticaux précis
+  et agrégation prudente des erreurs. Le catalogue
   prévoit aussi des identifiants encore absents de la banque (`avoir_suivi_infinitif_sujet_action`,
   `laisse_suivi_infinitif`, pronominaux réfléchi/réciproque/essentiellement pronominal);
   ils ne sont jamais appliqués sans métadonnée canonique correspondante.

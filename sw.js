@@ -1,4 +1,4 @@
-const CACHE = 'qcm-op001-v112';
+const CACHE = 'qcm-op001-v113';
 const ASSETS = [
   './',
   './index.html',
