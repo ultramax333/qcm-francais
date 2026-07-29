@@ -6,7 +6,13 @@ const pedagogy = require('./pedagogy.js');
 
 const canonicalPairs = new Set(
   QUESTIONS
-    .filter((question) => question.hep && question.hep.family && question.hep.mechanism_id)
+    .filter((question) => (
+      question.hep
+      && question.hep.family
+      && question.hep.family !== 'UNK'
+      && question.hep.mechanism_id
+      && question.hep.mechanism_id !== 'UNK'
+    ))
     .map((question) => `${question.hep.family}\u0000${question.hep.mechanism_id}`)
 );
 
@@ -108,5 +114,10 @@ assert.strictEqual(summary[0].count, 2);
 assert.deepStrictEqual(summary[0].questionIds, ['q1', 'q2']);
 assert.strictEqual(summary[1].fallback, true);
 assert.match(summary[1].steps.join(' '), /Aucune cause personnelle/);
+
+assert.strictEqual(
+  pedagogy.describe('orthographe_lexicale', 'UNK').fallback,
+  true
+);
 
 console.log(`OK — ${canonicalPairs.size} mécanismes canoniques couverts.`);
