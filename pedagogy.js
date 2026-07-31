@@ -5,7 +5,7 @@
 }(typeof window !== 'undefined' ? window : globalThis, function () {
   'use strict';
 
-  const LABELS_VERSION = 'hep-pedagogy-labels/2.0';
+  const LABELS_VERSION = 'hep-pedagogy-labels/2.1';
 
   const TENSES = {
     present: 'présent',
@@ -45,6 +45,55 @@
     subjonctif_indicatif: 'Choix entre subjonctif et indicatif',
     vocabulaire_contexte: 'Vocabulaire en contexte',
   };
+
+  const FAMILY_GUIDANCE = {
+    accord_adjectif_nom: 'Retrouve le nom donneur, puis accorde l’adjectif avec lui en genre et en nombre.',
+    accord_participe_passe: 'Identifie l’auxiliaire et la fonction du complément direct avant de décider l’accord.',
+    accord_sujet_verbe: 'Repère le noyau du sujet, puis reporte sa personne et son nombre sur le verbe.',
+    adjectif_verbal_participe_present: 'Détermine si la forme décrit un nom ou exprime une action avant de l’accorder ou de la laisser invariable.',
+    concordance_temps: 'Place les actions sur une ligne du temps et choisis le temps qui exprime leur ordre.',
+    conjugaison: 'Identifie le temps, le radical et la personne avant d’ajouter la terminaison.',
+    connecteurs_logiques: 'Nomme la relation entre les deux idées avant de choisir le connecteur.',
+    discours_indirect: 'Recalcule séparément les temps, les personnes et les repères depuis le nouveau point de vue.',
+    gentiles_majuscules: 'Distingue le nom de personne, l’adjectif et la langue avant de choisir la majuscule.',
+    homophones_grammaticaux: 'Identifie la catégorie et la fonction du mot, puis utilise un test de remplacement.',
+    interrogation_indirecte: 'Après le verbe introducteur, conserve une subordonnée à l’ordre déclaratif.',
+    nombres_traits_union: 'Décompose le nombre et applique séparément la règle de chaque élément.',
+    orthographe_lexicale: 'Compare la forme attendue au sens et à la construction de la phrase.',
+    ponctuation: 'Repère les groupes syntaxiques et la relation entre eux avant de placer le signe.',
+    prepositions_regies: 'Retrouve le mot recteur et la préposition qu’il impose dans cette construction.',
+    pronoms_relatifs: 'Détermine la fonction du relatif et la préposition exigée dans sa proposition.',
+    pronoms_reprise: 'Identifie le groupe repris, sa fonction et son nombre avant de choisir le pronom.',
+    revision_transversale: 'Isole la difficulté de chaque zone et vérifie les règles l’une après l’autre.',
+    rupture_syntaxique: 'Vérifie que le groupe détaché se rattache bien au sujet de la proposition principale.',
+    subjonctif_indicatif: 'Repère le déclencheur et demande si le fait est affirmé ou seulement envisagé.',
+    vocabulaire_contexte: 'Teste le sens, le registre et la construction de chaque mot dans la phrase complète.',
+  };
+
+  const TOKEN_LABELS = {
+    a: 'à',
+    apres: 'après',
+    anteriorite: 'antériorité',
+    etre: 'être',
+    cvd: 'COD',
+    coi: 'COI',
+    cod: 'COD',
+    passe: 'passé',
+    preposition: 'préposition',
+    present: 'présent',
+    pronominal: 'pronominal',
+    reciproque: 'réciproque',
+    reflechi: 'réfléchi',
+    regie: 'régie',
+    sujet: 'sujet',
+  };
+
+  function humanizeMechanismId(mechanismId) {
+    return String(mechanismId || '')
+      .split('_')
+      .map((token) => TOKEN_LABELS[token] || token)
+      .join(' ');
+  }
 
   // Chaque entrée associe un identifiant canonique de la banque à un libellé
   // pédagogique stable et à la règle minimale nécessaire pour raisonner.
@@ -123,6 +172,8 @@
     double_contraste_modes: ['deux déclencheurs de mode à comparer', 'Analyse chaque proposition séparément : identifie son déclencheur, puis applique indicatif ou subjonctif.'],
     polysemie_contextuelle: ['sens d’un mot selon le contexte', 'Remplace le mot par chaque sens possible et garde celui qui rend la phrase cohérente.'],
     synonyme_exact: ['synonyme exact en contexte', 'Compare le sens, le registre et la construction : un synonyme doit convenir dans cette phrase précise.'],
+    si_sy: ['si ou s’y', 'Si introduit une condition ou une interrogation indirecte ; s’y réunit le pronom réfléchi se et le pronom de lieu y.'],
+    genre_change_sens: ['genre du nom qui change le sens', 'Certains noms ont une forme identique mais un sens différent au masculin et au féminin ; l’article permet d’identifier le sens attendu.'],
   };
 
   // Copie générée des chemins par défaut de pedagogy_HEP.json. Les questions
@@ -203,6 +254,129 @@
     synonyme_exact: ['mot source exact', 'candidats synonymiques', 'sens + registre + construction', 'synonyme compatible'],
   };
 
+  // Chemins générés depuis les détails par défaut de
+  // analyse_gpt/pedagogy_HEP.json. Le test Python impose une copie exacte afin
+  // que l'application et le pipeline expliquent toujours la même règle.
+  Object.assign(PATHS, {
+    avoir_en_invariable: ['auxiliaire avoir', 'complément repris par en', 'absence d’accord avec en', 'participe invariable'],
+    mesure_duree_prix: ['verbe de mesure', 'complément de durée, prix, poids ou distance', 'pas de COD accordable', 'participe invariable'],
+    participe_adjectival_selon_position: ['forme participiale spéciale', 'position avant ou après le nom', 'valeur prépositive ou adjectivale', 'invariabilité ou accord'],
+    infinitif_sous_entendu_invariable: ['auxiliaire avoir', 'infinitif exprimé ou sous-entendu', 'complément rattaché à l’infinitif', 'participe invariable'],
+    impersonnel_participe_invariable: ['tournure impersonnelle', 'il sans référent', 'absence de COD accordable', 'participe invariable'],
+    matrice_participes_speciaux: ['révision de participes', 'plusieurs constructions attestées', 'analyse séparée de chaque phrase', 'accord ou invariabilité propre'],
+    participe_sans_cvd_accordable: ['forme composée', 'recherche du complément direct', 'aucun CVD accordable avant', 'participe invariable'],
+    quantifieur_singulier: ['sujet quantifié', 'noyau singulier', 'sens parfois collectif', 'verbe au singulier'],
+    quantifieur_pluriel: ['sujet quantifié', 'complément pluriel', 'accord selon la construction', 'verbe au pluriel'],
+    priorite_personnes_coordonnees: ['plusieurs sujets', 'personnes différentes', 'hiérarchie 1re puis 2e puis 3e', 'accord à la personne résultante'],
+    coordination_comparative_incise: ['sujet principal', 'groupe comparatif entre virgules', 'pas de coordination additive', 'accord avec le sujet principal'],
+    sujet_infinitif: ['groupe infinitif', 'fonction sujet', 'noyau non nominal', 'verbe au singulier'],
+    sujets_coordonnees: ['deux sujets ou plus', 'coordination additive', 'ensemble pluriel', 'verbe au pluriel'],
+    pronom_sujet_renforce: ['pronom personnel sujet', 'renforcement par seul ou tous', 'personne et nombre du pronom', 'accord du verbe'],
+    nom_collectif: ['nom collectif', 'noyau et complément', 'sens de l’ensemble', 'accord justifié par la construction'],
+    sujet_eloigne: ['groupe sujet complexe', 'éléments intercalés', 'noyau du sujet', 'accord du verbe'],
+    obligation_necessite: ['expression d’obligation ou nécessité', 'subordonnée en que', 'fait envisagé', 'mode subjonctif'],
+    souhait_volonte: ['souhait, volonté ou ordre', 'subordonnée en que', 'action voulue', 'mode subjonctif'],
+    doute_possibilite: ['doute ou possibilité', 'fait non affirmé', 'subordonnée en que', 'mode subjonctif'],
+    certitude_indicatif: ['certitude ou constat', 'fait affirmé', 'subordonnée en que', 'mode indicatif'],
+    anteriorite_avant_que: ['construction avant que', 'événement attendu', 'antériorité visée', 'mode subjonctif'],
+    but_crainte_subjonctif: ['but ou crainte', 'subordonnée en que', 'résultat recherché ou redouté', 'mode subjonctif'],
+    restriction_superlatif_subjonctif: ['antécédent restreint', 'unicité ou superlatif', 'référent évalué', 'mode subjonctif'],
+    concession_subjonctif: ['construction concessive', 'fait admis malgré un obstacle', 'subordonnée', 'mode subjonctif'],
+    declencheur_mode_selon_sens: ['construction introductrice', 'statut réel ou envisagé du fait', 'choix du mode', 'forme verbale attendue'],
+    ou_lieu_temps_verrouille: ['antécédent de lieu ou temps', 'fonction circonstancielle', 'absence de régime en de ou à', 'pronom où'],
+    regime_sur_sur_lequel: ['antécédent nominal', 'recteur construit avec sur', 'complément prépositionnel', 'sur lequel accordé'],
+    sujet_qui: ['antécédent', 'fonction sujet dans la relative', 'aucune préposition', 'pronom qui'],
+    regime_direct_que: ['antécédent', 'verbe transitif direct', 'fonction COD dans la relative', 'pronom que'],
+    preposition_plus_qui_humain: ['antécédent humain', 'préposition régie', 'complément prépositionnel', 'préposition + qui'],
+    groupe_detache_sujet_implicite: ['groupe détaché', 'support implicite', 'sujet de la principale', 'rattachement cohérent'],
+    pronom_possessif_accord: ['nom remplacé', 'article défini', 'genre et nombre du nom', 'forme du pronom possessif'],
+    pronom_reflechi_indefini_soi: ['sujet indéfini', 'reprise réfléchie', 'absence de référent précis', 'pronom soi'],
+    ordre_pronoms_complements: ['deux pronoms compléments', 'fonctions COD, COI, y ou en', 'ordre syntaxique fixe', 'groupe pronominal correct'],
+    locution_pronominale_figee: ['locution verbale', 'pronom en ou y lexicalisé', 'construction complète', 'forme figée'],
+    lieu_ou_a_y: ['complément de lieu ou en à', 'référent non humain', 'reprise pronominale', 'pronom y'],
+    cvd_le_la_les: ['complément direct', 'genre et nombre du référent', 'reprise pronominale', 'le, la ou les'],
+    pronom_tonique_coordonne: ['sujet coordonné', 'pronom personnel', 'forme tonique', 'moi, toi, lui ou autre'],
+    redondance_pronominale: ['complément déjà repris', 'second pronom inutile', 'fonction en double', 'suppression de la redondance'],
+    relations_logiques_multiples: ['plusieurs phrases', 'relations logiques distinctes', 'analyse séparée', 'connecteur compatible dans chaque phrase'],
+    cause: ['fait principal', 'raison explicative', 'orientation cause vers effet', 'connecteur causal'],
+    addition: ['premier élément', 'ajout cohérent', 'même orientation argumentative', 'connecteur additif'],
+    but: ['action principale', 'objectif recherché', 'relation finalisée', 'connecteur de but'],
+    condition_restriction: ['énoncé principal', 'condition ou limite', 'portée restreinte', 'connecteur conditionnel'],
+    progression_temporelle: ['deux étapes temporelles', 'ordre ou progression', 'repère explicite', 'connecteur temporel'],
+    precision_reformulation: ['énoncé général', 'précision ou reformulation', 'contenu détaillé', 'connecteur d’explicitation'],
+    explication_confirmation: ['premier constat', 'preuve ou explication', 'confirmation argumentative', 'connecteur compatible'],
+    inclusion_exclusion: ['ensemble de départ', 'élément visé', 'inclusion ou exclusion', 'locution appropriée'],
+    relation_circonstancielle: ['énoncé principal', 'circonstance explicitée', 'valeur de la locution', 'relation cohérente'],
+    interdiction_virgule_sujet_verbe: ['groupe sujet', 'frontière sujet-verbe', 'groupe syntaxique essentiel', 'absence de virgule'],
+    interdiction_virgule_verbe_complement: ['verbe recteur', 'complément essentiel', 'groupe syntaxique insécable', 'absence de virgule'],
+    relative_determinative_sans_virgules: ['nom antécédent', 'relative restrictive', 'information indispensable', 'absence de virgules'],
+    relative_explicative_avec_virgules: ['nom antécédent', 'relative explicative', 'information détachable', 'deux virgules'],
+    point_abreviatif_etc: ['fin d’énumération', 'abréviation etc.', 'virgule avant', 'un seul point'],
+    point_virgule_propositions: ['deux propositions autonomes', 'lien sémantique', 'séparation intermédiaire', 'point-virgule'],
+    citation_directe: ['verbe de parole', 'deux-points d’annonce', 'guillemets', 'signe final de la citation'],
+    apostrophe_vocative: ['terme d’adresse', 'fonction vocative', 'segment détaché', 'virgule ou virgules'],
+    signes_doubles_parentheses_tirets: ['segment incident', 'signe ouvrant', 'signe fermant correspondant', 'ponctuation appariée'],
+    ponctuation_interrogation: ['type de question', 'directe ou indirecte', 'fin de phrase', 'signe approprié'],
+    virgule_coordination: ['deux propositions', 'coordonnant', 'frontière propositionnelle', 'virgule avant le lien'],
+    deux_points_explication: ['proposition d’annonce', 'relation d’explication', 'développement attendu', 'deux-points'],
+    complement_initial: ['complément circonstanciel', 'position initiale', 'frontière du complément', 'virgule finale'],
+    ponctuation_multi_regles: ['plusieurs phrases', 'règles de ponctuation distinctes', 'analyse séparée', 'ponctuation normative'],
+    si_sans_est_ce_que: ['verbe interrogatif introducteur', 'question totale', 'subordonnant si', 'absence de est-ce que'],
+    suppression_point_interrogation: ['interrogation intégrée', 'phrase principale déclarative', 'fin d’assertion', 'point ordinaire'],
+    suppression_inversion: ['question indirecte', 'ordre sujet-verbe', 'marque directe supprimée', 'ordre déclaratif'],
+    ordre_declaratif: ['verbe introducteur', 'mot interrogatif', 'ordre sujet-verbe', 'subordonnée déclarative'],
+    present_vers_imparfait: ['introducteur au passé', 'présent du discours direct', 'recul du repère', 'imparfait'],
+    passe_compose_vers_plus_que_parfait: ['introducteur au passé', 'passé composé source', 'antériorité', 'plus-que-parfait'],
+    pronoms_et_possessifs: ['changement d’énonciateur', 'personnes du discours', 'pronoms et possessifs', 'formes adaptées'],
+    transposition_complete_discours_indirect: ['discours direct source', 'plusieurs dimensions à transposer', 'nouveau repère énonciatif', 'discours indirect cohérent'],
+    regime_verbal_direct: ['verbe recteur', 'complément direct', 'absence de préposition', 'construction transitive'],
+    regime_verbal_a: ['verbe recteur', 'complément indirect', 'régime lexical', 'préposition à'],
+    regime_verbal_sur: ['verbe recteur', 'complément prépositionnel', 'régime lexical', 'préposition sur'],
+    locution_prepositive: ['locution rectrice', 'complément', 'construction figée', 'préposition attendue'],
+    imperatif_deuxieme_personne: ['mode impératif', 'deuxième personne', 'groupe du verbe', 'terminaison correcte'],
+    passe_simple: ['temps passé simple', 'groupe ou radical du verbe', 'personne du sujet', 'terminaison correspondante'],
+    imparfait_selon_personne: ['temps imparfait', 'radical verbal', 'personne du sujet', 'terminaison de l’imparfait'],
+    subjonctif_selon_personne: ['mode subjonctif', 'radical du verbe', 'personne du sujet', 'terminaison correcte'],
+    alternance_radical_conjugaison: ['verbe à alternance', 'temps et personne', 'radical adapté', 'terminaison régulière'],
+    futur_simple_regulier: ['temps futur simple', 'radical de l’infinitif', 'personne du sujet', 'terminaison du futur'],
+    participe_passe_irregulier: ['verbe irrégulier', 'forme du participe passé', 'genre ou nombre éventuel', 'graphie attestée'],
+    infinitif_participe: ['forme verbale homophone', 'construction précédente', 'infinitif ou participe', 'terminaison correcte'],
+    present_selon_personne: ['temps présent', 'verbe et radical', 'personne du sujet', 'terminaison correcte'],
+    forme_irreguliere_selon_temps: ['repère temporel', 'temps verbal', 'personne du sujet', 'forme irrégulière attestée'],
+    toutes_correctes_suspectes: ['quatre phrases', 'règles distinctes', 'vérifications séparées', 'toutes correctes'],
+    aucune_hypercorrections: ['quatre phrases', 'hypercorrections plausibles', 'règles distinctes', 'aucune correcte'],
+    phrases_eleves_heterogenes: ['quatre productions', 'mécanismes différents', 'analyse phrase par phrase', 'sélection de la phrase correcte'],
+    noms_de_nombre: ['nom de quantité', 'millier, million ou milliard', 'nombre supérieur à un', 'marque du pluriel'],
+    ces_ses_cest_sest: ['suite homophone', 'catégorie grammaticale', 'test de remplacement', 'graphie correcte'],
+    ce_se: ['homophones ce et se', 'fonction grammaticale', 'test de personne', 'graphie correcte'],
+    on_on_n: ['pronom on', 'négation', 'liaison trompeuse', 'présence de n’'],
+    du_du_accent: ['homophones du et dû', 'catégorie grammaticale', 'test de remplacement ou accord', 'accent correct'],
+    tout_tous_toute_toutes: ['formes de tout', 'catégorie grammaticale', 'donneur éventuel', 'accord ou invariabilité'],
+    quoique_quoi_que: ['locutions homophones', 'sens concessif ou indéfini', 'test de remplacement', 'un ou deux mots'],
+    davantage_davantage: ['homophones', 'adverbe ou groupe nominal', 'test par plus ou bénéfice', 'graphie correcte'],
+    homophones_multiples_en_contexte: ['suite homophonique', 'fonction grammaticale', 'test de remplacement', 'forme compatible'],
+    si_sy: ['si / s’y', 'fonction grammaticale', 'test de décomposition', 'forme compatible'],
+    graphie_composee: ['mot composé ou locution', 'frontières des éléments', 'soudure, espace ou trait d’union', 'graphie attestée'],
+    accentuation: ['mot lexical', 'voyelle accentuée', 'accent attesté', 'graphie correcte'],
+    consonne_double: ['mot lexical', 'position de la consonne', 'simple ou double', 'graphie attestée'],
+    paronyme_lexical: ['deux mots proches', 'définitions distinctes', 'indices du contexte', 'lexème approprié'],
+    finale_muette_par_famille: ['mot à finale peu audible', 'mot de la même famille', 'consonne révélée', 'graphie correcte'],
+    graphie_lexicale_usage: ['mot lexical', 'absence de règle productive sûre', 'graphie attestée', 'mémorisation en contexte'],
+    genre_change_sens: ['nom à deux genres', 'article masculin ou féminin', 'sens lié au genre', 'forme compatible'],
+    hypothese_si_plus_que_parfait_conditionnel_passe: ['hypothèse passée irréelle', 'si + plus-que-parfait', 'conséquence non réalisée', 'conditionnel passé'],
+    au_cas_ou_conditionnel: ['locution au cas où', 'éventualité', 'mode conditionnel', 'temps selon le repère'],
+    hypothese_condition_subjonctif: ['locution hypothétique ou conditionnelle', 'fait envisagé', 'subordonnée en que', 'mode subjonctif'],
+    locution_subjonctive_figee: ['locution figée', 'valeur non assertive', 'forme verbale stabilisée', 'subjonctif'],
+    si_coordonne_que_subjonctif: ['première condition en si', 'coordination par et que', 'reprise de la condition', 'subjonctif'],
+    dont_partitif: ['ensemble antécédent', 'sous-ensemble', 'valeur partitive', 'pronom dont'],
+    preposition_plus_quoi_neutre: ['antécédent neutre ce', 'préposition régie', 'complément prépositionnel', 'préposition + quoi'],
+    pronoms_reciproques_toniques: ['relation réciproque', 'préposition du verbe', 'genre et nombre des personnes', 'forme l’un l’autre'],
+    pronom_tonique_apres_preposition: ['préposition exprimée', 'référent humain', 'forme tonique', 'lui, elle, eux ou elles'],
+    accord_mots_particuliers: ['mot à comportement particulier', 'position ou fonction', 'donneur éventuel', 'accord ou invariabilité'],
+    graphies_lexicales_multiples: ['plusieurs phrases', 'lexèmes distincts', 'vérification séparée', 'graphies attestées'],
+    regimes_multiples: ['plusieurs phrases', 'recteurs distincts', 'régimes séparés', 'prépositions propres'],
+  });
+
   const DETAIL_PATHS = {
     matrice_avoir_etre: {
       avoir: ['temps composé non précisé', 'auxiliaire avoir', 'position du COD à établir', 'règle du COD'],
@@ -277,9 +451,23 @@
 
   function describe(family, mechanismId, tenseId, detailId) {
     const known = family && mechanismId && family !== 'UNK' && mechanismId !== 'UNK';
-    const mechanism = known ? MECHANISMS[mechanismId] : null;
-    const canonicalPath = known ? PATHS[mechanismId] : null;
-    if (!known || !mechanism || !canonicalPath) {
+    const familyLabel = FAMILIES[family] || family;
+    const generatedLabel = known ? humanizeMechanismId(mechanismId) : null;
+    const mechanism = known
+      ? (MECHANISMS[mechanismId] || [
+        generatedLabel,
+        FAMILY_GUIDANCE[family]
+          || 'Applique la règle précise donnée dans la correction de la question.',
+      ])
+      : null;
+    const canonicalPath = known
+      ? (PATHS[mechanismId] || [
+        familyLabel,
+        generatedLabel,
+        'règle précise expliquée dans la correction',
+      ])
+      : null;
+    if (!known) {
       const knownTense = tenseId
         ? (TENSES[tenseId] || `temps canonique non libellé : ${tenseId}`)
         : null;

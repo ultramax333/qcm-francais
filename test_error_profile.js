@@ -48,7 +48,7 @@ const history = [
 ];
 
 const result = profile.build(history);
-assert.strictEqual(result.schemaVersion, 'hep-local-error-profile/1.0');
+assert.strictEqual(result.schemaVersion, 'hep-local-error-profile/1.1');
 assert.strictEqual(result.sessions, 3);
 assert.strictEqual(result.attempts, 5);
 assert.strictEqual(result.errors, 3);
@@ -74,7 +74,7 @@ assert.deepStrictEqual(unknown.distractors, [
 ]);
 
 assert.deepStrictEqual(profile.build([]), {
-  schemaVersion: 'hep-local-error-profile/1.0',
+  schemaVersion: 'hep-local-error-profile/1.1',
   sessions: 0,
   attempts: 0,
   errors: 0,
@@ -82,5 +82,57 @@ assert.deepStrictEqual(profile.build([]), {
   knownErrors: 0,
   rows: [],
 });
+
+const legacyHistory = [{
+  date: '2026-07-23T10:00:00Z',
+  log: [{
+    id: 'legacy-active',
+    rule: 'participe',
+    answer: '2',
+    selected: '1',
+    correct: false,
+    family: null,
+    mechanismId: 'UNK',
+    misconceptionId: 'UNK',
+  }],
+}];
+const bank = [{
+  id: 'legacy-active',
+  rule: 'participe',
+  answer: '2',
+  hep: {
+    family: 'accord_participe_passe',
+    mechanism_id: 'avoir_cvd_avant',
+    detail_id: 'core',
+    tense_id: 'passe_compose',
+    option_misconceptions: {
+      1: 'cod_apres_suppose',
+      2: null,
+      3: 'UNK',
+      4: 'UNK',
+    },
+  },
+}];
+const enriched = profile.build(legacyHistory, bank);
+assert.strictEqual(enriched.rows[0].family, 'accord_participe_passe');
+assert.strictEqual(enriched.rows[0].mechanismId, 'avoir_cvd_avant');
+assert.strictEqual(enriched.rows[0].detailId, 'core');
+assert.strictEqual(enriched.rows[0].tenseId, 'passe_compose');
+assert.deepStrictEqual(enriched.rows[0].distractors, [{
+  misconceptionId: 'cod_apres_suppose',
+  selected: '1',
+  count: 1,
+}]);
+
+const changedQuestion = JSON.parse(JSON.stringify(bank));
+changedQuestion[0].answer = '4';
+const notEnriched = profile.build(legacyHistory, changedQuestion);
+assert.strictEqual(notEnriched.rows[0].mechanismId, 'UNK');
+
+const classifiedHistory = JSON.parse(JSON.stringify(legacyHistory));
+classifiedHistory[0].log[0].family = 'accord_participe_passe';
+classifiedHistory[0].log[0].mechanismId = 'avoir_cvd_apres';
+const preservedSnapshot = profile.build(classifiedHistory, bank);
+assert.strictEqual(preservedSnapshot.rows[0].mechanismId, 'avoir_cvd_apres');
 
 console.log('OK — profil cumulatif des erreurs.');

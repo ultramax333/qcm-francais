@@ -5,7 +5,7 @@
 }(typeof window !== 'undefined' ? window : globalThis, function () {
   'use strict';
 
-  const SCHEMA_VERSION = 'hep-local-error-profile/1.0';
+  const SCHEMA_VERSION = 'hep-local-error-profile/1.1';
 
   function valueOrUnknown(value) {
     return value == null || value === '' ? 'UNK' : String(value);
@@ -20,13 +20,65 @@
     ]);
   }
 
+  function isKnown(value) {
+    return value != null && value !== '' && value !== 'UNK';
+  }
+
+  function questionIndex(questions) {
+    return new Map(
+      (Array.isArray(questions) ? questions : [])
+        .filter((question) => question && question.id)
+        .map((question) => [String(question.id), question])
+    );
+  }
+
+  function enrichFromCurrentBank(attempt, byId) {
+    if (!attempt) return attempt;
+    const question = byId.get(String(attempt.id || ''));
+    if (!question) return attempt;
+    const expected = String(attempt.answer || attempt.expected || '');
+    const currentAnswer = String(question.answer || '');
+    const attemptRule = String(attempt.rule || '');
+    const currentRule = String(question.rule || '');
+    const sameQuestion = (
+      expected
+      && currentAnswer
+      && expected === currentAnswer
+      && currentRule
+      && (!attemptRule || attemptRule === currentRule)
+    );
+    if (!sameQuestion) return attempt;
+
+    const hep = question.hep || {};
+    const selected = String(attempt.selected || '');
+    const bankMisconception = (
+      hep.option_misconceptions
+      && ['1', '2', '3', '4'].includes(selected)
+      && selected !== currentAnswer
+    )
+      ? hep.option_misconceptions[selected]
+      : null;
+    return Object.assign({}, attempt, {
+      family: isKnown(attempt.family) ? attempt.family : hep.family,
+      mechanismId: isKnown(attempt.mechanismId)
+        ? attempt.mechanismId
+        : hep.mechanism_id,
+      detailId: isKnown(attempt.detailId) ? attempt.detailId : hep.detail_id,
+      tenseId: isKnown(attempt.tenseId) ? attempt.tenseId : hep.tense_id,
+      misconceptionId: isKnown(attempt.misconceptionId)
+        ? attempt.misconceptionId
+        : bankMisconception,
+    });
+  }
+
   function validDate(value) {
     const timestamp = Date.parse(value || '');
     return Number.isFinite(timestamp) ? new Date(timestamp).toISOString() : null;
   }
 
-  function build(history) {
+  function build(history, questions) {
     const rows = new Map();
+    const byId = questionIndex(questions);
     const sessions = (Array.isArray(history) ? history : [])
       .filter((entry) => entry && Array.isArray(entry.log))
       .slice()
@@ -36,7 +88,8 @@
       const touched = new Map();
       const sessionDate = validDate(entry.date);
 
-      entry.log.forEach((attempt) => {
+      entry.log.forEach((rawAttempt) => {
+        const attempt = enrichFromCurrentBank(rawAttempt, byId);
         if (!attempt) return;
         const key = rowKey(attempt);
         let row = rows.get(key);

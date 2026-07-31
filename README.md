@@ -11,10 +11,12 @@ taux d'erreur, séances concernées, récence, réussites depuis la dernière er
 et distribution des distracteurs choisis. Chaque distracteur conserve son option,
 son `misconception_id` et son compteur ; une cause absente reste `UNK`.
 
-État local vérifié le 28.07.2026 : version `1.14`, cache
-`qcm-op001-v114`, 1 690 questions uniques et release
-`questions-20260727-fd4bdfd8`. La publication sur `main` est effectuée après les
-contrôles décrits ci-dessous.
+État local vérifié le 31.07.2026 : version `1.16`, cache
+`qcm-op001-v116`, 1 690 questions uniques et release
+`questions-20260731-7e5d0453`. Les 1 690 questions portent une famille et un
+mécanisme grammatical fermés. Les détails, temps et causes de distracteur non
+prouvés restent `null` ou `UNK`. La production demeure en `1.15` jusqu'à un
+push et un contrôle explicites; aucun déploiement n'est implicite.
 
 ## Utilisation locale
 Ouvre `index.html` via un petit serveur statique (les Service Workers ne fonctionnent pas
@@ -53,6 +55,10 @@ dans cet export sans texte historique supplémentaire.
 À partir de la version 1.14, toute séance terminée reste dans **Séances à
 synchroniser** jusqu'à un envoi confirmé. Le tableau local est immédiat et
 rétroactif pour les historiques qui contiennent encore leur journal détaillé.
+À partir de la version 1.16, il complète aussi une ancienne famille, un ancien
+mécanisme ou un code de distracteur depuis la banque courante uniquement lorsque
+l'identifiant, la clé attendue et la règle concordent. L'historique brut n'est
+jamais réécrit; une question supprimée ou non vérifiable reste inconnue.
 La génération future n'utilise pas ce tableau comme un second compteur : elle
 importe les séances brutes, les déduplique par `session_id`, puis applique les
 seuils, la récence et la confiance définis dans le pipeline.

@@ -349,7 +349,9 @@
       wrap.appendChild(rv);
     }
 
-    const errorProfile = ERROR_PROFILE ? ERROR_PROFILE.build(loadHistory()) : null;
+    const errorProfile = ERROR_PROFILE
+      ? ERROR_PROFILE.build(loadHistory(), QUESTIONS)
+      : null;
     const errorRows = errorProfile ? errorProfile.rows.filter((row) => row.errors > 0).length : 0;
     const errorCard = el('button', { class: 'special-card errors-card' }, [
       el('div', { class: 'rule-name', text: '📊 Mes erreurs' }),
@@ -1039,7 +1041,7 @@
       return wrap;
     }
 
-    const profile = ERROR_PROFILE.build(loadHistory());
+    const profile = ERROR_PROFILE.build(loadHistory(), QUESTIONS);
     const rows = profile.rows.filter((row) => row.errors > 0);
     const rate = profile.attempts ? Math.round(profile.errorRate * 100) : 0;
     const repeatedSignals = rows.filter((row) => row.errors >= 2 && row.errorSessions >= 2).length;
