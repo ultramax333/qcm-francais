@@ -127,8 +127,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "homophones_multiples_en_contexte",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -247,8 +247,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accord_mots_particuliers",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -307,8 +307,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -427,8 +427,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -487,8 +487,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quoique_quoi_que",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -547,8 +547,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -607,8 +607,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -667,8 +667,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "tout_tous_toute_toutes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -727,8 +727,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -787,8 +787,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accentuation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -847,8 +847,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -907,8 +907,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -1027,8 +1027,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -1086,9 +1086,9 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "si_sy",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -1147,8 +1147,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -1267,8 +1267,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -1327,8 +1327,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -1387,8 +1387,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -1447,8 +1447,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -1507,8 +1507,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -1567,8 +1567,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -1627,8 +1627,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -1687,8 +1687,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -1747,8 +1747,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -1806,9 +1806,9 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "on_on_n",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -1866,9 +1866,9 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "on_on_n",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -1927,8 +1927,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -1987,8 +1987,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accentuation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -2047,8 +2047,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -2107,8 +2107,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -2227,8 +2227,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -2287,8 +2287,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -2347,8 +2347,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphies_lexicales_multiples",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -2407,8 +2407,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -2467,8 +2467,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -2527,8 +2527,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -2587,8 +2587,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -2647,8 +2647,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphies_lexicales_multiples",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -2707,8 +2707,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -2767,8 +2767,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -2827,8 +2827,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -2887,8 +2887,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -2947,8 +2947,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -3007,8 +3007,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -3067,8 +3067,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -3127,8 +3127,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphies_lexicales_multiples",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -3187,8 +3187,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -3247,8 +3247,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -3307,8 +3307,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -3367,8 +3367,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -3427,8 +3427,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -3487,8 +3487,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -3547,8 +3547,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphies_lexicales_multiples",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -3607,8 +3607,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -3907,8 +3907,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "anteriorite_avant_que",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -4026,10 +4026,10 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "family": "concordance_temps",
+      "mechanism_id": "hypothese_si_plus_que_parfait_conditionnel_passe",
+      "detail_id": "core",
+      "tense_id": "conditionnel_passe",
       "option_misconceptions": {
         "1": "UNK",
         "2": null,
@@ -4326,10 +4326,10 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "family": "concordance_temps",
+      "mechanism_id": "au_cas_ou_conditionnel",
+      "detail_id": "core",
+      "tense_id": "conditionnel_present",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
@@ -4387,8 +4387,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "concession_subjonctif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -4447,8 +4447,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -4507,8 +4507,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "doute_possibilite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -4746,10 +4746,10 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "family": "concordance_temps",
+      "mechanism_id": "au_cas_ou_conditionnel",
+      "detail_id": "core",
+      "tense_id": "conditionnel_present",
       "option_misconceptions": {
         "1": null,
         "2": null,
@@ -4867,8 +4867,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "hypothese_condition_subjonctif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -5047,9 +5047,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": "futur_anterieur",
+      "mechanism_id": "certitude_indicatif",
+      "detail_id": "core",
+      "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
         "2": null,
@@ -5107,8 +5107,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "doute_possibilite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -5167,8 +5167,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "souhait_volonte",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -5227,8 +5227,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "doute_possibilite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -5347,8 +5347,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "certitude_indicatif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -5467,8 +5467,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "anteriorite_avant_que",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -5647,8 +5647,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -5707,8 +5707,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "doute_possibilite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -5827,8 +5827,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "certitude_indicatif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -5947,9 +5947,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": "subjonctif_present",
+      "mechanism_id": "doute_possibilite",
+      "detail_id": "core",
+      "tense_id": null,
       "option_misconceptions": {
         "1": null,
         "2": null,
@@ -6007,8 +6007,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "souhait_volonte",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -6067,8 +6067,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "hypothese_condition_subjonctif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -6127,8 +6127,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "anteriorite_avant_que",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -6187,8 +6187,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "certitude_indicatif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -6247,8 +6247,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "certitude_indicatif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -6307,8 +6307,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "hypothese_condition_subjonctif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -6367,8 +6367,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "hypothese_condition_subjonctif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -6427,8 +6427,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "hypothese_condition_subjonctif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -6487,8 +6487,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "doute_possibilite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -6547,8 +6547,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "certitude_indicatif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -6607,8 +6607,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -6667,8 +6667,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "souhait_volonte",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -6727,8 +6727,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -6787,8 +6787,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "certitude_indicatif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -6847,8 +6847,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -6907,8 +6907,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -6967,8 +6967,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "certitude_indicatif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -7027,8 +7027,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "doute_possibilite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -7147,8 +7147,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -7207,8 +7207,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "souhait_volonte",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -7387,8 +7387,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "participe_adjectival_selon_position",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -7447,8 +7447,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "avoir_en_invariable",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -7567,8 +7567,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "mesure_duree_prix",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -7627,8 +7627,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "participe_sans_cvd_accordable",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -7987,8 +7987,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "infinitif_sous_entendu_invariable",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -8047,8 +8047,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "participe_adjectival_selon_position",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -8347,8 +8347,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "mesure_duree_prix",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -8407,8 +8407,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "participe_sans_cvd_accordable",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -8527,8 +8527,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "participe_sans_cvd_accordable",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -8707,8 +8707,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "pronominal_cvd_avant",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -8767,8 +8767,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "impersonnel_participe_invariable",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -8887,8 +8887,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "participe_sans_cvd_accordable",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -8947,8 +8947,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "participe_adjectival_selon_position",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -9187,8 +9187,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "participe_adjectival_selon_position",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -9247,8 +9247,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "participe_sans_cvd_accordable",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -9427,8 +9427,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "impersonnel_participe_invariable",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -9547,8 +9547,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "matrice_participes_speciaux",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -9787,8 +9787,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_qui_humain",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -10087,8 +10087,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_quoi_neutre",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -10207,8 +10207,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_lequel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -10267,8 +10267,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_quoi_neutre",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -10387,8 +10387,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "sujet_qui",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -10807,14 +10807,14 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "regime_de_dont",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
-        "1": "UNK",
+        "1": "regime_direct_suppose",
         "2": "UNK",
         "3": null,
-        "4": "UNK"
+        "4": "regime_a_suppose"
       }
     }
   },
@@ -10867,11 +10867,11 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "regime_a_auquel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
-        "1": "UNK",
+        "1": "regime_de_suppose",
         "2": null,
         "3": "UNK",
         "4": "UNK"
@@ -11047,8 +11047,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_lequel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -11347,8 +11347,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_qui_humain",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -11527,8 +11527,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_lequel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -11647,8 +11647,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_quoi_neutre",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -11827,8 +11827,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_qui_humain",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -12427,8 +12427,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_quoi_neutre",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -12487,8 +12487,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_lequel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -13027,8 +13027,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_quoi_neutre",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -13147,8 +13147,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_lequel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -13267,8 +13267,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -13387,8 +13387,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ordre_pronoms_complements",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -13446,9 +13446,9 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "family": "rupture_syntaxique",
+      "mechanism_id": "groupe_detache_sujet_implicite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -13507,8 +13507,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "complement_de_en",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -13567,8 +13567,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -13627,8 +13627,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "complement_de_en",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -13747,8 +13747,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "complement_de_en",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -13807,8 +13807,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -13986,10 +13986,10 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
+      "family": "conjugaison",
+      "mechanism_id": "imperatif_et_pronoms",
       "detail_id": null,
-      "tense_id": null,
+      "tense_id": "imperatif_present",
       "option_misconceptions": {
         "1": "UNK",
         "2": null,
@@ -14047,8 +14047,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ordre_pronoms_complements",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -14107,8 +14107,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -14166,9 +14166,9 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "family": "rupture_syntaxique",
+      "mechanism_id": "groupe_detache_sujet_implicite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -14287,8 +14287,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ordre_pronoms_complements",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -14346,10 +14346,10 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
+      "family": "conjugaison",
+      "mechanism_id": "imperatif_et_pronoms",
       "detail_id": null,
-      "tense_id": null,
+      "tense_id": "imperatif_present",
       "option_misconceptions": {
         "1": null,
         "2": null,
@@ -14407,8 +14407,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "redondance_pronominale",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -14467,8 +14467,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ordre_pronoms_complements",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -14527,8 +14527,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_pronominale_figee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -14586,10 +14586,10 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
+      "family": "conjugaison",
+      "mechanism_id": "imperatif_et_pronoms",
       "detail_id": null,
-      "tense_id": null,
+      "tense_id": "imperatif_present",
       "option_misconceptions": {
         "1": null,
         "2": "UNK",
@@ -14647,8 +14647,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -14707,8 +14707,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "cvd_le_la_les",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -14766,9 +14766,9 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "family": "rupture_syntaxique",
+      "mechanism_id": "groupe_detache_sujet_implicite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -14827,8 +14827,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -14887,8 +14887,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_pronominale_figee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -14947,8 +14947,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_pronominale_figee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -15007,8 +15007,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "complement_de_en",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -15067,8 +15067,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "pronom_possessif_accord",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -15127,8 +15127,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "complement_de_en",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -15187,8 +15187,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "complement_de_en",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -15307,8 +15307,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -15366,9 +15366,9 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "family": "rupture_syntaxique",
+      "mechanism_id": "groupe_detache_sujet_implicite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -15426,10 +15426,10 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
+      "family": "conjugaison",
+      "mechanism_id": "imperatif_et_pronoms",
       "detail_id": null,
-      "tense_id": null,
+      "tense_id": "imperatif_present",
       "option_misconceptions": {
         "1": "UNK",
         "2": null,
@@ -15487,8 +15487,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "pronom_reflechi_indefini_soi",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -15546,10 +15546,10 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
+      "family": "conjugaison",
+      "mechanism_id": "imperatif_et_pronoms",
       "detail_id": null,
-      "tense_id": null,
+      "tense_id": "imperatif_present",
       "option_misconceptions": {
         "1": null,
         "2": null,
@@ -15607,8 +15607,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -15667,8 +15667,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_pronominale_figee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -15727,8 +15727,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_pronominale_figee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -15787,8 +15787,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_pronominale_figee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -15847,8 +15847,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ordre_pronoms_complements",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -15907,8 +15907,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -15966,9 +15966,9 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "family": "rupture_syntaxique",
+      "mechanism_id": "groupe_detache_sujet_implicite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -16027,8 +16027,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_pronominale_figee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -16087,8 +16087,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_pronominale_figee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -16147,8 +16147,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -16207,8 +16207,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "complement_de_en",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -16267,8 +16267,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_pronominale_figee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -16327,8 +16327,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ordre_pronoms_complements",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -16387,8 +16387,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_pronominale_figee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -16447,8 +16447,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ordre_pronoms_complements",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -16507,8 +16507,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -16627,8 +16627,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_pronominale_figee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -16687,8 +16687,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ordre_pronoms_complements",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -16747,8 +16747,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "pronom_possessif_accord",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -16807,8 +16807,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -16867,8 +16867,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -16927,8 +16927,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -17107,8 +17107,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -17287,8 +17287,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -17407,8 +17407,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -17467,8 +17467,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -17647,8 +17647,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -17707,8 +17707,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -17767,8 +17767,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -17827,8 +17827,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -17887,8 +17887,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -17947,8 +17947,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "toutes_correctes_suspectes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -18127,8 +18127,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -18187,8 +18187,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -18247,8 +18247,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -18350,14 +18350,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Toutes correctes : « servis » (COD antéposé), « aperçu » (s'apercevoir, accord masculin singulier), « couru » invariable (distance), « plaintes » (se plaindre, accord). Réponse : Toutes.",
+    "explanation": "Règle : le participe passé est la forme du verbe qui suit « être » ou « avoir » (servi, aperçu, couru, plaint). Il ne s'accorde pas toujours, et le mécanisme change selon les cas. Avec « avoir », il s'accorde seulement avec le complément d'objet direct — le COD, c'est-à-dire le mot qui répond à la question « qui ? » ou « quoi ? » posée juste après le verbe, sans préposition — et seulement si ce COD est placé AVANT le verbe. Avec les verbes pronominaux (ceux qui se conjuguent avec « se » : s'apercevoir, se plaindre), tout dépend du rôle de ce « se ». Dans cette phrase : il y a quatre phrases, chacune teste un mécanisme différent, on les prend une par une. Phrase 1, « Les repas qu'on nous a servis » : le verbe est « a servi », on demande on a servi QUOI ? « les repas », repris juste avant par le pronom « qu' ». C'est donc un COD placé avant le verbe : le participe s'accorde avec lui, au masculin pluriel, « servis ». Phrase 2, « Il s'est aperçu de son erreur » : le verbe est « s'apercevoir DE quelque chose ». Ce qui suit est introduit par la préposition « de », ce n'est donc pas un COD. Le « s' » ne s'analyse pas séparément ici (on ne s'aperçoit pas soi-même, l'expression fonctionne d'un bloc) : l'accord se fait avec le sujet « il », d'où « aperçu », masculin singulier, sans s. Phrase 3, « Les dix kilomètres qu'il a couru » : on pourrait croire que « dix kilomètres » est un COD, mais courir dix kilomètres ne veut pas dire qu'on court des kilomètres comme on servirait des repas — « dix kilomètres » indique une mesure, une distance parcourue. Ce n'est pas un COD, il n'y a donc rien avec quoi accorder : « couru » reste invariable, sans s. Phrase 4, « Elles se sont plaintes » : « se plaindre » n'existe pas sans « se » (on ne peut pas dire « plaindre » au sens de « se plaindre »), c'est un verbe essentiellement pronominal. Dans ce cas, le participe s'accorde toujours avec le sujet : le sujet est « elles », d'où « plaintes », féminin pluriel. Donc : les quatre phrases sont correctes, la réponse est T (Toutes).",
     "why": {
-      "1": "Correcte : les repas antéposés → servis.",
-      "2": "Correcte : il s'est aperçu (accord masc. sing.).",
-      "3": "Correcte : dix kilomètres = mesure → couru.",
-      "4": "Correcte : se plaindre → plaintes.",
-      "A": "Les quatre sont correctes.",
-      "T": "Correct : aucune faute — même « couru » sans s."
+      "1": "Correcte. On a servi QUOI ? « les repas », repris par « qu' » placé avant le verbe : c'est un COD antéposé, donc le participe s'accorde au masculin pluriel, « servis ».",
+      "2": "Correcte. Le verbe est « s'apercevoir DE » : ce qui suit est introduit par « de », ce n'est pas un COD. L'accord se fait avec le sujet « il », d'où « aperçu » au masculin singulier.",
+      "3": "Correcte. « Dix kilomètres » exprime une mesure, une distance parcourue, et non la chose qu'on court : ce n'est pas un COD. Sans COD, le participe reste invariable, « couru » sans s.",
+      "4": "Correcte. « Se plaindre » n'existe pas sans « se » : c'est un verbe essentiellement pronominal, et son participe s'accorde avec le sujet. Le sujet est « elles », d'où « plaintes » au féminin pluriel.",
+      "A": "« Aucune » ne convient pas : les quatre phrases respectent chacune la règle du participe passé, comme le détaille la justification de chaque option.",
+      "T": "Correct : les quatre phrases sont justes, y compris la 3 où « couru » s'écrit sans s parce que « dix kilomètres » est une mesure et non un COD."
     },
     "gen": {
       "model": "Fable 5",
@@ -18427,8 +18427,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -18547,8 +18547,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -18607,8 +18607,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -18667,8 +18667,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -18787,8 +18787,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "toutes_correctes_suspectes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -18907,8 +18907,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -18967,8 +18967,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -19027,8 +19027,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -19147,8 +19147,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "toutes_correctes_suspectes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -19207,8 +19207,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -19387,8 +19387,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -19507,8 +19507,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -19567,8 +19567,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "toutes_correctes_suspectes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -19627,8 +19627,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -19687,8 +19687,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -19807,8 +19807,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -19927,8 +19927,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -20047,8 +20047,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -20287,8 +20287,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -20407,8 +20407,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -20467,8 +20467,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -20587,8 +20587,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -20767,8 +20767,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -20827,8 +20827,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -20947,8 +20947,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "toutes_correctes_suspectes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -21187,8 +21187,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -21247,8 +21247,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "aucune_hypercorrections",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -21427,8 +21427,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -21487,8 +21487,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "toutes_correctes_suspectes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -21507,7 +21507,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quelle phrase d'élève est correctement ponctuée ?",
+    "instruction": "Quelle phrase d'élève est correctement écrite ?",
     "options": [
       {
         "key": "1",
@@ -21535,7 +21535,7 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Seule la 3 est bien ponctuée (complément initial détaché, rien d'autre). Ailleurs : virgule entre sujet et verbe, virgule après « et », incise ouverte mais non refermée.",
+    "explanation": "Règle : la virgule sépare des éléments, elle ne coupe jamais ce qui va ensemble. Trois emplois sont en jeu ici. Un complément placé en tête de phrase (« Après l'examen », « Dès la première question ») est suivi d'une virgule. En revanche, on ne met jamais de virgule entre le sujet et son verbe, car ils forment un bloc. Enfin, un groupe glissé au milieu de la phrase — une incise — s'encadre par deux virgules : si on en ouvre une, il faut la refermer. Dans cette phrase : on examine les quatre propositions. « Après l'examen, les élèves, ont comparé leurs réponses » : la première virgule est correcte (complément en tête), mais la seconde coupe le sujet « les élèves » de son verbe « ont comparé », ce qui est interdit ; il fallait écrire « Après l'examen, les élèves ont comparé leurs réponses ». « Le surveillant a rappelé les règles et, a ramassé les copies » : la virgule est placée après « et », alors que « et » relie directement les deux verbes ; il fallait écrire « a rappelé les règles et a ramassé les copies ». « Dès la première question, elle a compris son erreur » : le complément « Dès la première question » est en tête de phrase et suivi d'une virgule, puis le sujet « elle » et le verbe « a compris » se suivent sans être séparés : tout est correct. « Elle a, après une longue hésitation choisi la réponse B » : le groupe « après une longue hésitation » est une incise, la virgule qui l'ouvre existe mais celle qui doit la refermer manque ; il fallait écrire « Elle a, après une longue hésitation, choisi la réponse B ». Donc : option 3.",
     "why": {
       "1": "Virgule fautive entre le sujet « les élèves » et le verbe.",
       "2": "Virgule fautive après « et » dans la coordination.",
@@ -21607,8 +21607,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -21667,8 +21667,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "sujet_eloigne",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -21727,8 +21727,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quantifieur_singulier",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -21787,8 +21787,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quantifieur_singulier",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -21967,8 +21967,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "sujets_coordonnees",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -22027,8 +22027,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quantifieur_singulier",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -22327,8 +22327,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quantifieur_pluriel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -22387,8 +22387,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "coordination_comparative_incise",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -22447,8 +22447,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "nom_collectif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -22507,8 +22507,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quantifieur_singulier",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -22567,8 +22567,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "sujet_eloigne",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -22627,8 +22627,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "priorite_personnes_coordonnees",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -22687,8 +22687,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quantifieur_pluriel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -22807,8 +22807,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "sujet_eloigne",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -23227,9 +23227,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "alternance_radical_conjugaison",
+      "detail_id": "core",
+      "tense_id": "futur_simple",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
@@ -23287,9 +23287,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "imperatif_deuxieme_personne",
+      "detail_id": "core",
+      "tense_id": "imperatif_present",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
@@ -23827,8 +23827,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "passe_simple",
+      "detail_id": "core",
       "tense_id": "passe_simple",
       "option_misconceptions": {
         "1": "UNK",
@@ -24007,9 +24007,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "present_selon_personne",
+      "detail_id": "core",
+      "tense_id": "present",
       "option_misconceptions": {
         "1": "UNK",
         "2": null,
@@ -24247,8 +24247,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "explication_confirmation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -24427,8 +24427,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "cause",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -24667,8 +24667,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "cause",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -24967,8 +24967,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "relations_logiques_multiples",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -25027,8 +25027,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "precision_reformulation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -25087,8 +25087,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "relation_circonstancielle",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -25147,8 +25147,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "relation_circonstancielle",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -25267,8 +25267,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "interdiction_virgule_sujet_verbe",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -25387,8 +25387,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "point_virgule_propositions",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -25447,8 +25447,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ponctuation_multi_regles",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -25567,8 +25567,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ponctuation_multi_regles",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -25627,8 +25627,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "complement_initial",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -25687,8 +25687,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "citation_directe",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -25747,8 +25747,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "point_virgule_propositions",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -25807,8 +25807,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "relative_determinative_sans_virgules",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -25867,8 +25867,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "virgule_coordination",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -25927,8 +25927,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "point_abreviatif_etc",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -25987,8 +25987,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "point_virgule_propositions",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -26047,8 +26047,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "signes_doubles_parentheses_tirets",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -26107,8 +26107,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "signes_doubles_parentheses_tirets",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -26167,8 +26167,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ponctuation_multi_regles",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -26227,8 +26227,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "interdiction_virgule_verbe_complement",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -26347,8 +26347,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "point_virgule_propositions",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -26407,8 +26407,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "relative_explicative_avec_virgules",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -26587,8 +26587,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "interrogation_indirecte",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "si_sans_est_ce_que",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -26707,8 +26707,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "discours_indirect",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "transposition_complete_discours_indirect",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -26767,8 +26767,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "discours_indirect",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "passe_compose_vers_plus_que_parfait",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -26827,8 +26827,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "discours_indirect",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "transposition_complete_discours_indirect",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -26887,8 +26887,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "interrogation_indirecte",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "suppression_point_interrogation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -26947,8 +26947,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "interrogation_indirecte",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ordre_declaratif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -27007,8 +27007,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "interrogation_indirecte",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ordre_declaratif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -27067,8 +27067,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "discours_indirect",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "present_vers_imparfait",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -27127,8 +27127,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "interrogation_indirecte",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ordre_declaratif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -27187,8 +27187,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "discours_indirect",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "transposition_complete_discours_indirect",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -27307,8 +27307,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "interrogation_indirecte",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ordre_declaratif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -27367,8 +27367,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "discours_indirect",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "pronoms_et_possessifs",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -27427,8 +27427,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "discours_indirect",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "pronoms_et_possessifs",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -27487,8 +27487,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "interrogation_indirecte",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ordre_declaratif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -27547,8 +27547,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "discours_indirect",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "transposition_complete_discours_indirect",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -27667,8 +27667,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -27787,8 +27787,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "regime_verbal_a",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -27847,8 +27847,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -27907,8 +27907,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -27967,8 +27967,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -28027,8 +28027,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -28087,8 +28087,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "regime_verbal_a",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -28147,8 +28147,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "regimes_multiples",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -28207,8 +28207,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "regime_verbal_de",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -28267,8 +28267,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "regime_verbal_a",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -28327,8 +28327,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "regime_verbal_de",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -28387,8 +28387,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "regime_verbal_de",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -28447,8 +28447,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "regime_verbal_de",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -28507,8 +28507,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -28567,8 +28567,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -28627,8 +28627,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -28687,8 +28687,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -28747,8 +28747,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "regimes_multiples",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -28807,8 +28807,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -29107,8 +29107,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "nombres_traits_union",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "noms_de_nombre",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -31267,8 +31267,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -31327,8 +31327,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "concession_subjonctif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -31507,8 +31507,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ordre_pronoms_complements",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -31567,8 +31567,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quantifieur_pluriel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -31627,8 +31627,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "futur_simple_regulier",
+      "detail_id": "core",
       "tense_id": "futur_simple",
       "option_misconceptions": {
         "1": "UNK",
@@ -31747,8 +31747,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "apostrophe_vocative",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -31807,8 +31807,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accentuation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -31867,8 +31867,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "concession_subjonctif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -32046,10 +32046,10 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
+      "family": "conjugaison",
+      "mechanism_id": "imperatif_et_pronoms",
       "detail_id": null,
-      "tense_id": null,
+      "tense_id": "imperatif_present",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
@@ -32167,8 +32167,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "imperatif_deuxieme_personne",
+      "detail_id": "core",
       "tense_id": "imperatif_present",
       "option_misconceptions": {
         "1": null,
@@ -32347,8 +32347,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -32407,8 +32407,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -32587,8 +32587,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_quoi_neutre",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -32707,8 +32707,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "sujet_infinitif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -32947,8 +32947,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -33066,10 +33066,10 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "family": "concordance_temps",
+      "mechanism_id": "hypothese_si_plus_que_parfait_conditionnel_passe",
+      "detail_id": "core",
+      "tense_id": "conditionnel_passe",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
@@ -33547,8 +33547,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -33606,9 +33606,9 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "infinitif_participe",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -33787,8 +33787,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "regime_sur_sur_lequel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -33847,8 +33847,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "complement_de_en",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -34147,8 +34147,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -34267,8 +34267,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "souhait_volonte",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -34327,8 +34327,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "impersonnel_participe_invariable",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -34387,8 +34387,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "regime_de_dont",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -34507,8 +34507,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "coordination_comparative_incise",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -34687,8 +34687,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "point_abreviatif_etc",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -34807,8 +34807,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accord_mots_particuliers",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -34867,8 +34867,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -34987,8 +34987,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -35047,8 +35047,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "regimes_multiples",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -35107,8 +35107,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "interrogation_indirecte",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "suppression_inversion",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -35167,9 +35167,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": "subjonctif_present",
+      "mechanism_id": "concession_subjonctif",
+      "detail_id": "core",
+      "tense_id": null,
       "option_misconceptions": {
         "1": null,
         "2": "UNK",
@@ -35227,8 +35227,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "pronom_reflechi_indefini_soi",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -35347,8 +35347,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -35407,8 +35407,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -35587,8 +35587,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "concession_subjonctif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -35647,8 +35647,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "cvd_le_la_les",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -35707,8 +35707,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "priorite_personnes_coordonnees",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -35767,8 +35767,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ponctuation_interrogation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -35887,8 +35887,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accord_mots_particuliers",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -35947,8 +35947,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -36007,8 +36007,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -36067,8 +36067,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -36187,8 +36187,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "certitude_indicatif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -36487,8 +36487,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -36547,8 +36547,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_pronominale_figee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -36667,8 +36667,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accord_mots_particuliers",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -36727,8 +36727,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -36907,8 +36907,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "regime_direct_que",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -36967,8 +36967,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "interdiction_virgule_sujet_verbe",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -37027,8 +37027,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quantifieur_pluriel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -37087,8 +37087,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -37147,8 +37147,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -37267,8 +37267,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ponctuation_multi_regles",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -37327,8 +37327,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "pronoms_reciproques_toniques",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -37387,8 +37387,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -37627,8 +37627,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "regime_verbal_direct",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -37748,8 +37748,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "futur_simple_regulier",
+      "detail_id": "core",
       "tense_id": "futur_simple",
       "option_misconceptions": {
         "1": "UNK",
@@ -37808,8 +37808,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "explication_confirmation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -37828,7 +37828,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Quelle phrase respecte l’accord des adjectifs de couleur ?",
+    "instruction": "Quelle phrase est correctement écrite ?",
     "options": [
       {
         "key": "1",
@@ -37856,7 +37856,7 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Une couleur composée comme « bleu clair » reste invariable ; les noms employés comme couleurs, tels « orange » et « marron », restent également invariables.",
+    "explanation": "Règle : un adjectif de couleur s'accorde normalement avec le nom (des vestes vertes). Il y a deux exceptions. Première exception : quand la couleur est exprimée par plusieurs mots (bleu clair, vert foncé, bleu marine), l'ensemble reste invariable, sans s. Deuxième exception : quand la couleur est en réalité un nom d'objet ou de fruit employé comme couleur (orange, marron, olive, crème), ce mot reste lui aussi invariable. Dans cette phrase : on regarde les quatre propositions. « des chemises bleues claires » : la couleur est en deux mots, elle doit donc rester invariable, il fallait écrire « des chemises bleu clair ». « des écharpes oranges » : « orange » est le nom d'un fruit employé comme couleur, il reste invariable, il fallait écrire « des écharpes orange ». « des manteaux marrons » : « marron » est également le nom d'un fruit, il reste invariable, il fallait écrire « des manteaux marron ». « des vestes bleu clair et des écharpes orange » : les deux exceptions sont respectées, la couleur en deux mots reste invariable et « orange » reste invariable. Donc : option 4.",
     "why": {
       "1": "La couleur composée doit rester invariable : « des chemises bleu clair ».",
       "2": "Le nom « orange » employé comme adjectif de couleur reste invariable.",
@@ -37868,8 +37868,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -37928,8 +37928,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -38108,8 +38108,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ordre_pronoms_complements",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -38348,8 +38348,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ponctuation_multi_regles",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -41029,7 +41029,7 @@ const QUESTIONS = [
       "writing_situation": null,
       "metadata_schema_version": "hep-question/2.1",
       "detail_id": "core",
-      "tense_id": "futur_anterieur",
+      "tense_id": "futur_simple",
       "option_misconceptions": {
         "1": null,
         "2": "UNK",
@@ -45144,8 +45144,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -45264,8 +45264,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accord_mots_particuliers",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -45324,8 +45324,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accentuation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -45444,8 +45444,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -45504,8 +45504,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "passe_simple",
+      "detail_id": "core",
       "tense_id": "passe_simple",
       "option_misconceptions": {
         "1": "UNK",
@@ -45564,8 +45564,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -45624,8 +45624,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "discours_indirect",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "passe_compose_vers_plus_que_parfait",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -45744,8 +45744,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accentuation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -45804,8 +45804,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -45864,8 +45864,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accentuation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -45924,8 +45924,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -45984,8 +45984,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -46044,8 +46044,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -46104,8 +46104,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphies_lexicales_multiples",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -46164,9 +46164,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "futur_simple_regulier",
+      "detail_id": "core",
+      "tense_id": "futur_simple",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
@@ -46224,8 +46224,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "discours_indirect",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "transposition_complete_discours_indirect",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -46344,8 +46344,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -46404,8 +46404,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphies_lexicales_multiples",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -46464,8 +46464,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -46524,8 +46524,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -46584,8 +46584,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -46704,8 +46704,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -46764,9 +46764,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "imperatif_deuxieme_personne",
+      "detail_id": "core",
+      "tense_id": "imperatif_present",
       "option_misconceptions": {
         "1": "UNK",
         "2": null,
@@ -46824,8 +46824,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "interrogation_indirecte",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ordre_declaratif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -46944,8 +46944,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -47004,8 +47004,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphies_lexicales_multiples",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -47064,8 +47064,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -47124,8 +47124,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -47184,8 +47184,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -47244,8 +47244,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -47304,9 +47304,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "futur_simple_regulier",
+      "detail_id": "core",
+      "tense_id": "futur_simple",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
@@ -47484,8 +47484,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -47544,8 +47544,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -47603,9 +47603,9 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "homophones_multiples_en_contexte",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -47663,9 +47663,9 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "homophones_multiples_en_contexte",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -47724,8 +47724,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -47784,8 +47784,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -47844,9 +47844,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "present_selon_personne",
+      "detail_id": "core",
+      "tense_id": "present",
       "option_misconceptions": {
         "1": null,
         "2": "UNK",
@@ -48024,8 +48024,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -48084,8 +48084,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -48144,8 +48144,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "infinitif_participe",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -48204,8 +48204,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -48264,8 +48264,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -48324,8 +48324,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -48384,8 +48384,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -48444,8 +48444,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "imparfait_selon_personne",
+      "detail_id": "core",
       "tense_id": "imparfait",
       "option_misconceptions": {
         "1": null,
@@ -48504,8 +48504,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "discours_indirect",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "passe_compose_vers_plus_que_parfait",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -48624,8 +48624,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -48684,8 +48684,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphies_lexicales_multiples",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -48744,8 +48744,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -48804,8 +48804,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -48864,8 +48864,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -48924,8 +48924,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -48984,9 +48984,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "imperatif_deuxieme_personne",
+      "detail_id": "core",
+      "tense_id": "imperatif_present",
       "option_misconceptions": {
         "1": null,
         "2": "UNK",
@@ -49164,8 +49164,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accord_mots_particuliers",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -49224,8 +49224,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphies_lexicales_multiples",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -49284,8 +49284,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -49344,8 +49344,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accentuation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -49404,8 +49404,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -49464,8 +49464,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -49524,8 +49524,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -49584,9 +49584,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "alternance_radical_conjugaison",
+      "detail_id": "core",
+      "tense_id": "futur_simple",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
@@ -49764,8 +49764,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -49824,8 +49824,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -49884,8 +49884,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -49944,8 +49944,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -50004,8 +50004,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -50064,8 +50064,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -50124,9 +50124,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "present_selon_personne",
+      "detail_id": "core",
+      "tense_id": "present",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
@@ -50184,8 +50184,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "discours_indirect",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "transposition_complete_discours_indirect",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -50304,8 +50304,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_lexicale_usage",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -50364,8 +50364,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -50424,8 +50424,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -50484,8 +50484,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -50544,8 +50544,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -50604,8 +50604,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "forme_irreguliere_selon_temps",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -50724,8 +50724,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "regime_sur_sur_lequel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -50784,8 +50784,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -50844,8 +50844,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphies_lexicales_multiples",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -50904,8 +50904,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -50964,8 +50964,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_lexicale_usage",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -51024,8 +51024,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_lexicale_usage",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -51084,8 +51084,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -51144,8 +51144,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "forme_irreguliere_selon_temps",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -51324,8 +51324,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -51384,8 +51384,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -51444,8 +51444,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -51504,8 +51504,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accentuation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -51564,8 +51564,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -51624,8 +51624,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "participe_passe_irregulier",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -51684,8 +51684,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "interrogation_indirecte",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ordre_declaratif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -51744,8 +51744,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_lequel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -51804,8 +51804,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -51864,8 +51864,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -51924,8 +51924,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -51984,8 +51984,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -52044,8 +52044,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -52104,8 +52104,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -52164,8 +52164,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -52224,8 +52224,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "forme_irreguliere_selon_temps",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -52344,8 +52344,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_lequel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -52404,8 +52404,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -52464,8 +52464,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphies_lexicales_multiples",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -52524,8 +52524,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -52584,8 +52584,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -52644,8 +52644,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -52704,9 +52704,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "present_selon_personne",
+      "detail_id": "core",
+      "tense_id": "present",
       "option_misconceptions": {
         "1": "UNK",
         "2": null,
@@ -52764,8 +52764,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "discours_indirect",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "passe_compose_vers_plus_que_parfait",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -52884,8 +52884,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "finale_muette_par_famille",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -52944,8 +52944,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphies_lexicales_multiples",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -53004,8 +53004,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -53064,8 +53064,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -53124,8 +53124,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -53184,9 +53184,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "present_selon_personne",
+      "detail_id": "core",
+      "tense_id": "present",
       "option_misconceptions": {
         "1": "UNK",
         "2": null,
@@ -53244,8 +53244,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "interrogation_indirecte",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ordre_declaratif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -53364,8 +53364,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_lexicale_usage",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -53424,8 +53424,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -53484,8 +53484,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -53544,8 +53544,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accentuation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -53604,8 +53604,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accentuation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -53664,8 +53664,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -53724,8 +53724,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -53784,9 +53784,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "futur_simple_regulier",
+      "detail_id": "core",
+      "tense_id": "futur_simple",
       "option_misconceptions": {
         "1": "UNK",
         "2": null,
@@ -53964,8 +53964,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphies_lexicales_multiples",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -54024,8 +54024,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -54084,8 +54084,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -54144,8 +54144,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accentuation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -54204,8 +54204,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -54264,8 +54264,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -54324,8 +54324,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "passe_simple",
+      "detail_id": "core",
       "tense_id": "passe_simple",
       "option_misconceptions": {
         "1": "UNK",
@@ -54384,8 +54384,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "discours_indirect",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "transposition_complete_discours_indirect",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -54504,8 +54504,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -54564,8 +54564,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -54624,8 +54624,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -54684,8 +54684,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "genre_change_sens",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -54744,8 +54744,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -54804,8 +54804,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -54864,8 +54864,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -54924,9 +54924,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "present_selon_personne",
+      "detail_id": "core",
+      "tense_id": "present",
       "option_misconceptions": {
         "1": "UNK",
         "2": null,
@@ -54984,8 +54984,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "interrogation_indirecte",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ordre_declaratif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -55104,8 +55104,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -55164,8 +55164,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accentuation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -55224,8 +55224,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -55284,8 +55284,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -55344,8 +55344,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -55404,8 +55404,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "passe_simple",
+      "detail_id": "core",
       "tense_id": "passe_simple",
       "option_misconceptions": {
         "1": "UNK",
@@ -55464,8 +55464,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "interrogation_indirecte",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ordre_declaratif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -55584,8 +55584,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_lexicale_usage",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -55644,8 +55644,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphies_lexicales_multiples",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -55704,8 +55704,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -55764,8 +55764,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -55824,8 +55824,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -55884,8 +55884,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -55944,8 +55944,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -56004,8 +56004,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "imparfait_selon_personne",
+      "detail_id": "core",
       "tense_id": "imparfait",
       "option_misconceptions": {
         "1": "UNK",
@@ -56064,8 +56064,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "discours_indirect",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "pronoms_et_possessifs",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -56184,8 +56184,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -56244,8 +56244,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accentuation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -56304,8 +56304,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -56364,8 +56364,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -56424,8 +56424,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "forme_irreguliere_selon_temps",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -56484,8 +56484,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "discours_indirect",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "transposition_complete_discours_indirect",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -56604,8 +56604,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_lexicale_usage",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -56664,8 +56664,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -56724,8 +56724,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -56784,8 +56784,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -56844,8 +56844,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -56904,8 +56904,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -56964,8 +56964,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "passe_simple",
+      "detail_id": "core",
       "tense_id": "passe_simple",
       "option_misconceptions": {
         "1": "UNK",
@@ -57024,8 +57024,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "interrogation_indirecte",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "suppression_inversion",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -57144,8 +57144,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -57264,8 +57264,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -57324,8 +57324,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -57384,8 +57384,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -57444,9 +57444,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "present_selon_personne",
+      "detail_id": "core",
+      "tense_id": "present",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
@@ -57504,8 +57504,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "discours_indirect",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "pronoms_et_possessifs",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -57564,8 +57564,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "regime_direct_que",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -57624,8 +57624,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -57684,8 +57684,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -57744,8 +57744,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "genre_change_sens",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -57804,8 +57804,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -57864,8 +57864,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -57924,8 +57924,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_lexicale_usage",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -57984,9 +57984,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "subjonctif_selon_personne",
+      "detail_id": "core",
+      "tense_id": "subjonctif_present",
       "option_misconceptions": {
         "1": "UNK",
         "2": null,
@@ -58104,8 +58104,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "regime_sur_sur_lequel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -58164,8 +58164,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -58224,8 +58224,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphies_lexicales_multiples",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -58284,8 +58284,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -58344,8 +58344,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -58404,8 +58404,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -58464,8 +58464,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -58524,8 +58524,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_lexicale_usage",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -58584,8 +58584,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "passe_simple",
+      "detail_id": "core",
       "tense_id": "passe_simple",
       "option_misconceptions": {
         "1": "UNK",
@@ -58704,8 +58704,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "regime_direct_que",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -58764,8 +58764,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -58824,8 +58824,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphies_lexicales_multiples",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -58884,8 +58884,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -58944,8 +58944,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -59004,8 +59004,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -59064,8 +59064,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -59124,9 +59124,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "present_selon_personne",
+      "detail_id": "core",
+      "tense_id": "present",
       "option_misconceptions": {
         "1": "UNK",
         "2": null,
@@ -59304,8 +59304,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -59424,8 +59424,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "toutes_correctes_suspectes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -59484,8 +59484,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "but_crainte_subjonctif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -59544,8 +59544,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "certitude_indicatif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -59664,9 +59664,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "futur_simple_regulier",
+      "detail_id": "core",
+      "tense_id": "futur_simple",
       "option_misconceptions": {
         "1": "UNK",
         "2": null,
@@ -59724,8 +59724,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "citation_directe",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -59844,8 +59844,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_lequel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -59904,8 +59904,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphies_lexicales_multiples",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -60084,8 +60084,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "hypothese_condition_subjonctif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -60144,8 +60144,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "concession_subjonctif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -60264,9 +60264,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "present_selon_personne",
+      "detail_id": "core",
+      "tense_id": "present",
       "option_misconceptions": {
         "1": null,
         "2": "UNK",
@@ -60324,8 +60324,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "interdiction_virgule_sujet_verbe",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -60444,8 +60444,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "regime_sur_sur_lequel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -60504,8 +60504,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -60564,8 +60564,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -60624,8 +60624,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -60684,8 +60684,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -60744,9 +60744,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "subjonctif_selon_personne",
+      "detail_id": "core",
+      "tense_id": "subjonctif_present",
       "option_misconceptions": {
         "1": "UNK",
         "2": null,
@@ -60804,8 +60804,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "interrogation_indirecte",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "si_sans_est_ce_que",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -60864,8 +60864,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "explication_confirmation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -61164,8 +61164,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -61224,8 +61224,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "toutes_correctes_suspectes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -61344,8 +61344,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "souhait_volonte",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -61524,8 +61524,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "signes_doubles_parentheses_tirets",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -61764,8 +61764,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -61884,8 +61884,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "concession_subjonctif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -61944,8 +61944,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "certitude_indicatif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -62124,8 +62124,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "point_virgule_propositions",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -62184,8 +62184,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -62304,8 +62304,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -62364,8 +62364,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -62484,8 +62484,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -62544,8 +62544,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "hypothese_condition_subjonctif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -62724,8 +62724,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "cvd_le_la_les",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -62784,8 +62784,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -62844,8 +62844,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -63024,8 +63024,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "hypothese_condition_subjonctif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -63084,8 +63084,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "discours_indirect",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "passe_compose_vers_plus_que_parfait",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -63144,9 +63144,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "passe_simple",
+      "detail_id": "core",
+      "tense_id": "passe_simple",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
@@ -63204,8 +63204,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "regimes_multiples",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -63264,8 +63264,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -63324,8 +63324,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -63384,8 +63384,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -63444,8 +63444,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -63564,8 +63564,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -63624,8 +63624,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "doute_possibilite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -63924,8 +63924,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -63984,8 +63984,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphies_lexicales_multiples",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -64164,8 +64164,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "hypothese_condition_subjonctif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -64224,8 +64224,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "interrogation_indirecte",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ordre_declaratif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -64284,8 +64284,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "interdiction_virgule_verbe_complement",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -64404,8 +64404,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -64584,8 +64584,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "infinitif_participe",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -64704,8 +64704,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "participe_adjectival_selon_position",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -64752,9 +64752,9 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Devant le verbe, le COD précède le COI : « les leur rendra » (les = les clés, leur = aux maîtres).",
+    "explanation": "Règle : quand deux pronoms compléments se placent devant le verbe, l'ordre est imposé. On met d'abord le COD — le complément d'objet direct, c'est-à-dire le mot qui répond à la question « quoi ? » posée après le verbe, sans préposition — puis le COI — le complément d'objet indirect, celui qui répond à « à qui ? », introduit par la préposition « à ». L'ordre est donc « le / la / les » d'abord, « lui / leur » ensuite. Dans cette phrase : on cherche d'abord le COD. Le concierge rendra QUOI ? « les clés des salles spéciales » : la question se pose sans préposition, c'est le COD, et le pronom qui le remplace est « les » (féminin pluriel). On cherche ensuite le COI. Il les rendra À QUI ? « aux maîtres concernés » : la question se pose avec « à », c'est le COI, et le pronom qui le remplace est « leur ». Il reste à les ranger dans le bon ordre : le COD d'abord, le COI ensuite, ce qui donne « les leur rendra ». Donc : option 1.",
     "why": {
-      "1": "Correct : ordre COD + COI devant le verbe (les leur).",
+      "1": "Correct : « les » reprend le COD (les clés), « leur » reprend le COI (aux maîtres), et le COD se place avant le COI devant le verbe.",
       "2": "« leur les rendra » inverse l'ordre obligatoire des pronoms.",
       "3": "« les leurs » est le pronom possessif (celles qui leur appartiennent), pas la combinaison COD + COI.",
       "4": "« leur rendra » perd la reprise des clés (les).",
@@ -64764,8 +64764,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "coi_lui_leur",
+      "detail_id": "pluriel",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -64884,8 +64884,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "toutes_correctes_suspectes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -64944,9 +64944,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "alternance_radical_conjugaison",
+      "detail_id": "core",
+      "tense_id": "futur_simple",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
@@ -65064,8 +65064,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ce_se",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -65123,9 +65123,9 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "on_on_n",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -65184,8 +65184,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accord_mots_particuliers",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -65243,10 +65243,10 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "family": "concordance_temps",
+      "mechanism_id": "au_cas_ou_conditionnel",
+      "detail_id": "core",
+      "tense_id": "conditionnel_present",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
@@ -65304,8 +65304,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ou_lieu_temps_verrouille",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -65364,8 +65364,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -65424,8 +65424,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "discours_indirect",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "present_vers_imparfait",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -65484,8 +65484,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "addition",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -65544,8 +65544,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quantifieur_singulier",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -65604,8 +65604,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -65664,8 +65664,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -65724,8 +65724,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ces_ses_cest_sest",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -65784,8 +65784,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "finale_muette_par_famille",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -65844,8 +65844,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "complement_de_en",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -65964,8 +65964,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "doute_possibilite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -66264,8 +66264,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "homophones_multiples_en_contexte",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -66323,9 +66323,9 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "infinitif_participe",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -66384,8 +66384,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "souhait_volonte",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -66444,11 +66444,11 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "regime_a_auquel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
-        "1": "UNK",
+        "1": "regime_de_suppose",
         "2": "UNK",
         "3": "UNK",
         "4": null
@@ -66504,8 +66504,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -66564,8 +66564,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "discours_indirect",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "passe_compose_vers_plus_que_parfait",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -66624,8 +66624,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "cause",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -66684,8 +66684,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "forme_irreguliere_selon_temps",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -66744,8 +66744,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -66804,8 +66804,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quoique_quoi_que",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -66864,8 +66864,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -66924,8 +66924,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accentuation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -67104,8 +67104,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "anteriorite_avant_que",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -67164,8 +67164,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "discours_indirect",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "pronoms_et_possessifs",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -67224,8 +67224,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "addition",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -67344,8 +67344,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -67404,8 +67404,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "homophones_multiples_en_contexte",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -67464,8 +67464,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphies_lexicales_multiples",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -67524,8 +67524,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -67584,8 +67584,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_lequel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -67704,8 +67704,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "hypothese_condition_subjonctif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -67764,8 +67764,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "interrogation_indirecte",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ordre_declaratif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -67884,8 +67884,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "passe_simple",
+      "detail_id": "core",
       "tense_id": "passe_simple",
       "option_misconceptions": {
         "1": "UNK",
@@ -68004,8 +68004,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -68064,8 +68064,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -68124,8 +68124,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_lequel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -68244,8 +68244,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "concession_subjonctif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -68364,8 +68364,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "impersonnel_participe_invariable",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -68544,8 +68544,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -68604,8 +68604,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -68664,8 +68664,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accentuation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -68784,8 +68784,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -69024,8 +69024,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "subjonctif_selon_personne",
+      "detail_id": "core",
       "tense_id": "subjonctif_present",
       "option_misconceptions": {
         "1": "UNK",
@@ -69144,8 +69144,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -69204,8 +69204,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accentuation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -69384,8 +69384,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "toutes_correctes_suspectes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -69444,8 +69444,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "but_crainte_subjonctif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -69504,8 +69504,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "discours_indirect",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "transposition_complete_discours_indirect",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -69564,8 +69564,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quantifieur_pluriel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -69624,8 +69624,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -69804,8 +69804,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -69864,8 +69864,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "homophones_multiples_en_contexte",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -69984,8 +69984,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -70044,8 +70044,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "hypothese_condition_subjonctif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -70224,8 +70224,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ponctuation_interrogation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -70344,8 +70344,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ce_se",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -70404,8 +70404,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "homophones_multiples_en_contexte",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -70464,8 +70464,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -70584,8 +70584,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -70644,8 +70644,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "hypothese_condition_subjonctif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -70764,8 +70764,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "relation_circonstancielle",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -70824,9 +70824,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "subjonctif_selon_personne",
+      "detail_id": "core",
+      "tense_id": "subjonctif_present",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
@@ -70944,8 +70944,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -71004,8 +71004,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accord_mots_particuliers",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -71064,8 +71064,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -71184,8 +71184,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -71244,8 +71244,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -71424,8 +71424,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "apostrophe_vocative",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -71484,8 +71484,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "pronom_possessif_accord",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -71544,8 +71544,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quoique_quoi_que",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -71604,8 +71604,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -71664,8 +71664,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -71844,8 +71844,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "doute_possibilite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -71904,8 +71904,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "discours_indirect",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "pronoms_et_possessifs",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -71964,8 +71964,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "condition_restriction",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -72024,8 +72024,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "forme_irreguliere_selon_temps",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -72084,8 +72084,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -72204,8 +72204,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "homophones_multiples_en_contexte",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -72324,8 +72324,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "doute_possibilite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -72804,8 +72804,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accord_mots_particuliers",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -72984,8 +72984,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "participe_sans_cvd_accordable",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -73044,8 +73044,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "progression_temporelle",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -73104,8 +73104,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "regime_verbal_a",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -73344,8 +73344,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "homophones_multiples_en_contexte",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -73524,8 +73524,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "hypothese_condition_subjonctif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -73824,9 +73824,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": "futur_anterieur",
+      "mechanism_id": "futur_simple_regulier",
+      "detail_id": "core",
+      "tense_id": "futur_simple",
       "option_misconceptions": {
         "1": null,
         "2": "UNK",
@@ -73944,8 +73944,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accentuation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -74004,8 +74004,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -74124,8 +74124,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "doute_possibilite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -74244,8 +74244,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "complement_de_en",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -74424,8 +74424,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -74544,8 +74544,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "homophones_multiples_en_contexte",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -74664,8 +74664,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -74724,8 +74724,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "but_crainte_subjonctif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -74844,8 +74844,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "pronom_reflechi_indefini_soi",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -75024,9 +75024,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "present_selon_personne",
+      "detail_id": "core",
+      "tense_id": "present",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
@@ -75144,8 +75144,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accentuation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -75204,8 +75204,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -75444,8 +75444,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -75624,8 +75624,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "regime_verbal_a",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -75804,8 +75804,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "infinitif_participe",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -76044,8 +76044,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "complement_de_en",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -76104,8 +76104,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "interdiction_virgule_sujet_verbe",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -76164,8 +76164,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quantifieur_singulier",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -76224,9 +76224,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "alternance_radical_conjugaison",
+      "detail_id": "core",
+      "tense_id": "futur_simple",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
@@ -76284,8 +76284,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "interrogation_indirecte",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "si_sans_est_ce_que",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -76344,8 +76344,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accord_mots_particuliers",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -76404,8 +76404,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "homophones_multiples_en_contexte",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -76644,8 +76644,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -76824,8 +76824,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "regimes_multiples",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -76944,8 +76944,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "homophones_multiples_en_contexte",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -77004,8 +77004,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -77124,9 +77124,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": "subjonctif_present",
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
+      "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
         "2": null,
@@ -77184,8 +77184,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ou_lieu_temps_verrouille",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -77244,8 +77244,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ordre_pronoms_complements",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -77304,8 +77304,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "virgule_coordination",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -77424,9 +77424,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "alternance_radical_conjugaison",
+      "detail_id": "core",
+      "tense_id": "futur_simple",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
@@ -77544,8 +77544,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -77604,8 +77604,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accentuation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -77664,8 +77664,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -77724,8 +77724,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -77844,8 +77844,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ordre_pronoms_complements",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -77904,8 +77904,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "participe_adjectival_selon_position",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -78024,8 +78024,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -78144,8 +78144,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -78204,8 +78204,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -78324,8 +78324,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -78444,8 +78444,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "complement_de_en",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -78504,8 +78504,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "point_abreviatif_etc",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -78624,9 +78624,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "present_selon_personne",
+      "detail_id": "core",
+      "tense_id": "present",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
@@ -78743,9 +78743,9 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "homophones_multiples_en_contexte",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -78804,8 +78804,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accord_mots_particuliers",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -78864,8 +78864,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "toutes_correctes_suspectes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -78924,8 +78924,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -78984,8 +78984,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_qui_humain",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -79044,8 +79044,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "pronom_tonique_coordonne",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -79104,8 +79104,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "participe_adjectival_selon_position",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -79164,8 +79164,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "cause",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -79344,8 +79344,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -79404,8 +79404,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -79464,8 +79464,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -79524,8 +79524,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -79644,8 +79644,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ordre_pronoms_complements",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -79704,8 +79704,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "citation_directe",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -79764,8 +79764,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "priorite_personnes_coordonnees",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -79824,8 +79824,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "subjonctif_selon_personne",
+      "detail_id": "core",
       "tense_id": "subjonctif_present",
       "option_misconceptions": {
         "1": "UNK",
@@ -79884,8 +79884,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "discours_indirect",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "present_vers_imparfait",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -79944,8 +79944,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -80003,9 +80003,9 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "infinitif_participe",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -80124,9 +80124,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": "subjonctif_present",
+      "mechanism_id": "si_coordonne_que_subjonctif",
+      "detail_id": "core",
+      "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
         "2": null,
@@ -80184,8 +80184,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ou_lieu_temps_verrouille",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -80244,8 +80244,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "pronom_possessif_accord",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -80304,8 +80304,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "infinitif_sous_entendu_invariable",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -80364,8 +80364,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "relations_logiques_multiples",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -80604,8 +80604,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -80664,8 +80664,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -80724,8 +80724,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "participe_passe_irregulier",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -80760,7 +80760,7 @@ const QUESTIONS = [
       },
       {
         "key": "4",
-        "text": "qu'"
+        "text": "que"
       },
       {
         "key": "A",
@@ -80772,20 +80772,20 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : « obtenir QUELQUE CHOSE » est un verbe à complément direct : le relatif complément direct est « que » (élidé en qu'). Le piège consiste à croire que le verbe demande une préposition. Dans cette phrase : le comité a obtenu QUOI ? ces dérogations → qu'. Donc : option 4.",
+    "explanation": "Règle : le pronom relatif change selon la façon dont le verbe de la subordonnée se construit. Si le verbe se construit sans préposition (on dit « obtenir quelque chose », et non « obtenir à » ou « obtenir de »), le pronom qui remplace ce complément est « que ». S'il fallait une préposition, on emploierait « dont » (pour « de »), « auquel / auxquelles » (pour « à »). Dans cette phrase : la subordonnée est « le comité a fini par obtenir ___ ». On pose la question après le verbe : le comité a fini par obtenir QUOI ? « les dérogations ». La question se pose sans préposition, le complément est donc direct, et le pronom est « que ». On écrit « Les dérogations que le comité a fini par obtenir ». Attention : « que » ne s'écrit « qu' » que devant une voyelle ou un h muet ; ici le mot suivant est « le », on garde donc « que » en entier. Donc : option 4.",
     "why": {
-      "1": "« dont » supposerait « obtenir de quelque chose », construction inexistante.",
-      "2": "« auxquelles » supposerait « obtenir à », construction inexistante.",
-      "3": "« desquelles » habille la même erreur en « de » d'une forme composée.",
-      "4": "Correct : obtenir (complément direct) → les dérogations qu'il a fini par obtenir.",
+      "1": "« dont » remplace un complément introduit par « de ». Il faudrait dire « obtenir de quelque chose », ce qui ne se dit pas : le verbe « obtenir » se construit sans préposition. Forme correcte : « que ».",
+      "2": "« auxquelles » remplace un complément introduit par « à ». Il faudrait dire « obtenir à quelque chose », ce qui ne se dit pas. Forme correcte : « que ».",
+      "3": "« desquelles » contient lui aussi le « de » : c'est la même erreur que « dont », sous une forme composée. Forme correcte : « que ».",
+      "4": "Correct : « obtenir » se construit sans préposition (obtenir QUOI ? les dérogations), donc le pronom est « que » — « les dérogations que le comité a fini par obtenir ».",
       "A": "Il existe bien une option correcte : la 4.",
       "T": "Une seule option restitue la construction directe du verbe."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_quoi_neutre",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -80844,8 +80844,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -80904,8 +80904,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ponctuation_multi_regles",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -80964,8 +80964,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "sujet_eloigne",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -81024,8 +81024,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "discours_indirect",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "transposition_complete_discours_indirect",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -81084,8 +81084,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -81203,10 +81203,10 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "family": "concordance_temps",
+      "mechanism_id": "hypothese_si_plus_que_parfait_conditionnel_passe",
+      "detail_id": "core",
+      "tense_id": "conditionnel_passe",
       "option_misconceptions": {
         "1": null,
         "2": "UNK",
@@ -81264,8 +81264,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_qui_humain",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -81324,8 +81324,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_pronominale_figee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -81384,8 +81384,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "pronominal_se_coi",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -81444,8 +81444,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "precision_reformulation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -81504,8 +81504,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "regimes_multiples",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -81684,8 +81684,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -81744,8 +81744,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "souhait_volonte",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -81864,8 +81864,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ordre_pronoms_complements",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -81984,8 +81984,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quantifieur_pluriel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -82044,9 +82044,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "alternance_radical_conjugaison",
+      "detail_id": "core",
+      "tense_id": "futur_simple",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
@@ -82104,8 +82104,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "interrogation_indirecte",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "suppression_inversion",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -82224,8 +82224,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -82284,8 +82284,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_qui_humain",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -82404,8 +82404,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "pronominal_cvd_avant",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -82464,8 +82464,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "explication_confirmation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -82524,8 +82524,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -82644,8 +82644,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "davantage_davantage",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -82824,8 +82824,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -82884,8 +82884,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_lequel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -82944,8 +82944,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -83004,8 +83004,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "interdiction_virgule_sujet_verbe",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -83124,8 +83124,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "passe_simple",
+      "detail_id": "core",
       "tense_id": "passe_simple",
       "option_misconceptions": {
         "1": "UNK",
@@ -83244,8 +83244,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "homophones_multiples_en_contexte",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -83364,8 +83364,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "anteriorite_avant_que",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -83484,8 +83484,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_pronominale_figee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -83784,8 +83784,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -83904,8 +83904,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "but_crainte_subjonctif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -84024,8 +84024,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "complement_de_en",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -84084,8 +84084,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "citation_directe",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -84144,8 +84144,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "coordination_comparative_incise",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -84204,9 +84204,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "alternance_radical_conjugaison",
+      "detail_id": "core",
+      "tense_id": "futur_simple",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
@@ -84264,8 +84264,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "interrogation_indirecte",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "suppression_inversion",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -84384,8 +84384,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -84504,8 +84504,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -84804,8 +84804,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -85044,8 +85044,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "cvd_le_la_les",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -85344,8 +85344,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "revision_transversale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -85464,8 +85464,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_qui_humain",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -85524,8 +85524,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "complement_de_en",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -85584,8 +85584,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "participe_sans_cvd_accordable",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -85644,8 +85644,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "relation_circonstancielle",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -85824,8 +85824,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -85943,10 +85943,10 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "family": "conjugaison",
+      "mechanism_id": "imperatif_deuxieme_personne",
+      "detail_id": "core",
+      "tense_id": "imperatif_present",
       "option_misconceptions": {
         "1": null,
         "2": "UNK",
@@ -86004,8 +86004,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_qui_humain",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -86064,8 +86064,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -86184,8 +86184,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quantifieur_singulier",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -86244,8 +86244,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "mesure_duree_prix",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -86304,8 +86304,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "addition",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -86424,9 +86424,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": "subjonctif_present",
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
+      "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
@@ -86484,8 +86484,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -86544,8 +86544,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "participe_sans_cvd_accordable",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -86604,8 +86604,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "progression_temporelle",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -86664,8 +86664,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_prepositive",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -86724,8 +86724,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quantifieur_pluriel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -86964,8 +86964,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -87024,8 +87024,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "point_virgule_propositions",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -87144,7 +87144,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
+      "mechanism_id": "coi_lui_leur",
       "detail_id": null,
       "tense_id": null,
       "option_misconceptions": {
@@ -87384,8 +87384,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "homophones_multiples_en_contexte",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -87444,8 +87444,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -87624,8 +87624,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -87684,8 +87684,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "pronominal_se_coi",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -87984,8 +87984,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accentuation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -88044,8 +88044,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -88164,9 +88164,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": "subjonctif_present",
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
+      "tense_id": null,
       "option_misconceptions": {
         "1": null,
         "2": "UNK",
@@ -88284,8 +88284,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "complement_de_en",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -88404,8 +88404,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "relation_circonstancielle",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -88464,8 +88464,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quantifieur_singulier",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -88584,8 +88584,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "homophones_multiples_en_contexte",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -88644,8 +88644,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ces_ses_cest_sest",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -88704,8 +88704,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_lequel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -88764,9 +88764,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": "subjonctif_present",
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
+      "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
@@ -88824,8 +88824,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -89183,9 +89183,9 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "on_on_n",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -89244,8 +89244,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_quoi_neutre",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -89304,8 +89304,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -89424,8 +89424,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ordre_pronoms_complements",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -89544,8 +89544,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "addition",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -89604,8 +89604,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quantifieur_pluriel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -89724,8 +89724,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -89844,8 +89844,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -89904,8 +89904,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "complement_de_en",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -90084,8 +90084,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quantifieur_pluriel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -90263,9 +90263,9 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "homophones_multiples_en_contexte",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -90324,8 +90324,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "tout_tous_toute_toutes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -90444,8 +90444,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -90564,8 +90564,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "complement_de_en",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -90684,8 +90684,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "but",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -90744,8 +90744,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quantifieur_pluriel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -90864,8 +90864,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -90924,8 +90924,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -91044,8 +91044,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -91104,8 +91104,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -91224,8 +91224,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "cause",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -91284,8 +91284,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quantifieur_singulier",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -91464,8 +91464,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "graphie_composee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -91524,8 +91524,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accentuation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -91644,8 +91644,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -91764,8 +91764,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -91884,8 +91884,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "cause",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -91944,8 +91944,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quantifieur_pluriel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -92064,8 +92064,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "homophones_multiples_en_contexte",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -92124,8 +92124,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "tout_tous_toute_toutes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -92184,8 +92184,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_qui_humain",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -92244,8 +92244,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -92304,8 +92304,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "complement_de_en",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -92424,8 +92424,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "cause",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -92484,8 +92484,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quantifieur_pluriel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -92664,8 +92664,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ce_se",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -92724,8 +92724,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -92784,8 +92784,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_qui_humain",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -92844,8 +92844,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -92964,8 +92964,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -93084,8 +93084,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "progression_temporelle",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -93264,8 +93264,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -93324,8 +93324,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -93384,8 +93384,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_lequel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -93444,8 +93444,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -93504,8 +93504,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "complement_de_en",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -93684,8 +93684,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quantifieur_pluriel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -93864,8 +93864,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ces_ses_cest_sest",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -93984,8 +93984,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -94104,8 +94104,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -94284,8 +94284,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "priorite_personnes_coordonnees",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -94404,8 +94404,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -94464,8 +94464,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accentuation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -94584,8 +94584,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -94644,8 +94644,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "complement_de_en",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -94764,8 +94764,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "explication_confirmation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -94824,8 +94824,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "sujet_eloigne",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -95124,8 +95124,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_qui_humain",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -95183,10 +95183,10 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "family": "concordance_temps",
+      "mechanism_id": "au_cas_ou_conditionnel",
+      "detail_id": "core",
+      "tense_id": "conditionnel_present",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
@@ -95304,8 +95304,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "complement_de_en",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -95424,8 +95424,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "condition_restriction",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -95484,8 +95484,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quantifieur_singulier",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -95604,8 +95604,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "tout_tous_toute_toutes",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -95664,8 +95664,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_lequel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -95724,8 +95724,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -95784,8 +95784,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "complement_de_en",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -95904,8 +95904,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "inclusion_exclusion",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -95964,8 +95964,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "pronom_sujet_renforce",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -96144,8 +96144,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -96204,8 +96204,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ce_se",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -96324,8 +96324,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -96444,8 +96444,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -96564,8 +96564,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "relation_circonstancielle",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -96624,8 +96624,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "priorite_personnes_coordonnees",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -96744,8 +96744,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -96804,8 +96804,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_lequel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -96864,8 +96864,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -96924,8 +96924,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "complement_de_en",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -97044,8 +97044,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "relation_circonstancielle",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -97104,8 +97104,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quantifieur_singulier",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -97284,8 +97284,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "homophones_multiples_en_contexte",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -97344,8 +97344,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_lequel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -97404,8 +97404,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -97524,8 +97524,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "complement_de_en",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -97644,8 +97644,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "precision_reformulation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -97704,8 +97704,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quantifieur_singulier",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -97824,8 +97824,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "ce_se",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -97884,8 +97884,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accentuation",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -97944,8 +97944,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_lequel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -98004,8 +98004,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -98064,8 +98064,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -98184,8 +98184,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "progression_temporelle",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -98244,8 +98244,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "pronom_sujet_renforce",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -98423,9 +98423,9 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "homophones_multiples_en_contexte",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -98484,8 +98484,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "accord_mots_particuliers",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -98604,8 +98604,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -98724,8 +98724,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -98844,8 +98844,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "condition_restriction",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -98904,8 +98904,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quantifieur_pluriel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -99024,8 +99024,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quoique_quoi_que",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -99084,8 +99084,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_lequel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -99144,8 +99144,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -99204,8 +99204,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -99384,8 +99384,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "pronom_sujet_renforce",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -99564,8 +99564,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -99624,8 +99624,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_lequel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -99684,8 +99684,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -99804,8 +99804,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "complement_de_en",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -99924,8 +99924,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "progression_temporelle",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -99984,8 +99984,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "quantifieur_singulier",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -100104,8 +100104,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_lequel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -100164,8 +100164,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -100224,8 +100224,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -100344,8 +100344,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "cause",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -100404,8 +100404,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "pronom_sujet_renforce",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -100583,9 +100583,9 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "infinitif_participe",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -100644,8 +100644,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_lequel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -100704,8 +100704,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "locution_subjonctive_figee",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -100824,8 +100824,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -100944,8 +100944,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "but",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -101004,8 +101004,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "pronom_sujet_renforce",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -101124,8 +101124,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "preposition_plus_lequel",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -101184,8 +101184,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "subjonctif_indicatif",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "obligation_necessite",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -101244,8 +101244,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "lieu_ou_a_y",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -101364,8 +101364,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "relation_circonstancielle",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -101424,8 +101424,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "sujet_eloigne",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -101606,9 +101606,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "present_selon_personne",
+      "detail_id": "core",
+      "tense_id": "present",
       "option_misconceptions": {
         "1": null,
         "2": "UNK",
@@ -101667,9 +101667,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
-      "tense_id": null,
+      "mechanism_id": "imperatif_deuxieme_personne",
+      "detail_id": "core",
+      "tense_id": "imperatif_present",
       "option_misconceptions": {
         "1": null,
         "2": "UNK",
@@ -101729,8 +101729,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "conjugaison",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "passe_simple",
+      "detail_id": "core",
       "tense_id": "passe_simple",
       "option_misconceptions": {
         "1": "UNK",
@@ -102095,8 +102095,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_sujet_verbe",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "sujet_eloigne",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -102400,8 +102400,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "UNK",
-      "detail_id": null,
+      "mechanism_id": "paronyme_lexical",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
