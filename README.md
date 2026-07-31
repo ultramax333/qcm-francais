@@ -11,12 +11,11 @@ taux d'erreur, séances concernées, récence, réussites depuis la dernière er
 et distribution des distracteurs choisis. Chaque distracteur conserve son option,
 son `misconception_id` et son compteur ; une cause absente reste `UNK`.
 
-État local vérifié le 31.07.2026 : version `1.16`, cache
+État local et production vérifié le 31.07.2026 : version `1.16`, cache
 `qcm-op001-v116`, 1 690 questions uniques et release
 `questions-20260731-7e5d0453`. Les 1 690 questions portent une famille et un
 mécanisme grammatical fermés. Les détails, temps et causes de distracteur non
-prouvés restent `null` ou `UNK`. La production demeure en `1.15` jusqu'à un
-push et un contrôle explicites; aucun déploiement n'est implicite.
+prouvés restent `null` ou `UNK`.
 
 ## Utilisation locale
 Ouvre `index.html` via un petit serveur statique (les Service Workers ne fonctionnent pas
