@@ -10,14 +10,26 @@ cumulatif depuis l'historique local : erreurs identiques regroupées, tentatives
 taux d'erreur, séances concernées, récence, réussites depuis la dernière erreur
 et distribution des distracteurs choisis. Chaque distracteur conserve son option,
 son `misconception_id` et son compteur ; une cause absente reste `UNK`.
+À l’écran, chaque difficulté commence par « La règle, simplement », puis
+« Comment faire » en trois étapes. Famille, mécanisme, détail, temps, chemin canonique et
+codes de cause restent disponibles uniquement dans « Catégorie technique ».
 
 Production vérifiée le 31.07.2026 : version `1.16`, cache `qcm-op001-v116`,
-1 690 questions et release `questions-20260731-7e5d0453`. État local en attente
-de publication au 01.08.2026 : **1 740 questions uniques**, release
-`questions-20260731-7946ec4f`. Toutes portent une famille et un mécanisme
+1 690 questions et release `questions-20260731-7e5d0453`. État local prêt à publier
+au 01.08.2026 : version `1.19`, cache `qcm-op001-v119`, **1 740 questions
+uniques**, release `questions-20260801-963def2f`. Toutes portent une famille et un mécanisme
 grammatical fermés. Les détails, temps et causes de distracteur non prouvés
-restent `null` ou `UNK`. Le prochain déploiement devra incrémenter ensemble la
-version de l'application et le cache PWA.
+restent `null` ou `UNK`.
+
+La carte **Accord du participe passé** est un menu déroulant. Elle conserve un
+entraînement général et propose aussi un entraînement ciblé pour les 21 sous-cas stables actifs
+`mechanism_id + detail_id` de la banque, regroupés en règles générales, infinitif,
+verbes pronominaux, cas particuliers et révisions combinées. Chaque cas affiche
+avant le lancement sa règle en langage scolaire, un exemple et une méthode en
+trois étapes. Le filtre utilise directement le couple canonique de la question;
+aucune taxonomie parallèle n'est créée. Les quatre couples à norme variable restent
+dans le mélange général mais sont exclus du ciblage. Un sous-cas prévu sans question
+active reste masqué jusqu'à la publication d'une question correspondante.
 
 ## Utilisation locale
 Ouvre `index.html` via un petit serveur statique (les Service Workers ne fonctionnent pas
@@ -70,11 +82,9 @@ intégration manuelle de `questions.js` rendrait l'identifiant de banque obsolè
 
 ## Fichiers
 - `index.html`, `style.css`, `app.js` — l'application
-- `pedagogy.js` — libellés pédagogiques versionnés, chemins grammaticaux précis
-  et agrégation prudente des erreurs. Le catalogue
-  prévoit aussi des identifiants encore absents de la banque (`avoir_suivi_infinitif_sujet_action`,
-  `laisse_suivi_infinitif`, pronominaux réfléchi/réciproque/essentiellement pronominal);
-  ils ne sont jamais appliqués sans métadonnée canonique correspondante.
+- `pedagogy.js` — catégories techniques versionnées, fiche apprenant propre à
+  chaque mécanisme actif et agrégation prudente des erreurs. Les sous-cas prévus
+  mais encore sans question ne sont jamais affichés ni appliqués par défaut.
 - `error-profile.js` — agrégation cumulative locale, sans dupliquer les séances
   dans la mémoire de génération
 - `questions.js` — la banque locale active de 1 740 questions

@@ -7268,7 +7268,7 @@ const QUESTIONS = [
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
       "mechanism_id": "pronominal_se_coi",
-      "detail_id": "core",
+      "detail_id": "cod_avant",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -7327,7 +7327,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "pronominal_cvd_avant",
+      "mechanism_id": "fait_suivi_infinitif",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -7387,7 +7387,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "participe_adjectival_selon_position",
+    "mechanism_id": "matrice_avoir_etre",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -7627,8 +7627,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "participe_sans_cvd_accordable",
-      "detail_id": "core",
+      "mechanism_id": "participe_adjectival_selon_position",
+      "detail_id": "avant_stable",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -7687,7 +7687,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "avoir_suivi_infinitif_sujet_action",
+      "mechanism_id": "participe_suivi_infinitif",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -7747,7 +7747,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "pronominal_cvd_avant",
+      "mechanism_id": "matrice_participes_speciaux",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -7807,7 +7807,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "avoir_cvd_apres",
+      "mechanism_id": "participe_suivi_infinitif",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -7927,7 +7927,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "avoir_cvd_avant",
+      "mechanism_id": "mesure_duree_prix",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -8047,8 +8047,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "participe_adjectival_selon_position",
-      "detail_id": "core",
+    "mechanism_id": "participe_adjectival_selon_position",
+    "detail_id": "zone_facultative",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -8107,7 +8107,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "pronominal_essentiellement",
+      "mechanism_id": "matrice_participes_speciaux",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -8167,7 +8167,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "pronominal_cvd_avant",
+      "mechanism_id": "matrice_participes_speciaux",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -8347,7 +8347,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "mesure_duree_prix",
+      "mechanism_id": "matrice_participes_speciaux",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -8407,8 +8407,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "participe_sans_cvd_accordable",
-      "detail_id": "core",
+    "mechanism_id": "pronominal_se_coi",
+    "detail_id": "cod_avant",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -8467,7 +8467,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "avoir_suivi_infinitif_sujet_action",
+      "mechanism_id": "participe_suivi_infinitif",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -8527,8 +8527,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "participe_sans_cvd_accordable",
-      "detail_id": "core",
+    "mechanism_id": "pronominal_se_coi",
+    "detail_id": "contraste_place_cod",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -8587,7 +8587,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "avoir_suivi_infinitif_sujet_action",
+      "mechanism_id": "participe_suivi_infinitif",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -8648,7 +8648,7 @@ const QUESTIONS = [
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
       "mechanism_id": "pronominal_se_coi",
-      "detail_id": "core",
+      "detail_id": "sans_cod",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -8707,8 +8707,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "pronominal_cvd_avant",
-      "detail_id": "core",
+    "mechanism_id": "pronominal_se_coi",
+    "detail_id": "sans_cod",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -8828,7 +8828,7 @@ const QUESTIONS = [
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
       "mechanism_id": "pronominal_se_coi",
-      "detail_id": "core",
+      "detail_id": "cod_avant",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -8887,7 +8887,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "participe_sans_cvd_accordable",
+      "mechanism_id": "impersonnel_participe_invariable",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -8947,7 +8947,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "participe_adjectival_selon_position",
+    "mechanism_id": "matrice_participes_speciaux",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -9007,8 +9007,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "pronominal_cvd_avant",
-      "detail_id": "core",
+      "mechanism_id": "pronominal_se_coi",
+      "detail_id": "contraste_place_cod",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -9067,8 +9067,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "pronominal_essentiellement",
-      "detail_id": "core",
+      "mechanism_id": "pronominal_accord_sujet",
+      "detail_id": "essentiellement",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -9188,7 +9188,7 @@ const QUESTIONS = [
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
       "mechanism_id": "participe_adjectival_selon_position",
-      "detail_id": "core",
+      "detail_id": "apres_stable",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -9247,8 +9247,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "participe_sans_cvd_accordable",
-      "detail_id": "core",
+    "mechanism_id": "participe_attribut_cod",
+    "detail_id": "pronominal",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -9367,8 +9367,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "avoir_cvd_avant",
-      "detail_id": "core",
+    "mechanism_id": "participe_attribut_cod",
+    "detail_id": "avoir",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -9427,8 +9427,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "impersonnel_participe_invariable",
-      "detail_id": "core",
+      "mechanism_id": "pronominal_accord_sujet",
+      "detail_id": "autonome",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -9487,7 +9487,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "avoir_cvd_avant",
+      "mechanism_id": "participe_suivi_infinitif",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -24746,7 +24746,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "1",
-        "text": "En dépit de"
+        "text": "Malgré"
       },
       {
         "key": "2",
@@ -24770,12 +24770,12 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Devant un NOM, seule la préposition convient : « en dépit de » (ou « malgré »). « Bien que », « quoique » exigent une proposition ; « malgré que » est fautif.",
+    "explanation": "Règle : devant un groupe nominal, on emploie directement la préposition « malgré ». Les locutions « bien que » et « quoique » introduisent normalement une proposition avec un verbe. Dans cette phrase : après le blanc, « les critiques répétées » est un groupe nominal, sans verbe. On obtient donc « Malgré les critiques répétées, la direction maintient son calendrier ». Donc : option 1.",
     "why": {
-      "1": "Correct : préposition + nom.",
-      "2": "« Malgré que » : tour condamné.",
-      "3": "« Bien que » + nom seul : construction fautive.",
-      "4": "« Quoique » + nom seul : idem.",
+      "1": "Correct : « malgré » est une préposition qui peut être suivie directement du groupe nominal « les critiques répétées ».",
+      "2": "« Malgré que les critiques répétées » ne forme pas une proposition : il manque un verbe après « que ».",
+      "3": "« Bien que » introduit une proposition avec un verbe, par exemple « bien que les critiques soient répétées » ; il ne convient pas devant ce groupe nominal seul.",
+      "4": "« Quoique » introduit lui aussi une proposition avec un verbe ; « quoique les critiques répétées » est incomplet ici.",
       "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
       "T": "Les options 2, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
     },
@@ -31388,7 +31388,7 @@ const QUESTIONS = [
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
       "mechanism_id": "pronominal_se_coi",
-      "detail_id": "core",
+      "detail_id": "sans_cod",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -31928,7 +31928,7 @@ const QUESTIONS = [
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
       "mechanism_id": "pronominal_se_coi",
-      "detail_id": "core",
+      "detail_id": "sans_cod",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -32528,7 +32528,7 @@ const QUESTIONS = [
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
       "mechanism_id": "pronominal_se_coi",
-      "detail_id": "core",
+      "detail_id": "cod_apres",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -33128,7 +33128,7 @@ const QUESTIONS = [
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
       "mechanism_id": "pronominal_se_coi",
-      "detail_id": "core",
+      "detail_id": "rendre_compte",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -33727,7 +33727,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "pronominal_se_coi",
+      "mechanism_id": "matrice_participes_speciaux",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -35467,8 +35467,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "avoir_cvd_avant",
-      "detail_id": "core",
+    "mechanism_id": "participe_attribut_cod",
+    "detail_id": "contraste",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -36127,7 +36127,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "avoir_cvd_avant",
+      "mechanism_id": "matrice_participes_speciaux",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -37207,8 +37207,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "avoir_cvd_avant",
-      "detail_id": "core",
+      "mechanism_id": "pronominal_se_coi",
+      "detail_id": "contraste_place_cod",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -38691,14 +38691,14 @@ const QUESTIONS = [
       "profile": "perfectionnement",
       "domain": "orthographe",
       "family": "accord_participe_passe",
-      "mechanism_id": "pronominal_cvd_avant",
+      "mechanism_id": "pronominal_se_coi",
       "difficulty": "difficile",
       "source_genre": "rapport",
       "communicative_purpose": "consigner les décisions et échanges d'une commission",
       "cognitive_mode": "analyse_structurelle",
       "writing_situation": null,
       "metadata_schema_version": "hep-question/2.1",
-      "detail_id": "core",
+      "detail_id": "cod_avant",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -39480,7 +39480,7 @@ const QUESTIONS = [
       "profile": "perfectionnement",
       "domain": "orthographe",
       "family": "accord_participe_passe",
-      "mechanism_id": "avoir_cvd_avant",
+      "mechanism_id": "matrice_participes_speciaux",
       "difficulty": "difficile",
       "source_genre": "copie_eleve",
       "communicative_purpose": "relire les décisions et actions consignées dans un procès-verbal",
@@ -39699,7 +39699,7 @@ const QUESTIONS = [
       "cognitive_mode": "analyse_structurelle",
       "writing_situation": null,
       "metadata_schema_version": "hep-question/2.1",
-      "detail_id": "core",
+      "detail_id": "cod_apres",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -39768,7 +39768,7 @@ const QUESTIONS = [
       "cognitive_mode": "analyse_structurelle",
       "writing_situation": null,
       "metadata_schema_version": "hep-question/2.1",
-      "detail_id": "core",
+      "detail_id": "sans_cod",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -40037,7 +40037,7 @@ const QUESTIONS = [
       "profile": "perfectionnement",
       "domain": "orthographe",
       "family": "accord_participe_passe",
-      "mechanism_id": "avoir_cvd_avant",
+      "mechanism_id": "participe_suivi_infinitif",
       "difficulty": "niveau_examen",
       "source_genre": "recit",
       "communicative_purpose": "identifier les personnes perçues en train d'agir",
@@ -40119,7 +40119,7 @@ const QUESTIONS = [
         "writer_profile": "scripteur sérieux qui se relit et applique parfois une règle par hypercorrection"
       },
       "metadata_schema_version": "hep-question/2.1",
-      "detail_id": null,
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -43980,7 +43980,7 @@ const QUESTIONS = [
       "cognitive_mode": "analyse_structurelle",
       "writing_situation": null,
       "metadata_schema_version": "hep-question/2.1",
-      "detail_id": "core",
+      "detail_id": "sans_cod",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -63805,7 +63805,7 @@ const QUESTIONS = [
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
       "mechanism_id": "pronominal_se_coi",
-      "detail_id": "core",
+      "detail_id": "cod_avant",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -64705,7 +64705,7 @@ const QUESTIONS = [
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
       "mechanism_id": "participe_adjectival_selon_position",
-      "detail_id": "core",
+      "detail_id": "apres_stable",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -68364,7 +68364,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "impersonnel_participe_invariable",
+      "mechanism_id": "matrice_participes_speciaux",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -70884,7 +70884,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "avoir_cvd_avant",
+    "mechanism_id": "mesure_duree_prix",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -72984,8 +72984,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "participe_sans_cvd_accordable",
-      "detail_id": "core",
+      "mechanism_id": "pronominal_se_coi",
+      "detail_id": "sans_cod",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -74304,7 +74304,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "avoir_cvd_avant",
+    "mechanism_id": "mesure_duree_prix",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -75504,8 +75504,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "pronominal_essentiellement",
-      "detail_id": "core",
+      "mechanism_id": "pronominal_accord_sujet",
+      "detail_id": "essentiellement",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -77904,7 +77904,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "participe_adjectival_selon_position",
+    "mechanism_id": "impersonnel_participe_invariable",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -79104,8 +79104,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "participe_adjectival_selon_position",
-      "detail_id": "core",
+    "mechanism_id": "participe_adjectival_selon_position",
+    "detail_id": "zone_facultative",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -81385,7 +81385,7 @@ const QUESTIONS = [
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
       "mechanism_id": "pronominal_se_coi",
-      "detail_id": "core",
+      "detail_id": "sans_cod",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -82404,8 +82404,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "pronominal_cvd_avant",
-      "detail_id": "core",
+      "mechanism_id": "pronominal_accord_sujet",
+      "detail_id": "autonome",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -83544,8 +83544,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "pronominal_cvd_avant",
-      "detail_id": "core",
+      "mechanism_id": "pronominal_se_coi",
+      "detail_id": "cod_apres",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -85584,7 +85584,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "participe_sans_cvd_accordable",
+    "mechanism_id": "fait_suivi_infinitif",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -86544,7 +86544,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "participe_sans_cvd_accordable",
+    "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -87685,7 +87685,7 @@ const QUESTIONS = [
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
       "mechanism_id": "pronominal_se_coi",
-      "detail_id": "core",
+      "detail_id": "sans_cod",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -88344,8 +88344,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "pronominal_cvd_avant",
-      "detail_id": "core",
+      "mechanism_id": "pronominal_se_coi",
+      "detail_id": "cod_avant",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",

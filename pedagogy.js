@@ -5,7 +5,7 @@
 }(typeof window !== 'undefined' ? window : globalThis, function () {
   'use strict';
 
-  const LABELS_VERSION = 'hep-pedagogy-labels/2.1';
+  const LABELS_VERSION = 'hep-pedagogy-labels/2.2';
 
   const TENSES = {
     present: 'présent',
@@ -70,6 +70,977 @@
     vocabulaire_contexte: 'Teste le sens, le registre et la construction de chaque mot dans la phrase complète.',
   };
 
+  // Chaque mécanisme actif possède sa propre fiche apprenant. La taxonomie et
+  // les chemins canoniques restent séparés et inchangés plus bas.
+  function learnerGuide(title, explanation, steps) {
+    return { title, explanation, steps };
+  }
+
+  const DEFAULT_LEARNER_GUIDANCE = {
+    title: 'Reprendre cette difficulté pas à pas',
+    explanation: 'Exemple : une réponse isolée ne suffit pas à expliquer pourquoi l’erreur a eu lieu. La correction détaillée reste la source la plus fiable.',
+    steps: ['Relis la phrase et ta réponse.', 'Compare-les avec la correction détaillée.', 'Note la différence observable sans inventer la cause de ton erreur.'],
+  };
+
+  const LEARNER_GUIDANCE = {
+    // Accord adjectif-nom
+    donneur_eloigne: learnerGuide(
+      'Accorder un adjectif éloigné du nom',
+      'Exemple : dans « Les décisions prises hier sont, malgré les critiques, difficiles à appliquer », « difficiles » décrit « décisions ». L’adjectif s’accorde avec le nom qu’il décrit, même si plusieurs mots les séparent.',
+      ['Repère l’adjectif.', 'Demande quel nom il décrit réellement.', 'Accorde-le au genre et au nombre de ce nom.']
+    ),
+
+    // Accord du participe passé
+    avoir_cvd_apres: learnerGuide(
+      'Avec « avoir » : le COD vient après',
+      'Exemple : « Elle a rangé les feuilles. » Le COD « les feuilles » vient après « rangé » : le participe passé ne s’accorde pas.',
+      ['Repère l’auxiliaire « avoir ».', 'Trouve le COD en posant « qui ? » ou « quoi ? » après le verbe.', 'S’il vient après le participe, ne fais pas l’accord.']
+    ),
+    avoir_cvd_avant: learnerGuide(
+      'Avec « avoir » : le COD vient avant',
+      'Exemple : « Les feuilles qu’elle a rangées. » Le COD « que », qui reprend « feuilles », vient avant « rangées » : le participe passé s’accorde avec lui.',
+      ['Repère l’auxiliaire « avoir ».', 'Trouve le COD et vérifie s’il est placé avant le participe.', 'S’il est avant, accorde le participe avec le mot qu’il reprend.']
+    ),
+    avoir_en_invariable: learnerGuide(
+      'Avec « en » : le participe change rarement',
+      'Exemple : « Des lettres, j’en ai écrit trois. » Quand « en » reprend ce qui est compté, le participe passé employé avec « avoir » reste généralement inchangé.',
+      ['Repère le pronom « en ».', 'Vérifie qu’il reprend le complément lié au participe.', 'Dans ce cas, laisse généralement le participe au masculin singulier.']
+    ),
+    participe_suivi_infinitif: learnerGuide(
+      'Participe passé suivi d’un infinitif',
+      'Exemple : « Les élèves que j’ai entendus chanter » s’accorde, car les élèves chantent. Dans « les chansons que j’ai entendu chanter », les chansons ne chantent pas : pas d’accord.',
+      ['Trouve le COD placé avant le participe.', 'Demande si ce COD fait lui-même l’action de l’infinitif.', 'Accorde seulement si le COD accomplit cette action.']
+    ),
+    etre_accord_sujet: learnerGuide(
+      'Avec « être » : accord avec le sujet',
+      'Exemple : « Elles sont parties. » Avec l’auxiliaire « être », le participe passé s’accorde avec le sujet.',
+      ['Repère l’auxiliaire « être ».', 'Trouve le sujet du verbe.', 'Accorde le participe au genre et au nombre du sujet.']
+    ),
+    fait_suivi_infinitif: learnerGuide(
+      '« Fait » suivi d’un infinitif',
+      'Exemple : « Elles se sont fait surprendre. » Le participe « fait » reste toujours inchangé lorsqu’un infinitif le suit immédiatement.',
+      ['Repère la forme « fait ».', 'Vérifie qu’un infinitif vient juste après.', 'Si oui, écris toujours « fait », sans accord.']
+    ),
+    impersonnel_participe_invariable: learnerGuide(
+      'Participe dans une tournure impersonnelle',
+      'Exemple : « Les efforts qu’il a fallu. » Dans une tournure comme « il a fallu » ou « il y a eu », le « il » ne désigne personne et le participe reste inchangé.',
+      ['Repère une tournure avec « il » qui ne désigne personne.', 'Vérifie qu’aucun COD placé avant ne commande l’accord.', 'Laisse le participe au masculin singulier.']
+    ),
+    infinitif_sous_entendu_invariable: learnerGuide(
+      'Infinitif sous-entendu après « pu », « voulu », « dû »',
+      'Exemple : « J’ai fait toutes les démarches que j’ai pu [faire]. » Le COD dépend de l’infinitif sous-entendu « faire » ; « pu » reste inchangé.',
+      ['Repère un participe comme « pu », « voulu », « dû » ou « cru ».', 'Rétablis l’infinitif sous-entendu après lui.', 'Si le complément dépend de cet infinitif, ne fais pas l’accord.']
+    ),
+    matrice_avoir_etre: learnerGuide(
+      'Choisir entre la règle de « avoir » et celle de « être »',
+      'Exemple : « Elles sont arrivées », mais « elles ont terminé ». L’auxiliaire décide de la première règle d’accord à appliquer.',
+      ['Repère l’auxiliaire réellement employé.', 'Avec « être », cherche le sujet ; avec « avoir », cherche le COD et sa place.', 'Applique uniquement la règle correspondant à cet auxiliaire.']
+    ),
+    matrice_participes_speciaux: learnerGuide(
+      'Vérifier plusieurs cas spéciaux du participe',
+      'Exemple : « elles se sont parlé », « les cent francs qu’il a coûté » et « elles se sont évanouies » suivent trois règles différentes. Chaque phrase doit être analysée séparément.',
+      ['Lis une seule phrase à la fois.', 'Identifie son cas précis : pronominal, mesure, tournure impersonnelle ou forme spéciale.', 'Applique la règle de ce cas avant de passer à la phrase suivante.']
+    ),
+    mesure_duree_prix: learnerGuide(
+      'Participe avec une mesure, une durée ou un prix',
+      'Exemple : « Les cent francs que ce meuble a coûté. » « Cent francs » répond à « combien ? », pas à « quoi ? » : il exprime un prix et ne commande pas l’accord.',
+      ['Repère le groupe placé avant le participe.', 'Demande s’il répond à « combien ? » en indiquant un prix, une durée, un poids ou une distance.', 'Si oui, laisse le participe inchangé.']
+    ),
+    participe_adjectival_selon_position: learnerGuide(
+      'Accorder « ci-joint », « excepté » ou « mis à part »',
+      'Exemple : « Ci-joint les copies », mais « les copies ci-jointes ». Ces formes restent souvent inchangées avant le nom et s’accordent comme des adjectifs après le nom.',
+      ['Repère la forme spéciale et le nom concerné.', 'Vérifie si la forme est placée avant ou après ce nom.', 'Avant le nom, laisse-la généralement inchangée ; après, accorde-la avec le nom.']
+    ),
+    participe_sans_auxiliaire: learnerGuide(
+      'Participe passé employé sans auxiliaire',
+      'Exemple : « Déçue, elle est partie. » Sans auxiliaire, le participe passé fonctionne comme un adjectif et s’accorde avec le nom ou le pronom qu’il qualifie.',
+      ['Vérifie que le participe est employé sans auxiliaire.', 'Trouve le nom ou le pronom qu’il qualifie.', 'Accorde-le au genre et au nombre de ce donneur.']
+    ),
+    pronominal_cvd_avant: learnerGuide(
+      'Verbe pronominal : « se » est COD',
+      'Exemple : « Elles se sont lavées. » Elles ont lavé qui ? Elles-mêmes : « se » est COD placé avant, donc le participe s’accorde.',
+      ['Repère le pronom « se ».', 'Pose la question « elles ont lavé qui ou quoi ? ».', 'Si la réponse est « se », accorde le participe avec le sujet.']
+    ),
+    pronominal_accord_sujet: learnerGuide(
+      'Pronominal : le sujet commande l’accord',
+      'Exemple : « Elles se sont évanouies. » Dans un emploi essentiellement pronominal, autonome ou de sens passif, le participe s’accorde avec le sujet.',
+      ['Identifie l’emploi pronominal précis.', 'Vérifie que « se » n’est pas un COD à analyser.', 'Accorde le participe avec le sujet.']
+    ),
+    pronominal_se_coi: learnerGuide(
+      'Verbe pronominal : « se » est COI',
+      'Exemple : « Elles se sont parlé. » Elles ont parlé à qui ? L’une à l’autre : « se » est COI et ne commande pas l’accord.',
+      ['Repère le pronom « se ».', 'Pose la question « à qui ? » ou « à quoi ? ».', 'Si « se » est COI, il ne commande pas l’accord : cherche alors un éventuel COD et sa place.']
+    ),
+    laisse_suivi_infinitif: learnerGuide(
+      '« Laissé » suivi d’un infinitif : deux normes admises',
+      'Exemple : « Elle s’est laissée tomber » et « elle s’est laissé tomber » illustrent deux normes admises. Ce cas sert à expliquer la variation, pas à départager une réponse unique.',
+      ['Repère « laissé » suivi immédiatement d’un infinitif.', 'Reconnais que deux normes sont admises.', 'N’utilise pas ce cas comme piège à réponse unique.']
+    ),
+    avoir_pronom_l: learnerGuide(
+      'Avec « l’ » : idée neutre ou nom repris',
+      'Exemple : « La réussite a été plus grande que je ne l’avais imaginé. » Si « l’ » reprend une idée entière, le participe reste au masculin singulier ; s’il reprend un nom, il peut commander l’accord.',
+      ['Repère ce que remplace « l’ ».', 'Distingue une idée entière d’un nom précis.', 'Idée neutre : masculin singulier ; nom : accord selon son genre et son nombre.']
+    ),
+    participe_attribut_cod: learnerGuide(
+      'Participe suivi d’un attribut du COD',
+      'Exemple : avec un participe suivi d’un attribut du COD, l’analyse et l’usage peuvent admettre plusieurs accords. La question doit être relue indépendamment avant tout entraînement ciblé.',
+      ['Identifie le COD et son attribut.', 'Vérifie l’analyse et la norme retenues.', 'N’impose une réponse unique que si elle est démontrée.']
+    ),
+
+    // Accord sujet-verbe
+    coordination_comparative_incise: learnerGuide(
+      'Sujet suivi de « ainsi que » entre virgules',
+      'Exemple : « Paul, ainsi que sa sœur, viendra. » Entre virgules, « ainsi que sa sœur » ajoute une comparaison ; le verbe s’accorde avec « Paul » seul.',
+      ['Repère le groupe entre virgules introduit par « ainsi que » ou « comme ».', 'Retire provisoirement ce groupe.', 'Accorde le verbe avec le sujet qui reste.']
+    ),
+    deux_sujets_deux_verbes: learnerGuide(
+      'Relier chaque verbe à son sujet',
+      'Exemple : « Paul écrit et ses collègues relisent. » Les deux verbes n’ont pas le même sujet ; chacun reçoit son propre accord.',
+      ['Sépare les deux propositions.', 'Pose « qui est-ce qui ? » devant chaque verbe.', 'Accorde chaque verbe avec la réponse correspondante.']
+    ),
+    nom_collectif: learnerGuide(
+      'Accord avec un nom collectif',
+      'Exemple : dans « une foule de visiteurs avance », on insiste sur la foule ; dans certains contextes, le pluriel peut mettre l’accent sur ses membres. Le sens et la construction décident.',
+      ['Repère le nom collectif et le groupe introduit par « de ».', 'Demande si la phrase insiste sur l’ensemble ou sur ses membres.', 'Choisis l’accord admis par cette construction et cohérent avec le sens.']
+    ),
+    noyau_singulier_complement_pluriel: learnerGuide(
+      'Ne pas accorder avec le nom pluriel le plus proche',
+      'Exemple : « La liste des élèves est prête. » Le sujet principal est « la liste », au singulier ; « des élèves » ne commande pas le verbe.',
+      ['Repère tout le groupe sujet.', 'Trouve son nom principal en retirant le complément introduit par « de ».', 'Accorde le verbe avec ce nom principal.']
+    ),
+    priorite_personnes_coordonnees: learnerGuide(
+      'Choisir la personne avec plusieurs sujets',
+      'Exemple : « Toi et moi irons » se met à la 1re personne du pluriel. Avec plusieurs sujets, « je/nous » l’emporte sur « tu/vous », qui l’emporte sur « il/elle/ils/elles ».',
+      ['Repère toutes les personnes du sujet.', 'Cherche d’abord « je » ou « nous », puis « tu » ou « vous ».', 'Conjugue au pluriel à la personne qui a priorité.']
+    ),
+    pronom_sujet_renforce: learnerGuide(
+      'Accord avec « vous seuls », « eux seuls », « vous tous »',
+      'Exemple : « Vous seuls pouvez répondre. » « Seuls » renforce « vous », mais ne change ni sa personne ni son nombre.',
+      ['Repère le pronom sujet.', 'Ignore provisoirement « seul(s) » ou « tous ».', 'Accorde le verbe avec le pronom restant.']
+    ),
+    quantifieur_pluriel: learnerGuide(
+      'Expressions qui demandent le pluriel',
+      'Exemple : « La plupart des élèves sont présents. » Des expressions comme « la plupart », « bien des », « nombre de » ou « moins de deux » commandent normalement le pluriel.',
+      ['Repère l’expression de quantité.', 'Vérifie qu’elle appartient aux constructions qui commandent le pluriel.', 'Mets le verbe au pluriel.']
+    ),
+    quantifieur_singulier: learnerGuide(
+      'Expressions qui demandent le singulier',
+      'Exemple : « Chacun répond » et « plus d’un élève hésite ». « Chacun », « plus d’un », « tout le monde » et « aucun » restent au singulier.',
+      ['Repère l’expression de quantité.', 'Vérifie que son noyau est « chacun », « plus d’un », « tout le monde » ou « aucun ».', 'Mets le verbe au singulier.']
+    ),
+    relative_qui_antecedent: learnerGuide(
+      'Accorder le verbe après « qui »',
+      'Exemple : « Les élèves qui travaillent réussissent. » « Qui » reprend « les élèves » ; le verbe placé après s’accorde donc au pluriel.',
+      ['Repère « qui » devant le verbe.', 'Trouve le nom ou le pronom repris par « qui ».', 'Accorde le verbe au même nombre.']
+    ),
+    relative_qui_antecedent_personne: learnerGuide(
+      'Choisir la personne du verbe après « qui »',
+      'Exemple : « C’est moi qui ai répondu », pas « qui a ». « Qui » transmet au verbe la personne du mot qu’il reprend.',
+      ['Repère « qui » devant le verbe.', 'Remplace « qui » par le mot repris : moi, toi, nous, vous, etc.', 'Conjugue le verbe à cette personne.']
+    ),
+    sujet_eloigne: learnerGuide(
+      'Retrouver un sujet éloigné du verbe',
+      'Exemple : « La qualité de ces travaux, malgré les retards, reste remarquable. » Le sujet de « reste » est « la qualité », même s’il est éloigné.',
+      ['Repère le verbe.', 'Pose « qui est-ce qui ? » en ignorant les groupes entre le sujet et le verbe.', 'Accorde avec le noyau de la réponse.']
+    ),
+    sujet_infinitif: learnerGuide(
+      'Un infinitif sujet commande le singulier',
+      'Exemple : « Lire régulièrement aide à progresser. » Un infinitif ou un groupe infinitif pris comme sujet est grammaticalement singulier.',
+      ['Repère le groupe à l’infinitif placé comme sujet.', 'Vérifie qu’il forme une seule idée ou activité.', 'Mets le verbe principal au singulier.']
+    ),
+    sujet_inverse: learnerGuide(
+      'Accorder avec un sujet placé après le verbe',
+      'Exemple : « Arrivent ensuite les résultats. » Même après le verbe, « les résultats » reste le sujet et impose le pluriel.',
+      ['Repère le verbe.', 'Cherche qui fait l’action, y compris après le verbe.', 'Accorde le verbe avec ce sujet.']
+    ),
+    sujets_coordonnees: learnerGuide(
+      'Accorder avec plusieurs sujets',
+      'Exemple : « Paul et Léa viennent. » Deux sujets ajoutés par « et » forment normalement un ensemble pluriel.',
+      ['Repère les sujets reliés par « et ».', 'Vérifie qu’ils s’ajoutent réellement l’un à l’autre.', 'Mets le verbe au pluriel.']
+    ),
+
+    // Adjectif verbal ou participe présent
+    accord_adjectif_invariabilite_participe: learnerGuide(
+      'Distinguer adjectif verbal et participe présent',
+      'Exemple : « des enfants fatigants » décrit les enfants, mais « des enfants fatiguant leurs parents » exprime une action. L’adjectif s’accorde ; le participe présent ne change pas.',
+      ['Repère la forme en « -ant ».', 'Demande si elle décrit un nom ou si elle garde une action de verbe.', 'Accorde la description ; laisse la forme d’action inchangée.']
+    ),
+    convaincant_convainquant: learnerGuide(
+      'Écrire « convaincant » ou « convainquant »',
+      'Exemple : « un argument convaincant », mais « convainquant le jury ». L’adjectif s’écrit avec « c » ; la forme du verbe « convaincre » en action garde « qu ».',
+      ['Demande si la forme décrit un nom ou exprime l’action de convaincre.', 'Description : choisis « convaincant » et accorde-le.', 'Action : choisis « convainquant » et ne l’accorde pas.']
+    ),
+    fatigant_fatiguant: learnerGuide(
+      'Écrire « fatigant » ou « fatiguant »',
+      'Exemple : « un trajet fatigant », mais « le trajet fatiguant les enfants ». L’adjectif perd le « u » ; la forme du verbe « fatiguer » en action le garde.',
+      ['Demande si la forme décrit un nom ou exprime l’action de fatiguer.', 'Description : choisis « fatigant » et accorde-le.', 'Action : choisis « fatiguant » et ne l’accorde pas.']
+    ),
+    participe_present_avec_complement: learnerGuide(
+      'Forme en « -ant » suivie d’un complément',
+      'Exemple : « des élèves préparant leur examen ». « Préparant » garde le complément « leur examen » : il exprime une action et ne s’accorde pas.',
+      ['Repère la forme en « -ant ».', 'Vérifie si elle garde un complément ou un autre élément demandé par le verbe.', 'Si oui, traite-la comme une action et ne l’accorde pas.']
+    ),
+
+    // Concordance des temps
+    anteriorite_plus_que_parfait: learnerGuide(
+      'Exprimer une action passée plus ancienne',
+      'Exemple : « Quand il est arrivé, nous avions déjà mangé. » L’action achevée avant un autre moment passé se met au plus-que-parfait.',
+      ['Repère les deux actions passées.', 'Trouve celle qui était déjà terminée avant l’autre.', 'Mets cette action au plus-que-parfait.']
+    ),
+    au_cas_ou_conditionnel: learnerGuide(
+      'Après « au cas où »',
+      'Exemple : « Prends un parapluie au cas où il pleuvrait. » La locution « au cas où » se construit avec le conditionnel.',
+      ['Repère « au cas où ».', 'Situe l’éventualité dans le présent ou le passé.', 'Conjugue le verbe au conditionnel au temps adapté.']
+    ),
+    futur_dans_le_passe: learnerGuide(
+      'Exprimer le futur depuis un moment passé',
+      'Exemple : « Il a dit qu’il viendrait. » Une action future vue depuis un verbe au passé se met généralement au conditionnel présent.',
+      ['Repère le verbe principal au passé.', 'Trouve l’action qui devait arriver plus tard.', 'Mets cette action au conditionnel présent.']
+    ),
+    hypothese_si_imparfait_conditionnel: learnerGuide(
+      'Hypothèse présente avec « si »',
+      'Exemple : « Si j’avais le temps, je viendrais. » Pour une situation présente imaginée ou peu réelle, on emploie « si » + imparfait, puis le conditionnel présent.',
+      ['Repère la condition introduite par « si ».', 'Mets son verbe à l’imparfait.', 'Mets le résultat au conditionnel présent.']
+    ),
+    hypothese_si_plus_que_parfait_conditionnel_passe: learnerGuide(
+      'Hypothèse passée qui ne s’est pas réalisée',
+      'Exemple : « Si j’avais su, je serais venu. » La condition passée prend le plus-que-parfait ; son résultat non réalisé prend le conditionnel passé.',
+      ['Repère la condition passée introduite par « si ».', 'Mets cette condition au plus-que-parfait.', 'Mets la conséquence au conditionnel passé.']
+    ),
+    reperage_temporel: learnerGuide(
+      'Choisir le temps selon l’ordre des actions',
+      'Exemple : dans « quand il arrivera, nous aurons fini », finir se produit avant arriver. Le temps choisi doit montrer clairement avant, pendant ou après.',
+      ['Repère le moment qui sert de point de comparaison.', 'Place chaque action avant, pendant ou après ce moment.', 'Choisis le temps qui exprime cette relation sans ajouter une information absente.']
+    ),
+
+    // Conjugaison
+    alternance_radical_conjugaison: learnerGuide(
+      'Adapter le radical du verbe',
+      'Exemple : « j’appelle », mais « nous appelons ». Certains verbes doublent une consonne ou changent un accent devant certaines terminaisons.',
+      ['Repère le verbe, le temps et la personne.', 'Compare avec une forme connue du même modèle.', 'Adapte le radical, puis ajoute la terminaison normale.']
+    ),
+    conditionnel: learnerGuide(
+      'Former le conditionnel',
+      'Exemple : « je viendrais » combine le radical du futur « viendr- » et la terminaison de l’imparfait « -ais ». Le conditionnel suit ce modèle.',
+      ['Repère la personne du sujet.', 'Prends le radical du futur du verbe.', 'Ajoute la terminaison de l’imparfait correspondant à cette personne.']
+    ),
+    forme_irreguliere_selon_temps: learnerGuide(
+      'Choisir une forme irrégulière au bon temps',
+      'Exemple : on écrit « vous dites », mais « vous direz ». Un verbe irrégulier peut changer de radical selon le temps et la personne.',
+      ['Repère le temps demandé par la phrase.', 'Repère la personne du sujet.', 'Choisis la forme irrégulière attestée pour ce temps et cette personne.']
+    ),
+    futur_irregulier: learnerGuide(
+      'Utiliser un radical irrégulier au futur',
+      'Exemple : « j’irai », pas « j’allerai ». Certains verbes ont un radical spécial au futur, auquel on ajoute les terminaisons habituelles.',
+      ['Repère le verbe et la personne.', 'Rappelle le radical particulier du futur.', 'Ajoute la terminaison du futur correspondant à la personne.']
+    ),
+    futur_simple_regulier: learnerGuide(
+      'Former le futur simple régulier',
+      'Exemple : « je finirai ». Pour un verbe régulier, le futur prend l’infinitif comme base, puis la terminaison de la personne ; les verbes en « -re » perdent leur « e » final.',
+      ['Repère l’infinitif et la personne.', 'Garde l’infinitif, ou retire le « e » final d’un verbe en « -re ».', 'Ajoute « -ai, -as, -a, -ons, -ez » ou « -ont ».']
+    ),
+    imparfait_selon_personne: learnerGuide(
+      'Former l’imparfait',
+      'Exemple : « nous finissons » donne « je finissais ». L’imparfait prend le radical de « nous » au présent sans « -ons », puis sa terminaison ; « être » utilise « ét- ».',
+      ['Mets le verbe avec « nous » au présent.', 'Retire « -ons » pour obtenir le radical, sauf pour « être » : « ét- ».', 'Ajoute la terminaison de l’imparfait correspondant au sujet.']
+    ),
+    imperatif_deuxieme_personne: learnerGuide(
+      'Terminaison de l’impératif avec « tu »',
+      'Exemple : « Mange ! », mais « Vas-y ! » et « Manges-en ! ». Les verbes en « -er » perdent généralement le « s », qui revient devant « y » ou « en » pour faciliter la prononciation.',
+      ['Repère le groupe du verbe.', 'À la forme en « tu », vérifie s’il se termine normalement par « -es » ou « -as ».', 'Retire le « s » si la règle l’exige, mais garde ou ajoute-le devant « y » ou « en ».']
+    ),
+    imperatif_et_pronoms: learnerGuide(
+      'Placer les pronoms à l’impératif',
+      'Exemple : « Donne-le-moi », mais « Ne me le donne pas ». À l’impératif affirmatif, les pronoms suivent le verbe avec des traits d’union ; à la forme négative, ils le précèdent.',
+      ['Repère si l’ordre est affirmatif ou négatif.', 'Affirmatif : place les pronoms après le verbe dans l’ordre attendu.', 'Négatif : replace-les avant le verbe et encadre le groupe avec « ne… pas ».']
+    ),
+    infinitif_participe: learnerGuide(
+      'Choisir entre infinitif et participe passé',
+      'Exemple : « Je vais manger », mais « j’ai mangé ». Après un verbe conjugué ou une préposition, on attend souvent l’infinitif ; après « avoir » ou « être », on attend le participe passé.',
+      ['Repère le mot placé juste avant la forme hésitante.', 'Remplace par « prendre/pris » : « prendre » signale l’infinitif, « pris » le participe.', 'Écris la terminaison correspondant au test.']
+    ),
+    participe_passe_irregulier: learnerGuide(
+      'Écrire un participe passé irrégulier',
+      'Exemple : « prendre » donne « pris », pas « prendu ». Certains participes passés ont une forme particulière qu’on ne peut pas fabriquer par analogie.',
+      ['Repère l’infinitif du verbe.', 'Rappelle ou vérifie sa forme de participe passé.', 'Ajoute seulement les marques d’accord réellement nécessaires.']
+    ),
+    passe_simple: learnerGuide(
+      'Conjuguer au passé simple',
+      'Exemple : « il parla », « il finit », « il vint ». Le radical et la série de terminaisons du passé simple dépendent du verbe.',
+      ['Repère l’infinitif et le groupe du verbe.', 'Choisis le radical et la série du passé simple propres à ce verbe.', 'Ajoute la terminaison correspondant au sujet.']
+    ),
+    present_selon_personne: learnerGuide(
+      'Conjuguer au présent',
+      'Exemple : « tu prends », mais « ils prennent ». Au présent, le radical et la terminaison doivent correspondre au verbe et à la personne du sujet.',
+      ['Repère l’infinitif du verbe.', 'Trouve la personne et le nombre du sujet.', 'Choisis le radical et la terminaison du présent pour cette personne.']
+    ),
+    subjonctif_selon_personne: learnerGuide(
+      'Conjuguer un verbe au subjonctif',
+      'Exemple : « il faut que nous venions ». Une fois le subjonctif imposé, le radical et la terminaison doivent encore correspondre au sujet.',
+      ['Repère l’expression qui impose le subjonctif.', 'Trouve la personne du sujet après « que ».', 'Conjugue le verbe au subjonctif à cette personne.']
+    ),
+
+    // Connecteurs logiques
+    addition: learnerGuide(
+      'Ajouter une idée dans le même sens',
+      'Exemple : « Il est compétent ; de plus, il est ponctuel. » Un connecteur d’addition ajoute un argument sans changer l’orientation de la phrase.',
+      ['Lis les deux idées séparément.', 'Vérifie que la seconde s’ajoute à la première.', 'Choisis un lien comme « de plus », « aussi » ou « en outre ».']
+    ),
+    alternative_correlation: learnerGuide(
+      'Présenter deux possibilités parallèles',
+      'Exemple : « Soit tu viens, soit tu préviens. » Les deux mots de la paire doivent annoncer des choix et introduire des constructions de même forme.',
+      ['Repère les deux possibilités.', 'Vérifie la présence des deux éléments de la paire.', 'Construis les deux branches de manière parallèle.']
+    ),
+    but: learnerGuide(
+      'Exprimer le résultat recherché',
+      'Exemple : « Il ferme la porte afin que le bruit cesse. » Le connecteur de but introduit ce que l’action cherche à obtenir.',
+      ['Repère l’action principale.', 'Demande « dans quel but ? ».', 'Choisis un connecteur qui introduit l’objectif recherché.']
+    ),
+    cause: learnerGuide(
+      'Introduire la cause',
+      'Exemple : « Il est absent parce qu’il est malade. » La cause explique pourquoi le fait principal se produit.',
+      ['Repère le fait principal.', 'Demande « pourquoi ? ».', 'Place un connecteur de cause devant la raison.']
+    ),
+    concession: learnerGuide(
+      'Exprimer un obstacle qui n’empêche pas le résultat',
+      'Exemple : « Bien qu’il pleuve, nous sortons. » La pluie devrait empêcher la sortie, mais le résultat se produit quand même : c’est une concession.',
+      ['Repère l’obstacle et le résultat inattendu.', 'Vérifie que l’obstacle n’annule pas le résultat.', 'Choisis le connecteur de concession et le mode qu’il exige.']
+    ),
+    condition_restriction: learnerGuide(
+      'Poser une condition ou une limite',
+      'Exemple : « Tu peux sortir à condition de rentrer tôt. » Le connecteur précise dans quelle limite l’énoncé reste valable.',
+      ['Repère l’idée principale.', 'Demande quelle condition ou limite doit être respectée.', 'Choisis une expression qui introduit exactement cette limite.']
+    ),
+    consequence: learnerGuide(
+      'Introduire la conséquence',
+      'Exemple : « Il pleut ; donc la route est glissante. » La conséquence est le résultat produit par le fait précédent.',
+      ['Repère le fait de départ.', 'Demande quel résultat il entraîne.', 'Place un connecteur comme « donc » ou « par conséquent » devant ce résultat.']
+    ),
+    correlation: learnerGuide(
+      'Compléter une expression en deux parties',
+      'Exemple : « Non seulement il écoute, mais encore il répond. » Certaines expressions exigent deux marqueurs et deux constructions parallèles.',
+      ['Repère le premier marqueur.', 'Retrouve le second élément attendu par cette expression.', 'Vérifie que les deux groupes ont une construction parallèle.']
+    ),
+    explication_confirmation: learnerGuide(
+      'Confirmer ou expliquer une idée',
+      'Exemple : « Il est fiable ; en effet, il tient toujours ses promesses. » La seconde phrase apporte une preuve ou une explication, pas un nouveau résultat.',
+      ['Lis la première affirmation.', 'Demande si la suite la prouve ou l’explique.', 'Choisis un lien comme « en effet » plutôt qu’un lien de conséquence.']
+    ),
+    inclusion_exclusion: learnerGuide(
+      'Inclure ou exclure un élément',
+      'Exemple : « Tous viendront, y compris Léa », mais « tous viendront, sauf Léa ». Le connecteur indique si l’élément appartient à l’ensemble ou en est retiré.',
+      ['Repère l’ensemble de départ.', 'Vérifie si l’élément visé est ajouté ou retiré.', 'Choisis une expression d’inclusion ou d’exclusion conforme au sens.']
+    ),
+    opposition: learnerGuide(
+      'Mettre deux faits en contraste',
+      'Exemple : « Paul préfère le thé ; Léa, en revanche, choisit le café. » L’opposition rapproche deux faits différents sans dire que l’un cause l’autre.',
+      ['Repère les deux faits comparés.', 'Vérifie qu’ils se contrastent sans relation de cause.', 'Choisis un lien comme « en revanche » ou « tandis que ».']
+    ),
+    precision_reformulation: learnerGuide(
+      'Préciser ou reformuler une idée',
+      'Exemple : « Plusieurs outils sont utiles, notamment le dictionnaire. » Le connecteur rend l’idée précédente plus précise ou la dit autrement.',
+      ['Repère l’idée générale.', 'Vérifie si la suite donne un détail, un exemple ou une reformulation.', 'Choisis un lien comme « notamment », « c’est-à-dire » ou « autrement dit ».']
+    ),
+    progression_temporelle: learnerGuide(
+      'Montrer l’ordre dans le temps',
+      'Exemple : « D’abord, il lit ; ensuite, il répond. » Un connecteur temporel situe les étapes dans un ordre ou une progression.',
+      ['Repère les différentes étapes.', 'Classe-les dans l’ordre où elles arrivent.', 'Choisis un marqueur de temps correspondant à chaque étape.']
+    ),
+    relation_circonstancielle: learnerGuide(
+      'Préciser le cadre d’une idée',
+      'Exemple : « En ce qui concerne le budget, la décision est reportée. » La locution indique le point de vue, le domaine, la conformité ou une autre circonstance clairement donnée.',
+      ['Repère le cadre précisé par la phrase.', 'Dis s’il s’agit d’un domaine, d’un point de vue, d’une conformité ou d’une autre circonstance.', 'Choisis la locution qui exprime exactement ce cadre.']
+    ),
+    relations_logiques_multiples: learnerGuide(
+      'Vérifier plusieurs liens logiques',
+      'Exemple : une phrase peut exprimer une cause et une autre une opposition. Le même connecteur ne convient donc pas automatiquement partout.',
+      ['Lis une phrase à la fois.', 'Nomme le lien entre ses deux idées.', 'Choisis le connecteur adapté avant de passer à la phrase suivante.']
+    ),
+
+    // Discours indirect
+    deictiques_ancres: learnerGuide(
+      'Adapter « ici », « demain », « hier »',
+      'Exemple : lundi, elle dit « je viendrai demain » ; raconté mercredi, cela devient « elle a dit qu’elle viendrait le lendemain ». Les repères changent avec le moment et le lieu du récit.',
+      ['Repère le moment et le lieu des paroles originales.', 'Repère le nouveau moment et le nouveau lieu du récit.', 'Adapte chaque mot de temps ou de lieu à ce nouveau point de vue.']
+    ),
+    futur_vers_conditionnel: learnerGuide(
+      'Transformer le futur dans un récit au passé',
+      'Exemple : « Je viendrai » devient « il a dit qu’il viendrait ». Après un verbe introducteur au passé, le futur devient normalement un conditionnel.',
+      ['Repère le verbe introducteur au passé.', 'Trouve le verbe qui était au futur dans les paroles directes.', 'Transpose ce verbe au conditionnel.']
+    ),
+    imperatif_vers_de_infinitif: learnerGuide(
+      'Rapporter un ordre avec « de » + infinitif',
+      'Exemple : « Fermez la porte ! » devient « il leur demande de fermer la porte ». Un ordre rapporté perd l’impératif et prend « de » devant l’infinitif.',
+      ['Repère l’ordre dans les paroles directes.', 'Choisis un verbe comme « demander » ou « ordonner ».', 'Ajoute « de » puis l’infinitif du verbe ordonné.']
+    ),
+    passe_compose_vers_plus_que_parfait: learnerGuide(
+      'Reculer le passé composé au plus-que-parfait',
+      'Exemple : « J’ai terminé » devient « elle a dit qu’elle avait terminé ». Après un verbe introducteur au passé, l’action déjà achevée recule au plus-que-parfait.',
+      ['Repère le verbe introducteur au passé.', 'Trouve le passé composé des paroles directes.', 'Transpose-le au plus-que-parfait.']
+    ),
+    present_vers_imparfait: learnerGuide(
+      'Reculer le présent à l’imparfait',
+      'Exemple : « Je suis prêt » devient « il a dit qu’il était prêt ». Quand le point de vue passe au passé, le présent devient normalement un imparfait.',
+      ['Repère le verbe introducteur au passé.', 'Trouve le présent des paroles directes.', 'Mets-le à l’imparfait si la situation est vue depuis ce passé.']
+    ),
+    pronoms_et_possessifs: learnerGuide(
+      'Adapter les personnes et les possessifs',
+      'Exemple : Marie dit à Paul « je prends ton livre » ; on rapporte « Marie dit qu’elle prend son livre ». Les pronoms et possessifs dépendent de qui parle et de qui possède.',
+      ['Identifie la personne qui parlait et celle à qui elle parlait.', 'Remplace « je, tu, mon, ton » selon les personnes du récit.', 'Relis pour vérifier que chaque pronom désigne clairement la bonne personne.']
+    ),
+    transposition_complete_discours_indirect: learnerGuide(
+      'Transformer complètement des paroles rapportées',
+      'Exemple : « Je finirai ici demain » peut devenir « il a dit qu’il finirait là le lendemain ». Temps, personnes et repères doivent tous suivre le nouveau point de vue.',
+      ['Repère le nouveau locuteur, le moment et le lieu du récit.', 'Adapte séparément pronoms, possessifs, temps et mots comme « ici » ou « demain ».', 'Relis la phrase entière pour vérifier la cohérence de toutes les transformations.']
+    ),
+
+    // Majuscules des peuples et des langues
+    nom_peuple_adjectif_langue: learnerGuide(
+      'Majuscule au peuple, minuscule à l’adjectif et à la langue',
+      'Exemple : « une Suissesse parle français et lit un journal suisse ». Le nom d’une personne ou d’un peuple prend une majuscule ; l’adjectif et le nom de langue gardent une minuscule.',
+      ['Demande si le mot nomme une personne ou s’il décrit un nom.', 'Personne ou peuple : mets une majuscule.', 'Adjectif ou langue : garde une minuscule.']
+    ),
+
+    // Homophones grammaticaux
+    ce_se: learnerGuide(
+      'Choisir entre « ce » et « se »',
+      'Exemple : « ce livre », mais « il se lève ». « Ce » montre ou désigne ; « se » appartient à un verbe pronominal et peut devenir « me » ou « te ».',
+      ['Repère le mot qui suit.', 'Essaie de changer la personne : « je me… », « tu te… ».', 'Si le changement fonctionne, écris « se » ; sinon, vérifie « ce ».']
+    ),
+    ces_ses_cest_sest: learnerGuide(
+      'Choisir « ces », « ses », « c’est » ou « s’est »',
+      'Exemple : « ces livres » montre des livres ; « ses livres » indique le possesseur ; « c’est utile » signifie « cela est utile » ; « il s’est levé » contient un verbe pronominal.',
+      ['Devant un nom, oppose « ces » qui montre à « ses » qui indique la possession.', 'Devant un adjectif ou un nom isolé, teste « cela est » pour choisir « c’est ».', 'Avec un participe passé et un sujet précis, change la personne pour vérifier « s’est ».']
+    ),
+    davantage_davantage: learnerGuide(
+      'Choisir « davantage » ou « d’avantage »',
+      'Exemple : « Il travaille davantage » signifie « plus » ; « il ne tire pas d’avantage de cette situation » parle d’un bénéfice. « Davantage » est un seul mot quand il signifie « plus ».',
+      ['Remplace la forme par « plus ».', 'Si la phrase garde son sens, écris « davantage ».', 'Si elle parle d’un bénéfice ou d’un intérêt, écris « d’avantage ».']
+    ),
+    du_du_accent: learnerGuide(
+      'Choisir « du » ou « dû »',
+      'Exemple : « du pain » signifie « de le pain », tandis que « le montant dû » vient du verbe « devoir ». L’accent distingue le participe passé masculin singulier du mot « du ».',
+      ['Essaie de remplacer par « de la » ou « des ».', 'Si le remplacement fonctionne, écris « du » sans accent.', 'Si la forme vient de « devoir », écris « dû » au masculin singulier, puis « due, dus » ou « dues » si l’accord l’exige.']
+    ),
+    homophones_multiples_en_contexte: learnerGuide(
+      'Vérifier plusieurs homophones dans la même phrase',
+      'Exemple : « Ces élèves se sont relus » contient deux choix différents : « ces/ses » et « ce/se ». Chaque son identique demande son propre test.',
+      ['Traite un seul emplacement à la fois.', 'Applique à cet emplacement un remplacement fiable.', 'Relis la phrase complète, puis passe à l’homophone suivant.']
+    ),
+    leur_leurs: learnerGuide(
+      'Choisir « leur » ou « leurs »',
+      'Exemple : « Je leur parle », mais « leurs livres ». Le pronom devant un verbe reste « leur » ; le déterminant devant un nom prend un « s » si ce nom est pluriel.',
+      ['Regarde si un nom vient juste après.', 'Sans nom, teste « lui » : si cela fonctionne, écris toujours « leur ».', 'Devant un nom, accorde « leur/leurs » avec ce nom.']
+    ),
+    on_on_n: learnerGuide(
+      'Entendre le « n’ » après « on »',
+      'Exemple : « On n’entend rien », mais « on entend tout ». La liaison de « on » devant une voyelle ne remplace pas le « n’ » d’une négation.',
+      ['Cherche un second mot négatif comme « pas », « plus », « jamais » ou « rien ».', 'Si ce mot est présent, ajoute « n’ » devant le verbe.', 'Relis en distinguant la négation de la simple liaison.']
+    ),
+    quel_que_quelque: learnerGuide(
+      'Choisir « quel que » ou « quelque »',
+      'Exemple : « Quels que soient les résultats », mais « quelques résultats ». Devant « être », « quel que » s’écrit en deux mots et « quel » s’accorde ; devant un nom, « quelque » est en un mot et peut prendre un « s ».',
+      ['Repère la construction qui suit.', 'Devant une forme de « être », écris « quel que » et accorde « quel ».', 'Sinon, vérifie si « quelque » accompagne un nom ou signifie « environ ».']
+    ),
+    quoique_quoi_que: learnerGuide(
+      'Choisir « quoique » ou « quoi que »',
+      'Exemple : « Quoique fatigué » signifie « bien que fatigué » ; « quoi que tu choisisses » signifie « quelle que soit la chose que tu choisis ». Le test du sens décide si l’on écrit un ou deux mots.',
+      ['Essaie de remplacer par « bien que ».', 'Si le sens convient, écris « quoique » en un mot.', 'Sinon, si le sens est « quelle que soit la chose que », écris « quoi que ».']
+    ),
+    si_sy: learnerGuide(
+      'Choisir « si » ou « s’y »',
+      'Exemple : « Si tu viens » pose une condition ; « il s’y rend » peut se décomposer en « il se rend là-bas ». « S’y » réunit les pronoms « se » et « y ».',
+      ['Demande si le mot introduit une condition ou une question rapportée.', 'Si oui, écris « si ».', 'Sinon, vérifie si tu peux séparer en « se » + « y » et écris « s’y ».']
+    ),
+    tout_tous_toute_toutes: learnerGuide(
+      'Accorder « tout » selon son rôle',
+      'Exemple : « tous les élèves », « elles sont toutes venues », mais « elles sont tout étonnées ». « Tout » s’accorde devant un nom ou quand il le remplace ; comme adverbe au sens de « complètement », il reste généralement inchangé.',
+      ['Repère ce que « tout » accompagne ou remplace.', 'Devant un nom ou à la place d’un nom, accorde-le.', 'S’il signifie « complètement », laisse-le généralement inchangé et vérifie l’exception devant un adjectif féminin commençant par une consonne ou un h aspiré.']
+    ),
+
+    // Interrogation indirecte
+    ce_qui_ce_que: learnerGuide(
+      'Choisir « ce qui » ou « ce que »',
+      'Exemple : « Je demande ce qui manque », mais « je demande ce que tu veux ». « Ce qui » est sujet du verbe suivant ; « ce que » est COD de ce verbe.',
+      ['Regarde le verbe placé après « ce qui/ce que ».', 'S’il n’a pas encore de sujet, choisis « ce qui ».', 'S’il a déjà un sujet et attend un COD, choisis « ce que ».']
+    ),
+    coordination_interrogative: learnerGuide(
+      'Relier deux questions rapportées',
+      'Exemple : « Je demande où il va et quand il reviendra. » Chaque question dépend du même verbe introducteur et garde l’ordre sujet-verbe.',
+      ['Repère le verbe qui introduit les questions.', 'Sépare les deux questions reliées par « et » ou « ou ».', 'Vérifie dans chacune le mot interrogatif et l’ordre sujet-verbe.']
+    ),
+    ordre_declaratif: learnerGuide(
+      'Garder l’ordre sujet-verbe dans une question rapportée',
+      'Exemple : « Je demande où Paul va », pas « où va Paul ». Dans une interrogation indirecte, les mots suivent l’ordre normal d’une phrase déclarative.',
+      ['Repère le verbe comme « demander » ou « savoir ».', 'Repère le mot interrogatif.', 'Place ensuite le sujet avant le verbe.']
+    ),
+    si_sans_est_ce_que: learnerGuide(
+      'Rapporter une question par « si »',
+      'Exemple : « Est-ce qu’il vient ? » devient « Je demande s’il vient ». Une question à laquelle on répond par oui ou non prend « si » et perd « est-ce que ».',
+      ['Vérifie que la réponse attendue est oui ou non.', 'Introduis la question rapportée par « si ».', 'Supprime « est-ce que » et garde l’ordre sujet-verbe.']
+    ),
+    suppression_inversion: learnerGuide(
+      'Supprimer l’inversion dans une question rapportée',
+      'Exemple : « Quand viendra-t-il ? » devient « Je demande quand il viendra ». L’inversion et le « -t- » appartiennent à la question directe, pas à la question rapportée.',
+      ['Repère la question intégrée dans une phrase.', 'Replace le sujet avant le verbe.', 'Supprime le trait d’union et le « -t- » ajouté pour l’inversion.']
+    ),
+    suppression_point_interrogation: learnerGuide(
+      'Choisir le signe final d’une question rapportée',
+      'Exemple : « Je me demande où il est. » La phrase entière affirme que l’on se pose une question ; elle se termine donc par un point ordinaire.',
+      ['Identifie le type de la phrase principale.', 'Si elle est déclarative, ne te laisse pas tromper par le mot interrogatif intérieur.', 'Termine par un point ; garde « ? » seulement si la phrase entière est une question.']
+    ),
+
+    // Nombres
+    cent_vingt_mille: learnerGuide(
+      'Accorder « cent », « vingt » et « mille »',
+      'Exemple : « deux cents », mais « deux cent trois » ; « quatre-vingts », mais « quatre-vingt-deux » ; « mille » ne prend jamais de « s ». « Cent » et « vingt » prennent « s » seulement quand ils sont multipliés et terminent le nombre.',
+      ['Découpe le nombre autour de « cent », « vingt » et « mille ».', 'Pour « cent » et « vingt », vérifie qu’ils sont multipliés et qu’aucun autre nombre ne suit.', 'Ajoute alors « s » ; laisse toujours « mille » sans « s ».']
+    ),
+    mille_invariable: learnerGuide(
+      'Écrire « mille » sans « s »',
+      'Exemple : « deux mille élèves ». Le nombre « mille » ne prend jamais de « s », même lorsqu’il est multiplié.',
+      ['Repère « mille » employé comme nombre.', 'Ignore la quantité placée devant.', 'Écris toujours « mille » sans « s ».']
+    ),
+    noms_de_nombre: learnerGuide(
+      'Mettre « million », « milliard » et « millier » au pluriel',
+      'Exemple : « deux millions d’habitants ». « Million », « milliard » et « millier » sont des noms communs et prennent un « s » quand ils désignent plusieurs unités.',
+      ['Repère « million », « milliard » ou « millier ».', 'Vérifie si le mot désigne plusieurs unités de cette quantité.', 'Ajoute alors la marque du pluriel comme pour un nom ordinaire.']
+    ),
+
+    // Orthographe lexicale
+    accentuation: learnerGuide(
+      'Choisir le bon accent dans un mot',
+      'Exemple : « événement » et « forêt » gardent leurs accents. L’accent fait partie de l’orthographe du mot et peut parfois distinguer deux formes.',
+      ['Repère la voyelle qui pose problème.', 'Rappelle ou vérifie l’orthographe du mot entier.', 'Recopie l’accent exact, puis relis le mot dans la phrase.']
+    ),
+    accord_mots_particuliers: learnerGuide(
+      'Accorder un mot à règle particulière',
+      'Exemple : « une demi-heure », mais « deux heures et demie ». Des mots comme « demi », « même », « tel », « tout » ou certains noms de couleur changent selon leur place et leur rôle.',
+      ['Repère le mot particulier.', 'Observe sa place et le mot auquel il se rapporte.', 'Applique la règle propre à ce mot, sans généraliser celle d’un adjectif ordinaire.']
+    ),
+    adverbes_amment_emment: learnerGuide(
+      'Choisir « -amment » ou « -emment »',
+      'Exemple : « constant » donne « constamment » ; « prudent » donne « prudemment ». Un adjectif en « -ant » mène à « -amment » et un adjectif en « -ent » à « -emment ».',
+      ['Retrouve l’adjectif de départ.', 'Regarde s’il se termine par « -ant » ou « -ent ».', 'Écris « -amment » après « -ant » et « -emment » après « -ent ».']
+    ),
+    consonne_double: learnerGuide(
+      'Choisir une consonne simple ou double',
+      'Exemple : « adresse » prend deux « s », mais « adresse » ne prend qu’un « d ». Le son ne suffit pas : le doublement appartient à l’orthographe de chaque mot.',
+      ['Repère la consonne qui te fait hésiter.', 'Rappelle ou vérifie une forme sûre du même mot.', 'Écris la consonne simple ou double attestée, sans copier le modèle d’un autre mot.']
+    ),
+    finale_muette_par_famille: learnerGuide(
+      'Retrouver une consonne finale muette',
+      'Exemple : « grand » garde un « d » que l’on entend dans « grande ». Un mot de la même famille ou une forme féminine peut révéler la consonne finale.',
+      ['Repère la fin que l’on n’entend pas.', 'Cherche un mot de la même famille ou une forme où cette consonne se prononce.', 'Reporte la consonne révélée sur le mot de départ.']
+    ),
+    genre_change_sens: learnerGuide(
+      'Comprendre un nom dont le sens change avec le genre',
+      'Exemple : « un mémoire » est un travail écrit ; « la mémoire » est la capacité de se souvenir. L’article masculin ou féminin peut changer le sens du nom.',
+      ['Repère l’article et le nom.', 'Compare les sens masculin et féminin possibles.', 'Choisis le genre qui correspond au sens de la phrase.']
+    ),
+    graphie_composee: learnerGuide(
+      'Écrire un mot composé ou une locution',
+      'Exemple : « portefeuille » est soudé, « compte rendu » séparé et « arc-en-ciel » relié par des traits d’union. Cette séparation fait partie de l’orthographe du mot.',
+      ['Repère tous les éléments de l’expression.', 'Vérifie sa forme attestée : soudure, espace, apostrophe ou trait d’union.', 'Recopie cette forme entière sans mélanger plusieurs variantes.']
+    ),
+    graphie_lexicale_usage: learnerGuide(
+      'Mémoriser l’orthographe propre à un mot',
+      'Exemple : l’écriture de « acquérir » ne se déduit pas sûrement de sa prononciation. La forme correcte doit être mémorisée avec une phrase qui en fixe le sens.',
+      ['Repère précisément le mot et son sens.', 'Vérifie sa forme dans une source fiable.', 'Mémorise le mot dans une courte phrase plutôt qu’isolément.']
+    ),
+    graphies_lexicales_multiples: learnerGuide(
+      'Vérifier plusieurs mots différents',
+      'Exemple : une question peut opposer quatre phrases contenant quatre mots sans rapport. Une erreur dans une phrase ne permet pas de décider pour les autres.',
+      ['Lis une seule phrase à la fois.', 'Repère le mot dont l’écriture te fait hésiter.', 'Vérifie ce mot dans son sens précis, puis recommence avec la phrase suivante.']
+    ),
+    paronyme_lexical: learnerGuide(
+      'Choisir entre deux mots qui se ressemblent',
+      'Exemple : « une collision » est un choc, tandis qu’une « collusion » est une entente secrète. Deux mots proches par la forme peuvent avoir des sens différents.',
+      ['Explique avec tes mots le sens attendu par la phrase.', 'Compare la définition des deux mots proches.', 'Garde celui dont le sens correspond exactement au contexte.']
+    ),
+
+    // Ponctuation
+    apostrophe_vocative: learnerGuide(
+      'Détacher le nom de la personne appelée',
+      'Exemple : « Marie, viens ici » et « Viens ici, Marie ». Le nom de la personne à qui l’on parle est séparé du reste de la phrase par une virgule, ou par deux s’il est au milieu.',
+      ['Repère le nom utilisé pour appeler quelqu’un.', 'Vérifie sa place au début, au milieu ou à la fin.', 'Place une virgule à chaque frontière entre ce nom et le reste de la phrase.']
+    ),
+    apposition: learnerGuide(
+      'Encadrer une précision ajoutée à un nom',
+      'Exemple : « Léa, ma voisine, arrive. » « Ma voisine » ajoute une précision que l’on peut retirer ; elle est encadrée par deux virgules.',
+      ['Repère le groupe qui précise un nom.', 'Retire-le pour vérifier que la phrase reste complète.', 'S’il est détachable, ouvre et ferme ce groupe par des virgules.']
+    ),
+    citation_directe: learnerGuide(
+      'Ponctuer des paroles citées',
+      'Exemple : « Il a répondu : “Je viendrai.” » Une citation complète est annoncée par deux-points, placée entre guillemets et garde son signe final à l’intérieur.',
+      ['Repère le verbe de parole et la citation complète.', 'Place les deux-points après l’annonce.', 'Encadre les paroles de guillemets et mets leur signe final avant le guillemet fermant.']
+    ),
+    complement_initial: learnerGuide(
+      'Mettre une virgule après un complément initial',
+      'Exemple : « Après plusieurs semaines de travail, le projet est prêt. » Un complément placé en tête est généralement séparé de la phrase principale par une virgule.',
+      ['Repère le groupe placé avant la proposition principale.', 'Trouve l’endroit où ce groupe initial se termine.', 'Place généralement une virgule à cette frontière.']
+    ),
+    enumeration_deux_points: learnerGuide(
+      'Introduire une liste par deux-points',
+      'Exemple : « Il faut trois documents : une pièce d’identité, une photo et le formulaire. » Les deux-points viennent après une annonce complète qui prépare la liste.',
+      ['Repère l’annonce de la liste.', 'Vérifie que les mots avant le signe forment une phrase complète.', 'Place les deux-points juste avant l’énumération.']
+    ),
+    incise_double_virgule: learnerGuide(
+      'Fermer une incise avec une deuxième virgule',
+      'Exemple : « Le résultat, selon le rapport, reste incertain. » Un groupe ajouté au milieu doit être ouvert et fermé par deux virgules.',
+      ['Repère le segment que l’on peut retirer.', 'Place une virgule à son début.', 'Place la seconde à sa fin avant de reprendre la phrase principale.']
+    ),
+    interdiction_virgule_sujet_verbe: learnerGuide(
+      'Ne pas séparer le sujet du verbe',
+      'Exemple : « La liste des candidats retenus sera publiée », sans virgule avant « sera ». Même long, le sujet reste directement lié à son verbe.',
+      ['Repère le verbe principal.', 'Pose « qui est-ce qui ? » pour trouver tout son sujet.', 'Ne mets pas de virgule entre ce sujet et le verbe.']
+    ),
+    interdiction_virgule_verbe_complement: learnerGuide(
+      'Ne pas séparer le verbe de son complément essentiel',
+      'Exemple : « Elle attend la réponse », sans virgule après « attend ». Le complément nécessaire au sens du verbe reste attaché à lui.',
+      ['Repère le verbe.', 'Trouve le complément demandé par ce verbe.', 'Ne place pas de virgule entre les deux.']
+    ),
+    point_abreviatif_etc: learnerGuide(
+      'Ponctuer correctement « etc. »',
+      'Exemple : « des cahiers, des stylos, etc. » « Etc. » est précédé d’une virgule et contient déjà son point ; on n’ajoute pas de points de suspension.',
+      ['Repère la fin de l’énumération.', 'Place une virgule avant « etc. ».', 'Écris un seul point après « etc » et n’ajoute pas « … ».']
+    ),
+    point_virgule_propositions: learnerGuide(
+      'Relier deux propositions par un point-virgule',
+      'Exemple : « Le délai est court ; l’équipe reste confiante. » Chaque partie pourrait former une phrase complète, mais leur sens est étroitement lié.',
+      ['Sépare les deux propositions.', 'Vérifie que chacune peut être une phrase autonome.', 'Utilise le point-virgule si tu veux marquer un lien plus fort qu’avec un point.']
+    ),
+    ponctuation_interrogation: learnerGuide(
+      'Choisir le point d’interrogation',
+      'Exemple : « Où va-t-il ? », mais « Je demande où il va. » Une question directe prend « ? » ; une question intégrée dans une affirmation prend le signe de la phrase principale.',
+      ['Demande si la phrase entière pose directement une question.', 'Si oui, termine par « ? ».', 'Sinon, choisis le signe correspondant à la phrase principale.']
+    ),
+    ponctuation_multi_regles: learnerGuide(
+      'Vérifier plusieurs règles de ponctuation',
+      'Exemple : une phrase peut tester une virgule d’incise et une autre un point-virgule. Chaque signe doit être jugé selon la structure de sa propre phrase.',
+      ['Lis une seule phrase à la fois.', 'Repère les groupes et le lien entre eux.', 'Applique la règle du signe concerné avant de passer à la phrase suivante.']
+    ),
+    relative_determinative_sans_virgules: learnerGuide(
+      'Pas de virgules pour une relative indispensable',
+      'Exemple : « Les élèves qui ont terminé peuvent partir. » « Qui ont terminé » sélectionne seulement certains élèves ; cette information indispensable ne se détache pas.',
+      ['Repère le groupe introduit par « qui », « que » ou « dont ».', 'Demande s’il sert à identifier précisément les personnes ou choses visées.', 'S’il est indispensable à ce choix, ne mets pas de virgules.']
+    ),
+    relative_explicative_avec_virgules: learnerGuide(
+      'Deux virgules pour une précision non indispensable',
+      'Exemple : « Mes élèves, qui ont tous terminé, peuvent partir. » Le groupe ajoute une précision sur des élèves déjà identifiés ; il se détache par deux virgules.',
+      ['Repère le groupe introduit par « qui », « que » ou « dont ».', 'Retire-le pour vérifier que les personnes ou choses restent clairement identifiées.', 'S’il ajoute seulement une précision, encadre-le de deux virgules.']
+    ),
+    signes_doubles_parentheses_tirets: learnerGuide(
+      'Fermer parenthèses et tirets',
+      'Exemple : « Le projet (encore provisoire) sera présenté. » Un segment ouvert par une parenthèse ou un tiret doit être fermé par le signe correspondant.',
+      ['Repère le signe qui ouvre le segment ajouté.', 'Trouve la fin exacte de ce segment.', 'Ajoute le signe fermant correspondant avant de reprendre la phrase.']
+    ),
+    virgule_coordination: learnerGuide(
+      'Placer la virgule avant « mais » ou « car »',
+      'Exemple : « Il voulait venir, mais il était malade. » Quand le mot de liaison relie deux propositions, la virgule se place avant lui, jamais juste après.',
+      ['Repère le mot de coordination.', 'Vérifie qu’il relie deux propositions complètes.', 'Place la virgule avant le mot de liaison et non après.']
+    ),
+
+    // Prépositions imposées
+    adjectif_et_preposition: learnerGuide(
+      'Préposition demandée par un adjectif',
+      'Exemple : on est « fier de » un résultat et « prêt à » partir. Chaque adjectif se construit avec une préposition précise.',
+      ['Repère l’adjectif.', 'Rappelle l’expression complète formée avec son complément.', 'Conserve la préposition exigée par cet adjectif.']
+    ),
+    coordination_regimes_differents: learnerGuide(
+      'Garder la préposition propre à chaque mot',
+      'Exemple : « Il dépend de cette décision et participe à sa mise en œuvre. » Les deux verbes n’exigent pas la même préposition.',
+      ['Sépare les deux mots coordonnés.', 'Reconstruis chacun avec son propre complément.', 'Écris devant chaque complément la préposition demandée.']
+    ),
+    locution_prepositive: learnerGuide(
+      'Compléter une locution avec la bonne préposition',
+      'Exemple : « en raison de la pluie » et « conformément à la règle ». Une locution complète contient une préposition fixe.',
+      ['Repère la locution.', 'Rappelle-la entièrement avec un complément simple.', 'Écris la préposition qui appartient à cette expression.']
+    ),
+    regime_verbal_a: learnerGuide(
+      'Verbe construit avec « à »',
+      'Exemple : on « participe à un projet ». Certains verbes demandent toujours « à » devant leur complément.',
+      ['Repère le verbe.', 'Teste sa construction avec un nom simple.', 'S’il se construit avec « à », garde cette préposition devant le complément.']
+    ),
+    regime_verbal_de: learnerGuide(
+      'Verbe construit avec « de »',
+      'Exemple : on « dépend de la décision ». Certains verbes demandent toujours « de » devant leur complément.',
+      ['Repère le verbe.', 'Teste sa construction avec un nom simple.', 'S’il se construit avec « de », garde cette préposition devant le complément.']
+    ),
+    regime_verbal_direct: learnerGuide(
+      'Verbe construit sans préposition',
+      'Exemple : on « attend le bus », pas « attend pour le bus ». Certains verbes prennent directement leur COD sans « à » ni « de ».',
+      ['Repère le verbe.', 'Pose « qui ? » ou « quoi ? » après lui.', 'Si la réponse vient directement, n’ajoute aucune préposition.']
+    ),
+    regimes_multiples: learnerGuide(
+      'Vérifier plusieurs constructions avec préposition',
+      'Exemple : une phrase peut contenir « penser à », une autre « dépendre de ». Chaque verbe ou adjectif demande sa propre vérification.',
+      ['Lis une seule phrase à la fois.', 'Repère le mot qui commande le complément.', 'Reconstruis son expression complète et choisis sa préposition.']
+    ),
+
+    // Pronoms relatifs
+    ou_lieu_temps_verrouille: learnerGuide(
+      'Employer « où » pour un lieu ou un moment',
+      'Exemple : « la ville où je vis » et « le jour où je pars ». Le pronom « où » reprend clairement un lieu ou un moment.',
+      ['Repère le nom repris.', 'Demande s’il indique un lieu ou un moment.', 'Si oui et qu’aucune autre préposition n’est exigée, choisis « où ».']
+    ),
+    possession_dont: learnerGuide(
+      'Exprimer la possession avec « dont »',
+      'Exemple : « l’élève dont le dossier est complet » signifie « le dossier de l’élève ». « Dont » remplace le groupe en « de » qui complète le nom.',
+      ['Sépare les deux idées.', 'Reconstruis dans la seconde « le nom de… ».', 'Si le groupe repris suit « de », remplace-le par « dont ».']
+    ),
+    preposition_plus_lequel: learnerGuide(
+      'Employer une préposition avec « lequel »',
+      'Exemple : « la table sur laquelle il écrit ». On garde la préposition demandée, puis on accorde « lequel » avec le nom repris.',
+      ['Repère la préposition exigée dans la seconde partie.', 'Trouve le genre et le nombre du nom repris.', 'Choisis « lequel, laquelle, lesquels » ou « lesquelles » et fais la contraction nécessaire.']
+    ),
+    preposition_plus_qui_humain: learnerGuide(
+      'Employer une préposition avec « qui » pour une personne',
+      'Exemple : « la collègue avec qui je travaille ». Après une préposition simple, « qui » peut reprendre une personne.',
+      ['Repère la personne reprise.', 'Retrouve la préposition demandée dans la seconde partie.', 'Garde cette préposition devant « qui ».']
+    ),
+    preposition_plus_quoi_neutre: learnerGuide(
+      'Employer « ce à quoi », « ce pour quoi », « ce en quoi »',
+      'Exemple : « Voilà ce à quoi je pense. » Quand « ce » reprend une idée entière, la préposition demandée se place devant « quoi ».',
+      ['Repère l’idée reprise par « ce ».', 'Retrouve la préposition demandée par le verbe ou l’expression.', 'Écris « ce » + cette préposition + « quoi ».']
+    ),
+    redondance_relative_pronom: learnerGuide(
+      'Ne pas ajouter un second pronom après le relatif',
+      'Exemple : « le livre dont je parle », pas « dont j’en parle ». « Dont » remplit déjà le rôle du groupe en « de » ; « en » le répéterait inutilement.',
+      ['Repère le pronom relatif.', 'Reconstruis le rôle qu’il remplit dans la seconde partie.', 'Supprime tout autre pronom qui remplirait exactement le même rôle.']
+    ),
+    regime_a_auquel: learnerGuide(
+      'Transformer « à + lequel »',
+      'Exemple : « le projet auquel je participe ». Le verbe « participer à » impose « à » ; « à + lequel » devient « auquel » ou « auxquels », mais reste séparé devant « laquelle/lesquelles ».',
+      ['Retrouve la construction avec « à ».', 'Trouve le genre et le nombre du nom repris.', 'Choisis « auquel, à laquelle, auxquels » ou « auxquelles ».']
+    ),
+    regime_de_dont: learnerGuide(
+      'Remplacer un complément en « de » par « dont »',
+      'Exemple : « le sujet dont nous parlons » vient de « nous parlons de ce sujet ». « Dont » remplace le complément en « de » sans répéter cette préposition.',
+      ['Reconstruis la seconde partie avec le nom répété.', 'Vérifie que le verbe ou l’expression demande « de ».', 'Remplace « de + nom » par « dont » et n’ajoute pas un autre « de ».']
+    ),
+    regime_direct_que: learnerGuide(
+      'Employer « que » comme COD',
+      'Exemple : « le livre que je lis » vient de « je lis le livre ». Le nom repris est COD direct, sans préposition : on choisit « que ».',
+      ['Reconstruis la seconde partie avec le nom répété.', 'Pose « je lis quoi ? » pour vérifier le COD direct.', 'Remplace ce COD par « que ».']
+    ),
+    regime_sur_sur_lequel: learnerGuide(
+      'Garder « sur » devant « lequel »',
+      'Exemple : « la règle sur laquelle je m’appuie ». L’expression « s’appuyer sur » impose « sur », qui reste devant « lequel » accordé.',
+      ['Reconstruis la seconde partie avec le nom répété.', 'Vérifie que le verbe demande « sur ».', 'Écris « sur » puis la forme de « lequel » accordée avec le nom.']
+    ),
+    sujet_qui: learnerGuide(
+      'Employer « qui » comme sujet',
+      'Exemple : « l’élève qui répond ». Le pronom relatif fait lui-même l’action du verbe suivant : on choisit « qui ».',
+      ['Reconstruis la seconde partie avec le nom répété.', 'Demande qui fait l’action du verbe.', 'Si le nom repris est ce sujet, remplace-le par « qui ».']
+    ),
+
+    // Pronoms de reprise
+    coi_lui_leur: learnerGuide(
+      'Choisir « lui » ou « leur » pour une personne',
+      'Exemple : « Je parle à Léa » devient « je lui parle » ; « je parle aux élèves » devient « je leur parle ». « Lui » reprend une personne, « leur » plusieurs.',
+      ['Repère le complément de personne introduit par « à ».', 'Vérifie s’il est singulier ou pluriel.', 'Choisis « lui » au singulier et « leur » au pluriel.']
+    ),
+    complement_de_en: learnerGuide(
+      'Remplacer un complément en « de » par « en »',
+      'Exemple : « Je parle de ce projet » devient « j’en parle ». « En » reprend généralement une chose introduite par « de ».',
+      ['Repère le complément introduit par « de ».', 'Vérifie qu’il désigne une chose ou une quantité.', 'Remplace le groupe entier par « en ».']
+    ),
+    cvd_le_la_les: learnerGuide(
+      'Remplacer un COD par « le », « la » ou « les »',
+      'Exemple : « Je lis la lettre » devient « je la lis ». Un COD se reprend par « le », « la » ou « les » selon son genre et son nombre.',
+      ['Trouve le COD en posant « qui ? » ou « quoi ? » après le verbe.', 'Repère son genre et son nombre.', 'Choisis « le », « la » ou « les » et place-le avant le verbe.']
+    ),
+    lieu_ou_a_y: learnerGuide(
+      'Remplacer un lieu ou un complément en « à » par « y »',
+      'Exemple : « Je vais à Lausanne » devient « j’y vais » ; « je pense au projet » devient « j’y pense ». « Y » reprend souvent un lieu ou une chose introduite par « à ».',
+      ['Repère le lieu ou le complément introduit par « à ».', 'Vérifie qu’il ne désigne pas une personne.', 'Remplace ce groupe par « y ».']
+    ),
+    locution_pronominale_figee: learnerGuide(
+      'Conserver « en » ou « y » dans une expression figée',
+      'Exemple : « s’en aller » et « il y a » forment des expressions complètes. Le pronom « en » ou « y » appartient à la locution et ne peut pas être supprimé librement.',
+      ['Repère le verbe avec « en » ou « y ».', 'Vérifie si l’ensemble forme une expression figée.', 'Si oui, conserve tous ses éléments dans l’ordre attendu.']
+    ),
+    ordre_pronoms_complements: learnerGuide(
+      'Placer plusieurs pronoms dans le bon ordre',
+      'Exemple : « Je donne le livre à Paul » devient « je le lui donne ». Devant un verbe, les pronoms suivent un ordre fixe ; l’impératif affirmatif suit un autre ordre.',
+      ['Identifie le rôle de chaque pronom.', 'Repère si le verbe est déclaratif, négatif ou à l’impératif affirmatif.', 'Place les pronoms selon l’ordre propre à cette construction.']
+    ),
+    pronom_possessif_accord: learnerGuide(
+      'Accorder « le mien », « la vôtre », « les leurs »',
+      'Exemple : « mon livre » devient « le mien » et « mes clés » devient « les miennes ». Le pronom possessif s’accorde avec l’objet possédé, pas avec son propriétaire.',
+      ['Repère le nom remplacé.', 'Trouve son genre et son nombre.', 'Choisis l’article et la forme du pronom possessif correspondants.']
+    ),
+    pronom_reflechi_indefini_soi: learnerGuide(
+      'Employer « soi » avec un sujet indéfini',
+      'Exemple : « Chacun doit penser à soi. » Avec « chacun », « on », « personne » ou un sujet non précisément identifié, le pronom réfléchi tonique est « soi ».',
+      ['Repère le sujet.', 'Vérifie qu’il est indéfini et ne désigne pas une personne précise.', 'Choisis « soi » après la préposition.']
+    ),
+    pronom_tonique_coordonne: learnerGuide(
+      'Employer « moi », « toi », « lui » après « et »',
+      'Exemple : « Paul et moi viendrons », pas « Paul et je ». Dans un groupe coordonné, on emploie la forme tonique du pronom.',
+      ['Repère le pronom relié à un autre groupe par « et » ou « ou ».', 'Choisis sa forme tonique : moi, toi, lui, elle, nous, vous, eux ou elles.', 'Accorde ensuite le verbe avec l’ensemble du sujet.']
+    ),
+    pronoms_reciproques_toniques: learnerGuide(
+      'Employer « l’un l’autre » avec la bonne préposition',
+      'Exemple : « Ils parlent l’un à l’autre » conserve le « à » de « parler à ». La forme réciproque garde la préposition du verbe et s’accorde avec les personnes concernées.',
+      ['Repère l’action que les personnes font réciproquement.', 'Retrouve la préposition demandée par le verbe.', 'Choisis « l’un l’autre » ou « les uns les autres » au genre et au nombre adaptés.']
+    ),
+    redondance_pronominale: learnerGuide(
+      'Éviter de reprendre deux fois le même complément',
+      'Exemple : « Le livre dont je parle », pas « le livre dont j’en parle ». Un pronom suffit pour remplir un rôle dans la phrase.',
+      ['Repère tous les pronoms qui renvoient au même groupe.', 'Vérifie le rôle déjà rempli par le premier.', 'Supprime le second s’il répète exactement ce rôle.']
+    ),
+    reprise_proposition_le: learnerGuide(
+      'Reprendre une idée entière par « le »',
+      'Exemple : « Il viendra ; je le sais. » Quand le pronom reprend une phrase ou une idée entière, on emploie le « le » neutre.',
+      ['Repère ce que le pronom doit remplacer.', 'Vérifie qu’il s’agit d’une idée complète et non d’un nom précis.', 'Choisis « le », sans accord de genre ou de nombre.']
+    ),
+
+    // Révisions mêlant plusieurs règles
+    aucune_hypercorrections: learnerGuide(
+      'Repérer quatre phrases toutes incorrectes',
+      'Exemple : une tournure peut sembler plus soignée parce qu’elle ajoute un accord ou un mot, tout en devenant fautive. Si chaque phrase contient ce type de correction excessive, la réponse peut être « Aucune ».',
+      ['Analyse chaque phrase sans supposer qu’une option chiffrée est juste.', 'Repère la règle réellement applicable, puis l’ajout ou l’accord inutile.', 'Choisis « Aucune » seulement après avoir établi une faute dans les quatre phrases.']
+    ),
+    phrases_eleves_heterogenes: learnerGuide(
+      'Relire des phrases qui testent des règles différentes',
+      'Exemple : une phrase d’élève peut contenir un accord fautif, une autre un mauvais pronom et une troisième une ponctuation correcte. Il faut isoler la difficulté décisive de chacune.',
+      ['Lis une seule production à la fois.', 'Repère la zone précise qui paraît juste ou fautive.', 'Applique sa règle propre avant de comparer les quatre productions.']
+    ),
+    revision_homophones_et_accords: learnerGuide(
+      'Vérifier séparément homophone et accord',
+      'Exemple : dans « ces élèves sont arrivés », « ces/ses » se choisit par le sens et « arrivés » par l’accord. Réussir un test ne valide pas automatiquement l’autre.',
+      ['Repère d’abord chaque homophone et applique son test de remplacement.', 'Trouve ensuite le mot qui commande chaque accord.', 'Valide les deux zones avant de juger la phrase.']
+    ),
+    revision_modes_et_temps: learnerGuide(
+      'Choisir d’abord le mode, puis le temps',
+      'Exemple : « Il faut qu’il soit venu avant midi » demande le subjonctif après « il faut », puis un temps qui marque une action déjà accomplie. Mode et temps répondent à deux questions différentes.',
+      ['Repère l’expression qui impose indicatif, subjonctif ou conditionnel.', 'Situe ensuite l’action dans le temps par rapport au repère.', 'Conjugue avec le mode et le temps obtenus.']
+    ),
+    revision_participes_et_infinitifs: learnerGuide(
+      'Distinguer plusieurs formes verbales',
+      'Exemple : « après avoir terminé, il peut partir » contient un participe passé puis un infinitif. Chaque forme doit être identifiée avant de décider sa terminaison ou son accord.',
+      ['Repère toutes les formes verbales non conjuguées.', 'Classe chacune comme infinitif, participe présent ou participe passé.', 'Applique séparément la règle de terminaison ou d’accord de chaque forme.']
+    ),
+    revision_ponctuation_et_syntaxe: learnerGuide(
+      'Construire la phrase avant de la ponctuer',
+      'Exemple : on ne place pas une virgule seulement parce qu’on entend une pause. Le signe dépend du lien entre le sujet, le verbe, les compléments et les groupes ajoutés.',
+      ['Repère le sujet, le verbe et les compléments essentiels.', 'Isole les groupes ajoutés ou les propositions autonomes.', 'Place la ponctuation selon ces frontières réelles.']
+    ),
+    revision_regimes_et_relatives: learnerGuide(
+      'Trouver la préposition avant le pronom relatif',
+      'Exemple : « le projet auquel je participe » vient de « participer à ce projet ». La construction du verbe donne d’abord « à », puis le pronom relatif prend la forme compatible.',
+      ['Reconstruis la seconde partie avec le nom répété.', 'Trouve la préposition demandée par le verbe, le nom ou l’adjectif.', 'Choisis le pronom relatif qui conserve cette préposition.']
+    ),
+    toutes_correctes_suspectes: learnerGuide(
+      'Vérifier quatre phrases qui peuvent toutes être correctes',
+      'Exemple : une forme rare peut sembler fautive tout en suivant une règle exacte. Si les quatre phrases résistent à leur vérification propre, la réponse peut être « Toutes ».',
+      ['Analyse chaque phrase séparément.', 'Nomme la règle qui justifie précisément sa forme.', 'Choisis « Toutes » seulement après avoir validé les quatre phrases.']
+    ),
+
+    // Rattachement d’un groupe détaché
+    gerondif_sujet_implicite: learnerGuide(
+      'Donner le même sujet au gérondif et au verbe principal',
+      'Exemple : « En arrivant, Paul a téléphoné » signifie que Paul est arrivé et a téléphoné. Le sujet non écrit du gérondif doit normalement être celui du verbe principal.',
+      ['Repère le groupe formé avec « en » + forme en « -ant ».', 'Demande qui accomplit cette action.', 'Vérifie que cette même personne ou chose est le sujet du verbe principal.']
+    ),
+    groupe_detache_sujet_implicite: learnerGuide(
+      'Rattacher le groupe initial au bon sujet',
+      'Exemple : « Pour réussir, Léa travaille régulièrement. » C’est Léa qui veut réussir ; le groupe détaché doit donc décrire clairement le sujet principal.',
+      ['Repère le groupe séparé au début de la phrase.', 'Demande qui est concerné par ce groupe.', 'Vérifie que cette personne ou chose est le sujet de la proposition principale.']
+    ),
+    participe_detache_sujet_implicite: learnerGuide(
+      'Rattacher un participe détaché au bon nom',
+      'Exemple : « Arrivée tôt, Léa a préparé la salle. » « Arrivée » décrit Léa, qui apparaît clairement comme sujet de la suite.',
+      ['Repère le participe séparé par une virgule.', 'Demande qui accomplit ou subit l’action exprimée.', 'Vérifie que ce nom est clairement présent comme sujet ou support dans la proposition principale.']
+    ),
+
+    // Indicatif ou subjonctif
+    anteriorite_avant_que: learnerGuide(
+      'Employer le subjonctif après « avant que »',
+      'Exemple : « Pars avant qu’il ne soit trop tard. » L’action après « avant que » n’est pas encore réalisée au moment de l’action principale ; elle se met au subjonctif.',
+      ['Repère « avant que ».', 'Vérifie que l’événement annoncé doit arriver plus tard.', 'Conjugue le verbe qui suit au subjonctif.']
+    ),
+    apres_que_indicatif: learnerGuide(
+      'Employer l’indicatif après « après que »',
+      'Exemple : « Il est parti après qu’il a terminé. » « Après que » présente l’action comme réalisée et demande l’indicatif, au temps adapté à l’ordre des faits.',
+      ['Repère « après que ».', 'Situe l’action terminée par rapport à l’autre.', 'Conjugue-la à l’indicatif au temps qui marque cet ordre.']
+    ),
+    but_crainte_subjonctif: learnerGuide(
+      'Subjonctif après un but ou une crainte',
+      'Exemple : « Je répète afin qu’il comprenne » et « je ferme la porte de peur qu’il sorte ». Le résultat recherché ou redouté se met au subjonctif.',
+      ['Repère « pour que », « afin que », « de peur que » ou une expression voisine.', 'Vérifie qu’elle introduit un but ou une crainte.', 'Conjugue le verbe qui suit au subjonctif.']
+    ),
+    certitude_indicatif: learnerGuide(
+      'Indicatif pour un fait affirmé',
+      'Exemple : « Il est certain qu’elle vient. » Quand le locuteur présente le fait comme certain, probable ou constaté, il emploie l’indicatif.',
+      ['Repère l’expression avant « que ».', 'Demande si elle affirme le fait comme réel ou probable.', 'Si oui, conjugue le verbe à l’indicatif.']
+    ),
+    concession_bien_que: learnerGuide(
+      'Subjonctif après « bien que »',
+      'Exemple : « Bien qu’il soit tard, nous continuons. » « Bien que » introduit un obstacle qui n’empêche pas le résultat et demande le subjonctif.',
+      ['Repère « bien que ».', 'Vérifie le contraste entre l’obstacle et le résultat.', 'Conjugue le verbe après « bien que » au subjonctif.']
+    ),
+    concession_et_constat: learnerGuide(
+      'Distinguer concession et fait constaté',
+      'Exemple : « Bien qu’il pleuve » concède un obstacle ; « je constate qu’il pleut » affirme un fait. La première construction demande le subjonctif, la seconde l’indicatif.',
+      ['Repère l’expression qui introduit la proposition.', 'Demande si elle concède un obstacle ou affirme un constat.', 'Choisis le mode exigé par cette valeur et cette expression.']
+    ),
+    concession_subjonctif: learnerGuide(
+      'Subjonctif après une expression de concession',
+      'Exemple : « Quoiqu’il soit fatigué, il continue. » « Bien que », « quoique » et « sans que » présentent un fait admis ou écarté et demandent le subjonctif.',
+      ['Repère l’expression de concession.', 'Vérifie qu’un fait est admis malgré le résultat.', 'Conjugue le verbe qui suit au subjonctif.']
+    ),
+    double_contraste_modes: learnerGuide(
+      'Comparer deux expressions qui commandent des modes différents',
+      'Exemple : « Je sais qu’il vient, mais je doute qu’il reste. » « Savoir » affirme un fait ; « douter » le présente comme incertain.',
+      ['Sépare les deux propositions introduites par « que ».', 'Analyse dans chacune l’expression qui précède et le sens donné au fait.', 'Choisis indépendamment l’indicatif ou le subjonctif pour chaque verbe.']
+    ),
+    doute_possibilite: learnerGuide(
+      'Subjonctif pour le doute ou la possibilité',
+      'Exemple : « Je doute qu’il vienne. » Quand un fait est présenté comme douteux, possible ou peu probable, le subjonctif marque qu’il n’est pas affirmé.',
+      ['Repère l’expression de doute ou de possibilité.', 'Vérifie que le fait n’est pas présenté comme certain.', 'Conjugue le verbe après « que » au subjonctif.']
+    ),
+    hypothese_condition_subjonctif: learnerGuide(
+      'Subjonctif après certaines conditions',
+      'Exemple : « Je viendrai à condition que tu sois là. » « À condition que », « à moins que » et « à supposer que » introduisent une condition envisagée et demandent le subjonctif.',
+      ['Repère la locution de condition.', 'Vérifie qu’elle est suivie de « que ».', 'Conjugue le verbe de cette condition au subjonctif.']
+    ),
+    locution_subjonctive_figee: learnerGuide(
+      'Reconnaître une locution figée au subjonctif',
+      'Exemple : « que je sache » et « quoi qu’il en soit » gardent une forme fixée par l’usage. Le subjonctif fait partie de ces expressions.',
+      ['Repère la locution complète.', 'Vérifie qu’elle correspond à une expression figée connue.', 'Conserve sa forme au subjonctif sans la reconstruire mot par mot.']
+    ),
+    obligation_necessite: learnerGuide(
+      'Subjonctif après une obligation ou une nécessité',
+      'Exemple : « Il faut que tu viennes. » Une obligation, une nécessité ou un jugement d’importance suivi de « que » demande normalement le subjonctif.',
+      ['Repère l’expression d’obligation ou de nécessité.', 'Trouve la proposition introduite par « que ».', 'Conjugue son verbe au subjonctif.']
+    ),
+    si_coordonne_que_subjonctif: learnerGuide(
+      'Après « si… et que… »',
+      'Exemple : « Si tu viens et que tu veuilles rester, préviens-nous. » Quand « que » reprend une condition déjà introduite par « si », le verbe coordonné se met au subjonctif.',
+      ['Repère la première condition introduite par « si ».', 'Vérifie que « et que » ajoute une seconde condition sans répéter « si ».', 'Conjugue le verbe après « et que » au subjonctif.']
+    ),
+    souhait_volonte: learnerGuide(
+      'Subjonctif après un souhait ou une volonté',
+      'Exemple : « Je veux que tu viennes. » Après un verbe de souhait, de volonté ou d’ordre, la proposition introduite par « que » se met au subjonctif.',
+      ['Repère le verbe de souhait, de volonté ou d’ordre.', 'Trouve l’action voulue après « que ».', 'Conjugue cette action au subjonctif.']
+    ),
+
+    // Vocabulaire en contexte
+    polysemie_contextuelle: learnerGuide(
+      'Choisir le bon sens d’un mot',
+      'Exemple : « une feuille » peut appartenir à un arbre ou être une page. Les autres mots de la phrase indiquent le sens qui convient.',
+      ['Relève les indices de sens autour du mot.', 'Essaie chaque définition possible dans la phrase.', 'Garde celle qui rend l’ensemble cohérent.']
+    ),
+    synonyme_exact: learnerGuide(
+      'Choisir un synonyme exact dans la phrase',
+      'Exemple : deux mots proches ne sont pas toujours interchangeables dans tous les contextes. Le bon synonyme garde le sens, le niveau de langue et la construction de la phrase.',
+      ['Explique le mot source dans cette phrase précise.', 'Remplace-le mentalement par chaque proposition.', 'Garde seulement le mot qui préserve le sens et une construction naturelle.']
+    ),
+  };
+
   const TOKEN_LABELS = {
     a: 'à',
     apres: 'après',
@@ -95,6 +1066,84 @@
       .join(' ');
   }
 
+  // Organisation pédagogique de la famille « Accord du participe passé » sur
+  // l’écran d’accueil. Les identifiants restent ceux de la taxonomie canonique :
+  // l’interface n’invente donc aucune seconde classification. Un mécanisme sans
+  // question active est masqué automatiquement et apparaîtra dès qu’un lot
+  // publié l’emploiera.
+  const PARTICIPLE_MENU_GROUPS = [
+    {
+      id: 'regles_generales',
+      label: 'Règles générales',
+      cases: [
+        'etre_accord_sujet/core',
+        'avoir_cvd_apres/core',
+        'avoir_cvd_apres/cod_apres',
+        'avoir_cvd_apres/sans_cod',
+        'avoir_cvd_avant/core',
+        'participe_sans_auxiliaire/core',
+        'avoir_pronom_l/neutre',
+        'avoir_pronom_l/nominal',
+      ],
+    },
+    {
+      id: 'avec_infinitif',
+      label: 'Participe passé suivi d’un infinitif',
+      cases: [
+        'participe_suivi_infinitif/core',
+        'fait_suivi_infinitif/core',
+        'infinitif_sous_entendu_invariable/core',
+      ],
+    },
+    {
+      id: 'verbes_pronominaux',
+      label: 'Verbes pronominaux',
+      cases: [
+        'pronominal_cvd_avant/core',
+        'pronominal_se_coi/core',
+        'pronominal_se_coi/sans_cod',
+        'pronominal_se_coi/cod_apres',
+        'pronominal_se_coi/cod_avant',
+        'pronominal_se_coi/contraste_place_cod',
+        'pronominal_se_coi/rendre_compte',
+        'pronominal_accord_sujet/core',
+        'pronominal_accord_sujet/essentiellement',
+        'pronominal_accord_sujet/sens_passif',
+        'pronominal_accord_sujet/autonome',
+      ],
+    },
+    {
+      id: 'cas_particuliers',
+      label: 'Cas particuliers et formes invariables',
+      cases: [
+        'avoir_en_invariable/core',
+        'mesure_duree_prix/core',
+        'impersonnel_participe_invariable/core',
+        'participe_adjectival_selon_position/core',
+        'participe_adjectival_selon_position/avant_stable',
+        'participe_adjectival_selon_position/apres_stable',
+      ],
+    },
+    {
+      id: 'syntheses',
+      label: 'Révisions combinées',
+      cases: [
+        'matrice_avoir_etre/core',
+        'matrice_participes_speciaux/core',
+      ],
+    },
+  ];
+
+  const NON_DISCRIMINANT_PARTICIPLE_CASES = new Set([
+    'laisse_suivi_infinitif/core',
+    'participe_adjectival_selon_position/zone_facultative',
+    'participe_attribut_cod/core',
+    'participe_attribut_cod/avoir',
+    'participe_attribut_cod/pronominal',
+    'participe_attribut_cod/infinitif_complement',
+    'participe_attribut_cod/contraste',
+  ]);
+
   // Chaque entrée associe un identifiant canonique de la banque à un libellé
   // pédagogique stable et à la règle minimale nécessaire pour raisonner.
   const MECHANISMS = {
@@ -108,11 +1157,12 @@
     pronominal_se_coi: ['verbe pronominal : se COI', 'Cherche la fonction de se : s’il signifie à l’un l’autre et est COI, il ne commande pas l’accord.', ['verbe pronominal', 'fonction de se', 'se COI', 'chercher un autre COD']],
     // Identifiants prêts pour les futures métadonnées de la banque. Leur présence
     // ici ne classe aucune question tant qu'un q.hep.mechanism_id ne les emploie pas.
-    avoir_suivi_infinitif_sujet_action: ['avoir + participe passé + infinitif : auteur de l’action', 'Avec un participe suivi d’un infinitif, repère si le COD placé avant accomplit l’action de l’infinitif avant de décider l’accord.', ['participe passé', 'auxiliaire avoir', 'infinitif après', 'identifier l’auteur de l’infinitif']],
+    participe_suivi_infinitif: ['participe passé suivi d’un infinitif', 'Repère si le COD placé avant accomplit lui-même l’action de l’infinitif avant de décider l’accord.', ['participe passé', 'COD placé avant', 'infinitif après', 'identifier l’auteur de l’infinitif']],
     laisse_suivi_infinitif: ['laissé + infinitif', 'Dans la norme rectifiée actuelle, laissé suivi immédiatement d’un infinitif reste invariable.', ['participe passé', 'laissé + infinitif', 'laissé invariable']],
-    pronominal_reflechi: ['verbe pronominal réfléchi', 'Dans un pronominal réfléchi, le sujet agit sur lui-même : détermine si se est COD ou COI avant d’accorder.', ['verbe pronominal', 'emploi réfléchi', 'fonction de se', 'règle du COD']],
-    pronominal_reciproque: ['verbe pronominal réciproque', 'Dans un pronominal réciproque, les sujets agissent l’un sur l’autre : détermine si se est COD ou COI avant d’accorder.', ['verbe pronominal', 'emploi réciproque', 'fonction de se', 'règle du COD']],
-    pronominal_essentiellement: ['verbe essentiellement pronominal', 'Quand le verbe n’existe normalement qu’à la forme pronominale, le participe s’accorde en principe avec le sujet.', ['verbe pronominal', 'emploi essentiellement pronominal', 'accord avec le sujet']],
+    pronominal_accord_sujet: ['pronominal : accord avec le sujet', 'Dans un emploi essentiellement pronominal, autonome ou de sens passif, le participe s’accorde avec le sujet.', ['verbe pronominal', 'emploi à identifier', 'sujet donneur', 'accord avec le sujet']],
+    participe_sans_auxiliaire: ['participe passé sans auxiliaire', 'Employé sans auxiliaire, le participe fonctionne comme un adjectif et s’accorde avec le nom ou le pronom qu’il qualifie.', ['participe sans auxiliaire', 'donneur à identifier', 'accord avec le donneur']],
+    avoir_pronom_l: ['avoir avec le pronom l’', 'Détermine si « l’ » reprend une idée entière, qui laisse le participe au masculin singulier, ou un nom qui commande l’accord.', ['auxiliaire avoir', 'référent de l’', 'idée neutre ou nom', 'invariabilité ou accord']],
+    participe_attribut_cod: ['participe suivi d’un attribut du COD', 'L’accord peut varier selon l’analyse et l’usage ; ce cas exige une validation normative indépendante.', ['participe passé', 'COD et attribut', 'analyse normative', 'variante à établir']],
     deux_sujets_deux_verbes: ['deux sujets reliés à deux verbes', 'Associe chaque verbe à son propre sujet avant de choisir sa personne et son nombre.'],
     noyau_singulier_complement_pluriel: ['sujet singulier avec complément pluriel', 'Le verbe s’accorde avec le noyau du sujet, pas avec le nom pluriel placé dans son complément.'],
     relative_qui_antecedent: ['qui sujet : accord avec l’antécédent', 'Dans la relative, qui est sujet ; le verbe prend la personne et le nombre de son antécédent.'],
@@ -181,18 +1231,16 @@
   // les observations.
   const PATHS = {
     donneur_eloigne: ['adjectif qualificatif', 'nom donneur éloigné', 'genre et nombre du nom', 'accord de l’adjectif'],
-    avoir_cvd_apres: ['temps composé non précisé', 'auxiliaire avoir', 'COD placé après', 'participe passé invariable'],
+    avoir_cvd_apres: ['temps composé non précisé', 'auxiliaire avoir', 'aucun COD antéposé', 'participe passé invariable'],
     avoir_cvd_avant: ['temps composé non précisé', 'auxiliaire avoir', 'COD placé avant', 'accord avec le COD'],
     etre_accord_sujet: ['temps composé non précisé', 'auxiliaire être', 'sujet donneur', 'accord avec le sujet'],
     fait_suivi_infinitif: ['participe passé', 'construction factitive', 'fait + infinitif', 'fait invariable'],
-    matrice_avoir_etre: ['temps composé non précisé', 'auxiliaire non précisé', 'donneur d’accord à identifier', 'règle de l’auxiliaire'],
+    matrice_avoir_etre: ['temps composé non précisé', 'auxiliaire à identifier dans chaque phrase', 'donneur d’accord à identifier', 'règle de l’auxiliaire'],
     pronominal_cvd_avant: ['verbe pronominal', 'fonction de se', 'se COD placé avant', 'accord avec le COD'],
     pronominal_se_coi: ['verbe pronominal', 'fonction de se', 'se COI', 'accord selon l’éventuel COD'],
-    avoir_suivi_infinitif_sujet_action: ['participe passé avec avoir', 'COD placé avant', 'infinitif après', 'auteur de l’infinitif à établir', 'accord conditionnel'],
-    laisse_suivi_infinitif: ['participe passé', 'laissé + infinitif', 'norme rectifiée', 'laissé invariable'],
-    pronominal_reflechi: ['verbe pronominal', 'emploi réfléchi', 'fonction de se non précisée', 'règle du COD'],
-    pronominal_reciproque: ['verbe pronominal', 'emploi réciproque', 'fonction de se non précisée', 'règle du COD'],
-    pronominal_essentiellement: ['verbe pronominal', 'emploi essentiellement pronominal', 'sujet donneur', 'accord avec le sujet'],
+    participe_suivi_infinitif: ['participe passé', 'COD placé avant', 'infinitif après', 'auteur de l’infinitif à établir', 'accord seulement si le COD agit'],
+    laisse_suivi_infinitif: ['participe passé', 'laissé + infinitif', 'deux normes admises', 'cas non discriminant'],
+    pronominal_accord_sujet: ['verbe pronominal', 'emploi à identifier', 'sujet donneur', 'accord avec le sujet'],
     deux_sujets_deux_verbes: ['propositions coordonnées', 'deux couples sujet-verbe', 'personne et nombre de chaque sujet', 'deux accords distincts'],
     noyau_singulier_complement_pluriel: ['sujet complexe', 'noyau singulier + complément pluriel', '3e personne du singulier', 'accord avec le noyau'],
     relative_qui_antecedent: ['proposition relative', 'qui sujet', 'antécédent donneur', 'accord en nombre avec l’antécédent'],
@@ -260,11 +1308,13 @@
   Object.assign(PATHS, {
     avoir_en_invariable: ['auxiliaire avoir', 'complément repris par en', 'absence d’accord avec en', 'participe invariable'],
     mesure_duree_prix: ['verbe de mesure', 'complément de durée, prix, poids ou distance', 'pas de COD accordable', 'participe invariable'],
-    participe_adjectival_selon_position: ['forme participiale spéciale', 'position avant ou après le nom', 'valeur prépositive ou adjectivale', 'invariabilité ou accord'],
+    participe_adjectival_selon_position: ['forme participiale spéciale', 'position et fonction à établir', 'valeur prépositive ou adjectivale', 'invariabilité ou accord'],
     infinitif_sous_entendu_invariable: ['auxiliaire avoir', 'infinitif exprimé ou sous-entendu', 'complément rattaché à l’infinitif', 'participe invariable'],
     impersonnel_participe_invariable: ['tournure impersonnelle', 'il sans référent', 'absence de COD accordable', 'participe invariable'],
     matrice_participes_speciaux: ['révision de participes', 'plusieurs constructions attestées', 'analyse séparée de chaque phrase', 'accord ou invariabilité propre'],
-    participe_sans_cvd_accordable: ['forme composée', 'recherche du complément direct', 'aucun CVD accordable avant', 'participe invariable'],
+    participe_sans_auxiliaire: ['participe sans auxiliaire', 'nom ou pronom support', 'genre et nombre du support', 'accord comme un adjectif'],
+    avoir_pronom_l: ['auxiliaire avoir', 'pronom l’', 'antécédent à identifier', 'accord selon le référent'],
+    participe_attribut_cod: ['participe avec avoir ou pronominal', 'COD placé avant', 'attribut du COD', 'cas à norme variable'],
     quantifieur_singulier: ['sujet quantifié', 'noyau singulier', 'sens parfois collectif', 'verbe au singulier'],
     quantifieur_pluriel: ['sujet quantifié', 'complément pluriel', 'accord selon la construction', 'verbe au pluriel'],
     priorite_personnes_coordonnees: ['plusieurs sujets', 'personnes différentes', 'hiérarchie 1re puis 2e puis 3e', 'accord à la personne résultante'],
@@ -378,17 +1428,36 @@
   });
 
   const DETAIL_PATHS = {
-    matrice_avoir_etre: {
-      avoir: ['temps composé non précisé', 'auxiliaire avoir', 'position du COD à établir', 'règle du COD'],
-      etre: ['temps composé non précisé', 'auxiliaire être', 'sujet donneur', 'accord avec le sujet'],
+    avoir_cvd_apres: {
+      cod_apres: ['temps composé non précisé', 'auxiliaire avoir', 'COD placé après', 'participe passé invariable'],
+      sans_cod: ['temps composé non précisé', 'auxiliaire avoir', 'aucun COD', 'participe passé invariable'],
     },
-    pronominal_reflechi: {
-      se_cod: ['verbe pronominal', 'emploi réfléchi', 'se COD placé avant', 'accord avec se'],
-      se_coi: ['verbe pronominal', 'emploi réfléchi', 'se COI', 'accord selon l’éventuel COD'],
+    pronominal_se_coi: {
+      sans_cod: ['verbe pronominal', 'construction indirecte ou sans COD', 'aucun COD accordable', 'participe invariable'],
+      cod_apres: ['verbe pronominal', 'se COI', 'COD placé après', 'participe invariable'],
+      cod_avant: ['verbe pronominal', 'se COI', 'autre COD placé avant', 'accord avec cet autre COD'],
+      contraste_place_cod: ['verbe pronominal', 'se COI', 'COD à chercher avant ou après', 'accord selon la place du COD'],
+      rendre_compte: ['verbe pronominal', 'locution se rendre compte', 'compte COD placé après', 'rendu invariable'],
     },
-    pronominal_reciproque: {
-      se_cod: ['verbe pronominal', 'emploi réciproque', 'se COD placé avant', 'accord avec se'],
-      se_coi: ['verbe pronominal', 'emploi réciproque', 'se COI', 'accord selon l’éventuel COD'],
+    pronominal_accord_sujet: {
+      essentiellement: ['verbe essentiellement pronominal', 'se sans fonction COD ou COI', 'sujet donneur', 'accord avec le sujet'],
+      sens_passif: ['verbe pronominal', 'sujet qui subit l’action', 'sens passif', 'accord avec le sujet'],
+      autonome: ['verbe pronominal autonome', 'se sans fonction COD ou COI', 'sujet donneur', 'accord avec le sujet'],
+    },
+    participe_adjectival_selon_position: {
+      avant_stable: ['forme participiale spéciale', 'placée avant le nom sans déterminant introducteur', 'valeur prépositive stable', 'forme invariable'],
+      apres_stable: ['forme participiale spéciale', 'placée après le nom', 'valeur adjectivale stable', 'accord avec le nom'],
+      zone_facultative: ['ci-joint, ci-inclus ou ci-annexé', 'placé avant un groupe nominal déterminé', 'deux analyses admises', 'cas non discriminant'],
+    },
+    avoir_pronom_l: {
+      neutre: ['auxiliaire avoir', 'l’ reprend une proposition ou une idée', 'reprise neutre', 'participe au masculin singulier'],
+      nominal: ['auxiliaire avoir', 'l’ reprend un nom', 'genre et nombre du nom', 'accord avec le nom'],
+    },
+    participe_attribut_cod: {
+      avoir: ['auxiliaire avoir', 'COD placé avant', 'attribut du COD', 'accord ou invariabilité admis selon le verbe'],
+      pronominal: ['verbe pronominal', 'se COD placé avant', 'attribut du COD', 'accord à soumettre à revue normative'],
+      infinitif_complement: ['auxiliaire avoir', 'attribut lié à un infinitif', 'analyse de la construction', 'invariabilité possible'],
+      contraste: ['participe suivi d’un attribut', 'deux constructions à comparer', 'analyse propre à chaque segment', 'cas à soumettre à revue normative'],
     },
     accord_adjectif_invariabilite_participe: {
       adjectif: ['forme en -ant', 'propriété d’un nom', 'adjectif verbal', 'accord avec le nom'],
@@ -472,6 +1541,10 @@
         ? (TENSES[tenseId] || `temps canonique non libellé : ${tenseId}`)
         : null;
       return {
+        familyId: family || 'UNK',
+        mechanismId: mechanismId || 'UNK',
+        detailId: detailId || null,
+        tenseId: tenseId || null,
         familyLabel: FAMILIES[family] || 'Famille grammaticale non renseignée',
         mechanismLabel: 'Mécanisme précis non renseigné',
         path: [
@@ -483,6 +1556,14 @@
           'Relis l’explication de la question et repère les mots qui commandent la construction.',
           'Aucune cause personnelle de l’erreur n’est déduite de cette seule réponse.',
         ],
+        learnerTitle: 'Cette erreur doit encore être précisée',
+        learnerExplanation: 'La question ne contient pas encore assez d’informations pour nommer précisément la règle. Relis sa correction détaillée : elle reste la source la plus fiable.',
+        learnerSteps: [
+          'Relis la phrase et la réponse que tu avais choisie.',
+          'Compare-les avec la correction détaillée de la question.',
+          'Ne déduis pas une cause générale à partir de cette seule erreur.',
+        ],
+        learnerSource: 'unknown',
         fallback: true,
       };
     }
@@ -497,10 +1578,15 @@
       path[0] = TENSES[tenseId] || `temps canonique non libellé : ${tenseId}`;
     }
     const middle = path.slice(1, -1).join(' → ');
+    const specificLearner = LEARNER_GUIDANCE[mechanismId];
+    const learner = specificLearner || DEFAULT_LEARNER_GUIDANCE;
     return {
+      familyId: family,
+      mechanismId,
       familyLabel: FAMILIES[family] || family,
       mechanismLabel: mechanism[0],
-      detailId: detailPath ? detailId : 'core',
+      detailId: detailId || null,
+      tenseId: tenseId || null,
       tenseLabel: tenseId ? (TENSES[tenseId] || null) : null,
       path,
       steps: [
@@ -509,6 +1595,10 @@
         mechanism[1],
         `Conclusion attendue : ${path[path.length - 1]}.`,
       ],
+      learnerTitle: learner.title,
+      learnerExplanation: learner.explanation,
+      learnerSteps: learner.steps.slice(),
+      learnerSource: specificLearner ? 'mechanism' : 'unknown',
       fallback: false,
     };
   }
@@ -528,9 +1618,13 @@
         tenseId,
         count: 0,
         questionIds: [],
+        misconceptionCounts: {},
       };
       current.count += 1;
       current.questionIds.push(attempt.id);
+      const misconceptionId = attempt.misconceptionId || 'UNK';
+      current.misconceptionCounts[misconceptionId]
+        = (current.misconceptionCounts[misconceptionId] || 0) + 1;
       groups.set(key, current);
     });
     return Array.from(groups.values())
@@ -545,7 +1639,10 @@
     LABELS_VERSION,
     TENSES,
     FAMILIES,
+    PARTICIPLE_MENU_GROUPS,
+    NON_DISCRIMINANT_PARTICIPLE_CASES,
     MECHANISMS,
+    LEARNER_GUIDANCE,
     PATHS,
     DETAIL_PATHS,
     describe,

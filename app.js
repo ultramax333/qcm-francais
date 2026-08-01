@@ -80,9 +80,15 @@
     localStorage.setItem(SEEN_KEY, JSON.stringify(Array.from(s)));
   }
   function resetSeen() { localStorage.removeItem(SEEN_KEY); }
-  function seenCount(ruleId) {
+  function seenCount(ruleId, mechanismId, detailId) {
     const s = loadSeen();
-    const pool = ruleId === MIX_ID ? QUESTIONS : QUESTIONS.filter((q) => q.rule === ruleId);
+    let pool = ruleId === MIX_ID ? QUESTIONS : QUESTIONS.filter((q) => q.rule === ruleId);
+    if (mechanismId) {
+      pool = pool.filter((q) => q.hep && q.hep.mechanism_id === mechanismId);
+    }
+    if (detailId) {
+      pool = pool.filter((q) => q.hep && q.hep.detail_id === detailId);
+    }
     return { seen: pool.filter((q) => s.has(q.id)).length, total: pool.length };
   }
 
@@ -115,6 +121,49 @@
     }
     (children || []).forEach((c) => c && e.appendChild(c));
     return e;
+  }
+
+  function appendTechnicalTerm(list, label, value) {
+    list.appendChild(el('dt', { text: label }));
+    list.appendChild(el('dd', { text: value }));
+  }
+
+  function pedagogyTechnicalPanel(description, misconceptions, extra) {
+    const details = el('details', { class: 'pedagogy-technical' });
+    details.appendChild(el('summary', { text: 'Catégorie technique' }));
+    const list = el('dl', { class: 'pedagogy-taxonomy' });
+    appendTechnicalTerm(
+      list,
+      'Famille',
+      `${description.familyLabel} · ${description.familyId || 'UNK'}`
+    );
+    appendTechnicalTerm(
+      list,
+      'Mécanisme',
+      `${description.mechanismLabel} · ${description.mechanismId || 'UNK'}`
+    );
+    appendTechnicalTerm(list, 'Détail', description.detailId || 'non renseigné');
+    appendTechnicalTerm(
+      list,
+      'Temps',
+      description.tenseId
+        ? `${description.tenseLabel || description.tenseId} · ${description.tenseId}`
+        : 'non renseigné'
+    );
+    const misconceptionText = (misconceptions || []).length
+      ? misconceptions.map((item) => {
+        const id = item.misconceptionId || item.id || 'UNK';
+        const count = item.count || 0;
+        return `${id === 'UNK' ? 'non renseignée' : id}${count ? ` (× ${count})` : ''}`;
+      }).join(', ')
+      : 'non renseignée';
+    appendTechnicalTerm(list, 'Cause enregistrée (code interne)', misconceptionText);
+    if (description.path && description.path.length) {
+      appendTechnicalTerm(list, 'Chemin canonique', description.path.join(' → '));
+    }
+    if (extra) appendTechnicalTerm(list, extra.label, extra.value);
+    details.appendChild(list);
+    return details;
   }
 
   function formatDate(iso) {
@@ -150,6 +199,22 @@
     if (ruleId === 'exam') return 'Examen blanc';
     const r = RULES.find((r) => r.id === ruleId);
     return r ? r.label : ruleId;
+  }
+
+  function sessionLabel(ruleId, mechanismId, detailId) {
+    if (
+      ruleId === 'participe'
+      && mechanismId
+      && PEDAGOGY
+    ) {
+      return `Accord du participe passé — ${PEDAGOGY.describe(
+        'accord_participe_passe',
+        mechanismId,
+        null,
+        detailId
+      ).learnerTitle}`;
+    }
+    return ruleLabel(ruleId);
   }
 
   // ---------- révision des erreurs (répétition espacée légère) ----------
@@ -195,8 +260,14 @@
   // (les règles à 40 questions et le mix varient donc d'une séance à l'autre).
   const SESSION_SIZE = 20;
 
-  function questionsForRule(ruleId) {
-    const pool = ruleId === MIX_ID ? QUESTIONS : QUESTIONS.filter((q) => q.rule === ruleId);
+  function questionsForRule(ruleId, mechanismId, detailId) {
+    let pool = ruleId === MIX_ID ? QUESTIONS : QUESTIONS.filter((q) => q.rule === ruleId);
+    if (mechanismId) {
+      pool = pool.filter((q) => q.hep && q.hep.mechanism_id === mechanismId);
+    }
+    if (detailId) {
+      pool = pool.filter((q) => q.hep && q.hep.detail_id === detailId);
+    }
     // Priorité aux questions jamais vues ; on ne repioche dans les vues
     // qu'une fois toutes les nouvelles épuisées.
     const s = loadSeen();
@@ -317,6 +388,119 @@
     else if (state.view === 'errors') APP.appendChild(renderErrorDashboard());
   }
 
+  function appendRuleProgress(card, rule, mastery) {
+    const stats = statsForRule(rule.id);
+    const mr = mastery[rule.id];
+    if (mr && mr.total > 0) {
+      const mp = Math.round((mr.correct / mr.total) * 100);
+      card.appendChild(el('div', { class: 'rule-stats', text: `Maîtrise : ${mp}% (${mr.correct}/${mr.total})` }));
+    } else if (stats) {
+      card.appendChild(el('div', { class: 'rule-stats', text: `Meilleur : ${stats.best.correct}/${stats.best.total}` }));
+    } else {
+      card.appendChild(el('div', { class: 'rule-stats', text: 'Pas encore tenté' }));
+    }
+    const sc = seenCount(rule.id);
+    card.appendChild(el('div', { class: 'seen-stats', text: `Vues : ${sc.seen}/${sc.total}` }));
+  }
+
+  function activeParticipleCases() {
+    const counts = {};
+    QUESTIONS.forEach((question) => {
+      const mechanismId = question.rule === 'participe'
+        && question.hep
+        && question.hep.mechanism_id;
+      const detailId = question.hep && question.hep.detail_id;
+      if (!mechanismId || mechanismId === 'UNK' || !detailId || detailId === 'UNK') return;
+      const caseId = `${mechanismId}/${detailId}`;
+      if (PEDAGOGY.NON_DISCRIMINANT_PARTICIPLE_CASES.has(caseId)) return;
+      counts[caseId] = (counts[caseId] || 0) + 1;
+    });
+    return counts;
+  }
+
+  function renderParticipleCase(caseId, count) {
+    const [mechanismId, detailId] = caseId.split('/');
+    const description = PEDAGOGY.describe('accord_participe_passe', mechanismId, null, detailId);
+    const sc = seenCount('participe', mechanismId, detailId);
+    const details = el('details', { class: 'participle-case' });
+    details.appendChild(el('summary', {}, [
+      el('span', {
+        class: 'participle-case-title',
+        text: detailId === 'core'
+          ? description.learnerTitle
+          : `${description.learnerTitle} — ${description.path[2]}`,
+      }),
+      el('span', { class: 'participle-case-count', text: `${count} question${count > 1 ? 's' : ''}` }),
+    ]));
+
+    const content = el('div', { class: 'participle-case-content' });
+    content.appendChild(el('div', { class: 'participle-method-label', text: 'La règle, simplement' }));
+    content.appendChild(el('div', {
+      class: 'participle-rule-explanation',
+      text: description.learnerExplanation,
+    }));
+    content.appendChild(el('div', { class: 'participle-method-label', text: 'Comment faire' }));
+    const steps = el('ol', { class: 'participle-method-steps' });
+    description.learnerSteps.forEach((step) => steps.appendChild(el('li', { text: step })));
+    content.appendChild(steps);
+    content.appendChild(el('div', {
+      class: 'participle-case-progress',
+      text: `Questions vues : ${sc.seen}/${sc.total}`,
+    }));
+    const start = el('button', {
+      class: 'btn participle-start',
+      text: `S’entraîner sur ce cas`,
+    });
+    start.addEventListener('click', () => startQuiz('participe', 'learn', mechanismId, detailId));
+    content.appendChild(start);
+    details.appendChild(content);
+    return details;
+  }
+
+  function renderParticipleMenu(rule, mastery) {
+    const accordion = el('details', { class: 'rule-accordion' });
+    const summary = el('summary', { class: 'rule-card rule-card-summary' }, [
+      el('div', { class: 'rule-summary-heading' }, [
+        el('div', { class: 'rule-name', text: rule.label }),
+        el('span', { class: 'rule-chevron', text: '⌄' }),
+      ]),
+      el('div', { class: 'rule-desc', text: 'Choisis un cas précis, puis consulte sa règle et sa méthode.' }),
+    ]);
+    appendRuleProgress(summary, rule, mastery);
+    accordion.appendChild(summary);
+
+    const panel = el('div', { class: 'participle-menu' });
+    const all = el('button', { class: 'participle-all' }, [
+      el('span', { class: 'participle-all-title', text: 'Tous les cas mélangés' }),
+      el('span', { class: 'participle-all-desc', text: 'Entraînement général sur toute la famille.' }),
+    ]);
+    all.addEventListener('click', () => startQuiz(rule.id));
+    panel.appendChild(all);
+
+    const counts = activeParticipleCases();
+    const rendered = new Set();
+    const groups = PEDAGOGY.PARTICIPLE_MENU_GROUPS || [];
+    groups.forEach((group) => {
+      const active = group.cases.filter((caseId) => counts[caseId]);
+      if (!active.length) return;
+      panel.appendChild(el('div', { class: 'participle-group-title', text: group.label }));
+      active.forEach((caseId) => {
+        rendered.add(caseId);
+        panel.appendChild(renderParticipleCase(caseId, counts[caseId]));
+      });
+    });
+
+    const ungrouped = Object.keys(counts).filter((caseId) => !rendered.has(caseId));
+    if (ungrouped.length) {
+      panel.appendChild(el('div', { class: 'participle-group-title', text: 'Autres cas' }));
+      ungrouped.sort().forEach((caseId) => {
+        panel.appendChild(renderParticipleCase(caseId, counts[caseId]));
+      });
+    }
+    accordion.appendChild(panel);
+    return accordion;
+  }
+
   // ---------- views ----------
   function renderHome() {
     const wrap = el('div', {});
@@ -376,22 +560,15 @@
     const mastery = loadMastery();
     const list = el('div', { class: 'rule-list' });
     RULES.forEach((rule) => {
-      const stats = statsForRule(rule.id);
+      if (rule.id === 'participe' && PEDAGOGY) {
+        list.appendChild(renderParticipleMenu(rule, mastery));
+        return;
+      }
       const card = el('button', { class: 'rule-card' }, [
         el('div', { class: 'rule-name', text: rule.label }),
         el('div', { class: 'rule-desc', text: rule.desc }),
       ]);
-      const mr = mastery[rule.id];
-      if (mr && mr.total > 0) {
-        const mp = Math.round((mr.correct / mr.total) * 100);
-        card.appendChild(el('div', { class: 'rule-stats', text: `Maîtrise : ${mp}% (${mr.correct}/${mr.total})` }));
-      } else if (stats) {
-        card.appendChild(el('div', { class: 'rule-stats', text: `Meilleur : ${stats.best.correct}/${stats.best.total}` }));
-      } else {
-        card.appendChild(el('div', { class: 'rule-stats', text: 'Pas encore tenté' }));
-      }
-      const sc = seenCount(rule.id);
-      card.appendChild(el('div', { class: 'seen-stats', text: `Vues : ${sc.seen}/${sc.total}` }));
+      appendRuleProgress(card, rule, mastery);
       card.addEventListener('click', () => startQuiz(rule.id));
       list.appendChild(card);
     });
@@ -435,7 +612,7 @@
 
   const EXAM_SIZE = 60; // examen blanc = 60 questions, comme le vrai OP001
 
-  function buildSession(ruleId, mode) {
+  function buildSession(ruleId, mode, mechanismId, detailId) {
     if (ruleId === 'review') {
       const ids = Object.keys(loadReview());
       return shuffle(QUESTIONS.filter((q) => ids.indexOf(q.id) !== -1)).slice(0, SESSION_SIZE);
@@ -443,17 +620,21 @@
     if (mode === 'exam') {
       return shuffle(QUESTIONS.slice()).slice(0, EXAM_SIZE);
     }
-    return questionsForRule(ruleId);
+    return questionsForRule(ruleId, mechanismId, detailId);
   }
 
-  function startQuiz(ruleId, mode) {
+  function startQuiz(ruleId, mode, mechanismId, detailId) {
     mode = mode || 'learn';
     const startedAt = new Date();
+    const questions = buildSession(ruleId, mode, mechanismId, detailId);
+    if (!questions.length) return;
     state = {
       view: 'quiz',
       ruleId,
+      mechanismId: mechanismId || null,
+      detailId: detailId || null,
       mode,
-      questions: buildSession(ruleId, mode),
+      questions,
       index: 0,
       answered: false,
       selectedKey: null,
@@ -745,6 +926,8 @@
       sessionId: state.sessionId,
       bankRelease: BANK_RELEASE,
       ruleId: state.ruleId,
+      mechanismId: state.mechanismId || null,
+      detailId: state.detailId || null,
       mode: state.mode,
       total: log.length,
       correct,
@@ -756,6 +939,8 @@
         sessionId: state.sessionId,
         attemptedAt: new Date().toISOString(),
         mode: state.mode,
+        mechanismId: state.mechanismId || null,
+        detailId: state.detailId || null,
       }),
     };
     saveAttempt(entry);
@@ -766,6 +951,8 @@
       id: entry.date,
       date: entry.date,
       ruleId: entry.ruleId,
+      mechanismId: entry.mechanismId,
+      detailId: entry.detailId,
       correct,
       total: log.length,
       feedback: entry.feedback,
@@ -817,7 +1004,7 @@
     lines.push('```');
     lines.push('');
     lines.push(`# Feedback QCM — ${stamp}`);
-    lines.push(`Règle : ${ruleLabel(ruleId)} · Score : ${correct}/${total}`);
+    lines.push(`Règle : ${sessionLabel(ruleId, trace.mechanismId, trace.detailId)} · Score : ${correct}/${total}`);
     lines.push('');
     if (liked.length) {
       lines.push(`## 👍 Questions bien construites (${liked.length})`);
@@ -857,7 +1044,7 @@
     const wrap = el('div', {});
     wrap.appendChild(el('div', { class: 'header' }, [
       el('div', { class: 'title', text: 'Résultat' }),
-      el('div', { class: 'subtitle', text: ruleLabel(entry.ruleId) }),
+      el('div', { class: 'subtitle', text: sessionLabel(entry.ruleId, entry.mechanismId, entry.detailId) }),
     ]));
 
     const pct = Math.round((entry.correct / entry.total) * 100);
@@ -905,24 +1092,43 @@
       box.appendChild(el('div', { class: 'pedagogy-title', text: 'Résumé pédagogique de tes erreurs' }));
       box.appendChild(el('div', {
         class: 'pedagogy-version',
-        text: `Libellés ${PEDAGOGY.LABELS_VERSION} · aucune intention ni “fausse croyance” n’est déduite d’une seule réponse.`,
+        text: 'Ce bilan indique quoi revoir sans deviner pourquoi tu t’es trompé.',
       }));
       summary.forEach((item) => {
         const row = el('div', { class: 'pedagogy-item' });
         row.appendChild(el('div', { class: 'pedagogy-mechanism' }, [
-          el('span', { text: `${item.familyLabel} — ${item.mechanismLabel}` }),
+          el('span', { text: item.learnerTitle }),
           el('span', { class: 'pedagogy-count', text: `× ${item.count}` }),
         ]));
         row.appendChild(el('div', {
-          class: 'pedagogy-path',
-          text: item.path.join(' → '),
+          class: 'pedagogy-section-label',
+          text: 'La règle, simplement',
+        }));
+        row.appendChild(el('div', {
+          class: 'pedagogy-explanation',
+          text: item.learnerExplanation,
+        }));
+        row.appendChild(el('div', {
+          class: 'pedagogy-section-label',
+          text: 'Comment faire',
         }));
         const steps = el('ol', { class: 'pedagogy-steps' });
-        item.steps.forEach((step) => steps.appendChild(el('li', { text: step })));
+        item.learnerSteps.forEach((step) => steps.appendChild(el('li', { text: step })));
         row.appendChild(steps);
+        row.appendChild(pedagogyTechnicalPanel(
+          item,
+          Object.keys(item.misconceptionCounts || {}).map((id) => ({
+            id,
+            count: item.misconceptionCounts[id],
+          })),
+          {
+            label: 'Questions',
+            value: `${item.questionIds.join(', ')} · libellés ${PEDAGOGY.LABELS_VERSION}`,
+          }
+        ));
         row.appendChild(el('div', {
           class: 'pedagogy-questions',
-          text: `Question${item.questionIds.length > 1 ? 's' : ''} : ${item.questionIds.join(', ')}`,
+          text: `Vu dans ${item.questionIds.length} question${item.questionIds.length > 1 ? 's' : ''} de cette séance.`,
         }));
         box.appendChild(row);
       });
@@ -1006,7 +1212,12 @@
 
     const row = el('div', { class: 'btn-row' });
     const retry = el('button', { class: 'btn', text: 'Recommencer' });
-    retry.addEventListener('click', () => startQuiz(entry.ruleId));
+    retry.addEventListener('click', () => startQuiz(
+      entry.ruleId,
+      entry.mode,
+      entry.mechanismId,
+      entry.detailId
+    ));
     const home = el('button', { class: 'btn secondary', text: 'Accueil' });
     home.addEventListener('click', () => { state = { view: 'home' }; render(); });
     row.appendChild(retry);
@@ -1099,7 +1310,7 @@
     const table = el('table', { class: 'error-table' });
     const head = el('thead', {}, [
       el('tr', {}, [
-        el('th', { text: 'Règle précise' }),
+        el('th', { text: 'Explication pédagogique' }),
         el('th', { text: 'Erreurs' }),
         el('th', { text: 'Essais' }),
         el('th', { text: 'Taux' }),
@@ -1122,41 +1333,62 @@
         )
         : null;
       const label = description
-        ? `${description.familyLabel} — ${description.mechanismLabel}`
-        : `${row.family} — ${row.mechanismId}`;
-      const path = description ? description.path.join(' → ') : 'Métadonnées non disponibles';
+        ? description.learnerTitle
+        : 'Erreur à revoir';
       const streak = row.currentCorrectStreak
         ? `${row.currentCorrectStreak} réussite(s) depuis`
         : 'À retravailler';
-      const distractorCell = el('td', { class: 'error-distractors' });
+      const distractorCell = el('td', {
+        class: 'error-distractors',
+        'data-label': 'Choix erronés',
+      });
+      const distractorList = el('div', { class: 'error-distractor-list' });
       row.distractors.forEach((distractor) => {
-        const readableCode = distractor.misconceptionId === 'UNK'
-          ? 'cause non classée'
-          : distractor.misconceptionId.replace(/_/g, ' ');
-        distractorCell.appendChild(el('div', {
+        distractorList.appendChild(el('div', {
           class: 'error-distractor',
-          text: `choix ${distractor.selected} · ${readableCode} × ${distractor.count}`,
-          title: `misconception_id=${distractor.misconceptionId}`,
+          text: distractor.misconceptionId === 'UNK'
+            ? `Choix ${distractor.selected} · cause précise pas encore identifiée · × ${distractor.count}`
+            : `Choix ${distractor.selected} · × ${distractor.count}`,
         }));
       });
+      distractorCell.appendChild(distractorList);
+
+      const learnerSteps = description
+        ? description.learnerSteps
+        : [
+          'Relis la phrase et ta réponse.',
+          'Compare-les avec la correction détaillée.',
+          'Note la différence visible sans inventer la cause de ton erreur.',
+        ];
+      const steps = el('ol', { class: 'error-rule-steps' });
+      learnerSteps.forEach((step) => steps.appendChild(el('li', { text: step })));
 
       body.appendChild(el('tr', {}, [
-        el('td', { class: 'error-rule-cell' }, [
+        el('td', { class: 'error-rule-cell', 'data-label': 'À comprendre' }, [
           el('div', { class: 'error-rule-label', text: label }),
-          el('div', { class: 'error-rule-path', text: path }),
+          el('div', { class: 'pedagogy-section-label', text: 'La règle, simplement' }),
+          el('div', {
+            class: 'error-rule-explanation',
+            text: description ? description.learnerExplanation : 'Relis la correction détaillée de la question.',
+          }),
+          el('div', { class: 'pedagogy-section-label', text: 'Comment faire' }),
+          steps,
+          description ? pedagogyTechnicalPanel(description, row.distractors) : null,
         ]),
-        el('td', { class: 'error-number bad-number', text: String(row.errors) }),
-        el('td', { class: 'error-number', text: String(row.attempts) }),
-        el('td', { class: 'error-number', text: `${Math.round(row.errorRate * 100)} %` }),
+        el('td', { class: 'error-number bad-number', 'data-label': 'Erreurs', text: String(row.errors) }),
+        el('td', { class: 'error-number', 'data-label': 'Essais', text: String(row.attempts) }),
+        el('td', { class: 'error-number', 'data-label': 'Taux', text: `${Math.round(row.errorRate * 100)} %` }),
         el('td', {
           class: 'error-number',
+          'data-label': 'Séances',
           text: `${row.errorSessions}/${row.sessions}`,
           title: 'Séances avec au moins une erreur / séances où ce mécanisme a été rencontré',
         }),
         distractorCell,
-        el('td', { class: 'error-progress', text: streak }),
+        el('td', { class: 'error-progress', 'data-label': 'Progrès', text: streak }),
         el('td', {
           class: 'error-date',
+          'data-label': 'Dernière erreur',
           text: row.lastError ? formatDate(row.lastError) : '—',
         }),
       ]));
@@ -1167,7 +1399,7 @@
     wrap.appendChild(tableWrap);
     wrap.appendChild(el('div', {
       class: 'error-footnote',
-      text: 'Une ligne correspond à un même chemin famille + mécanisme + détail + temps. Les distracteurs indiquent le choix erroné et sa cause codée ; UNK reste non classé, sans interprétation inventée.',
+      text: 'Les catégories techniques restent utilisées pour regrouper les erreurs et pondérer les futurs quiz. Elles sont masquées dans l’explication principale pour privilégier une méthode compréhensible. Une cause inconnue reste non classée : aucune interprétation n’est inventée.',
     }));
     return wrap;
   }
@@ -1196,7 +1428,7 @@
       const pct = Math.round((a.correct / a.total) * 100);
       const row = el('div', { class: 'history-row', style: 'flex-direction:column;align-items:stretch;gap:2px' }, [
         el('div', { style: 'display:flex;justify-content:space-between' }, [
-          el('span', { text: ruleLabel(a.ruleId) }),
+          el('span', { text: sessionLabel(a.ruleId, a.mechanismId, a.detailId) }),
           el('span', { text: `${a.correct}/${a.total} (${pct}%)` }),
         ]),
         el('span', { class: 'date', text: formatDate(a.date) }),
@@ -1231,7 +1463,7 @@
     pending.forEach((p) => {
       list.appendChild(el('div', { class: 'history-row', style: 'flex-direction:column;align-items:stretch;gap:2px' }, [
         el('div', { style: 'display:flex;justify-content:space-between' }, [
-          el('span', { text: ruleLabel(p.ruleId) }),
+          el('span', { text: sessionLabel(p.ruleId, p.mechanismId, p.detailId) }),
           el('span', { text: `${p.correct}/${p.total}` }),
         ]),
         el('span', { class: 'date', text: formatDate(p.date) }),
