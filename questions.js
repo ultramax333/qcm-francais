@@ -13222,7 +13222,7 @@ const QUESTIONS = [
     "id": "pro-1",
     "rule": "pronoms",
     "type": "blank",
-    "stem": "Ce problème, je m'___ suis attaqué sérieusement, mais je ne ___ suis pas encore sorti.",
+    "stem": "Ce problème, je m'___ suis attaqué sérieusement, mais je ne m'___ suis pas encore sorti.",
     "options": [
       {
         "key": "1",
@@ -13582,7 +13582,7 @@ const QUESTIONS = [
     "id": "pro-7",
     "rule": "pronoms",
     "type": "blank",
-    "stem": "Des solutions, on ___ a envisagé plusieurs avant de ___ retenir une seule.",
+    "stem": "Des solutions, on ___ a envisagé plusieurs pour ___ retenir une seule.",
     "options": [
       {
         "key": "1",
@@ -13610,7 +13610,7 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Règle : Quand un nom n'est pas répété mais qu'un nombre ou une quantité reste exprimé, on utilise souvent « en » pour garder le lien avec ce nom. Dans cette phrase : « plusieurs » signifie « plusieurs solutions » ; on dit donc « on en a envisagé plusieurs ». « Une seule » signifie ensuite « une seule solution » ; on dit « avant d'en retenir une seule ». Donc : on écrit « en / en » ; l'option 2 est correcte.",
+    "explanation": "Règle : Quand un nom n'est pas répété mais qu'un nombre ou une quantité reste exprimé, on utilise souvent « en » pour garder le lien avec ce nom. Dans cette phrase : « plusieurs » signifie « plusieurs solutions » ; on dit donc « on en a envisagé plusieurs ». « Une seule » signifie ensuite « une seule solution » ; on dit « pour en retenir une seule ». Donc : on écrit « en / en » ; l'option 2 est correcte.",
     "why": {
       "1": "« Les » remplacerait toutes les solutions comme un ensemble déjà défini ; il ne permet pas de conserver naturellement « plusieurs » et « une seule ». Il faut « en » dans les deux cas.",
       "2": "« En » permet de comprendre « plusieurs solutions », puis « une seule solution » sans répéter le nom : cette option est correcte.",
@@ -20967,7 +20967,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quelle phrase d'élève est correctement ponctuée ?",
+    "instruction": "Quelle phrase d'élève est correctement écrite ?",
     "options": [
       {
         "key": "1",
@@ -20995,7 +20995,7 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Le complément initial se détache par une virgule, sans qu'on coupe ensuite un groupe insécable. Seule la 1 le respecte.",
+    "explanation": "Règle : la virgule sépare des éléments, elle ne coupe jamais ce qui va ensemble. Un complément placé en tête de phrase se détache par une virgule ; en revanche, on ne sépare jamais le sujet de son verbe, on ne met pas de virgule après « et » qui relie deux éléments, et on ne coupe pas un verbe de son complément. Dans cette phrase : « Après mûre réflexion, elle a décidé de tout reprendre » détache le complément initial et laisse intacts le sujet « elle », son verbe « a décidé » et le complément : tout est correct. « …de tout reprendre et, de recommencer à zéro » place une virgule après « et », alors que « et » relie directement les deux groupes. « …elle, a décidé » coupe le sujet « elle » de son verbe « a décidé ». « …de tout, reprendre depuis le début » coupe « tout » du verbe « reprendre » auquel il se rattache. Donc : option 1.",
     "why": {
       "1": "Correcte : virgule après le complément initial, rien d'autre.",
       "2": "Virgule fautive après « et » dans la coordination.",
@@ -25162,7 +25162,7 @@ const QUESTIONS = [
     "id": "con-20",
     "rule": "connecteurs",
     "type": "blank",
-    "stem": "S'il garde le silence en réunion, ___ il préfère observer d'abord.",
+    "stem": "S'il garde le silence en réunion, ___ la discrétion lui semble plus utile.",
     "options": [
       {
         "key": "1",
@@ -25190,7 +25190,7 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "« si… c'est que » = la CAUSE (il se tait PARCE QU'il observe). « c'est pourquoi » donnerait la conséquence — piège inversé.",
+    "explanation": "Règle : « si… c'est que » annonce la CAUSE de ce qui vient d'être dit ; le connecteur introduit l'explication du fait, pas son résultat. « c'est pourquoi » fait l'inverse : il annonce la conséquence. Dans cette phrase : le fait est qu'il garde le silence, et la suite en donne la raison — il juge la discrétion plus utile. C'est donc une cause qu'il faut introduire. Donc : option 1.",
     "why": {
       "1": "Correct : c'est que = explication causale.",
       "2": "« c'est pourquoi » : conséquence, sens inverse.",
@@ -33987,7 +33987,7 @@ const QUESTIONS = [
       "thinking": "moyen",
       "tracked": true
     },
-    "stem": "Il a couru ___ vite ___ il est arrivé bon premier, très loin devant les autres.",
+    "stem": "Il a couru ___ vite ___ ses camarades ont renoncé à le suivre.",
     "options": [
       {
         "key": "1",
@@ -34015,12 +34015,12 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Rapport de conséquence (intensité → résultat) : corrélation « si… que… » → « si vite qu'il est arrivé premier ».",
+    "explanation": "Règle : pour dire qu'une intensité produit un résultat, le français emploie le couple « si… que… » : « si » porte sur l'intensité, « que » introduit la conséquence. Dans cette phrase : la vitesse est si grande qu'elle a un effet — les camarades renoncent à le suivre. On a donc bien une intensité suivie de son résultat. Donc : option 2.",
     "why": {
       "1": "« aussi / que » : comparaison d'égalité, sans terme comparé ici.",
       "2": "Correct : « si… que… » (conséquence d'une intensité).",
       "3": "« plus / que » : comparatif de supériorité, sans terme comparé.",
-      "4": "« trop / pour » : exigerait un infinitif (« pour arriver »), pas « il est arrivé ».",
+      "4": "« trop / pour » : « trop… pour » demande ensuite un infinitif (« pour être suivi ») ou « pour que » et un subjonctif, jamais une proposition comme « ses camarades ont renoncé ».",
       "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
       "T": "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
     },
@@ -83564,7 +83564,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "stem": "Les inscriptions dépassent déjà toutes les prévisions ; ___, une seconde session devra sans doute être ouverte.",
+    "stem": "Les inscriptions dépassent déjà toutes les prévisions ; ___ le comité devra sans doute ouvrir une seconde session.",
     "options": [
       {
         "key": "1",
@@ -83592,7 +83592,7 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : l'ouverture d'une seconde session est la conséquence du nombre d'inscriptions : on emploie « si bien que » (= de sorte que), connecteur de conséquence. Dans cette phrase : tant d'inscriptions → si bien qu'il faudra une seconde session. Donc : option 4.",
+    "explanation": "Règle : l'ouverture d'une seconde session est la conséquence du nombre d'inscriptions : on emploie « si bien que » (= de sorte que), connecteur de conséquence. Dans cette phrase : tant d'inscriptions → si bien que le comité devra ouvrir une seconde session. Donc : option 4.",
     "why": {
       "1": "« à ce point que » appelle une intensité précisée avant lui (dépassées à ce point que…) : en tête de seconde proposition, il ne se construit pas ainsi.",
       "2": "« en revanche » marquerait une opposition : la seconde session découle du succès, elle ne s'y oppose pas.",
@@ -98984,7 +98984,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "stem": "___ tu choisisses comme sujet d'exposé, prépare-le sérieusement ; ___ un peu fatigué ce jour-là, ton camarade s'en est très bien sorti.",
+    "stem": "___ tu choisisses comme sujet d'exposé, prépare-le sérieusement ; ___ fatigué ce jour-là, ton camarade s'en est très bien sorti.",
     "options": [
       {
         "key": "1",
@@ -99012,10 +99012,10 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Règle : « quoi que » en deux mots signifie « quelle que soit la chose que » ; « quoique » en un mot signifie « bien que » (concession). Dans cette phrase : « ___ tu choisisses » = quelle que soit la chose → Quoi que ; « ___ un peu fatigué » = bien que → Quoique. Donc : Quoi que / Quoique — option 3.",
+    "explanation": "Règle : « quoi que » en deux mots signifie « quelle que soit la chose que » ; « quoique » en un mot signifie « bien que » (concession). Dans cette phrase : « ___ tu choisisses » = quelle que soit la chose → Quoi que ; « ___ fatigué » = bien que → Quoique. Donc : Quoi que / Quoique — option 3.",
     "why": {
       "1": "Inverse les deux : « quelle que soit la chose » = Quoi que ; « bien que » = Quoique.",
-      "2": "« Quoi que un peu fatigué » : « bien que fatigué » s'écrit Quoique, en un mot.",
+      "2": "« Quoi que fatigué » : « bien que fatigué » s'écrit Quoique, en un mot.",
       "3": "Correct : « Quoi que tu choisisses » (quelle que soit la chose) + « Quoique fatigué » (bien que).",
       "4": "« Quoique tu choisisses » : « quelle que soit la chose que » s'écrit Quoi que, en deux mots.",
       "A": "Il existe bien une option correcte : la 3.",
