@@ -1,4 +1,4 @@
-// Fichier généré par le pipeline HEP; ne pas modifier manuellement.
+// Fichier généré par pipeline_HEP.py; ne pas modifier manuellement.
 const RULES = [
   {
     "id": "orthographe",
@@ -102403,6 +102403,3482 @@ const QUESTIONS = [
       "mechanism_id": "paronyme_lexical",
       "detail_id": "core",
       "tense_id": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": null,
+        "4": "UNK"
+      }
+    }
+  },
+  {
+    "id": "solh50-001",
+    "rule": "orthographe",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Choisissez la suite qui complète correctement la phrase.",
+    "options": [
+      {
+        "key": "1",
+        "text": "leur ; leur"
+      },
+      {
+        "key": "2",
+        "text": "leurs ; leur"
+      },
+      {
+        "key": "3",
+        "text": "leur ; leurs"
+      },
+      {
+        "key": "4",
+        "text": "leurs ; leurs"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "1",
+    "explanation": "Règle : Devant un nom, leur est déterminant et varie ; comme COI, le pronom leur est invariable. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 1.",
+    "why": {
+      "1": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "2": "La forme `leurs ; leur` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "3": "La forme `leur ; leurs` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "4": "La forme `leurs ; leurs` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-001",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "leur_leurs",
+      "detail_id": "pronom",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "La coordinatrice ___ a rappelé que les stagiaires devaient joindre une attestation à ___ dossier."
+  },
+  {
+    "id": "solh50-002",
+    "rule": "orthographe",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Quelle phrase est correctement écrite ?",
+    "options": [
+      {
+        "key": "1",
+        "text": "La synthèse des observations recueillies paraît suffisamment précis pour être diffusée."
+      },
+      {
+        "key": "2",
+        "text": "La synthèse des observations recueillies paraît suffisamment précise pour être diffusée."
+      },
+      {
+        "key": "3",
+        "text": "Les conclusions de l’entretien restent provisoire malgré les vérifications."
+      },
+      {
+        "key": "4",
+        "text": "Les modalités du dispositif ont été jugé trop complexes par le comité."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "2",
+    "explanation": "Règle : Retrouve le nom décrit malgré l’éloignement, relève son genre et son nombre, puis reporte ces marques sur l’adjectif. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 2.",
+    "why": {
+      "1": "La forme `La synthèse des observations recueillies paraît suffisamment précis pour être diffusée.` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "2": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "3": "La forme `Les conclusions de l’entretien restent provisoire malgré les vérifications.` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "4": "La forme `Les modalités du dispositif ont été jugé trop complexes par le comité.` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-002",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "accord_adjectif_nom",
+      "mechanism_id": "donneur_eloigne",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "copie_eleve",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "revision_authentique",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": null,
+        "3": "UNK",
+        "4": "UNK"
+      }
+    }
+  },
+  {
+    "id": "solh50-003",
+    "rule": "pronoms",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Quelle phrase ne contient pas de rupture de construction ?",
+    "options": [
+      {
+        "key": "1",
+        "text": "En consultant les dossiers, plusieurs incohérences sont apparues à la secrétaire."
+      },
+      {
+        "key": "2",
+        "text": "En arrivant au secrétariat, la porte principale était déjà verrouillée."
+      },
+      {
+        "key": "3",
+        "text": "En comparant les deux versions, la secrétaire a repéré trois suppressions."
+      },
+      {
+        "key": "4",
+        "text": "En relisant la circulaire, son dernier paragraphe nous a semblé ambigu."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "3",
+    "explanation": "Règle : Le sujet implicite du gérondif doit normalement être le sujet du verbe principal. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 3.",
+    "why": {
+      "1": "La forme `En consultant les dossiers, plusieurs incohérences sont apparues à la secrétaire.` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
+      "2": "La forme `En arrivant au secrétariat, la porte principale était déjà verrouillée.` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
+      "3": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "4": "La forme `En relisant la circulaire, son dernier paragraphe nous a semblé ambigu.` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-003",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "rupture_syntaxique",
+      "mechanism_id": "gerondif_sujet_implicite",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": null,
+        "4": "UNK"
+      }
+    }
+  },
+  {
+    "id": "solh50-004",
+    "rule": "orthographe",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Quelle phrase respecte l’emploi des majuscules ?",
+    "options": [
+      {
+        "key": "1",
+        "text": "Une vaudoise animera l’atelier destiné aux équipes jurassiennes."
+      },
+      {
+        "key": "2",
+        "text": "Le rapport Suisse sera traduit en Italien avant la rencontre."
+      },
+      {
+        "key": "3",
+        "text": "Deux Genevois ont présenté une méthode valaisanne à leurs collègues Tessinois."
+      },
+      {
+        "key": "4",
+        "text": "Une Neuchâteloise présentera en allemand un projet élaboré avec des partenaires suisses."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "4",
+    "explanation": "Règle : Le nom d’un peuple prend la majuscule ; l’adjectif et le nom de langue gardent la minuscule. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 4.",
+    "why": {
+      "1": "La forme `Une vaudoise animera l’atelier destiné aux équipes jurassiennes.` est fautive ici. La règle décrite dans le corrigé exige la réponse 4.",
+      "2": "La forme `Le rapport Suisse sera traduit en Italien avant la rencontre.` est fautive ici. La règle décrite dans le corrigé exige la réponse 4.",
+      "3": "La forme `Deux Genevois ont présenté une méthode valaisanne à leurs collègues Tessinois.` est fautive ici. La règle décrite dans le corrigé exige la réponse 4.",
+      "4": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-004",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "gentiles_majuscules",
+      "mechanism_id": "nom_peuple_adjectif_langue",
+      "detail_id": "peuple",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "jugement_semantique",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": "UNK",
+        "4": null
+      }
+    }
+  },
+  {
+    "id": "solh50-005",
+    "rule": "modes",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Choisissez la forme qui complète correctement la phrase.",
+    "options": [
+      {
+        "key": "1",
+        "text": "entrera en vigueur"
+      },
+      {
+        "key": "2",
+        "text": "entrait en vigueur"
+      },
+      {
+        "key": "3",
+        "text": "était entré en vigueur"
+      },
+      {
+        "key": "4",
+        "text": "entre en vigueur"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Règle : Une action future par rapport à un repère passé se transpose au conditionnel présent. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est A.",
+    "why": {
+      "1": "La forme `entrera en vigueur` est fautive ici. La règle décrite dans le corrigé exige la réponse A.",
+      "2": "La forme `entrait en vigueur` est fautive ici. La règle décrite dans le corrigé exige la réponse A.",
+      "3": "La forme `était entré en vigueur` est fautive ici. La règle décrite dans le corrigé exige la réponse A.",
+      "4": "La forme `entre en vigueur` est fautive ici. La règle décrite dans le corrigé exige la réponse A.",
+      "A": "Les quatre options numérotées sont fautives; il faut donc choisir A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-005",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "concordance_temps",
+      "mechanism_id": "futur_dans_le_passe",
+      "detail_id": "core",
+      "tense_id": "conditionnel_present",
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Lors de la séance de mardi, la direction a confirmé que le nouveau formulaire ___ dès le lundi suivant."
+  },
+  {
+    "id": "solh50-006",
+    "rule": "eleves",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Quelles productions d’élèves sont correctement écrites ?",
+    "options": [
+      {
+        "key": "1",
+        "text": "Après qu’il a fermé la fenêtre, le calme est revenu dans la salle."
+      },
+      {
+        "key": "2",
+        "text": "Les deux groupes se sont succédé devant le tableau sans se croiser."
+      },
+      {
+        "key": "3",
+        "text": "Quelles que soient leurs raisons, les personnages refusent de céder."
+      },
+      {
+        "key": "4",
+        "text": "Les remarques qu’elle a fait corriger figuraient déjà dans son brouillon."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "T",
+    "explanation": "Règle : chaque phrase doit être vérifiée avec sa règle propre. « Après que » commande l’indicatif. Un verbe pronominal dont « se » est un complément indirect garde son participe invariable. « Quel que » s’accorde avec le sujet. Enfin, « fait » suivi d’un infinitif reste invariable. Dans cette phrase : les quatre formulations appliquent respectivement ces quatre règles. Donc : les options 1, 2, 3 et 4 sont correctes; la réponse est T.",
+    "why": {
+      "1": "« Après qu’il a fermé » est correct : après que introduit ici un fait accompli et commande l’indicatif.",
+      "2": "« Se sont succédé » est correct : on succède à quelqu’un; « se » est indirect et le participe reste invariable.",
+      "3": "« Quelles que soient » est correct : les deux formes s’accordent au pluriel féminin avec « raisons ».",
+      "4": "« A fait corriger » est correct : le participe « fait » reste toujours invariable devant un infinitif.",
+      "A": "Aucune n’est exclue : les quatre phrases sont correctes.",
+      "T": "Toutes est la bonne réponse, car chaque option numérotée applique sa règle propre."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-006",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "revision_transversale",
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "copie_eleve",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "revision_authentique",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null
+      }
+    }
+  },
+  {
+    "id": "solh50-007",
+    "rule": "relatifs",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Choisissez le pronom relatif qui complète correctement la phrase.",
+    "options": [
+      {
+        "key": "1",
+        "text": "que"
+      },
+      {
+        "key": "2",
+        "text": "dont"
+      },
+      {
+        "key": "3",
+        "text": "à laquelle"
+      },
+      {
+        "key": "4",
+        "text": "sur laquelle"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "3",
+    "explanation": "Règle : Le recteur exige à ; à + lequel se contracte et s’accorde avec l’antécédent. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 3.",
+    "why": {
+      "1": "La forme `que` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
+      "2": "La forme `dont` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
+      "3": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "4": "La forme `sur laquelle` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-007",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "pronoms_relatifs",
+      "mechanism_id": "regime_a_auquel",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": null,
+        "4": "UNK"
+      }
+    },
+    "stem": "Le secrétariat a simplifié la procédure ___ chaque candidat doit se conformer avant son inscription."
+  },
+  {
+    "id": "solh50-008",
+    "rule": "discours",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Quelle phrase est correctement construite ?",
+    "options": [
+      {
+        "key": "1",
+        "text": "La doyenne demande quels critères retiendra-t-il et si le délai sera prolongé."
+      },
+      {
+        "key": "2",
+        "text": "La doyenne demande quels critères le jury retiendra et si le délai sera prolongé."
+      },
+      {
+        "key": "3",
+        "text": "La doyenne demande quels critères est-ce que le jury retiendra et si le délai sera prolongé."
+      },
+      {
+        "key": "4",
+        "text": "La doyenne demande qu’est-ce que le jury retiendra comme critères et si le délai sera prolongé."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "2",
+    "explanation": "Règle : Chaque membre coordonné dépend de l’introducteur et conserve l’ordre déclaratif de l’interrogation indirecte. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 2.",
+    "why": {
+      "1": "La forme `La doyenne demande quels critères retiendra-t-il et si le délai sera prolongé.` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "2": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "3": "La forme `La doyenne demande quels critères est-ce que le jury retiendra et si le délai sera prolongé.` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "4": "La forme `La doyenne demande qu’est-ce que le jury retiendra comme critères et si le délai sera prolongé.` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-008",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "interrogation_indirecte",
+      "mechanism_id": "coordination_interrogative",
+      "detail_id": "core",
+      "tense_id": "futur_simple",
+      "difficulty": "niveau_examen",
+      "source_genre": "copie_eleve",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "revision_authentique",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": null,
+        "3": "UNK",
+        "4": "UNK"
+      }
+    }
+  },
+  {
+    "id": "solh50-009",
+    "rule": "orthographe",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Choisissez la suite qui complète correctement la phrase.",
+    "options": [
+      {
+        "key": "1",
+        "text": "tout ; toutes"
+      },
+      {
+        "key": "2",
+        "text": "toutes ; toutes"
+      },
+      {
+        "key": "3",
+        "text": "tout ; tous"
+      },
+      {
+        "key": "4",
+        "text": "toute ; toutes"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "1",
+    "explanation": "Règle : Détermine si tout est déterminant, pronom, adjectif ou adverbe avant d’appliquer l’accord ou l’invariabilité. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 1.",
+    "why": {
+      "1": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "2": "La forme `toutes ; toutes` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "3": "La forme `tout ; tous` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "4": "La forme `toute ; toutes` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-009",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "tout_tous_toute_toutes",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "jugement_semantique",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Les candidates, ___ étonnées par le changement, ont néanmoins relu ___ les consignes."
+  },
+  {
+    "id": "solh50-010",
+    "rule": "eleves",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Quelles phrases sont correctement écrites ?",
+    "options": [
+      {
+        "key": "1",
+        "text": "Rassurées par les résultats, les deux responsables ont maintenu le calendrier."
+      },
+      {
+        "key": "2",
+        "text": "Le dossier et la lettre, soigneusement classés, ont été remis au greffe."
+      },
+      {
+        "key": "3",
+        "text": "La note et son annexe, jugées complémentaires, seront publiées ensemble."
+      },
+      {
+        "key": "4",
+        "text": "Épuisé par les séances successives, le président a reporté le vote."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "T",
+    "explanation": "Règle : Chaque phrase paraît suspecte mais applique une règle distincte ; toutes doivent être vérifiées séparément. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est T.",
+    "why": {
+      "1": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "2": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "3": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "4": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Les quatre options numérotées sont correctes après vérification séparée; Toutes est la bonne réponse."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-010",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "revision_transversale",
+      "mechanism_id": "toutes_correctes_suspectes",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "copie_eleve",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "revision_authentique",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null
+      }
+    }
+  },
+  {
+    "id": "solh50-011",
+    "rule": "orthographe",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Choisissez la suite qui complète correctement la phrase.",
+    "options": [
+      {
+        "key": "1",
+        "text": "C’est ; ces ; s’est"
+      },
+      {
+        "key": "2",
+        "text": "S’est ; ses ; c’est"
+      },
+      {
+        "key": "3",
+        "text": "C’est ; ses ; s’est"
+      },
+      {
+        "key": "4",
+        "text": "Ces ; ses ; s’est"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "3",
+    "explanation": "Règle : Identifie démonstratif, possessif, présentatif ou verbe pronominal avant de choisir la graphie. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 3.",
+    "why": {
+      "1": "La forme `C’est ; ces ; s’est` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
+      "2": "La forme `S’est ; ses ; c’est` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
+      "3": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "4": "La forme `Ces ; ses ; s’est` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-011",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "ces_ses_cest_sest",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": null,
+        "4": "UNK"
+      }
+    },
+    "stem": "___ en relisant ___ propres notes que la secrétaire ___ aperçue de l’omission."
+  },
+  {
+    "id": "solh50-012",
+    "rule": "pronoms",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Quelle phrase ne contient pas de rupture de construction ?",
+    "options": [
+      {
+        "key": "1",
+        "text": "Informée du changement, la nouvelle procédure a surpris la responsable."
+      },
+      {
+        "key": "2",
+        "text": "Réunis dans la salle polyvalente, un message urgent a interrompu les délégués."
+      },
+      {
+        "key": "3",
+        "text": "Convaincu par les arguments, le report du vote a semblé préférable au président."
+      },
+      {
+        "key": "4",
+        "text": "Avertie par le secrétariat, la responsable a prévenu les participants."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "4",
+    "explanation": "Règle : Le participe détaché doit se rattacher sans ambiguïté au nom qui accomplit ou subit l’action. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 4.",
+    "why": {
+      "1": "La forme `Informée du changement, la nouvelle procédure a surpris la responsable.` est fautive ici. La règle décrite dans le corrigé exige la réponse 4.",
+      "2": "La forme `Réunis dans la salle polyvalente, un message urgent a interrompu les délégués.` est fautive ici. La règle décrite dans le corrigé exige la réponse 4.",
+      "3": "La forme `Convaincu par les arguments, le report du vote a semblé préférable au président.` est fautive ici. La règle décrite dans le corrigé exige la réponse 4.",
+      "4": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-012",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "rupture_syntaxique",
+      "mechanism_id": "participe_detache_sujet_implicite",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": "UNK",
+        "4": null
+      }
+    }
+  },
+  {
+    "id": "solh50-013",
+    "rule": "modes",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Choisissez la forme qui complète correctement la phrase.",
+    "options": [
+      {
+        "key": "1",
+        "text": "tombe en panne"
+      },
+      {
+        "key": "2",
+        "text": "tombera en panne"
+      },
+      {
+        "key": "3",
+        "text": "soit tombé en panne"
+      },
+      {
+        "key": "4",
+        "text": "est tombé en panne"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Règle : La locution au cas où se construit avec le conditionnel, et non avec le subjonctif. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est A.",
+    "why": {
+      "1": "La forme `tombe en panne` est fautive ici. La règle décrite dans le corrigé exige la réponse A.",
+      "2": "La forme `tombera en panne` est fautive ici. La règle décrite dans le corrigé exige la réponse A.",
+      "3": "La forme `soit tombé en panne` est fautive ici. La règle décrite dans le corrigé exige la réponse A.",
+      "4": "La forme `est tombé en panne` est fautive ici. La règle décrite dans le corrigé exige la réponse A.",
+      "A": "Les quatre options numérotées sont fautives; il faut donc choisir A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-013",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "concordance_temps",
+      "mechanism_id": "au_cas_ou_conditionnel",
+      "detail_id": "core",
+      "tense_id": "conditionnel_present",
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Emportez une copie papier au cas où le réseau ___ pendant la séance."
+  },
+  {
+    "id": "solh50-014",
+    "rule": "modes",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Choisissez la forme qui complète correctement la phrase.",
+    "options": [
+      {
+        "key": "1",
+        "text": "terminaient"
+      },
+      {
+        "key": "2",
+        "text": "avaient terminé"
+      },
+      {
+        "key": "3",
+        "text": "ont terminé"
+      },
+      {
+        "key": "4",
+        "text": "termineraient"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "2",
+    "explanation": "Règle : Une action achevée avant un autre repère passé se met au plus-que-parfait. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 2.",
+    "why": {
+      "1": "La forme `terminaient` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "2": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "3": "La forme `ont terminé` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "4": "La forme `termineraient` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-014",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "concordance_temps",
+      "mechanism_id": "anteriorite_plus_que_parfait",
+      "detail_id": "core",
+      "tense_id": "plus_que_parfait",
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": null,
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Le procès-verbal précise que, lorsque le comité a voté à seize heures, les experts ___ leur analyse depuis plus d’une heure."
+  },
+  {
+    "id": "solh50-015",
+    "rule": "eleves",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Quelle production d’élève est correctement écrite ?",
+    "options": [
+      {
+        "key": "1",
+        "text": "Les exercices que la maîtresse a fait refaire étaient mieux compris."
+      },
+      {
+        "key": "2",
+        "text": "Les élèves ont préférés vérifier leurs réponses avant de rendre leur copie."
+      },
+      {
+        "key": "3",
+        "text": "La conclusion qu’il a voulu reformulée reste trop générale."
+      },
+      {
+        "key": "4",
+        "text": "Les consignes ont été relire avant le début de l’activité."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "1",
+    "explanation": "Règle : devant un infinitif, « fait » reste invariable; après un verbe conjugué, le second verbe se met à l’infinitif; avec « être », un participe employé au passif s’accorde avec le sujet. Dans cette phrase : l’option 1 contient « a fait refaire », donc « fait » ne s’accorde pas. Les autres options mêlent participe et infinitif ou appliquent un accord indu. Donc : la réponse correcte est 1.",
+    "why": {
+      "1": "« A fait refaire » est correct : « fait » suivi de l’infinitif « refaire » reste invariable.",
+      "2": "`ont préférés vérifier` est fautif : avec avoir et sans complément direct placé avant, on écrit « ont préféré vérifier ».",
+      "3": "`a voulu reformulée` est fautif : après « a voulu », il faut l’infinitif « reformuler ».",
+      "4": "`ont été relire` est fautif : au passif, on écrit « ont été relues », accordé avec « les consignes ».",
+      "A": "L’option 1 est correcte; Aucune ne convient donc pas.",
+      "T": "Les options 2, 3 et 4 contiennent chacune une erreur; Toutes ne convient pas."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-015",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "revision_transversale",
+      "mechanism_id": "revision_participes_et_infinitifs",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "copie_eleve",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "revision_authentique",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    }
+  },
+  {
+    "id": "solh50-016",
+    "rule": "orthographe",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Quelles phrases sont correctement écrites ?",
+    "options": [
+      {
+        "key": "1",
+        "text": "Quels que soient les résultats, le rapport sera transmis."
+      },
+      {
+        "key": "2",
+        "text": "Quelque prudentes qu’elles paraissent, ces estimations restent provisoires."
+      },
+      {
+        "key": "3",
+        "text": "Quelle que soit la décision, chacun recevra une réponse."
+      },
+      {
+        "key": "4",
+        "text": "Quelques réserves subsistent malgré les explications fournies."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "T",
+    "explanation": "Règle : Quel que s’écrit en deux mots devant être et s’accorde ; quelque dépend de son emploi déterminant ou adverbial. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est T.",
+    "why": {
+      "1": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "2": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "3": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "4": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Les quatre options numérotées sont correctes après vérification séparée; Toutes est la bonne réponse."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-016",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "quel_que_quelque",
+      "detail_id": "quel_que",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "copie_eleve",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "revision_authentique",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null
+      }
+    }
+  },
+  {
+    "id": "solh50-017",
+    "rule": "sujetverbe",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Choisissez la forme qui complète correctement la phrase.",
+    "options": [
+      {
+        "key": "1",
+        "text": "paraissent"
+      },
+      {
+        "key": "2",
+        "text": "paraît"
+      },
+      {
+        "key": "3",
+        "text": "paraîtriez"
+      },
+      {
+        "key": "4",
+        "text": "parais"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "1",
+    "explanation": "Règle : Plusieurs sujets ajoutés l’un à l’autre commandent normalement le pluriel. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 1.",
+    "why": {
+      "1": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "2": "La forme `paraît` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "3": "La forme `paraîtriez` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "4": "La forme `parais` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-017",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "accord_sujet_verbe",
+      "mechanism_id": "sujets_coordonnees",
+      "detail_id": "core",
+      "tense_id": "present",
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Après la vérification des annexes, la convention et la fiche de suivi ___ désormais complètes."
+  },
+  {
+    "id": "solh50-018",
+    "rule": "relatifs",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Choisissez la suite qui complète correctement la phrase.",
+    "options": [
+      {
+        "key": "1",
+        "text": "ce que ; ce qui"
+      },
+      {
+        "key": "2",
+        "text": "qu’est-ce qui ; qu’est-ce que"
+      },
+      {
+        "key": "3",
+        "text": "ce qu’il ; ce dont"
+      },
+      {
+        "key": "4",
+        "text": "ce qui ; ce que"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "4",
+    "explanation": "Règle : Choisis ce qui si le pronom est sujet du verbe suivant, ce que s’il en est le COD. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 4.",
+    "why": {
+      "1": "La forme `ce que ; ce qui` est fautive ici. La règle décrite dans le corrigé exige la réponse 4.",
+      "2": "La forme `qu’est-ce qui ; qu’est-ce que` est fautive ici. La règle décrite dans le corrigé exige la réponse 4.",
+      "3": "La forme `ce qu’il ; ce dont` est fautive ici. La règle décrite dans le corrigé exige la réponse 4.",
+      "4": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-018",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "pronoms_relatifs",
+      "mechanism_id": "ce_qui_ce_que",
+      "detail_id": "sujet",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "jugement_semantique",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": "UNK",
+        "4": null
+      }
+    },
+    "stem": "Le rapport doit préciser ___ a retardé l’envoi et ___ le service compte modifier pour éviter un nouvel incident."
+  },
+  {
+    "id": "solh50-019",
+    "rule": "relatifs",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Choisissez le pronom relatif qui complète correctement la phrase.",
+    "options": [
+      {
+        "key": "1",
+        "text": "dont"
+      },
+      {
+        "key": "2",
+        "text": "auxquelles"
+      },
+      {
+        "key": "3",
+        "text": "que"
+      },
+      {
+        "key": "4",
+        "text": "sur lesquelles"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "2",
+    "explanation": "Règle : Le recteur exige à ; à + lequel se contracte et s’accorde avec l’antécédent. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 2.",
+    "why": {
+      "1": "La forme `dont` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "2": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "3": "La forme `que` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "4": "La forme `sur lesquelles` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-019",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "pronoms_relatifs",
+      "mechanism_id": "regime_a_auquel",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": null,
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "La responsable a rappelé les exigences ___ tout prestataire doit satisfaire avant la signature du contrat."
+  },
+  {
+    "id": "solh50-020",
+    "rule": "prepositions",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Quelle phrase respecte le régime du verbe ?",
+    "options": [
+      {
+        "key": "1",
+        "text": "Le groupe a pallié au manque de matériel par un prêt."
+      },
+      {
+        "key": "2",
+        "text": "La commission discutera sur cette proposition demain."
+      },
+      {
+        "key": "3",
+        "text": "Le service a remédié le défaut signalé dans le formulaire."
+      },
+      {
+        "key": "4",
+        "text": "La responsable a rappelé de la règle aux nouveaux membres."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Règle : ce verbe transitif introduit directement son complément; aucune préposition ne doit être ajoutée. Dans cette phrase : une seule proposition respecte cette construction directe. Donc : la réponse correcte est 2.",
+    "why": {
+      "1": "La forme `Le groupe a pallié au manque de matériel par un prêt.` est fautive ici. La règle décrite dans le corrigé exige la réponse A.",
+      "2": "La forme `La commission discutera sur cette proposition demain.` est fautive ici. La règle décrite dans le corrigé exige la réponse A.",
+      "3": "La forme `Le service a remédié le défaut signalé dans le formulaire.` est fautive ici. La règle décrite dans le corrigé exige la réponse A.",
+      "4": "La forme `La responsable a rappelé de la règle aux nouveaux membres.` est fautive ici. La règle décrite dans le corrigé exige la réponse A.",
+      "A": "Les quatre options numérotées sont fautives; il faut donc choisir A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-020",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "prepositions_regies",
+      "mechanism_id": "regime_verbal_direct",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "copie_eleve",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "revision_authentique",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    }
+  },
+  {
+    "id": "solh50-021",
+    "rule": "orthographe",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Choisissez la suite qui complète correctement la phrase.",
+    "options": [
+      {
+        "key": "1",
+        "text": "On ; on ; on n’"
+      },
+      {
+        "key": "2",
+        "text": "On n’ ; on ; on"
+      },
+      {
+        "key": "3",
+        "text": "On ; ont ; on n’"
+      },
+      {
+        "key": "4",
+        "text": "Ont ; on ; on n’"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "1",
+    "explanation": "Règle : la particule dite explétive s’emploie seule dans certains contextes et ne constitue pas une négation complète. Dans cette phrase : la proposition correcte conserve cette particule sans ajouter pas. Donc : la réponse correcte est 3.",
+    "why": {
+      "1": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "2": "La forme `On n’ ; on ; on` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "3": "La forme `On ; ont ; on n’` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "4": "La forme `Ont ; on ; on n’` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-021",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "on_on_n",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "___ ignore encore si ___ ouvrira une classe supplémentaire, mais ___ a exclu aucune solution."
+  },
+  {
+    "id": "solh50-022",
+    "rule": "pronoms",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Quelle phrase ne contient pas de rupture de construction ?",
+    "options": [
+      {
+        "key": "1",
+        "text": "Très attentive aux remarques, la dernière version a satisfait la rédactrice."
+      },
+      {
+        "key": "2",
+        "text": "Très attentive aux remarques, la rédactrice a repris la dernière version."
+      },
+      {
+        "key": "3",
+        "text": "À peine arrivé dans la salle, le silence a surpris le délégué."
+      },
+      {
+        "key": "4",
+        "text": "Peu convaincus par le calendrier, son report a été réclamé par les parents."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "2",
+    "explanation": "Règle : Le groupe placé en tête doit décrire clairement le sujet grammatical de la proposition principale. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 2.",
+    "why": {
+      "1": "La forme `Très attentive aux remarques, la dernière version a satisfait la rédactrice.` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "2": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "3": "La forme `À peine arrivé dans la salle, le silence a surpris le délégué.` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "4": "La forme `Peu convaincus par le calendrier, son report a été réclamé par les parents.` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-022",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "rupture_syntaxique",
+      "mechanism_id": "groupe_detache_sujet_implicite",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": null,
+        "3": "UNK",
+        "4": "UNK"
+      }
+    }
+  },
+  {
+    "id": "solh50-023",
+    "rule": "orthographe",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Quelle phrase respecte l’emploi des majuscules ?",
+    "options": [
+      {
+        "key": "1",
+        "text": "Une déléguée Suisse a pris la parole devant le comité."
+      },
+      {
+        "key": "2",
+        "text": "Les neuchâtelois présents ont approuvé le projet cantonal."
+      },
+      {
+        "key": "3",
+        "text": "Deux Fribourgeoises ont présenté leur projet à des collègues vaudois."
+      },
+      {
+        "key": "4",
+        "text": "Le groupe bernois a rédigé sa synthèse en Français."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "3",
+    "explanation": "Règle : Le nom d’un peuple prend la majuscule ; l’adjectif et le nom de langue gardent la minuscule. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 3.",
+    "why": {
+      "1": "La forme `Une déléguée Suisse a pris la parole devant le comité.` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
+      "2": "La forme `Les neuchâtelois présents ont approuvé le projet cantonal.` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
+      "3": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "4": "La forme `Le groupe bernois a rédigé sa synthèse en Français.` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-023",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "gentiles_majuscules",
+      "mechanism_id": "nom_peuple_adjectif_langue",
+      "detail_id": "peuple",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "jugement_semantique",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": null,
+        "4": "UNK"
+      }
+    }
+  },
+  {
+    "id": "solh50-024",
+    "rule": "orthographe",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Choisissez la suite qui complète correctement la phrase.",
+    "options": [
+      {
+        "key": "1",
+        "text": "complète ; provisoire"
+      },
+      {
+        "key": "2",
+        "text": "complets ; provisoires"
+      },
+      {
+        "key": "3",
+        "text": "complètes ; provisoire"
+      },
+      {
+        "key": "4",
+        "text": "complètes ; provisoires"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "4",
+    "explanation": "Règle : Retrouve le nom décrit malgré l’éloignement, relève son genre et son nombre, puis reporte ces marques sur l’adjectif. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 4.",
+    "why": {
+      "1": "La forme `complète ; provisoire` est fautive ici. La règle décrite dans le corrigé exige la réponse 4.",
+      "2": "La forme `complets ; provisoires` est fautive ici. La règle décrite dans le corrigé exige la réponse 4.",
+      "3": "La forme `complètes ; provisoire` est fautive ici. La règle décrite dans le corrigé exige la réponse 4.",
+      "4": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-024",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "accord_adjectif_nom",
+      "mechanism_id": "donneur_eloigne",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": "UNK",
+        "4": null
+      }
+    },
+    "stem": "La note et l’annexe, toutes deux ___ mais encore ___, seront soumises au comité."
+  },
+  {
+    "id": "solh50-025",
+    "rule": "eleves",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Quelle production d’élève est entièrement correcte ?",
+    "options": [
+      {
+        "key": "1",
+        "text": "Bien qu’il est discret, le narrateur influence tout le récit."
+      },
+      {
+        "key": "2",
+        "text": "L’héroïne s’est permise de contredire son frère devant tous."
+      },
+      {
+        "key": "3",
+        "text": "C’est une décision dont le personnage s’y oppose fermement."
+      },
+      {
+        "key": "4",
+        "text": "Après qu’elle soit partie, le témoin change soudain de version."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Règle : Les propositions testent volontairement plusieurs mécanismes ; il faut isoler la faute décisive de chaque phrase. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est A.",
+    "why": {
+      "1": "La forme `Bien qu’il est discret, le narrateur influence tout le récit.` est fautive ici. La règle décrite dans le corrigé exige la réponse A.",
+      "2": "La forme `L’héroïne s’est permise de contredire son frère devant tous.` est fautive ici. La règle décrite dans le corrigé exige la réponse A.",
+      "3": "La forme `C’est une décision dont le personnage s’y oppose fermement.` est fautive ici. La règle décrite dans le corrigé exige la réponse A.",
+      "4": "La forme `Après qu’elle soit partie, le témoin change soudain de version.` est fautive ici. La règle décrite dans le corrigé exige la réponse A.",
+      "A": "Les quatre options numérotées sont fautives; il faut donc choisir A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-025",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "revision_transversale",
+      "mechanism_id": "phrases_eleves_heterogenes",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "copie_eleve",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "revision_authentique",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    }
+  },
+  {
+    "id": "solh50-026",
+    "rule": "orthographe",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Choisissez la suite qui complète correctement la phrase.",
+    "options": [
+      {
+        "key": "1",
+        "text": "Quoique ; quoi que"
+      },
+      {
+        "key": "2",
+        "text": "Quoi que ; quoique"
+      },
+      {
+        "key": "3",
+        "text": "Quoi que ; quoi que"
+      },
+      {
+        "key": "4",
+        "text": "Quoique ; quoique"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "2",
+    "explanation": "Règle : Quoique signifie bien que ; quoi que signifie quelle que soit la chose que. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 2.",
+    "why": {
+      "1": "La forme `Quoique ; quoi que` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "2": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "3": "La forme `Quoi que ; quoi que` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "4": "La forme `Quoique ; quoique` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-026",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "quoique_quoi_que",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "jugement_semantique",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": null,
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "___ le comité décide, la séance aura lieu ; ___ tardive, sa décision sera communiquée le jour même."
+  },
+  {
+    "id": "solh50-027",
+    "rule": "discours",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Quelle phrase est correctement construite ?",
+    "options": [
+      {
+        "key": "1",
+        "text": "Le service cherchait à savoir quand recevrait-il les attestations manquantes."
+      },
+      {
+        "key": "2",
+        "text": "Le service cherchait à savoir quand est-ce qu’il recevrait les attestations manquantes."
+      },
+      {
+        "key": "3",
+        "text": "Le service cherchait à savoir quand il recevrait les attestations manquantes."
+      },
+      {
+        "key": "4",
+        "text": "Le service cherchait à savoir quand les attestations les recevrait-il."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "3",
+    "explanation": "Règle : Dans l’interrogation indirecte, le sujet reste devant le verbe : on supprime l’inversion de la question directe. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 3.",
+    "why": {
+      "1": "La forme `Le service cherchait à savoir quand recevrait-il les attestations manquantes.` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
+      "2": "La forme `Le service cherchait à savoir quand est-ce qu’il recevrait les attestations manquantes.` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
+      "3": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "4": "La forme `Le service cherchait à savoir quand les attestations les recevrait-il.` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-027",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "interrogation_indirecte",
+      "mechanism_id": "suppression_inversion",
+      "detail_id": "core",
+      "tense_id": "conditionnel_present",
+      "difficulty": "niveau_examen",
+      "source_genre": "copie_eleve",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "revision_authentique",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": null,
+        "4": "UNK"
+      }
+    }
+  },
+  {
+    "id": "solh50-028",
+    "rule": "nombres",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Choisissez la suite correctement écrite.",
+    "options": [
+      {
+        "key": "1",
+        "text": "six cent vingt ; six cents"
+      },
+      {
+        "key": "2",
+        "text": "six cents vingt ; six cent"
+      },
+      {
+        "key": "3",
+        "text": "six cents vingt ; six cents"
+      },
+      {
+        "key": "4",
+        "text": "six cent vingts ; six cent"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "1",
+    "explanation": "Règle : Cent et vingt prennent s seulement s’ils sont multipliés et terminaux ; mille reste toujours invariable. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 1.",
+    "why": {
+      "1": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "2": "La forme `six cents vingt ; six cent` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "3": "La forme `six cents vingt ; six cents` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "4": "La forme `six cent vingts ; six cent` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-028",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "nombres_traits_union",
+      "mechanism_id": "cent_vingt_mille",
+      "detail_id": "cent",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "rappel_regle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Le service a imprimé ___ formulaires, puis en a réservé ___ pour l’accueil."
+  },
+  {
+    "id": "solh50-029",
+    "rule": "modes",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Quelles phrases sont correctement écrites ?",
+    "options": [
+      {
+        "key": "1",
+        "text": "Après que le comité a voté, le procès-verbal a été signé."
+      },
+      {
+        "key": "2",
+        "text": "Après qu’elle eut vérifié les annexes, la juriste valida le dossier."
+      },
+      {
+        "key": "3",
+        "text": "Après que les portes se furent refermées, la séance commença."
+      },
+      {
+        "key": "4",
+        "text": "Après que vous avez reçu l’accord, vous pouvez lancer la commande."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "T",
+    "explanation": "Règle : Après que présente le fait comme réalisé et commande l’indicatif, au temps exigé par l’ordre des actions. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est T.",
+    "why": {
+      "1": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "2": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "3": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "4": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Les quatre options numérotées sont correctes après vérification séparée; Toutes est la bonne réponse."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-029",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "subjonctif_indicatif",
+      "mechanism_id": "apres_que_indicatif",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "copie_eleve",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "revision_authentique",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null
+      }
+    }
+  },
+  {
+    "id": "solh50-030",
+    "rule": "sujetverbe",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Choisissez la forme qui complète correctement la phrase.",
+    "options": [
+      {
+        "key": "1",
+        "text": "demeurent"
+      },
+      {
+        "key": "2",
+        "text": "demeureront"
+      },
+      {
+        "key": "3",
+        "text": "demeurais"
+      },
+      {
+        "key": "4",
+        "text": "demeurions"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Règle : Le noyau singulier commande le verbe ; le nom pluriel du complément n’est pas donneur. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est A.",
+    "why": {
+      "1": "La forme `demeurent` est fautive ici. La règle décrite dans le corrigé exige la réponse A.",
+      "2": "La forme `demeureront` est fautive ici. La règle décrite dans le corrigé exige la réponse A.",
+      "3": "La forme `demeurais` est fautive ici. La règle décrite dans le corrigé exige la réponse A.",
+      "4": "La forme `demeurions` est fautive ici. La règle décrite dans le corrigé exige la réponse A.",
+      "A": "Les quatre options numérotées sont fautives; il faut donc choisir A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-030",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "accord_sujet_verbe",
+      "mechanism_id": "noyau_singulier_complement_pluriel",
+      "detail_id": "core",
+      "tense_id": "present",
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "La liste des pièces que réclament les deux services ___ encore incomplète."
+  },
+  {
+    "id": "solh50-031",
+    "rule": "orthographe",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Choisissez la suite qui complète correctement la phrase.",
+    "options": [
+      {
+        "key": "1",
+        "text": "du ; dû"
+      },
+      {
+        "key": "2",
+        "text": "dû ; dû"
+      },
+      {
+        "key": "3",
+        "text": "du ; du"
+      },
+      {
+        "key": "4",
+        "text": "dû ; du"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "4",
+    "explanation": "Règle : Du sans accent est un déterminant contracté ; dû avec accent est le participe passé masculin singulier de devoir. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 4.",
+    "why": {
+      "1": "La forme `du ; dû` est fautive ici. La règle décrite dans le corrigé exige la réponse 4.",
+      "2": "La forme `dû ; dû` est fautive ici. La règle décrite dans le corrigé exige la réponse 4.",
+      "3": "La forme `du ; du` est fautive ici. La règle décrite dans le corrigé exige la réponse 4.",
+      "4": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-031",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "du_du_accent",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "jugement_semantique",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": "UNK",
+        "4": null
+      }
+    },
+    "stem": "Le retard est ___ à une panne ; le service a néanmoins transmis l’essentiel ___ dossier avant midi."
+  },
+  {
+    "id": "solh50-032",
+    "rule": "pronoms",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Quelle formulation de lettre est correctement construite ?",
+    "options": [
+      {
+        "key": "1",
+        "text": "Dans l’attente de votre réponse, je vous adresse mes salutations distinguées."
+      },
+      {
+        "key": "2",
+        "text": "Dans l’attente de votre réponse, veuillez agréer mes salutations distinguées."
+      },
+      {
+        "key": "3",
+        "text": "En espérant une réponse rapide, la présente demande vous est adressée avec mes salutations."
+      },
+      {
+        "key": "4",
+        "text": "Après avoir examiné mon dossier, une réponse de votre part serait appréciée."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "1",
+    "explanation": "Règle : Le groupe placé en tête doit décrire clairement le sujet grammatical de la proposition principale. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 1.",
+    "why": {
+      "1": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "2": "La forme `Dans l’attente de votre réponse, veuillez agréer mes salutations distinguées.` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "3": "La forme `En espérant une réponse rapide, la présente demande vous est adressée avec mes salutations.` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "4": "La forme `Après avoir examiné mon dossier, une réponse de votre part serait appréciée.` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-032",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "rupture_syntaxique",
+      "mechanism_id": "groupe_detache_sujet_implicite",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "copie_eleve",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "revision_authentique",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    }
+  },
+  {
+    "id": "solh50-033",
+    "rule": "orthographe",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Quelle phrase contient la graphie correcte ?",
+    "options": [
+      {
+        "key": "1",
+        "text": "Le dévelopement du projet dépendra du financement cantonal."
+      },
+      {
+        "key": "2",
+        "text": "Le développement du projet dépendra du financement cantonal."
+      },
+      {
+        "key": "3",
+        "text": "Le dévellopement du projet dépendra du financement cantonal."
+      },
+      {
+        "key": "4",
+        "text": "Le dévelloppement du projet dépendra du financement cantonal."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "2",
+    "explanation": "Règle : La graphie du mot impose une consonne simple ou doublée ; les formes analogiques doivent être écartées. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 2.",
+    "why": {
+      "1": "La forme `Le dévelopement du projet dépendra du financement cantonal.` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "2": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "3": "La forme `Le dévellopement du projet dépendra du financement cantonal.` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "4": "La forme `Le dévelloppement du projet dépendra du financement cantonal.` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-033",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "orthographe_lexicale",
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "copie_eleve",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "revision_authentique",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": null,
+        "3": "UNK",
+        "4": "UNK"
+      }
+    }
+  },
+  {
+    "id": "solh50-034",
+    "rule": "sujetverbe",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Choisissez la forme qui complète correctement la phrase.",
+    "options": [
+      {
+        "key": "1",
+        "text": "restent"
+      },
+      {
+        "key": "2",
+        "text": "reste"
+      },
+      {
+        "key": "3",
+        "text": "resteriez"
+      },
+      {
+        "key": "4",
+        "text": "restes"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "2",
+    "explanation": "Règle : Le noyau singulier commande le verbe ; le nom pluriel du complément n’est pas donneur. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 2.",
+    "why": {
+      "1": "La forme `restent` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "2": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "3": "La forme `resteriez` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "4": "La forme `restes` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-034",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "accord_sujet_verbe",
+      "mechanism_id": "noyau_singulier_complement_pluriel",
+      "detail_id": "core",
+      "tense_id": "present",
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": null,
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "À la date annoncée, la présentation des nouvelles procédures, malgré les réserves exprimées hier, ___ prévue pour lundi."
+  },
+  {
+    "id": "solh50-035",
+    "rule": "eleves",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Quelle production d’élève est correctement écrite ?",
+    "options": [
+      {
+        "key": "1",
+        "text": "Les lettres qu’il a envoyé convaincre le lecteur sont trop longues."
+      },
+      {
+        "key": "2",
+        "text": "L’autrice s’est permise d’écarter les remarques qu’elle avait mal comprises."
+      },
+      {
+        "key": "3",
+        "text": "Les difficultés que ce chapitre nous a faites rencontrer ralentissent la lecture."
+      },
+      {
+        "key": "4",
+        "text": "Les remarques que l’enseignante a entendu formuler venaient du fond de la classe."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "4",
+    "explanation": "Règle : avec avoir suivi d’un infinitif, le participe s’accorde avec le complément direct placé avant seulement si ce complément accomplit l’action de l’infinitif. « Fait » suivi d’un infinitif reste invariable. Dans un pronominal comme « se permettre quelque chose », « se » est indirect, donc « permis » reste invariable. Dans cette phrase : les remarques de l’option 4 subissent l’action de « formuler »; elles ne la font pas, donc « entendu » reste invariable. Donc : la réponse correcte est 4.",
+    "why": {
+      "1": "`les lettres qu’il a envoyé convaincre` exige « envoyées » : les lettres, complément placé avant, accomplissent ici l’action de convaincre.",
+      "2": "`s’est permise` est fautif : on permet quelque chose à soi-même; « se » est indirect et on écrit « s’est permis ».",
+      "3": "`a faites rencontrer` est fautif : « fait » suivi de l’infinitif « rencontrer » reste invariable.",
+      "4": "« A entendu formuler » est correct : les remarques sont formulées par d’autres; elles n’accomplissent pas l’action, donc « entendu » reste invariable.",
+      "A": "L’option 4 est correcte; Aucune ne convient pas.",
+      "T": "Les trois premières options sont fautives; Toutes ne convient pas."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-035",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "revision_transversale",
+      "mechanism_id": "revision_participes_et_infinitifs",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "copie_eleve",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "revision_authentique",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": "UNK",
+        "4": null
+      }
+    }
+  },
+  {
+    "id": "solh50-036",
+    "rule": "conjugaison",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Quelle phrase est correctement écrite ?",
+    "options": [
+      {
+        "key": "1",
+        "text": "Après avoir vérifié les annexes, la secrétaire les a fait imprimer."
+      },
+      {
+        "key": "2",
+        "text": "Le comité souhaite adopté la version que vous avez corrigée."
+      },
+      {
+        "key": "3",
+        "text": "Les responsables ont préférer reporter la décision annoncée."
+      },
+      {
+        "key": "4",
+        "text": "La note doit être signer avant d’être archivée."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "1",
+    "explanation": "Règle : Identifie l’auxiliaire ou la préposition qui précède : auxiliaire pour le participe, préposition ou verbe conjugué pour l’infinitif. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 1.",
+    "why": {
+      "1": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "2": "La forme `Le comité souhaite adopté la version que vous avez corrigée.` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "3": "La forme `Les responsables ont préférer reporter la décision annoncée.` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "4": "La forme `La note doit être signer avant d’être archivée.` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-036",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "conjugaison",
+      "mechanism_id": "infinitif_participe",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "copie_eleve",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "revision_authentique",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    }
+  },
+  {
+    "id": "solh50-037",
+    "rule": "modes",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Choisissez la suite qui complète correctement la phrase.",
+    "options": [
+      {
+        "key": "1",
+        "text": "recevait ; aurait modifié"
+      },
+      {
+        "key": "2",
+        "text": "avait reçu ; aurait modifié"
+      },
+      {
+        "key": "3",
+        "text": "aurait reçu ; avait modifié"
+      },
+      {
+        "key": "4",
+        "text": "avait reçu ; modifierait"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "2",
+    "explanation": "Règle : Une hypothèse passée irréelle emploie si avec le plus-que-parfait, puis le conditionnel passé pour sa conséquence. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 2.",
+    "why": {
+      "1": "La forme `recevait ; aurait modifié` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "2": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "3": "La forme `aurait reçu ; avait modifié` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "4": "La forme `avait reçu ; modifierait` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-037",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "concordance_temps",
+      "mechanism_id": "hypothese_si_plus_que_parfait_conditionnel_passe",
+      "detail_id": "core",
+      "tense_id": "conditionnel_passe",
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "jugement_semantique",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": null,
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Si le service ___ l’avis juridique plus tôt, il ___ la clause avant la signature."
+  },
+  {
+    "id": "solh50-038",
+    "rule": "conjugaison",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Choisissez la formulation correcte.",
+    "options": [
+      {
+        "key": "1",
+        "text": "Transmets-la-lui immédiatement."
+      },
+      {
+        "key": "2",
+        "text": "Transmet-la-lui immédiatement."
+      },
+      {
+        "key": "3",
+        "text": "Transmets-lui-la immédiatement."
+      },
+      {
+        "key": "4",
+        "text": "Transmets la-lui immédiatement."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "1",
+    "explanation": "Règle : À l’affirmatif, les pronoms suivent le verbe avec traits d’union ; à la négation, ils le précèdent. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 1.",
+    "why": {
+      "1": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "2": "La forme `Transmet-la-lui immédiatement.` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "3": "La forme `Transmets-lui-la immédiatement.` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "4": "La forme `Transmets la-lui immédiatement.` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-038",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "conjugaison",
+      "mechanism_id": "imperatif_et_pronoms",
+      "detail_id": "affirmatif",
+      "tense_id": "imperatif_present",
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Vous demandez à une collègue de transmettre immédiatement la copie du procès-verbal au président."
+  },
+  {
+    "id": "solh50-039",
+    "rule": "prepositions",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Quelle coordination est correctement construite ?",
+    "options": [
+      {
+        "key": "1",
+        "text": "Le comité approuve et se conforme au nouveau règlement."
+      },
+      {
+        "key": "2",
+        "text": "Le service dépend et applique la décision cantonale."
+      },
+      {
+        "key": "3",
+        "text": "La responsable s’intéresse et participe au projet pilote."
+      },
+      {
+        "key": "4",
+        "text": "Le comité approuve le règlement et s’y conforme."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "4",
+    "explanation": "Règle : Chaque terme coordonné garde la préposition exigée par son propre recteur. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 4.",
+    "why": {
+      "1": "La forme `Le comité approuve et se conforme au nouveau règlement.` est fautive ici. La règle décrite dans le corrigé exige la réponse 4.",
+      "2": "La forme `Le service dépend et applique la décision cantonale.` est fautive ici. La règle décrite dans le corrigé exige la réponse 4.",
+      "3": "La forme `La responsable s’intéresse et participe au projet pilote.` est fautive ici. La règle décrite dans le corrigé exige la réponse 4.",
+      "4": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-039",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "prepositions_regies",
+      "mechanism_id": "coordination_regimes_differents",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": "UNK",
+        "4": null
+      }
+    }
+  },
+  {
+    "id": "solh50-040",
+    "rule": "adjverbal",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Choisissez la suite qui complète correctement la phrase.",
+    "options": [
+      {
+        "key": "1",
+        "text": "concernantes ; convainquant"
+      },
+      {
+        "key": "2",
+        "text": "concernant ; convainquant"
+      },
+      {
+        "key": "3",
+        "text": "concernant ; convaincantes"
+      },
+      {
+        "key": "4",
+        "text": "concernantes ; convaincantes"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "3",
+    "explanation": "Règle : La forme conserve un complément verbal : c’est un participe présent, donc elle reste invariable. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 3.",
+    "why": {
+      "1": "La forme `concernantes ; convainquant` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
+      "2": "La forme `concernant ; convainquant` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
+      "3": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "4": "La forme `concernantes ; convaincantes` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-040",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "adjectif_verbal_participe_present",
+      "mechanism_id": "participe_present_avec_complement",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": null,
+        "4": "UNK"
+      }
+    },
+    "stem": "Les remarques ___ le calendrier ont surpris les déléguées, pourtant très ___ pendant la séance."
+  },
+  {
+    "id": "solh50-041",
+    "rule": "orthographe",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Choisissez la suite qui complète correctement la phrase.",
+    "options": [
+      {
+        "key": "1",
+        "text": "ce ; se"
+      },
+      {
+        "key": "2",
+        "text": "se ; ce"
+      },
+      {
+        "key": "3",
+        "text": "se ; se"
+      },
+      {
+        "key": "4",
+        "text": "ce ; ce"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "2",
+    "explanation": "Règle : le premier mot peut être un déterminant ou un pronom démonstratif, tandis que le second appartient à un verbe pronominal. Dans cette phrase : seule une proposition attribue à chacun sa fonction correcte. Donc : la réponse correcte est 1.",
+    "why": {
+      "1": "La forme `ce ; se` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "2": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "3": "La forme `se ; se` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "4": "La forme `ce ; ce` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-041",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "ce_se",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": null,
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Le groupe doit ___ préparer à présenter ___ projet devant le conseil."
+  },
+  {
+    "id": "solh50-042",
+    "rule": "pronoms",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Quelle phrase ne contient pas de rupture de construction ?",
+    "options": [
+      {
+        "key": "1",
+        "text": "En quittant la réunion, une dernière question m’est venue à l’esprit."
+      },
+      {
+        "key": "2",
+        "text": "En longeant le bâtiment, l’entrée secondaire est apparue aux visiteurs."
+      },
+      {
+        "key": "3",
+        "text": "En longeant le bâtiment, les visiteurs ont aperçu l’entrée secondaire."
+      },
+      {
+        "key": "4",
+        "text": "En vérifiant les chiffres, une erreur de total a inquiété le comptable."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "3",
+    "explanation": "Règle : Le sujet implicite du gérondif doit normalement être le sujet du verbe principal. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 3.",
+    "why": {
+      "1": "La forme `En quittant la réunion, une dernière question m’est venue à l’esprit.` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
+      "2": "La forme `En longeant le bâtiment, l’entrée secondaire est apparue aux visiteurs.` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
+      "3": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "4": "La forme `En vérifiant les chiffres, une erreur de total a inquiété le comptable.` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-042",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "rupture_syntaxique",
+      "mechanism_id": "gerondif_sujet_implicite",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": null,
+        "4": "UNK"
+      }
+    }
+  },
+  {
+    "id": "solh50-043",
+    "rule": "nombres",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Choisissez la suite correctement écrite.",
+    "options": [
+      {
+        "key": "1",
+        "text": "trois milles ; deux milles"
+      },
+      {
+        "key": "2",
+        "text": "trois mille ; deux milles"
+      },
+      {
+        "key": "3",
+        "text": "trois milles ; deux mille"
+      },
+      {
+        "key": "4",
+        "text": "trois mille ; deux mille"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "4",
+    "explanation": "Règle : Le nombre mille ne prend jamais de s, même lorsqu’il est multiplié. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 4.",
+    "why": {
+      "1": "La forme `trois milles ; deux milles` est fautive ici. La règle décrite dans le corrigé exige la réponse 4.",
+      "2": "La forme `trois mille ; deux milles` est fautive ici. La règle décrite dans le corrigé exige la réponse 4.",
+      "3": "La forme `trois milles ; deux mille` est fautive ici. La règle décrite dans le corrigé exige la réponse 4.",
+      "4": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-043",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "nombres_traits_union",
+      "mechanism_id": "mille_invariable",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "rappel_regle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": "UNK",
+        "4": null
+      }
+    },
+    "stem": "L’enquête porte sur ___ réponses et le rapport en cite près de ___ dans ses annexes."
+  },
+  {
+    "id": "solh50-044",
+    "rule": "sujetverbe",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Choisissez la forme qui complète correctement la phrase.",
+    "options": [
+      {
+        "key": "1",
+        "text": "figurent"
+      },
+      {
+        "key": "2",
+        "text": "figure"
+      },
+      {
+        "key": "3",
+        "text": "figurerait"
+      },
+      {
+        "key": "4",
+        "text": "figurerais"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "1",
+    "explanation": "Règle : Le sujet postposé reste le donneur de personne et de nombre du verbe. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 1.",
+    "why": {
+      "1": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "2": "La forme `figure` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "3": "La forme `figurerait` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "4": "La forme `figurerais` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-044",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "accord_sujet_verbe",
+      "mechanism_id": "sujet_inverse",
+      "detail_id": "core",
+      "tense_id": "present",
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "À l’heure actuelle, dans le dossier ___ les trois attestations que réclame le service cantonal."
+  },
+  {
+    "id": "solh50-045",
+    "rule": "eleves",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Quelle production d’élève est correctement écrite ?",
+    "options": [
+      {
+        "key": "1",
+        "text": "Il faut que le narrateur comprend les conséquences de son choix."
+      },
+      {
+        "key": "2",
+        "text": "Le témoin affirme qu’il a reconnu la voix dès le premier appel."
+      },
+      {
+        "key": "3",
+        "text": "Bien que la scène est brève, elle modifie tout le récit."
+      },
+      {
+        "key": "4",
+        "text": "Si le personnage aurait hésité, la fin serait moins brutale."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "2",
+    "explanation": "Règle : Repère d’abord le déclencheur du mode, puis situe les actions avant de choisir le temps. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 2.",
+    "why": {
+      "1": "La forme `Il faut que le narrateur comprend les conséquences de son choix.` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "2": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "3": "La forme `Bien que la scène est brève, elle modifie tout le récit.` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "4": "La forme `Si le personnage aurait hésité, la fin serait moins brutale.` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-045",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "revision_transversale",
+      "mechanism_id": "revision_modes_et_temps",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "copie_eleve",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "revision_authentique",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": null,
+        "3": "UNK",
+        "4": "UNK"
+      }
+    }
+  },
+  {
+    "id": "solh50-046",
+    "rule": "orthographe",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Choisissez la suite qui complète correctement la phrase.",
+    "options": [
+      {
+        "key": "1",
+        "text": "davantage ; d’avantage"
+      },
+      {
+        "key": "2",
+        "text": "d’avantage ; d’avantage"
+      },
+      {
+        "key": "3",
+        "text": "d’avantages ; davantage"
+      },
+      {
+        "key": "4",
+        "text": "davantage ; davantage"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "3",
+    "explanation": "Règle : l’adverbe attendu s’écrit en un mot; la locution nominale exprimant une plus grande quantité s’écrit en deux mots. Dans cette phrase : le contexte appelle l’adverbe. Donc : la réponse correcte est 4.",
+    "why": {
+      "1": "La forme `davantage ; d’avantage` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
+      "2": "La forme `d’avantage ; d’avantage` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
+      "3": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "4": "La forme `davantage ; davantage` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-046",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "davantage_davantage",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "jugement_semantique",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": null,
+        "4": "UNK"
+      }
+    },
+    "stem": "Le nouveau dispositif offre plusieurs ___ concrets aux petites communes, qui pourront ainsi participer ___."
+  },
+  {
+    "id": "solh50-047",
+    "rule": "ponctuation",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Quelle phrase est correctement ponctuée ?",
+    "options": [
+      {
+        "key": "1",
+        "text": "Le dossier comprend : une lettre, deux attestations et le formulaire signé."
+      },
+      {
+        "key": "2",
+        "text": "Le dossier comprend ; une lettre, deux attestations et le formulaire signé."
+      },
+      {
+        "key": "3",
+        "text": "Le dossier comprend, une lettre, deux attestations et le formulaire signé."
+      },
+      {
+        "key": "4",
+        "text": "Le dossier comprend trois pièces : une lettre, deux attestations et le formulaire signé."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "4",
+    "explanation": "Règle : Une annonce syntaxiquement complète introduit la liste par deux-points. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 4.",
+    "why": {
+      "1": "La forme `Le dossier comprend : une lettre, deux attestations et le formulaire signé.` est fautive ici. La règle décrite dans le corrigé exige la réponse 4.",
+      "2": "La forme `Le dossier comprend ; une lettre, deux attestations et le formulaire signé.` est fautive ici. La règle décrite dans le corrigé exige la réponse 4.",
+      "3": "La forme `Le dossier comprend, une lettre, deux attestations et le formulaire signé.` est fautive ici. La règle décrite dans le corrigé exige la réponse 4.",
+      "4": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-047",
+      "profile": "perfectionnement",
+      "domain": "ponctuation",
+      "family": "ponctuation",
+      "mechanism_id": "enumeration_deux_points",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "copie_eleve",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "revision_authentique",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": "UNK",
+        "4": null
+      }
+    }
+  },
+  {
+    "id": "solh50-048",
+    "rule": "connecteurs",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Choisissez le connecteur qui complète correctement la phrase.",
+    "options": [
+      {
+        "key": "1",
+        "text": "par conséquent"
+      },
+      {
+        "key": "2",
+        "text": "en revanche"
+      },
+      {
+        "key": "3",
+        "text": "d’ailleurs"
+      },
+      {
+        "key": "4",
+        "text": "en effet"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "1",
+    "explanation": "Règle : Le connecteur introduit le résultat logique de ce qui précède, et non sa cause. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 1.",
+    "why": {
+      "1": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "2": "La forme `en revanche` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "3": "La forme `d’ailleurs` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "4": "La forme `en effet` est fautive ici. La règle décrite dans le corrigé exige la réponse 1.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-048",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "connecteurs_logiques",
+      "mechanism_id": "consequence",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "jugement_semantique",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "L’accès au bâtiment sera fermé dès dix-huit heures ; ___, les participants devront quitter les salles avant cette heure."
+  },
+  {
+    "id": "solh50-049",
+    "rule": "discours",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Choisissez la transposition correcte au discours indirect.",
+    "options": [
+      {
+        "key": "1",
+        "text": "Nora a dit à Marc qu’elle déposerait sa demande avec ses annexes."
+      },
+      {
+        "key": "2",
+        "text": "Nora a dit à Marc qu’elle déposerait la demande de Marc avec ses propres annexes."
+      },
+      {
+        "key": "3",
+        "text": "Nora a dit à Marc que je déposerais ta demande avec mes annexes."
+      },
+      {
+        "key": "4",
+        "text": "Nora a dit à Marc qu’elle déposera la demande de Marc avec les annexes de Marc."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "2",
+    "explanation": "Règle : Au discours indirect, les personnes et les possessifs se recalculent selon celui qui parle et celui à qui l’on parle. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 2.",
+    "why": {
+      "1": "La forme `Nora a dit à Marc qu’elle déposerait sa demande avec ses annexes.` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "2": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "3": "La forme `Nora a dit à Marc que je déposerais ta demande avec mes annexes.` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "4": "La forme `Nora a dit à Marc qu’elle déposera la demande de Marc avec les annexes de Marc.` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-049",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "discours_indirect",
+      "mechanism_id": "pronoms_et_possessifs",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "jugement_semantique",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": null,
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Lundi, Nora a dit à Marc : « Je déposerai ta demande avec mes annexes. »"
+  },
+  {
+    "id": "solh50-050",
+    "rule": "orthographe",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Quelle phrase contient la graphie correcte ?",
+    "options": [
+      {
+        "key": "1",
+        "text": "Le secrétariat transmettra une copie de la correspondence aux membres."
+      },
+      {
+        "key": "2",
+        "text": "Le secrétariat transmettra une copie de la correspodance aux membres."
+      },
+      {
+        "key": "3",
+        "text": "Le secrétariat transmettra une copie de la correspondance aux membres."
+      },
+      {
+        "key": "4",
+        "text": "Le secrétariat transmettra une copie de la corespondance aux membres."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "3",
+    "explanation": "Règle : La graphie du mot impose une consonne simple ou doublée ; les formes analogiques doivent être écartées. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 3.",
+    "why": {
+      "1": "La forme `Le secrétariat transmettra une copie de la correspondence aux membres.` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
+      "2": "La forme `Le secrétariat transmettra une copie de la correspodance aux membres.` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
+      "3": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
+      "4": "La forme `Le secrétariat transmettra une copie de la corespondance aux membres.` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
+      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
+      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260731-0050",
+      "slot_id": "sh50-050",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "orthographe_lexicale",
+      "mechanism_id": "consonne_double",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "copie_eleve",
+      "communicative_purpose": "vérifier une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "revision_authentique",
+      "writing_situation": null,
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",

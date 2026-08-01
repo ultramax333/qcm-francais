@@ -11,11 +11,13 @@ taux d'erreur, séances concernées, récence, réussites depuis la dernière er
 et distribution des distracteurs choisis. Chaque distracteur conserve son option,
 son `misconception_id` et son compteur ; une cause absente reste `UNK`.
 
-État local et production vérifié le 31.07.2026 : version `1.16`, cache
-`qcm-op001-v116`, 1 690 questions uniques et release
-`questions-20260731-7e5d0453`. Les 1 690 questions portent une famille et un
-mécanisme grammatical fermés. Les détails, temps et causes de distracteur non
-prouvés restent `null` ou `UNK`.
+Production vérifiée le 31.07.2026 : version `1.16`, cache `qcm-op001-v116`,
+1 690 questions et release `questions-20260731-7e5d0453`. État local en attente
+de publication au 01.08.2026 : **1 740 questions uniques**, release
+`questions-20260731-7946ec4f`. Toutes portent une famille et un mécanisme
+grammatical fermés. Les détails, temps et causes de distracteur non prouvés
+restent `null` ou `UNK`. Le prochain déploiement devra incrémenter ensemble la
+version de l'application et le cache PWA.
 
 ## Utilisation locale
 Ouvre `index.html` via un petit serveur statique (les Service Workers ne fonctionnent pas
@@ -75,7 +77,7 @@ intégration manuelle de `questions.js` rendrait l'identifiant de banque obsolè
   ils ne sont jamais appliqués sans métadonnée canonique correspondante.
 - `error-profile.js` — agrégation cumulative locale, sans dupliquer les séances
   dans la mémoire de génération
-- `questions.js` — la banque active de 1 690 questions
+- `questions.js` — la banque locale active de 1 740 questions
 - `config.js` — configuration (ID client Google Drive)
 - `manifest.json`, `sw.js`, `icon.svg` — installation PWA / hors-ligne
 - `static-server.ps1` — serveur statique local (développement, Windows)
