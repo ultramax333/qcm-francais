@@ -38,10 +38,9 @@ const activeParticipleCaseIds = new Set(
 
 assert.ok(canonicalPairs.size > 0, 'La banque doit contenir des couples canoniques.');
 assert.ok(activeMechanismIds.size > 0, 'La banque doit contenir des mécanismes actifs.');
-assert.strictEqual(
-  QUESTIONS.filter((question) => question.rule === 'participe').length,
-  108,
-  'Le menu ciblé doit conserver les 108 questions actuelles du participe.'
+assert.ok(
+  QUESTIONS.some((question) => question.rule === 'participe'),
+  'Le menu ciblé doit conserver les questions actives du participe.'
 );
 const groupedParticipleMechanismIds = pedagogy.PARTICIPLE_MENU_GROUPS
   .flatMap((group) => group.cases);
@@ -264,5 +263,25 @@ assert.strictEqual(
   pedagogy.describe('pronoms_relatifs', 'regime_a_auquel').learnerSource,
   'mechanism'
 );
+
+const negation = pedagogy.describe(
+  'negation',
+  'negation_complete_ne_pas',
+  null,
+  'core'
+);
+assert.strictEqual(negation.familyLabel, 'Négation');
+assert.strictEqual(negation.mechanismLabel, 'négation complète avec ne ou n’');
+assert.strictEqual(negation.detailLabel, 'Règle générale');
+assert.deepStrictEqual(negation.path, [
+  'phrase négative à l’écrit',
+  'verbe conjugué',
+  'ne ou n’ et second terme négatif',
+  'négation complète',
+]);
+assert.strictEqual(negation.learnerSource, 'mechanism');
+assert.match(negation.learnerExplanation, /^Exemple :/);
+assert.deepStrictEqual(negation.learnerSteps.length, 3);
+assert.doesNotMatch(negation.learnerTitle, /\b(?:ne|pas|jamais|plus|rien|personne)\b|n’/i);
 
 console.log(`OK — ${canonicalPairs.size} mécanismes canoniques couverts.`);

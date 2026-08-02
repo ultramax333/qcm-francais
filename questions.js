@@ -7387,7 +7387,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-    "mechanism_id": "matrice_avoir_etre",
+      "mechanism_id": "matrice_avoir_etre",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -8047,8 +8047,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-    "mechanism_id": "participe_adjectival_selon_position",
-    "detail_id": "zone_facultative",
+      "mechanism_id": "participe_adjectival_selon_position",
+      "detail_id": "zone_facultative",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -8407,8 +8407,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-    "mechanism_id": "pronominal_se_coi",
-    "detail_id": "cod_avant",
+      "mechanism_id": "pronominal_se_coi",
+      "detail_id": "cod_avant",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -8527,8 +8527,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-    "mechanism_id": "pronominal_se_coi",
-    "detail_id": "contraste_place_cod",
+      "mechanism_id": "pronominal_se_coi",
+      "detail_id": "contraste_place_cod",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -8707,8 +8707,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-    "mechanism_id": "pronominal_se_coi",
-    "detail_id": "sans_cod",
+      "mechanism_id": "pronominal_se_coi",
+      "detail_id": "sans_cod",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -8947,7 +8947,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-    "mechanism_id": "matrice_participes_speciaux",
+      "mechanism_id": "matrice_participes_speciaux",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -9247,8 +9247,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-    "mechanism_id": "participe_attribut_cod",
-    "detail_id": "pronominal",
+      "mechanism_id": "participe_attribut_cod",
+      "detail_id": "pronominal",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -9367,8 +9367,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-    "mechanism_id": "participe_attribut_cod",
-    "detail_id": "avoir",
+      "mechanism_id": "participe_attribut_cod",
+      "detail_id": "avoir",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -35467,8 +35467,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-    "mechanism_id": "participe_attribut_cod",
-    "detail_id": "contraste",
+      "mechanism_id": "participe_attribut_cod",
+      "detail_id": "contraste",
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
@@ -70884,7 +70884,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-    "mechanism_id": "mesure_duree_prix",
+      "mechanism_id": "mesure_duree_prix",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -74304,7 +74304,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-    "mechanism_id": "mesure_duree_prix",
+      "mechanism_id": "mesure_duree_prix",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -77904,7 +77904,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-    "mechanism_id": "impersonnel_participe_invariable",
+      "mechanism_id": "impersonnel_participe_invariable",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -79104,8 +79104,8 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-    "mechanism_id": "participe_adjectival_selon_position",
-    "detail_id": "zone_facultative",
+      "mechanism_id": "participe_adjectival_selon_position",
+      "detail_id": "zone_facultative",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -85584,7 +85584,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-    "mechanism_id": "fait_suivi_infinitif",
+      "mechanism_id": "fait_suivi_infinitif",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -86544,7 +86544,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-    "mechanism_id": "avoir_cvd_avant",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -105886,6 +105886,286 @@ const QUESTIONS = [
         "4": "UNK"
       }
     }
+  },
+  {
+    "id": "cand-pp-pilot-slot-01-f046fd60",
+    "rule": "participe",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "Élaboré"
+      },
+      {
+        "key": "2",
+        "text": "Élaborées"
+      },
+      {
+        "key": "3",
+        "text": "Élaborés"
+      },
+      {
+        "key": "4",
+        "text": "Élaborée"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "2",
+    "explanation": "Règle : Employé sans auxiliaire, le participe passé s’accorde en genre et en nombre avec le nom qu’il caractérise.\nMéthode : Repérez ce qui est décrit par le participe, puis cherchez le nom principal de ce groupe. Les noms placés dans ses compléments ne commandent pas l’accord.\nDans cette phrase : Qu’est-ce qui est élaboré à partir d’une synthèse ? « les mesures de soutien ». Le nom principal « mesures » est féminin pluriel. « synthèse », « bilan » et « responsables » apportent d’autres précisions, mais aucun ne désigne ce qui est élaboré. Le participe prend donc les marques du féminin et du pluriel : -ée + -s.\nDonc : Il faut écrire « Élaborées » et choisir la réponse 2.",
+    "why": {
+      "1": "`Élaboré` est au masculin singulier : il ne reprend ni le féminin ni le pluriel de « les mesures de soutien ». Il peut résulter d’un non-accord ou d’une attraction par « bilan » ; dans les deux cas, la forme attendue est « Élaborées ».",
+      "2": "« Élaborées » est au féminin pluriel, comme « les mesures de soutien », le groupe caractérisé par le participe. Cette option porte les deux marques requises : -e et -s.",
+      "3": "`Élaborés` est au masculin pluriel, comme si « responsables » commandait l’accord. Or ce nom précise le bilan ; ce sont « les mesures de soutien », féminin pluriel, qui sont élaborées.",
+      "4": "`Élaborée` est au féminin singulier, comme si le participe se rapportait à « synthèse ». La synthèse indique le point de départ ; le groupe élaboré est « les mesures de soutien », au pluriel.",
+      "A": "« Aucune » est exclu puisque l’option 2, « Élaborées », s’accorde correctement au féminin pluriel avec « les mesures de soutien ».",
+      "T": "« Toutes » est exclu : seule l’option 2 porte à la fois la marque du féminin et celle du pluriel exigées par « les mesures de soutien »."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260801-1190",
+      "slot_id": "pp-pilot-slot-01",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "accord_participe_passe",
+      "mechanism_id": "participe_sans_auxiliaire",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "réviser une formulation dans un compte rendu institutionnel",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": null,
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "___ à partir d’une synthèse du bilan transmis par les responsables de secteur, les mesures de soutien seront détaillées dans le compte rendu final."
+  },
+  {
+    "id": "candidate-pp119-s02-v3-6f8ec9a7",
+    "rule": "participe",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "xhigh",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "Arrêté"
+      },
+      {
+        "key": "2",
+        "text": "Arrêtés"
+      },
+      {
+        "key": "3",
+        "text": "Arrêtées"
+      },
+      {
+        "key": "4",
+        "text": "Arrêtée"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "4",
+    "explanation": "Règle : Employé sans auxiliaire, le participe passé s’accorde en genre et en nombre avec le nom qu’il caractérise. Lorsqu’il ouvre un groupe détaché, il se rapporte au groupe nominal précisé après la virgule.\nMéthode : Repérez ce groupe nominal, puis réduisez-le à son nom principal. Ne faites pas l’accord avec un nom situé dans un complément, même s’il est plus proche du participe.\nDans cette phrase : Le groupe « Arrêtée après consultation des titulaires » se rapporte à « la répartition des périodes d’appui entre les différents groupes ». En retirant les compléments, il reste « la répartition » : « répartition » est féminin singulier. « titulaires », « périodes », « appui » et « groupes » ne commandent donc pas l’accord.\nDonc : Le participe doit être au féminin singulier : « Arrêtée ». Il faut choisir la réponse 4.",
+    "why": {
+      "1": "`Arrêté` est au masculin singulier. Le participe se rapporte à « la répartition », féminin singulier, et non à « appui » ; il faut écrire « Arrêtée ».",
+      "2": "`Arrêtés` est au masculin pluriel, par attraction possible avec « groupes » ou « titulaires ». Ces noms appartiennent à des compléments ; le support est « la répartition », féminin singulier.",
+      "3": "`Arrêtées` est au féminin pluriel, comme si « périodes » commandait l’accord. Or « périodes » complète « répartition » ; le nom principal reste « répartition », au singulier.",
+      "4": "« Arrêtée » est au féminin singulier et s’accorde avec « la répartition », le groupe auquel se rapporte le participe employé sans auxiliaire.",
+      "A": "« Aucune » est exclu puisque l’option 4, « Arrêtée », réalise l’accord féminin singulier exigé par « la répartition ».",
+      "T": "« Toutes » est exclu : seule l’option 4 s’accorde avec « la répartition » ; les autres formes ont un genre ou un nombre inadéquat."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260801-1190",
+      "slot_id": "pp-pilot-slot-02",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "accord_participe_passe",
+      "mechanism_id": "participe_sans_auxiliaire",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "note_administrative",
+      "communicative_purpose": "relire une note destinée aux membres d'une équipe pédagogique",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": "UNK",
+        "4": null
+      }
+    },
+    "stem": "___ après consultation des titulaires, la répartition des périodes d’appui entre les différents groupes sera communiquée vendredi."
+  },
+  {
+    "id": "cand-pp-pilot-slot-03-29322187",
+    "rule": "participe",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "noté"
+      },
+      {
+        "key": "2",
+        "text": "notée"
+      },
+      {
+        "key": "3",
+        "text": "notés"
+      },
+      {
+        "key": "4",
+        "text": "notées"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "1",
+    "explanation": "Règle : Avec l’auxiliaire avoir, le participe passé s’accorde avec le CVD placé avant le verbe. Toutefois, lorsque l’ reprend une idée ou une proposition entière plutôt qu’un nom, il a une valeur neutre et le participe reste au masculin singulier.\nMéthode : Identifiez ce que remplace l’. Si l’on peut reformuler par « cela » et reprendre tout un fait, ne cherchez pas un nom voisin avec lequel accorder le participe.\nDans cette phrase : Dans « Je l’ai bien ______ », l’ ne remplace ni « l’équipe », ni « les horaires », ni « les séances ». Il reprend l’information complète : les nouveaux horaires seront envoyés à l’équipe cet après-midi. La reformulation « J’ai bien noté cela » confirme la reprise neutre.\nDonc : Le participe reste au masculin singulier : « noté ». Il faut choisir la réponse 1.",
+    "why": {
+      "1": "« noté » convient : l’ reprend toute l’information annoncée, comme « cela ». Cette reprise neutre maintient le participe au masculin singulier.",
+      "2": "`notée` suppose que l’ reprend un nom féminin singulier. Ici, l’ ne remplace pas « l’équipe » : il reprend le fait entier ; il faut donc « noté ».",
+      "3": "`notés` suppose un accord avec « les nouveaux horaires ». Une reprise directe de ce groupe demanderait « les » ; l’ reprend ici l’information entière, de manière neutre.",
+      "4": "`notées` résulte d’une attraction possible par « les séances ». Ce groupe n’est pas repris par l’ ; le pronom équivaut ici à « cela », donc le participe reste « noté ».",
+      "A": "« Aucune » est exclu puisque l’option 1, « noté », convient à la reprise neutre de l’information entière.",
+      "T": "« Toutes » est exclu : seule « noté » convient ; les trois autres formes attribuent à l’ le genre ou le nombre d’un nom qu’il ne reprend pas."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260801-1190",
+      "slot_id": "pp-pilot-slot-03",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_pronom_l",
+      "detail_id": "neutre",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "courriel",
+      "communicative_purpose": "vérifier une formulation dans un courriel professionnel",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Dans un courriel professionnel, une collaboratrice répond : « Vous m’avez indiqué que les nouveaux horaires des séances de formation seraient envoyés à l’équipe cet après-midi. Je l’ai bien ______ et je surveillerai ma messagerie. »"
+  },
+  {
+    "id": "cand-pp-s04-rev-a5b58922",
+    "rule": "participe",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Complétez cet extrait d’article.",
+    "options": [
+      {
+        "key": "1",
+        "text": "l’a confirmée"
+      },
+      {
+        "key": "2",
+        "text": "les a confirmées"
+      },
+      {
+        "key": "3",
+        "text": "l’a confirmé"
+      },
+      {
+        "key": "4",
+        "text": "les a confirmés"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "3",
+    "explanation": "Règle : Avec l’auxiliaire avoir, le participe passé s’accorde avec le CVD placé avant le verbe. Toutefois, lorsque l’ reprend une proposition entière plutôt qu’un nom, il a une valeur neutre et le participe reste au masculin singulier.\nMéthode : Déterminez précisément ce que reprend le pronom, en vous aidant du sens. Si l’ peut être remplacé par « cela » et résume un fait complet, il ne transmet ni genre ni nombre au participe.\nDans cette phrase : L’évaluation confirme le constat déjà établi : « ces prévisions ne s’étaient pas réalisées ». Dans « L’évaluation l’a confirmé », l’ reprend ce fait entier, comme dans « L’évaluation a confirmé cela ». Il ne reprend ni « l’évaluation », ni « les prévisions », ni « les trajets », ni « les changements ». Le sujet féminin « L’évaluation » ne commande pas non plus l’accord avec avoir.\nDonc : La reprise est neutre ; il faut écrire « l’a confirmé » et choisir la réponse 3.",
+    "why": {
+      "1": "`l’a confirmée` accorde le participe au féminin singulier, comme avec « L’évaluation ». Or le sujet ne commande pas l’accord avec avoir, et l’ reprend ici un fait entier ; il faut « l’a confirmé ».",
+      "2": "`les a confirmées` ferait reprendre à « les » les prévisions et signifierait que l’évaluation les valide. Le texte confirme au contraire leur non-réalisation, reprise globalement par l’.",
+      "3": "« l’a confirmé » convient : l’ reprend la proposition « que ces prévisions ne s’étaient pas réalisées ». Cette reprise neutre maintient « confirmé » au masculin singulier.",
+      "4": "`les a confirmés` ferait reprendre à « les » les trajets ou les changements et les présenterait comme confirmés. Or le texte nie leur réalisation ; l’évaluation confirme ce constat entier par l’.",
+      "A": "« Aucune » est exclu puisque l’option 3, « l’a confirmé », reprend correctement le fait entier de la non-réalisation.",
+      "T": "« Toutes » est exclu : seule l’option 3 respecte à la fois le sens du texte et la reprise neutre de toute la proposition."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260801-1190",
+      "slot_id": "pp-pilot-slot-04",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_pronom_l",
+      "detail_id": "neutre",
+      "tense_id": "passe_compose",
+      "difficulty": "niveau_examen",
+      "source_genre": "article",
+      "communicative_purpose": "choisir une formulation précise dans un texte argumentatif",
+      "cognitive_mode": "jugement_semantique",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": null,
+        "4": "UNK"
+      }
+    },
+    "stem": "Avant le lancement d’une nouvelle ligne de bus, la ville annonçait des trajets plus courts, une fréquentation accrue et des recettes plus élevées. Un audit indépendant avait déjà établi que ces prévisions ne s’étaient pas réalisées. L’évaluation menée un an plus tard ___ : aucun des changements annoncés ne s’était produit."
   }
 ];
 

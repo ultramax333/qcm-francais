@@ -142,7 +142,13 @@
       'Mécanisme',
       `${description.mechanismLabel} · ${description.mechanismId || 'UNK'}`
     );
-    appendTechnicalTerm(list, 'Détail', description.detailId || 'non renseigné');
+    appendTechnicalTerm(
+      list,
+      'Détail',
+      description.detailId
+        ? `${description.detailLabel || description.detailId} · ${description.detailId}`
+        : 'non renseigné'
+    );
     appendTechnicalTerm(
       list,
       'Temps',

@@ -5,7 +5,7 @@
 }(typeof window !== 'undefined' ? window : globalThis, function () {
   'use strict';
 
-  const LABELS_VERSION = 'hep-pedagogy-labels/2.2';
+  const LABELS_VERSION = 'hep-pedagogy-labels/2.3';
 
   const TENSES = {
     present: 'présent',
@@ -34,6 +34,7 @@
     gentiles_majuscules: 'Majuscule des gentilés',
     homophones_grammaticaux: 'Homophones grammaticaux',
     interrogation_indirecte: 'Interrogation indirecte',
+    negation: 'Négation',
     nombres_traits_union: 'Écriture des nombres',
     orthographe_lexicale: 'Orthographe lexicale',
     ponctuation: 'Ponctuation',
@@ -58,6 +59,7 @@
     gentiles_majuscules: 'Distingue le nom de personne, l’adjectif et la langue avant de choisir la majuscule.',
     homophones_grammaticaux: 'Identifie la catégorie et la fonction du mot, puis utilise un test de remplacement.',
     interrogation_indirecte: 'Après le verbe introducteur, conserve une subordonnée à l’ordre déclaratif.',
+    negation: 'Dans un écrit scolaire ou formel, vérifie que la négation entoure correctement le verbe conjugué.',
     nombres_traits_union: 'Décompose le nombre et applique séparément la règle de chaque élément.',
     orthographe_lexicale: 'Compare la forme attendue au sens et à la construction de la phrase.',
     ponctuation: 'Repère les groupes syntaxiques et la relation entre eux avant de placer le signe.',
@@ -556,6 +558,13 @@
       'Accorder « tout » selon son rôle',
       'Exemple : « tous les élèves », « elles sont toutes venues », mais « elles sont tout étonnées ». « Tout » s’accorde devant un nom ou quand il le remplace ; comme adverbe au sens de « complètement », il reste généralement inchangé.',
       ['Repère ce que « tout » accompagne ou remplace.', 'Devant un nom ou à la place d’un nom, accorde-le.', 'S’il signifie « complètement », laisse-le généralement inchangé et vérifie l’exception devant un adjectif féminin commençant par une consonne ou un h aspiré.']
+    ),
+
+    // Négation
+    negation_complete_ne_pas: learnerGuide(
+      'Construire une négation complète à l’écrit',
+      'Exemple : « Nous n’avons jamais oublié ce rendez-vous. » Dans un écrit scolaire ou formel, la négation comporte « ne » ou « n’ » avant le verbe conjugué et un second terme négatif comme « pas », « plus », « jamais », « rien » ou « personne ».',
+      ['Repère le verbe conjugué sur lequel porte la négation.', 'Place « ne » devant une consonne ou « n’ » devant une voyelle ou un h muet.', 'Vérifie que le second terme négatif attendu est bien présent et qu’il porte sur le même verbe.']
     ),
 
     // Interrogation indirecte
@@ -1066,6 +1075,15 @@
       .join(' ');
   }
 
+  function humanizeDetailId(detailId) {
+    if (!detailId) return null;
+    if (detailId === 'core') return 'Règle générale';
+    return String(detailId)
+      .split('_')
+      .map((token) => TOKEN_LABELS[token] || token)
+      .join(' ');
+  }
+
   // Organisation pédagogique de la famille « Accord du participe passé » sur
   // l’écran d’accueil. Les identifiants restent ceux de la taxonomie canonique :
   // l’interface n’invente donc aucune seconde classification. Un mécanisme sans
@@ -1194,6 +1212,7 @@
     coordination_interrogative: ['coordination de questions indirectes', 'Après le verbe introducteur, chaque élément coordonné doit garder une construction d’interrogation indirecte.'],
     cent_vingt_mille: ['accord de cent, vingt et mille', 'Cent et vingt prennent s seulement lorsqu’ils sont multipliés et terminent le nombre ; mille reste toujours invariable.'],
     mille_invariable: ['mille toujours invariable', 'Le nombre mille ne prend jamais de s, même lorsqu’il est multiplié.'],
+    negation_complete_ne_pas: ['négation complète avec ne ou n’', 'Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte sur ce verbe.'],
     adverbes_amment_emment: ['adverbes en -amment / -emment', 'Pars de l’adjectif : -ant donne souvent -amment et -ent donne -emment, avec la même prononciation.'],
     apposition: ['apposition détachée', 'Encadre de virgules le groupe qui ajoute une précision détachable sur un nom.'],
     enumeration_deux_points: ['deux-points avant une énumération', 'Place les deux-points après une annonce complète qui introduit la liste.'],
@@ -1272,6 +1291,7 @@
     coordination_interrogative: ['verbe interrogatif introducteur', 'deux interrogatives coordonnées', 'subordination de chaque membre', 'ordre déclaratif'],
     cent_vingt_mille: ['nombre composé', 'cent / vingt / mille', 'position et multiplication à établir', 'marque du pluriel'],
     mille_invariable: ['nombre composé', 'mille', 'multiplication éventuelle', 'mille invariable'],
+    negation_complete_ne_pas: ['phrase négative à l’écrit', 'verbe conjugué', 'ne ou n’ et second terme négatif', 'négation complète'],
     adverbes_amment_emment: ['adjectif source', 'finale non précisée', 'dérivation adverbiale', '-amment ou -emment'],
     apposition: ['groupe nominal apposé', 'précision détachable', 'lien au nom support', 'virgules d’encadrement'],
     enumeration_deux_points: ['phrase d’annonce complète', 'relation d’explicitation', 'énumération annoncée', 'deux-points'],
@@ -1544,6 +1564,7 @@
         familyId: family || 'UNK',
         mechanismId: mechanismId || 'UNK',
         detailId: detailId || null,
+        detailLabel: humanizeDetailId(detailId),
         tenseId: tenseId || null,
         familyLabel: FAMILIES[family] || 'Famille grammaticale non renseignée',
         mechanismLabel: 'Mécanisme précis non renseigné',
@@ -1586,6 +1607,7 @@
       familyLabel: FAMILIES[family] || family,
       mechanismLabel: mechanism[0],
       detailId: detailId || null,
+      detailLabel: humanizeDetailId(detailId),
       tenseId: tenseId || null,
       tenseLabel: tenseId ? (TENSES[tenseId] || null) : null,
       path,
