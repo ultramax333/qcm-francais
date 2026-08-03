@@ -10610,13 +10610,13 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "« s'inquiéter DE quelque chose » → « rien dont vous deviez vous inquiéter ».",
+    "explanation": "« S'inquiéter » se construit avec « de » : on s'inquiète de quelque chose. Le relatif qui reprend ce complément est donc « dont » : « rien dont vous deviez vous inquiéter ».",
     "why": {
       "1": "« que » suppose un verbe direct : « s'inquiéter » exige « de ».",
       "2": "Correct : « s'inquiéter de » → dont.",
       "3": "« à quoi » : mauvaise préposition.",
       "4": "« pour quoi » : mauvaise préposition.",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
+      "A": "On dit « s'inquiéter de quelque chose » : la préposition « de » est reprise par « dont », option 2. « Aucune » ne convient donc pas.",
       "T": "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
     },
     "gen": {
@@ -16327,7 +16327,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "ordre_pronoms_complements",
+      "mechanism_id": "locution_pronominale_figee",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -18169,15 +18169,15 @@ const QUESTIONS = [
         "text": "Toutes"
       }
     ],
-    "answer": "A",
-    "explanation": "Quatre accords sujet-verbe fautifs : « l'équipe… A remporté », « les supporters… criAIENT », « chaque… et chaque… » impose le singulier (A reçu), « c'est nous qui AVONS gagné ». Réponse : Aucune.",
+    "answer": "3",
+    "explanation": "La phrase 3 est correcte : deux sujets singuliers coordonnés par « et » forment ici un sujet pluriel, même si chacun est précédé de « chaque » ; on écrit donc « chaque joueur et chaque remplaçant ont reçu ». Ailleurs : « l'équipe a remporté », « les supporters criaient » et « c'est nous qui avons gagné ».",
     "why": {
       "1": "« ont » : le sujet est « l'équipe » → a remporté.",
       "2": "« criait » : les supporters → criaient.",
-      "3": "« ont reçu » : chaque… et chaque… → a reçu (singulier).",
+      "3": "Correct : « chaque joueur » et « chaque remplaçant » désignent deux groupes coordonnés ; le verbe se met au pluriel : « ont reçu ».",
       "4": "« qui a » : après « nous qui » → avons.",
-      "A": "Correct : les quatre accords sont fautifs.",
-      "T": "Aucune n'est correcte."
+      "A": "La phrase 3 est correcte ; « Aucune » ne convient donc pas.",
+      "T": "Les phrases 1, 2 et 4 comportent un mauvais accord ; « Toutes » ne convient pas."
     },
     "gen": {
       "model": "Fable 5",
@@ -18193,7 +18193,7 @@ const QUESTIONS = [
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
-        "3": "UNK",
+        "3": null,
         "4": "UNK"
       }
     }
@@ -18470,13 +18470,13 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "« Quels que soient les résultats » : correct (deux mots, accordé). Ailleurs : « on les APPLIQUE » (sujet on), « AUXQUELS » (forme soudée), « donnÉS » (COD antéposé).",
+    "explanation": "La phrase 4 est correcte : dans « quels que soient », « quels » s'accorde avec « les résultats » et « soient » est au subjonctif. Ailleurs, il faut écrire « on les applique », « auxquels » et « les conseils qu'il nous a donnés ».",
     "why": {
       "1": "« appliquent » : le sujet est « on » → applique.",
       "2": "« auquels » : la forme est « auxquels ».",
       "3": "« donné » : les conseils antéposés → donnés.",
       "4": "Correcte : quels que + être, accordé au pluriel.",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
+      "A": "La phrase 4, « Quels que soient les résultats… », est correctement accordée ; « Aucune » ne convient donc pas.",
       "T": "Les options 1, 2 et 3 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
     },
     "gen": {
@@ -23690,9 +23690,9 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Adjectif « somnolents » (état, variable) ; participe « somnolant » (action en cours, avec complément de lieu).",
+    "explanation": "Le premier mot décrit l'état des élèves : c'est l'adjectif « somnolents », accordé au masculin pluriel. Le second garde le complément « sur leurs cahiers » et exprime ce qu'ils font : c'est le participe présent invariable « somnolant ». L'option 2 est correcte.",
     "why": {
-      "1": "Inversé.",
+      "1": "Les deux formes sont inversées : « somnolents » décrit l'état des élèves et s'accorde ; « somnolant sur leurs cahiers » exprime l'action et reste invariable.",
       "2": "Correct : adjectif accordé + participe invariable.",
       "3": "2e segment : action → somnolant.",
       "4": "1er segment : état → somnolents.",
@@ -24776,7 +24776,7 @@ const QUESTIONS = [
       "2": "« Malgré que les critiques répétées » ne forme pas une proposition : il manque un verbe après « que ».",
       "3": "« Bien que » introduit une proposition avec un verbe, par exemple « bien que les critiques soient répétées » ; il ne convient pas devant ce groupe nominal seul.",
       "4": "« Quoique » introduit lui aussi une proposition avec un verbe ; « quoique les critiques répétées » est incomplet ici.",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
+      "A": "« Malgré » peut être suivi directement du groupe nominal « les critiques répétées » : l'option 1 est correcte, donc « Aucune » ne convient pas.",
       "T": "Les options 2, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
     },
     "gen": {
@@ -34915,7 +34915,7 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Dans la tournure d'insistance « c'est … que », le complément déjà introduit par sa préposition (« à Genève ») se reprend par « que » — jamais par « où ». « avoir besoin DE » → dont ; « penser À » → auquel.",
+    "explanation": "Dans la tournure d'insistance « c'est … que », le complément déjà introduit par sa préposition (« à Genève ») se reprend par « que » — jamais par « où ». Ailleurs, « avoir besoin de » appelle « dont », et « penser à quelqu'un » appelle « à qui ».",
     "why": {
       "1": "« où » fait double emploi : la mise en relief exige « c'est à Genève QUE ».",
       "2": "« que » : « avoir besoin de » → « dont nous avons besoin ».",
@@ -39885,12 +39885,12 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Se est le CVD réciproque de rencontrer et reprend un sujet féminin pluriel; le participe s'accorde.",
+    "explanation": "Dans « elles se sont aidées », le verbe « aider quelqu'un » se construit directement. Le pronom « se » est donc le CVD réciproque : chacune a aidé l'autre. Placé avant le participe et représentant un féminin pluriel, il entraîne l'accord « aidées ».",
     "why": {
-      "1": "Chaîne/reconstruction : Rencontrer, retrouver, saluer et aider sont directs; se est CVD réciproque féminin pluriel. Option 1 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
-      "2": "Chaîne/reconstruction : Rencontrer, retrouver, saluer et aider sont directs; se est CVD réciproque féminin pluriel. Option 2 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
-      "3": "Chaîne/reconstruction : Rencontrer, retrouver, saluer et aider sont directs; se est CVD réciproque féminin pluriel. Option 3 : La forme applique exactement la chaîne reconstruite.",
-      "4": "Chaîne/reconstruction : Rencontrer, retrouver, saluer et aider sont directs; se est CVD réciproque féminin pluriel. Option 4 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
+      "1": "« aidé » n'est pas accordé : le CVD « se », féminin pluriel et placé avant, impose « aidées ».",
+      "2": "« aidés » porte le masculin pluriel, alors que « se » reprend « les représentantes », féminin pluriel.",
+      "3": "Correct : « aider quelqu'un » est direct ; « se » est le CVD réciproque féminin pluriel placé avant, d'où « aidées ».",
+      "4": "« aider » est un infinitif, pas le participe passé attendu après « se sont ».",
       "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
       "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
     },
@@ -41220,7 +41220,7 @@ const QUESTIONS = [
       "2": "Chaîne/reconstruction : Se conformer à, se référer à et tenir à imposent auquel. Option 2 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
       "3": "Chaîne/reconstruction : Se conformer à, se référer à et tenir à imposent auquel. Option 3 : La forme applique exactement la chaîne reconstruite.",
       "4": "Chaîne/reconstruction : Se conformer à, se référer à et tenir à imposent auquel. Option 4 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
-      "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
+      "A": "Le verbe « tenir » se construit ici avec « à » : tenir à un principe. L'option 3, « auquel », est donc correcte ; « Aucune » ne convient pas.",
       "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
     },
     "hep": {
@@ -44925,10 +44925,10 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Le futur devient conditionnel dans le récit rapporté, les personnes s'adaptent au nouveau locuteur et les dates ainsi que le lieu explicites remplacent les déictiques.",
+    "explanation": "Pour rapporter un ordre, « demander » se construit ici avec « de » suivi de l'infinitif : « de vérifier » et « de ne pas remettre ». Les bénévoles deviennent « ils », donc « vos badges » devient « leurs badges ». Les clés doivent être remises au coordinateur : « ne pas lui remettre les clés ». L'option 2 réunit ces trois transformations.",
     "why": {
       "1": "Le candidat conserve les personnes du discours direct au lieu de les adapter au nouveau locuteur.",
-      "2": "La réponse « Le coordinateur a demandé aux bénévoles de vérifier leurs badges et de ne lui remettre les clés qu'après la fermeture. » est correcte : Le futur devient conditionnel dans le récit rapporté, les personnes s'adaptent au nouveau locuteur et les dates ainsi que le lieu explicites remplacent les déictiques.",
+      "2": "Correct : demander de + infinitif, « vos » devient « leurs » et « me » devient « lui » parce que les clés sont remises au coordinateur.",
       "3": "Le candidat garde les formes impératives après la préposition de.",
       "4": "Le candidat inverse les rôles de destinataire et de bénéficiaire au moyen du pronom leur.",
       "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
@@ -52752,13 +52752,13 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Interrogation totale → « si » ; passé composé → plus-que-parfait (« avaient reçu ») ; « ma convocation » (celle du greffier) → « sa convocation ».",
+    "explanation": "Dans une interrogation indirecte totale, « est-ce que » disparaît et devient « si ». Comme le dossier rapporte longtemps après une question posée au passé, « avez reçu » devient « avaient reçu ». Enfin, le greffier n'est plus le locuteur : « ma convocation » devient « sa convocation ». L'option 2 applique les trois changements.",
     "why": {
       "1": "« ma convocation » garde le possessif du discours direct : rapporté à la 3e personne, c'est « sa ».",
       "2": "Correct : si + plus-que-parfait + possessif transposé.",
       "3": "« eurent reçu » est un passé antérieur : la concordance demande le plus-que-parfait.",
       "4": "« est-ce que » est une marque de l'interrogation directe : après « si »… elle disparaît purement.",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
+      "A": "L'option 2 applique « si », le plus-que-parfait et le changement de « ma » en « sa » ; « Aucune » ne convient donc pas.",
       "T": "Les options 1, 3 et 4 fautent sur le possessif, le temps ou la marque directe."
     },
     "hep": {
@@ -56664,7 +56664,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "paronyme_lexical",
+      "mechanism_id": "accord_mots_particuliers",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -59652,7 +59652,7 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Le futur de « moudre » se forme sur l'infinitif : il moudra (comme coudre → coudra).",
+    "explanation": "Au futur, les verbes en « -re » perdent le « e » final avant la terminaison : « moudre » donne le radical « moudr- », puis « il moudra ». On retrouve le même principe dans « coudre → il coudra ».",
     "why": {
       "1": "« moulera » construit le futur sur le radical du présent (moul-) avec le modèle des verbes en -er.",
       "2": "Correct : moudre → il moudra.",
@@ -60792,13 +60792,13 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Interrogation totale négative → « si » (élidé en « s' » devant « ils ») + ordre déclaratif + plus-que-parfait de concordance.",
+    "explanation": "Une question totale rapportée est introduite par « si », qui s'élide devant « ils » : « s'ils ». L'interrogation indirecte reprend ensuite l'ordre déclaratif, sans inversion ni « est-ce que ». Ici, le plus-que-parfait « avaient reçu » situe la réception avant la demande. L'option 3 est la seule à réunir ces éléments.",
     "why": {
       "1": "« si ils » : devant « il(s) », « si » s'élide obligatoirement en « s' ».",
       "2": "« n'avaient-ils » conserve la reprise pronominale de l'interrogation directe.",
       "3": "Correct : s'ils + ordre déclaratif + plus-que-parfait.",
       "4": "« est-ce que » est une marque directe : après « demander », c'est « si ».",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
+      "A": "L'option 3 contient bien « s'ils », l'ordre déclaratif et « avaient reçu » ; « Aucune » ne convient donc pas.",
       "T": "Les options 1, 2 et 4 fautent sur l'élision, l'inversion ou la marque directe."
     },
     "hep": {
@@ -64098,7 +64098,7 @@ const QUESTIONS = [
       "2": "« Sa serait » : le pronom démonstratif s'écrit « Ça », « sa » est un possessif.",
       "3": "« trop petit » : l'attribut s'accorde avec « les casiers » → petits.",
       "4": "« qu'on peut » : « il faudrait que » exige le subjonctif « puisse ».",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
+      "A": "Après « aimer que », « soit rallongée » est bien au subjonctif : la phrase 1 est correcte, donc « Aucune » ne convient pas.",
       "T": "Les options 2, 3 et 4 contiennent chacune une faute d'homophone, d'accord ou de mode."
     },
     "hep": {
@@ -65592,13 +65592,13 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "« Décider DE + infinitif » (choix) ; « se décider À + infinitif » (se résoudre après hésitation).",
+    "explanation": "Le verbe simple se construit avec « de » : décider de reporter. La forme pronominale se construit avec « à » : se décider à convoquer, c'est-à-dire se résoudre à le faire. L'option 3 respecte les deux constructions.",
     "why": {
       "1": "Inverse les deux constructions.",
       "2": "« s'est décidée de convoquer » : le pronominal se construit avec « à ».",
       "3": "Correct : décider de + infinitif ; se décider à + infinitif.",
       "4": "« a décidé à reporter » : la forme simple se construit avec « de ».",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
+      "A": "On dit « décider de faire » mais « se décider à faire » : l'option 3 est correcte, donc « Aucune » ne convient pas.",
       "T": "Trois options fautent sur au moins l'une des deux constructions."
     },
     "hep": {
@@ -80778,13 +80778,13 @@ const QUESTIONS = [
       "2": "« auxquelles » remplace un complément introduit par « à ». Il faudrait dire « obtenir à quelque chose », ce qui ne se dit pas. Forme correcte : « que ».",
       "3": "« desquelles » contient lui aussi le « de » : c'est la même erreur que « dont », sous une forme composée. Forme correcte : « que ».",
       "4": "Correct : « obtenir » se construit sans préposition (obtenir QUOI ? les dérogations), donc le pronom est « que » — « les dérogations que le comité a fini par obtenir ».",
-      "A": "Il existe bien une option correcte : la 4.",
+      "A": "« Obtenir » se construit directement : obtenir quoi ? les dérogations. L'option 4, « que », est donc correcte ; « Aucune » ne convient pas.",
       "T": "Une seule option restitue la construction directe du verbe."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_relatifs",
-      "mechanism_id": "preposition_plus_quoi_neutre",
+      "mechanism_id": "regime_direct_que",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -84704,7 +84704,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "stem": "Deux candidatures d'un niveau ___ ont été reçues ; en ___ presque au poste laissé vacant, elles ont compliqué le choix du jury.",
+    "stem": "Deux offres d'un montant ___ ont été reçues ; ___ presque au budget disponible, elles ont compliqué le choix du jury.",
     "options": [
       {
         "key": "1",
@@ -84732,12 +84732,12 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Règle : l'adjectif verbal décrit une qualité et s'écrit « équivalent » (en -ent), accordé : un niveau équivalent. Le participe présent décrit l'action en cours, reste invariable et s'écrit « équivalant » (en -ant) ; on le reconnaît à son complément (équivalant À quelque chose). Dans cette phrase : « un niveau ___ » = qualité → équivalent ; « en ___ presque au poste » = action + complément → équivalant. Donc : équivalent / équivalant — option 3.",
+    "explanation": "Règle : l'adjectif verbal décrit une caractéristique et s'accorde avec le nom : « un montant équivalent ». Le participe présent exprime l'action du verbe, garde son complément et reste invariable : « équivalant presque au budget ». Donc : « équivalent / équivalant », option 3.",
     "why": {
       "1": "Les deux formes sont inversées : l'adjectif en -ent, le participe en -ant.",
-      "2": "« un niveau équivalant » : la qualité stable s'écrit avec l'adjectif équivalent.",
-      "3": "Correct : adjectif accordé « équivalent » (-ent) ; participe invariable « équivalant » (-ant, + complément « au poste »).",
-      "4": "« en équivalent presque au poste » : l'action en cours s'écrit avec le participe équivalant.",
+      "2": "« un montant équivalant » emploie le participe à la place de l'adjectif : il faut « un montant équivalent ».",
+      "3": "Correct : adjectif « équivalent » avec « montant », puis participe présent invariable « équivalant » avec son complément.",
+      "4": "« équivalent presque au budget » emploie l'adjectif là où le verbe « équivaloir à » appelle le participe présent « équivalant ».",
       "A": "Il existe bien une option correcte : la 3.",
       "T": "Les options 1, 2 et 4 confondent l'adjectif et le participe."
     },
