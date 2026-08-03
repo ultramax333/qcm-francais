@@ -14,9 +14,8 @@ son `misconception_id` et son compteur ; une cause absente reste `UNK`.
 « Comment faire » en trois étapes. Famille, mécanisme, détail, temps, chemin canonique et
 codes de cause restent disponibles uniquement dans « Catégorie technique ».
 
-État local vérifié le 03.08.2026, prêt au déploiement : version `1.21`, cache `qcm-op001-v121`, **1 749 questions
-uniques**, release `questions-20260803-8ec363bf`. La production publique reste en version `1.20`
-jusqu'au prochain déploiement. Toutes portent une famille et un mécanisme
+Production publiée et vérifiée le 03.08.2026 : version `1.21`, cache `qcm-op001-v121`, **1 749 questions
+uniques**, release `questions-20260803-8ec363bf`. Toutes portent une famille et un mécanisme
 grammatical fermés. Les détails, temps et causes de distracteur non prouvés
 restent `null` ou `UNK`.
 
