@@ -13,8 +13,8 @@
 // n'est PAS exposé sur window, ce qui casserait les gardes `window.CONFIG`.
 
 window.CONFIG = {
-  APP_VERSION: '1.20',
-  BANK_RELEASE: 'questions-20260801-1fdd2eae',
+  APP_VERSION: '1.21',
+  BANK_RELEASE: 'questions-20260803-8ec363bf',
   GOOGLE_CLIENT_ID: '200483680701-h963rk5t3l7v5j64ojgg2k410av8l9ft.apps.googleusercontent.com',
   DRIVE_FOLDER_NAME: 'QCM Français OP001',
 };

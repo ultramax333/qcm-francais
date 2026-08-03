@@ -106166,6 +106166,356 @@ const QUESTIONS = [
       }
     },
     "stem": "Avant le lancement d’une nouvelle ligne de bus, la ville annonçait des trajets plus courts, une fréquentation accrue et des recettes plus élevées. Un audit indépendant avait déjà établi que ces prévisions ne s’étaient pas réalisées. L’évaluation menée un an plus tard ___ : aucun des changements annoncés ne s’était produit."
+  },
+  {
+    "id": "candidate-pedv1-slot-01",
+    "rule": "participe",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "échangé"
+      },
+      {
+        "key": "2",
+        "text": "échangés"
+      },
+      {
+        "key": "3",
+        "text": "échangées"
+      },
+      {
+        "key": "4",
+        "text": "échanger"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "1",
+    "explanation": "Règle : Avec l’auxiliaire avoir, le sujet ne commande pas l’accord. Le participe passé s’accorde seulement avec un COD placé avant lui ; si le COD est placé après ou s’il n’y en a pas, le participe reste invariable.\nMéthode : 1. Repère l’auxiliaire et vérifie qu’il s’agit bien de l’auxiliaire avoir. 2. Cherche le COD en posant la question qui ? ou quoi ? après le verbe. 3. Regarde si ce COD est placé avant le participe passé. 4. Accorde seulement avec un COD placé avant ; sinon, garde le participe invariable.\nDans cette phrase : `ont` est une forme de l’auxiliaire avoir. La question « les responsables ont échangé quoi ? » ne fait apparaître aucun COD. Le participe passé `échangé` reste donc invariable.\nDonc : il faut choisir l’option 1, `échangé`.",
+    "why": {
+      "1": "`échangé` convient : avec avoir et sans COD, le participe passé reste invariable.",
+      "2": "`échangés` accorde à tort le participe avec le sujet masculin pluriel. Avec avoir et sans COD, il faut `échangé`.",
+      "3": "`échangées` porte à tort les marques du féminin pluriel alors qu’aucun COD ne commande cet accord. Il faut `échangé`.",
+      "4": "`échanger` est un infinitif. Après l’auxiliaire `ont`, il faut le participe passé `échangé`.",
+      "A": "L’option 1 convient ; `Aucune` est donc faux.",
+      "T": "Seule l’option 1 convient ; `Toutes` est donc faux."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260803-0005",
+      "slot_id": "pedv1-slot-01",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_apres",
+      "detail_id": "sans_cod",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "note_administrative",
+      "communicative_purpose": "relire une formulation destinée à une équipe pédagogique",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Après la séance d’information, les responsables ont ___ pendant près d’une heure afin de coordonner le calendrier des entretiens."
+  },
+  {
+    "id": "cand-pedv1-slot-02",
+    "rule": "modes",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "Le bilan établit que les entretiens mensuels ont renforcé l’assiduité et recommande que le programme soit reconduit au prochain semestre."
+      },
+      {
+        "key": "2",
+        "text": "Le bilan établit que les entretiens mensuels aient renforcé l’assiduité et recommande que le programme soit reconduit au prochain semestre."
+      },
+      {
+        "key": "3",
+        "text": "Le bilan établit que les entretiens mensuels ont renforcé l’assiduité et recommande que le programme sera reconduit au prochain semestre."
+      },
+      {
+        "key": "4",
+        "text": "Le bilan établit que les entretiens mensuels aient renforcé l’assiduité et recommande que le programme sera reconduit au prochain semestre."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "1",
+    "explanation": "Règle : Le mode dépend d’abord de la construction introductrice et du sens qu’elle prend dans la phrase. Certaines constructions présentent le fait comme constaté et appellent l’indicatif ; d’autres exigent le subjonctif pour un fait voulu, évalué ou non affirmé.\nMéthode : 1. Repère la construction qui introduit chaque proposition. 2. Vérifie le sens qu’elle prend ici et le mode qu’elle impose ou permet. 3. Choisis l’indicatif si cette construction présente le fait comme constaté, ou le subjonctif si elle l’exige pour un fait voulu, évalué ou non affirmé. 4. Vérifie ensuite la forme verbale au temps et à la personne demandés.\nDans cette phrase : `établit que` présente le renforcement de l’assiduité comme un résultat constaté ; l’indicatif `ont renforcé` convient. La construction `recommande que` exige ici le subjonctif pour l’action recommandée ; `soit reconduit` convient.\nDonc : seule l’option 1 emploie le mode attendu après chacune des deux constructions.",
+    "why": {
+      "1": "`établit que` introduit ici le constat à l’indicatif et `recommande que` exige ici le subjonctif : les deux formes conviennent.",
+      "2": "`aient renforcé` met au subjonctif le résultat introduit ici par `établit que`. Il faut l’indicatif `ont renforcé`.",
+      "3": "Après `recommande que`, la construction exige ici le subjonctif `soit reconduit`, et non l’indicatif `sera reconduit`.",
+      "4": "Les deux modes sont inadéquats ici : il faut `ont renforcé` après `établit que` et `soit reconduit` après `recommande que`.",
+      "A": "L’option 1 convient ; `Aucune` est donc faux.",
+      "T": "Les options 2, 3 et 4 comportent au moins un mode inadéquat ; `Toutes` est donc faux."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260803-0005",
+      "slot_id": "pedv1-slot-02",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "subjonctif_indicatif",
+      "mechanism_id": "declencheur_mode_selon_sens",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "contrôler deux formulations exprimant des attitudes différentes",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Dans un rapport sur un programme de mentorat, quelle formulation convient ?"
+  },
+  {
+    "id": "candidate-pedv1-slot-03",
+    "rule": "relatifs",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "dont"
+      },
+      {
+        "key": "2",
+        "text": "auquel"
+      },
+      {
+        "key": "3",
+        "text": "que"
+      },
+      {
+        "key": "4",
+        "text": "sur lequel"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "2",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : on reconstitue `le groupe de travail avait donné la priorité à ce scénario`. L’antécédent non humain `le scénario` est masculin singulier. Une forme de `lequel` convient et doit conserver `à` : `à` + `lequel` donne `auquel`.\nDonc : il faut choisir l’option 2, `auquel`.",
+    "why": {
+      "1": "`dont` supposerait une construction avec `de`. Ici, on dit `donner la priorité à ce scénario`.",
+      "2": "`auquel` conserve `à` et correspond à l’antécédent non humain masculin singulier `le scénario`.",
+      "3": "`que` traiterait l’antécédent comme un COD. La construction conserve ici la préposition `à`.",
+      "4": "`sur lequel` ajouterait la préposition `sur`, absente de la construction `donner la priorité à`.",
+      "A": "L’option 2 convient ; `Aucune` est donc faux.",
+      "T": "Seule l’option 2 convient ; `Toutes` est donc faux."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260803-0005",
+      "slot_id": "pedv1-slot-03",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "pronoms_relatifs",
+      "mechanism_id": "regime_a_auquel",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "relire une formulation destinée à un cadre scolaire ou administratif",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "regime_de_suppose",
+        "2": null,
+        "3": "regime_direct_suppose",
+        "4": "regime_sur_suppose"
+      }
+    },
+    "stem": "Le conseil a retenu le scénario ___ le groupe de travail avait donné la priorité dans son rapport intermédiaire."
+  },
+  {
+    "id": "candidate-pedv1-slot-04",
+    "rule": "orthographe",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "Deux Suissesses ont présenté en français une adaptation québécoise de la pièce."
+      },
+      {
+        "key": "2",
+        "text": "Deux suissesses ont présenté en français une adaptation québécoise de la pièce."
+      },
+      {
+        "key": "3",
+        "text": "Deux Suissesses ont présenté en Français une adaptation québécoise de la pièce."
+      },
+      {
+        "key": "4",
+        "text": "Deux Suissesses ont présenté en français une adaptation Québécoise de la pièce."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "1",
+    "explanation": "Règle : Un nom qui désigne un peuple ou ses membres prend une majuscule ; un adjectif de nationalité et un nom de langue gardent la minuscule.\nMéthode : 1. Vérifie si le mot désigne des personnes, qualifie un nom ou désigne une langue. 2. Mets une majuscule au nom qui désigne des personnes ou un peuple. 3. Garde la minuscule à l’adjectif de nationalité et au nom de langue.\nDans cette phrase : `Suissesses` désigne les deux interprètes et prend donc une majuscule. `français` désigne la langue et garde la minuscule. `québécoise` qualifie `adaptation` et garde aussi la minuscule.\nDonc : il faut choisir l’option 1.",
+    "why": {
+      "1": "`Suissesses` désigne des personnes ; `français` est un nom de langue et `québécoise` qualifie `adaptation`. Les trois graphies conviennent.",
+      "2": "Le nom `Suissesses` désigne ici des personnes et doit prendre une majuscule.",
+      "3": "Le nom de langue `français` garde la minuscule.",
+      "4": "L’adjectif `québécoise`, qui qualifie `adaptation`, garde la minuscule.",
+      "A": "L’option 1 convient ; `Aucune` est donc faux.",
+      "T": "Seule l’option 1 convient ; `Toutes` est donc faux."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260803-0005",
+      "slot_id": "pedv1-slot-04",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "gentiles_majuscules",
+      "mechanism_id": "nom_peuple_adjectif_langue",
+      "detail_id": "contraste_mixte",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "article",
+      "communicative_purpose": "relire un court passage présentant des personnes, une langue et une origine",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Un article culturel présente les interprètes d’une création théâtrale, la langue employée et l’origine de l’adaptation. Quelle phrase respecte l’usage des majuscules ?"
+  },
+  {
+    "id": "candidate-pedv1-slot-05",
+    "rule": "participe",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "consigné"
+      },
+      {
+        "key": "2",
+        "text": "consignées"
+      },
+      {
+        "key": "3",
+        "text": "consignés"
+      },
+      {
+        "key": "4",
+        "text": "consignée"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "2",
+    "explanation": "Règle : Avec l’auxiliaire être, le participe passé s’accorde en genre et en nombre avec le sujet. Les groupes placés entre le sujet et l’auxiliaire ne changent pas le donneur d’accord.\nMéthode : 1. Repère l’auxiliaire et vérifie qu’il s’agit bien du verbe être. 2. Trouve le sujet en demandant qui est concerné par le verbe. 3. Détermine le genre et le nombre du sujet. 4. Reporte ces marques sur le participe passé.\nDans cette phrase : `sont` est une forme du verbe être. Le sujet est `Les recommandations de l’audit`, dont le noyau `recommandations` est féminin pluriel. Le groupe intercalé `malgré les réserves de plusieurs membres du comité` ne change pas ce sujet. Le participe prend donc les marques du féminin pluriel : `consignées`.\nDonc : il faut choisir l’option 2, `consignées`.",
+    "why": {
+      "1": "`consigné` reste au masculin singulier. Avec être, il faut l’accorder avec le sujet féminin pluriel : `consignées`.",
+      "2": "`consignées` porte les marques du féminin pluriel du sujet `Les recommandations de l’audit`.",
+      "3": "`consignés` marque le pluriel, mais reste au masculin. Le sujet est féminin pluriel : il faut `consignées`.",
+      "4": "`consignée` marque le féminin, mais reste au singulier. Le sujet est pluriel : il faut `consignées`.",
+      "A": "L’option 2 convient ; `Aucune` est donc faux.",
+      "T": "Seule l’option 2 convient ; `Toutes` est donc faux."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260803-0005",
+      "slot_id": "pedv1-slot-05",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "accord_participe_passe",
+      "mechanism_id": "etre_accord_sujet",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "relire une phrase dont le sujet est éloigné du participe",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": null,
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Les recommandations de l’audit, malgré les réserves de plusieurs membres du comité, sont ___ dans le rapport final."
   }
 ];
 

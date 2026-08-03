@@ -195,9 +195,9 @@ assert.deepStrictEqual(
 assert.deepStrictEqual(
   pedagogy.describe('pronoms_relatifs', 'regime_a_auquel').path,
   [
-    'antécédent nominal',
-    'recteur construit avec à',
-    'complément indirect',
+    'antécédent nominal non humain',
+    'construction avec à',
+    'forme de lequel appropriée',
     'auquel / à laquelle / auxquels / auxquelles',
   ]
 );

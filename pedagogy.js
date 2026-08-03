@@ -5,7 +5,7 @@
 }(typeof window !== 'undefined' ? window : globalThis, function () {
   'use strict';
 
-  const LABELS_VERSION = 'hep-pedagogy-labels/2.3';
+  const LABELS_VERSION = 'hep-pedagogy-labels/2.4';
 
   const TENSES = {
     present: 'présent',
@@ -966,6 +966,11 @@
     ),
 
     // Indicatif ou subjonctif
+    declencheur_mode_selon_sens: learnerGuide(
+      'Choisir le mode d’après la construction et le sens',
+      'Exemple : « le rapport établit que les résultats ont progressé », mais « le comité recommande que le projet soit poursuivi ». La première construction présente un constat ; la seconde introduit une recommandation. Le mode dépend donc de la construction précise et du sens qu’elle prend ici.',
+      ['Repère les mots qui introduisent la proposition.', 'Vérifie s’ils présentent le fait comme constaté ou s’ils imposent un autre mode, par exemple pour une recommandation.', 'Choisis le mode exigé dans cette construction, puis vérifie le temps et la personne du verbe.']
+    ),
     anteriorite_avant_que: learnerGuide(
       'Employer le subjonctif après « avant que »',
       'Exemple : « Pars avant qu’il ne soit trop tard. » L’action après « avant que » n’est pas encore réalisée au moment de l’action principale ; elle se met au subjonctif.',
@@ -1223,7 +1228,7 @@
     possession_dont: ['dont complément du nom', 'Utilise dont quand le relatif remplace un groupe introduit par de, notamment pour exprimer la possession.'],
     preposition_plus_lequel: ['préposition + lequel', 'Conserve la préposition exigée, puis accorde lequel avec son antécédent et fais les contractions nécessaires.'],
     redondance_relative_pronom: ['éviter la reprise après un relatif', 'Le pronom relatif occupe déjà une fonction dans la relative : ne la remplis pas une seconde fois avec un autre pronom.'],
-    regime_a_auquel: ['verbe construit avec à : auquel', 'Si le mot de la relative exige à, emploie à + lequel, contracté en auquel ou auxquels selon l’antécédent.'],
+    regime_a_auquel: ['construction avec à et forme de lequel', 'Avec un antécédent non humain, si la construction exige à et qu’une forme de lequel convient, choisis auquel, à laquelle, auxquels ou auxquelles.'],
     regime_de_dont: ['verbe construit avec de : dont', 'Si le mot de la relative exige de, dont reprend ce complément sans ajouter un autre de.'],
     coi_lui_leur: ['COI de personne : lui / leur', 'Demande à qui : lui reprend une personne, leur plusieurs, sans accord en genre.'],
     complement_de_en: ['complément introduit par de : en', 'Le pronom en remplace généralement un complément de chose introduit par de.'],
@@ -1302,7 +1307,7 @@
     possession_dont: ['antécédent', 'nom régi par de', 'complément du nom possessif', 'pronom relatif dont'],
     preposition_plus_lequel: ['antécédent nominal', 'préposition régie', 'complément prépositionnel', 'préposition + lequel accordé'],
     redondance_relative_pronom: ['antécédent', 'pronom relatif déjà fonctionnel', 'fonction remplie dans la relative', 'absence de pronom redondant'],
-    regime_a_auquel: ['antécédent nominal', 'recteur construit avec à', 'complément indirect', 'auquel / à laquelle / auxquels / auxquelles'],
+    regime_a_auquel: ['antécédent nominal non humain', 'construction avec à', 'forme de lequel appropriée', 'auquel / à laquelle / auxquels / auxquelles'],
     regime_de_dont: ['antécédent', 'recteur construit avec de', 'complément en de', 'pronom relatif dont'],
     coi_lui_leur: ['référent humain', 'COI introduit par à', 'nombre non précisé', 'lui ou leur'],
     complement_de_en: ['référent non humain', 'complément introduit par de', 'reprise pronominale', 'pronom en'],
@@ -1352,7 +1357,7 @@
     but_crainte_subjonctif: ['but ou crainte', 'subordonnée en que', 'résultat recherché ou redouté', 'mode subjonctif'],
     restriction_superlatif_subjonctif: ['antécédent restreint', 'unicité ou superlatif', 'référent évalué', 'mode subjonctif'],
     concession_subjonctif: ['construction concessive', 'fait admis malgré un obstacle', 'subordonnée', 'mode subjonctif'],
-    declencheur_mode_selon_sens: ['construction introductrice', 'statut réel ou envisagé du fait', 'choix du mode', 'forme verbale attendue'],
+    declencheur_mode_selon_sens: ['construction introductrice', 'sens pris dans la phrase', 'mode régi par la construction', 'forme verbale attendue'],
     ou_lieu_temps_verrouille: ['antécédent de lieu ou temps', 'fonction circonstancielle', 'absence de régime en de ou à', 'pronom où'],
     regime_sur_sur_lequel: ['antécédent nominal', 'recteur construit avec sur', 'complément prépositionnel', 'sur lequel accordé'],
     sujet_qui: ['antécédent', 'fonction sujet dans la relative', 'aucune préposition', 'pronom qui'],
@@ -1502,6 +1507,7 @@
       lieu: ['discours indirect', 'nouveau lieu de narration', 'repère spatial direct', 'repère spatial transposé'],
     },
     nom_peuple_adjectif_langue: {
+      contraste_mixte: ['plusieurs gentilés', 'nom de personne ou de peuple', 'nom de langue et adjectif', 'fonctions contrastées dans la même question'],
       peuple: ['gentilé', 'nom de personne ou de peuple', 'emploi nominal', 'majuscule'],
       adjectif: ['gentilé', 'adjectif relationnel', 'emploi adjectival', 'minuscule'],
       langue: ['gentilé', 'nom de langue', 'désignation linguistique', 'minuscule'],

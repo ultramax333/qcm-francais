@@ -14,13 +14,14 @@ son `misconception_id` et son compteur ; une cause absente reste `UNK`.
 « Comment faire » en trois étapes. Famille, mécanisme, détail, temps, chemin canonique et
 codes de cause restent disponibles uniquement dans « Catégorie technique ».
 
-Production publiée et vérifiée le 02.08.2026 : version `1.20`, cache `qcm-op001-v120`, **1 744 questions
-uniques**, release `questions-20260801-1fdd2eae`. Toutes portent une famille et un mécanisme
+État local vérifié le 03.08.2026, prêt au déploiement : version `1.21`, cache `qcm-op001-v121`, **1 749 questions
+uniques**, release `questions-20260803-8ec363bf`. La production publique reste en version `1.20`
+jusqu'au prochain déploiement. Toutes portent une famille et un mécanisme
 grammatical fermés. Les détails, temps et causes de distracteur non prouvés
 restent `null` ou `UNK`.
 
 La carte **Accord du participe passé** est un menu déroulant. Elle conserve un
-entraînement général et propose aussi un entraînement ciblé pour les 23 sous-cas stables actifs
+entraînement général et propose aussi un entraînement ciblé pour les 24 sous-cas stables actifs
 `mechanism_id + detail_id` de la banque, regroupés en règles générales, infinitif,
 verbes pronominaux, cas particuliers et révisions combinées. Chaque cas affiche
 avant le lancement sa règle en langage scolaire, un exemple et une méthode en
@@ -85,7 +86,7 @@ intégration manuelle de `questions.js` rendrait l'identifiant de banque obsolè
   mais encore sans question ne sont jamais affichés ni appliqués par défaut.
 - `error-profile.js` — agrégation cumulative locale, sans dupliquer les séances
   dans la mémoire de génération
-- `questions.js` — la banque locale active de 1 744 questions
+- `questions.js` — la banque locale active de 1 749 questions
 - `config.js` — configuration (ID client Google Drive)
 - `manifest.json`, `sw.js`, `icon.svg` — installation PWA / hors-ligne
 - `static-server.ps1` — serveur statique local (développement, Windows)
