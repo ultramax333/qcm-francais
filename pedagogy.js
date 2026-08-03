@@ -548,6 +548,116 @@
       'Exemple : « On n’entend rien », mais « on entend tout ». La liaison de « on » devant une voyelle ne remplace pas le « n’ » d’une négation.',
       ['Cherche un second mot négatif comme « pas », « plus », « jamais » ou « rien ».', 'Si ce mot est présent, ajoute « n’ » devant le verbe.', 'Relis en distinguant la négation de la simple liaison.']
     ),
+    qu_en_quant_quand: learnerGuide(
+      'Choisir « qu’en », « quant » ou « quand »',
+      'Exemple : « Quand viendras-tu ? » parle du temps ; « quant à ce dossier » signifie « en ce qui concerne ce dossier » ; « je ne sais qu’en penser » contient « que » suivi de « en ».',
+      ['Essaie « lorsque » ou « à quel moment » pour vérifier « quand ».', 'Essaie « en ce qui concerne » devant « à, au, aux » pour vérifier « quant ».', 'Vérifie si la phrase contient vraiment « que » suivi de « en » pour écrire « qu’en ».']
+    ),
+    la_la_l_a_l_as: learnerGuide(
+      'Choisir « la », « là », « l’a » ou « l’as »',
+      'Exemple : « la porte » contient un déterminant ; « pose-la là » contient un pronom puis un mot de lieu ; « il l’a fermée » et « tu l’as fermée » contiennent le verbe avoir.',
+      ['Regarde si la forme accompagne ou remplace un nom féminin : choisis alors « la ».', 'Remplace par « ici » : si le lieu reste clair, écris « là ».', 'Passe le verbe à l’imparfait : « l’avait » donne « l’a » et « l’avais » donne « l’as ».']
+    ),
+    ca_sa: learnerGuide(
+      'Choisir « ça » ou « sa »',
+      'Exemple : « Ça fonctionne » peut devenir « cela fonctionne » ; dans « sa méthode fonctionne », « sa » accompagne le nom féminin « méthode » et indique un lien de possession.',
+      ['Remplace la forme par « cela ».', 'Si la phrase reste correcte, écris « ça ».', 'Sinon, vérifie qu’elle accompagne un nom féminin et peut devenir « ma » ou « ta » avant d’écrire « sa ».']
+    ),
+    son_sont: learnerGuide(
+      'Choisir « son » ou « sont »',
+      'Exemple : « son dossier est complet » contient un mot qui accompagne le nom « dossier » ; « les dossiers sont complets » contient le verbe « être » conjugué au pluriel.',
+      ['Remplace la forme par « étaient ».', 'Si la phrase reste correcte, écris « sont ».', 'Sinon, vérifie qu’un nom suit et remplace par « mon » ou « ton » avant d’écrire « son ».']
+    ),
+    on_ont: learnerGuide(
+      'Choisir « on » ou « ont »',
+      'Exemple : « On termine le travail » contient un pronom sujet ; « ils ont terminé le travail » contient le verbe « avoir » conjugué avec « ils ».',
+      ['Remplace la forme par « avaient ».', 'Si la phrase reste correcte, écris « ont ».', 'Sinon, vérifie que le mot est le sujet et qu’il peut devenir « quelqu’un » ou parfois « nous » avant d’écrire « on ».']
+    ),
+    genre_des_noms: learnerGuide(
+      'Reconnaître le genre d’un nom',
+      'Exemple : on dit « une espèce », même dans « une espèce de problème ». Le genre appartient au nom lui-même et commande le déterminant ainsi que les accords qui dépendent de ce nom.',
+      ['Repère le nom principal.', 'Teste-le avec « un » ou « une » et vérifie au dictionnaire si tu hésites.', 'Accorde ensuite les mots qui dépendent de ce nom.']
+    ),
+    phrase_non_verbale: learnerGuide(
+      'Reconnaître une phrase sans verbe',
+      'Exemple : le titre « Fermeture exceptionnelle du guichet » ne contient pas de verbe conjugué, mais il forme un message complet et correct dans ce contexte.',
+      ['Vérifie si le texte est un titre, une légende ou une formule courte.', 'Demande si le message reste complet et compréhensible.', 'Ne compte pas automatiquement l’absence de verbe comme une faute.']
+    ),
+    determinant_contracte: learnerGuide(
+      'Former « au », « aux », « du » ou « des »',
+      'Exemple : on écrit « parler aux élèves », car la préposition « à » placée devant « les » forme obligatoirement « aux » ; on n’écrit pas « à les élèves ».',
+      ['Repère la préposition « à » ou « de ».', 'Regarde si elle est suivie de « le » ou « les ».', 'Réunis les deux mots : « au », « aux », « du » ou « des ».']
+    ),
+    accord_adjectif_avec_nom: learnerGuide(
+      'Accorder l’adjectif avec le bon nom',
+      'Exemple : dans « des mesures simples », l’adjectif « simples » décrit le nom féminin pluriel « mesures » ; il reçoit donc les mêmes marques de genre et de nombre.',
+      ['Repère l’adjectif.', 'Trouve le nom ou le pronom qu’il décrit.', 'Reporte le genre et le nombre de ce mot sur l’adjectif.']
+    ),
+    nombre_du_nom: learnerGuide(
+      'Choisir le singulier ou le pluriel du nom',
+      'Exemple : on écrit « chaque dossier », mais « plusieurs dossiers ». Le déterminant ou l’expression de quantité indique si le nom désigne une seule unité ou plusieurs.',
+      ['Repère le nom et le mot qui indique sa quantité.', 'Décide si une ou plusieurs unités sont désignées.', 'Ajoute normalement la marque du pluriel, puis vérifie les exceptions.']
+    ),
+    pluriel_noms_en_al: learnerGuide(
+      'Former le pluriel des noms en « -al »',
+      'Exemple : « un journal » devient « des journaux », mais « un festival » devient « des festivals ». La règle générale donne « -aux » ; certains noms gardent « -als ».',
+      ['Remets le nom au singulier.', 'S’il finit par « -al », essaie d’abord le pluriel en « -aux ».', 'Vérifie si le nom appartient aux exceptions en « -als ».']
+    ),
+    et_est: learnerGuide(
+      'Choisir « et » ou « est »',
+      'Exemple : dans « le dossier est prêt et complet », « est » devient « était », tandis que « et » relie les deux adjectifs « prêt » et « complet ».',
+      ['Remplace le mot par « était ».', 'Si la phrase fonctionne, écris « est ».', 'Sinon, vérifie que le mot relie deux éléments et écris « et ».']
+    ),
+    ma_m_a_m_as: learnerGuide(
+      'Choisir « ma », « m’a » ou « m’as »',
+      'Exemple : « ma collègue m’a répondu » contient le possessif « ma » devant un nom et le verbe avoir dans « m’a » ; avec « tu », on écrit « tu m’as répondu ».',
+      ['Devant un nom féminin, remplace par « ta » ou « sa » pour vérifier « ma ».', 'Avec « il » ou « elle », remplace par « m’avait » pour vérifier « m’a ».', 'Avec « tu », remplace par « m’avais » pour vérifier « m’as ».']
+    ),
+    dans_d_en: learnerGuide(
+      'Choisir « dans » ou « d’en »',
+      'Exemple : « dans deux jours » indique un délai ; dans « il promet d’en parler », « d’en » se décompose en « de » suivi du pronom « en ».',
+      ['Vérifie si le mot introduit directement un lieu, un délai ou un nom.', 'Sinon, cherche si « en » reprend un complément précédé de « de ».', 'Écris « dans » dans le premier cas et « d’en » dans le second.']
+    ),
+    abreviation_titres_civilite: learnerGuide(
+      'Abréger correctement « Monsieur » et « Madame »',
+      'Exemple : on écrit « M. Dupont » avec un point, mais « Mme Dupont » sans point. Chaque titre de civilité possède une abréviation normalisée.',
+      ['Identifie le titre de civilité.', 'Vérifie sa forme abrégée normalisée.', 'Écris « M. » pour Monsieur et « Mme » pour Madame.']
+    ),
+    abreviation_adjectifs_ordinaux: learnerGuide(
+      'Abréger un adjectif ordinal',
+      'Exemple : « premier » s’abrège « 1er », « première » s’abrège « 1re » et « deuxième » s’abrège « 2e ». La fin de l’abréviation dépend du rang et parfois du genre.',
+      ['Retrouve l’adjectif ordinal complet et son genre.', 'Conserve le chiffre qui indique le rang.', 'Ajoute la finale normalisée « er », « re » ou « e ».']
+    ),
+    ecriture_heures_symbole_h: learnerGuide(
+      'Écrire une heure avec le symbole « h »',
+      'Exemple : dans un texte courant, on écrit « 14 h 30 ». Le symbole « h » reste en minuscule, ne prend ni point ni marque du pluriel et est séparé des nombres.',
+      ['Repère le nombre qui indique l’heure.', 'Place « h » en minuscule après ce nombre.', 'Laisse une espace autour de « h » et n’ajoute ni point ni « s ».']
+    ),
+    virgule_enumeration_simple: learnerGuide(
+      'Ponctuer une énumération simple',
+      'Exemple : on écrit « du pain, du lait et des fruits ». Les virgules séparent les éléments de la liste, tandis que « et » relie normalement les deux derniers.',
+      ['Repère les éléments qui ont la même fonction.', 'Sépare les premiers éléments par des virgules.', 'Relie les deux derniers par « et », normalement sans virgule.']
+    ),
+    regime_verbal_en: learnerGuide(
+      'Employer « en » après le verbe qui l’exige',
+      'Exemple : dans « cette décision consiste en trois mesures », le verbe « consister » se construit ici avec la préposition « en ». Une autre préposition rendrait la construction incorrecte.',
+      ['Repère le verbe dont dépend le complément.', 'Reconstitue sa construction dans le sens de la phrase.', 'Vérifie si ce verbe demande la préposition « en ».']
+    ),
+    a_a: learnerGuide(
+      'Choisir « a » ou « à »',
+      'Exemple : dans « Léa a parlé à son collègue », le premier mot est le verbe avoir et peut devenir « avait » ; le second est une préposition et garde son accent.',
+      ['Remplace la forme par « avait ».', 'Si la phrase reste correcte, écris « a » sans accent.', 'Sinon, écris la préposition « à » avec un accent.']
+    ),
+    ou_ou: learnerGuide(
+      'Choisir « ou » ou « où »',
+      'Exemple : « thé ou café » présente un choix, mais « la ville où il habite » indique un lieu. L’accent distingue ces deux fonctions.',
+      ['Remplace par « ou bien ».', 'Si le sens de choix reste correct, écris « ou ».', 'Si le mot indique un lieu ou un moment, écris « où ».']
+    ),
+    t_euphonique_inversion: learnerGuide(
+      'Écrire le « t » ajouté dans une question',
+      'Exemple : on écrit « a-t-il compris ? » et « ira-t-on demain ? ». Le « t » ajouté entre le verbe et le pronom est entouré de deux traits d’union, sans apostrophe.',
+      ['Repère l’inversion entre le verbe et « il », « elle » ou « on ».', 'Vérifie si un « t » est ajouté pour faciliter la prononciation.', 'Écris alors deux traits d’union, comme dans « a-t-il ».']
+    ),
     quel_que_quelque: learnerGuide(
       'Choisir « quel que » ou « quelque »',
       'Exemple : « Quels que soient les résultats », mais « quelques résultats ». Devant « être », « quel que » s’écrit en deux mots et « quel » s’accorde ; devant un nom, « quelque » est en un mot et peut prendre un « s ».',
@@ -1257,6 +1367,28 @@
     polysemie_contextuelle: ['sens d’un mot selon le contexte', 'Remplace le mot par chaque sens possible et garde celui qui rend la phrase cohérente.'],
     synonyme_exact: ['synonyme exact en contexte', 'Compare le sens, le registre et la construction : un synonyme doit convenir dans cette phrase précise.'],
     si_sy: ['si ou s’y', 'Si introduit une condition ou une interrogation indirecte ; s’y réunit le pronom réfléchi se et le pronom de lieu y.'],
+    qu_en_quant_quand: ['qu’en, quant ou quand', 'Quand exprime le temps ; quant s’emploie dans quant à, au ou aux ; qu’en correspond à que suivi de en.'],
+    la_la_l_a_l_as: ['la, là, l’a ou l’as', 'La est déterminant ou pronom, là indique notamment un lieu, et l’a ou l’as contient le verbe avoir.'],
+    ca_sa: ['ça ou sa', 'Ça est un pronom remplaçable par cela ; sa est un déterminant possessif féminin singulier.'],
+    son_sont: ['son ou sont', 'Son est un déterminant possessif placé devant un nom ; sont est le verbe être au pluriel.'],
+    on_ont: ['on ou ont', 'On est un pronom sujet ; ont est le verbe avoir à la troisième personne du pluriel.'],
+    genre_des_noms: ['genre grammatical des noms', 'Chaque nom possède un genre grammatical, masculin ou féminin, qui commande les accords des mots qui dépendent de lui.'],
+    phrase_non_verbale: ['phrase non verbale', 'Une phrase sans verbe prédicat peut former un message autonome dans un titre, une légende ou une formule courte.'],
+    determinant_contracte: ['déterminants contractés au, aux, du et des', 'À et de se contractent avec le ou les pour former au, aux, du et des.'],
+    accord_adjectif_avec_nom: ['accord de l’adjectif avec le nom', 'L’adjectif reçoit le genre et le nombre du nom ou du pronom auquel il se rapporte.'],
+    nombre_du_nom: ['singulier ou pluriel du nom', 'Le déterminant et la quantité permettent de choisir la marque de nombre du nom.'],
+    pluriel_noms_en_al: ['pluriel des noms en -al', 'La plupart des noms en -al font leur pluriel en -aux, avec quelques exceptions en -als.'],
+    et_est: ['et ou est', 'Et relie des éléments ; est est le verbe être au présent et peut être remplacé par était.'],
+    ma_m_a_m_as: ['ma, m’a ou m’as', 'Ma est un déterminant possessif ; m’a et m’as contiennent le pronom me suivi du verbe avoir.'],
+    dans_d_en: ['dans ou d’en', 'Dans est une préposition ; d’en se décompose en de suivi du pronom en.'],
+    abreviation_titres_civilite: ['abréviation des titres de civilité', 'Monsieur s’abrège M. avec un point, tandis que Madame s’abrège Mme sans point.'],
+    abreviation_adjectifs_ordinaux: ['abréviation des adjectifs ordinaux', 'Les adjectifs ordinaux abrégés prennent une finale normalisée comme er, re ou e.'],
+    ecriture_heures_symbole_h: ['écriture de l’heure avec h', 'Le symbole h reste en minuscule, sans point ni pluriel, et se sépare des nombres par des espaces.'],
+    virgule_enumeration_simple: ['virgules dans une énumération simple', 'La virgule sépare les éléments juxtaposés et le dernier et remplace normalement la dernière virgule.'],
+    regime_verbal_en: ['verbe construit avec en', 'Certains verbes imposent la préposition en devant leur complément indirect.'],
+    a_a: ['a ou à', 'A sans accent est le verbe avoir ; à avec accent est une préposition.'],
+    ou_ou: ['ou ou où', 'Ou sans accent exprime généralement un choix ; où avec accent indique un lieu ou un moment.'],
+    t_euphonique_inversion: ['t euphonique dans l’inversion', 'Le t ajouté entre le verbe et il, elle ou on est encadré par deux traits d’union, sans apostrophe.'],
     genre_change_sens: ['genre du nom qui change le sens', 'Certains noms ont une forme identique mais un sens différent au masculin et au féminin ; l’article permet d’identifier le sens attendu.'],
   };
 
@@ -1436,6 +1568,28 @@
     ces_ses_cest_sest: ['suite homophone', 'catégorie grammaticale', 'test de remplacement', 'graphie correcte'],
     ce_se: ['homophones ce et se', 'fonction grammaticale', 'test de personne', 'graphie correcte'],
     on_on_n: ['pronom on', 'négation', 'liaison trompeuse', 'présence de n’'],
+    qu_en_quant_quand: ['homophones qu’en, quant et quand', 'fonction ou construction', 'test de remplacement', 'graphie correcte'],
+    la_la_l_a_l_as: ['homophones la, là, l’a et l’as', 'catégorie grammaticale', 'test de remplacement', 'graphie correcte'],
+    ca_sa: ['homophones ça et sa', 'pronom ou déterminant possessif', 'test par cela, ma ou ta', 'graphie correcte'],
+    son_sont: ['homophones son et sont', 'déterminant ou verbe être', 'test par mon ou étaient', 'graphie correcte'],
+    on_ont: ['homophones on et ont', 'pronom sujet ou verbe avoir', 'test par quelqu’un ou avaient', 'graphie correcte'],
+    genre_des_noms: ['nom noyau', 'genre masculin ou féminin', 'vérification de l’usage', 'accords commandés par le nom'],
+    phrase_non_verbale: ['phrase sans verbe prédicat', 'contexte de titre ou légende', 'message autonome', 'construction admise'],
+    determinant_contracte: ['préposition à ou de', 'déterminant le ou les', 'contraction obligatoire', 'forme au, aux, du ou des'],
+    accord_adjectif_avec_nom: ['adjectif', 'donneur d’accord', 'genre et nombre', 'terminaison accordée'],
+    nombre_du_nom: ['nom dénombrable', 'déterminant ou quantité', 'singulier ou pluriel', 'marque du nombre'],
+    pluriel_noms_en_al: ['nom en -al', 'règle en -aux', 'liste d’exceptions', 'pluriel correct'],
+    et_est: ['homophones et et est', 'coordonnant ou verbe', 'test par était', 'graphie correcte'],
+    ma_m_a_m_as: ['homophones ma, m’a et m’as', 'déterminant ou pronom plus avoir', 'sujet du verbe', 'graphie correcte'],
+    dans_d_en: ['homophones dans et d’en', 'préposition ou de plus en', 'construction de la phrase', 'graphie correcte'],
+    abreviation_titres_civilite: ['titre de civilité', 'abréviation normalisée', 'point abréviatif', 'forme M. ou Mme'],
+    abreviation_adjectifs_ordinaux: ['adjectif ordinal', 'rang et genre', 'finale abréviative', 'forme normalisée'],
+    ecriture_heures_symbole_h: ['heure en chiffres', 'symbole h', 'espacement', 'absence de point et de pluriel'],
+    virgule_enumeration_simple: ['éléments de même fonction', 'juxtaposition', 'coordonnant final', 'virgules correctes'],
+    regime_verbal_en: ['verbe', 'complément indirect', 'préposition en', 'construction imposée'],
+    a_a: ['homophones a et à', 'verbe ou préposition', 'test par avait', 'graphie correcte'],
+    ou_ou: ['homophones ou et où', 'choix ou lieu/temps', 'test par ou bien', 'graphie correcte'],
+    t_euphonique_inversion: ['inversion verbe-pronom', 't euphonique', 'deux traits d’union', 'absence d’apostrophe'],
     du_du_accent: ['homophones du et dû', 'catégorie grammaticale', 'test de remplacement ou accord', 'accent correct'],
     tout_tous_toute_toutes: ['formes de tout', 'catégorie grammaticale', 'donneur éventuel', 'accord ou invariabilité'],
     quoique_quoi_que: ['locutions homophones', 'sens concessif ou indéfini', 'test de remplacement', 'un ou deux mots'],

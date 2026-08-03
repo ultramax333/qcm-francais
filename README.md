@@ -14,20 +14,22 @@ son `misconception_id` et son compteur ; une cause absente reste `UNK`.
 « Comment faire » en trois étapes. Famille, mécanisme, détail, temps, chemin canonique et
 codes de cause restent disponibles uniquement dans « Catégorie technique ».
 
-Production publiée et vérifiée le 03.08.2026 : version `1.23`, cache `qcm-op001-v123`, **1 749 questions
-uniques**, release `questions-20260803-ce718b0b`. Toutes portent une famille et un mécanisme
+Production publiée et vérifiée le 03.08.2026 : version `1.24`, cache `qcm-op001-v124`, **1 747 questions
+uniques**, release `questions-20260803-5492d3b5`. Toutes portent une famille et un mécanisme
 grammatical fermés. Les détails, temps et causes de distracteur non prouvés
 restent `null` ou `UNK`.
 
 La carte **Accord du participe passé** est un menu déroulant. Elle conserve un
-entraînement général et propose aussi un entraînement ciblé pour les 24 sous-cas stables actifs
+entraînement général et propose aussi un entraînement ciblé pour les 22 sous-cas stables actifs
 `mechanism_id + detail_id` de la banque, regroupés en règles générales, infinitif,
 verbes pronominaux, cas particuliers et révisions combinées. Chaque cas affiche
 avant le lancement sa règle en langage scolaire, un exemple et une méthode en
 trois étapes. Le filtre utilise directement le couple canonique de la question;
 aucune taxonomie parallèle n'est créée. Les quatre couples à norme variable restent
 dans le mélange général mais sont exclus du ciblage. Un sous-cas prévu sans question
-active reste masqué jusqu'à la publication d'une question correspondante.
+active reste masqué jusqu'à la publication d'une question correspondante. Les questions composites
+peuvent conserver jusqu'à trois chemins de règle secondaires pour la traçabilité, sans les compter
+dans la pondération ni créer une seconde banque.
 
 ## Utilisation locale
 Ouvre `index.html` via un petit serveur statique (les Service Workers ne fonctionnent pas
@@ -85,7 +87,7 @@ intégration manuelle de `questions.js` rendrait l'identifiant de banque obsolè
   mais encore sans question ne sont jamais affichés ni appliqués par défaut.
 - `error-profile.js` — agrégation cumulative locale, sans dupliquer les séances
   dans la mémoire de génération
-- `questions.js` — la banque locale active de 1 749 questions
+- `questions.js` — la banque locale active de 1 747 questions
 - `config.js` — configuration (ID client Google Drive)
 - `manifest.json`, `sw.js`, `icon.svg` — installation PWA / hors-ligne
 - `static-server.ps1` — serveur statique local (développement, Windows)

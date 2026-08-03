@@ -1,4 +1,4 @@
-// Fichier généré par pipeline_HEP.py; ne pas modifier manuellement.
+// Fichier généré par le pipeline HEP; ne pas modifier manuellement.
 const RULES = [
   {
     "id": "orthographe",
@@ -127,7 +127,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "homophones_multiples_en_contexte",
+      "mechanism_id": "qu_en_quant_quand",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -2299,66 +2299,6 @@ const QUESTIONS = [
     }
   },
   {
-    "id": "orth-39",
-    "rule": "orthographe",
-    "type": "sentences",
-    "instruction": "Quelle(s) phrase(s) est/sont correctement orthographiée(s) ?",
-    "options": [
-      {
-        "key": "1",
-        "text": "Elle a tiré parti de ce contretemps inattendu."
-      },
-      {
-        "key": "2",
-        "text": "La pose de la moquette est prévue lundi."
-      },
-      {
-        "key": "3",
-        "text": "Nous avons fait bonne chère chez eux."
-      },
-      {
-        "key": "4",
-        "text": "Ils ont trouvé un appartement de plain-pied."
-      },
-      {
-        "key": "A",
-        "text": "Aucune"
-      },
-      {
-        "key": "T",
-        "text": "Toutes"
-      }
-    ],
-    "answer": "T",
-    "explanation": "Toutes correctes : « tirer parti », « la pose » (installation), « bonne chère », « plain-pied ». Réponse : Toutes.",
-    "why": {
-      "1": "Correcte : tirer parti (profit).",
-      "2": "Correcte : action de poser → pose.",
-      "3": "Correcte : locution « faire bonne chère ».",
-      "4": "Correcte : plain-pied (= de niveau).",
-      "A": "Les quatre sont correctes.",
-      "T": "Correct : aucune faute."
-    },
-    "gen": {
-      "model": "mixte (pré-suivi)",
-      "thinking": "standard",
-      "tracked": false
-    },
-    "hep": {
-      "metadata_schema_version": "hep-question/2.1",
-      "family": "orthographe_lexicale",
-      "mechanism_id": "graphies_lexicales_multiples",
-      "detail_id": "core",
-      "tense_id": null,
-      "option_misconceptions": {
-        "1": null,
-        "2": null,
-        "3": null,
-        "4": null
-      }
-    }
-  },
-  {
     "id": "orth-40",
     "rule": "orthographe",
     "type": "blank",
@@ -2647,7 +2587,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "graphies_lexicales_multiples",
+      "mechanism_id": "graphie_lexicale_usage",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -2655,7 +2595,21 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "orthographe_lexicale",
+          "mechanism_id": "paronyme_lexical",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "orthographe_lexicale",
+          "mechanism_id": "graphie_composee",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -3127,7 +3081,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "graphies_lexicales_multiples",
+      "mechanism_id": "graphie_lexicale_usage",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -3547,7 +3501,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "graphies_lexicales_multiples",
+      "mechanism_id": "graphie_lexicale_usage",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -7387,7 +7341,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "matrice_avoir_etre",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -7395,7 +7349,15 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "etre_accord_sujet",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -7747,7 +7709,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "matrice_participes_speciaux",
+      "mechanism_id": "mesure_duree_prix",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -7755,7 +7717,27 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "fait_suivi_infinitif",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "participe_adjectival_selon_position",
+          "detail_id": "avant_stable",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -8107,15 +8089,23 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "matrice_participes_speciaux",
-      "detail_id": "core",
-      "tense_id": null,
+      "mechanism_id": "pronominal_se_coi",
+      "detail_id": "sans_cod",
+      "tense_id": "passe_compose",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
         "3": "UNK",
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_accord_sujet",
+          "detail_id": "essentiellement",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -8167,15 +8157,23 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "matrice_participes_speciaux",
-      "detail_id": "core",
-      "tense_id": null,
+      "mechanism_id": "pronominal_accord_sujet",
+      "detail_id": "autonome",
+      "tense_id": "passe_compose",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
         "3": null,
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "rendre_compte",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -8314,7 +8312,7 @@ const QUESTIONS = [
       },
       {
         "key": "3",
-        "text": "Vous trouverez ci-joint les deux annexes."
+        "text": "Vous trouverez ci-joint deux annexes."
       },
       {
         "key": "4",
@@ -8330,11 +8328,11 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Règle : Pour chaque participe, on cherche d'abord ce qui reçoit directement l'action et si ce mot se trouve avant ou après le participe. Dans cette phrase : 1. On succède à quelqu'un : « se » signifie « l'une à l'autre » et ne reçoit pas directement l'action ; « succédé » reste inchangé. 2. « La somme » indique combien le voyage a coûté ; c'est une mesure de prix, donc « coûté » reste inchangé. 3. Placé avant « les deux annexes », « ci-joint » fonctionne comme une expression fixe et ne s'accorde pas. 4. Ils ont serré quoi ? « la main », placée après « serré » ; « se » signifie « l'un à l'autre ». Donc : les quatre phrases sont correctes ; la réponse est T.",
+    "explanation": "R?gle : pour chaque participe, on cherche d'abord ce qui re?oit directement l'action et si ce mot se trouve avant ou apr?s le participe. 1. On succ?de ? quelqu'un : ? se ? est indirect et ? succ?d? ? reste invariable. 2. ? La somme ? indique un prix : ? co?t? ? reste invariable. 3. Devant ? deux annexes ?, sans d?terminant, ? ci-joint ? a une valeur pr?positive et reste invariable. 4. Dans ? se sont serr? la main ?, ? se ? est indirect et le COD ? la main ? vient apr?s. Les quatre phrases sont correctes : r?ponse T.",
     "why": {
       "1": "On dit « succéder à quelqu'un ». Comme « se » signifie ici « l'une à l'autre », « succédé » reste inchangé : la phrase est correcte.",
       "2": "« La somme » indique le prix du voyage, et non un objet directement coûté. Dans cet emploi de mesure, on écrit « coûté » : la phrase est correcte.",
-      "3": "Devant le groupe nominal « les deux annexes », l'expression « ci-joint » reste inchangée : la phrase est correcte.",
+      "3": "Correcte : devant ? deux annexes ?, sans d?terminant, ? ci-joint ? a une valeur pr?positive stable et reste invariable.",
       "4": "Ils ont serré quoi ? « la main », qui vient après le participe. « Se » signifie « l'un à l'autre » : on écrit « serré ».",
       "A": "Chacune des quatre phrases applique une règle correcte ; « Aucune » est donc faux.",
       "T": "Les quatre accords ont été vérifiés séparément et sont corrects ; « Toutes » est la bonne réponse."
@@ -8347,15 +8345,35 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "matrice_participes_speciaux",
-      "detail_id": "core",
+      "mechanism_id": "pronominal_se_coi",
+      "detail_id": "sans_cod",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "cod_apres",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "mesure_duree_prix",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "participe_adjectival_selon_position",
+          "detail_id": "avant_stable",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -8947,7 +8965,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "matrice_participes_speciaux",
+      "mechanism_id": "participe_suivi_infinitif",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -8955,7 +8973,27 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "impersonnel_participe_invariable",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "sans_cod",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_cvd_avant",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -9547,15 +9585,35 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "matrice_participes_speciaux",
-      "detail_id": "core",
-      "tense_id": null,
+      "mechanism_id": "pronominal_accord_sujet",
+      "detail_id": "essentiellement",
+      "tense_id": "passe_compose",
       "option_misconceptions": {
         "1": null,
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "participe_adjectival_selon_position",
+          "detail_id": "avant_stable",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "infinitif_sous_entendu_invariable",
+          "detail_id": "core",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_accord_sujet",
+          "detail_id": "autonome",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -16866,8 +16924,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "concordance_temps",
+      "mechanism_id": "hypothese_si_plus_que_parfait_conditionnel_passe",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -16875,7 +16933,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "subjonctif_indicatif",
+          "mechanism_id": "concession_bien_que",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "rupture_syntaxique",
+          "mechanism_id": "gerondif_sujet_implicite",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -16926,8 +17004,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "accord_sujet_verbe",
+      "mechanism_id": "quantifieur_pluriel",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -16935,7 +17013,21 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "nom_collectif",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -16986,8 +17078,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_modes_et_temps",
+      "family": "subjonctif_indicatif",
+      "mechanism_id": "apres_que_indicatif",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -16995,7 +17087,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "mesure_duree_prix",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -17046,8 +17146,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_modes_et_temps",
+      "family": "subjonctif_indicatif",
+      "mechanism_id": "apres_que_indicatif",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -17055,7 +17155,27 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "nombres_traits_union",
+          "mechanism_id": "cent_vingt_mille",
+          "detail_id": "vingt",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "sans_cod",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "conjugaison",
+          "mechanism_id": "imperatif_et_pronoms",
+          "detail_id": "affirmatif",
+          "tense_id": "imperatif_present"
+        }
+      ]
     }
   },
   {
@@ -17106,8 +17226,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "orthographe_lexicale",
+      "mechanism_id": "paronyme_lexical",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -17115,7 +17235,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "orthographe_lexicale",
+          "mechanism_id": "graphie_composee",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "orthographe_lexicale",
+          "mechanism_id": "graphie_lexicale_usage",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -17166,8 +17300,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -17226,8 +17360,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_regimes_et_relatives",
+      "family": "pronoms_relatifs",
+      "mechanism_id": "regime_de_dont",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -17286,8 +17420,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "a_a",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -17295,7 +17429,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "quel_que_quelque",
+          "detail_id": "quel_que",
+          "tense_id": null
+        },
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "noyau_singulier_complement_pluriel",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "prepositions_regies",
+          "mechanism_id": "regime_verbal_direct",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -17346,8 +17500,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_ponctuation_et_syntaxe",
+      "family": "ponctuation",
+      "mechanism_id": "interdiction_virgule_sujet_verbe",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -17355,7 +17509,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "ponctuation",
+          "mechanism_id": "virgule_coordination",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "ponctuation",
+          "mechanism_id": "incise_double_virgule",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -17406,8 +17574,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "orthographe_lexicale",
+      "mechanism_id": "genre_des_noms",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -17415,7 +17583,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "orthographe_lexicale",
+          "mechanism_id": "graphie_composee",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "qu_en_quant_quand",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "orthographe_lexicale",
+          "mechanism_id": "paronyme_lexical",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -17466,8 +17654,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "concordance_temps",
+      "mechanism_id": "hypothese_si_imparfait_conditionnel",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -17475,7 +17663,21 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "pronoms_relatifs",
+          "mechanism_id": "redondance_relative_pronom",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "quoique_quoi_que",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -17526,8 +17728,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -17535,7 +17737,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "mesure_duree_prix",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "fait_suivi_infinitif",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -17586,8 +17802,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "fait_suivi_infinitif",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -17595,7 +17811,27 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "rendre_compte",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_en_invariable",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -17646,8 +17882,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "subjonctif_indicatif",
+      "mechanism_id": "certitude_indicatif",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -17655,7 +17891,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "subjonctif_indicatif",
+          "mechanism_id": "obligation_necessite",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "subjonctif_indicatif",
+          "mechanism_id": "doute_possibilite",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "subjonctif_indicatif",
+          "mechanism_id": "declencheur_mode_selon_sens",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -17706,16 +17962,36 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
-      "tense_id": null,
+      "tense_id": "passe_compose",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_apres",
+          "detail_id": "sans_cod",
+          "tense_id": null
+        },
+        {
+          "family": "pronoms_relatifs",
+          "mechanism_id": "regime_a_auquel",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "formes_de_phrase",
+          "mechanism_id": "mise_en_evidence_c_est_qui_que",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -17766,16 +18042,30 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "son_sont",
       "detail_id": "core",
-      "tense_id": null,
+      "tense_id": "present",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
         "3": "UNK",
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "on_ont",
+          "detail_id": "core",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "ce_se",
+          "detail_id": "core",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -17826,8 +18116,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "rupture_syntaxique",
+      "mechanism_id": "gerondif_sujet_implicite",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -17835,7 +18125,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "rupture_syntaxique",
+          "mechanism_id": "groupe_detache_sujet_implicite",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -17886,8 +18184,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "orthographe_lexicale",
+      "mechanism_id": "graphie_lexicale_usage",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -17895,7 +18193,27 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "davantage_davantage",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "orthographe_lexicale",
+          "mechanism_id": "adverbes_amment_emment",
+          "detail_id": "ent",
+          "tense_id": null
+        },
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "sujet_eloigne",
+          "detail_id": "core",
+          "tense_id": "present"
+        }
+      ]
     }
   },
   {
@@ -17946,16 +18264,36 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "toutes_correctes_suspectes",
-      "detail_id": "core",
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "quel_que_quelque",
+      "detail_id": "adverbe",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "quoique_quoi_que",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "participe_sans_auxiliaire",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "prepositions_regies",
+          "mechanism_id": "regime_verbal_de",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -18006,8 +18344,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_homophones_et_accords",
+      "family": "accord_sujet_verbe",
+      "mechanism_id": "noyau_singulier_complement_pluriel",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -18015,7 +18353,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_pluriel",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -18066,10 +18418,10 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
-      "detail_id": "core",
-      "tense_id": null,
+      "family": "accord_participe_passe",
+      "mechanism_id": "pronominal_se_coi",
+      "detail_id": "cod_apres",
+      "tense_id": "passe_compose",
       "option_misconceptions": {
         "1": "UNK",
         "2": null,
@@ -18126,8 +18478,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "orthographe_lexicale",
+      "mechanism_id": "accord_mots_particuliers",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -18135,7 +18487,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "mesure_duree_prix",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -18186,8 +18546,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "accord_sujet_verbe",
+      "mechanism_id": "sujets_coordonnees",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -18195,7 +18555,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "nom_collectif",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "sujet_eloigne",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "relative_qui_antecedent_personne",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -18246,9 +18626,9 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
-      "detail_id": "core",
+      "family": "accord_participe_passe",
+      "mechanism_id": "participe_adjectival_selon_position",
+      "detail_id": "avant_stable",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -18306,8 +18686,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_modes_et_temps",
+      "family": "subjonctif_indicatif",
+      "mechanism_id": "obligation_necessite",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -18315,7 +18695,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "subjonctif_indicatif",
+          "mechanism_id": "doute_possibilite",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "subjonctif_indicatif",
+          "mechanism_id": "souhait_volonte",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -18366,8 +18760,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -18375,7 +18769,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "mesure_duree_prix",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -18426,8 +18828,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "ponctuation",
+      "mechanism_id": "virgule_coordination",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -18435,7 +18837,27 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "ponctuation",
+          "mechanism_id": "apposition",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "pronoms_relatifs",
+          "mechanism_id": "ce_qui_ce_que",
+          "detail_id": "cod",
+          "tense_id": null
+        },
+        {
+          "family": "ponctuation",
+          "mechanism_id": "incise_double_virgule",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -18486,16 +18908,36 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
-      "detail_id": "core",
-      "tense_id": null,
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "quel_que_quelque",
+      "detail_id": "quel_que",
+      "tense_id": "subjonctif_present",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
         "3": "UNK",
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "conjugaison",
+          "mechanism_id": "present_selon_personne",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "pronoms_relatifs",
+          "mechanism_id": "regime_a_auquel",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -18546,8 +18988,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "interrogation_indirecte",
+      "mechanism_id": "ordre_declaratif",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -18555,7 +18997,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "interrogation_indirecte",
+          "mechanism_id": "si_sans_est_ce_que",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "interrogation_indirecte",
+          "mechanism_id": "suppression_inversion",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "interrogation_indirecte",
+          "mechanism_id": "ce_qui_ce_que",
+          "detail_id": "sujet",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -18606,8 +19068,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "conjugaison",
+      "mechanism_id": "participe_passe_irregulier",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -18615,7 +19077,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "ces_ses_cest_sest",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "etre_accord_sujet",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -18666,8 +19142,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "pronoms_relatifs",
+      "mechanism_id": "possession_dont",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -18675,7 +19151,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "pronoms_relatifs",
+          "mechanism_id": "ou_lieu_temps_verrouille",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "orthographe_lexicale",
+          "mechanism_id": "graphie_lexicale_usage",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -18726,8 +19216,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -18786,8 +19276,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "toutes_correctes_suspectes",
+      "family": "accord_sujet_verbe",
+      "mechanism_id": "relative_qui_antecedent",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -18795,7 +19285,27 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "quoique_quoi_que",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_pluriel",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "pronoms_reprise",
+          "mechanism_id": "locution_pronominale_figee",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -18846,8 +19356,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_regimes_et_relatives",
+      "family": "pronoms_relatifs",
+      "mechanism_id": "possession_dont",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -18855,7 +19365,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "tout_tous_toute_toutes",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "noyau_singulier_complement_pluriel",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "pronoms_relatifs",
+          "mechanism_id": "redondance_relative_pronom",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -18906,8 +19436,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "accord_sujet_verbe",
+      "mechanism_id": "sujet_infinitif",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -18915,7 +19445,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "rupture_syntaxique",
+          "mechanism_id": "gerondif_sujet_implicite",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "conjugaison",
+          "mechanism_id": "subjonctif_selon_personne",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -18966,8 +19510,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "orthographe_lexicale",
+      "mechanism_id": "graphie_lexicale_usage",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -18975,7 +19519,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "orthographe_lexicale",
+          "mechanism_id": "graphie_composee",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "quel_que_quelque",
+          "detail_id": "quel_que",
+          "tense_id": "subjonctif_present"
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "participe_adjectival_selon_position",
+          "detail_id": "avant_stable",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -19026,8 +19590,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -19035,7 +19599,27 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "impersonnel_participe_invariable",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_en_invariable",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "participe_suivi_infinitif",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -19086,16 +19670,30 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
-      "detail_id": "core",
-      "tense_id": null,
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_apres",
+      "detail_id": "cod_apres",
+      "tense_id": "passe_compose",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
         "3": null,
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "conjugaison",
+          "mechanism_id": "infinitif_participe",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -19146,16 +19744,24 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "toutes_correctes_suspectes",
-      "detail_id": "core",
+      "family": "accord_participe_passe",
+      "mechanism_id": "participe_adjectival_selon_position",
+      "detail_id": "avant_stable",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "impersonnel_participe_invariable",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -19206,8 +19812,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "pronoms_relatifs",
+      "mechanism_id": "regime_a_auquel",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -19215,7 +19821,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "pronoms_relatifs",
+          "mechanism_id": "sujet_qui",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "pronoms_relatifs",
+          "mechanism_id": "preposition_plus_lequel",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -19266,8 +19886,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "conjugaison",
+      "mechanism_id": "participe_passe_irregulier",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -19275,7 +19895,21 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_apres",
+          "detail_id": "cod_apres",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -19326,8 +19960,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_modes_et_temps",
+      "family": "subjonctif_indicatif",
+      "mechanism_id": "doute_possibilite",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -19335,7 +19969,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "subjonctif_indicatif",
+          "mechanism_id": "obligation_necessite",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "subjonctif_indicatif",
+          "mechanism_id": "concession_bien_que",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "subjonctif_indicatif",
+          "mechanism_id": "souhait_volonte",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -19386,8 +20040,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "ca_sa",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -19395,7 +20049,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "quoique_quoi_que",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "ma_m_a_m_as",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "conjugaison",
+          "mechanism_id": "participe_passe_irregulier",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -19446,8 +20120,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_regimes_et_relatives",
+      "family": "pronoms_relatifs",
+      "mechanism_id": "regime_de_dont",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -19455,7 +20129,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "pronoms_relatifs",
+          "mechanism_id": "regime_a_auquel",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -19506,8 +20188,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -19515,7 +20197,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "fait_suivi_infinitif",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_apres",
+          "detail_id": "cod_apres",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -19566,8 +20262,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "toutes_correctes_suspectes",
+      "family": "accord_participe_passe",
+      "mechanism_id": "mesure_duree_prix",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -19575,7 +20271,21 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "quel_que_quelque",
+          "detail_id": "adverbe",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "impersonnel_participe_invariable",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -19626,16 +20336,36 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "accord_participe_passe",
+      "mechanism_id": "pronominal_cvd_avant",
       "detail_id": "core",
-      "tense_id": null,
+      "tense_id": "plus_que_parfait",
       "option_misconceptions": {
         "1": "UNK",
         "2": null,
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "rendre_compte",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "rupture_syntaxique",
+          "mechanism_id": "participe_detache_sujet_implicite",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -19686,8 +20416,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "concordance_temps",
+      "mechanism_id": "hypothese_si_imparfait_conditionnel",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -19695,7 +20425,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_apres",
+          "detail_id": "cod_apres",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -19746,8 +20484,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_ponctuation_et_syntaxe",
+      "family": "ponctuation",
+      "mechanism_id": "interdiction_virgule_sujet_verbe",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -19755,7 +20493,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "ponctuation",
+          "mechanism_id": "virgule_coordination",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "ponctuation",
+          "mechanism_id": "incise_double_virgule",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -19806,8 +20558,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "prepositions_regies",
+      "mechanism_id": "regime_verbal_a",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -19815,7 +20567,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "ces_ses_cest_sest",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "ce_se",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "prepositions_regies",
+          "mechanism_id": "regime_verbal_direct",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -19866,8 +20638,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -19875,7 +20647,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "conjugaison",
+          "mechanism_id": "infinitif_participe",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "ca_sa",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -19926,8 +20712,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "quoique_quoi_que",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -19935,7 +20721,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "quel_que_quelque",
+          "detail_id": "quel_que",
+          "tense_id": "subjonctif_present"
+        }
+      ]
     }
   },
   {
@@ -19986,8 +20780,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "mesure_duree_prix",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -19995,7 +20789,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "fait_suivi_infinitif",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "infinitif_sous_entendu_invariable",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "sans_cod",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -20046,8 +20860,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "ces_ses_cest_sest",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -20055,7 +20869,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "conjugaison",
+          "mechanism_id": "infinitif_participe",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "ponctuation",
+          "mechanism_id": "interdiction_virgule_verbe_complement",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -20106,8 +20934,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -20115,7 +20943,15 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "du_du_accent",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -20166,8 +21002,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_modes_et_temps",
+      "family": "subjonctif_indicatif",
+      "mechanism_id": "apres_que_indicatif",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -20175,7 +21011,27 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "mesure_duree_prix",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "pronoms_reprise",
+          "mechanism_id": "locution_pronominale_figee",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "conjugaison",
+          "mechanism_id": "imperatif_et_pronoms",
+          "detail_id": "affirmatif",
+          "tense_id": "imperatif_present"
+        }
+      ]
     }
   },
   {
@@ -20226,8 +21082,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_regimes_et_relatives",
+      "family": "pronoms_relatifs",
+      "mechanism_id": "regime_de_dont",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -20235,7 +21091,15 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "pronoms_relatifs",
+          "mechanism_id": "regime_a_auquel",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -20286,8 +21150,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "rupture_syntaxique",
+      "mechanism_id": "gerondif_sujet_implicite",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -20346,8 +21210,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_ponctuation_et_syntaxe",
+      "family": "ponctuation",
+      "mechanism_id": "interdiction_virgule_sujet_verbe",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -20355,7 +21219,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "ponctuation",
+          "mechanism_id": "virgule_coordination",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "ponctuation",
+          "mechanism_id": "incise_double_virgule",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -20406,8 +21284,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "formes_de_phrase",
+      "mechanism_id": "mise_en_evidence_c_est_qui_que",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -20415,7 +21293,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "on_ont",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "tout_tous_toute_toutes",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -20466,8 +21364,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -20475,7 +21373,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "conjugaison",
+          "mechanism_id": "infinitif_participe",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "noyau_singulier_complement_pluriel",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "subjonctif_indicatif",
+          "mechanism_id": "concession_bien_que",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -20526,8 +21444,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -20535,7 +21453,15 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_apres",
+          "detail_id": "cod_apres",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -20586,8 +21512,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -20595,7 +21521,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "pronoms_relatifs",
+          "mechanism_id": "redondance_relative_pronom",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "pronoms_relatifs",
+          "mechanism_id": "ou_lieu_temps_verrouille",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "pronoms_relatifs",
+          "mechanism_id": "regime_de_dont",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -20646,8 +21592,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_modes_et_temps",
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "quoique_quoi_que",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -20655,7 +21601,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "subjonctif_indicatif",
+          "mechanism_id": "concession_bien_que",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "subjonctif_indicatif",
+          "mechanism_id": "apres_que_indicatif",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "orthographe_lexicale",
+          "mechanism_id": "graphie_lexicale_usage",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -20706,16 +21672,36 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
-      "detail_id": "core",
-      "tense_id": null,
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "quel_que_quelque",
+      "detail_id": "quel_que",
+      "tense_id": "subjonctif_present",
       "option_misconceptions": {
         "1": null,
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "prepositions_regies",
+          "mechanism_id": "regime_verbal_de",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_pluriel",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -20766,16 +21752,36 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
-      "detail_id": "core",
-      "tense_id": null,
+      "family": "accord_participe_passe",
+      "mechanism_id": "pronominal_accord_sujet",
+      "detail_id": "autonome",
+      "tense_id": "passe_compose",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
         "3": "UNK",
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "pronoms_relatifs",
+          "mechanism_id": "regime_direct_que",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "cod_apres",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "subjonctif_indicatif",
+          "mechanism_id": "concession_bien_que",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -20826,8 +21832,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "pronoms_reprise",
+      "mechanism_id": "reprise_proposition_le",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -20835,7 +21841,27 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "pronoms_relatifs",
+          "mechanism_id": "redondance_relative_pronom",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "quel_que_quelque",
+          "detail_id": "quel_que",
+          "tense_id": "subjonctif_present"
+        }
+      ]
     }
   },
   {
@@ -20886,8 +21912,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "rupture_syntaxique",
+      "mechanism_id": "participe_detache_sujet_implicite",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -20895,7 +21921,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "relative_qui_antecedent_personne",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -20946,8 +21986,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "toutes_correctes_suspectes",
+      "family": "accord_participe_passe",
+      "mechanism_id": "impersonnel_participe_invariable",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -20955,7 +21995,27 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "rendre_compte",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "participe_adjectival_selon_position",
+          "detail_id": "avant_stable",
+          "tense_id": null
+        },
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "relative_qui_antecedent_personne",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -21006,8 +22066,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_ponctuation_et_syntaxe",
+      "family": "ponctuation",
+      "mechanism_id": "complement_initial",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -21015,7 +22075,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "ponctuation",
+          "mechanism_id": "virgule_coordination",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "ponctuation",
+          "mechanism_id": "interdiction_virgule_sujet_verbe",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "ponctuation",
+          "mechanism_id": "interdiction_virgule_verbe_complement",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -21066,8 +22146,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_sujet_verbe",
+      "mechanism_id": "relative_qui_antecedent_personne",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -21075,7 +22155,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "subjonctif_indicatif",
+          "mechanism_id": "concession_bien_que",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "orthographe_lexicale",
+          "mechanism_id": "graphie_lexicale_usage",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -21126,8 +22226,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -21186,8 +22286,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "subjonctif_indicatif",
+      "mechanism_id": "concession_bien_que",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -21195,7 +22295,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "pronoms_relatifs",
+          "mechanism_id": "redondance_relative_pronom",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "pronoms_relatifs",
+          "mechanism_id": "regime_de_dont",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -21246,8 +22366,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "aucune_hypercorrections",
+      "family": "accord_participe_passe",
+      "mechanism_id": "mesure_duree_prix",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -21306,8 +22426,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "orthographe_lexicale",
+      "mechanism_id": "genre_des_noms",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -21315,7 +22435,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "sujet_eloigne",
+          "detail_id": "core",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "quel_que_quelque",
+          "detail_id": "quel_que",
+          "tense_id": "subjonctif_present"
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -21366,8 +22506,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_regimes_et_relatives",
+      "family": "pronoms_relatifs",
+      "mechanism_id": "regime_de_dont",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -21375,7 +22515,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "pronoms_relatifs",
+          "mechanism_id": "regime_a_auquel",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "pronoms_relatifs",
+          "mechanism_id": "regime_sur_sur_lequel",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -21426,8 +22580,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "prepositions_regies",
+      "mechanism_id": "locution_prepositive",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -21435,7 +22589,27 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "concordance_temps",
+          "mechanism_id": "hypothese_si_plus_que_parfait_conditionnel_passe",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "orthographe_lexicale",
+          "mechanism_id": "paronyme_lexical",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -21486,8 +22660,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "toutes_correctes_suspectes",
+      "family": "accord_participe_passe",
+      "mechanism_id": "mesure_duree_prix",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -21495,7 +22669,27 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "conjugaison",
+          "mechanism_id": "imperatif_et_pronoms",
+          "detail_id": "affirmatif",
+          "tense_id": "imperatif_present"
+        },
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "quel_que_quelque",
+          "detail_id": "adverbe",
+          "tense_id": null
+        },
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "relative_qui_antecedent_personne",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -21546,8 +22740,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_ponctuation_et_syntaxe",
+      "family": "ponctuation",
+      "mechanism_id": "interdiction_virgule_sujet_verbe",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -21555,7 +22749,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "ponctuation",
+          "mechanism_id": "virgule_coordination",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "ponctuation",
+          "mechanism_id": "complement_initial",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "ponctuation",
+          "mechanism_id": "incise_double_virgule",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -21606,16 +22820,36 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
-      "detail_id": "core",
-      "tense_id": null,
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "quel_que_quelque",
+      "detail_id": "quel_que",
+      "tense_id": "subjonctif_present",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
         "3": "UNK",
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_pluriel",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "pronoms_relatifs",
+          "mechanism_id": "regime_de_dont",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -24967,7 +26201,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "relations_logiques_multiples",
+      "mechanism_id": "concession",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -25447,7 +26681,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "ponctuation_multi_regles",
+      "mechanism_id": "virgule_enumeration_simple",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -25455,7 +26689,15 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "ponctuation",
+          "mechanism_id": "interdiction_virgule_verbe_complement",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -25567,7 +26809,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "ponctuation_multi_regles",
+      "mechanism_id": "complement_initial",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -25575,7 +26817,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "ponctuation",
+          "mechanism_id": "interdiction_virgule_sujet_verbe",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "ponctuation",
+          "mechanism_id": "interdiction_virgule_verbe_complement",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -26167,7 +27423,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "ponctuation_multi_regles",
+      "mechanism_id": "interdiction_virgule_sujet_verbe",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -26175,7 +27431,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "ponctuation",
+          "mechanism_id": "interdiction_virgule_verbe_complement",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "ponctuation",
+          "mechanism_id": "complement_initial",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -28147,7 +29417,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "regimes_multiples",
+      "mechanism_id": "regime_verbal_de",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -28155,7 +29425,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "prepositions_regies",
+          "mechanism_id": "regime_verbal_a",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -28747,7 +30025,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "regimes_multiples",
+      "mechanism_id": "regime_verbal_de",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -28755,7 +30033,21 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "prepositions_regies",
+          "mechanism_id": "regime_verbal_en",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "prepositions_regies",
+          "mechanism_id": "regime_verbal_a",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -33727,7 +35019,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "matrice_participes_speciaux",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -35047,7 +36339,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "regimes_multiples",
+      "mechanism_id": "regime_verbal_direct",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -35055,7 +36347,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "prepositions_regies",
+          "mechanism_id": "regime_verbal_a",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -36127,15 +37427,23 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "matrice_participes_speciaux",
+      "mechanism_id": "participe_suivi_infinitif",
       "detail_id": "core",
-      "tense_id": null,
+      "tense_id": "passe_compose",
       "option_misconceptions": {
         "1": "UNK",
         "2": null,
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -37267,7 +38575,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "ponctuation_multi_regles",
+      "mechanism_id": "relative_explicative_avec_virgules",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -37275,7 +38583,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "ponctuation",
+          "mechanism_id": "relative_determinative_sans_virgules",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "ponctuation",
+          "mechanism_id": "interdiction_virgule_sujet_verbe",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -38348,7 +39670,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "ponctuation_multi_regles",
+      "mechanism_id": "relative_determinative_sans_virgules",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -39480,7 +40802,7 @@ const QUESTIONS = [
       "profile": "perfectionnement",
       "domain": "orthographe",
       "family": "accord_participe_passe",
-      "mechanism_id": "matrice_participes_speciaux",
+      "mechanism_id": "avoir_cvd_avant",
       "difficulty": "difficile",
       "source_genre": "copie_eleve",
       "communicative_purpose": "relire les décisions et actions consignées dans un procès-verbal",
@@ -39500,7 +40822,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "sans_cod",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "fait_suivi_infinitif",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "etre_accord_sujet",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -40106,7 +41448,7 @@ const QUESTIONS = [
       "profile": "perfectionnement",
       "domain": "orthographe",
       "family": "accord_participe_passe",
-      "mechanism_id": "matrice_avoir_etre",
+      "mechanism_id": "fait_suivi_infinitif",
       "difficulty": "niveau_examen",
       "source_genre": "copie_eleve",
       "communicative_purpose": "relire quatre formulations d'une copie avant sa remise",
@@ -40126,7 +41468,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "sans_cod",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "etre_accord_sujet",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     },
     "stem": "Une synthèse mêle quatre constructions différentes; vérifiez chaque participe à partir de sa fonction."
   },
@@ -42671,7 +44033,7 @@ const QUESTIONS = [
       },
       {
         "key": "3",
-        "text": "Ces bibliothèques de quartier offrent aux jeunes des espaces qu'il apprécie."
+        "text": "Ces bibliothèques de quartier offrent aux jeunes des espaces qu'apprécie les jeunes."
       },
       {
         "key": "4",
@@ -42687,11 +44049,11 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "La première phrase respecte à la fois le déterminant démonstratif, l'accord du verbe et la reprise pronominale ou relative.",
+    "explanation": "Dans la phrase 1, ? ces ? introduit le nom pluriel ? biblioth?ques ?, ? offrent ? s'accorde avec ce sujet et ? ils ? reprend ? les jeunes ?. Dans la phrase 3, le sujet invers? ? les jeunes ? est pluriel : il faudrait ?crire ? qu'appr?cient les jeunes ?.",
     "why": {
-      "1": "La réponse « Ces bibliothèques de quartier offrent aux jeunes des espaces qu'ils apprécient. » est correcte : La première phrase respecte à la fois le déterminant démonstratif, l'accord du verbe et la reprise pronominale ou relative.",
+      "1": "Correcte : ? ces ? est le d?terminant d?monstratif pluriel, ? offrent ? s'accorde avec ? biblioth?ques ? et ? ils ? reprend ? les jeunes ?.",
       "2": "Le scripteur confond le démonstratif avec le possessif et rompt en plus l'accord du verbe avec le sujet pluriel.",
-      "3": "Le scripteur accorde le pronom ou choisit le relatif d'après un nom voisin au lieu de reconstruire sa fonction.",
+      "3": "Incorrecte : dans ? qu'appr?cie les jeunes ?, le sujet invers? ? les jeunes ? est pluriel ; le verbe devrait ?tre ? appr?cient ?.",
       "4": "Le scripteur remplace le déterminant démonstratif pluriel par la tournure présentative c'est.",
       "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
       "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
@@ -42700,8 +44062,8 @@ const QUESTIONS = [
       "slot_id": "pond40-06",
       "profile": "perfectionnement",
       "domain": "orthographe",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_homophones_et_accords",
+      "family": "homophones_grammaticaux",
+      "mechanism_id": "ces_ses_cest_sest",
       "difficulty": "niveau_examen",
       "source_genre": "copie_eleve",
       "communicative_purpose": "introduire un bilan de lecture dans une copie argumentative",
@@ -42721,7 +44083,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "sujet_eloigne",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "sujet_inverse",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     },
     "stem": "Quatre élèves introduisent un argument."
   },
@@ -42775,8 +44151,8 @@ const QUESTIONS = [
       "slot_id": "pond40-07",
       "profile": "perfectionnement",
       "domain": "syntaxe",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_regimes_et_relatives",
+      "family": "pronoms_relatifs",
+      "mechanism_id": "regime_a_auquel",
       "difficulty": "niveau_examen",
       "source_genre": "copie_eleve",
       "communicative_purpose": "proposer une amélioration concrète dans une lettre ouverte",
@@ -42796,7 +44172,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "pronoms_relatifs",
+          "mechanism_id": "sujet_qui",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "pronoms_relatifs",
+          "mechanism_id": "redondance_relative_pronom",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     },
     "stem": "Quatre élèves formulent une proposition."
   },
@@ -42850,8 +44240,8 @@ const QUESTIONS = [
       "slot_id": "pond40-08",
       "profile": "perfectionnement",
       "domain": "orthographe",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "difficulty": "niveau_examen",
       "source_genre": "copie_eleve",
       "communicative_purpose": "raconter une activité collective dans un compte rendu",
@@ -42871,7 +44261,21 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_apres",
+          "detail_id": "cod_apres",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "conjugaison",
+          "mechanism_id": "infinitif_participe",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     },
     "stem": "Quatre élèves racontent la fin d'une collecte."
   },
@@ -42925,8 +44329,8 @@ const QUESTIONS = [
       "slot_id": "pond40-09",
       "profile": "perfectionnement",
       "domain": "syntaxe",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_modes_et_temps",
+      "family": "subjonctif_indicatif",
+      "mechanism_id": "concession_bien_que",
       "difficulty": "niveau_examen",
       "source_genre": "copie_eleve",
       "communicative_purpose": "nuancer une proposition dans une conclusion",
@@ -43000,8 +44404,8 @@ const QUESTIONS = [
       "slot_id": "pond40-10",
       "profile": "perfectionnement",
       "domain": "ponctuation",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_ponctuation_et_syntaxe",
+      "family": "ponctuation",
+      "mechanism_id": "apposition",
       "difficulty": "niveau_examen",
       "source_genre": "copie_eleve",
       "communicative_purpose": "présenter une observation dans un rapport de stage",
@@ -43021,7 +44425,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "ponctuation",
+          "mechanism_id": "incise_double_virgule",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "ponctuation",
+          "mechanism_id": "interdiction_virgule_sujet_verbe",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     },
     "stem": "Quatre élèves ponctuent une phrase contenant une apposition et une incise."
   },
@@ -46104,7 +47522,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "graphies_lexicales_multiples",
+      "mechanism_id": "graphie_lexicale_usage",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -46352,66 +47770,6 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
-      }
-    }
-  },
-  {
-    "id": "orth-L14-2",
-    "rule": "orthographe",
-    "type": "sentences",
-    "gen": {
-      "model": "Fable 5",
-      "thinking": "standard",
-      "tracked": true
-    },
-    "instruction": "Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
-    "options": [
-      {
-        "key": "1",
-        "text": "Cette estimation chiffrée reste sujette à caution."
-      },
-      {
-        "key": "2",
-        "text": "Le comité a rétabli le fonctionnaire dans ses droits séance tenante."
-      },
-      {
-        "key": "3",
-        "text": "Le protocole est entaché d’une erreur de procédure."
-      },
-      {
-        "key": "4",
-        "text": "Ce visa fait foi jusqu’à preuve du contraire."
-      },
-      {
-        "key": "A",
-        "text": "Aucune"
-      },
-      {
-        "key": "T",
-        "text": "Toutes"
-      }
-    ],
-    "answer": "T",
-    "explanation": "Quatre locutions correctes malgré leur allure suspecte : « sujette à caution » (accordé avec estimation), « séance tenante », « entaché de » et « faire foi jusqu'à preuve du contraire ». Réponse : Toutes.",
-    "why": {
-      "1": "Correcte : « sujet à caution » s'accorde (estimation → sujette) ; « caution » y garde son sens ancien de garantie.",
-      "2": "Correcte : « séance tenante » (= pendant que la séance se tient) est figée au participe présent.",
-      "3": "Correcte : « entaché de » (souillé de) s'écrit avec un seul t initial et se construit avec « de ».",
-      "4": "Correcte : « faire foi » reste invariable et la locution est « jusqu'à preuve du contraire ».",
-      "A": "Les quatre phrases sont correctes.",
-      "T": "Correct : chacune de ces locutions administratives, souvent soupçonnée à tort, est irréprochable."
-    },
-    "hep": {
-      "metadata_schema_version": "hep-question/2.1",
-      "family": "orthographe_lexicale",
-      "mechanism_id": "graphies_lexicales_multiples",
-      "detail_id": "core",
-      "tense_id": null,
-      "option_misconceptions": {
-        "1": null,
-        "2": null,
-        "3": null,
-        "4": null
       }
     }
   },
@@ -47004,7 +48362,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "graphies_lexicales_multiples",
+      "mechanism_id": "graphie_lexicale_usage",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -47012,7 +48370,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "etre_accord_sujet",
+          "detail_id": "core",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -47604,7 +48970,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "homophones_multiples_en_contexte",
+      "mechanism_id": "dans_d_en",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -47664,9 +49030,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "homophones_multiples_en_contexte",
+      "mechanism_id": "ma_m_a_m_as",
       "detail_id": "core",
-      "tense_id": null,
+      "tense_id": "passe_compose",
       "option_misconceptions": {
         "1": null,
         "2": "UNK",
@@ -48684,7 +50050,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "graphies_lexicales_multiples",
+      "mechanism_id": "graphie_lexicale_usage",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -49224,7 +50590,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "graphies_lexicales_multiples",
+      "mechanism_id": "graphie_lexicale_usage",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -50844,7 +52210,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "graphies_lexicales_multiples",
+      "mechanism_id": "graphie_composee",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -52464,7 +53830,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "graphies_lexicales_multiples",
+      "mechanism_id": "graphie_lexicale_usage",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -52944,7 +54310,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "graphies_lexicales_multiples",
+      "mechanism_id": "genre_des_noms",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -53963,8 +55329,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "orthographe_lexicale",
-      "mechanism_id": "graphies_lexicales_multiples",
+      "family": "subjonctif_indicatif",
+      "mechanism_id": "locution_subjonctive_figee",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -55644,7 +57010,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "graphies_lexicales_multiples",
+      "mechanism_id": "pluriel_noms_en_al",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -58224,7 +59590,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "graphies_lexicales_multiples",
+      "mechanism_id": "accord_mots_particuliers",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -58232,7 +59598,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "orthographe_lexicale",
+          "mechanism_id": "graphie_composee",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -58824,7 +60198,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "graphies_lexicales_multiples",
+      "mechanism_id": "abreviation_titres_civilite",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -58832,7 +60206,21 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "nombres_traits_union",
+          "mechanism_id": "abreviation_adjectifs_ordinaux",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "nombres_traits_union",
+          "mechanism_id": "ecriture_heures_symbole_h",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -59363,16 +60751,36 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
-      "detail_id": "core",
-      "tense_id": null,
+      "family": "accord_participe_passe",
+      "mechanism_id": "pronominal_accord_sujet",
+      "detail_id": "autonome",
+      "tense_id": "passe_compose",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
         "3": null,
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "rendre_compte",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_apres",
+          "detail_id": "cod_apres",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -59423,16 +60831,36 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "toutes_correctes_suspectes",
-      "detail_id": "core",
-      "tense_id": null,
+      "family": "accord_participe_passe",
+      "mechanism_id": "pronominal_se_coi",
+      "detail_id": "sans_cod",
+      "tense_id": "passe_compose",
       "option_misconceptions": {
         "1": null,
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "cod_apres",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_accord_sujet",
+          "detail_id": "sens_passif",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_accord_sujet",
+          "detail_id": "autonome",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -59904,7 +61332,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "graphies_lexicales_multiples",
+      "mechanism_id": "graphie_lexicale_usage",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -59963,16 +61391,24 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_modes_et_temps",
-      "detail_id": "core",
-      "tense_id": null,
+      "family": "conjugaison",
+      "mechanism_id": "conditionnel",
+      "detail_id": "present_irregulier",
+      "tense_id": "conditionnel_present",
       "option_misconceptions": {
         "1": "UNK",
         "2": null,
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "subjonctif_indicatif",
+          "mechanism_id": "obligation_necessite",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -60023,8 +61459,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -60032,7 +61468,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "pronoms_relatifs",
+          "mechanism_id": "preposition_plus_lequel",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "pronoms_relatifs",
+          "mechanism_id": "ou_lieu_temps_verrouille",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -60563,8 +62013,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -60572,7 +62022,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "pronoms_relatifs",
+          "mechanism_id": "possession_dont",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_apres",
+          "detail_id": "sans_cod",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "conjugaison",
+          "mechanism_id": "infinitif_participe",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -60623,8 +62093,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "subjonctif_indicatif",
+      "mechanism_id": "concession_bien_que",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -60632,7 +62102,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "fait_suivi_infinitif",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "subjonctif_indicatif",
+          "mechanism_id": "apres_que_indicatif",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -61103,8 +62587,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "prepositions_regies",
+      "mechanism_id": "regime_verbal_a",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -61112,7 +62596,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "participe_suivi_infinitif",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_apres",
+          "detail_id": "cod_apres",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_pronom_l",
+          "detail_id": "nominal",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -61223,8 +62727,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "toutes_correctes_suspectes",
+      "family": "accord_participe_passe",
+      "mechanism_id": "fait_suivi_infinitif",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -61232,7 +62736,27 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "ponctuation",
+          "mechanism_id": "apposition",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "du_du_accent",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "prepositions_regies",
+          "mechanism_id": "regime_verbal_de",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -61703,8 +63227,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_modes_et_temps",
+      "family": "accord_participe_passe",
+      "mechanism_id": "etre_accord_sujet",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -61712,7 +63236,21 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "subjonctif_indicatif",
+          "mechanism_id": "anteriorite_avant_que",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -61763,8 +63301,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "ponctuation",
+      "mechanism_id": "apposition",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -61772,7 +63310,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "conjugaison",
+          "mechanism_id": "futur_simple_regulier",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -61823,16 +63381,36 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
-      "detail_id": "core",
-      "tense_id": null,
+      "family": "accord_participe_passe",
+      "mechanism_id": "pronominal_se_coi",
+      "detail_id": "cod_apres",
+      "tense_id": "passe_compose",
       "option_misconceptions": {
         "1": "UNK",
         "2": null,
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_apres",
+          "detail_id": "cod_apres",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "du_du_accent",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -62448,7 +64026,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "1",
-        "text": "Nous nous réjouissons de vous y accueillir nombreux."
+        "text": "Nous nous réjouissons de vous y accueillir."
       },
       {
         "key": "2",
@@ -62472,9 +64050,9 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "« De vous y accueillir nombreux » est irréprochable (y + attribut accordé). Ailleurs : « réalisés », « créées » et « du 5 au 12 juin ».",
+    "explanation": "La phrase 1 est correcte : ? y ? reprend le lieu o? les invit?s seront accueillis. Ailleurs, il faut ?crire ? r?alis?s ?, ? cr??es ? et ? du 5 au 12 juin ?.",
     "why": {
-      "1": "Correcte : pronom « y » bien placé et « nombreux » accordé avec « vous ».",
+      "1": "Correcte : ? y ? reprend le lieu de l'exposition et se place devant l'infinitif ? accueillir ?.",
       "2": "« ont été réalisé » : le participe s'accorde avec « les travaux » → réalisés.",
       "3": "« ont créé » : le COD « que » (= les œuvres) est antéposé → créées.",
       "4": "« du 5 aux 12 juin » : la borne finale singulière exige « au 12 juin ».",
@@ -62483,8 +64061,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "pronoms_reprise",
+      "mechanism_id": "lieu_ou_a_y",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -62492,7 +64070,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "etre_accord_sujet",
+          "detail_id": "core",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "prepositions_regies",
+          "mechanism_id": "determinant_contracte",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -62963,8 +64561,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "participe_sans_auxiliaire",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -62972,7 +64570,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_apres",
+          "detail_id": "sans_cod",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "etre_accord_sujet",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -63204,7 +64816,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "regimes_multiples",
+      "mechanism_id": "regime_verbal_a",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -63563,16 +65175,30 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
-      "detail_id": "core",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_apres",
+      "detail_id": "cod_apres",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "leur_leurs",
+          "detail_id": "determinant",
+          "tense_id": null
+        },
+        {
+          "family": "accord_adjectif_nom",
+          "mechanism_id": "accord_adjectif_avec_nom",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -63984,7 +65610,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "graphies_lexicales_multiples",
+      "mechanism_id": "graphie_composee",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -64103,8 +65729,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_modes_et_temps",
+      "family": "subjonctif_indicatif",
+      "mechanism_id": "souhait_volonte",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -64112,7 +65738,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "ca_sa",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "subjonctif_indicatif",
+          "mechanism_id": "obligation_necessite",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -64883,16 +66523,30 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "toutes_correctes_suspectes",
-      "detail_id": "core",
-      "tense_id": null,
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_apres",
+      "detail_id": "sans_cod",
+      "tense_id": "passe_compose",
       "option_misconceptions": {
         "1": null,
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_accord_sujet",
+          "detail_id": "autonome",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_pronom_l",
+          "detail_id": "nominal",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -65363,8 +67017,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "subjonctif_indicatif",
+      "mechanism_id": "certitude_indicatif",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -65372,7 +67026,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "conjugaison",
+          "mechanism_id": "infinitif_participe",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -65903,8 +67565,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_regimes_et_relatives",
+      "family": "pronoms_relatifs",
+      "mechanism_id": "regime_a_auquel",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -65912,7 +67574,27 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "pronoms_reprise",
+          "mechanism_id": "coi_lui_leur",
+          "detail_id": "singulier",
+          "tense_id": null
+        },
+        {
+          "family": "nombres_traits_union",
+          "mechanism_id": "cent_vingt_mille",
+          "detail_id": "cent",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -66263,8 +67945,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "homophones_grammaticaux",
-      "mechanism_id": "homophones_multiples_en_contexte",
+      "family": "pronoms_relatifs",
+      "mechanism_id": "ou_lieu_temps_verrouille",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -66503,16 +68185,36 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
-      "detail_id": "core",
-      "tense_id": null,
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_apres",
+      "detail_id": "sans_cod",
+      "tense_id": "passe_compose",
       "option_misconceptions": {
         "1": "UNK",
         "2": null,
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "discours_indirect",
+          "mechanism_id": "pronoms_et_possessifs",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "sujet_eloigne",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -67043,16 +68745,24 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
-      "detail_id": "core",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_apres",
+      "detail_id": "cod_apres",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "orthographe_lexicale",
+          "mechanism_id": "graphie_composee",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -67404,7 +69114,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "homophones_multiples_en_contexte",
+      "mechanism_id": "qu_en_quant_quand",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -67464,7 +69174,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "graphies_lexicales_multiples",
+      "mechanism_id": "graphie_composee",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -67643,16 +69353,30 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
-      "detail_id": "core",
-      "tense_id": null,
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_apres",
+      "detail_id": "cod_apres",
+      "tense_id": "passe_compose",
       "option_misconceptions": {
         "1": null,
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "participe_sans_auxiliaire",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "conjugaison",
+          "mechanism_id": "infinitif_participe",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -68183,8 +69907,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_ponctuation_et_syntaxe",
+      "family": "ponctuation",
+      "mechanism_id": "apposition",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -68192,7 +69916,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "rupture_syntaxique",
+          "mechanism_id": "participe_detache_sujet_implicite",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "ce_se",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -68364,7 +70102,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "accord_participe_passe",
-      "mechanism_id": "matrice_participes_speciaux",
+      "mechanism_id": "impersonnel_participe_invariable",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -68372,7 +70110,27 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "participe_sans_auxiliaire",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "sans_cod",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -68783,8 +70541,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "accord_participe_passe",
+      "mechanism_id": "etre_accord_sujet",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -68792,7 +70550,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "tout_tous_toute_toutes",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "sujet_eloigne",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "leur_leurs",
+          "detail_id": "determinant",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -69383,16 +71161,30 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "toutes_correctes_suspectes",
-      "detail_id": "core",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_apres",
+      "detail_id": "cod_apres",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "subjonctif_indicatif",
+          "mechanism_id": "souhait_volonte",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -69863,8 +71655,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "homophones_grammaticaux",
-      "mechanism_id": "homophones_multiples_en_contexte",
+      "family": "pronoms_relatifs",
+      "mechanism_id": "ou_lieu_temps_verrouille",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -69983,8 +71775,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "accord_participe_passe",
+      "mechanism_id": "etre_accord_sujet",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -69992,7 +71784,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "conjugaison",
+          "mechanism_id": "futur_simple_regulier",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -70404,7 +72210,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "homophones_multiples_en_contexte",
+      "mechanism_id": "la_la_l_a_l_as",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -70583,8 +72389,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "accord_adjectif_nom",
+      "mechanism_id": "accord_adjectif_avec_nom",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -70592,7 +72398,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "prepositions_regies",
+          "mechanism_id": "determinant_contracte",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "orthographe_lexicale",
+          "mechanism_id": "graphie_lexicale_usage",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -71183,8 +73003,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "accord_adjectif_nom",
+      "mechanism_id": "accord_adjectif_avec_nom",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -71192,7 +73012,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "orthographe_lexicale",
+          "mechanism_id": "nombre_du_nom",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "orthographe_lexicale",
+          "mechanism_id": "graphie_lexicale_usage",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "conjugaison",
+          "mechanism_id": "imperatif_deuxieme_personne",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -71783,8 +73623,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "formes_de_phrase",
+      "mechanism_id": "phrase_non_verbale",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -71792,7 +73632,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "prepositions_regies",
+          "mechanism_id": "determinant_contracte",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_adjectif_nom",
+          "mechanism_id": "accord_adjectif_avec_nom",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -72204,9 +74064,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "homophones_multiples_en_contexte",
+      "mechanism_id": "on_ont",
       "detail_id": "core",
-      "tense_id": null,
+      "tense_id": "passe_compose",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
@@ -72263,8 +74123,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -72272,7 +74132,21 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "rendre_compte",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_apres",
+          "detail_id": "sans_cod",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -72863,16 +74737,30 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
-      "detail_id": "core",
-      "tense_id": null,
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_apres",
+      "detail_id": "sans_cod",
+      "tense_id": "passe_compose",
       "option_misconceptions": {
         "1": null,
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "accord_adjectif_nom",
+          "mechanism_id": "accord_adjectif_avec_nom",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -73344,7 +75232,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "homophones_multiples_en_contexte",
+      "mechanism_id": "son_sont",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -73463,8 +75351,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "fait_suivi_infinitif",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -73472,7 +75360,27 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "participe_suivi_infinitif",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_apres",
+          "detail_id": "cod_apres",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -74063,8 +75971,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -74072,7 +75980,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_apres",
+          "detail_id": "cod_apres",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -74544,7 +76460,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "homophones_multiples_en_contexte",
+      "mechanism_id": "et_est",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -74663,8 +76579,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "orthographe_lexicale",
+      "mechanism_id": "nombre_du_nom",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -74672,7 +76588,27 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "etre_accord_sujet",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "participe_sans_auxiliaire",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -75263,8 +77199,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "etre_accord_sujet",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -75272,7 +77208,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "conjugaison",
+          "mechanism_id": "infinitif_participe",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "orthographe_lexicale",
+          "mechanism_id": "accord_mots_particuliers",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -75863,8 +77813,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -75872,7 +77822,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "participe_sans_auxiliaire",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -76404,7 +78362,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "homophones_multiples_en_contexte",
+      "mechanism_id": "qu_en_quant_quand",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -76463,8 +78421,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "participe_sans_auxiliaire",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -76472,7 +78430,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "conjugaison",
+          "mechanism_id": "infinitif_participe",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "orthographe_lexicale",
+          "mechanism_id": "nombre_du_nom",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -76824,7 +78796,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "regimes_multiples",
+      "mechanism_id": "regime_verbal_de",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -76832,7 +78804,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "prepositions_regies",
+          "mechanism_id": "regime_verbal_direct",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -76943,8 +78923,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "homophones_grammaticaux",
-      "mechanism_id": "homophones_multiples_en_contexte",
+      "family": "pronoms_relatifs",
+      "mechanism_id": "ou_lieu_temps_verrouille",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -77028,7 +79008,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "1",
-        "text": "La séance s’est ouverte à midi précis devant vingt délégués."
+        "text": "La séance s’est ouverte à midi devant vingt délégués."
       },
       {
         "key": "2",
@@ -77052,27 +79032,47 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Règle : « s'ouvrir » et « s'abstenir » s'accordent avec leur sujet (séance ouverte, membres abstenus) ; l'épithète et le participe passé employé avec « être » s'accordent avec leur nom (propositions votées, transmises ; procès-verbal affiché). Dans ces phrases : chacune applique correctement son accord — « à midi précis » s'accorde avec « midi », masculin. Donc : les quatre sont correctes — réponse T (Toutes).",
+    "explanation": "Les quatre phrases sont correctes. ? S'est ouverte ? s'accorde avec ? la s?ance ? ; ? vot?es ? et ? transmises ? avec ? les propositions ? ; ? se sont abstenus ? avec ? trois membres ? ; ? affich? ? avec ? le proc?s-verbal ?. R?ponse : Toutes.",
     "why": {
-      "1": "Correcte : « s'est ouverte » s'accorde avec « la séance » ; « à midi précis » (masculin) est la graphie attendue.",
+      "1": "Correcte : ? s'est ouverte ? s'accorde avec le sujet f?minin singulier ? la s?ance ?.",
       "2": "Correcte : « votées » et « transmises » s'accordent avec « les propositions ».",
       "3": "Correcte : « s'abstenir » (essentiellement pronominal) s'accorde avec « trois membres » → abstenus.",
       "4": "Correcte : « affiché » s'accorde avec « le procès-verbal », masculin singulier.",
       "A": "Impossible : chacune des quatre phrases résiste à la vérification.",
-      "T": "Correct : quatre accords justes, du pronominal à l'épithète."
+      "T": "Correct : les quatre participes portent l'accord attendu dans leur construction."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
-      "detail_id": "core",
-      "tense_id": null,
+      "family": "accord_participe_passe",
+      "mechanism_id": "pronominal_accord_sujet",
+      "detail_id": "sens_passif",
+      "tense_id": "passe_compose",
       "option_misconceptions": {
         "1": null,
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_accord_sujet",
+          "detail_id": "essentiellement",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "etre_accord_sujet",
+          "detail_id": "core",
+          "tense_id": "futur_simple"
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "participe_sans_auxiliaire",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -77663,8 +79663,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "orthographe_lexicale",
+      "mechanism_id": "nombre_du_nom",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -77672,7 +79672,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_adjectif_nom",
+          "mechanism_id": "accord_adjectif_avec_nom",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -78263,8 +80277,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "conjugaison",
+      "mechanism_id": "participe_passe_irregulier",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -78272,7 +80286,21 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "orthographe_lexicale",
+          "mechanism_id": "accentuation",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -78744,7 +80772,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "homophones_multiples_en_contexte",
+      "mechanism_id": "la_la_l_a_l_as",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -78863,8 +80891,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "toutes_correctes_suspectes",
+      "family": "accord_participe_passe",
+      "mechanism_id": "pronominal_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -78872,7 +80900,27 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "participe_sans_auxiliaire",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "tout_tous_toute_toutes",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -79463,8 +81511,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "accord_participe_passe",
+      "mechanism_id": "participe_sans_auxiliaire",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -79472,7 +81520,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "orthographe_lexicale",
+          "mechanism_id": "nombre_du_nom",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "etre_accord_sujet",
+          "detail_id": "core",
+          "tense_id": "present"
+        }
+      ]
     }
   },
   {
@@ -80063,8 +82125,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "orthographe_lexicale",
+      "mechanism_id": "paronyme_lexical",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -80072,7 +82134,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "orthographe_lexicale",
+          "mechanism_id": "finale_muette_par_famille",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -80364,7 +82440,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "relations_logiques_multiples",
+      "mechanism_id": "opposition",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -80372,7 +82448,27 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "connecteurs_logiques",
+          "mechanism_id": "cause",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "connecteurs_logiques",
+          "mechanism_id": "progression_temporelle",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "connecteurs_logiques",
+          "mechanism_id": "consequence",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -80603,8 +82699,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "accord_sujet_verbe",
+      "mechanism_id": "quantifieur_singulier",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -80612,7 +82708,21 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "sujet_eloigne",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "etre_accord_sujet",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -80904,7 +83014,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "ponctuation",
-      "mechanism_id": "ponctuation_multi_regles",
+      "mechanism_id": "t_euphonique_inversion",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -81143,8 +83253,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "mesure_duree_prix",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -81152,7 +83262,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "conjugaison",
+          "mechanism_id": "present_selon_personne",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "noyau_singulier_complement_pluriel",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "pronoms_relatifs",
+          "mechanism_id": "ou_lieu_temps_verrouille",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -81504,7 +83634,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "regimes_multiples",
+      "mechanism_id": "locution_prepositive",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -81683,8 +83813,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "accord_sujet_verbe",
+      "mechanism_id": "sujet_eloigne",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -81692,7 +83822,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "conjugaison",
+          "mechanism_id": "imperatif_et_pronoms",
+          "detail_id": "affirmatif",
+          "tense_id": "imperatif_present"
+        }
+      ]
     }
   },
   {
@@ -82163,16 +84301,24 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
-      "detail_id": "core",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_apres",
+      "detail_id": "cod_apres",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -82763,16 +84909,30 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
-      "detail_id": "core",
-      "tense_id": null,
+      "family": "accord_participe_passe",
+      "mechanism_id": "pronominal_accord_sujet",
+      "detail_id": "autonome",
+      "tense_id": "passe_compose",
       "option_misconceptions": {
         "1": "UNK",
         "2": "UNK",
         "3": "UNK",
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -83244,7 +85404,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "homophones_multiples_en_contexte",
+      "mechanism_id": "qu_en_quant_quand",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -83303,16 +85463,30 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
-      "detail_id": "core",
-      "tense_id": null,
+      "family": "accord_participe_passe",
+      "mechanism_id": "pronominal_se_coi",
+      "detail_id": "sans_cod",
+      "tense_id": "passe_compose",
       "option_misconceptions": {
         "1": null,
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "nombres_traits_union",
+          "mechanism_id": "cent_vingt_mille",
+          "detail_id": "vingt",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -83843,8 +86017,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -83852,7 +86026,21 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "tout_tous_toute_toutes",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -84323,8 +86511,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -84332,7 +86520,27 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_apres",
+          "detail_id": "cod_apres",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_accord_sujet",
+          "detail_id": "autonome",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -84863,8 +87071,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -84872,7 +87080,21 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "pronoms_relatifs",
+          "mechanism_id": "regime_direct_que",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -85343,8 +87565,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "accord_sujet_verbe",
+      "mechanism_id": "quantifieur_singulier",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -85352,7 +87574,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "etre_accord_sujet",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "conjugaison",
+          "mechanism_id": "futur_simple_regulier",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -85883,8 +88119,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -85892,7 +88128,21 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "participe_sans_auxiliaire",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -86903,8 +89153,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "participe_suivi_infinitif",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -86912,7 +89162,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -87384,7 +89648,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "homophones_multiples_en_contexte",
+      "mechanism_id": "qu_en_quant_quand",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -87923,8 +90187,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -87932,7 +90196,27 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "cod_apres",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_accord_sujet",
+          "detail_id": "autonome",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -88223,8 +90507,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -88232,7 +90516,21 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "rendre_compte",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -88584,7 +90882,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "homophones_multiples_en_contexte",
+      "mechanism_id": "ou_ou",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -90203,8 +92501,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -90212,7 +92510,21 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "sans_cod",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -90264,7 +92576,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "homophones_multiples_en_contexte",
+      "mechanism_id": "ca_sa",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -90503,8 +92815,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -90512,7 +92824,21 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_accord_sujet",
+          "detail_id": "essentiellement",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -91703,8 +94029,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -91712,7 +94038,21 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_accord_sujet",
+          "detail_id": "autonome",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -92064,9 +94404,9 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "homophones_multiples_en_contexte",
+      "mechanism_id": "on_ont",
       "detail_id": "core",
-      "tense_id": null,
+      "tense_id": "passe_compose",
       "option_misconceptions": {
         "1": null,
         "2": "UNK",
@@ -93803,8 +96143,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -93812,7 +96152,21 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "rendre_compte",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -94043,8 +96397,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -94052,7 +96406,21 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "cod_apres",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -96083,8 +98451,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -96092,7 +98460,21 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "sans_cod",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -96383,8 +98765,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -96392,7 +98774,21 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "sans_cod",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -97284,7 +99680,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "homophones_multiples_en_contexte",
+      "mechanism_id": "son_sont",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -98363,8 +100759,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -98372,7 +100768,21 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "sans_cod",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -98424,7 +100834,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "homophones_grammaticaux",
-      "mechanism_id": "homophones_multiples_en_contexte",
+      "mechanism_id": "dans_d_en",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -98663,8 +101073,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -98672,7 +101082,21 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "sans_cod",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -100523,8 +102947,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -100532,7 +102956,21 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "sans_cod",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -100763,8 +103201,8 @@ const QUESTIONS = [
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -100772,7 +103210,21 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_sujet_verbe",
+          "mechanism_id": "quantifieur_singulier",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "sans_cod",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -102810,8 +105262,8 @@ const QUESTIONS = [
       "slot_id": "sh50-006",
       "profile": "perfectionnement",
       "domain": "syntaxe",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "subjonctif_indicatif",
+      "mechanism_id": "apres_que_indicatif",
       "detail_id": "core",
       "tense_id": null,
       "difficulty": "niveau_examen",
@@ -102824,7 +105276,27 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "sans_cod",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "quel_que_quelque",
+          "detail_id": "quel_que",
+          "tense_id": "subjonctif_present"
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "fait_suivi_infinitif",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -103088,8 +105560,8 @@ const QUESTIONS = [
       "slot_id": "sh50-010",
       "profile": "perfectionnement",
       "domain": "syntaxe",
-      "family": "revision_transversale",
-      "mechanism_id": "toutes_correctes_suspectes",
+      "family": "rupture_syntaxique",
+      "mechanism_id": "participe_detache_sujet_implicite",
       "detail_id": "core",
       "tense_id": null,
       "difficulty": "niveau_examen",
@@ -103102,7 +105574,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "participe_sans_auxiliaire",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -103436,8 +105916,8 @@ const QUESTIONS = [
       "slot_id": "sh50-015",
       "profile": "perfectionnement",
       "domain": "syntaxe",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "fait_suivi_infinitif",
       "detail_id": "core",
       "tense_id": null,
       "difficulty": "niveau_examen",
@@ -103450,7 +105930,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_apres",
+          "detail_id": "cod_apres",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "conjugaison",
+          "mechanism_id": "infinitif_participe",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "etre_accord_sujet",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -104131,8 +106631,8 @@ const QUESTIONS = [
       "slot_id": "sh50-025",
       "profile": "perfectionnement",
       "domain": "syntaxe",
-      "family": "revision_transversale",
-      "mechanism_id": "phrases_eleves_heterogenes",
+      "family": "subjonctif_indicatif",
+      "mechanism_id": "concession_bien_que",
       "detail_id": "core",
       "tense_id": null,
       "difficulty": "niveau_examen",
@@ -104145,7 +106645,27 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "cod_apres",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "pronoms_relatifs",
+          "mechanism_id": "redondance_relative_pronom",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "subjonctif_indicatif",
+          "mechanism_id": "apres_que_indicatif",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -104826,8 +107346,8 @@ const QUESTIONS = [
       "slot_id": "sh50-035",
       "profile": "perfectionnement",
       "domain": "syntaxe",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_participes_et_infinitifs",
+      "family": "accord_participe_passe",
+      "mechanism_id": "participe_suivi_infinitif",
       "detail_id": "core",
       "tense_id": null,
       "difficulty": "niveau_examen",
@@ -104840,7 +107360,21 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "cod_apres",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "fait_suivi_infinitif",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {
@@ -105522,8 +108056,8 @@ const QUESTIONS = [
       "slot_id": "sh50-045",
       "profile": "perfectionnement",
       "domain": "syntaxe",
-      "family": "revision_transversale",
-      "mechanism_id": "revision_modes_et_temps",
+      "family": "subjonctif_indicatif",
+      "mechanism_id": "certitude_indicatif",
       "detail_id": "core",
       "tense_id": null,
       "difficulty": "niveau_examen",
@@ -105536,7 +108070,27 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "subjonctif_indicatif",
+          "mechanism_id": "obligation_necessite",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "subjonctif_indicatif",
+          "mechanism_id": "concession_bien_que",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "concordance_temps",
+          "mechanism_id": "hypothese_si_plus_que_parfait_conditionnel_passe",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
     }
   },
   {

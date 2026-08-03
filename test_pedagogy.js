@@ -71,6 +71,54 @@ Object.entries(canonicalPedagogy.mechanisms)
     `Fiche apprenant absente pour le mécanisme publié ${mechanismId}`
   ));
 
+[
+  'qu_en_quant_quand',
+  'la_la_l_a_l_as',
+  'ca_sa',
+  'son_sont',
+  'on_ont',
+].forEach((mechanismId) => {
+  assert.ok(pedagogy.LEARNER_GUIDANCE[mechanismId]);
+  const description = pedagogy.describe('homophones_grammaticaux', mechanismId);
+  assert.strictEqual(description.fallback, false);
+  assert.strictEqual(description.learnerSource, 'mechanism');
+  assert.strictEqual(description.learnerSteps.length, 3);
+  assert.deepStrictEqual(
+    description.path,
+    canonicalPedagogy.mechanisms[mechanismId].details.core
+  );
+});
+
+Object.entries({
+  genre_des_noms: 'orthographe_lexicale',
+  phrase_non_verbale: 'formes_de_phrase',
+  determinant_contracte: 'prepositions_regies',
+  accord_adjectif_avec_nom: 'accord_adjectif_nom',
+  nombre_du_nom: 'orthographe_lexicale',
+  pluriel_noms_en_al: 'orthographe_lexicale',
+  et_est: 'homophones_grammaticaux',
+  ma_m_a_m_as: 'homophones_grammaticaux',
+  dans_d_en: 'homophones_grammaticaux',
+  abreviation_titres_civilite: 'orthographe_lexicale',
+  abreviation_adjectifs_ordinaux: 'nombres_traits_union',
+  ecriture_heures_symbole_h: 'nombres_traits_union',
+  virgule_enumeration_simple: 'ponctuation',
+  regime_verbal_en: 'prepositions_regies',
+  a_a: 'homophones_grammaticaux',
+  ou_ou: 'homophones_grammaticaux',
+  t_euphonique_inversion: 'ponctuation',
+}).forEach(([mechanismId, family]) => {
+  assert.ok(pedagogy.LEARNER_GUIDANCE[mechanismId]);
+  const description = pedagogy.describe(family, mechanismId);
+  assert.strictEqual(description.fallback, false);
+  assert.strictEqual(description.learnerSource, 'mechanism');
+  assert.strictEqual(description.learnerSteps.length, 3);
+  assert.deepStrictEqual(
+    description.path,
+    canonicalPedagogy.mechanisms[mechanismId].details.core
+  );
+});
+
 const learnerTitles = new Set();
 const learnerExplanations = new Set();
 
