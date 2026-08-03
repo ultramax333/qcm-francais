@@ -34887,7 +34887,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quelle phrase emploie correctement le pronom relatif ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -34915,23 +34915,23 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Dans la tournure d'insistance « c'est … que », le complément déjà introduit par sa préposition (« à Genève ») se reprend par « que » — jamais par « où ». Ailleurs, « avoir besoin de » appelle « dont », et « penser à quelqu'un » appelle « à qui ».",
+    "explanation": "Règle : dans une phrase emphatique, « c'est… qui » met le sujet en évidence et « c'est… que » met un autre élément en évidence. Méthode : retrouve la phrase neutre (« La convention a été signée à Genève »), repère l'élément mis en évidence (« à Genève »), puis emploie « c'est à Genève que… ». Dans les autres phrases, « avoir besoin de » appelle « dont » et « penser à quelqu'un » appelle « à qui ».",
     "why": {
-      "1": "« où » fait double emploi : la mise en relief exige « c'est à Genève QUE ».",
+      "1": "La phrase met « à Genève » en évidence : on emploie donc « c'est à Genève que… », et non « où ».",
       "2": "« que » : « avoir besoin de » → « dont nous avons besoin ».",
-      "3": "Correct : c'est + complément prépositionnel + que.",
-      "4": "« que » : « penser à quelqu'un » → « auquel je pense ».",
+      "3": "Correct : la phrase neutre « La convention a été signée à Genève » devient « C'est à Genève que… ».",
+      "4": "« Penser à quelqu'un » se reprend par « à qui » : « le collègue à qui je pense ».",
       "A": "La phrase 3 est correcte.",
       "T": "Les phrases 1, 2 et 4 sont fautives."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "pronoms_relatifs",
-      "mechanism_id": "regime_a_auquel",
+      "family": "formes_de_phrase",
+      "mechanism_id": "mise_en_evidence_c_est_qui_que",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
-        "1": "UNK",
+        "1": "ou_au_lieu_de_que_dans_c_est_que",
         "2": "UNK",
         "3": null,
         "4": "UNK"

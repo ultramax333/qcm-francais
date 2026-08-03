@@ -31,6 +31,7 @@
     conjugaison: 'Conjugaison',
     connecteurs_logiques: 'Connecteurs logiques',
     discours_indirect: 'Discours indirect',
+    formes_de_phrase: 'Formes de phrase',
     gentiles_majuscules: 'Majuscule des gentilés',
     homophones_grammaticaux: 'Homophones grammaticaux',
     interrogation_indirecte: 'Interrogation indirecte',
@@ -56,6 +57,7 @@
     conjugaison: 'Identifie le temps, le radical et la personne avant d’ajouter la terminaison.',
     connecteurs_logiques: 'Nomme la relation entre les deux idées avant de choisir le connecteur.',
     discours_indirect: 'Recalcule séparément les temps, les personnes et les repères depuis le nouveau point de vue.',
+    formes_de_phrase: 'Pars de la phrase neutre, puis choisis qui pour mettre le sujet en évidence et que pour un autre élément.',
     gentiles_majuscules: 'Distingue le nom de personne, l’adjectif et la langue avant de choisir la majuscule.',
     homophones_grammaticaux: 'Identifie la catégorie et la fonction du mot, puis utilise un test de remplacement.',
     interrogation_indirecte: 'Après le verbe introducteur, conserve une subordonnée à l’ordre déclaratif.',
@@ -494,6 +496,13 @@
       'Transformer complètement des paroles rapportées',
       'Exemple : « Je finirai ici demain » peut devenir « il a dit qu’il finirait là le lendemain ». Temps, personnes et repères doivent tous suivre le nouveau point de vue.',
       ['Repère le nouveau locuteur, le moment et le lieu du récit.', 'Adapte séparément pronoms, possessifs, temps et mots comme « ici » ou « demain ».', 'Relis la phrase entière pour vérifier la cohérence de toutes les transformations.']
+    ),
+
+    // Formes de phrase
+    mise_en_evidence_c_est_qui_que: learnerGuide(
+      'Mettre un élément en évidence avec « c’est… qui/que »',
+      'Exemple : « Paul présente le dossier à Genève » devient « C’est Paul qui présente le dossier » pour insister sur le sujet, ou « C’est à Genève que Paul présente le dossier » pour insister sur le lieu.',
+      ['Retrouve la phrase neutre.', 'Repère l’élément mis en évidence et sa fonction.', 'Choisis « qui » pour le sujet et « que » pour un autre élément.']
     ),
 
     // Majuscules des peuples et des langues
@@ -1210,6 +1219,7 @@
     deictiques_ancres: ['repères de temps et de lieu au discours indirect', 'Recalcule les mots comme ici, demain ou hier depuis le nouveau point de vue du narrateur.'],
     futur_vers_conditionnel: ['futur transformé en conditionnel', 'Après un verbe introducteur au passé, transforme le futur du discours direct en conditionnel.'],
     imperatif_vers_de_infinitif: ['impératif transformé en de + infinitif', 'Pour rapporter un ordre, emploie demander/ordonner de suivi de l’infinitif.'],
+    mise_en_evidence_c_est_qui_que: ['phrase emphatique : mise en évidence avec c’est… que', 'Dans une phrase emphatique, choisis qui pour mettre le sujet en évidence et que pour mettre en évidence un autre élément.'],
     nom_peuple_adjectif_langue: ['nom de peuple, adjectif ou langue', 'Mets une majuscule au nom d’un peuple ; garde la minuscule pour l’adjectif et pour le nom de la langue.'],
     leur_leurs: ['leur déterminant ou leur pronom', 'Devant un nom, leur est un déterminant et peut devenir leurs ; devant un verbe ou sans nom, le pronom leur reste invariable.'],
     quel_que_quelque: ['quel que / quelque', 'Écris quel que en deux mots devant être et accorde quel ; ailleurs, vérifie si quelque est déterminant ou adverbe.'],
@@ -1289,6 +1299,7 @@
     deictiques_ancres: ['discours indirect', 'nouvelle ancre énonciative', 'repère non précisé', 'déictique transposé'],
     futur_vers_conditionnel: ['introducteur au passé', 'futur du discours direct', 'transposition des temps', 'conditionnel au discours indirect'],
     imperatif_vers_de_infinitif: ['ordre au discours direct', 'verbe introducteur de demande', 'suppression de l’impératif', 'de + infinitif'],
+    mise_en_evidence_c_est_qui_que: ['phrase neutre', 'élément mis en évidence', 'fonction sujet ou autre', 'c’est… qui ou c’est… que'],
     nom_peuple_adjectif_langue: ['gentilé', 'nature non précisée', 'fonction à établir', 'majuscule ou minuscule'],
     leur_leurs: ['opposition leur / leurs', 'nature non précisée', 'test du nom suivant', 'variation ou invariabilité'],
     quel_que_quelque: ['opposition quel que / quelque', 'construction non précisée', 'nature à établir', 'graphie et accord'],
