@@ -1,4 +1,4 @@
-// Fichier généré par le pipeline HEP; ne pas modifier manuellement.
+// Fichier généré par pipeline_HEP.py; ne pas modifier manuellement.
 const RULES = [
   {
     "id": "orthographe",
@@ -10760,7 +10760,7 @@ const QUESTIONS = [
     "id": "rel-19",
     "rule": "relatifs",
     "type": "sentences",
-    "instruction": "Quelle(s) phrase(s) emploie(nt) le bon pronom relatif ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -10788,14 +10788,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Toutes correctes : « préparé À » → auquel (1) ; « la manière dont » (2) ; « reposer SUR » → sur lequel (3) ; « traiter AVEC » → avec lesquels (4). Réponse : Toutes.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : chaque proposition se vérifie en reconstruisant sa phrase simple et en relevant la préposition exigée. 1) « nous sommes préparés à ce défi » : « être préparé à » impose « à », et l’antécédent non humain masculin singulier donne « à + lequel », soit « auquel ». 2) « il s’exprime de cette manière » : le régime est en « de », et « dont » absorbe cette préposition, d’où « la manière dont ». 3) « tout repose sur ce principe » : « reposer sur » impose « sur », qui reste écrit devant la forme de lequel accordée au masculin singulier, « sur lequel ». 4) « nous traitons avec ces partenaires » : « traiter avec » impose « avec », et une forme de lequel au masculin pluriel, « lesquels », est admise après cette préposition.\nDonc : les quatre propositions expriment la préposition réellement exigée et accordent correctement le relatif; la réponse attendue est « Toutes ».",
     "why": {
-      "1": "Correcte : « être préparé à » → auquel.",
-      "2": "Correcte : tournure figée « la manière dont ».",
-      "3": "Correcte : « reposer sur » → sur lequel.",
-      "4": "Correcte : « traiter avec » → avec lesquels.",
-      "A": "Les quatre relatifs sont corrects.",
-      "T": "Correct : toutes les phrases sont correctes."
+      "1": "La phrase de base est « nous sommes préparés à ce défi » : la préposition « à » est bien portée par le relatif et se contracte avec « lequel » pour donner « auquel », forme du masculin singulier de « un défi ».",
+      "2": "La phrase de base est « il s’exprime de cette manière » : le régime en « de » est absorbé par « dont », ce qui explique qu’aucune préposition ne soit écrite devant le relatif.",
+      "3": "La phrase de base est « tout repose sur ce principe » : « sur » n’a pas de forme contractée avec le relatif et reste donc visible devant « lequel », accordé au masculin singulier.",
+      "4": "La phrase de base est « nous traitons avec ces partenaires » : « avec » reste visible devant la forme de lequel, accordée au masculin pluriel en « lesquels ».",
+      "A": "Les quatre propositions chiffrées expriment la préposition attendue; « Aucune » supposerait qu’aucune ne le fasse.",
+      "T": "Quatre régimes différents ont été vérifiés un à un et sont tous satisfaits, sans préposition manquante ni accord erroné : le décompte de quatre propositions correctes conduit à « Toutes »."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -10813,6 +10813,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-2006",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T18:58:34Z"
+        }
       }
     }
   },
@@ -11268,14 +11277,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "« souscrire À quelque chose » → « auxquelles ». Le piège : croire le verbe direct (« que ») ou en « de » (« dont »).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « nous avons souscrit à ces conditions ». Le verbe « souscrire » au sens d’adhérer, d’accepter, se construit avec « à » : on souscrit à des conditions, à un engagement. La préposition ne peut pas rester seule dans la subordonnée, c’est donc le relatif qui la porte. L’antécédent « les conditions » est un nom non humain, féminin pluriel : la forme de lequel est « lesquelles », et la contraction « à + lesquelles » donne « auxquelles ».\nDonc : le relatif attendu est « auxquelles », c’est-à-dire l’option 2.",
     "why": {
-      "1": "« dont » suppose « de » : souscrire exige « à ».",
-      "2": "Correct : souscrire à → auxquelles.",
-      "3": "« que » suppose un COD : faux.",
-      "4": "« desquelles » : mauvaise préposition.",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      "T": "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "`dont` porte la préposition « de », mais la phrase de base est « souscrire à ces conditions »; la forme attendue est « auxquelles ».",
+      "2": "« auxquelles » réunit les deux exigences : la préposition « à » de « souscrire à », et l’accord de la forme de lequel avec l’antécédent non humain féminin pluriel « les conditions », par la contraction « à + lesquelles ».",
+      "3": "`que` est le relatif du complément direct, comme dans « les conditions que nous avons acceptées »; ici le verbe demande « à », donc « auxquelles ».",
+      "4": "`desquelles` correspond à « de lesquelles » et suppose de nouveau un régime en « de »; « souscrire » demande « à », d’où « auxquelles ».",
+      "A": "Une proposition chiffrée porte le relatif attendu; « Aucune » ne peut donc pas convenir.",
+      "T": "Trois propositions chiffrées se trompent de préposition; « Toutes » exigerait que les quatre conviennent."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -11291,8 +11300,17 @@ const QUESTIONS = [
       "option_misconceptions": {
         "1": "regime_de_suppose",
         "2": null,
-        "3": "regime_a_non_identifie",
-        "4": "UNK"
+        "3": "regime_direct_suppose",
+        "4": "regime_de_suppose"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-2006",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T18:58:34Z"
+        }
       }
     }
   },
@@ -12168,14 +12186,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "« s'attendre À quelque chose » → « auquel personne ne s'attendait ».",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « personne ne s’attendait à ce scénario ». Le verbe pronominal « s’attendre » exige la préposition « à », et cette préposition doit être portée par le relatif. L’antécédent « le scénario » est un nom non humain, masculin singulier : la forme de lequel est « lequel », et la contraction « à + lequel » donne « auquel ». Deux vérifications comptent donc ici : la préposition, qui doit être « à », et la nature de l’antécédent, qui n’est pas une personne et interdit « qui » après la préposition.\nDonc : le relatif attendu est « auquel », c’est-à-dire l’option 3.",
     "why": {
-      "1": "« dont » suppose « de » : s'attendre exige « à ».",
-      "2": "« que » suppose un verbe direct : faux.",
-      "3": "Correct : s'attendre à → auquel.",
-      "4": "« à qui » : réservé aux personnes.",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Les options 1, 2 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "`dont` porte « de », alors que la phrase de base est « s’attendre à ce scénario »; la forme attendue est « auquel ».",
+      "2": "`que` suppose un complément direct, comme « le scénario que personne n’imaginait »; « s’attendre » impose « à », donc « auquel ».",
+      "3": "« auquel » porte la préposition « à » de « s’attendre à » et correspond à un antécédent non humain masculin singulier, par la contraction « à + lequel ».",
+      "4": "`à qui` a bien la préposition « à », mais « qui » après préposition reprend une personne, comme « la collègue à qui je pense »; l’antécédent est ici « le scénario », donc « auquel ».",
+      "A": "Une proposition chiffrée porte le relatif attendu; « Aucune » ne peut donc pas convenir.",
+      "T": "Trois propositions chiffrées échouent sur la préposition ou sur la nature de l’antécédent; « Toutes » exigerait que les quatre conviennent."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -12190,9 +12208,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
+        "2": "regime_direct_suppose",
         "3": null,
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-2006",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T18:58:34Z"
+        }
       }
     }
   },
@@ -12288,14 +12315,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "« se charger DE » → dont ; « aboutir À » → auquel. Deux régimes opposés dans la même phrase.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : un seul antécédent, « le guichet », est repris par deux relatives qui ont chacune leur verbe, donc chacune sa préposition. Première relative : « elle se charge de ce guichet » — « se charger » exige « de », et ce « de » est absorbé par « dont ». Seconde relative : « toutes les réclamations aboutissent à ce guichet » — « aboutir » exige « à », et comme l’antécédent est un nom non humain masculin singulier, « à + lequel » donne « auquel ». Le piège tient à ce que le même antécédent impose deux relatifs différents : il faut reconstruire séparément chaque phrase simple au lieu d’aligner les deux blancs.\nDonc : le premier blanc demande « dont » et le second « auquel », c’est-à-dire l’option 1.",
     "why": {
-      "1": "Correct : se charger de (dont) + aboutir à (auquel).",
-      "2": "Les deux inversés.",
-      "3": "2e « dont » fautif : aboutir À.",
-      "4": "1er « auquel » fautif : se charger DE.",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Les options 2, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "Les deux relatives sont traitées séparément : « dont » absorbe le « de » de « se charger de ce guichet », et « auquel » porte le « à » de « aboutir à ce guichet », accordé au masculin singulier.",
+      "2": "Les deux relatifs sont intervertis. `auquel elle se charge` prête à « se charger » un régime en « à » : il faut « dont elle se charge ». Et `dont aboutissent toutes les réclamations` remplace le « à » d’« aboutir à » par un « de » : il faut « auquel aboutissent toutes les réclamations ».",
+      "3": "Le premier « dont » convient, mais le second, dans `et dont aboutissent toutes les réclamations`, impose un « de » là où « aboutir » exige « à »; la forme attendue pour ce second blanc est « auquel ».",
+      "4": "Le second « auquel » convient, mais le premier, dans `auquel elle se charge`, impose un « à » là où « se charger » exige « de »; la forme attendue pour ce premier blanc est « dont ».",
+      "A": "Une combinaison chiffrée satisfait les deux verbes; « Aucune » ne peut donc pas convenir.",
+      "T": "Trois combinaisons chiffrées se trompent sur au moins un des deux régimes; « Toutes » exigerait que les quatre conviennent."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -12313,6 +12340,15 @@ const QUESTIONS = [
         "2": "regime_de_suppose",
         "3": "regime_de_suppose",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-2006",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T18:58:34Z"
+        }
       }
     }
   },
@@ -12560,7 +12596,7 @@ const QUESTIONS = [
     "id": "rel-49",
     "rule": "relatifs",
     "type": "sentences",
-    "instruction": "Quelle(s) phrase(s) emploie(nt) le bon pronom relatif ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -12588,14 +12624,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Toutes correctes : « grâce à », « auprès de » + personne, « responsable de » → dont, « tenir à » → auxquelles. Réponse : Toutes.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : on remet chaque antécédent dans une phrase simple pour lire la préposition exigée. 1) « nous avons tenu grâce à ces moyens » : la locution impose « à », l’antécédent « les moyens » est un nom non humain masculin pluriel, donc la forme de lequel est « lesquels » et la contraction « à + lesquels » donne « auxquels ». 2) « il s’informe auprès de la juriste » : la locution impose « de » et l’antécédent est humain, ce qui autorise « qui » après la préposition. 3) « il est responsable de ce budget » : le « de » du régime est absorbé par « dont », qui contient déjà cette préposition. 4) « elle tient à ces valeurs » : « tenir à » impose « à », l’antécédent « les valeurs » est non humain féminin pluriel, donc « à + lesquelles » donne « auxquelles ».\nDonc : chaque proposition porte la préposition réellement exigée et accorde correctement le relatif avec son antécédent; la réponse attendue est « Toutes ».",
     "why": {
-      "1": "Correcte : grâce à → grâce auxquels.",
-      "2": "Correcte : s'informer auprès de → auprès de qui.",
-      "3": "Correcte : responsable de → dont.",
-      "4": "Correcte : tenir à → auxquelles.",
-      "A": "Les quatre sont correctes.",
-      "T": "Correct : aucun relatif fautif."
+      "1": "La phrase de base est « nous avons tenu grâce à ces moyens » : la préposition « à » de la locution « grâce à » est bien portée par le relatif, et « auxquels » reprend un antécédent non humain masculin pluriel.",
+      "2": "La phrase de base est « il s’informe auprès de la juriste » : la préposition « de » reste visible dans « auprès de », et « qui » est admis après préposition parce que l’antécédent « la juriste » désigne une personne.",
+      "3": "La phrase de base est « il est responsable de ce budget » : « dont » contient déjà le « de » du régime, ce qui explique qu’aucune préposition ne soit répétée devant le relatif.",
+      "4": "La phrase de base est « elle tient à ces valeurs » : « tenir à » exige « à », et la contraction avec un antécédent non humain féminin pluriel produit « auxquelles ».",
+      "A": "Les quatre propositions chiffrées respectent le régime de leur verbe; « Aucune » supposerait qu’aucune ne le fasse.",
+      "T": "Les quatre régimes vérifiés un à un sont satisfaits et aucun relatif ne porte de préposition erronée : le décompte de quatre propositions correctes conduit à « Toutes »."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -12613,6 +12649,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-2006",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T18:58:34Z"
+        }
       }
     }
   },
@@ -12953,14 +12998,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "« se heurter À quelque chose » → le relatif attendu est « auxquels », non proposé. Réponse : Aucune.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « ils se sont heurtés à ces obstacles ». Le verbe pronominal « se heurter » exige la préposition « à » lorsqu’il désigne la rencontre d’une difficulté, et cette préposition doit être portée par le relatif. L’antécédent « les obstacles » est un nom non humain, masculin pluriel : la forme de lequel est « lesquels », et la contraction « à + lesquels » donne « auxquels ». On cherche donc « auxquels » parmi les propositions, et l’on constate qu’aucune ne le propose : trois portent une autre préposition et une supprime toute préposition.\nDonc : le relatif attendu, « auxquels », est absent des propositions chiffrées, et la réponse attendue est « Aucune ».",
     "why": {
-      "1": "« dont » suppose « de » : se heurter exige « à ».",
-      "2": "« que » suppose un verbe direct : faux.",
-      "3": "« desquels » : mauvaise préposition et réservé aux locutions.",
-      "4": "« sur lesquels » : mauvaise préposition.",
-      "A": "Correct : la forme attendue « auxquels » n'est pas proposée.",
-      "T": "Aucune option chiffrée ne convient."
+      "1": "`dont` porte « de », alors que la phrase de base est « se heurter à ces obstacles »; la forme attendue est « auxquels ».",
+      "2": "`que` suppose un complément direct, comme « les obstacles que nous avons franchis »; « se heurter » impose ici « à », donc « auxquels ».",
+      "3": "`desquels` équivaut à « de lesquels » et suppose de nouveau un régime en « de »; la préposition exigée est « à », d’où « auxquels ».",
+      "4": "`sur lesquels` exprime la préposition « sur », qui conviendrait à « compter sur » ou « reposer sur », mais pas à « se heurter à »; la forme attendue est « auxquels ».",
+      "A": "Le relatif exigé par « se heurter à », avec un antécédent non humain masculin pluriel, est « auxquels »; cette forme ne figure dans aucune proposition chiffrée, et les quatre relatifs proposés expriment un autre régime ou aucun. C’est donc « Aucune » qui convient.",
+      "T": "Aucune proposition chiffrée ne porte la préposition « à »; « Toutes » exigerait que les quatre conviennent."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -12970,9 +13015,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
-        "3": "UNK",
-        "4": "UNK"
+        "2": "regime_direct_suppose",
+        "3": "regime_de_suppose",
+        "4": "regime_sur_suppose"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-2006",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T18:58:34Z"
+        }
       }
     }
   },
@@ -26764,7 +26818,7 @@ const QUESTIONS = [
     "id": "ponc-6",
     "rule": "ponctuation",
     "type": "sentences",
-    "instruction": "Quelle phrase est correctement ponctuée ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -27378,7 +27432,7 @@ const QUESTIONS = [
     "id": "ponc-16",
     "rule": "ponctuation",
     "type": "sentences",
-    "instruction": "Quelle phrase est correctement ponctuée ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -28952,7 +29006,7 @@ const QUESTIONS = [
     "id": "prep-2",
     "rule": "prepositions",
     "type": "sentences",
-    "instruction": "Quelle phrase est correctement construite ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -32727,14 +32781,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "« remédier À quelque chose » → le relatif attendu est « auquel » (masculin, « un défaut »), non proposé. Réponse : Aucune.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « on peut remédier à ce défaut ». Le verbe « remédier » exige la préposition « à » : on remédie à quelque chose, on ne remédie pas quelque chose. La préposition doit donc être portée par le relatif. L’antécédent est « un défaut », nom non humain, masculin singulier : la forme de lequel est « lequel », et la contraction « à + lequel » donne « auquel ». Deux conditions doivent donc être réunies en même temps, la préposition « à » et le masculin singulier; aucune proposition ne les réunit, l’une ayant la bonne préposition mais le mauvais genre.\nDonc : le relatif attendu, « auquel », est absent des propositions chiffrées, et la réponse attendue est « Aucune ».",
     "why": {
-      "1": "« dont » suppose « de » : remédier exige « à ».",
-      "2": "« que » suppose un verbe direct : faux.",
-      "3": "« duquel » : mauvaise préposition (« de », pas « à »).",
-      "4": "« à laquelle » : bonne préposition, mais féminin — « un défaut » est masculin (→ auquel).",
-      "A": "Correct : la forme attendue « auquel » n'est pas proposée.",
-      "T": "Aucune option chiffrée ne convient."
+      "1": "`dont` porte « de », alors que la phrase de base est « remédier à ce défaut »; la forme attendue est « auquel ».",
+      "2": "`que` suppose un complément direct, comme « le défaut que l’on corrige »; « remédier » impose « à », donc « auquel ».",
+      "3": "`duquel` équivaut à « de lequel » : le genre et le nombre conviennent, mais la préposition est « de » au lieu de « à »; il faut « auquel ».",
+      "4": "`à laquelle` porte bien la préposition « à », mais accorde la forme de lequel au féminin singulier alors que l’antécédent « un défaut » est masculin; la forme attendue est « auquel ».",
+      "A": "Le relatif exigé par « remédier à », avec un antécédent non humain masculin singulier, est « auquel »; aucune proposition chiffrée ne réunit à la fois cette préposition et ce genre. C’est donc « Aucune » qui convient.",
+      "T": "Chacune des quatre propositions chiffrées échoue sur la préposition ou sur le genre; « Toutes » exigerait que les quatre conviennent."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -32744,9 +32798,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
-        "3": "UNK",
+        "2": "regime_direct_suppose",
+        "3": "regime_de_suppose",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-2006",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T18:58:34Z"
+        }
       }
     }
   },
@@ -40418,7 +40481,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Quelle phrase est correctement ponctuée ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -42548,7 +42611,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -42576,14 +42639,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Le verbe ou la locution se construit avec à; le relatif composé correspondant est auquel.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « la direction tient à ce principe ». Le verbe « tenir » au sens d’attacher de l’importance se construit avec « à »; sans préposition, « tenir quelque chose » signifierait le saisir, ce qui ne correspond pas au contexte de la charte. La préposition doit donc être portée par le relatif. L’antécédent « le principe » est un nom non humain, masculin singulier : la forme de lequel est « lequel », et la contraction « à + lequel » donne « auquel ».\nDonc : le relatif attendu est « auquel », c’est-à-dire l’option 3.",
     "why": {
-      "1": "Chaîne/reconstruction : Se conformer à, se référer à et tenir à imposent auquel. Option 1 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
-      "2": "Chaîne/reconstruction : Se conformer à, se référer à et tenir à imposent auquel. Option 2 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
-      "3": "Chaîne/reconstruction : Se conformer à, se référer à et tenir à imposent auquel. Option 3 : La forme applique exactement la chaîne reconstruite.",
-      "4": "Chaîne/reconstruction : Se conformer à, se référer à et tenir à imposent auquel. Option 4 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
-      "A": "Le verbe « tenir » se construit ici avec « à » : tenir à un principe. L'option 3, « auquel », est donc correcte ; « Aucune » ne convient pas.",
-      "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+      "1": "`lequel` est la forme de lequel sans préposition, employable comme sujet ou après une autre préposition; ici le « à » de « tenir à ce principe » n’est plus exprimé nulle part, il faut donc « auquel ».",
+      "2": "`sur lequel` conviendrait à un verbe construit avec « sur », comme « le principe sur lequel tout repose »; « tenir à » exige « à », d’où « auquel ».",
+      "3": "« auquel » porte la préposition « à » exigée par « tenir à » et correspond à l’antécédent non humain masculin singulier « le principe », par la contraction « à + lequel ».",
+      "4": "`dont` porte « de » et conviendrait à « être responsable de ce principe »; la phrase de base est « tenir à ce principe », donc « auquel ».",
+      "A": "Une proposition chiffrée porte le relatif attendu; « Aucune » ne peut donc pas convenir.",
+      "T": "Trois propositions chiffrées n’expriment pas la préposition « à »; « Toutes » exigerait que les quatre conviennent."
     },
     "hep": {
       "slot_id": "drill40-25",
@@ -42600,10 +42663,19 @@ const QUESTIONS = [
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
-        "1": "UNK",
+        "1": "regime_direct_suppose",
         "2": "regime_sur_suppose",
         "3": null,
         "4": "regime_de_suppose"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-2006",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T18:58:34Z"
+        }
       }
     },
     "stem": "Le principe ___ la direction tient figure dans la charte."
@@ -44110,7 +44182,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -44138,14 +44210,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "La phrase correcte reconstruit séparément le régime de chaque verbe et n'ajoute aucune reprise au relatif.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : deux verbes ont chacun leur régime et il faut les reconstruire séparément. Premier verbe : « nous pensons à cette mesure » — « penser » se construit ici avec « à », l’antécédent « la mesure » est un nom non humain féminin singulier, donc la forme de lequel est « laquelle » et le relatif attendu est « à laquelle ». Second verbe : « ces personnes dépendent du bus » — « dépendre » se construit avec « de », et comme le complément « du bus » reste écrit dans la phrase, le relatif qui reprend « les personnes » est simplement le sujet « qui ». Il faut donc « à laquelle » d’un côté et « qui » de l’autre, sans reprise supplémentaire du complément.\nDonc : la seule proposition qui porte à la fois « à laquelle » pour « penser à » et « qui dépendent du bus » pour « dépendre de » est l’option 3.",
     "why": {
-      "1": "Le scripteur attribue aux deux verbes un régime qu'ils n'ont pas et choisit les relatifs par analogie.",
-      "2": "« les personnes dont dépendent du bus » redouble la préposition : « dont » contient déjà le « de » de « dépendre de ». Il faut « les personnes qui dépendent du bus ».",
-      "3": "La réponse « La mesure à laquelle nous pensons profiterait aux personnes qui dépendent du bus. » est correcte : La phrase correcte reconstruit séparément le régime de chaque verbe et n'ajoute aucune reprise au relatif.",
-      "4": "Le scripteur redouble le complément déjà représenté par le pronom relatif.",
-      "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
-      "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+      "1": "`dont nous pensons` supprime la préposition « à » exigée par « penser à cette mesure » et lui substitue le « de » contenu dans « dont »; il faut « à laquelle nous pensons ». La suite `dépendent au bus` remplace en outre le « de » de « dépendre de » par « à » : la forme attendue est « dépendent du bus ».",
+      "2": "Le début « à laquelle nous pensons » est juste, mais `dont dépendent du bus` cumule deux fois la même préposition : « dont » contient déjà le « de » de « dépendre de », et « du bus » l’exprime une seconde fois. La forme attendue est « les personnes qui dépendent du bus ».",
+      "3": "« à laquelle » porte la préposition « à » exigée par « penser à » et s’accorde avec l’antécédent non humain féminin singulier « la mesure »; « qui dépendent du bus » laisse le complément « du bus » à sa place et emploie le relatif sujet, comme le demande « ces personnes dépendent du bus ».",
+      "4": "`que nous y pensons` traite « penser » comme un verbe à complément direct alors qu’il exige « à », et le pronom `y` reprend une seconde fois le complément déjà représenté par le relatif; il faut « à laquelle nous pensons », sans « y ».",
+      "A": "Une proposition chiffrée satisfait les deux régimes; « Aucune » ne peut donc pas convenir.",
+      "T": "Trois propositions chiffrées portent une préposition ou une reprise fautive; « Toutes » exigerait que les quatre soient correctes."
     },
     "hep": {
       "slot_id": "pond40-07",
@@ -44168,10 +44240,10 @@ const QUESTIONS = [
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
-        "1": "UNK",
+        "1": "regime_de_suppose",
         "2": "UNK",
         "3": null,
-        "4": "UNK"
+        "4": "regime_direct_suppose"
       },
       "additional_rule_paths": [
         {
@@ -44186,7 +44258,16 @@ const QUESTIONS = [
           "detail_id": "core",
           "tense_id": null
         }
-      ]
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20260804-2006",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T18:58:34Z"
+        }
+      }
     },
     "stem": "Quatre élèves formulent une proposition."
   },
@@ -44728,7 +44809,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -44756,14 +44837,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Le verbe de la relative se construit avec à; la préposition est portée par auquel ou laquelle selon l'antécédent.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : on remet l’antécédent dans une phrase simple : « le groupe se réfère à cette procédure ». Le verbe « se référer » exige la préposition « à », et cette préposition doit être portée par le relatif puisqu’elle ne peut pas rester dans la subordonnée. L’antécédent « la procédure » est un nom non humain, féminin singulier : une forme de lequel convient et s’accorde en « laquelle ». La contraction « à + lequel » donne « auquel », mais elle n’a pas lieu au féminin singulier, où l’on écrit « à laquelle ».\nDonc : le relatif qui porte la préposition « à » et s’accorde avec « la procédure » est « à laquelle », c’est-à-dire l’option 4.",
     "why": {
-      "1": "Le candidat choisit dont par attraction d'un complément prépositionnel sans reconstruire le régime en à.",
-      "2": "Le candidat emploie un relatif direct alors que le verbe exige la préposition à.",
-      "3": "Le candidat utilise où sans antécédent de lieu ni de temps.",
-      "4": "La réponse « à laquelle » est correcte : Le verbe de la relative se construit avec à; la préposition est portée par auquel ou laquelle selon l'antécédent.",
-      "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
-      "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+      "1": "`dont` porte la préposition « de », alors que la phrase de base est « se référer à cette procédure » et non « se référer de »; la forme attendue est « à laquelle ».",
+      "2": "`qu’` est un relatif sans préposition, réservé à un complément direct comme « la procédure que le groupe applique »; « se référer » impose « à », donc « à laquelle ».",
+      "3": "`où` ne reprend qu’un antécédent de lieu ou de temps, comme « le jour où » ou « la salle où »; « la procédure » n’est ni l’un ni l’autre et le régime en « à » reste non exprimé. Il faut « à laquelle ».",
+      "4": "« à laquelle » porte la préposition « à » exigée par « se référer à » et accorde la forme de lequel au féminin singulier, comme l’impose l’antécédent non humain « la procédure ».",
+      "A": "Une proposition chiffrée porte le relatif attendu; « Aucune » ne peut donc pas convenir.",
+      "T": "Trois propositions chiffrées ne portent pas la préposition « à »; « Toutes » exigerait que les quatre conviennent."
     },
     "hep": {
       "slot_id": "pond40-15",
@@ -44781,9 +44862,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
-        "3": "UNK",
+        "2": "regime_direct_suppose",
+        "3": "regime_a_non_identifie",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-2006",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T18:58:34Z"
+        }
       }
     },
     "stem": "La procédure ___ le groupe se réfère figure en annexe."
@@ -65884,7 +65974,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quelle phrase est correctement ponctuée ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -78022,7 +78112,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quelle phrase est correctement ponctuée ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -87032,7 +87122,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Quatre phrases du bilan de la semaine de la lecture rédigé par la classe. Quelle phrase est correctement écrite ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
