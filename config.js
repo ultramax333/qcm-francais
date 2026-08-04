@@ -14,7 +14,7 @@
 
 window.CONFIG = {
   APP_VERSION: '1.24',
-  BANK_RELEASE: 'questions-20260804-3746d2a5',
+  BANK_RELEASE: 'questions-20260804-5a1422a6',
   GOOGLE_CLIENT_ID: '200483680701-h963rk5t3l7v5j64ojgg2k410av8l9ft.apps.googleusercontent.com',
   DRIVE_FOLDER_NAME: 'QCM Français OP001',
 };

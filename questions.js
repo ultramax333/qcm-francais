@@ -48949,14 +48949,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "« Déroger À quelque chose » : le complément est introduit par « à », d'où « auxquels » (le comité a dérogé à ces usages).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : l'antécédent du relatif est le groupe « les usages », un nom non humain au masculin pluriel. Si l'on remet la subordonnée en phrase simple, on obtient « le comité a dérogé à ces usages » : le verbe « déroger » relie son complément par la préposition « à », et non directement. Le relatif doit donc porter cette préposition. Comme l'antécédent ne désigne pas des personnes, on emploie une forme de « lequel », ici « lesquels » au masculin pluriel, ce qui donne « à lesquels ». La contraction obligatoire de « à » et de « lesquels » produit « auxquels ».\nDonc : la forme attendue est « auxquels », c'est-à-dire l'option 2.",
     "why": {
-      "1": "« que » traiterait « déroger » comme transitif direct : « déroger quelque chose » n'existe pas.",
-      "2": "Correct : déroger À → les usages auxquels le comité a dérogé.",
-      "3": "« dont » supposerait « déroger de », construction inexistante.",
-      "4": "« sur lesquels » calque « s'asseoir sur les usages » : « déroger » exige « à ».",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`que` reprend un complément direct, sans préposition : la subordonnée deviendrait « le comité a dérogé ces usages ». « Déroger » n'admet pas ce type de complément, la préposition « à » manque ; la forme attendue est « auxquels ».",
+      "2": "« auxquels » porte la préposition « à » exigée par « déroger » et s'accorde avec l'antécédent masculin pluriel « les usages » : à + lesquels se contracte en « auxquels ». La subordonnée se relit « le comité a dérogé à ces usages », construction conforme au verbe.",
+      "3": "`dont` équivaut à « de » suivi de l'antécédent : il imposerait « le comité a dérogé de ces usages ». Le complément de « déroger » n'est pas introduit par « de » mais par « à » ; il faut « auxquels ».",
+      "4": "`sur lesquels` impose la préposition « sur », qui conviendrait à un verbe comme « s'appuyer ». « Déroger » demande « à », d'où la forme correcte « auxquels ».",
+      "A": "Une option chiffrée, la deuxième, fournit exactement le relatif exigé par la construction ; « Aucune » ne peut donc pas être retenue.",
+      "T": "Trois des quatre options chiffrées se trompent de préposition ou l'omettent ; « Toutes » supposerait que les quatre soient également valables."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -48965,10 +48965,19 @@ const QUESTIONS = [
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
-        "1": "regime_a_non_identifie",
+        "1": "regime_direct_suppose",
         "2": null,
         "3": "regime_de_suppose",
-        "4": "UNK"
+        "4": "regime_sur_suppose"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-4728",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T20:08:00Z"
+        }
       }
     }
   },
@@ -49489,14 +49498,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "« Parvenir À quelque chose » : le complément est introduit par « à », d'où « auxquels » (l'équipe est parvenue à ces objectifs).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : le relatif reprend « les objectifs intermédiaires », nom non humain au masculin pluriel. La subordonnée remise en phrase simple donne « l'équipe est parvenue à ces objectifs intermédiaires » : le verbe « parvenir » construit son complément avec la préposition « à », qui doit donc apparaître dans le relatif. L'antécédent ne désignant pas des personnes, on prend une forme de « lequel », soit « lesquels » pour un masculin pluriel. La suite « à lesquels » se contracte obligatoirement en « auxquels ».\nDonc : le relatif attendu est « auxquels », c'est-à-dire l'option 4.",
     "why": {
-      "1": "« que » traiterait « parvenir » comme transitif direct : « parvenir quelque chose » n'existe pas.",
-      "2": "« dont » supposerait « parvenir de », construction inexistante.",
-      "3": "« vers lesquels » évoque la direction : « parvenir » marque l'aboutissement et exige « à ».",
-      "4": "Correct : parvenir À → les objectifs auxquels l'équipe est parvenue.",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`que` est le relatif du complément direct : il donnerait « l'équipe est parvenue ces objectifs », sans la préposition que réclame « parvenir ». La forme correcte est « auxquels ».",
+      "2": "`dont` contient la préposition « de » : il ferait lire « l'équipe est parvenue de ces objectifs ». Ce n'est pas la construction du verbe, qui exige « à » ; il faut « auxquels ».",
+      "3": "`vers lesquels` introduit une orientation, comme dans « se diriger vers ». « Parvenir » marque l'aboutissement et se construit avec « à » : on écrit « auxquels ».",
+      "4": "« auxquels » restitue la préposition « à » demandée par « parvenir » et s'accorde au masculin pluriel avec « les objectifs intermédiaires » : à + lesquels donne « auxquels ». On relit « l'équipe est parvenue à ces objectifs », phrase conforme.",
+      "A": "Le relatif exigé figure bien parmi les options chiffrées, en quatrième position ; « Aucune » est donc écarté.",
+      "T": "Seule une option sur quatre respecte le régime du verbe ; « Toutes » en supposerait quatre correctes."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -49505,10 +49514,19 @@ const QUESTIONS = [
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
-        "1": "regime_a_non_identifie",
+        "1": "regime_direct_suppose",
         "2": "regime_de_suppose",
-        "3": "UNK",
+        "3": "regime_a_non_identifie",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-4728",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T20:08:00Z"
+        }
       }
     }
   },
@@ -50089,14 +50107,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "« Se soustraire À quelque chose » : le complément est introduit par « à », d'où « auxquelles » (se soustraire à ces obligations).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : l'antécédent est « les obligations de service », nom non humain au féminin pluriel. En phrase simple, la subordonnée devient « il a tenté de se soustraire à ces obligations » : le verbe pronominal « se soustraire » relie son complément par la préposition « à ». Cette préposition doit donc être portée par le relatif. L'antécédent n'étant pas une personne, on emploie une forme de « lequel » : « lesquelles » au féminin pluriel. « À lesquelles » se contracte en « auxquelles ».\nDonc : le relatif attendu est « auxquelles », c'est-à-dire l'option 4.",
     "why": {
-      "1": "« que » traiterait le verbe comme transitif direct : « se soustraire quelque chose » n'existe pas.",
-      "2": "« dont » supposerait « se soustraire de », construction inexistante.",
-      "3": "« desquelles » habille la même erreur de régime en « de » d'une forme composée.",
-      "4": "Correct : se soustraire À → les obligations auxquelles il a tenté de se soustraire.",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`que` reprend un complément direct : on lirait « il a tenté de se soustraire ces obligations », sans la préposition réclamée par le verbe. Il faut « auxquelles ».",
+      "2": "`dont` vaut « de » suivi de l'antécédent, ce qui donnerait « se soustraire de ces obligations ». Le verbe se construit avec « à » et non avec « de » : la forme correcte est « auxquelles ».",
+      "3": "`desquelles` est la forme composée de « de » et de « lesquelles » : elle installe le même régime en « de », simplement sous une forme plus longue. La préposition attendue reste « à », d'où « auxquelles ».",
+      "4": "« auxquelles » porte la préposition « à » exigée par « se soustraire » et s'accorde au féminin pluriel avec « les obligations de service » : à + lesquelles donne « auxquelles ». La subordonnée se relit « il a tenté de se soustraire à ces obligations ».",
+      "A": "Le relatif conforme au régime du verbe est proposé en quatrième position ; « Aucune » ne convient donc pas.",
+      "T": "Les options 1, 2 et 3 échouent toutes sur la préposition ; « Toutes » est par conséquent impossible."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -50105,10 +50123,19 @@ const QUESTIONS = [
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
-        "1": "regime_a_non_identifie",
+        "1": "regime_direct_suppose",
         "2": "regime_de_suppose",
-        "3": "UNK",
+        "3": "regime_de_suppose",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-4728",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T20:08:00Z"
+        }
       }
     }
   },
@@ -50629,14 +50656,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "« Se plier À quelque chose » : le complément est introduit par « à », d'où « auxquelles » (se plier à ces exigences).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : le relatif reprend « les exigences du cahier des charges », nom non humain au féminin pluriel. Remise en phrase simple, la subordonnée donne « le prestataire a fini par se plier à ces exigences » : le verbe pronominal « se plier » introduit son complément par la préposition « à ». Le relatif doit donc contenir cette préposition. Comme l'antécédent ne désigne pas des personnes, on utilise une forme de « lequel », ici « lesquelles » au féminin pluriel ; « à lesquelles » se contracte en « auxquelles ».\nDonc : la forme attendue est « auxquelles », c'est-à-dire l'option 3.",
     "why": {
-      "1": "« que » traiterait le verbe comme transitif direct : « se plier quelque chose » n'existe pas.",
-      "2": "« dont » supposerait « se plier de », construction inexistante.",
-      "3": "Correct : se plier À → les exigences auxquelles il a fini par se plier.",
-      "4": "« devant lesquelles » calque « s'incliner devant » : « se plier » exige « à ».",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`que` est le relatif du complément direct : il produirait « le prestataire a fini par se plier ces exigences », où la préposition « à » manque. On attend « auxquelles ».",
+      "2": "`dont` équivaut à « de » suivi de l'antécédent : « se plier de ces exigences » ne correspond pas au verbe, qui demande « à ». La forme correcte est « auxquelles ».",
+      "3": "« auxquelles » restitue la préposition « à » exigée par « se plier » et l'accorde avec l'antécédent féminin pluriel « les exigences » : à + lesquelles donne « auxquelles ». On relit « le prestataire a fini par se plier à ces exigences ».",
+      "4": "`devant lesquelles` impose la préposition « devant », qui conviendrait à « s'incliner devant ». « Se plier » réclame « à » : il faut « auxquelles ».",
+      "A": "L'option 3 fournit le relatif exigé par la construction, ce qui exclut « Aucune ».",
+      "T": "Trois options sur quatre choisissent une préposition étrangère au verbe ou n'en mettent aucune ; « Toutes » ne tient pas."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -50645,10 +50672,19 @@ const QUESTIONS = [
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
-        "1": "regime_a_non_identifie",
+        "1": "regime_direct_suppose",
         "2": "regime_de_suppose",
         "3": null,
-        "4": "UNK"
+        "4": "regime_a_non_identifie"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-4728",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T20:08:00Z"
+        }
       }
     }
   },
@@ -51229,14 +51265,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "« Survivre À quelque chose » : le complément est introduit par « à », d'où « auxquelles » (l'atelier a survécu à ces coupes).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : l'antécédent du relatif est « les coupes budgétaires », nom non humain au féminin pluriel. La subordonnée remise en phrase simple donne « l'atelier de reliure a survécu à ces coupes budgétaires » : le verbe « survivre » relie son complément par la préposition « à ». Le relatif doit donc porter cette préposition. L'antécédent ne désignant pas des personnes, on écarte les formes réservées aux humains et on emploie une forme de « lequel » : « lesquelles » au féminin pluriel. « À lesquelles » se contracte en « auxquelles ».\nDonc : le relatif attendu est « auxquelles », c'est-à-dire l'option 2.",
     "why": {
-      "1": "« que » traiterait « survivre » comme transitif direct : « survivre quelque chose » n'existe pas.",
-      "2": "Correct : survivre À → les coupes auxquelles l'atelier a survécu.",
-      "3": "« dont » supposerait « survivre de », construction inexistante.",
-      "4": "« à qui » se réserve aux personnes : pour un antécédent inanimé comme « les coupes », on emploie « auxquelles ».",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`que` reprend un complément direct : il donnerait « l'atelier a survécu ces coupes », sans la préposition qu'impose « survivre ». La forme correcte est « auxquelles ».",
+      "2": "« auxquelles » contient la préposition « à » exigée par « survivre » et s'accorde au féminin pluriel avec « les coupes budgétaires » : à + lesquelles donne « auxquelles ». La subordonnée se relit « l'atelier de reliure a survécu à ces coupes ».",
+      "3": "`dont` vaut « de » suivi de l'antécédent : « survivre de ces coupes » n'est pas la construction du verbe, qui demande « à ». Il faut « auxquelles ».",
+      "4": "`à qui` retient bien la préposition « à », mais « qui » précédé d'une préposition ne reprend que des personnes. L'antécédent « les coupes budgétaires » désigne des choses, ce qui impose la forme de « lequel » : « auxquelles ».",
+      "A": "Le relatif exigé apparaît en deuxième position parmi les options chiffrées ; « Aucune » est donc écarté.",
+      "T": "Une seule option satisfait à la fois la préposition et la nature de l'antécédent ; « Toutes » en exigerait quatre."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -51245,10 +51281,19 @@ const QUESTIONS = [
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
-        "1": "regime_a_non_identifie",
+        "1": "regime_direct_suppose",
         "2": null,
         "3": "regime_de_suppose",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-4728",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T20:08:00Z"
+        }
       }
     }
   },
@@ -51769,14 +51814,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "« Échapper À quelque chose » : le complément est introduit par « à », d'où « auxquelles » (échapper à ces poursuites).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : le relatif reprend « les poursuites », nom non humain au féminin pluriel. En phrase simple, la subordonnée devient « le prévenu a échappé de justesse à ces poursuites » : le verbe « échapper » introduit ici son complément par la préposition « à ». Cette préposition doit donc figurer dans le relatif. L'antécédent n'étant pas une personne, on emploie une forme de « lequel », soit « lesquelles » au féminin pluriel, et « à lesquelles » se contracte en « auxquelles ».\nDonc : la forme attendue est « auxquelles », c'est-à-dire l'option 4.",
     "why": {
-      "1": "« que » traiterait « échapper » comme transitif direct : hors de la locution figée « l'échapper belle », « échapper quelque chose » n'existe pas.",
-      "2": "« dont » supposerait « échapper de », employé pour un lieu (« échapper de prison »), pas pour des poursuites.",
-      "3": "« desquelles » habille la même erreur de régime en « de » d'une forme composée.",
-      "4": "Correct : échapper À → les poursuites auxquelles il a échappé.",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`que` reprend un complément direct : il donnerait « le prévenu a échappé ces poursuites ». En dehors de la locution figée « l'échapper belle », le verbe ne se construit pas ainsi ; on attend « auxquelles ».",
+      "2": "`dont` équivaut à « de » suivi de l'antécédent. Le tour « échapper de » se rencontre pour un lieu que l'on quitte, non pour des poursuites que l'on évite : la construction utile ici est « échapper à », donc « auxquelles ».",
+      "3": "`desquelles` est la forme composée de « de » et de « lesquelles » : elle maintient le même régime en « de », simplement allongé. La préposition attendue est « à », d'où « auxquelles ».",
+      "4": "« auxquelles » porte la préposition « à » demandée par « échapper » et s'accorde au féminin pluriel avec « les poursuites » : à + lesquelles donne « auxquelles ». On relit « le prévenu a échappé de justesse à ces poursuites ».",
+      "A": "Le relatif conforme au régime du verbe figure en quatrième position ; « Aucune » ne peut donc pas être choisi.",
+      "T": "Les trois autres propositions échouent sur la préposition ; « Toutes » supposerait quatre formes recevables."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -51785,10 +51830,19 @@ const QUESTIONS = [
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
-        "1": "regime_a_non_identifie",
+        "1": "regime_direct_suppose",
         "2": "regime_de_suppose",
-        "3": "UNK",
+        "3": "regime_de_suppose",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-4728",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T20:08:00Z"
+        }
       }
     }
   },
@@ -52789,14 +52843,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "« Procéder À quelque chose » : le complément est introduit par « à », d'où « auxquelles » (procéder à ces vérifications).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : l'antécédent est « les vérifications comptables », nom non humain au féminin pluriel. La subordonnée remise en phrase simple donne « le greffe a procédé à ces vérifications comptables » : le verbe « procéder », au sens de réaliser une opération, relie son complément par la préposition « à ». Le relatif doit donc porter cette préposition. Comme l'antécédent ne désigne pas des personnes, on emploie une forme de « lequel » : « lesquelles » au féminin pluriel ; « à lesquelles » se contracte en « auxquelles ».\nDonc : le relatif attendu est « auxquelles », c'est-à-dire l'option 4.",
     "why": {
-      "1": "« dont » supposerait « procéder de » (= découler de), qui a un tout autre sens.",
-      "2": "« qu' » traiterait « procéder » comme transitif direct : « procéder quelque chose » n'existe pas.",
-      "3": "« sur lesquelles » calque « travailler sur » : « procéder » exige « à ».",
-      "4": "Correct : procéder À → les vérifications auxquelles le greffe a procédé.",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`dont` vaut « de » suivi de l'antécédent. « Procéder de » existe, mais au sens de découler d'une cause, ce qui ne correspond pas au greffe qui effectue des vérifications. La construction utile est « procéder à », donc « auxquelles ».",
+      "2": "`qu'` est le relatif du complément direct : il donnerait « le greffe a procédé ces vérifications », sans la préposition que réclame le verbe. La forme correcte est « auxquelles ».",
+      "3": "`sur lesquelles` impose la préposition « sur », qui conviendrait à « travailler sur ». « Procéder » demande « à » : il faut « auxquelles ».",
+      "4": "« auxquelles » restitue la préposition « à » exigée par « procéder » et s'accorde au féminin pluriel avec « les vérifications comptables » : à + lesquelles donne « auxquelles ». On relit « le greffe a procédé à ces vérifications ».",
+      "A": "L'option 4 fournit exactement le relatif demandé par la construction, ce qui exclut « Aucune ».",
+      "T": "Trois propositions sur quatre se trompent de préposition ou l'omettent ; « Toutes » est donc impossible."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -52806,9 +52860,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
-        "3": "UNK",
+        "2": "regime_direct_suppose",
+        "3": "regime_sur_suppose",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-4728",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T20:08:00Z"
+        }
       }
     }
   },
@@ -54349,14 +54412,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "« Se raccrocher À quelque chose » : il faudrait « auxquelles », qui n'est pas proposé.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : le relatif reprend « les quelques certitudes », nom non humain au féminin pluriel. Remise en phrase simple, la subordonnée donne « il se raccroche à ces quelques certitudes » : le verbe pronominal « se raccrocher » relie son complément par la préposition « à ». Le relatif doit donc contenir cette préposition et, l'antécédent ne désignant pas des personnes, prendre une forme de « lequel » : « lesquelles » au féminin pluriel, contracté en « auxquelles » après « à ». Aucune des quatre propositions chiffrées ne donne cette forme : trois supposent un régime en « de » et une un régime en « sur ».\nDonc : la réponse attendue est « Aucune », c'est-à-dire A.",
     "why": {
-      "1": "« dont » supposerait « se raccrocher de », construction inexistante.",
-      "2": "« qu' » traiterait le verbe comme transitif direct : « se raccrocher quelque chose » n'existe pas.",
-      "3": "« desquelles » habille la même erreur de régime en « de » d'une forme composée.",
-      "4": "« sur lesquelles » calque « s'appuyer sur » : « se raccrocher » exige « à ».",
-      "A": "Correct : le relatif attendu « auxquelles » ne figure dans aucune option.",
-      "T": "Aucune option ne restitue le régime du verbe."
+      "1": "`dont` équivaut à « de » suivi de l'antécédent : il ferait lire « il se raccroche de ces certitudes ». Le verbe demande « à », d'où la forme « auxquelles », absente des propositions.",
+      "2": "`qu'` reprend un complément direct : il donnerait « il se raccroche ces certitudes », sans la préposition exigée. La forme correcte serait « auxquelles ».",
+      "3": "`desquelles` est la forme composée de « de » et de « lesquelles » : elle installe le même régime en « de » sous une forme plus longue, alors que la préposition attendue est « à » dans « auxquelles ».",
+      "4": "`sur lesquelles` impose la préposition « sur », qui conviendrait à « s'appuyer sur ». « Se raccrocher » réclame « à », donc « auxquelles ».",
+      "A": "Le seul relatif compatible avec « se raccrocher à » et avec un antécédent féminin pluriel non humain est « auxquelles ». Cette forme ne figure dans aucune des quatre propositions chiffrées, qui échouent toutes sur la préposition : « Aucune » est donc la réponse.",
+      "T": "Aucune des quatre options chiffrées ne restitue le régime du verbe ; « Toutes » est exclu."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -54366,9 +54429,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
-        "3": "UNK",
-        "4": "UNK"
+        "2": "regime_direct_suppose",
+        "3": "regime_de_suppose",
+        "4": "regime_sur_suppose"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-4728",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T20:08:00Z"
+        }
       }
     }
   },
@@ -55429,14 +55501,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "« Songer À quelque chose » : le complément est introduit par « à », d'où « auxquelles » (songer à ces économies).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : l'antécédent du relatif est « les économies d'énergie », nom non humain au féminin pluriel. La subordonnée remise en phrase simple donne « chaque service songe à ces économies d'énergie » : le verbe « songer » introduit son complément par la préposition « à ». Cette préposition doit donc apparaître dans le relatif. Puisque l'antécédent ne désigne pas des personnes, on emploie une forme de « lequel », ici « lesquelles » au féminin pluriel, et « à lesquelles » se contracte en « auxquelles ».\nDonc : la forme attendue est « auxquelles », c'est-à-dire l'option 4.",
     "why": {
-      "1": "« dont » supposerait « songer de », construction inexistante.",
-      "2": "« qu' » traiterait « songer » comme transitif direct : « songer quelque chose » n'existe pas.",
-      "3": "« sur lesquelles » calque « réfléchir sur » : « songer » exige « à ».",
-      "4": "Correct : songer À → les économies auxquelles chaque service songe.",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`dont` vaut « de » suivi de l'antécédent : il donnerait « chaque service songe de ces économies ». Le verbe se construit avec « à », d'où « auxquelles ».",
+      "2": "`qu'` reprend un complément direct : on lirait « chaque service songe ces économies », sans la préposition réclamée par « songer ». La forme correcte est « auxquelles ».",
+      "3": "`sur lesquelles` impose la préposition « sur », qui conviendrait à « réfléchir sur ». « Songer » demande « à » : il faut « auxquelles ».",
+      "4": "« auxquelles » porte la préposition « à » exigée par « songer » et s'accorde au féminin pluriel avec « les économies d'énergie » : à + lesquelles donne « auxquelles ». On relit « chaque service songe à ces économies depuis l'automne ».",
+      "A": "Le relatif attendu est bien proposé, en quatrième position ; « Aucune » ne convient pas.",
+      "T": "Seule une option respecte la préposition imposée par le verbe ; « Toutes » en supposerait quatre."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -55446,9 +55518,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
-        "3": "UNK",
+        "2": "regime_direct_suppose",
+        "3": "regime_sur_suppose",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-4728",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T20:08:00Z"
+        }
       }
     }
   },
@@ -56569,14 +56650,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "« S'abonner À quelque chose » : le complément est introduit par « à », d'où « auxquelles » (s'abonner à ces revues).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : le relatif reprend « les revues pédagogiques », nom non humain au féminin pluriel. Remise en phrase simple, la subordonnée donne « le centre de documentation s'est abonné à ces revues pédagogiques » : le verbe pronominal « s'abonner » relie son complément par la préposition « à ». Le relatif doit donc porter cette préposition, et l'antécédent ne désignant pas des personnes, on prend une forme de « lequel » : « lesquelles » au féminin pluriel, contracté en « auxquelles » après « à ». Le participe « abonné » reste au masculin singulier parce qu'il s'accorde avec le sujet « le centre de documentation », ce qui ne renseigne pas sur le relatif.\nDonc : la forme attendue est « auxquelles », c'est-à-dire l'option 4.",
     "why": {
-      "1": "« dont » supposerait « s'abonner de », construction inexistante.",
-      "2": "« qu' » traiterait le verbe comme transitif direct : « s'abonner quelque chose » n'existe pas.",
-      "3": "« desquelles » habille la même erreur de régime en « de » d'une forme composée.",
-      "4": "Correct : s'abonner À → les revues auxquelles le centre s'est abonné.",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`dont` équivaut à « de » suivi de l'antécédent : il ferait lire « le centre s'est abonné de ces revues ». Le verbe demande « à », donc « auxquelles ».",
+      "2": "`qu'` reprend un complément direct : il donnerait « le centre s'est abonné ces revues », sans la préposition exigée. On attend « auxquelles ».",
+      "3": "`desquelles` est la forme composée de « de » et de « lesquelles » : elle conserve le régime en « de » sous une forme plus longue, alors que « s'abonner » impose « à », donc « auxquelles ».",
+      "4": "« auxquelles » restitue la préposition « à » demandée par « s'abonner » et s'accorde au féminin pluriel avec « les revues pédagogiques » : à + lesquelles donne « auxquelles ». On relit « le centre de documentation s'est abonné à ces revues ».",
+      "A": "Une option chiffrée, la quatrième, donne le relatif exigé par la construction ; « Aucune » est donc écarté.",
+      "T": "Les options 1, 2 et 3 se trompent toutes de préposition ou l'omettent ; « Toutes » ne peut pas être retenu."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -56586,9 +56667,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
-        "3": "UNK",
+        "2": "regime_direct_suppose",
+        "3": "regime_de_suppose",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-4728",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T20:08:00Z"
+        }
       }
     }
   },
