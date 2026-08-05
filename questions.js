@@ -24765,14 +24765,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Adjectif « adhérents » (qualité, variable, -ent) ; participe « adhérant » (action, suivi de son complément « aux statuts »).",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : les deux blancs se traitent séparément. Premier blanc, « Les membres ___ recevront leur carte » : la forme suit le nom « membres », ne commande aucun complément et exprime une propriété ; le test du féminin fonctionne (« les personnes adhérentes »), donc adjectif verbal en -ent, accordé au masculin pluriel : « adhérents ». Second blanc, « tout citoyen ___ aux statuts » : la forme commande le complément « aux statuts », elle garde donc le fonctionnement du verbe adhérer ; le participe présent reste invariable et s'écrit -ant : « adhérant ».\nDonc : la suite attendue est « adhérents / adhérant », soit l'option 2.",
     "why": {
-      "1": "Inversé.",
-      "2": "Correct : adjectif -ents + participe -ant.",
-      "3": "2e segment : action + complément → participe.",
-      "4": "1er segment : qualité → adjectif.",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      "T": "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "Les deux formes sont inversées. `adhérant` reste invariable alors qu'il décrit « les membres » sans commander de complément : il faut l'adjectif verbal accordé « adhérents ». Et `adhérent` prend la graphie adjectivale alors que la forme commande le complément « aux statuts » et doit rester « adhérant ».",
+      "2": "Au premier blanc, la forme décrit les membres sans complément : l'adjectif verbal en -ent s'accorde au masculin pluriel, « adhérents ». Au second, la forme commande le complément « aux statuts » et conserve son fonctionnement verbal : le participe présent reste invariable, « adhérant ». Les deux analyses sont respectées.",
+      "3": "Le premier blanc est bien traité, mais au second `adhérents` accorde une forme suivie du complément « aux statuts », qui garde son fonctionnement verbal et ne qualifie pas un nom. Le participe présent invariable « adhérant » est attendu.",
+      "4": "Le second blanc est bien traité, mais au premier `adhérant` reste invariable alors que la forme ne commande aucun complément et attribue une propriété aux membres. L'adjectif verbal accordé « adhérents » est attendu.",
+      "A": "Une combinaison sur quatre est entièrement correcte, donc le nombre de combinaisons correctes n'est pas nul et « Aucune » est écarté.",
+      "T": "Le compte donne une combinaison correcte sur quatre, et non quatre, donc « Toutes » est écarté."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -24790,6 +24790,15 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-7980",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:34:29Z"
+        }
       }
     }
   },
@@ -24825,14 +24834,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Adjectif « précédent » (l'exercice d'avant) ; participe « précédant » (suivi de son COD « la dictée »).",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : il y a deux blancs, et chacun se traite séparément. Premier blanc, « L'exercice ___ était facile » : la forme ne commande aucun complément et sert à situer l'exercice, elle décrit donc le nom ; le test du féminin le confirme (« la leçon précédente »), et l'adjectif verbal s'écrit -ent et s'accorde : « précédent ». Second blanc, « celui ___ la dictée » : la forme est immédiatement suivie du complément direct « la dictée », elle garde donc le fonctionnement du verbe précéder ; le participe présent reste alors invariable et s'écrit -ant : « précédant ».\nDonc : la seule suite qui respecte les deux analyses est « précédent / précédant », soit l'option 1.",
     "why": {
-      "1": "Correct : adjectif -ent + participe -ant.",
-      "2": "Inversé.",
-      "3": "2e segment : devant un COD → précédant.",
-      "4": "1er segment : qualité → précédent.",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Les options 2, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "Au premier blanc, la forme décrit l'exercice sans commander de complément, ce qui appelle l'adjectif verbal accordé « précédent » ; au second, elle commande le complément direct « la dictée », ce qui appelle le participe présent invariable « précédant ». Les deux analyses sont respectées dans cet ordre.",
+      "2": "Les deux formes sont interverties. Au premier blanc, `précédant` est laissé invariable alors qu'aucun complément ne suit et que la forme décrit l'exercice : il faut « précédent ». Au second, `précédent` prend la graphie adjectivale devant le complément direct « la dictée », où la forme reste verbale : il faut « précédant ».",
+      "3": "Le premier blanc est bien traité, mais au second `précédent` emploie la graphie adjectivale alors que la forme commande le complément direct « la dictée » et conserve son fonctionnement verbal. Le participe présent invariable « précédant » est attendu.",
+      "4": "Le second blanc est bien traité, mais au premier `précédant` reste invariable alors que la forme ne commande aucun complément et attribue une place à l'exercice. L'adjectif verbal accordé « précédent » est attendu.",
+      "A": "Une combinaison sur quatre est entièrement correcte, donc le nombre de combinaisons correctes n'est pas nul et « Aucune » est écarté.",
+      "T": "Trois combinaisons contiennent au moins une forme fautive : le compte est de une correcte sur quatre, donc « Toutes » est écarté."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -24850,6 +24859,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-7980",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:34:29Z"
+        }
       }
     }
   },
@@ -24945,14 +24963,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Adjectif « influent » (puissant) ; participe « influant » (action : influer SUR chaque nomination).",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : les deux blancs demandent deux analyses distinctes. Premier blanc, « Un comité ___ » : la forme suit le nom « comité », ne commande aucun complément et exprime une propriété durable ; le test du féminin fonctionne (« une commission influente »), donc adjectif verbal en -ent, accordé au masculin singulier : « influent ». Second blanc, « ___ discrètement sur chaque nomination » : la forme est modifiée par l'adverbe « discrètement » et commande le complément « sur chaque nomination », ce qui est le fonctionnement du verbe influer ; le participe présent reste invariable et s'écrit -ant : « influant ».\nDonc : la suite attendue est « influent / influant », soit l'option 1.",
     "why": {
-      "1": "Correct : adjectif -ent + participe -ant.",
-      "2": "Inversé.",
-      "3": "2e segment : action + complément → influant.",
-      "4": "1er segment : qualité → influent.",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Les options 2, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "Au premier blanc, la forme décrit le comité sans complément : l'adjectif verbal en -ent est accordé, « influent ». Au second, la forme est modifiée par un adverbe et commande le complément « sur chaque nomination », ce qui prouve son fonctionnement verbal : le participe présent reste invariable, « influant ». Les deux analyses sont respectées.",
+      "2": "Les deux formes sont inversées. `influant` est laissé invariable alors qu'il décrit le nom « comité » sans complément : il faut « influent ». Et `influent` prend la graphie adjectivale alors que la forme commande « sur chaque nomination » et doit rester « influant ».",
+      "3": "Le premier blanc est bien traité, mais au second `influent` emploie la graphie adjectivale alors que la forme est modifiée par « discrètement » et commande le complément « sur chaque nomination ». Le participe présent invariable « influant » est attendu.",
+      "4": "Le second blanc est bien traité, mais au premier `influant` reste invariable alors que la forme qualifie le comité sans commander de complément. L'adjectif verbal accordé « influent » est attendu.",
+      "A": "Une combinaison sur quatre est entièrement correcte, donc le nombre de combinaisons correctes n'est pas nul et « Aucune » est écarté.",
+      "T": "Le compte donne une combinaison correcte sur quatre, et non quatre, donc « Toutes » est écarté."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -24970,6 +24988,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-7980",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:34:29Z"
+        }
       }
     }
   },
@@ -25217,7 +25244,7 @@ const QUESTIONS = [
     "id": "av-19",
     "rule": "adjverbal",
     "type": "sentences",
-    "instruction": "Quelle(s) phrase(s) est/sont correctement écrite(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -25245,14 +25272,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Toutes correctes : adjectifs « adhérent »/« influent », gérondif « en précédant », participe « équivalant » + complément. Réponse : Toutes.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : chaque proposition contient une forme en -ant ou en -ent, et il faut regarder pour chacune si elle décrit un nom ou si elle garde le fonctionnement d'un verbe. Dans « Le personnel adhérent », la forme ne commande aucun complément et donne une propriété du nom « personnel » ; le test du féminin fonctionne (« une association adhérente »), c'est donc l'adjectif verbal, qui s'accorde et s'écrit -ent. Dans « En précédant le groupe », la forme suit « en » et commande le complément direct « le groupe » : elle se comporte encore comme un verbe, c'est le participe présent, invariable et en -ant. Dans « Des sommes équivalant à un mois de salaire », la forme commande le complément « à un mois de salaire » : là aussi fonctionnement verbal, donc participe présent invariable ; sans ce complément, on aurait l'adjectif « des sommes équivalentes ». Dans « Un homme influent », la forme décrit le nom « homme », le test du féminin fonctionne (« une femme influente ») : adjectif verbal accordé en -ent.\nDonc : les quatre propositions appliquent correctement la distinction, et la réponse attendue est Toutes.",
     "why": {
-      "1": "Correcte : qualité → adhérent.",
-      "2": "Correcte : gérondif → précédant.",
-      "3": "Correcte : participe + complément → équivalant.",
-      "4": "Correcte : qualité → influent.",
-      "A": "Les quatre sont correctes.",
-      "T": "Correct : aucune faute."
+      "1": "La forme suit le nom « personnel » et n'est suivie d'aucun complément : elle exprime une propriété durable, ce que confirme le passage au féminin (« une association adhérente »). L'adjectif verbal s'écrit donc -ent et s'accorde au masculin singulier, ce que la phrase respecte avec « adhérent ».",
+      "2": "Après « en », la forme commande le complément direct « le groupe » : elle conserve le fonctionnement du verbe précéder et ne décrit pas un nom. Le participe présent reste alors invariable et s'écrit -ant, ce que la phrase respecte avec « précédant ».",
+      "3": "La forme commande le complément « à un mois de salaire », donc elle exprime une action et non une propriété des sommes. Elle reste invariable en -ant, ce que la phrase respecte avec « équivalant » ; l'accord « équivalentes » ne serait possible que sans ce complément.",
+      "4": "La forme qualifie le nom « homme » sans aucun complément verbal et supporte le test du féminin (« une femme influente ») : c'est l'adjectif verbal, écrit -ent et accordé au masculin singulier, ce que la phrase respecte avec « influent ».",
+      "A": "Le décompte des propositions fautives est nul, donc « Aucune » ne peut pas être la réponse.",
+      "T": "Le décompte donne quatre propositions correctes sur quatre, ce qui correspond exactement à « Toutes »."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -25270,6 +25297,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-7980",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:26:45Z"
+        }
       }
     }
   },
@@ -36886,7 +36922,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quelle phrase est correctement orthographiée ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -36914,14 +36950,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "« vases communicants » : adjectif verbal en -cant, accordé (locution consacrée). Devant un COD, il faut le participe (« communiquant leurs résultats ») ; sans complément, l'adjectif accordé (« coulissantes ») ; et l'adjectif de « négliger » s'écrit « négligente ».",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : il faut examiner, dans chaque proposition, la forme en -ant/-cant et se demander si elle commande un complément (fonctionnement verbal) ou si elle décrit un nom (propriété). Proposition 1 : la forme est immédiatement suivie du complément direct « leurs résultats », donc elle reste verbale ; il faut le participe présent invariable et en -quant, « communiquant leurs résultats ». Proposition 2 : la forme ne commande rien et décrit les vases, comme le montre le test du féminin (« une cuve communicante ») ; l'adjectif verbal s'écrit -cant et prend l'accord du masculin pluriel, « vases communicants ». Proposition 3 : la forme ne commande aucun complément et attribue une propriété aux portes ; il faut donc l'adjectif verbal accordé « coulissantes ». Proposition 4 : la forme décrit l'équipe, mais l'adjectif verbal du verbe négliger a une graphie propre en -ent, « négligente ».\nDonc : une seule proposition applique correctement la règle, et la réponse attendue est 2.",
     "why": {
-      "1": "« communicants » + COD : l'action exige le participe « communiquant ».",
-      "2": "Correct : adjectif « communicants » (locution « vases communicants »).",
-      "3": "« coulissant » sans complément : qualité → adjectif accordé « coulissantes ».",
-      "4": "« négligeante » : l'adjectif s'écrit « négligente » (le participe est « négligeant »).",
-      "A": "La phrase 2 est correcte.",
-      "T": "Les phrases 1, 3 et 4 sont fautives."
+      "1": "`communicants` est suivi du complément direct « leurs résultats » : une forme qui commande un complément garde le fonctionnement du verbe et ne peut ni s'accorder ni prendre la graphie adjectivale. Il faut le participe présent invariable « communiquant leurs résultats ».",
+      "2": "La forme ne commande aucun complément et attribue une propriété aux vases ; le test du féminin le confirme (« une cuve communicante »). L'adjectif verbal prend la graphie -cant et l'accord du masculin pluriel, ce que « vases communicants » respecte.",
+      "3": "`coulissant` est laissé invariable alors qu'aucun complément ne le suit et qu'il décrit une propriété des portes du hall. Cette valeur de propriété impose l'adjectif verbal accordé au féminin pluriel : « les portes coulissantes ».",
+      "4": "`négligeante` accorde la graphie verbale « négligeant » alors que la forme décrit une propriété de l'équipe. L'adjectif verbal correspondant a sa graphie propre en -ent : il faut « une équipe négligente ».",
+      "A": "Une proposition sur quatre résiste à la vérification, donc le nombre de propositions correctes n'est pas nul et « Aucune » est écarté.",
+      "T": "Le nombre de propositions correctes est de une sur quatre, et non de quatre, donc « Toutes » est écarté."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -36934,6 +36970,15 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-7980",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:34:29Z"
+        }
       }
     }
   },
@@ -40735,7 +40780,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Dans cet extrait de rapport, choisissez la seule phrase correctement orthographiée.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -40763,14 +40808,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Règle : Le participe présent exprime une action et reste inchangé ; l'adjectif décrit un nom et s'accorde avec lui. Un test simple consiste à remplacer la forme par une proposition avec « qui ». Dans cette phrase : 1. « Les résultats qui diffèrent d'une cohorte à l'autre » exprime une action : « différant ». 2. Pour décrire les résultats, l'adjectif est « différents ». 3. Pour décrire l'année, il faut « l'année précédente ». 4. Pour décrire une analyse, il faut « une analyse équivalente ». Donc : seule l'option 1 est correcte.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : chaque proposition contient une forme en -ant, et il faut vérifier si elle commande un complément ou si elle décrit simplement un nom. Proposition 1 : la forme commande le complément « d'une cohorte à l'autre » et équivaut à « les résultats qui diffèrent d'une cohorte à l'autre » ; le fonctionnement verbal est conservé, donc participe présent invariable « différant ». Proposition 2 : la forme ne commande aucun complément et attribue une propriété aux résultats ; il faut l'adjectif verbal accordé « différents ». Proposition 3 : la forme qualifie le nom féminin « année » sans commander de complément ; il faut l'adjectif verbal accordé « précédente ». Proposition 4 : la forme qualifie « une analyse » sans complément ; il faut l'adjectif verbal accordé « équivalente ».\nDonc : une seule proposition applique correctement la règle, et la réponse attendue est 1.",
     "why": {
-      "1": "On peut développer par « les résultats qui diffèrent » : « différant » exprime une action et reste inchangé. La phrase est correcte.",
-      "2": "Ici, le mot décrit « les résultats » ; l'adjectif correct est « différents », et non « différants ».",
-      "3": "Le mot décrit le nom féminin « année » : il faut l'adjectif « précédente ».",
-      "4": "Le mot décrit le nom féminin « analyse » : il faut l'adjectif « équivalente ».",
-      "A": "L'option 1 est correctement construite ; « Aucune » n'est donc pas la réponse.",
-      "T": "Les options 2, 3 et 4 emploient une forme qui ne convient pas au nom décrit ; elles ne sont pas toutes correctes."
+      "1": "La forme commande le complément « d'une cohorte à l'autre » et peut se développer par « les résultats qui diffèrent » : elle garde le fonctionnement du verbe et n'attribue pas une propriété stable. Le participe présent reste donc invariable, ce que « différant » respecte.",
+      "2": "`différants` accorde une forme qui ne commande aucun complément et qui sert simplement à caractériser les résultats. Cette valeur de propriété impose la graphie de l'adjectif verbal : il faut « les résultats différents ».",
+      "3": "`précédant` est laissé invariable alors que la forme qualifie le nom féminin « année » et ne commande aucun complément. Le test du féminin le confirme, et l'adjectif verbal accordé « l'année précédente » est attendu.",
+      "4": "`équivalant` est laissé invariable alors que la forme qualifie « une analyse » sans être suivie d'un complément comme « à ». L'adjectif verbal accordé « une analyse équivalente » est attendu.",
+      "A": "Une proposition sur quatre résiste à la vérification, donc le nombre de propositions correctes n'est pas nul et « Aucune » est écarté.",
+      "T": "Le compte donne une proposition correcte sur quatre, et non quatre, donc « Toutes » est écarté."
     },
     "hep": {
       "slot_id": "maj-slot-04-adjverbal",
@@ -40797,6 +40842,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-7980",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:34:29Z"
+        }
       }
     }
   },
@@ -65631,14 +65685,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "« Excellent » (adjectif, -ent) qualifie le dossier ; « excellant » (participe présent, -ant) exprime l'action en cours (excellant dans la négociation).",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : les deux blancs s'analysent séparément. Premier blanc, « un dossier ___ » : la forme suit le nom « dossier », ne commande aucun complément et exprime une qualité ; le test du féminin fonctionne (« une candidature excellente »), donc adjectif verbal en -ent, accordé au masculin singulier : « excellent ». Second blanc, « ___ dans la négociation, la candidate a même obtenu un délai » : la forme se rapporte à l'action de la candidate et commande le complément « dans la négociation », ce qui est le fonctionnement du verbe exceller ; le participe présent reste invariable et s'écrit -ant : « excellant ».\nDonc : la suite attendue est « excellent / excellant », soit l'option 3.",
     "why": {
-      "1": "« un dossier excellant » : la qualité stable s'écrit avec l'adjectif excellent.",
-      "2": "« excellent dans la négociation, la candidate… » : l'action en cours exige le participe excellant.",
-      "3": "Correct : adjectif excellent (qualité) ; participe excellant (action, suivi de son complément).",
-      "4": "Inverse l'adjectif et le participe.",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Trois options confondent la qualité et l'action en cours."
+      "1": "Le second blanc est bien traité, mais au premier `excellant` reste invariable alors que la forme qualifie le nom « dossier » sans commander de complément. Cette valeur de qualité impose l'adjectif verbal accordé « un dossier excellent ».",
+      "2": "Le premier blanc est bien traité, mais au second `excellent` emploie la graphie adjectivale alors que la forme commande le complément « dans la négociation » et décrit ce que fait la candidate. Le participe présent invariable « excellant » est attendu.",
+      "3": "Au premier blanc, la forme qualifie le dossier sans complément : l'adjectif verbal en -ent est accordé, « excellent ». Au second, la forme commande le complément « dans la négociation » et se rapporte à l'action de la candidate : le participe présent reste invariable, « excellant ». Les deux analyses sont respectées.",
+      "4": "Les deux formes sont interverties. `excellant` qualifie le dossier sans complément et doit devenir l'adjectif accordé « excellent » ; `excellent` commande le complément « dans la négociation » et doit devenir le participe présent invariable « excellant ».",
+      "A": "Une combinaison sur quatre est entièrement correcte, donc le nombre de combinaisons correctes n'est pas nul et « Aucune » est écarté.",
+      "T": "Le compte donne une combinaison correcte sur quatre, et non quatre, donc « Toutes » est écarté."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -65651,6 +65705,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-7980",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:34:29Z"
+        }
       }
     }
   },
@@ -68225,14 +68288,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "« Communicant » (adjectif, -cant) qualifie les vases ; « en communiquant » (participe présent, -quant) exprime l'action.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : les deux blancs se traitent l'un après l'autre, et le verbe communiquer change de graphie selon la valeur retenue. Premier blanc, « des vases ___ » : la forme ne commande aucun complément et attribue une propriété aux vases ; le test du féminin fonctionne (« une cuve communicante »), donc adjectif verbal, qui perd le u du radical et s'écrit -cant, avec l'accord du masculin pluriel : « communicants ». Second blanc, « en ___ les résultats du test aux parents » : après « en », la forme commande le complément direct « les résultats du test » et le complément « aux parents », donc elle garde le fonctionnement du verbe ; le participe présent conserve le u du radical et reste invariable : « communiquant ».\nDonc : la suite attendue est « communicants / communiquant », soit l'option 1.",
     "why": {
-      "1": "Correct : adjectif en -cant (vases communicants) ; participe en -quant (en communiquant).",
-      "2": "« vases communiquants » : l'adjectif s'écrit -cant.",
-      "3": "« en communicant les résultats » : l'action s'écrit -quant.",
-      "4": "Inverse les deux graphies.",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Trois options confondent l'adjectif et le participe."
+      "1": "Au premier blanc, la forme décrit les vases sans commander de complément : l'adjectif verbal s'écrit -cant et s'accorde au masculin pluriel, « communicants ». Au second, après « en », la forme commande le complément direct « les résultats du test » : le participe présent garde le u du radical et reste invariable, « communiquant ». Les deux analyses sont respectées.",
+      "2": "Le second blanc est bien traité, mais au premier `communiquants` accorde la graphie verbale en -quant alors que la forme attribue une propriété aux vases et ne commande aucun complément. L'adjectif verbal s'écrit sans u : « des vases communicants ».",
+      "3": "Le premier blanc est bien traité, mais au second `communicant` emploie la graphie adjectivale alors que la forme, après « en », commande le complément direct « les résultats du test ». Le participe présent garde le u et reste invariable : « en communiquant ».",
+      "4": "Les deux graphies sont interverties. `communiquants` accorde la forme verbale là où la propriété des vases appelle l'adjectif « communicants » ; `communicant` emploie la graphie adjectivale là où le complément direct « les résultats du test » impose le participe présent « communiquant ».",
+      "A": "Une combinaison sur quatre est entièrement correcte, donc le nombre de combinaisons correctes n'est pas nul et « Aucune » est écarté.",
+      "T": "Le compte donne une combinaison correcte sur quatre, et non quatre, donc « Toutes » est écarté."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -68245,6 +68308,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-7980",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:34:29Z"
+        }
       }
     }
   },
@@ -105141,14 +105213,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "« Provocantes » est un adjectif accordé avec « remarques »; après « en », « provoquant » est un participe présent invariable.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : les deux blancs se traitent l'un après l'autre. Premier blanc, « Les remarques ___ du rapporteur » : la forme ne commande aucun complément et attribue une propriété aux remarques ; le test du féminin fonctionne (« une remarque provocante »), c'est donc l'adjectif verbal, qui s'écrit -cant et s'accorde ici au féminin pluriel : « provocantes ». Second blanc, « en ___ une réaction inutile » : après « en », la forme commande le complément direct « une réaction inutile », elle conserve donc le fonctionnement du verbe provoquer ; le participe présent reste invariable et garde le u du radical : « provoquant ».\nDonc : la suite attendue est « provocantes / provoquant », soit l'option 2.",
     "why": {
-      "1": "Les deux formes sont interverties.",
-      "2": "Correct : adjectif féminin pluriel, puis participe présent invariable.",
-      "3": "Le premier adjectif devrait être au pluriel, et la seconde graphie ne convient pas au participe présent.",
-      "4": "L’adjectif s’écrit « provocantes »; le participe s’écrit « provoquant ».",
-      "A": "L’option 2 est correcte.",
-      "T": "Les options 1, 3 et 4 sont fautives."
+      "1": "Les deux formes sont inversées. `provoquant` est laissé invariable alors qu'il décrit « les remarques » sans commander de complément : il faut l'adjectif verbal accordé « provocantes ». Et `provocantes` est accordé après « en », où la forme commande le complément direct « une réaction inutile » et doit rester « provoquant ».",
+      "2": "Au premier blanc, la forme décrit les remarques sans complément, donc l'adjectif verbal en -cant s'accorde au féminin pluriel : « provocantes ». Au second, la forme commande le complément direct « une réaction inutile », donc le participe présent en -quant reste invariable : « provoquant ». Les deux analyses sont respectées.",
+      "3": "`provocante` choisit bien l'adjectif verbal, mais ne reprend pas le pluriel du nom « remarques », qu'il qualifie : il faut « provocantes ». De plus, `provoquantes` accorde après « en » une forme qui commande le complément direct « une réaction inutile » et qui reste invariable : « provoquant ».",
+      "4": "`provoquantes` accorde la graphie verbale en -quant alors que la forme décrit les remarques : l'adjectif verbal s'écrit « provocantes ». Et `provocant` emploie la graphie adjectivale après « en », où la forme commande un complément direct et s'écrit « provoquant ».",
+      "A": "Une combinaison sur quatre est entièrement correcte, donc le nombre de combinaisons correctes n'est pas nul et « Aucune » est écarté.",
+      "T": "Le compte donne une combinaison correcte sur quatre, et non quatre, donc « Toutes » est écarté."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -105161,6 +105233,15 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-7980",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:34:29Z"
+        }
       }
     }
   },
