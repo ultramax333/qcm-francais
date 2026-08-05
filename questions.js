@@ -58699,14 +58699,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "« Réserver quelque chose À quelqu'un » : le complément d'attribution est en « à », d'où « auxquels » (l'appui est réservé à ces élèves).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « cet appui de midi est réservé à ces élèves allophones ». Le verbe « réserver » se construit avec deux compléments : on réserve quelque chose (l'appui) à quelqu'un (les élèves) ; la préposition exigée est donc « à ». Dans la subordonnée, l'antécédent « les élèves allophones » occupe la place de ce complément introduit par « à », et non celle du complément direct. Il faut ensuite regarder ce qu'est cet antécédent : il désigne des personnes. Or, quand la reprise porte sur des personnes, un complément en « à » peut se reprendre de deux manières, soit par « à qui », soit par « à » suivi d'une forme de lequel ; les deux sont admises. Ici, aucune proposition ne présente « à qui » : il ne reste donc que la forme de lequel, qu'il faut construire correctement. On l'accorde avec l'antécédent, masculin pluriel, ce qui donne « lesquels », puis on applique la contraction obligatoire à + lesquels = auxquels.\nDonc : la seule reprise qui restitue la préposition « à » et l'accord masculin pluriel est « auxquels », c'est-à-dire l'option 4.",
     "why": {
-      "1": "« dont » supposerait « réservé de », construction inexistante.",
-      "2": "« que » ferait des élèves le COD alors qu'ils sont le destinataire (réservé À eux).",
-      "3": "« envers lesquels » calque « attentif envers » : « réservé » appelle son complément en « à ».",
-      "4": "Correct : réservé À → les élèves auxquels cet appui est réservé.",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Une seule option restitue la construction du participe."
+      "1": "`dont` reprend un complément introduit par « de ». Or on ne dit pas « réserver quelque chose de quelqu'un » : le destinataire de « réservé » est introduit par « à ». La forme attendue est « auxquels ».",
+      "2": "`que` reprend un complément direct, sans préposition. Ici les élèves ne sont pas la chose réservée : la chose réservée est « cet appui de midi », et les élèves en sont les destinataires, introduits par « à ». La forme attendue est « auxquels ».",
+      "3": "`envers lesquels` impose la préposition « envers », qui convient à des verbes comme « être attentif envers ». « Réserver » n'admet pas ce complément : sa construction est « réserver quelque chose à quelqu'un ». La forme attendue est « auxquels ».",
+      "4": "La construction « réserver quelque chose à quelqu'un » impose la préposition « à » devant la reprise de l'antécédent ; l'antécédent « les élèves allophones » est masculin pluriel, donc la forme de lequel qui lui correspond est « lesquels », et à + lesquels se contracte obligatoirement en « auxquels ». La phrase reconstruite « cet appui est réservé à ces élèves » se retrouve exactement.",
+      "A": "« Aucune » supposerait que les quatre propositions chiffrées échouent. Ce n'est pas le cas : une proposition chiffrée respecte la construction du verbe, donc « Aucune » est à écarter.",
+      "T": "« Toutes » supposerait quatre propositions chiffrées correctes. Le décompte est ici d'une seule proposition valable contre trois prépositions incompatibles, donc « Toutes » est à écarter."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -58716,9 +58716,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
-        "3": "UNK",
+        "2": "regime_direct_suppose",
+        "3": "regime_a_non_identifie",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-6042",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:09:34Z"
+        }
       }
     }
   },
@@ -61461,14 +61470,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "« Se vouer À quelque chose » : le complément est introduit par « à », d'où « à laquelle » (se vouer à la médiation).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « elle s'est vouée à la médiation scolaire depuis dix ans ». Le verbe pronominal « se vouer » demande toujours un complément introduit par « à » : on se voue à une cause, à une tâche. C'est donc cette préposition que la reprise relative doit porter. L'antécédent est « la médiation scolaire », groupe nominal féminin singulier ; la forme de lequel qui lui correspond est « laquelle ». Au féminin singulier, il n'y a pas de contraction : on écrit « à laquelle », alors que la contraction ne joue qu'avec lequel, lesquels et lesquelles (auquel, auxquels, auxquelles).\nDonc : la reprise correcte est « à laquelle », c'est-à-dire l'option 3.",
     "why": {
-      "1": "« dont » supposerait « se vouer de », construction inexistante.",
-      "2": "« qu' » traiterait le verbe comme transitif direct : « se vouer quelque chose » n'existe pas.",
-      "3": "Correct : se vouer À → la médiation à laquelle elle s'est vouée.",
-      "4": "« pour laquelle » calque « militer pour » : « se vouer » exige « à ».",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`dont` équivaut à un complément en « de ». Le verbe employé est « se vouer à » et non « se vouer de » : la préposition attendue est « à », d'où « à laquelle ».",
+      "2": "`qu'` reprend un complément direct, sans préposition. « Se vouer » ne se construit pas directement : on ne se voue pas quelque chose, on se voue à quelque chose. La forme attendue est « à laquelle ».",
+      "3": "La construction est « se vouer à quelque chose » : la reprise doit donc être précédée de « à ». L'antécédent « la médiation scolaire » est féminin singulier, ce qui donne « laquelle », sans contraction au féminin singulier : « à laquelle ». La phrase de base « elle s'est vouée à la médiation scolaire » est ainsi restituée mot pour mot.",
+      "4": "`pour laquelle` impose la préposition « pour », qui conviendrait à « militer pour » ou « se battre pour ». Elle change la construction du verbe employé, qui exige « à ». La forme attendue est « à laquelle ».",
+      "A": "« Aucune » exigerait que les quatre propositions chiffrées soient fautives. Une proposition chiffrée respecte pourtant la construction du verbe, donc « Aucune » est à écarter.",
+      "T": "« Toutes » exigerait quatre propositions chiffrées correctes. Le décompte donne une seule proposition valable et trois régimes incompatibles, donc « Toutes » est à écarter."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -61478,9 +61487,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
+        "2": "regime_direct_suppose",
         "3": null,
-        "4": "UNK"
+        "4": "regime_a_non_identifie"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-6042",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:09:34Z"
+        }
       }
     }
   },
@@ -62717,14 +62735,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "« S'astreindre À quelque chose » : le complément est introduit par « à », d'où « à laquelle » (s'astreindre à cette routine).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « la gardienne s'astreint à cette routine d'entraînement depuis janvier ». Le verbe pronominal « s'astreindre » exige un complément introduit par « à » : on s'astreint à un régime, à un horaire, à une routine. La reprise relative doit donc porter cette préposition. L'antécédent est « la routine d'entraînement », féminin singulier ; la forme de lequel accordée avec lui est « laquelle ». La contraction ne concerne que lequel, lesquels et lesquelles, donc on écrit ici « à laquelle » sans contraction.\nDonc : la reprise correcte est « à laquelle », c'est-à-dire l'option 1.",
     "why": {
-      "1": "Correct : s'astreindre À → la routine à laquelle elle s'astreint.",
-      "2": "« dont » supposerait « s'astreindre de », construction inexistante.",
-      "3": "« qu' » traiterait le verbe comme transitif direct : « s'astreindre quelque chose » n'existe pas.",
-      "4": "« sous laquelle » calque « plier sous » : « s'astreindre » exige « à ».",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "Le verbe de la subordonnée est « s'astreindre à » : la reprise de l'antécédent doit être précédée de « à ». L'antécédent « la routine d'entraînement » étant féminin singulier, la forme de lequel accordée est « laquelle », sans contraction possible au féminin singulier ; on obtient « à laquelle », qui restitue exactement « la gardienne s'astreint à cette routine ».",
+      "2": "`dont` reprend un complément en « de ». La construction employée est « s'astreindre à », jamais « s'astreindre de » : il faut donc « à laquelle ».",
+      "3": "`qu'` supposerait un complément direct, sans préposition. Or « s'astreindre » ne reçoit pas de complément direct : son complément est toujours introduit par « à ». La forme attendue est « à laquelle ».",
+      "4": "`sous laquelle` impose la préposition « sous », qui conviendrait à « plier sous une contrainte ». La contrainte exprimée ici passe par le régime en « à » du verbe employé, d'où « à laquelle ».",
+      "A": "« Aucune » supposerait quatre propositions chiffrées fautives, alors qu'une proposition chiffrée respecte le régime du verbe : « Aucune » est donc à écarter.",
+      "T": "« Toutes » supposerait que les quatre propositions chiffrées conviennent. Le compte réel est de une correcte pour trois incorrectes, donc « Toutes » est à écarter."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -62735,8 +62753,17 @@ const QUESTIONS = [
       "option_misconceptions": {
         "1": null,
         "2": "regime_de_suppose",
-        "3": "regime_a_non_identifie",
-        "4": "UNK"
+        "3": "regime_direct_suppose",
+        "4": "regime_a_non_identifie"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-6042",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:09:34Z"
+        }
       }
     }
   },
@@ -63357,14 +63384,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "« Recourir À quelque chose » : le complément est introduit par « à », d'où « à laquelle » (recourir à cette procédure).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « le comité a recouru à cette procédure d'urgence en juin ». Le verbe « recourir » se construit avec « à » : on recourt à un moyen, à une procédure. La reprise relative doit donc porter cette préposition. L'antécédent est « la procédure d'urgence », féminin singulier, ce qui donne la forme de lequel accordée « laquelle ». Comme la contraction ne touche que lequel, lesquels et lesquelles, on écrit ici « à laquelle ».\nDonc : la reprise correcte est « à laquelle », c'est-à-dire l'option 3.",
     "why": {
-      "1": "« dont » supposerait « recourir de », construction inexistante.",
-      "2": "« qu' » traiterait le verbe comme transitif direct : « recourir quelque chose » n'existe pas.",
-      "3": "Correct : recourir À → la procédure à laquelle le comité a recouru.",
-      "4": "« vers laquelle » calque « se tourner vers » : « recourir » exige « à ».",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`dont` remplace un complément introduit par « de ». « Recourir » n'admet pas ce régime : on recourt à quelque chose. Il faut « à laquelle ».",
+      "2": "`qu'` remplace un complément direct. Le verbe « recourir » n'en accepte pas : son complément est obligatoirement précédé de « à ». La forme attendue est « à laquelle ».",
+      "3": "La construction « recourir à quelque chose » impose la préposition « à » devant la reprise. L'antécédent « la procédure d'urgence » est féminin singulier, donc la forme de lequel accordée est « laquelle » et l'ensemble s'écrit « à laquelle », sans contraction ; on retrouve la phrase de base « le comité a recouru à cette procédure ».",
+      "4": "`vers laquelle` impose la préposition « vers », qui conviendrait à « se tourner vers une solution ». Le verbe écrit dans la phrase est « recourir », dont le complément se construit avec « à » : la forme attendue est « à laquelle ».",
+      "A": "« Aucune » n'est possible que si les quatre propositions chiffrées échouent ; ici une proposition chiffrée suit le régime du verbe, donc « Aucune » est écartée.",
+      "T": "« Toutes » n'est possible qu'avec quatre propositions chiffrées correctes ; le décompte est d'une seule correcte, donc « Toutes » est écartée."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -63374,9 +63401,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
+        "2": "regime_direct_suppose",
         "3": null,
-        "4": "UNK"
+        "4": "regime_a_non_identifie"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-6042",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:09:34Z"
+        }
       }
     }
   },
@@ -64071,14 +64107,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "« Se cramponner À quelque chose » : le complément est introduit par « à », d'où « à laquelle » (se cramponner à cette version).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « le témoin se cramponne à cette version des faits depuis l'automne ». Le verbe pronominal « se cramponner » demande un complément introduit par « à » : on se cramponne à une rampe, à une idée, à une version. La reprise relative doit donc porter « à ». L'antécédent est le groupe « la version des faits », dont le noyau « version » est féminin singulier ; la forme de lequel accordée est « laquelle ». Au féminin singulier il n'y a pas de contraction, d'où « à laquelle ».\nDonc : la reprise correcte est « à laquelle », c'est-à-dire l'option 4.",
     "why": {
-      "1": "« dont » supposerait « se cramponner de », construction inexistante.",
-      "2": "« qu' » traiterait le verbe comme transitif direct : « se cramponner quelque chose » n'existe pas.",
-      "3": "« sur laquelle » calque « s'arc-bouter sur » : « se cramponner » exige « à ».",
-      "4": "Correct : se cramponner À → la version à laquelle il se cramponne.",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`dont` correspond à un complément en « de », que le verbe n'admet pas : on se cramponne à quelque chose. La forme attendue est « à laquelle ».",
+      "2": "`qu'` correspond à un complément direct. « Se cramponner » n'en reçoit jamais : son complément est introduit par « à ». La forme attendue est « à laquelle ».",
+      "3": "`sur laquelle` impose la préposition « sur », qui conviendrait à « s'arc-bouter sur » ou « s'appuyer sur ». Le verbe écrit ici est « se cramponner », qui se construit avec « à », d'où « à laquelle ».",
+      "4": "Le verbe « se cramponner à » impose la préposition « à » devant la reprise de l'antécédent. Le noyau de l'antécédent, « la version », est féminin singulier : la forme de lequel accordée est « laquelle », sans contraction, ce qui donne « à laquelle » et restitue « le témoin se cramponne à cette version ».",
+      "A": "« Aucune » supposerait qu'aucune proposition chiffrée ne convienne, alors qu'une proposition chiffrée respecte le régime du verbe : elle est écartée.",
+      "T": "« Toutes » supposerait quatre propositions chiffrées correctes ; il n'y en a qu'une, les trois autres imposant une préposition étrangère au verbe : elle est écartée."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -64088,9 +64124,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
+        "2": "regime_direct_suppose",
         "3": "regime_sur_suppose",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-6042",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T20:41:51Z"
+        }
       }
     }
   },
@@ -64251,14 +64296,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "« S'évertuer À quelque chose » : le complément est introduit par « à », d'où « auxquelles » (s'évertuer à ces simplifications).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : pour relever la préposition, on part de la construction attestée du verbe pronominal « s'évertuer », qui s'emploie avec « à » suivi le plus souvent d'un infinitif : « le nouveau secrétaire général s'évertue à obtenir ces simplifications administratives », « il s'évertue à convaincre les doyens ». Ce verbe n'a donc jamais de complément direct : ce qu'il vise est toujours amené par « à ». La reprise relative doit porter cette même préposition, puisque les simplifications administratives sont ce à quoi le secrétaire général s'évertue. L'antécédent est « les simplifications administratives », féminin pluriel ; la forme de lequel qui s'accorde avec lui est « lesquelles ». Au pluriel, la contraction est obligatoire : à + lesquelles = auxquelles.\nDonc : la reprise correcte est « auxquelles », c'est-à-dire l'option 4.",
     "why": {
-      "1": "« dont » supposerait « s'évertuer de », construction inexistante.",
-      "2": "« qu' » traiterait le verbe comme transitif direct : « s'évertuer quelque chose » n'existe pas.",
-      "3": "« pour lesquelles » calque « militer pour » : « s'évertuer » exige « à ».",
-      "4": "Correct : s'évertuer À → les simplifications auxquelles il s'évertue.",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`dont` reprendrait un complément en « de ». Le verbe employé se construit avec « à » et non avec « de » : la forme attendue est « auxquelles ».",
+      "2": "`qu'` reprendrait un complément direct. « S'évertuer » ne reçoit pas de complément direct ; son complément est toujours introduit par « à ». La forme attendue est « auxquelles ».",
+      "3": "`pour lesquelles` impose la préposition « pour », propre à des verbes de but comme « militer pour ». Le seul régime que reconnaisse le verbe de la subordonnée est celui en « à », d'où « auxquelles ».",
+      "4": "Le complément de « s'évertuer » est toujours amené par « à », comme le montre la construction attestée « s'évertuer à obtenir ces simplifications » : la reprise doit donc être précédée de « à ». L'antécédent « les simplifications administratives » est féminin pluriel, donc la forme de lequel accordée est « lesquelles », et à + lesquelles se contracte obligatoirement en « auxquelles ».",
+      "A": "« Aucune » demanderait que les quatre propositions chiffrées soient fautives ; une proposition chiffrée respecte pourtant la préposition et l'accord, donc « Aucune » est écartée.",
+      "T": "« Toutes » demanderait quatre propositions chiffrées correctes ; le décompte donne une correcte contre trois, donc « Toutes » est écartée."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -64268,9 +64313,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
-        "3": "UNK",
+        "2": "regime_direct_suppose",
+        "3": "regime_a_non_identifie",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-6042",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:09:34Z"
+        }
       }
     }
   },
@@ -64751,14 +64805,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "« Se rallier À quelque chose » : le complément est introduit par « à », d'où « à laquelle » (se rallier à cette proposition).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « tous les groupes se sont ralliés à cette proposition de compromis ». Le verbe pronominal « se rallier » exige un complément introduit par « à » : on se rallie à un avis, à une proposition. La reprise relative doit donc porter « à ». L'antécédent est le groupe « la proposition de compromis », dont le noyau « proposition » est féminin singulier ; la forme de lequel accordée est « laquelle », sans contraction au féminin singulier.\nDonc : la reprise correcte est « à laquelle », c'est-à-dire l'option 4.",
     "why": {
-      "1": "« dont » supposerait « se rallier de », construction inexistante.",
-      "2": "« qu' » traiterait le verbe comme transitif direct : « se rallier quelque chose » n'existe pas.",
-      "3": "« derrière laquelle » calque « se ranger derrière » : « se rallier » exige « à ».",
-      "4": "Correct : se rallier À → la proposition à laquelle tous se sont ralliés.",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`dont` renvoie à un complément en « de », inconnu de ce verbe : on se rallie à quelque chose. La forme attendue est « à laquelle ».",
+      "2": "`qu'` renvoie à un complément direct. « Se rallier » n'admet pas de complément direct : son complément est introduit par « à ». La forme attendue est « à laquelle ».",
+      "3": "`derrière laquelle` impose la préposition « derrière », qui s'emploie avec « se ranger derrière quelqu'un » et vise des personnes. L'antécédent est ici une proposition, et le verbe écrit demande « à » : la forme attendue est « à laquelle ».",
+      "4": "Le verbe « se rallier à » impose « à » devant la reprise de l'antécédent ; le noyau « la proposition » est féminin singulier, donc la forme de lequel accordée est « laquelle » et l'ensemble s'écrit « à laquelle », ce qui restitue « tous les groupes se sont ralliés à cette proposition ».",
+      "A": "« Aucune » n'est justifiée que si les quatre propositions chiffrées échouent ; une proposition chiffrée respecte ici la construction, donc « Aucune » est écartée.",
+      "T": "« Toutes » n'est justifiée qu'avec quatre propositions chiffrées correctes ; on n'en compte qu'une, donc « Toutes » est écartée."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -64768,9 +64822,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
-        "3": "UNK",
+        "2": "regime_direct_suppose",
+        "3": "regime_a_non_identifie",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-6042",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:09:34Z"
+        }
       }
     }
   },
@@ -65365,14 +65428,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "« S'attacher À quelque chose » : le complément est introduit par « à », d'où « auxquelles » (s'attacher à ces valeurs).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « l'établissement s'attache à ces valeurs de respect ». Au sens de « tenir à, être fidèle à », le verbe pronominal « s'attacher » se construit avec « à ». La reprise relative doit donc porter cette préposition. L'antécédent est « les valeurs de respect », féminin pluriel ; la forme de lequel accordée avec lui est « lesquelles », et la contraction est obligatoire au pluriel : à + lesquelles = auxquelles.\nDonc : la reprise correcte est « auxquelles », c'est-à-dire l'option 4.",
     "why": {
-      "1": "« dont » supposerait « s'attacher de », construction inexistante.",
-      "2": "« qu' » traiterait le verbe comme transitif direct : « s'attacher quelque chose » a un autre sens (fixer sur soi).",
-      "3": "« pour lesquelles » calque « militer pour » : « s'attacher » exige « à ».",
-      "4": "Correct : s'attacher À → les valeurs auxquelles l'établissement s'attache.",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`dont` reprend un complément en « de ». Le verbe employé demande « à » et non « de » : il faut « auxquelles ».",
+      "2": "`qu'` reprend un complément direct. Employé directement, « attacher quelque chose » signifie fixer un objet, ce qui ne correspond pas au sens de la phrase ; l'attachement à des valeurs se construit avec « à », d'où « auxquelles ».",
+      "3": "`pour lesquelles` impose la préposition « pour », propre à des verbes d'engagement comme « militer pour ». Le verbe de la phrase demande « à » : la forme attendue est « auxquelles ».",
+      "4": "La construction « s'attacher à quelque chose » impose « à » devant la reprise. L'antécédent « les valeurs de respect » est féminin pluriel, donc la forme de lequel accordée est « lesquelles », que la contraction obligatoire transforme en « auxquelles » : on retrouve « l'établissement s'attache à ces valeurs ».",
+      "A": "« Aucune » exigerait quatre propositions chiffrées fautives ; une proposition chiffrée est conforme au régime et à l'accord, donc « Aucune » est écartée.",
+      "T": "« Toutes » exigerait quatre propositions chiffrées correctes ; le décompte est d'une seule, donc « Toutes » est écartée."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -65382,9 +65445,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
-        "3": "UNK",
+        "2": "regime_direct_suppose",
+        "3": "regime_a_non_identifie",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-6042",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:09:34Z"
+        }
       }
     }
   },
@@ -65919,14 +65991,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "« Concourir À quelque chose » (= y contribuer) : le complément est introduit par « à », d'où « auquel » (concourir à ce succès).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « toutes les volées ont concouru au succès de la fête interculturelle ». Au sens de « contribuer à », le verbe « concourir » se construit avec « à ». La reprise relative doit donc porter cette préposition. L'antécédent est « le succès de la fête interculturelle » : le noyau est « le succès », masculin singulier, et non « la fête ». La forme de lequel accordée est donc « lequel », et la contraction est obligatoire au masculin singulier : à + lequel = auquel.\nDonc : la reprise correcte est « auquel », c'est-à-dire l'option 3.",
     "why": {
-      "1": "« dont » supposerait « concourir de », construction inexistante.",
-      "2": "« qu' » traiterait le verbe comme transitif direct : « concourir quelque chose » n'existe pas.",
-      "3": "Correct : concourir À → le succès auquel toutes les volées ont concouru.",
-      "4": "« pour lequel » calque « travailler pour » : « concourir » exige « à ».",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`dont` reprend un complément en « de ». « Concourir » au sens de contribuer se construit avec « à » : la forme attendue est « auquel ».",
+      "2": "`qu'` reprend un complément direct, que « concourir » n'admet pas : son complément est introduit par « à ». La forme attendue est « auquel ».",
+      "3": "La construction « concourir à quelque chose » impose « à » devant la reprise, et le noyau de l'antécédent est « le succès », masculin singulier : la forme de lequel accordée est « lequel », que la contraction obligatoire transforme en « auquel ». On retrouve « toutes les volées ont concouru à ce succès ».",
+      "4": "`pour lequel` impose la préposition « pour », qui conviendrait à « travailler pour un résultat ». Le verbe écrit dans la phrase demande « à », d'où « auquel ».",
+      "A": "« Aucune » supposerait que les quatre propositions chiffrées échouent ; une proposition chiffrée respecte la préposition et l'accord, donc « Aucune » est écartée.",
+      "T": "« Toutes » supposerait quatre propositions chiffrées correctes ; on n'en compte qu'une, donc « Toutes » est écartée."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -65936,9 +66008,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
+        "2": "regime_direct_suppose",
         "3": null,
-        "4": "UNK"
+        "4": "regime_a_non_identifie"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-6042",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:09:34Z"
+        }
       }
     }
   },
@@ -68384,14 +68465,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Phrase de base : « grâce à ce fonds, trois familles ont pu financer le camp » → la locution se conserve : grâce auquel.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « grâce à ce fonds de dépannage, trois familles ont pu financer le camp de ski ». Le verbe de la subordonnée est « ont pu financer », dont le complément direct est déjà « le camp de ski » : l'antécédent n'est donc ni son complément direct ni un complément en « de ». Le fonds exprime le moyen, et ce moyen est introduit par la locution « grâce à », qui se termine par la préposition « à ». Cette locution doit être conservée entière devant la reprise. L'antécédent « le fonds de dépannage » est masculin singulier : la forme de lequel accordée est « lequel », et la contraction obligatoire donne à + lequel = auquel, précédé de « grâce ».\nDonc : la reprise correcte est « grâce auquel », c'est-à-dire l'option 4.",
     "why": {
-      "1": "« dont » (= de) ne rend pas le moyen exprimé par « grâce à ».",
-      "2": "« auquel » ampute la locution : les familles n'ont pas « pu financer au fonds ».",
-      "3": "« duquel » suppose une préposition en « de » complète, absente ici.",
-      "4": "Correct : grâce à + lequel → grâce auquel.",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Une seule option conserve la locution de moyen."
+      "1": "`dont` équivaut à un complément en « de », alors que le rapport exprimé est celui du moyen, marqué par « grâce à ». La forme attendue est « grâce auquel ».",
+      "2": "`auquel` conserve la préposition « à » mais supprime le mot « grâce », donc l'idée de moyen. On obtiendrait « les familles ont pu financer le camp au fonds », qui ne correspond à aucune construction de « financer ». La forme attendue est « grâce auquel ».",
+      "3": "`duquel` suppose une préposition ou une locution en « de » dans la phrase de base, par exemple « au moyen de ». Aucune ne s'y trouve : le moyen y est marqué par « grâce à ». La forme attendue est « grâce auquel ».",
+      "4": "La phrase de base « grâce à ce fonds, trois familles ont pu financer le camp » contient la locution « grâce à », qui se conserve entièrement dans la subordonnée relative. L'antécédent « le fonds de dépannage » est masculin singulier, donc la forme de lequel accordée est « lequel », et la contraction obligatoire à + lequel = auquel donne « grâce auquel ».",
+      "A": "« Aucune » ne vaudrait que si les quatre propositions chiffrées échouaient ; une proposition chiffrée conserve la locution complète, donc « Aucune » est écartée.",
+      "T": "« Toutes » ne vaudrait qu'avec quatre propositions chiffrées correctes ; le décompte est d'une seule correcte pour trois fautives, donc « Toutes » est écartée."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -68402,8 +68483,17 @@ const QUESTIONS = [
       "option_misconceptions": {
         "1": "regime_de_suppose",
         "2": "UNK",
-        "3": "UNK",
+        "3": "regime_de_suppose",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-6042",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T20:41:51Z"
+        }
       }
     }
   },
