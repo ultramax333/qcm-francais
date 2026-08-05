@@ -69034,14 +69034,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "« Faire face À quelque chose » : la locution exige « à », d'où « auxquels » (faire face à ces imprévus).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : l'antécédent du relatif est le groupe nominal `les imprévus de dernière minute`, qui désigne des choses et non des personnes. Je le remets dans une phrase simple, sans relatif : « l'intendance a fait face à ces imprévus ». Cette phrase simple montre la construction réellement employée, la locution `faire face`, qui réclame la préposition `à` : on fait face à quelque chose. Il n'existe ni `faire face quelque chose`, ni `faire face de quelque chose`, ni `faire face devant quelque chose`. Le relatif doit donc reprendre l'antécédent en gardant cette préposition `à`. Comme l'antécédent n'est pas humain, une forme de lequel convient ; elle s'accorde avec `imprévus`, masculin pluriel, ce qui donne `lesquels`, puis `à` + `lesquels` se contracte obligatoirement en `auxquels`.\nDonc : la seule forme qui restitue le régime de la locution et l'accord de l'antécédent est `auxquels`, et la réponse attendue est l'option 3.",
     "why": {
-      "1": "« dont » supposerait « faire face de », construction inexistante.",
-      "2": "« qu' » traiterait la locution comme transitive directe : « faire face quelque chose » n'existe pas.",
-      "3": "Correct : faire face À → les imprévus auxquels l'intendance a fait face.",
-      "4": "« devant lesquels » calque « se dresser devant » : la locution exige « à ».",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime de la locution."
+      "1": "`dont` reprend toujours un complément introduit par `de` : il faudrait pouvoir dire « l'intendance a fait face de ces imprévus », ce qui n'existe pas. La locution impose `à`, et la forme attendue est `auxquels`.",
+      "2": "`qu'` reprend un complément direct, c'est-à-dire un complément construit sans préposition. Or la phrase simple est « faire face à ces imprévus », jamais « faire face ces imprévus » : le complément est indirect, et il faut `auxquels`.",
+      "3": "La phrase simple « l'intendance a fait face à ces imprévus » contient bien la préposition `à` ; l'antécédent `imprévus`, non humain et masculin pluriel, appelle `lesquels`, et `à` + `lesquels` donne la contraction `auxquels`. Le régime de la locution et l'accord sont donc tous deux respectés.",
+      "4": "`devant lesquels` place une préposition de lieu que la construction ne demande pas : on se dresse devant un obstacle, mais on fait face `à` quelque chose. La préposition exigée par la locution n'est pas reconnue, alors qu'elle commande la forme `auxquels`.",
+      "A": "`Aucune` ne s'applique que si les quatre options numérotées sont fautives ; ici l'option 3 est correcte, le compte des options correctes n'est donc pas nul.",
+      "T": "`Toutes` supposerait quatre options numérotées correctes ; trois d'entre elles sont fautives, le compte n'est pas atteint."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -69051,9 +69051,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
+        "2": "regime_direct_suppose",
         "3": null,
-        "4": "UNK"
+        "4": "regime_a_non_identifie"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-8863",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:16:28Z"
+        }
       }
     }
   },
@@ -72678,14 +72687,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Règle : pour choisir un pronom relatif, on reconstruit la phrase simple et on garde la préposition demandée par le verbe. On dit « s'inscrire à un concours ». Dans cette phrase : « à + lequel » se contracte en « auquel ». Donc : le concours auquel elle s'est inscrite — option 3.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : l'antécédent est `le concours intercantonal`, un nom de chose, masculin singulier. La phrase simple correspondante est « elle s'est inscrite à ce concours ». Le verbe pronominal `s'inscrire` construit son complément avec `à` quand il désigne ce à quoi on adhère ou ce que l'on rejoint : on s'inscrit à un cours, à un concours. Le relatif doit donc porter cette préposition `à`. L'antécédent n'étant pas humain, une forme de lequel convient ; elle s'accorde avec `concours`, masculin singulier, ce qui donne `lequel`, puis `à` + `lequel` se contracte obligatoirement en `auquel` : on n'écrit jamais « à lequel ».\nDonc : la forme qui restitue le régime du verbe et l'accord de l'antécédent est `auquel`, et la réponse attendue est l'option 3.",
     "why": {
-      "1": "« dans lequel » supposerait « s'inscrire dans un concours » ; la construction attendue est « s'inscrire à ».",
-      "2": "« duquel » correspond à « de lequel » ; or le verbe demande « à ».",
-      "3": "Correct : s'inscrire à ce concours → le concours auquel elle s'est inscrite.",
-      "4": "« par lequel » exprimerait un passage ou un moyen, pas le complément demandé par « s'inscrire à ».",
-      "A": "L'option 3 conserve la préposition du verbe ; « Aucune » ne convient pas.",
-      "T": "Les options 1, 2 et 4 emploient une préposition qui ne correspond pas à « s'inscrire à »."
+      "1": "`dans lequel` suppose un régime en `dans`, qui situerait quelque chose à l'intérieur du concours. La phrase simple est « s'inscrire à ce concours », pas « s'inscrire dans ce concours » : la préposition du verbe n'est pas reconnue et la forme attendue est `auquel`.",
+      "2": "`duquel` correspond à `de` + `lequel` : il faudrait « s'inscrire de ce concours », construction inexistante. Le verbe demande `à`, donc `auquel`.",
+      "3": "La phrase simple « elle s'est inscrite à ce concours » montre la préposition `à` exigée par le verbe ; l'antécédent `concours`, non humain et masculin singulier, appelle `lequel`, et la contraction obligatoire de `à` + `lequel` donne exactement `auquel`.",
+      "4": "`par lequel` ajoute une valeur de moyen ou de passage, absente ici : le concours n'est pas l'instrument de l'inscription, il en est le complément introduit par `à`. Il faut `auquel`.",
+      "A": "`Aucune` exigerait que les quatre options numérotées soient fautives ; comme l'option 3 est correcte, ce compte n'est pas atteint.",
+      "T": "`Toutes` exigerait quatre options numérotées correctes ; il n'y en a qu'une, le compte est donc faux."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -72694,10 +72703,19 @@ const QUESTIONS = [
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
-        "1": "UNK",
-        "2": "UNK",
+        "1": "regime_a_non_identifie",
+        "2": "regime_de_suppose",
         "3": null,
-        "4": "UNK"
+        "4": "relation_instrumentale_supposee"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-8863",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:16:28Z"
+        }
       }
     }
   },
@@ -73292,14 +73310,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Règle : on choisit le pronom relatif en reconstruisant la phrase de base et en repérant la préposition exigée. « Faire allusion » se construit avec « à » : faire allusion À quelque chose. Dans cette phrase : la phrase de base est « la conseillère a fait allusion À cette réforme » → à + laquelle. Donc : à laquelle — option 3.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : le relatif est inséré juste après `La réforme des grilles horaires`. L'antécédent est le noyau de ce groupe, `la réforme`, et non le complément `des grilles horaires` : c'est bien à la réforme que la conseillère d'État a fait allusion. La phrase simple est donc « la conseillère d'État a fait allusion à cette réforme ». La locution `faire allusion` réclame la préposition `à` : on ne dit ni « faire allusion quelque chose », ni « faire allusion de quelque chose ». Le relatif doit conserver ce `à`. L'antécédent n'est pas humain, une forme de lequel convient ; elle s'accorde avec `réforme`, féminin singulier, ce qui donne `laquelle`, et le féminin singulier ne se contracte pas après `à` : on écrit `à laquelle` en deux mots.\nDonc : la forme attendue est `à laquelle`, et la réponse attendue est l'option 3.",
     "why": {
-      "1": "« dont » remplacerait un complément en « de » : « faire allusion de » n'existe pas.",
-      "2": "« que » remplacerait un complément direct : « faire allusion quelque chose » n'existe pas.",
-      "3": "Correct : faire allusion À → la réforme à laquelle elle a fait allusion.",
-      "4": "« sur laquelle » calque « s'exprimer sur » : la locution exige « à ».",
-      "A": "Il existe bien une option correcte : la 3 conserve la préposition exigée.",
-      "T": "Les options 1, 2 et 4 reconstruisent des constructions impossibles."
+      "1": "`dont` reprend un complément introduit par `de`. La phrase simple serait « faire allusion de cette réforme », qui n'existe pas ; la locution impose `à`, d'où `à laquelle`.",
+      "2": "`que` reprend un complément direct, sans préposition. Or « faire allusion cette réforme » est impossible : le complément est introduit par `à`, et la forme correcte est `à laquelle`.",
+      "3": "La phrase simple « la conseillère d'État a fait allusion à cette réforme » contient la préposition `à` exigée par la locution ; l'antécédent `réforme`, non humain et féminin singulier, appelle `laquelle`, qui reste en deux mots après `à`.",
+      "4": "`sur laquelle` prête à la locution un régime en `sur`, celui de verbes comme s'exprimer ou revenir. `Faire allusion` se construit uniquement avec `à`, ce qui donne `à laquelle`.",
+      "A": "`Aucune` supposerait zéro option numérotée correcte ; l'option 3 étant correcte, ce compte est faux.",
+      "T": "`Toutes` supposerait les quatre options numérotées correctes ; trois d'entre elles sont fautives."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -73309,9 +73327,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
+        "2": "regime_direct_suppose",
         "3": null,
         "4": "regime_sur_suppose"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-8863",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:16:28Z"
+        }
       }
     }
   },
@@ -74606,14 +74633,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Règle : pour choisir le pronom relatif, on reconstruit la phrase de base et on repère la préposition du verbe. « Prendre part À quelque chose » se construit avec « à » ; « à » + « lequel » se contractent en « auquel ». Dans cette phrase : la phrase de base est « elle a pris part À ce groupe » → auquel. Donc : option 2.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : l'antécédent est `le groupe de travail`, un nom de chose, masculin singulier ; le noyau du groupe est `groupe`, ce qui commande l'accord. La phrase simple est « elle a pris part à ce groupe de travail ». La locution `prendre part` réclame la préposition `à` : on dit `prendre part à une décision` ou `prendre part à un projet`, mais il n'existe ni `prendre part une décision`, ni `prendre part de cette décision`. Le relatif doit donc porter ce `à`. L'antécédent n'étant pas humain, une forme de lequel convient ; elle s'accorde au masculin singulier avec `groupe`, ce qui donne `lequel`, puis `à` + `lequel` se contracte obligatoirement en `auquel`.\nDonc : la forme qui respecte le régime de la locution et l'accord de l'antécédent est `auquel`, et la réponse attendue est l'option 2.",
     "why": {
-      "1": "« dont » remplacerait un complément en « de » : « prendre part de » n'existe pas.",
-      "2": "Correct : prendre part À → le groupe auquel elle a pris part.",
-      "3": "« qu' » remplacerait un complément direct : « prendre part quelque chose » n'existe pas.",
-      "4": "« pour lequel » calque « travailler pour » : la locution exige « à ».",
-      "A": "Il existe bien une option correcte : la 2.",
-      "T": "Les options 1, 3 et 4 reconstruisent une phrase de base impossible."
+      "1": "`dont` remplace un complément introduit par `de` : il faudrait « prendre part de ce groupe », construction inexistante. La locution impose `à`, donc `auquel`.",
+      "2": "La phrase simple « elle a pris part à ce groupe de travail » contient la préposition `à` exigée par la locution ; l'antécédent `groupe`, non humain et masculin singulier, appelle `lequel`, et la contraction obligatoire de `à` + `lequel` donne `auquel`.",
+      "3": "`qu'` reprend un complément direct, construit sans préposition ; or « prendre part ce groupe » est impossible. Le complément est introduit par `à`, d'où `auquel`.",
+      "4": "`pour lequel` exprime un but ou un bénéficiaire, valeur que la locution ne demande pas : elle prend part au groupe, elle ne prend pas part pour lui. La préposition réellement imposée, `à`, n'est pas reconnue, et il faut `auquel`.",
+      "A": "`Aucune` ne vaut que si les quatre options numérotées sont fautives ; l'option 2 est correcte, le compte n'y est pas.",
+      "T": "`Toutes` demanderait quatre options numérotées correctes ; une seule l'est."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -74624,8 +74651,17 @@ const QUESTIONS = [
       "option_misconceptions": {
         "1": "regime_de_suppose",
         "2": null,
-        "3": "regime_a_non_identifie",
-        "4": "UNK"
+        "3": "regime_direct_suppose",
+        "4": "regime_a_non_identifie"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-8863",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:22:52Z"
+        }
       }
     }
   },
@@ -75840,14 +75876,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Règle : on choisit le pronom relatif d'après la préposition qu'exige le verbe. « Renoncer À quelque chose » se construit avec « à », d'où « à laquelle ». Dans cette phrase : la phrase de base est « elle a renoncé À cette formation » → à laquelle. Donc : option 1.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : l'antécédent est `la formation continue`, un nom de chose, féminin singulier. La phrase simple correspondante est « elle a renoncé à cette formation continue faute de temps ». Le verbe `renoncer` construit toujours son complément avec `à` : on renonce à un projet, à un poste ; on ne dit ni « renoncer un projet », ni « renoncer de ce projet ». Le relatif doit donc conserver cette préposition `à`. L'antécédent n'étant pas humain, une forme de lequel convient ; elle s'accorde avec `formation`, féminin singulier, ce qui donne `laquelle`. La contraction en `auquel` ou `auxquelles` ne concerne pas le féminin singulier : on écrit `à laquelle` en deux mots.\nDonc : la forme attendue est `à laquelle`, et la réponse attendue est l'option 1.",
     "why": {
-      "1": "Correct : renoncer À → la formation à laquelle elle a renoncé.",
-      "2": "« dont » remplacerait un complément en « de » : « renoncer de » n'existe pas.",
-      "3": "« qu' » remplacerait un complément direct : « renoncer quelque chose » n'existe pas.",
-      "4": "« pour laquelle » calque « opter pour » : « renoncer » exige « à ».",
-      "A": "Il existe bien une option correcte : la 1.",
-      "T": "Les options 2, 3 et 4 reconstruisent une phrase de base impossible."
+      "1": "La phrase simple « elle a renoncé à cette formation » montre la préposition `à` exigée par le verbe ; l'antécédent `formation`, non humain et féminin singulier, appelle `laquelle`, qui reste séparé de `à` puisque le féminin singulier ne se contracte pas.",
+      "2": "`dont` reprend un complément introduit par `de`. Il faudrait pouvoir dire « elle a renoncé de cette formation », ce qui n'existe pas : le verbe impose `à`, donc `à laquelle`.",
+      "3": "`qu'` reprend un complément direct, construit sans préposition ; or « renoncer cette formation » est impossible. Le complément de `renoncer` est indirect, d'où `à laquelle`.",
+      "4": "`pour laquelle` introduit un but ou un motif, comme dans opter pour une formation. `Renoncer` demande au contraire `à`, ce qui donne `à laquelle`.",
+      "A": "`Aucune` exigerait que les quatre options numérotées soient fautives ; l'option 1 est correcte, ce compte n'est pas atteint.",
+      "T": "`Toutes` exigerait quatre options numérotées correctes ; trois d'entre elles sont fautives."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -75858,8 +75894,17 @@ const QUESTIONS = [
       "option_misconceptions": {
         "1": null,
         "2": "regime_de_suppose",
-        "3": "regime_a_non_identifie",
-        "4": "UNK"
+        "3": "regime_direct_suppose",
+        "4": "regime_a_non_identifie"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-8863",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:16:28Z"
+        }
       }
     }
   },
@@ -85946,14 +85991,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Règle : « songer À quelque chose » (= y penser) se construit avec « à » ; pour une chose, « à + lequel » se contracte en « auquel ». Dans cette phrase : il faudrait « le stage auquel elle songe » — cette forme ne figure dans aucune option. Donc : réponse A (Aucune).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : l'antécédent est `le stage en entreprise`, un nom de chose, masculin singulier. La phrase simple correspondante est « elle songe à ce stage depuis la rentrée ». Le verbe `songer`, au sens de penser à quelque chose, se construit obligatoirement avec `à` : on dit `songer à un projet`, mais il n'existe ni `songer ce stage`, ni `songer de ce stage`. Le relatif doit donc porter cette préposition `à`. Comme l'antécédent n'est pas humain, on ne peut pas employer `qui` après `à` : `à qui` est réservé aux personnes. Il faut une forme de lequel, accordée au masculin singulier avec `stage`, soit `lequel`, puis la contraction obligatoire de `à` + `lequel`, qui donne `auquel`. Je compare alors cette forme attendue aux quatre options : `dont`, `à qui`, `qu'` et `pour lequel` ; `auquel` n'y figure pas, et aucune des quatre ne réunit à la fois la préposition `à` et une forme compatible avec un antécédent non humain.\nDonc : les quatre options numérotées sont fautives et la réponse attendue est `Aucune`.",
     "why": {
-      "1": "« dont » remplacerait un complément en « de » : « songer de » n'existe pas.",
-      "2": "« à qui » se réserve aux personnes : un stage est une chose → auquel.",
-      "3": "« qu' » ferait du stage le complément direct de « songer », qui n'en a pas.",
-      "4": "« pour lequel » calque « militer pour » : « songer » exige « à ».",
-      "A": "Correct : la forme attendue « auquel » (songer à + chose) ne figure dans aucune option.",
-      "T": "Impossible : chaque option emploie un mauvais régime ou un relatif de personne."
+      "1": "`dont` reprend un complément introduit par `de` : il faudrait « elle songe de ce stage », qui n'existe pas. Le verbe impose `à`, et la forme attendue serait `auquel`.",
+      "2": "`à qui` conserve bien la préposition `à`, mais `qui` précédé d'une préposition ne reprend que des personnes. L'antécédent `stage` désigne une chose : il appelle une forme de lequel, donc `auquel`.",
+      "3": "`qu'` reprend un complément direct, construit sans préposition ; or « elle songe ce stage » est impossible. Le complément de `songer` est indirect, d'où `auquel`.",
+      "4": "`pour lequel` exprime un but ou un bénéficiaire, comme dans militer pour un projet. `Songer` demande `à` et non `pour`, ce qui donnerait `auquel`.",
+      "A": "La phrase simple « elle songe à ce stage » impose la préposition `à`, et l'antécédent `stage`, chose au masculin singulier, impose la contraction `auquel`. Cette forme n'est proposée par aucune des quatre options : `Aucune` est donc la réponse correcte.",
+      "T": "`Toutes` supposerait les quatre options numérotées correctes ; aucune ne l'est."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -85964,8 +86009,17 @@ const QUESTIONS = [
       "option_misconceptions": {
         "1": "regime_de_suppose",
         "2": "UNK",
-        "3": "regime_a_non_identifie",
-        "4": "UNK"
+        "3": "regime_direct_suppose",
+        "4": "regime_a_non_identifie"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-8863",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:22:52Z"
+        }
       }
     }
   },
@@ -87000,14 +87054,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Règle : « se heurter À quelque chose » se construit avec « à » ; il faudrait donc « auxquels » (le projet s'est heurté à ces obstacles). Dans cette phrase : cette forme ne figure dans aucune option. Donc : réponse A (Aucune).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : l'antécédent est `les obstacles`, un nom de chose, masculin pluriel. La phrase simple correspondante est « le projet de rénovation s'est heurté à ces obstacles depuis deux ans ». Le verbe pronominal `se heurter` construit son complément avec `à` : on se heurte à une difficulté, à un refus ; il n'existe ni « se heurter une difficulté », ni « se heurter de », ni « se heurter sur » dans ce sens. Le relatif doit donc porter cette préposition `à`. L'antécédent n'étant pas humain, une forme de lequel convient ; accordée au masculin pluriel avec `obstacles`, elle donne `lesquels`, et `à` + `lesquels` se contracte obligatoirement en `auxquels`. Je compare cette forme attendue aux quatre options proposées, `dont`, `que`, `desquels` et `sur lesquels` : aucune ne comporte la préposition `à` du verbe.\nDonc : les quatre options numérotées sont fautives et la réponse attendue est `Aucune`.",
     "why": {
-      "1": "« dont » remplacerait un complément en « de » : « se heurter de » n'existe pas.",
-      "2": "« que » ferait des obstacles le complément direct de « se heurter », qui n'en a pas.",
-      "3": "« desquels » habille un régime en « de » qui n'est pas celui du verbe.",
-      "4": "« sur lesquels » calque « buter sur » : « se heurter » exige « à » → auxquels.",
-      "A": "Correct : la forme attendue « auxquels » (se heurter à) ne figure dans aucune option.",
-      "T": "Impossible : chaque option emploie un mauvais régime."
+      "1": "`dont` reprend un complément introduit par `de` : il faudrait « le projet s'est heurté de ces obstacles », ce qui n'existe pas. Le verbe impose `à`, et la forme attendue serait `auxquels`.",
+      "2": "`que` reprend un complément direct, construit sans préposition ; or « le projet s'est heurté ces obstacles » est impossible. Le complément est indirect, d'où `auxquels`.",
+      "3": "`desquels` correspond à `de` + `lesquels` : la forme s'accorde bien au masculin pluriel, mais elle habille un régime en `de` que le verbe ne demande pas. Il faut la contraction de `à` + `lesquels`, soit `auxquels`.",
+      "4": "`sur lesquels` prête au verbe un régime en `sur`, celui de buter sur quelque chose. `Se heurter` se construit avec `à`, ce qui donne `auxquels`.",
+      "A": "La phrase simple « le projet s'est heurté à ces obstacles » impose la préposition `à`, et l'antécédent `obstacles`, chose au masculin pluriel, impose la contraction `auxquels`. Cette forme ne figure dans aucune des quatre options : `Aucune` est donc la réponse correcte.",
+      "T": "`Toutes` supposerait les quatre options numérotées correctes ; aucune ne l'est."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -87017,9 +87071,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
-        "3": "UNK",
-        "4": "UNK"
+        "2": "regime_direct_suppose",
+        "3": "regime_de_suppose",
+        "4": "regime_sur_suppose"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-8863",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:16:28Z"
+        }
       }
     }
   },
@@ -105668,7 +105731,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez le pronom relatif qui complète correctement la phrase.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -105696,14 +105759,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Règle : Le recteur exige à ; à + lequel se contracte et s’accorde avec l’antécédent. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 3.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : l'antécédent du relatif est `la procédure`, un nom de chose, féminin singulier. Remis dans une phrase simple, l'énoncé donne « chaque candidat doit se conformer à cette procédure ». Le verbe pronominal `se conformer` n'admet pas de complément direct : il réclame toujours la préposition `à`, comme le montre l'impossibilité de dire « se conformer cette procédure » ou « se conformer de cette procédure ». Le relatif doit donc conserver ce `à`. L'antécédent n'étant pas humain, une forme de lequel convient ; elle s'accorde avec `procédure`, féminin singulier, ce qui donne `laquelle`. La contraction ne concerne que le masculin singulier et le pluriel (`auquel`, `auxquels`, `auxquelles`) : au féminin singulier, on écrit les deux mots séparés, `à laquelle`.\nDonc : la forme qui respecte à la fois le régime du verbe et le genre de l'antécédent est `à laquelle`, et la réponse attendue est l'option 3.",
     "why": {
-      "1": "La forme `que` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
-      "2": "La forme `dont` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
-      "3": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
-      "4": "La forme `sur laquelle` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
-      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
-      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+      "1": "`que` sert à reprendre un complément direct, construit sans préposition. Il faudrait dire « le candidat doit se conformer cette procédure », ce qui est impossible : le verbe exige `à`, d'où `à laquelle`.",
+      "2": "`dont` équivaut à un complément introduit par `de`. Or on ne dit pas « se conformer de cette procédure » ; la préposition demandée est `à`, et la forme attendue est `à laquelle`.",
+      "3": "La phrase simple « chaque candidat doit se conformer à cette procédure » contient la préposition `à` exigée par le verbe ; l'antécédent `procédure`, non humain et féminin singulier, appelle `laquelle`, qui reste en deux mots après `à`, sans contraction.",
+      "4": "`sur laquelle` introduit un régime en `sur` que le verbe ne demande pas : on peut s'appuyer sur une procédure, mais s'y conformer se dit avec `à`. La forme correcte reste `à laquelle`.",
+      "A": "`Aucune` ne conviendrait que si les quatre options numérotées étaient fautives ; l'option 3 étant correcte, ce compte n'est pas atteint.",
+      "T": "`Toutes` demanderait quatre options numérotées correctes ; une seule l'est, les trois autres sont fautives."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -105721,10 +105784,19 @@ const QUESTIONS = [
       "cognitive_mode": "analyse_structurelle",
       "writing_situation": null,
       "option_misconceptions": {
-        "1": "UNK",
-        "2": "UNK",
+        "1": "regime_direct_suppose",
+        "2": "regime_de_suppose",
         "3": null,
-        "4": "UNK"
+        "4": "regime_sur_suppose"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-8863",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:16:28Z"
+        }
       }
     },
     "stem": "Le secrétariat a simplifié la procédure ___ chaque candidat doit se conformer avant son inscription."
