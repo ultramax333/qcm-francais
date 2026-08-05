@@ -25032,14 +25032,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Le premier mot décrit l'état des élèves : c'est l'adjectif « somnolents », accordé au masculin pluriel. Le second garde le complément « sur leurs cahiers » et exprime ce qu'ils font : c'est le participe présent invariable « somnolant ». L'option 2 est correcte.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : les deux blancs reposent sur le même verbe, mais pas sur la même fonction. Premier blanc, « Des élèves ___ » : le mot est placé juste après le nom « élèves » et en décrit l'état, comme un adjectif ordinaire ; le test du féminin le confirme (« des élèves somnolentes »), et on pourrait remplacer par « fatigués ». C'est l'adjectif verbal : il s'accorde avec « élèves », masculin pluriel, d'où le -s de « somnolents ». Second blanc, « ___ sur leurs cahiers dès la première heure » : la forme ouvre un groupe détaché qui garde ses compléments, « sur leurs cahiers » et « dès la première heure », et dit ce que font les élèves à ce moment-là. C'est le participe présent : il fonctionne encore comme un verbe et reste invariable, « somnolant ». Le repère décisif est donc la présence de ces compléments après le second blanc, qui interdit d'y voir une simple qualité.\nDonc : il faut « des élèves somnolents » puis « somnolant sur leurs cahiers », c'est-à-dire l'option 2.",
     "why": {
-      "1": "Les deux formes sont inversées : « somnolents » décrit l'état des élèves et s'accorde ; « somnolant sur leurs cahiers » exprime l'action et reste invariable.",
-      "2": "Correct : adjectif accordé + participe invariable.",
-      "3": "2e segment : action → somnolant.",
-      "4": "1er segment : état → somnolents.",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      "T": "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "Les deux formes sont à la place l'une de l'autre. Au premier blanc, `des élèves somnolant` laisse invariable un mot qui décrit l'état du nom « élèves » et doit s'accorder : « somnolents ». Au second, `somnolents sur leurs cahiers` accorde une forme qui conserve ses compléments et reste invariable : « somnolant ».",
+      "2": "Le premier mot qualifie « élèves » et supporte le test du féminin : il satisfait la règle de l'adjectif verbal et porte l'accord du masculin pluriel, « somnolents ». Le second garde les compléments « sur leurs cahiers » et « dès la première heure » : il satisfait la règle du participe présent, qui reste invariable, « somnolant ».",
+      "3": "Le premier blanc est correct, mais au second `somnolents sur leurs cahiers dès la première heure` accorde une forme qui commande encore ses compléments : le participe présent est invariable, donc « somnolant ».",
+      "4": "Le second blanc est correct, mais au premier `des élèves somnolant` prive de son accord un mot qui décrit l'état du nom « élèves » : l'adjectif verbal s'accorde, donc « somnolents ».",
+      "A": "L'option 2 respecte les deux blancs ; « Aucune » supposerait que les quatre options chiffrées soient fautives.",
+      "T": "Une seule option chiffrée sur quatre est intégralement correcte ; « Toutes » est donc exclu."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -25057,6 +25057,15 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-0447",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:42:12Z"
+        }
       }
     }
   },
@@ -35982,14 +35991,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "« personnel navigant » : adjectif (locution consacrée, sans u). « vaquant à » : participe présent de « vaquer » (le reste de l'équipe vaquant à ses tâches). « vacant » = inoccupé, ne se construit pas avec « à ».",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : chaque blanc se juge sur son fonctionnement propre. Premier blanc, « Le personnel ___ assurera la liaison avec l'aéroport » : la forme suit immédiatement le nom « personnel », n'a aucun complément et sert à classer ce personnel, exactement comme un adjectif (on peut dire « le personnel navigant et le personnel au sol »). C'est l'adjectif verbal, qui perd le -u- du verbe naviguer et s'écrit « navigant ». Second blanc, « le reste de l'équipe ___ aux tâches habituelles » : la forme est suivie du complément introduit par « à », « aux tâches habituelles », et exprime ce que fait l'équipe. Elle fonctionne donc comme un verbe : c'est le participe présent de vaquer, invariable, « vaquant à ». C'est cette construction avec « à » qui fait basculer la réponse, car l'adjectif de la même famille, qui signifie « inoccupé » comme dans « un poste vacant », ne se construit pas avec ce complément.\nDonc : il faut « le personnel navigant » puis « vaquant aux tâches habituelles », c'est-à-dire l'option 1.",
     "why": {
-      "1": "Correct : adjectif « navigant » (locution) + participe « vaquant à ».",
-      "2": "« naviguant » : sans complément, c'est l'adjectif « navigant » (sans u) qui s'impose.",
-      "3": "« vacant » : signifie « inoccupé » (poste vacant) ; ici il faut « vaquant à ».",
-      "4": "Les deux segments sont fautifs.",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Les options 2, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "Le premier mot classe le nom « personnel » sans aucun complément : il satisfait la règle de l'adjectif verbal, écrit sans -u-, « navigant ». Le second commande le complément « aux tâches habituelles » et dit ce que fait l'équipe : il satisfait la règle du participe présent de vaquer, invariable, « vaquant ».",
+      "2": "Au premier blanc, `le personnel naviguant assurera la liaison` garde le -u- du verbe alors que la forme n'a aucun complément et sert seulement à qualifier « personnel » : l'adjectif verbal s'écrit « navigant ».",
+      "3": "Au second blanc, `vacant aux tâches habituelles` emploie l'adjectif, qui signifie « inoccupé » et ne se construit pas avec « à » ; la forme commande ici un complément et exprime une action, donc le participe présent « vaquant ».",
+      "4": "Les deux blancs sont fautifs : `naviguant` donne un radical verbal à une forme purement qualifiante, et `vacant aux tâches habituelles` donne une forme adjectivale à une forme qui commande un complément. Il faut « navigant » puis « vaquant ».",
+      "A": "Puisque l'option 1 est intégralement correcte, la réponse « Aucune » ne peut pas être retenue.",
+      "T": "Trois options chiffrées comportent au moins une graphie fautive, ce qui interdit « Toutes »."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -36002,6 +36011,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-0447",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:42:12Z"
+        }
       }
     }
   },
@@ -70671,14 +70689,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "« Provocant » (adjectif, -cant) qualifie la question ; « en provoquant » (participe présent, -quant) exprime l'action.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : la forme en -ant revient deux fois et il faut la traiter séparément. Premier emploi, « Le jury a jugé la question ___ » : le mot se rapporte au nom « la question » et en exprime une propriété, ce que confirme le test du féminin (on peut dire « une question provocante », « une remarque provocante »). C'est donc l'adjectif verbal : il s'accorde au féminin singulier avec « question » et il prend la graphie propre à l'adjectif, en -cant, « provocante ». Second emploi, « en ___ ouvertement le règlement du concours » : la forme suit « en » et commande un complément direct, « le règlement du concours » ; elle continue donc de fonctionner comme un verbe. C'est le participe présent (ici au gérondif) : il reste invariable et conserve le radical du verbe provoquer, avec -qu-, « provoquant ». Le point qui fait basculer la réponse est la présence de ce complément direct après le second blanc.\nDonc : il faut « la question provocante » puis « en provoquant ouvertement le règlement », c'est-à-dire l'option 4.",
     "why": {
-      "1": "« une question provoquante » : l'adjectif s'écrit -cant.",
-      "2": "« en provocant le règlement » : l'action s'écrit -quant.",
-      "3": "Inverse les deux graphies.",
-      "4": "Correct : adjectif provocante (-cant) ; participe provoquant (-quant).",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Trois options confondent l'adjectif et le participe."
+      "1": "Au premier blanc, `provoquante` transporte le radical verbal en -qu- dans un mot qui se rapporte au nom « la question » et s'accorde avec lui : la règle de l'adjectif verbal impose la graphie en -cant, donc « provocante ». Le second blanc est bien traité, mais l'option entière est fautive.",
+      "2": "Le premier blanc est correct, mais au second `en provocant ouvertement le règlement` applique la graphie de l'adjectif à une forme qui garde un complément direct et fonctionne comme un verbe : le participe présent conserve le radical de provoquer, donc « en provoquant ».",
+      "3": "Les deux graphies sont échangées : `provoquante` donne au mot rapporté à « la question » le radical verbal, et `provocant` donne la graphie adjectivale à la forme qui commande « le règlement du concours ». Il faut « provocante » puis « en provoquant ».",
+      "4": "Le premier mot se rapporte à « la question » et supporte le test du féminin : il satisfait la règle de l'adjectif verbal, accordé et écrit en -cant, « provocante ». Le second, précédé de « en » et suivi du complément direct « le règlement du concours », satisfait la règle du participe présent : invariable et écrit avec le radical verbal, « provoquant ».",
+      "A": "Une option chiffrée respecte les deux graphies, la 4 ; « Aucune » ne se choisit que si les quatre sont fautives.",
+      "T": "Trois des quatre options chiffrées comportent au moins une graphie fautive ; « Toutes » exigerait que les quatre soient correctes."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -70691,6 +70709,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-0447",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:42:12Z"
+        }
       }
     }
   },
@@ -100043,14 +100070,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : l'adjectif verbal décrit une qualité et s'écrit « équivalent » (en -ent), accordé : des appréciations équivalentes. Le participe présent décrit l'action et reste invariable, écrit « équivalant » (en -ant) : en équivalant chacune à un 5. Dans cette phrase : « appréciations ___ » = qualité → équivalentes ; « en ___ chacune » = action → équivalant. Donc : équivalentes / équivalant — option 4.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : les deux blancs viennent du verbe équivaloir, mais leur fonctionnement diffère. Premier blanc, « Deux appréciations tout à fait ___ ont été attribuées » : la forme se rapporte au nom « appréciations » et en exprime une propriété, celle d'avoir la même valeur ; le test du singulier le confirme (« un résultat équivalent »), et un autre adjectif peut prendre la place (« deux appréciations tout à fait semblables »). C'est l'adjectif verbal : il s'écrit en -ent et s'accorde au féminin pluriel avec « appréciations », « équivalentes ». Second blanc, « en ___ chacune à un bon 5 » : la forme est précédée de « en » et garde son fonctionnement de verbe, puisqu'elle commande le complément « à un bon 5 » ; « chacune » n'est pas ce complément, c'est un pronom distributif, c'est-à-dire un mot qui reprend les appréciations une par une. C'est le participe présent au gérondif : invariable et écrit en -ant, « équivalant ». Ce qui fait basculer la réponse est le rapport au nom d'un côté et le complément verbal « à un bon 5 » de l'autre.\nDonc : il faut « des appréciations tout à fait équivalentes » puis « en équivalant chacune à un bon 5 », c'est-à-dire l'option 4.",
     "why": {
-      "1": "Les deux formes sont inversées : l'adjectif en -ent, le participe en -ant.",
-      "2": "« en équivalentes chacune » : l'action en cours s'écrit avec le participe équivalant.",
-      "3": "« des appréciations équivalant » : la qualité accordée s'écrit équivalentes (-ent).",
-      "4": "Correct : adjectif accordé « équivalentes » (-ent) + participe invariable « équivalant » (-ant).",
-      "A": "Il existe bien une option correcte : la 4.",
-      "T": "Les options 1, 2 et 3 confondent l'adjectif verbal et le participe présent."
+      "1": "Les deux formes sont inversées. Au premier blanc, `tout à fait équivalant` emploie la graphie verbale en -ant pour un mot modifié par un degré et accordé au nom : il faut « équivalentes ». Au second, `en équivalentes chacune` accorde une forme qui commande un complément et reste invariable : il faut « équivalant ».",
+      "2": "Le premier blanc est correct, mais au second `en équivalentes chacune à un bon 5` accorde et écrit en -ent une forme précédée de « en » qui commande le complément « à un bon 5 », le pronom distributif « chacune » ne faisant que reprendre les appréciations une par une : le participe présent est invariable et s'écrit « équivalant ».",
+      "3": "Le second blanc est correct, mais au premier `deux appréciations tout à fait équivalant` refuse l'accord à un mot modifié par le degré « tout à fait » et rapporté au nom : l'adjectif verbal s'écrit « équivalentes ».",
+      "4": "Le premier mot se rapporte au nom « appréciations » et en dit une propriété, ce que confirme le singulier « un résultat équivalent » : il satisfait la règle de l'adjectif verbal, en -ent et accordé au féminin pluriel, « équivalentes ». Le second, introduit par « en », commande le complément « à un bon 5 » et se rattache au pronom distributif « chacune », qui reprend les appréciations une par une : il satisfait la règle du participe présent, en -ant et invariable, « équivalant ».",
+      "A": "L'option 4 est correcte sur les deux blancs, ce qui écarte « Aucune ».",
+      "T": "Seule une option chiffrée sur quatre est correcte, ce qui écarte « Toutes »."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -100063,6 +100090,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-0447",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:48:18Z"
+        }
       }
     }
   },
@@ -101183,14 +101219,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Règle : l'adjectif verbal décrit une qualité et s'écrit « excellent » (en -ent), accordé : des résultats excellents. Le participe présent décrit l'action et reste invariable, écrit « excellant » (en -ant) : en excellant dans toutes les matières. Dans cette phrase : « résultats ___ » = qualité → excellents ; « en ___ dans » = action → excellant. Donc : excellents / excellant — option 2.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : il faut examiner chaque blanc à part. Premier blanc, « Des résultats ___ ont été salués par tout le jury » : la forme suit le nom « résultats » et en dit la qualité ; on peut la remplacer par un adjectif ordinaire (« des résultats remarquables ») et faire le test du féminin (« des notes excellentes »). C'est l'adjectif verbal : il s'écrit en -ent et s'accorde au masculin pluriel, « excellents ». Second blanc, « en ___ dans absolument toutes les matières » : la forme est précédée de « en » et suivie du complément « dans absolument toutes les matières » ; elle exprime la manière dont l'élève a impressionné et garde donc son fonctionnement verbal. C'est le participe présent au gérondif : invariable et écrit en -ant, « excellant ». Le complément prépositionnel après le second blanc est le point décisif.\nDonc : il faut « des résultats excellents » puis « en excellant dans absolument toutes les matières », c'est-à-dire l'option 2.",
     "why": {
-      "1": "Les deux formes sont inversées : l'adjectif en -ent, le participe en -ant.",
-      "2": "Correct : adjectif accordé « excellents » (-ent) + participe invariable « excellant » (-ant).",
-      "3": "« en excellents dans » : l'action en cours s'écrit avec le participe excellant.",
-      "4": "« des résultats excellant » : la qualité accordée s'écrit excellents (-ent).",
-      "A": "Il existe bien une option correcte : la 2.",
-      "T": "Les options 1, 3 et 4 confondent l'adjectif verbal et le participe présent."
+      "1": "Les deux formes sont permutées. Au premier blanc, `des résultats excellant` emploie la graphie verbale pour un mot qui qualifie le nom et doit s'accorder : « excellents ». Au second, `en excellents dans toutes les matières` accorde une forme qui garde son complément : « excellant ».",
+      "2": "Le premier mot qualifie « résultats » et supporte le remplacement par un adjectif : il satisfait la règle de l'adjectif verbal, en -ent et accordé au masculin pluriel, « excellents ». Le second, précédé de « en » et suivi de « dans absolument toutes les matières », satisfait la règle du participe présent, en -ant et invariable, « excellant ».",
+      "3": "Le premier blanc est correct, mais au second `en excellents dans absolument toutes les matières` accorde une forme qui exprime la manière et commande un complément : le participe présent reste invariable, « excellant ».",
+      "4": "Le second blanc est correct, mais au premier `des résultats excellant` laisse sans accord un mot qui dit la qualité du nom « résultats » : l'adjectif verbal s'écrit « excellents ».",
+      "A": "La réponse « Aucune » supposerait quatre options chiffrées fautives, alors que la 2 est correcte.",
+      "T": "Trois options chiffrées comportent une forme fautive, ce qui interdit « Toutes »."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -101203,6 +101239,15 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-0447",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:42:12Z"
+        }
       }
     }
   },
@@ -102351,14 +102396,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : l'adjectif verbal décrit une qualité et s'écrit « communicant » (avec c), accordé : des salles communicantes. Le participe présent décrit l'action et reste invariable, écrit « communiquant » (avec qu) : en communiquant directement. Dans cette phrase : « salles ___ » = qualité → communicantes ; « en ___ directement » = action → communiquant. Donc : communicantes / communiquant — option 4.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : les deux blancs viennent du verbe communiquer, et seule leur fonction change la graphie. Premier blanc, « Deux salles ___ permettent enfin le décloisonnement » : la forme suit le nom « salles », n'a aucun complément et décrit une propriété durable de ces salles (des salles qui donnent l'une sur l'autre) ; le test du singulier le confirme (« une salle communicante »). C'est l'adjectif verbal : il perd le -qu- du verbe, s'écrit avec un c et s'accorde au féminin pluriel, « communicantes ». Second blanc, « en ___ directement » : la forme est précédée de « en », modifiée par l'adverbe « directement » et dit comment les deux classes peuvent travailler ensemble ; elle fonctionne donc comme un verbe. C'est le participe présent au gérondif : invariable et écrit avec le radical verbal en -qu-, « communiquant ». Le point qui tranche est donc le gérondif « en » suivi d'une modification adverbiale, et non d'un nom qualifié.\nDonc : il faut « deux salles communicantes » puis « en communiquant directement », c'est-à-dire l'option 4.",
     "why": {
-      "1": "Les deux formes sont inversées : l'adjectif avec c (communicantes), le participe avec qu (communiquant).",
-      "2": "« en communicantes directement » : l'action en cours s'écrit avec qu → communiquant.",
-      "3": "« deux salles communiquant » : la qualité accordée s'écrit communicantes (c).",
-      "4": "Correct : adjectif accordé « communicantes » (c) + participe invariable « communiquant » (qu).",
-      "A": "Il existe bien une option correcte : la 4.",
-      "T": "Les options 1, 2 et 3 confondent l'orthographe de l'adjectif et du participe."
+      "1": "Les deux graphies sont échangées. Au premier blanc, `deux salles communiquant` garde le radical verbal en -qu- pour un mot qui décrit une propriété des salles et s'accorde : « communicantes ». Au second, `en communicantes directement` donne la graphie et l'accord de l'adjectif à un gérondif : « communiquant ».",
+      "2": "Le premier blanc est correct, mais au second `en communicantes directement` accorde et écrit avec un c une forme introduite par « en » qui exprime la manière : le participe présent garde le -qu- du verbe et reste invariable, « communiquant ».",
+      "3": "Le second blanc est correct, mais au premier `deux salles communiquant` conserve le radical verbal en -qu- et l'invariabilité pour un mot qui qualifie « salles » : l'adjectif verbal s'écrit avec un c et s'accorde, « communicantes ».",
+      "4": "Le premier mot qualifie « salles » sans aucun complément : il satisfait la règle de l'adjectif verbal, écrit avec un c et accordé au féminin pluriel, « communicantes ». Le second, précédé de « en » et modifié par l'adverbe « directement », satisfait la règle du participe présent, écrit avec -qu- et invariable, « communiquant ».",
+      "A": "L'option 4 respecte les deux graphies, si bien que « Aucune » ne convient pas.",
+      "T": "« Toutes » exigerait quatre options chiffrées correctes ; trois d'entre elles sont fautives."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -102371,6 +102416,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-0447",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:42:12Z"
+        }
       }
     }
   },
@@ -103371,14 +103425,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Règle : l'adjectif verbal décrit une qualité et s'écrit « divergent » (en -ent), accordé : des avis divergents. Le participe présent décrit l'action et reste invariable, écrit « divergeant » (en -eant) : en divergeant à ce point. Dans cette phrase : « avis ___ » = qualité → divergents ; « en ___ à ce point » = action → divergeant. Donc : divergents / divergeant — option 2.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : les deux blancs se distinguent par leur fonction. Premier blanc, « Deux avis franchement ___ ont été exprimés en conseil » : la forme se rapporte au nom « avis » et en dit une propriété, celle d'aller dans des directions opposées ; le test du singulier le confirme (« un avis divergent »). L'adverbe « franchement » est un adverbe de manière employé ici comme intensifieur, c'est-à-dire comme un mot qui renforce ; il ne décide de rien à lui seul, puisqu'il peut aussi porter sur un verbe (« en divergeant franchement »). C'est bien le rattachement au nom qui tranche. On a donc l'adjectif verbal : il s'écrit en -ent, sans e après le g, et s'accorde au masculin pluriel, « divergents ». Second blanc, « en ___ à ce point sur les priorités » : la forme est précédée de « en » et suivie des compléments « à ce point » et « sur les priorités » ; elle dit ce que font les collègues et garde donc son fonctionnement verbal. C'est le participe présent au gérondif : invariable et écrit avec le e qui maintient le son du g devant a, « divergeant ». Ce qui fait basculer la réponse est la propriété attribuée au nom d'un côté et le fonctionnement verbal de l'autre.\nDonc : il faut « deux avis franchement divergents » puis « en divergeant à ce point », c'est-à-dire l'option 2.",
     "why": {
-      "1": "Les deux formes sont inversées : l'adjectif en -ent, le participe en -eant.",
-      "2": "Correct : adjectif accordé « divergents » (-ent) + participe invariable « divergeant » (-eant).",
-      "3": "« en divergents à ce point » : l'action en cours s'écrit avec le participe divergeant.",
-      "4": "« deux avis divergeant » : la qualité accordée s'écrit divergents (-ent).",
-      "A": "Il existe bien une option correcte : la 2.",
-      "T": "Les options 1, 3 et 4 confondent l'adjectif verbal et le participe présent."
+      "1": "Les deux formes sont inversées. Au premier blanc, `deux avis franchement divergeant` emploie la graphie verbale en -eant pour un mot qui se rapporte au nom « avis » et s'accorde avec lui : « divergents ». Au second, `en divergents à ce point` accorde une forme suivie de ses compléments : « divergeant ».",
+      "2": "Le premier mot se rapporte au nom « avis » et en exprime une propriété, ce que confirme le singulier « un avis divergent » : il satisfait la règle de l'adjectif verbal, en -ent et accordé au masculin pluriel, « divergents ». Le second, introduit par « en » et suivi de « à ce point sur les priorités », satisfait la règle du participe présent, en -eant et invariable, « divergeant ».",
+      "3": "Le premier blanc est correct, mais au second `en divergents à ce point sur les priorités` accorde en -ent une forme au gérondif qui commande ses compléments : le participe présent reste invariable et s'écrit « divergeant ».",
+      "4": "Le second blanc est correct, mais au premier `deux avis franchement divergeant` refuse l'accord à un mot qui se rapporte au nom « avis » et en dit une propriété (« un avis divergent » au singulier) : l'adjectif verbal s'écrit « divergents ».",
+      "A": "Il existe une option chiffrée entièrement correcte, la 2 ; « Aucune » est donc exclu.",
+      "T": "Les quatre options chiffrées ne sont pas correctes ensemble, puisque trois sont fautives."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -103391,6 +103445,15 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-0447",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:48:18Z"
+        }
       }
     }
   },
@@ -104419,14 +104482,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : l'adjectif verbal décrit une qualité et s'écrit « convergent » (en -ent), accordé : des analyses convergentes. Le participe présent décrit l'action et reste invariable, écrit « convergeant » (en -eant) : en convergeant vers la même conclusion. Dans cette phrase : « analyses ___ » = qualité → convergentes ; « en ___ vers » = action → convergeant. Donc : convergentes / convergeant — option 4.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : chaque blanc se juge sur ce qu'il fait dans la phrase. Premier blanc, « Deux analyses tout à fait ___ rassurent le comité » : la forme se rapporte au nom « analyses » et en exprime une propriété, celle d'aller dans le même sens ; le test du singulier le confirme (« une analyse convergente »), et un autre adjectif peut prendre la place (« deux analyses tout à fait semblables »). Le degré « tout à fait » ne prouve rien à lui seul, car il peut aussi porter sur un verbe (« elles ont tout à fait convergé ») : seul le rattachement au nom est probant. On a donc l'adjectif verbal : il s'écrit en -ent, sans e après le g, et s'accorde au féminin pluriel, « convergentes ». Second blanc, « en ___ vers la même conclusion » : la forme est précédée de « en » et suivie du complément « vers la même conclusion » ; elle exprime le mouvement des analyses et garde son fonctionnement verbal. C'est le participe présent au gérondif : invariable et écrit avec le e qui conserve le son du g devant a, « convergeant ». C'est le complément introduit par « vers » qui interdit d'y voir un adjectif.\nDonc : il faut « deux analyses tout à fait convergentes » puis « en convergeant vers la même conclusion », c'est-à-dire l'option 4.",
     "why": {
-      "1": "Les deux formes sont inversées : l'adjectif en -ent, le participe en -eant.",
-      "2": "« en convergentes vers » : l'action en cours s'écrit avec le participe convergeant.",
-      "3": "« deux analyses convergeant » : la qualité accordée s'écrit convergentes (-ent).",
-      "4": "Correct : adjectif accordé « convergentes » (-ent) + participe invariable « convergeant » (-eant).",
-      "A": "Il existe bien une option correcte : la 4.",
-      "T": "Les options 1, 2 et 3 confondent l'adjectif verbal et le participe présent."
+      "1": "Les deux graphies sont permutées. Au premier blanc, `deux analyses tout à fait convergeant` donne la forme verbale en -eant à un mot qui se rapporte au nom « analyses » et en exprime une propriété (« une analyse convergente » au singulier) : « convergentes ». Au second, `en convergentes vers la même conclusion` accorde un gérondif suivi de son complément : « convergeant ».",
+      "2": "Le premier blanc est correct, mais au second `en convergentes vers la même conclusion` accorde en -ent une forme précédée de « en » et suivie de son complément : le participe présent reste invariable et s'écrit « convergeant ».",
+      "3": "Le second blanc est correct, mais au premier `deux analyses tout à fait convergeant` laisse sans accord un mot qui se rapporte au nom « analyses » et en dit une propriété : l'adjectif verbal s'écrit « convergentes ».",
+      "4": "Le premier mot se rapporte au nom « analyses » et en exprime une propriété, ce que confirme le singulier « une analyse convergente » : il satisfait la règle de l'adjectif verbal, en -ent et accordé au féminin pluriel, « convergentes ». Le second, introduit par « en » et suivi de « vers la même conclusion », satisfait la règle du participe présent, en -eant et invariable, « convergeant ».",
+      "A": "Une option chiffrée, la 4, est correcte sur les deux blancs, ce qui exclut « Aucune ».",
+      "T": "« Toutes » demanderait les quatre options chiffrées correctes ; trois comportent une forme fautive."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -104439,6 +104502,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-0447",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:48:18Z"
+        }
       }
     }
   },
