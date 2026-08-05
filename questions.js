@@ -2542,7 +2542,7 @@ const QUESTIONS = [
     "id": "orth-49",
     "rule": "orthographe",
     "type": "sentences",
-    "instruction": "Quelle(s) phrase(s) est/sont correctement orthographiée(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -2570,14 +2570,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Toutes correctes : « auspices », « for intérieur », « prémices » (premiers signes), « détonne » (contraste). Réponse : Toutes.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : chacune des quatre propositions repose sur un mot dont la graphie s'apprend par l'usage, et chaque fois le sens attendu par le contexte oriente le choix. 1) « commence sous de bons ... » demande le sens « présages » : la forme attestée est « auspices », nom masculin pluriel figé dans la locution « sous de bons auspices ». 2) « dans son ... intérieur » demande le sens « au fond de sa conscience » : la forme attestée est « for », nom masculin invariable réduit à trois lettres. 3) « les ... du printemps se font sentir » demande le sens « les premiers signes » : la forme attestée est « prémices », féminin pluriel avec accent aigu et finale -ices. 4) « sa franchise ... dans ce milieu feutré » demande le sens « produit un contraste » : la forme attestée est « détonner », de la famille de « ton », avec deux n, conjugué ici « détonne ». Relu en entier, chaque énoncé garde le sens voulu avec la graphie écrite.\nDonc : les quatre phrases portent la graphie attestée du mot concerné, donc les quatre options chiffrées sont correctes et la réponse attendue est Toutes.",
     "why": {
-      "1": "Correcte : auspices = présages.",
-      "2": "Correcte : for intérieur (de forum).",
-      "3": "Correcte : premiers signes = prémices.",
-      "4": "Correcte : contraster = détonner.",
-      "A": "Les quatre sont correctes.",
-      "T": "Correct : aucune faute."
+      "1": "Le contexte impose le sens « sous des présages favorables ». Le mot d'usage qui porte ce sens est « auspices », employé au pluriel dans cette locution figée. La phrase reproduit exactement cette graphie attestée.",
+      "2": "Le contexte impose le sens « au fond de lui-même ». La locution attestée est « dans son for intérieur », où « for » est un nom masculin de trois lettres qui ne s'écrit ainsi que dans cet emploi. La phrase reprend cette forme.",
+      "3": "Le contexte impose le sens « les premiers signes annonciateurs ». Le nom attesté pour cette valeur est « prémices », avec accent aigu et finale -ices, toujours au féminin pluriel. La phrase l'emploie tel quel.",
+      "4": "Le contexte impose le sens « jurer, faire un contraste ». Le verbe attesté est « détonner », construit sur « ton » comme « tonner », avec deux n ; la troisième personne du singulier donne bien « détonne ».",
+      "A": "Comptage : le nombre de phrases correctes est de quatre, et non de zéro, donc Aucune ne convient pas.",
+      "T": "Les quatre mots d'usage examinés correspondent chacun au sens demandé par leur phrase et à leur graphie attestée : le total de quatre options correctes désigne Toutes."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -2609,7 +2609,16 @@ const QUESTIONS = [
           "detail_id": "core",
           "tense_id": null
         }
-      ]
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20260805-9575",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:52:50Z"
+        }
+      }
     }
   },
   {
@@ -3036,7 +3045,7 @@ const QUESTIONS = [
     "id": "orth-59",
     "rule": "orthographe",
     "type": "sentences",
-    "instruction": "Quelle(s) phrase(s) est/sont correctement orthographiée(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -3064,14 +3073,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Toutes correctes : « au bout du compte », « aller de pair », « hormis », « empreint de ». Réponse : Toutes.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : chaque proposition contient une locution dont la graphie relève de l'usage, à vérifier mot à mot. 1) « au bout du compte » signifie « finalement » et garde « compte », nom tiré du verbe compter, comme dans « faire le compte ». 2) « vont de pair » signifie « vont ensemble, sur un pied d'égalité » et garde « pair », mot masculin terminé par -air, sans e final. 3) « hormis un paragraphe » signifie « excepté un paragraphe » : la forme attestée s'écrit en un seul mot terminé par s, y compris devant un nom singulier. 4) « empreint d'émotion » signifie « marqué, imprégné d'émotion » et s'appuie sur la famille d'empreindre et d'empreinte ; « a clos la séance » emploie « clos », participe attesté du verbe clore. Relues en entier, les quatre phrases conservent le sens annoncé.\nDonc : aucune des quatre graphies ne s'écarte de la forme attestée, donc les quatre options chiffrées sont correctes et la réponse attendue est Toutes.",
     "why": {
-      "1": "Correcte : le compte (calcul).",
-      "2": "Correcte : de pair (égalité), sans e.",
-      "3": "Correcte : hormis soudé.",
-      "4": "Correcte : empreint = imprégné.",
-      "A": "Les quatre sont correctes.",
-      "T": "Correct : aucune faute."
+      "1": "Le sens demandé est « en définitive ». La locution attestée est « au bout du compte », avec le nom « compte » de la famille de compter et de décompte, ce que la phrase respecte.",
+      "2": "Le sens demandé est « ensemble, l'un avec l'autre ». Dans « aller de pair », le mot figé est « pair », masculin en -air comme dans « nombre pair » ; la phrase l'écrit bien sans e.",
+      "3": "Le sens demandé est « sauf, excepté ». La préposition attestée est « hormis », soudée en un seul mot et toujours terminée par s ; la phrase reproduit cette graphie invariable.",
+      "4": "Le sens demandé est « imprégné d'émotion » : la forme attestée est « empreint », de la famille d'empreinte. Le participe « clos », qui appartient au verbe clore, est lui aussi la forme attestée dans « a clos la séance ».",
+      "A": "Comptage : quatre phrases sur quatre sont correctes, ce qui exclut Aucune.",
+      "T": "Chacune des quatre locutions examinées correspond au sens exigé par sa phrase et à sa graphie attestée : quatre options correctes se traduisent par Toutes."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -3089,6 +3098,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-9575",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T06:00:19Z"
+        }
       }
     }
   },
@@ -3461,7 +3479,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quelle(s) phrase(s) est/sont correctement écrite(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -3489,14 +3507,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Toutes correctes : « à dessein » (intentionnellement), « décerner », « à l'envi » (sans e), « s'infecter ». Réponse : Toutes.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : chaque proposition met en jeu un mot ou une locution qu'aucune règle productive ne permet de reconstruire, et dont il faut vérifier le sens puis la graphie attestée. 1) « il a agi à dessein » signifie « il a agi volontairement » : la forme attestée est « dessein », nom terminé par -ein, de la famille de l'idée de projet. 2) « lui a décerné le premier prix » signifie « lui a attribué solennellement » : le verbe attesté est « décerner », avec un seul r et la finale -cerner. 3) « ils louaient ses mérites à l'envi » signifie « à qui mieux mieux, en rivalisant » : la locution attestée est « à l'envi », sans e final. 4) « la plaie risque de s'infecter » signifie « d'être envahie par une infection » : le verbe attesté est « infecter », avec le groupe -ct- de la famille d'infection. Relu en entier, chaque énoncé reste cohérent avec ces sens.\nDonc : les quatre graphies correspondent aux formes attestées, donc les quatre options chiffrées sont correctes et la réponse attendue est Toutes.",
     "why": {
-      "1": "Correcte : à dessein = volontairement.",
-      "2": "Correcte : décerner un prix.",
-      "3": "Correcte : à l'envi, sans e final.",
-      "4": "Correcte : contamination = s'infecter.",
-      "A": "Les quatre sont correctes.",
-      "T": "Correct : aucune faute."
+      "1": "Le contexte demande le sens « intentionnellement ». La locution attestée est « à dessein », avec le nom « dessein » en -ein qui désigne l'intention ; la phrase l'écrit ainsi.",
+      "2": "Le contexte demande le sens « attribuer une distinction ». Le verbe attesté est « décerner », de la même famille que « décernement » d'un prix ; le participe « décerné » en découle directement.",
+      "3": "Le contexte demande le sens « en rivalisant, à qui mieux mieux ». La locution attestée est « à l'envi », graphie fixe sans e final, distincte du nom « envie » qui désignerait un désir ; c'est bien la forme écrite ici.",
+      "4": "Le contexte demande le sens « être atteinte par une infection ». Le verbe attesté est « infecter », qui garde le groupe -ct- de « infection » et de « infectieux » ; la forme pronominale « s'infecter » respecte cette graphie.",
+      "A": "Comptage : quatre phrases correctes sur quatre, donc Aucune est exclu.",
+      "T": "Les quatre mots d'usage examinés portent chacun le sens exigé par leur phrase et leur graphie attestée : quatre options correctes donnent Toutes."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -3509,6 +3527,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-9575",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T06:00:19Z"
+        }
       }
     }
   },
@@ -19538,7 +19565,7 @@ const QUESTIONS = [
     "id": "eleves-36",
     "rule": "eleves",
     "type": "sentences",
-    "instruction": "Quelle phrase d'élève est correctement écrite ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -19566,14 +19593,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Quatre locutions mal orthographiées : « D'ORES et déjà », « PARMI » (jamais de s), « QUEL QUE soit », « y COMPRIS ». Réponse : Aucune.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : chaque production d'élève contient une locution figée dont la graphie doit être mémorisée telle qu'elle est attestée. 1) le sens visé est « dès maintenant » : la forme attestée est « d'ores et déjà », en quatre éléments avec une apostrophe ; la copie écrit `dores`, un mot unique qui fait disparaître cette apostrophe. 2) le sens visé est « au milieu de » : la préposition attestée est « parmi », qui ne porte jamais de s ; la copie écrit `Parmis`. 3) le sens visé est « peu importe notre âge » : devant le verbe être, la forme attestée s'écrit en deux mots, « quel que soit » ; la copie écrit `quelque soit` en un seul mot. 4) le sens visé est « y inclus » : la locution attestée est « y compris », terminée par s ; la copie écrit `y comprit`. Relues en entier, les quatre phrases contiennent donc chacune une graphie qui n'est pas la forme attestée.\nDonc : aucune des quatre options chiffrées ne présente une locution correctement écrite, et la réponse attendue est Aucune.",
     "why": {
-      "1": "« dores » : la locution s'écrit « d'ores et déjà ».",
-      "2": "« Parmis » : parmi ne prend jamais de s.",
-      "3": "« quelque soit » : devant être → quel que soit.",
-      "4": "« y comprit » : la locution est « y compris ».",
-      "A": "Correct : les quatre locutions sont fautives.",
-      "T": "Aucune n'est correcte."
+      "1": "La forme fautive est `dores`. Le sens « dès à présent » correspond à la locution attestée « d'ores et déjà », dont le premier élément est le mot « ores » précédé de la préposition élidée « de ». La forme attendue est donc « d'ores et déjà ».",
+      "2": "La forme fautive est `Parmis`. La préposition attestée est « parmi », graphie fixe sans s final, quel que soit le nombre du nom qui suit. La forme attendue est « Parmi les solutions proposées ».",
+      "3": "La forme fautive est `quelque soit`. Devant le verbe être, l'usage attesté sépare les deux éléments : « quel que soit notre âge ». La forme attendue est donc « quel que soit », en deux mots.",
+      "4": "La forme fautive est `y comprit`. La locution attestée se termine par s, comme dans « tous y compris » ; il ne s'agit pas ici du passé simple du verbe comprendre. La forme attendue est « y compris des plus jeunes ».",
+      "A": "Les quatre locutions examinées s'écartent chacune de leur graphie attestée : le nombre de phrases correctes est de zéro, ce qui désigne Aucune.",
+      "T": "Comptage : zéro phrase correcte sur quatre, donc Toutes est exclu."
     },
     "gen": {
       "model": "Fable 5",
@@ -19611,7 +19638,16 @@ const QUESTIONS = [
           "detail_id": "avant_stable",
           "tense_id": null
         }
-      ]
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20260805-9575",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:52:50Z"
+        }
+      }
     }
   },
   {
@@ -47707,7 +47743,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -47735,14 +47771,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Quatre locutions correctes malgré leur allure suspecte : « avoir maille à partir », « il s'en est fallu de peu », « pris de court » et « prendre fait et cause ». Réponse : Toutes.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : les quatre propositions reposent sur des locutions figées dont la graphie doit être vérifiée mot à mot, en partant du sens attendu. 1) « ont eu maille à partir avec la gérance » signifie « ont eu des démêlés avec elle » : la forme attestée est « maille à partir », sans s à « maille ». 2) « il s'en est fallu de peu » signifie « il a bien failli arriver quelque chose » : la forme attestée est impersonnelle, avec « il » et le participe « fallu ». 3) « pris de court, le comité a reporté » signifie « pris au dépourvu » : la forme attestée est « de court », écrite comme l'adjectif court. 4) « elle a pris fait et cause pour sa collègue » signifie « elle s'est rangée de son côté » : la forme attestée juxtapose « fait » et « cause » au singulier, sans article. Relue en entier, chaque phrase garde ce sens précis.\nDonc : les quatre locutions apparaissent sous leur graphie attestée, donc les quatre options chiffrées sont correctes et la réponse attendue est Toutes.",
     "why": {
-      "1": "Correcte : « maille à partir » (la maille = ancienne monnaie ; partir = partager), sans s.",
-      "2": "Correcte : « s'en falloir de peu » ; le tour impersonnel « il s'en est fallu » est la forme attestée.",
-      "3": "Correcte : « prendre de court » s'écrit avec « court » (adjectif), pas « cours » ni « courre ».",
-      "4": "Correcte : « prendre fait et cause pour » = se ranger du côté de quelqu'un.",
-      "A": "Les quatre phrases sont correctes.",
-      "T": "Correct : chacune de ces locutions, souvent soupçonnée à tort, est irréprochable."
+      "1": "Le sens demandé est « avoir des démêlés ». La locution attestée est « avoir maille à partir avec », où « maille » reste au singulier ; la phrase la reprend intégralement.",
+      "2": "Le sens demandé est « il a manqué de peu que la séance soit annulée ». Le tour impersonnel attesté est « il s'en est fallu de peu », avec le participe « fallu » invariable dans cette construction ; la phrase l'écrit ainsi.",
+      "3": "Le sens demandé est « pris au dépourvu ». La locution attestée est « prendre de court », écrite avec « court » et non avec une finale en -s ; le participe « Pris de court » suit cette graphie.",
+      "4": "Le sens demandé est « soutenir quelqu'un ouvertement ». La locution attestée est « prendre fait et cause pour », avec les deux noms au singulier et sans déterminant ; la phrase la reproduit.",
+      "A": "Comptage : quatre phrases correctes sur quatre, ce qui exclut Aucune.",
+      "T": "Les quatre locutions examinées portent chacune le sens exigé par leur phrase et leur graphie attestée : quatre options correctes donnent Toutes."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -47755,6 +47791,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-9575",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:52:50Z"
+        }
       }
     }
   },
@@ -48565,7 +48610,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -48593,14 +48638,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Quatre tournures correctes malgré leur allure suspecte : « sont convenus de » (auxiliaire être soutenu), « faire montre de », « se faire fort de » (fait et fort invariables) et « avoir vent de ». Réponse : Toutes.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : chaque proposition contient une tournure figée dont la forme écrite s'apprend par l'usage. 1) « les deux services sont convenus d'une procédure » signifie « se sont mis d'accord sur une procédure » : dans cet emploi, la forme soignée attestée se construit avec l'auxiliaire être, comme ici. 2) « a fait montre d'un sang-froid remarquable » signifie « a manifesté du sang-froid » : la locution attestée est « faire montre de », avec le nom « montre » sans déterminant, et « sang-froid » garde son trait d'union. 3) « elle s'est fait fort d'obtenir un délai » signifie « elle s'est déclarée capable de l'obtenir » : dans cette tournure figée, « fait » et « fort » gardent leur forme attestée, sans marque supplémentaire. 4) « les riverains ont eu vent du projet » signifie « en ont été informés par des bruits » : la locution attestée est « avoir vent de », avec « vent » au singulier et sans article. Relue en entier, chaque phrase garde ce sens.\nDonc : les quatre tournures apparaissent sous leur forme attestée, donc les quatre options chiffrées sont correctes et la réponse attendue est Toutes.",
     "why": {
-      "1": "Correcte : « convenir de » se conjugue avec être dans l'usage soigné : ils sont convenus d'une procédure.",
-      "2": "Correcte : « faire montre de » (= manifester) est la locution attestée, sans rapport avec la montre-bracelet.",
-      "3": "Correcte : dans « se faire fort de », « fait » et « fort » restent invariables.",
-      "4": "Correcte : « avoir vent de » (= apprendre par des bruits) est la locution consacrée.",
-      "A": "Les quatre phrases sont correctes.",
-      "T": "Correct : chacune de ces tournures, souvent soupçonnée à tort, est irréprochable."
+      "1": "Le sens demandé est « se mettre d'accord sur quelque chose ». Dans cet emploi, la forme soignée attestée du verbe convenir se construit avec l'auxiliaire être : « les deux services sont convenus d'une procédure commune ». La phrase suit cette construction.",
+      "2": "Le sens demandé est « faire preuve de, manifester ». La locution attestée est « faire montre de », où « montre » est employé seul, sans déterminant ; le nom « sang-froid » conserve par ailleurs son trait d'union, comme l'usage l'atteste.",
+      "3": "Le sens demandé est « se déclarer capable d'obtenir un délai ». Dans la tournure figée « se faire fort de », les deux mots « fait » et « fort » se maintiennent tels quels, c'est la forme attestée et c'est celle qu'écrit la phrase.",
+      "4": "Le sens demandé est « être informé par la rumeur ». La locution attestée est « avoir vent de », avec « vent » au singulier et sans article ; la phrase la reproduit exactement dans « ont eu vent du projet ».",
+      "A": "Comptage : quatre phrases correctes sur quatre, donc Aucune ne convient pas.",
+      "T": "Les quatre tournures correspondent chacune au sens exigé par leur phrase et à leur forme attestée : quatre options correctes désignent Toutes."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -48621,7 +48666,16 @@ const QUESTIONS = [
           "detail_id": "core",
           "tense_id": "passe_compose"
         }
-      ]
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20260805-9575",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:52:50Z"
+        }
+      }
     }
   },
   {
@@ -50280,7 +50334,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -50308,14 +50362,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Quatre locutions correctes malgré leur allure suspecte : « d'arrache-pied », « au demeurant », « à bon escient » et « en catimini ». Réponse : Toutes.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : les quatre propositions contiennent une locution figée dont la graphie ne se déduit d'aucune règle et se vérifie mot à mot. 1) « ont révisé d'arrache-pied » signifie « sans relâche, avec acharnement » : la forme attestée associe « arrache » et « pied » par un trait d'union, au singulier. 2) « au demeurant, le budget reste équilibré » signifie « au reste, par ailleurs » : la forme attestée est « au demeurant », construite sur le verbe demeurer. 3) « à bon escient » signifie « en connaissance de cause » : la forme attestée est « escient », avec le groupe -sci- que l'on retrouve dans « science » et « conscience ». 4) « ajoutée en catimini » signifie « en cachette » : la forme attestée est « catimini », en un mot, sans consonne double. Relue en entier, chaque phrase garde exactement ce sens.\nDonc : les quatre locutions sont écrites sous leur graphie attestée, donc les quatre options chiffrées sont correctes et la réponse attendue est Toutes.",
     "why": {
-      "1": "Correcte : « d'arrache-pied » (avec trait d'union) = sans relâche.",
-      "2": "Correcte : « au demeurant » (= au reste) est la locution consacrée.",
-      "3": "Correcte : « à bon escient » (en connaissance de cause), avec -scient comme « science ».",
-      "4": "Correcte : « en catimini » (= en cachette) s'écrit bien ainsi.",
-      "A": "Les quatre phrases sont correctes.",
-      "T": "Correct : chacune de ces locutions, souvent soupçonnée à tort, est irréprochable."
+      "1": "Le sens demandé est « sans relâche ». La locution attestée est « d'arrache-pied », soudée par un trait d'union et figée au singulier ; la phrase la reproduit exactement.",
+      "2": "Le sens demandé est « au reste, cela dit ». La locution attestée est « au demeurant », formée sur le participe présent de demeurer et écrite en deux mots ; c'est bien la graphie employée.",
+      "3": "Le sens demandé est « à propos, en connaissance de cause ». Le nom attesté est « escient », dont le groupe -sci- rappelle « science » ; la phrase l'écrit avec cette suite de lettres.",
+      "4": "Le sens demandé est « discrètement, en cachette ». Le mot attesté est « catimini », en un seul mot avec un seul t et un seul n ; la phrase respecte cette graphie.",
+      "A": "Comptage : quatre phrases correctes sur quatre, ce qui exclut Aucune.",
+      "T": "Les quatre locutions correspondent chacune au sens exigé par leur phrase et à leur graphie attestée : quatre options correctes désignent Toutes."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -50328,6 +50382,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-9575",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:52:50Z"
+        }
       }
     }
   },
@@ -50829,7 +50892,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -50857,14 +50920,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Quatre locutions correctes malgré leur allure suspecte : « tambour battant », « faire fi de », « bon an mal an » et « peu ou prou ». Réponse : Toutes.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : chaque proposition emploie une locution figée dont la graphie s'apprend par l'usage, et non par un raisonnement d'accord. 1) « avance tambour battant » signifie « avance rondement, avec énergie » : la forme attestée reste au singulier et sans trait d'union. 2) « ont fait fi des mises en garde » signifie « les ont dédaignées » : le mot figé est « fi », deux lettres seulement, employé uniquement dans cette locution. 3) « bon an mal an, l'effectif reste stable » signifie « en moyenne, une année dans l'autre » : la forme attestée aligne les quatre mots sans virgule ni trait d'union. 4) « ont, peu ou prou, doublé » signifie « ont plus ou moins doublé » : le mot figé est « prou », terminé par -ou, employé seulement dans cette locution. Relue en entier, chaque phrase conserve ce sens.\nDonc : les quatre locutions apparaissent sous leur graphie attestée, donc les quatre options chiffrées sont correctes et la réponse attendue est Toutes.",
     "why": {
-      "1": "Correcte : « tambour battant » (= rondement) est figée au singulier.",
-      "2": "Correcte : « faire fi de » (= mépriser) s'écrit bien « fi ».",
-      "3": "Correcte : « bon an mal an » (= en moyenne), sans virgule ni s.",
-      "4": "Correcte : « peu ou prou » (= plus ou moins) ; « prou » vient de l'ancien français « assez ».",
-      "A": "Les quatre phrases sont correctes.",
-      "T": "Correct : chacune de ces locutions, souvent soupçonnée à tort, est irréprochable."
+      "1": "Le sens demandé est « rapidement et avec entrain ». La locution attestée est « tambour battant », figée au singulier et écrite sans trait d'union ; la phrase la reproduit telle quelle.",
+      "2": "Le sens demandé est « mépriser, ne pas tenir compte de ». Dans « faire fi de », le mot figé s'écrit « fi », sans autre lettre, et n'existe que dans cet emploi ; la phrase respecte cette graphie.",
+      "3": "Le sens demandé est « en moyenne, bon nombre d'années ». La locution attestée est « bon an mal an », quatre mots séparés, sans virgule interne ni s ; c'est exactement la forme écrite.",
+      "4": "Le sens demandé est « plus ou moins ». Le mot figé attesté est « prou », terminé par -ou et réservé à la locution « peu ou prou » ; la phrase l'emploie correctement entre virgules.",
+      "A": "Comptage : quatre phrases correctes sur quatre, donc Aucune est écarté.",
+      "T": "Chacune des quatre locutions correspond au sens de sa phrase et à sa graphie attestée : le total de quatre options correctes conduit à Toutes."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -50877,6 +50940,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-9575",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:52:50Z"
+        }
       }
     }
   },
@@ -51955,14 +52027,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Le mot s'écrit « pouls » (du latin pulsus), avec -ls final muet : prendre le pouls. Aucune option ne porte cette graphie.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : « prendre le ___ des équipes de terrain » demande un mot qui signifie, au sens figuré, « se renseigner sur l'état d'esprit, sonder ». Le mot d'usage qui porte ce sens est celui qui désigne d'abord le battement des artères, et sa graphie attestée est « pouls », avec la finale muette -ls. Aucune règle productive ne permet de la reconstruire : elle se mémorise avec la locution « prendre le pouls ». On compare ensuite chaque option à cette graphie : `poul` s'arrête au l, `pou` ne garde que trois lettres et correspond à un autre mot, `poult` ajoute un t, `poulx` ajoute un x. Aucune ne reproduit la finale -ls attestée, et relire la phrase entière avec l'une ou l'autre ne rétablit ni le sens ni la graphie.\nDonc : la graphie attendue « pouls » ne figure dans aucune des quatre options chiffrées, et la réponse attendue est Aucune.",
     "why": {
-      "1": "« poul » : la graphie phonétique omet le -s final hérité du latin pulsus.",
-      "2": "« pou » désigne l'insecte parasite : prendre le pou des équipes est un contresens.",
-      "3": "« poult » : aucun t dans ce mot.",
-      "4": "« poulx » : le x est une fantaisie graphique ; la finale est -ls.",
-      "A": "Correct : la graphie attendue « pouls » ne figure dans aucune option.",
-      "T": "Chaque option déforme le mot d'une façon différente."
+      "1": "La forme fautive est `poul`. Elle transcrit le mot tel qu'on l'entend et supprime le s de la finale muette. La forme attendue est « pouls ».",
+      "2": "La forme fautive ici est `pou` : cette graphie est celle du nom qui désigne l'insecte parasite, et elle ne correspond pas au sens « sonder l'état d'esprit » exigé par la phrase. La forme attendue est « pouls ».",
+      "3": "La forme fautive est `poult`. La finale attestée du mot ne comporte aucun t ; ce t est ajouté par analogie avec d'autres mots terminés par un t muet, comme « saut » ou « défaut ». La forme attendue est « pouls ».",
+      "4": "La forme fautive est `poulx`. Le x ne figure dans aucune graphie attestée de ce mot, dont la finale muette s'écrit -ls. La forme attendue est « pouls ».",
+      "A": "Les quatre options s'écartent chacune de la graphie attestée « pouls » : le nombre d'options correctes est de zéro, ce qui désigne Aucune.",
+      "T": "Comptage : zéro option correcte sur quatre, donc Toutes est exclu."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -51975,6 +52047,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-9575",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:52:50Z"
+        }
       }
     }
   },
@@ -54096,7 +54177,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -54124,14 +54205,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Quatre locutions correctes malgré leur allure suspecte : « à son corps défendant », « à cor et à cri » (le cor de chasse), « de longue main » et « en son âme et conscience ». Réponse : Toutes.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : chaque proposition emploie une locution figée dont la graphie relève de l'usage et se contrôle mot à mot. 1) « c'est à son corps défendant qu'elle a signé » signifie « c'est malgré elle, à contrecœur » : la forme attestée associe « corps » et « défendant », figés dans cet ordre. 2) « réclament à cor et à cri » signifie « réclament avec insistance » : la forme attestée est « cor », le nom de l'instrument de chasse, en trois lettres. 3) « préparée de longue main » signifie « préparée de longue date, avec soin » : la forme attestée est « de longue main », avec « main » au singulier. 4) « il affirme, en son âme et conscience » signifie « en toute sincérité » : la forme attestée juxtapose « âme » et « conscience » au singulier, sans article devant le second nom. Relue en entier, chaque phrase garde ce sens.\nDonc : les quatre locutions apparaissent sous leur graphie attestée, donc les quatre options chiffrées sont correctes et la réponse attendue est Toutes.",
     "why": {
-      "1": "Correcte : « à son corps défendant » (= à contrecœur), avec le participe présent figé.",
-      "2": "Correcte : « à cor et à cri » invoque le cor de chasse, pas le corps.",
-      "3": "Correcte : « de longue main » (= de longue date, avec soin) est la locution consacrée.",
-      "4": "Correcte : « en son âme et conscience », formule figée du serment.",
-      "A": "Les quatre phrases sont correctes.",
-      "T": "Correct : chacune de ces locutions, souvent soupçonnée à tort, est irréprochable."
+      "1": "Le sens demandé est « contre son gré ». La locution attestée est « à son corps défendant », où « corps » garde son s et « défendant » sa forme en -ant ; la phrase la reproduit intégralement.",
+      "2": "Le sens demandé est « à grand bruit, avec insistance ». Dans « à cor et à cri », le mot attesté est « cor », qui renvoie à l'instrument dont on sonne ; la phrase emploie bien cette graphie de trois lettres.",
+      "3": "Le sens demandé est « depuis longtemps et de façon préméditée ». La locution attestée est « de longue main », avec « main » au singulier et sans article ; c'est la forme écrite dans la phrase.",
+      "4": "Le sens demandé est « en toute sincérité, sous serment ». La formule attestée est « en son âme et conscience », les deux noms au singulier et le second sans déterminant ; la phrase respecte cette graphie.",
+      "A": "Comptage : quatre phrases correctes sur quatre, ce qui exclut Aucune.",
+      "T": "Les quatre locutions correspondent chacune au sens exigé par leur phrase et à leur graphie attestée : quatre options correctes conduisent à Toutes."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -54144,6 +54225,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-9575",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:52:50Z"
+        }
       }
     }
   },
