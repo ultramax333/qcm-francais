@@ -15,9 +15,11 @@ son `misconception_id` et son compteur ; une cause absente reste `UNK`.
 codes de cause restent disponibles uniquement dans « Catégorie technique ».
 
 Production publiée et vérifiée le 03.08.2026 : version `1.24`, cache `qcm-op001-v124`, **1 747 questions
-uniques**, release `questions-20260803-5492d3b5`. Toutes portent une famille et un mécanisme
-grammatical fermés. Les détails, temps et causes de distracteur non prouvés
-restent `null` ou `UNK`.
+uniques**, release `questions-20260803-5492d3b5`. État local au 09.08.2026 : même version et même
+nombre de questions, release `questions-20260805-d7aeab34`, après remédiation de 75 corrigés et
+neutralisation de 27 consignes, sans modification d'énoncé, d'option ou de clé. Cet état local n'est
+pas encore publié. Toutes les questions portent une famille et un mécanisme grammatical fermés. Les
+détails, temps et causes de distracteur non prouvés restent `null` ou `UNK`.
 
 La carte **Accord du participe passé** est un menu déroulant. Elle conserve un
 entraînement général et propose aussi un entraînement ciblé pour les 22 sous-cas stables actifs
