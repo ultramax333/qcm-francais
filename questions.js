@@ -10067,7 +10067,7 @@ const QUESTIONS = [
     "id": "rel-7",
     "rule": "relatifs",
     "type": "sentences",
-    "instruction": "Quelle(s) phrase(s) emploie(nt) le bon pronom relatif ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -10095,14 +10095,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Toutes correctes : « compter SUR » → sur qui (1) ; « venir DE » → d'où (2) ; « se battre POUR » → pour laquelle (3) ; « dont » possession (la couverture DU livre) (4). Réponse : Toutes.",
+    "explanation": "Règle : Dont reprend un groupe en de qui complète un nom et exprime ici la possession.\nMéthode : 1. Repère l’antécédent du pronom relatif. 2. Remets cet antécédent dans la proposition relative pour trouver sa fonction. 3. Conserve la préposition exigée par la construction. 4. Choisis le pronom compatible avec la fonction et l’antécédent.\nDans cette phrase : 1) En remettant l’antécédent dans la construction, on obtient « je compte sur cet ami » : la préposition `sur` est conservée dans `sur qui`. 2) Le pays est le lieu de provenance : « elle vient de ce pays » devient `d’où elle vient`. 3) On dit « il se bat pour cette cause » : `pour laquelle` reprend donc correctement `la cause`. 4) Dans « la couverture de ce livre », `de ce livre` complète le nom `couverture` et exprime la possession ; il est repris par `dont`.\nDonc : les quatre phrases emploient le pronom relatif adapté à la fonction de leur antécédent ; la réponse est `T` (« Toutes »).",
     "why": {
-      "1": "Correcte : « compter sur quelqu'un » → sur qui.",
-      "2": "Correcte : « venir de » (lieu) → d'où.",
-      "3": "Correcte : « se battre pour » → pour laquelle.",
-      "4": "Correcte : « dont » = la couverture DU livre (possession).",
-      "A": "Les quatre relatifs sont corrects, donc « Aucune » est faux.",
-      "T": "Correct : toutes les phrases sont correctes."
+      "1": "La construction est « compter sur quelqu’un » ; `sur qui` conserve la préposition `sur` et reprend l’antécédent humain `l’ami`.",
+      "2": "La phrase simple est « elle vient de ce pays » ; pour un lieu d’origine, `de ce pays` se reprend par `d’où`.",
+      "3": "Le verbe se construit ici avec `pour` : « il se bat pour cette cause » ; `pour laquelle` garde cette préposition et s’accorde avec `la cause`.",
+      "4": "Dans « la couverture de ce livre », le groupe en `de` complète `couverture` et marque la possession ; `dont` reprend correctement `le livre`.",
+      "A": "Quatre options numérotées sont correctes ; la réponse `Aucune` est donc exclue.",
+      "T": "Chacune des options 1 à 4 respecte la construction exigée ; `Toutes` est la réponse attendue."
     },
     "gen": {
       "model": "Opus 4.8",
@@ -10120,6 +10120,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T07:58:40Z"
+        }
       }
     }
   },
@@ -10755,14 +10764,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "« dont » = possession (l'avis DE l'experte) ; « faire appel À quelqu'un » → « à laquelle » (ou à qui).",
+    "explanation": "Règle : Dont reprend un groupe en de qui complète un nom et exprime ici la possession.\nMéthode : 1. Repère l’antécédent du pronom relatif. 2. Remets cet antécédent dans la proposition relative pour trouver sa fonction. 3. Conserve la préposition exigée par la construction. 4. Choisis le pronom compatible avec la fonction et l’antécédent.\nDans cette phrase : Pour le premier blanc, on reconstruit « l’avis de l’experte fera autorité » : `de l’experte` complète le nom `avis`, donc `dont` reprend cette possession. Pour le second, la construction est « nous ferons appel à l’experte » : il faut conserver `à`; avec la forme féminine singulière de `lequel`, on obtient `à laquelle`. Le point qui départage les options est donc la présence de `de` au premier emplacement et de `à` au second.\nDonc : Il faut écrire « L’experte dont l’avis fera autorité et à laquelle nous ferons appel… » et choisir l’option 1.",
     "why": {
-      "1": "Correct : possession (dont) + « faire appel à » (à laquelle).",
-      "2": "1er « à qui » fautif : c'est une possession → dont.",
-      "3": "2e « de laquelle » fautif : « faire appel » exige « à ».",
-      "4": "1er « que » fautif : possession → dont.",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Les options 2, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "`Dont` reprend `de l’experte` dans « l’avis de l’experte », puis `à laquelle` conserve le `à` de « faire appel à l’experte ».",
+      "2": "`À qui l’avis` introduit à tort `à` devant le groupe possessif; le premier relatif attendu est `dont`, et le second doit conserver `à` : `dont / à laquelle`.",
+      "3": "`De laquelle` ne convient pas au second blanc, car on fait appel `à` quelqu’un; il faut `à laquelle` après le premier `dont`.",
+      "4": "`Que l’avis` ne reprend pas le complément possessif `de l’experte`; il faut `dont l’avis`, puis `à laquelle`.",
+      "A": "L’option 1 remplit correctement les deux blancs; « Aucune » ne convient pas.",
+      "T": "Une seule combinaison respecte les deux constructions; « Toutes » ne convient pas."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -10780,6 +10789,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T08:18:46Z"
+        }
       }
     }
   },
@@ -12738,14 +12756,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "1er : possession (le roman DE l'auteure) → dont ; 2e : « encenser quelqu'un » (COD) → que.",
+    "explanation": "Règle : Dont reprend un groupe en de qui complète un nom et exprime ici la possession.\nMéthode : 1. Repère l’antécédent du pronom relatif. 2. Remets cet antécédent dans la proposition relative pour trouver sa fonction. 3. Conserve la préposition exigée par la construction. 4. Choisis le pronom compatible avec la fonction et l’antécédent.\nDans cette phrase : Pour le premier blanc, la phrase simple est « le roman de l’auteure vient de paraître » : `de l’auteure` complète le nom `roman`, donc la possession est reprise par `dont`. Pour le second, on reconstruit « la critique encense l’auteure » : `l’auteure` est le COD/CVD direct du verbe `encense`, sans préposition, donc il est repris par `que`. C’est l’opposition entre le complément du nom en `de` et le complément direct qui fait basculer la réponse.\nDonc : Il faut écrire « L’auteure dont le roman vient de paraître et que la critique encense… » et choisir l’option 1.",
     "why": {
-      "1": "Correct : possession (dont) + COD (que).",
-      "2": "Les deux inversés.",
-      "3": "2e « dont » fautif : encenser est direct.",
-      "4": "1er « que » fautif : c'est une possession.",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Les options 2, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "`Dont` reprend `de l’auteure` dans « le roman de l’auteure », tandis que `que` reprend le COD/CVD direct dans « la critique encense l’auteure ».",
+      "2": "`Que le roman` ne marque pas la possession et `dont la critique encense` ajoute un régime en `de` absent; il faut `dont / que`.",
+      "3": "Le second `dont` est fautif, car `encenser quelqu’un` se construit directement; la forme attendue est `dont / que`.",
+      "4": "Le premier `que` ne reprend pas `de l’auteure` dans « le roman de l’auteure »; il faut `dont / que`.",
+      "A": "La combinaison de l’option 1 est correcte; « Aucune » ne convient pas.",
+      "T": "Une seule des quatre combinaisons est correcte; « Toutes » ne convient pas."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -12763,6 +12781,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T08:18:46Z"
+        }
       }
     }
   },
@@ -13232,14 +13259,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Antécédent de temps (« l'année ») → où ; possession (« les effets DE la décision ») → dont.",
+    "explanation": "Règle : Dont reprend un groupe en de qui complète un nom et exprime ici la possession.\nMéthode : 1. Repère l’antécédent du pronom relatif. 2. Remets cet antécédent dans la proposition relative pour trouver sa fonction. 3. Conserve la préposition exigée par la construction. 4. Choisis le pronom compatible avec la fonction et l’antécédent.\nDans cette phrase : Le premier antécédent, `l’année`, désigne le moment où tout a basculé; le relatif temporel est `où`. Pour le second blanc, on reconstruit « les effets de la décision durent encore » : `de la décision` complète le nom `effets` et exprime la possession, donc il est repris par `dont`. Le premier blanc dépend du temps, le second d’un complément du nom en `de`.\nDonc : Il faut écrire « L’année où tout a basculé reste liée à la décision dont les effets durent encore » et choisir l’option 1.",
     "why": {
-      "1": "Correct : où (temps) + dont (possession).",
-      "2": "Les deux inversés.",
-      "3": "2e « où » fautif : les effets de la décision → dont.",
-      "4": "1er « que » fautif : antécédent de temps → où.",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Les options 2, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "`Où` situe le basculement dans `l’année`, puis `dont` reprend `de la décision` dans « les effets de la décision ».",
+      "2": "`dont` ne convient pas pour situer le moment où tout a basculé, et `où` ne reprend pas le complément possessif `de la décision`; il faut `où / dont`.",
+      "3": "Le second `où` présente la décision comme un lieu ou un moment, alors que la reconstruction exige `de la décision`; il faut `où / dont`.",
+      "4": "Le premier `que` traite `l’année` comme un complément direct, alors qu’elle situe le moment du basculement; il faut `où / dont`.",
+      "A": "L’option 1 complète correctement les deux blancs; « Aucune » ne convient pas.",
+      "T": "Une seule combinaison est correcte; « Toutes » ne convient pas."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -13252,6 +13279,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T07:55:15Z"
+        }
       }
     }
   },
@@ -18239,7 +18275,7 @@ const QUESTIONS = [
     "id": "eleves-18",
     "rule": "eleves",
     "type": "sentences",
-    "instruction": "Quelle phrase d'élève est correctement écrite ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -18267,14 +18303,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "« Force est de constater » : tournure correcte. Ailleurs : « DAVANTAGE » (adverbe, en un mot), « différEMMENT », « cela n'EMPÊCHE » (le sujet est « cela », pas « les »).",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : vérifions chaque production. Dans 1, le sens est « en plus grande quantité » : il faut l’adverbe `davantage`, en un mot. Dans 2, tous les mots de la tournure `Force est de constater` portent leur graphie attestée et la phrase est grammaticalement construite. Dans 3, on part de l’adjectif `différent`, terminé par `-ent` : l’adverbe correspondant se forme en `-emment`, d’où `différemment`. La forme `différamment` vient du choix erroné de `-amment`, finale employée avec les adjectifs en `-ant`. Dans 4, le sujet du verbe est le singulier `cela` : il faut `empêche`. Une seule phrase ne contient aucune erreur.\nDonc : la réponse attendue est l’option 2.",
     "why": {
-      "1": "« d'avantage » : ici l'adverbe → davantage.",
-      "2": "Correcte : tournure figée bien orthographiée.",
-      "3": "« différamment » : -emment → différemment.",
-      "4": "« empêchent » : sujet « cela » → empêche.",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      "T": "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "`d’avantage` sépare à tort l’adverbe qui signifie ici « en plus grande quantité » ; la forme attendue est `davantage`.",
+      "2": "`Force est de constater` respecte la graphie de chacun de ses mots et la construction impersonnelle attendue ; la suite de la phrase est également correcte.",
+      "3": "`différamment` applique à tort la finale `-amment` à l’adjectif `différent` ; comme cet adjectif se termine par `-ent`, l’adverbe se forme en `-emment` et la forme attendue est `différemment`.",
+      "4": "`empêchent` est au pluriel alors que son sujet `cela` est singulier ; la forme attendue est `empêche`.",
+      "A": "Une option sur quatre est correcte, l’option 2 ; « Aucune » ne convient pas.",
+      "T": "Une seule option sur quatre est correcte ; « Toutes » ne convient pas."
     },
     "gen": {
       "model": "Fable 5",
@@ -18312,7 +18348,16 @@ const QUESTIONS = [
           "detail_id": "core",
           "tense_id": "present"
         }
-      ]
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T08:16:03Z"
+        }
+      }
     }
   },
   {
@@ -19197,7 +19242,7 @@ const QUESTIONS = [
     "id": "eleves-31",
     "rule": "eleves",
     "type": "sentences",
-    "instruction": "Quelle phrase d'élève est correctement écrite ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -19225,14 +19270,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "La 3 est irréprochable (« dont » de possession, apposition bien ponctuée). Ailleurs : « M'A beaucoup plu », « OÙ règne la peur », « efficaCE ».",
+    "explanation": "Règle : Dont reprend un groupe en de qui complète un nom et exprime ici la possession.\nMéthode : 1. Repère l’antécédent du pronom relatif. 2. Remets cet antécédent dans la proposition relative pour trouver sa fonction. 3. Conserve la préposition exigée par la construction. 4. Choisis le pronom compatible avec la fonction et l’antécédent.\nDans cette phrase : Dans l’option 3, l’antécédent est `l’héroïne`. La proposition relative équivaut à « le courage de l’héroïne impressionne » : le groupe `de l’héroïne` complète le nom `courage` et exprime la possession, ce que reprend `dont`. La virgule fermante encadre correctement la relative. Les autres phrases contiennent respectivement `ma` au lieu de `m’a`, `ou` au lieu de `où` et `efficasse` au lieu de `efficace`.\nDonc : Seule « L’héroïne, dont le courage impressionne, traverse bien des épreuves » est correctement écrite; il faut choisir l’option 3.",
     "why": {
-      "1": "« ma » : pronom + verbe → m'a plu.",
-      "2": "« ou » : lieu → où (avec accent).",
-      "3": "Correcte : dont = le courage DE l'héroïne.",
-      "4": "« efficasse » : orthographe → efficace.",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Les options 1, 2 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "Dans `ma beaucoup plu`, `ma` ne peut pas former le passé composé de `plaire`; il faut le pronom `m’` suivi de l’auxiliaire avoir : `m’a beaucoup plu`.",
+      "2": "Dans `un pays imaginaire ou règne la peur`, le relatif renvoie à un lieu; il faut écrire `où règne la peur`.",
+      "3": "La reconstruction « le courage de l’héroïne impressionne » montre que `dont` reprend correctement le complément possessif `de l’héroïne`.",
+      "4": "`efficasse` n’est pas la graphie attestée de l’adjectif; il faut écrire `efficace`.",
+      "A": "Une phrase, l’option 3, est correctement écrite; « Aucune » ne convient pas.",
+      "T": "Une seule des quatre phrases est correcte; « Toutes » ne convient pas."
     },
     "gen": {
       "model": "Fable 5",
@@ -19264,7 +19309,16 @@ const QUESTIONS = [
           "detail_id": "core",
           "tense_id": null
         }
-      ]
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T07:55:15Z"
+        }
+      }
     }
   },
   {
@@ -19411,7 +19465,7 @@ const QUESTIONS = [
     "id": "eleves-34",
     "rule": "eleves",
     "type": "sentences",
-    "instruction": "Quelle phrase d'élève est correctement écrite ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -19439,14 +19493,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "« dont la fin reste ouverte » (possession) : correct. Ailleurs : « TOUS ceux », « chaque chapitre apportE », « dont… d'elle » = redondance.",
+    "explanation": "Règle : Dont reprend un groupe en de qui complète un nom et exprime ici la possession.\nMéthode : 1. Repère l’antécédent du pronom relatif. 2. Remets cet antécédent dans la proposition relative pour trouver sa fonction. 3. Conserve la préposition exigée par la construction. 4. Choisis le pronom compatible avec la fonction et l’antécédent.\nDans cette phrase : Dans l’option 4, l’antécédent est `un récit`. La proposition relative se reconstruit par « la fin du récit reste ouverte » : `du récit` complète le nom `fin` et exprime la possession, ce qui justifie `dont`. Les autres options contiennent `tout ceux` au lieu de `tous ceux`, `chaque chapitre apportent` au lieu de `chaque chapitre apporte`, et la reprise redondante `dont… d’elle`.\nDonc : Seule « Il s’agit d’un récit dont la fin reste ouverte » est correctement écrite; il faut choisir l’option 4.",
     "why": {
-      "1": "« tout ceux » : pluriel → tous ceux.",
-      "2": "« apportent » : chaque chapitre → apporte.",
-      "3": "« dont… d'elle » : le complément est repris deux fois.",
-      "4": "Correcte : dont = la fin DU récit.",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Les options 1, 2 et 3 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "`tout ceux` ne porte pas la marque du pluriel exigée par `ceux`; il faut écrire `tous ceux`.",
+      "2": "Dans `Chaque chapitre apportent`, le sujet singulier `chaque chapitre` exige `apporte`.",
+      "3": "Dans `dont on se souviendra longtemps d’elle`, `dont` reprend déjà le complément en `de`; il faut supprimer `d’elle` et écrire `dont on se souviendra longtemps`.",
+      "4": "La reconstruction « la fin du récit reste ouverte » montre que `dont` reprend correctement le complément possessif `du récit`.",
+      "A": "L’option 4 est correctement écrite; « Aucune » ne convient pas.",
+      "T": "Les options 1, 2 et 3 contiennent chacune une erreur; « Toutes » ne convient pas."
     },
     "gen": {
       "model": "Fable 5",
@@ -19484,7 +19538,16 @@ const QUESTIONS = [
           "detail_id": "core",
           "tense_id": null
         }
-      ]
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T07:55:15Z"
+        }
+      }
     }
   },
   {
@@ -24653,7 +24716,7 @@ const QUESTIONS = [
     "id": "av-9",
     "rule": "adjverbal",
     "type": "blank",
-    "stem": "L'architecte a prévu des pièces ___ pour faciliter la circulation.",
+    "stem": "Les pièces prévues par l'architecte seront ___ afin de faciliter la circulation.",
     "options": [
       {
         "key": "1",
@@ -24681,14 +24744,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Qualité des pièces → adjectif verbal « communicantes » (avec c, accordé au féminin pluriel) — forme non proposée. Réponse : Aucune.",
+    "explanation": "Règle : après le verbe « être », le mot qui attribue une propriété au sujet est un adjectif ; il s'accorde avec ce sujet. L'adjectif verbal formé sur « communiquer » s'écrit « communicant », avec -c-.\nMéthode : 1. Repère le verbe « seront ». 2. Identifie le sujet auquel la propriété est attribuée. 3. Accorde l'adjectif en genre et en nombre. 4. Vérifie sa graphie propre.\nDans cette phrase : « seront » fait du mot manquant l'attribut du sujet « les pièces ». Il faut donc l'adjectif verbal « communicant », accordé au féminin pluriel : « communicantes ». Cette forme n'est pas proposée.\nDonc : aucune des quatre formes chiffrées ne convient ; la réponse est A.",
     "why": {
-      "1": "« communiquant » : participe (qu) et invariable — ici on qualifie.",
-      "2": "« communiquants » : graphie du participe + accord incohérent.",
-      "3": "« communicant » : bonne graphie mais accord manquant.",
-      "4": "« communicante » : singulier, or « des pièces ».",
-      "A": "Correct : la forme attendue « communicantes » n'est pas proposée.",
-      "T": "Aucune forme ne convient."
+      "1": "`communiquant` est le participe présent invariable ; après « seront », il faut ici un adjectif attribut accordé avec « les pièces ».",
+      "2": "`communiquants` combine la graphie en -qu- du participe présent avec un accord masculin pluriel ; l'adjectif attendu est « communicantes ».",
+      "3": "`communicant` a la graphie de l'adjectif, mais reste au masculin singulier au lieu de s'accorder avec le sujet féminin pluriel « les pièces ».",
+      "4": "`communicante` est bien un adjectif au féminin, mais il est singulier alors que le sujet « les pièces » est pluriel.",
+      "A": "La forme requise est « communicantes », adjectif attribut au féminin pluriel ; comme elle est absente, « Aucune » est correct.",
+      "T": "Les quatre formes chiffrées sont fautives dans cet attribut ; « Toutes » ne convient pas."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -45049,7 +45112,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -45077,14 +45140,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Dont reprend le complément en de du nom « effets » et exclut toute reprise possessive supplémentaire.",
+    "explanation": "Règle : Dont reprend un groupe en de qui complète un nom et exprime ici la possession.\nMéthode : 1. Repère l’antécédent du pronom relatif. 2. Remets cet antécédent dans la proposition relative pour trouver sa fonction. 3. Conserve la préposition exigée par la construction. 4. Choisis le pronom compatible avec la fonction et l’antécédent.\nDans cette phrase : L’antécédent est `cette décision`. Dans la phrase simple, on dit « les effets de cette décision seront évalués » : `de cette décision` complète le nom `effets` et exprime la possession. `Dont` reprend précisément ce groupe en `de`; il ne faut alors ni le remplacer par `que` ou `à laquelle`, ni conserver le possessif `ses`, qui répéterait la même relation.\nDonc : La formulation correcte est « Cette décision, dont les effets seront évalués en décembre, entre en vigueur lundi »; il faut choisir l’option 1.",
     "why": {
-      "1": "La réponse « Cette décision, dont les effets seront évalués en décembre, entre en vigueur lundi. » est correcte : Dont reprend le complément en de du nom « effets » et exclut toute reprise possessive supplémentaire.",
-      "2": "Le candidat emploie que devant un groupe où le relatif doit exprimer le complément du nom effets.",
-      "3": "Le candidat redouble la relation de possession par dont et le possessif ses.",
-      "4": "Le candidat choisit à laquelle alors que le nom effets se construit avec un complément introduit par de.",
-      "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
-      "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+      "1": "La reconstruction « les effets de cette décision seront évalués » montre que `dont` reprend seul le complément possessif du nom `effets`.",
+      "2": "`que ses effets` ne reprend pas le complément `de cette décision`; il faut écrire `dont les effets`.",
+      "3": "`dont ses effets` exprime deux fois la possession, par `dont` puis par `ses`; la forme attendue est `dont les effets`.",
+      "4": "`à laquelle les effets` introduit la préposition `à`, alors que la reconstruction exige `de cette décision`; il faut écrire `dont les effets`.",
+      "A": "L’option 1 fournit une formulation correcte; « Aucune » ne convient pas.",
+      "T": "Une seule formulation est correcte; « Toutes » ne convient pas."
     },
     "hep": {
       "slot_id": "pond40-16",
@@ -45105,6 +45168,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T07:55:15Z"
+        }
       }
     },
     "stem": "L'article présente une décision par l'un de ses effets."
@@ -52696,14 +52768,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Le terme médical s'écrit « infarctus » (du latin infarcire, bourrer) : -farc-, puis -tus.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : Le blanc désigne l’accident cardiaque touchant le myocarde. Le nom correspondant est `infarctus` : sa graphie attestée conserve `in-`, la suite `-farct-` et la finale `-us`. Les formes `infractus`, `enfarctus` et `infarcus` déplacent, remplacent ou suppriment une lettre de ce mot.\nDonc : Il faut écrire « un infarctus du myocarde » et choisir l’option 4.",
     "why": {
-      "1": "« infractus » : métathèse très répandue, par contamination de « fracture ».",
-      "2": "« enfarctus » : le préfixe est in-, pas en-.",
-      "3": "« infarcus » : il manque le t du groupe -ctus.",
-      "4": "Correct : infarctus, avec -arc- puis -tus.",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Les options 1, 2 et 3 déforment chacune le mot."
+      "1": "`infractus` inverse des lettres dans le groupe central; la graphie attestée est `infarctus`.",
+      "2": "`enfarctus` commence par `en-`, alors que ce nom s’écrit avec `in-` : `infarctus`.",
+      "3": "`infarcus` omet le `t` du groupe `-ct-`; la forme attendue est `infarctus`.",
+      "4": "`infarctus` présente bien la graphie attestée du nom qui désigne ici l’accident du myocarde.",
+      "A": "Une option chiffrée, l’option 4, est correcte; « Aucune » ne convient pas.",
+      "T": "Une seule des quatre options chiffrées est correcte; « Toutes » ne convient pas."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -52716,6 +52788,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T07:55:15Z"
+        }
       }
     }
   },
@@ -52756,14 +52837,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Le mot s'écrit « aréopage » (de l'Aréopage, colline d'Arès à Athènes) : aré-, sans rapport avec l'air.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : Le blanc désigne une assemblée de spécialistes. Le nom qui porte ce sens est `aréopage`, avec la succession `a-r-é-o-p-a-g-e`. `Aéropage` et `aéréopage` introduisent une séquence liée à `aéro-`, tandis que `aropage` omet l’accent et la voyelle `é`.\nDonc : La phrase s’écrit « Un aréopage de spécialistes internationaux… »; il faut choisir l’option 2.",
     "why": {
-      "1": "« aéropage » : contamination d'« aéroport » ; le mot vient d'Arès, pas de l'air.",
-      "2": "Correct : aréopage (assemblée de personnes compétentes).",
-      "3": "« aéréopage » cumule la contamination et une syllabe parasite.",
-      "4": "« aropage » ampute la voyelle du radical.",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      "T": "Les options 1, 3 et 4 déforment chacune le mot."
+      "1": "`aéropage` emploie la séquence initiale `aéro-`, absente de la graphie attestée; il faut écrire `aréopage`.",
+      "2": "`aréopage` est la graphie attestée du nom qui signifie ici une assemblée de personnes compétentes.",
+      "3": "`aéréopage` ajoute une voyelle et inverse l’ordre attendu au début du mot; la forme correcte est `aréopage`.",
+      "4": "`aropage` omet le `é` de la deuxième syllabe; la graphie attendue est `aréopage`.",
+      "A": "L’option 2 est correcte; « Aucune » ne convient donc pas.",
+      "T": "Les options 1, 3 et 4 sont fautives; les quatre options ne sont pas toutes correctes."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -52776,6 +52857,15 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T07:55:15Z"
+        }
       }
     }
   },
@@ -57361,14 +57451,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Le mot s'écrit « asphyxie » : groupe -sph- puis y (du grec sphuxis, pouls). Aucune option ne porte cette graphie.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : le nom désigne le manque d’oxygène que l’exercice d’évacuation doit simuler. Sa graphie attestée est `asphyxie`, avec la suite `sph`, la lettre `y`, puis `xie`. La comparaison avec les quatre propositions montre que chacune modifie au moins un de ces éléments.\nDonc : la réponse attendue est A, « Aucune ».",
     "why": {
-      "1": "« asphixie » remplace le y par un i.",
-      "2": "« asfixie » simplifie le groupe grec -sph- en f.",
-      "3": "« aspyxie » : il manque le h du groupe -sph-.",
-      "4": "« asphyxsie » ajoute un s parasite après le x.",
-      "A": "Correct : la graphie attendue « asphyxie » ne figure dans aucune option.",
-      "T": "Chaque option déforme le mot d'une façon différente."
+      "1": "`asphixie` transcrit le son /i/ par la lettre courante `i` et méconnaît le `y` conservé dans ce mot d’origine grecque ; la forme attendue est `asphyxie`.",
+      "2": "`asfixie` applique une écriture phonétique en notant le son /f/ par `f` et le son /i/ par `i`, au lieu des groupes attestés `ph` et `y` ; la forme attendue est `asphyxie`.",
+      "3": "`aspyxie` ramène le début du mot à la suite familière `asp-`, comme dans `aspirer`, et perd ainsi le `h` nécessaire au groupe `sph` ; la forme attendue est `asphyxie`.",
+      "4": "`asphyxsie` traite à tort le `x` comme s’il ne notait que /k/ et ajoute un `s` pour représenter une seconde fois le son /s/ ; la forme attendue est `asphyxie`.",
+      "A": "Aucune option ne donne `asphyxie` : 1 change `y`, 2 remplace `ph` et `y`, 3 omet `h` et 4 ajoute `s`.",
+      "T": "Zéro option sur quatre porte la graphie attestée ; « Toutes » ne convient pas."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -57381,6 +57471,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T08:16:03Z"
+        }
       }
     }
   },
@@ -58381,14 +58480,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Le mot s'écrit « langage » : lang- puis -age, sans u après le g. Aucune option ne porte cette graphie.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : le nom recherché désigne la manière de s’exprimer dans les courriels professionnels. La graphie française attestée est `langage`, formée de la suite `lang-` et de la finale `-age`. Aucune proposition ne reproduit exactement ces deux éléments.\nDonc : la réponse attendue est A, « Aucune ».",
     "why": {
-      "1": "« language » est la graphie anglaise : le français écrit langage, sans u.",
-      "2": "« langagge » double le g final à tort.",
-      "3": "« lengage » déforme le radical « langue ».",
-      "4": "« langague » ajoute un u parasite dans la finale.",
-      "A": "Correct : la graphie attendue « langage » ne figure dans aucune option.",
-      "T": "Chaque option déforme le mot d'une façon différente."
+      "1": "`language` reprend la graphie du nom anglais `language`, alors que le nom français s’écrit sans `u` après le second `g` ; la forme attendue est `langage`.",
+      "2": "`langagge` surapplique le doublement de `g` rencontré dans certains mots, comme `suggérer`, à une finale `-age` qui ne comporte qu’un seul `g` ; la forme attendue est `langage`.",
+      "3": "`lengage` attire à tort le début du nom vers la suite graphique du verbe `engager` ; le radical attendu reste `lang-` et la forme correcte est `langage`.",
+      "4": "`langague` conserve par analogie le groupe `gu` de `langue` devant la finale `-age`, alors que cette finale s’ajoute sous la forme `langage` ; la forme attendue est `langage`.",
+      "A": "Aucune option ne donne `langage` : 1 et 4 ajoutent `u`, 2 ajoute un `g` et 3 remplace le premier `a`.",
+      "T": "Zéro option sur quatre porte la graphie française attestée ; « Toutes » ne convient pas."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -58401,6 +58500,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T08:16:03Z"
+        }
       }
     }
   },
@@ -59710,14 +59818,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Le mot s'écrit « égide » (le bouclier d'Athéna) : é initial, g doux, pas de h.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : La locution `sous l’égide de` signifie « sous l’autorité ou le patronage de ». Le nom recherché s’écrit `égide`, avec un `é` initial, sans `h` et sans `u` après le `g`. Parmi les propositions, seule la première reproduit cette graphie attestée.\nDonc : La phrase s’écrit « sous l’égide du département »; il faut choisir l’option 1.",
     "why": {
-      "1": "Correct : sous l'égide de = sous le patronage de.",
-      "2": "« hégide » ajoute un h que le grec aigis ne justifie pas.",
-      "3": "« éguide » insère un u qui durcirait le g à tort.",
-      "4": "« aegide » calque la graphie latine, abandonnée en français.",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Les options 2, 3 et 4 déforment la graphie du mot."
+      "1": "`égide` est la graphie attestée du nom dans la locution `sous l’égide de`.",
+      "2": "`hégide` ajoute un `h` qui n’appartient pas au mot; la forme attendue est `égide`.",
+      "3": "`éguide` ajoute un `u` après le `g`; il faut écrire `égide`.",
+      "4": "`aegide` conserve une suite initiale qui n’est pas celle de la graphie française actuelle; la forme attendue est `égide`.",
+      "A": "L’option 1 est correcte; la réponse « Aucune » est exclue.",
+      "T": "Trois options chiffrées comportent une graphie fautive; « Toutes » est exclu."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -59730,6 +59838,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T07:55:15Z"
+        }
       }
     }
   },
@@ -61733,7 +61850,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -61761,14 +61878,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Quatre mots bien orthographiés et bien accordés malgré leur allure : « imbroglio », « sosie » (masculin), « pécule » et « entracte » (masculin). Réponse : Toutes.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : examinons séparément les quatre mots ciblés et leur emploi. La phrase 1 porte la graphie attestée `imbroglio`. Dans la phrase 2, `sosie` est correctement écrit et le déterminant masculin `le` convient. Dans la phrase 3, `pécule` est correctement écrit et s’emploie au masculin avec `un`. Dans la phrase 4, `entracte` est correctement écrit ; ce nom masculin commande bien `prolongé`. Les quatre phrases satisfont donc la graphie et le genre attendus.\nDonc : la réponse attendue est T, « Toutes ».",
     "why": {
-      "1": "Correcte : « imbroglio » (de l'italien) s'écrit avec le groupe -glio.",
-      "2": "Correcte : « sosie » est masculin malgré sa finale en -ie (un sosie).",
-      "3": "Correcte : « pécule » (petite somme économisée) s'écrit ainsi et il est masculin.",
-      "4": "Correcte : « entracte » est masculin (un entracte prolongé).",
-      "A": "Les quatre phrases sont correctes.",
-      "T": "Correct : graphies et genres sont irréprochables dans les quatre phrases."
+      "1": "`L’imbroglio` associe correctement le nom attesté `imbroglio`, avec sa finale `-glio`, au déterminant élidé.",
+      "2": "`Le sosie` emploie la graphie attestée `sosie` et le genre masculin requis par ce nom.",
+      "3": "`Un pécule` présente la graphie attestée `pécule`, accent compris, avec son genre masculin.",
+      "4": "`L’entracte` présente la graphie attestée du nom masculin `entracte`, ce qui justifie aussi `prolongé` au masculin.",
+      "A": "Les quatre options sont correctement écrites ; il n’y en a donc aucune à exclure comme fautive.",
+      "T": "Les options 1, 2, 3 et 4 satisfont chacune la graphie attestée et, pour 2 à 4, le genre requis ; « Toutes » est la réponse correcte."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -61781,6 +61898,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T07:52:04Z"
+        }
       }
     }
   },
@@ -66965,14 +67091,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "« Dont » exprime la possession : le bureau DE l'architecte a dessiné la halle → l'architecte dont le bureau a dessiné…",
+    "explanation": "Règle : Dont reprend un groupe en de qui complète un nom et exprime ici la possession.\nMéthode : 1. Repère l’antécédent du pronom relatif. 2. Remets cet antécédent dans la proposition relative pour trouver sa fonction. 3. Conserve la préposition exigée par la construction. 4. Choisis le pronom compatible avec la fonction et l’antécédent.\nDans cette phrase : l’antécédent est `l’architecte`. En le réintroduisant dans la proposition relative, on obtient « le bureau de l’architecte a dessiné la halle ». Le groupe `de l’architecte` complète le nom `bureau` et indique à qui ce bureau appartient. Le relatif doit donc reprendre ce complément du nom en `de`, sans changer la fonction du sujet `le bureau` : c’est `dont`.\nDonc : « L’architecte dont le bureau a dessiné la halle… » est la construction attendue ; la réponse est l’option 4.",
     "why": {
-      "1": "« que » ferait de l'architecte le COD de « a dessiné », en laissant « le bureau » sans fonction.",
-      "2": "« duquel » ne s'emploie pas pour une simple possession devant le sujet : c'est « dont ».",
-      "3": "« à qui » supposerait un destinataire (dessiner à quelqu'un ?), contresens.",
-      "4": "Correct : possession → l'architecte dont le bureau a dessiné la halle.",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Une seule option exprime la possession attendue."
+      "1": "Avec `que`, l’antécédent serait présenté comme COD de `a dessiné`, alors que le COD est `la halle` et que la relation utile est « le bureau de l’architecte » ; il faut `dont`.",
+      "2": "Le fragment `duquel le bureau` ne reprend pas ici un groupe introduit par une locution prépositive ; la possession simple « le bureau de l’architecte » se construit avec `dont`.",
+      "3": "Le fragment `à qui le bureau` introduit la préposition `à`, absente de la phrase simple « le bureau de l’architecte a dessiné… » ; la forme attendue est `dont`.",
+      "4": "`dont` reprend exactement `de l’architecte`, complément possessif du nom `bureau`, tout en laissant `le bureau` sujet de `a dessiné`.",
+      "A": "Une option numérotée est correcte, la 4 ; `Aucune` ne peut donc pas être choisie.",
+      "T": "Une seule des quatre options convient ; la réponse `Toutes` est exclue."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -66985,6 +67111,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T07:58:40Z"
+        }
       }
     }
   },
@@ -78524,14 +78659,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Règle : « dont » exprime la possession : il remplace « de + nom » (le collège DE la commune). Dans cette phrase : la phrase de base est « le collège DE cette commune fête ses cent ans » → la commune dont le collège fête ses cent ans. Donc : option 3.",
+    "explanation": "Règle : Dont reprend un groupe en de qui complète un nom et exprime ici la possession.\nMéthode : 1. Repère l’antécédent du pronom relatif. 2. Remets cet antécédent dans la proposition relative pour trouver sa fonction. 3. Conserve la préposition exigée par la construction. 4. Choisis le pronom compatible avec la fonction et l’antécédent.\nDans cette phrase : l’antécédent est `la commune`. La proposition relative se reconstruit ainsi : « le collège de la commune fête ses cent ans cette année ». `Le collège` reste le sujet de `fête`, tandis que `de la commune` complète le nom `collège` et exprime l’appartenance. Le pronom qui reprend ce complément possessif en `de` est `dont`.\nDonc : la phrase correcte est « La commune dont le collège fête ses cent ans… » ; la réponse est l’option 3.",
     "why": {
-      "1": "« que » ferait de la commune le COD de « fête », en laissant « le collège » sans fonction.",
-      "2": "« à laquelle » supposerait « fêter à », construction inexistante ici.",
-      "3": "Correct : possession (le collège de la commune) → dont.",
-      "4": "« de qui » se réserve aux personnes : une commune est une collectivité, le relatif attendu est « dont ».",
-      "A": "Il existe bien une option correcte : la 3.",
-      "T": "Une seule option exprime la possession."
+      "1": "Dans `la commune que le collège fête`, `que` ferait de `la commune` le COD de `fête`, mais la relation visée est « le collège de la commune » ; la forme attendue est `dont`.",
+      "2": "Le fragment `à laquelle le collège` impose une relation en `à` que la phrase simple ne contient pas ; « le collège de la commune » demande `dont`.",
+      "3": "`dont` remplace `de la commune`, complément possessif de `collège`, sans modifier le sujet `le collège` ni le COD `ses cent ans`.",
+      "4": "Le fragment `de qui le collège` emploie une forme réservée ici à un antécédent humain, alors que `la commune` est un antécédent non humain ; la reprise attendue est `dont`.",
+      "A": "L’option 3 fournit une construction correcte ; il n’y a donc pas zéro bonne réponse.",
+      "T": "Parmi les quatre options, seule la 3 convient ; elles ne sont donc pas toutes correctes."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -78544,6 +78679,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T07:58:40Z"
+        }
       }
     }
   },
@@ -79110,7 +79254,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "La réorganisation des horaires, ___ la direction réfléchit depuis l'automne, sera soumise aux familles.",
+    "stem": "La réorganisation des horaires, ___ la direction s'attelle depuis l'automne, sera soumise aux familles.",
     "options": [
       {
         "key": "1",
@@ -79138,14 +79282,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Règle : on choisit le pronom relatif d'après la préposition du verbe. « Réfléchir À quelque chose » se construit avec « à » → à laquelle. Dans cette phrase : la phrase de base est « la direction réfléchit À cette réorganisation » → à laquelle. Donc : option 2.",
+    "explanation": "Règle : le pronom relatif se choisit d'après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l'on emploie une forme de « lequel » après « à », on choisit « auquel », « à laquelle », « auxquels » ou « auxquelles ».\nMéthode : 1. Remets l'antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu'une forme de « lequel » convient à cet antécédent. 4. Accorde « lequel » avec l'antécédent.\nDans cette phrase : la phrase simple est « la direction s'attelle à cette réorganisation ». Le verbe pronominal « s'atteler », au sens de se mettre activement à une tâche, exige la préposition « à ». L'antécédent « la réorganisation » est non humain, féminin singulier : on obtient donc « à laquelle ».\nDonc : la forme correcte est « à laquelle », c'est-à-dire l'option 2.",
     "why": {
-      "1": "« dont » remplacerait un complément en « de » : « réfléchir de » n'existe pas.",
-      "2": "Correct : réfléchir À → la réorganisation à laquelle la direction réfléchit.",
-      "3": "« qu' » remplacerait un complément direct : « réfléchir quelque chose » n'existe pas.",
-      "4": "« sur laquelle » : on dit bien « se pencher sur », mais « réfléchir » régit « à ».",
-      "A": "Il existe bien une option correcte : la 2.",
-      "T": "Les options 1, 3 et 4 reconstruisent une phrase de base impossible."
+      "1": "`dont` reprendrait un complément en « de », mais on dit « s'atteler à une réorganisation » et non `s'atteler d'une réorganisation`.",
+      "2": "« À laquelle » porte la préposition « à » exigée par « s'atteler à » et s'accorde au féminin singulier avec « la réorganisation ».",
+      "3": "`qu'` introduirait un complément direct, mais `s'atteler une réorganisation` est impossible : la préposition « à » est obligatoire.",
+      "4": "`sur laquelle` supposerait la construction `s'atteler sur une réorganisation` ; le verbe se construit ici uniquement avec « à ».",
+      "A": "L'option 2 convient à la fois au régime « s'atteler à » et à l'antécédent féminin singulier ; « Aucune » est donc faux.",
+      "T": "Une seule option chiffrée respecte le régime en « à » ; « Toutes » est donc faux."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -81914,14 +82058,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : l'adjectif verbal décrit une qualité et s'écrit « émergent » (en -gent), accordé : des risques émergents. Le participe présent décrit une action en cours, reste invariable et s'écrit « émergeant » (en -geant, le e gardant le son [j] devant a) : en émergeant seulement maintenant. Dans cette phrase : « des risques ___ » = qualité → émergents ; « en ___ seulement maintenant » = action → émergeant. Donc : émergents / émergeant — option 4.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : au premier blanc, la forme décrit les `risques` et peut se mettre au féminin dans « des menaces émergentes » : c’est l’adjectif verbal, accordé au masculin pluriel, `émergents`. Au second blanc, `en` introduit l’action que les risques accomplissent au moment où ils deviennent visibles ; la forme garde donc le fonctionnement du verbe `émerger`. Le participe présent est invariable et conserve le `e` devant `a` : `émergeant`.\nDonc : il faut écrire `émergents / émergeant`, soit l’option 4.",
     "why": {
-      "1": "« émergeants » n'existe pas : l'adjectif s'écrit -gent (émergents), sans e après le g.",
-      "2": "« en émergent seulement » : l'action en cours s'écrit avec le participe -geant (émergeant).",
-      "3": "« des risques émergeants » : l'adjectif de qualité s'écrit émergents.",
-      "4": "Correct : adjectif accordé « émergents » (-gent) ; participe invariable « émergeant » (-geant).",
-      "A": "Il existe bien une option correcte : la 4.",
-      "T": "Les options 1, 2 et 3 confondent l'adjectif et le participe ou inventent une graphie."
+      "1": "Le fragment `risques émergeants` emploie la graphie du participe et lui ajoute un pluriel ; l’adjectif masculin pluriel attendu est `émergents`. Le second terme devrait, lui, être `émergeant`.",
+      "2": "Dans `en émergent seulement maintenant`, la forme exprime une action et doit être le participe présent invariable ; on écrit `en émergeant`, avec `-geant`.",
+      "3": "Le second terme `émergeant` convient à l’action, mais `risques émergeants` ne donne pas l’adjectif accordé ; il faut `risques émergents`.",
+      "4": "`émergents` qualifie le nom masculin pluriel `risques`, tandis que `émergeant` exprime après `en` l’action verbale et reste invariable.",
+      "A": "L’option 4 est correcte ; le nombre de bonnes options n’est donc pas nul.",
+      "T": "Une seule option, la 4, place les deux formes attendues ; `Toutes` ne convient pas."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -81934,6 +82078,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T07:58:40Z"
+        }
       }
     }
   },
@@ -82200,7 +82353,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quelle(s) phrase(s) emploie(nt) correctement le pronom relatif ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -82228,14 +82381,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Règle : le relatif se choisit d'après la phrase de base. 1) s'organiser AUTOUR DU tilleul → autour duquel. 2) antécédent de temps (l'après-midi) → où. 3) le bureau DE la greffière (possession) → dont. 4) se référer À → auquel. Dans ces phrases : chaque relatif reconstruit correctement sa phrase de base. Donc : les quatre sont correctes — réponse T (Toutes).",
+    "explanation": "Règle : Dont reprend un groupe en de qui complète un nom et exprime ici la possession.\nMéthode : 1. Repère l’antécédent du pronom relatif. 2. Remets cet antécédent dans la proposition relative pour trouver sa fonction. 3. Conserve la préposition exigée par la construction. 4. Choisis le pronom compatible avec la fonction et l’antécédent.\nDans cette phrase : 1) On s’organise `autour du tilleul`; la locution `autour de` est conservée dans `autour duquel`. 2) `L’après-midi` est un antécédent de temps, repris par `où`. 3) La phrase simple est « le bureau de la greffière jouxte la salle » : `dont` reprend le complément possessif `de la greffière`. 4) On se réfère `au formulaire`; avec cet antécédent masculin singulier non humain, `à` et `lequel` se contractent en `auquel`.\nDonc : Les quatre phrases emploient correctement leur pronom relatif; il faut choisir T, « Toutes ».",
     "why": {
-      "1": "Correcte : la locution « autour de » se conserve → autour duquel.",
-      "2": "Correcte : antécédent temporel → où.",
-      "3": "Correcte : possession (le bureau de la greffière) → dont.",
-      "4": "Correcte : se référer À → auquel.",
-      "A": "Impossible : chacun des quatre relatifs résiste à la reconstruction.",
-      "T": "Correct : quatre emplois différents (locution, temps, possession, régime en à), tous justes."
+      "1": "La reconstruction « les récréations s’organisent autour du tilleul » conserve `autour de`; avec cet antécédent masculin singulier, `autour duquel` convient.",
+      "2": "`Où` reprend correctement l’antécédent temporel `l’après-midi` et situe le moment où l’alarme a sonné.",
+      "3": "La reconstruction « le bureau de la greffière jouxte la salle » établit le complément possessif en `de`, correctement repris par `dont`.",
+      "4": "Le verbe se construit dans la phrase avec `se référer au formulaire`; `auquel` conserve `à` et s’accorde avec `formulaire`.",
+      "A": "Les quatre options chiffrées sont correctes; « Aucune » ne convient pas.",
+      "T": "Quatre options sur quatre emploient correctement le relatif; « Toutes » est la réponse attendue."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -82248,6 +82401,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T07:55:15Z"
+        }
       }
     }
   },
@@ -83162,14 +83324,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Règle : l'adjectif verbal décrit une qualité et s'écrit « suffocant » (en -cant), accordé : une chaleur suffocante. Le participe présent décrit l'action en cours, reste invariable et s'écrit « suffoquant » (en -quant) : en suffoquant presque. Dans cette phrase : « une chaleur ___ » = qualité → suffocante ; « en ___ presque » = action → suffoquant. Donc : suffocante / suffoquant — option 2.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : au premier blanc, la forme attribue une propriété au nom féminin singulier `chaleur` ; le test avec un nom masculin donne « un air suffocant ». Il faut donc l’adjectif verbal féminin `suffocante`, écrit avec `c`. Au second blanc, `en` introduit ce que font les visiteurs : ils suffoquent. Cette action exige le participe présent invariable de `suffoquer`, `suffoquant`, écrit avec `qu`.\nDonc : la combinaison attendue est `suffocante / suffoquant`, soit l’option 2.",
     "why": {
-      "1": "Inverse les deux graphies : l'adjectif en -cant, le participe en -quant.",
-      "2": "Correct : adjectif accordé « suffocante » (-cant) ; participe invariable « suffoquant » (-quant).",
-      "3": "« une chaleur suffoquante » : la qualité s'écrit avec l'adjectif en -cant.",
-      "4": "« en suffocant presque » : l'action en cours s'écrit avec le participe en -quant.",
-      "A": "Il existe bien une option correcte : la 2.",
-      "T": "Les options 1, 3 et 4 confondent l'adjectif et le participe."
+      "1": "Dans `chaleur suffoquante`, la graphie verbale en `qu` est accordée comme un adjectif, alors qu’il faut `chaleur suffocante` ; après `en`, `suffocant` doit devenir `suffoquant`.",
+      "2": "`suffocante` qualifie et s’accorde avec `chaleur`, puis `suffoquant` exprime l’action des visiteurs après `en` et reste invariable.",
+      "3": "Le participe `suffoquant` convient au second blanc, mais `suffoquante` est fautif comme adjectif ; la forme attendue devant `chaleur` est `suffocante`.",
+      "4": "Dans `en suffocant presque`, l’action est écrite avec la graphie adjectivale en `c` ; le participe présent attendu est `en suffoquant`.",
+      "A": "Puisque l’option 2 convient, la réponse ne peut pas être `Aucune`.",
+      "T": "Trois options comportent au moins une forme fautive ; les quatre ne sont donc pas correctes."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -83182,6 +83344,15 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T07:58:40Z"
+        }
       }
     }
   },
@@ -84276,14 +84447,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : l'adjectif verbal décrit une qualité et s'écrit « zigzagant » (en -gant), accordé : une trajectoire zigzagante. Le participe présent décrit l'action en cours, reste invariable et s'écrit « zigzaguant » (en -guant, le u de « zigzaguer » conservé) : en zigzaguant trop large. Dans cette phrase : « une trajectoire ___ » = qualité → zigzagante ; « en ___ trop large » = action → zigzaguant. Donc : zigzagante / zigzaguant — option 4.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : au premier blanc, la forme caractérise la `trajectoire` ; elle fonctionne comme un adjectif et s’accorde au féminin singulier. L’adjectif de `zigzaguer` est `zigzagant`, sans `u`, d’où `zigzagante`. Au second blanc, le sujet implicite de `en … trop large` accomplit l’action de zigzaguer. Il faut le participe présent invariable formé sur le radical verbal `zigzagu-`, donc `zigzaguant`.\nDonc : `zigzagante / zigzaguant` correspond à l’option 4.",
     "why": {
-      "1": "« zigzaguante » n'existe pas : l'adjectif s'écrit -gant (zigzagante), sans u.",
-      "2": "« en zigzagant trop large » : l'action en cours s'écrit avec le participe -guant (zigzaguant).",
-      "3": "« une trajectoire zigzaguante » : la qualité s'écrit avec l'adjectif en -gant.",
-      "4": "Correct : adjectif accordé « zigzagante » (-gant) ; participe invariable « zigzaguant » (-guant).",
-      "A": "Il existe bien une option correcte : la 4.",
-      "T": "Les options 1, 2 et 3 confondent l'adjectif et le participe."
+      "1": "Le fragment `trajectoire zigzaguante` conserve à tort le `u` du verbe dans l’adjectif ; il faut `trajectoire zigzagante`. Après `en`, `zigzagant` doit être remplacé par `zigzaguant`.",
+      "2": "`zigzagante` qualifie correctement `trajectoire`, mais `en zigzagant` n’a pas la graphie du participe présent de `zigzaguer` ; la forme attendue est `en zigzaguant`.",
+      "3": "Le second terme `zigzaguant` convient à l’action, tandis que `zigzaguante` est fautif comme adjectif ; il faut `zigzagante`.",
+      "4": "`zigzagante` est l’adjectif féminin accordé avec `trajectoire`, et `zigzaguant` est le participe présent invariable qui exprime l’action après `en`.",
+      "A": "Il existe une bonne combinaison, l’option 4 ; `Aucune` est donc écartée.",
+      "T": "Seule l’option 4 donne les deux graphies requises ; les options ne sont pas toutes correctes."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -84296,6 +84467,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T07:58:40Z"
+        }
       }
     }
   },
@@ -85312,14 +85492,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : le « fabricant » (en -cant) est le NOM qui désigne l'entreprise ou la personne qui fabrique ; « fabriquant » (en -quant) est le participe présent, qui exprime l'action et garde le u de « fabriquer » (en fabriquant quelque chose). Dans cette phrase : « le ___ de mobilier » = le nom → fabricant ; « en ___ aussi les chaises » = l'action → fabriquant. Donc : fabricant / fabriquant — option 4.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : au premier blanc, l’article `Le` et le complément `de mobilier scolaire` montrent qu’il faut le nom qui désigne la personne ou l’entreprise exerçant l’activité : `fabricant`, écrit avec `c`. Au second blanc, `en` introduit une action et la forme reçoit le COD `les chaises` : elle garde donc le fonctionnement du verbe `fabriquer`. Son participe présent, invariable, est `fabriquant`, avec `qu`.\nDonc : il faut `fabricant / fabriquant`, soit l’option 4.",
     "why": {
-      "1": "Les deux formes sont inversées : le nom en -cant, le participe en -quant.",
-      "2": "« en fabricant aussi les chaises » : l'action en cours s'écrit avec le participe fabriquant.",
-      "3": "« le fabriquant de mobilier » : le nom de métier s'écrit fabricant.",
-      "4": "Correct : nom « fabricant » (-cant) ; participe « fabriquant » (-quant, action + COD).",
-      "A": "Il existe bien une option correcte : la 4.",
-      "T": "Les options 1, 2 et 3 confondent le nom et le participe."
+      "1": "Dans `Le fabriquant de mobilier`, la forme verbale est employée à la place du nom ; il faut `Le fabricant`. Dans `en fabricant aussi les chaises`, le nom remplace le participe attendu `fabriquant`.",
+      "2": "`fabricant` convient comme nom au premier blanc, mais `en fabricant les chaises` emploie encore le nom là où l’action avec le COD `les chaises` exige `en fabriquant`.",
+      "3": "`fabriquant` convient pour l’action du second blanc, mais `Le fabriquant de mobilier` est fautif comme nom d’activité ; la forme attendue est `Le fabricant`.",
+      "4": "`fabricant` est le nom précédé de l’article `Le`, et `fabriquant` est le participe présent invariable qui garde une valeur verbale avec le COD `les chaises`.",
+      "A": "L’option 4 remplit correctement les deux blancs ; `Aucune` ne convient pas.",
+      "T": "Une seule combinaison est correcte ; la réponse `Toutes` est donc impossible."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -85332,6 +85512,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T07:58:40Z"
+        }
       }
     }
   },
@@ -87806,14 +87995,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Règle : « s'adresser À quelqu'un » se construit avec « à » ; pour une personne, il faudrait « auquel » (ou « à qui »). Dans cette phrase : cette forme ne figure dans aucune option. Donc : réponse A (Aucune).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : remettons l’antécédent dans la proposition relative : « les deux services se sont adressés au médiateur ». La construction est `s’adresser à quelqu’un` : elle impose donc la préposition `à`. Avec l’antécédent masculin singulier `le médiateur`, `à` + `lequel` donne `auquel`. Or aucune des quatre options ne propose `auquel`.\nDonc : la réponse attendue est A, « Aucune ».",
     "why": {
-      "1": "« dont » remplacerait un complément en « de » : « s'adresser de » n'existe pas.",
-      "2": "« que » ferait du médiateur un complément direct : « s'adresser » se construit avec « à ».",
-      "3": "« duquel » suppose un régime en « de », absent ici.",
-      "4": "« pour lequel » calque « plaider pour » : « s'adresser » exige « à ».",
-      "A": "Correct : la forme attendue « auquel » (s'adresser à) ne figure dans aucune option.",
-      "T": "Impossible : chaque option emploie un mauvais régime."
+      "1": "`dont` reprendrait un complément introduit par `de`, mais on dit `s’adresser au médiateur`, avec `à` ; il faudrait `auquel`.",
+      "2": "`que` ferait de `le médiateur` un COD, alors que `s’adresser` exige un complément introduit par `à` ; il faudrait `auquel`.",
+      "3": "`duquel` contient la contraction `de` + `lequel`, incompatible avec `s’adresser à` ; il faudrait `auquel`.",
+      "4": "`pour lequel` introduit `pour`, que la construction `s’adresser à quelqu’un` n’autorise pas ici ; il faudrait `auquel`.",
+      "A": "Aucune option ne convient : les options 1 et 3 introduisent `de`, l’option 2 supprime la préposition et l’option 4 introduit `pour`, alors que la phrase exige `auquel`.",
+      "T": "Zéro option sur quatre est correcte ; « Toutes » ne peut donc pas être la réponse."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -87823,9 +88012,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
-        "3": "UNK",
+        "2": "regime_direct_suppose",
+        "3": "regime_de_suppose",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T07:52:04Z"
+        }
       }
     }
   },
@@ -88600,14 +88798,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Règle : l'adjectif verbal décrit une qualité et s'écrit « somnolent » (en -ent), accordé : des surveillants somnolents. Le participe présent décrit l'action en cours, reste invariable et s'écrit « somnolant » (en -ant) : en somnolant à moitié. Dans cette phrase : « deux surveillants ___ » = état → somnolents ; « en ___ à moitié » = action → somnolant. Donc : somnolents / somnolant — option 2.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : au premier blanc, la forme décrit l’état des `deux surveillants` ; le féminin possible, « deux surveillantes somnolentes », confirme la fonction adjectivale. L’adjectif s’accorde donc au masculin pluriel : `somnolents`. Au second blanc, `en` introduit ce que les surveillants faisaient sur leur chaise. Cette action demande le participe présent invariable de `somnoler`, `somnolant`.\nDonc : la suite correcte est `somnolents / somnolant`, proposée par l’option 2.",
     "why": {
-      "1": "Les deux formes sont inversées : l'adjectif en -ent, le participe en -ant.",
-      "2": "Correct : adjectif accordé « somnolents » (-ent) ; participe invariable « somnolant » (-ant).",
-      "3": "« en somnolent à moitié » : l'action en cours s'écrit avec le participe somnolant.",
-      "4": "« deux surveillants somnolant » : l'état s'écrit avec l'adjectif accordé somnolents.",
-      "A": "Il existe bien une option correcte : la 2.",
-      "T": "Les options 1, 3 et 4 confondent l'adjectif et le participe."
+      "1": "Dans `surveillants somnolant`, la forme verbale n’est pas accordée alors que le mot qualifie ici le nom ; il faut `surveillants somnolents`. Après `en`, `somnolents` doit devenir `somnolant`.",
+      "2": "`somnolents` est l’adjectif masculin pluriel accordé avec `surveillants`, puis `somnolant` exprime leur action après `en` et reste invariable.",
+      "3": "Le premier terme `somnolents` convient, mais `en somnolents` emploie un adjectif pluriel dans une construction verbale ; il faut `en somnolant`.",
+      "4": "Le second terme `somnolant` convient à l’action, tandis que `surveillants somnolant` ne marque pas l’accord adjectival attendu ; il faut `surveillants somnolents`.",
+      "A": "La combinaison de l’option 2 est correcte ; il ne faut donc pas choisir `Aucune`.",
+      "T": "Trois combinaisons échouent sur au moins un blanc ; les options ne sont pas toutes correctes."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -88620,6 +88818,15 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T07:58:40Z"
+        }
       }
     }
   },
@@ -89214,14 +89421,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Règle : on reconstruit la base : « elle a pu financer sa formation GRÂCE À la bourse ». La locution « grâce à » (le moyen) se place devant le relatif, et pour une chose féminine on emploie « laquelle » : grâce à laquelle. Dans cette phrase : la bourse grâce à laquelle elle a pu financer sa formation. Donc : option 2.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « elle a pu financer toute sa formation grâce à la bourse cantonale ». Le COD de `financer` est déjà `toute sa formation` ; `la bourse` exprime le moyen dans le groupe `grâce à la bourse`. Il faut conserver toute la locution `grâce à`, puis remplacer l’antécédent féminin singulier par `laquelle` : `grâce à laquelle`.\nDonc : la réponse attendue est l’option 2.",
     "why": {
-      "1": "« dont » supposerait un complément en « de » (financer de la bourse) : on finance grâce à, pas « de ».",
-      "2": "Correct : financer grâce à la bourse → grâce à laquelle.",
-      "3": "« que » ferait de la bourse le COD de financer, or ce COD est déjà « sa formation ».",
-      "4": "« à laquelle elle a financé » : on ne finance pas « à » une bourse, on finance grâce à elle.",
-      "A": "Il existe bien une option correcte : la 2.",
-      "T": "Une seule option restitue le moyen « grâce à »."
+      "1": "`dont` introduirait un complément en `de`, alors que la phrase de base contient `grâce à la bourse` ; la forme attendue est `grâce à laquelle`.",
+      "2": "`grâce à laquelle` conserve la locution qui exprime le moyen et `laquelle` s’accorde avec l’antécédent féminin singulier `la bourse cantonale`.",
+      "3": "`que` ferait de `la bourse cantonale` le COD de `financer`, alors que ce COD est `toute sa formation` ; la forme attendue est `grâce à laquelle`.",
+      "4": "`à laquelle` supprimerait le mot `grâce` et produirait la construction fautive `financer à la bourse` ; il faut `grâce à laquelle`.",
+      "A": "Une option sur quatre est correcte, l’option 2 ; « Aucune » ne convient pas.",
+      "T": "Une seule option sur quatre est correcte ; « Toutes » ne convient pas."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -89232,8 +89439,17 @@ const QUESTIONS = [
       "option_misconceptions": {
         "1": "regime_de_suppose",
         "2": null,
-        "3": "regime_a_non_identifie",
+        "3": "regime_direct_suppose",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T07:52:04Z"
+        }
       }
     }
   },
@@ -90728,14 +90944,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Règle : l'adjectif verbal décrit une qualité et s'écrit « provocant » (avec c), en s'accordant : des remarques provocantes. Le participe présent décrit l'action en cours, reste invariable et s'écrit « provoquant » (avec qu) : en provoquant le surveillant. Dans cette phrase : « remarques ___ » = qualité → provocantes ; « en ___ le surveillant » = action → provoquant. Donc : provocantes / provoquant — option 3.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : au premier blanc, la forme caractérise les `remarques` ; elle doit donc être l’adjectif verbal féminin pluriel de `provocant`, écrit avec `c` : `provocantes`. Au second blanc, `en` introduit l’action exercée sur le COD `le surveillant`. La forme garde le fonctionnement du verbe `provoquer` et devient son participe présent invariable, écrit avec `qu` : `provoquant`.\nDonc : `provocantes / provoquant` est la combinaison de l’option 3.",
     "why": {
-      "1": "Les deux sont mal orthographiés : l'adjectif prend « c » (provocantes), le participe « qu » (provoquant).",
-      "2": "« en provocant le surveillant » : l'action en cours s'écrit avec « qu » → provoquant.",
-      "3": "Correct : adjectif accordé « provocantes » (c) + participe invariable « provoquant » (qu).",
-      "4": "« remarques provoquant » : la qualité accordée s'écrit provocantes (c).",
-      "A": "Il existe bien une option correcte : la 3.",
-      "T": "Les options 1, 2 et 4 confondent l'orthographe de l'adjectif et du participe."
+      "1": "Dans `remarques provoquantes`, la graphie verbale avec `qu` est accordée comme adjectif ; il faut `remarques provocantes`. Le second terme `provoquant` convient à l’action.",
+      "2": "`provocantes` qualifie correctement `remarques`, mais `en provocant le surveillant` conserve la graphie adjectivale ; le participe attendu est `en provoquant`.",
+      "3": "`provocantes` est l’adjectif féminin pluriel accordé avec `remarques`, et `provoquant` est le participe présent invariable accompagné du COD `le surveillant`.",
+      "4": "Le fragment `remarques provoquant` emploie un participe invariable là où un adjectif féminin pluriel est requis : il faut `remarques provocantes`. Au second blanc, `provocant` doit devenir `provoquant`.",
+      "A": "L’option 3 est correcte ; la réponse `Aucune` est donc exclue.",
+      "T": "Seule l’option 3 associe les deux formes convenables ; il ne faut pas choisir `Toutes`."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -90748,6 +90964,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T07:58:40Z"
+        }
       }
     }
   },
@@ -91962,14 +92187,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : l'adjectif verbal décrit une qualité et s'écrit « différent » (en -ent), accordé : deux approches différentes. Le participe présent décrit l'action en cours, reste invariable et s'écrit « différant » (en -ant) : tout en différant. Dans cette phrase : « approches ___ » = qualité → différentes ; « tout en ___ sur la forme » = action → différant. Donc : différentes / différant — option 4.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : au premier blanc, la forme attribue une propriété aux `deux approches` ; elle fonctionne comme un adjectif et s’accorde au féminin pluriel : `différentes`, avec `-ent-`. Au second blanc, `tout en` introduit l’action de différer, précisée par `nettement sur la forme`. Il faut donc le participe présent invariable de `différer`, `différant`, avec `-ant`.\nDonc : la combinaison correcte est `différentes / différant`, soit l’option 4.",
     "why": {
-      "1": "Les deux formes sont inversées : l'adjectif en -ent, le participe en -ant.",
-      "2": "« tout en différentes sur la forme » : l'action en cours s'écrit avec le participe différant.",
-      "3": "« deux approches différant » : la qualité accordée s'écrit différentes (-ent).",
-      "4": "Correct : adjectif accordé « différentes » (-ent) + participe invariable « différant » (-ant).",
-      "A": "Il existe bien une option correcte : la 4.",
-      "T": "Les options 1, 2 et 3 confondent l'adjectif verbal et le participe présent."
+      "1": "Dans `approches différant`, le participe invariable remplace l’adjectif requis ; il faut `approches différentes`. Dans `en différentes`, l’adjectif doit être remplacé par le participe `en différant`.",
+      "2": "`différentes` convient pour qualifier `approches`, mais `tout en différentes` place un adjectif féminin pluriel dans une construction d’action ; la forme attendue est `tout en différant`.",
+      "3": "Le second terme `différant` convient après `tout en`, tandis que `deux approches différant` ne porte pas l’accord adjectival ; il faut `deux approches différentes`.",
+      "4": "`différentes` est accordé avec le nom féminin pluriel `approches`, et `différant` exprime l’action après `tout en` sans varier.",
+      "A": "Une combinaison est correcte, celle de l’option 4 ; `Aucune` ne convient pas.",
+      "T": "Les options 1 à 3 comportent chacune une forme mal placée ; elles ne sont donc pas toutes correctes."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -91982,6 +92207,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T07:58:40Z"
+        }
       }
     }
   },
@@ -93042,14 +93276,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Règle : l'adjectif verbal décrit une qualité et s'écrit « négligent » (en -ent), accordé : des surveillants négligents. Le participe présent décrit l'action en cours, reste invariable et s'écrit « négligeant » (en -eant) : en négligeant ce détail. Dans cette phrase : « surveillants ___ » = qualité → négligents ; « en ___ ce détail » = action → négligeant. Donc : négligents / négligeant — option 2.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : dans « deux surveillants ___ », la forme en -ant/-ent attribue une propriété aux surveillants : c’est donc l’adjectif verbal, qui prend le pluriel. Sa graphie est « négligent », d’où « négligents ». Dans « en ___ ce détail », la forme exprime au contraire l’action de négliger et garde le complément « ce détail » : c’est le participe présent, qui reste invariable. Sa graphie est « négligeant », avec -eant. Le complément verbal « ce détail » est le point qui fait basculer vers le participe présent au second blanc.\nDonc : il faut écrire « négligents / négligeant » ; la réponse attendue est l’option 2.",
     "why": {
-      "1": "Les deux formes sont inversées : l'adjectif en -ent, le participe en -eant.",
-      "2": "Correct : adjectif accordé « négligents » (-ent) + participe invariable « négligeant » (-eant).",
-      "3": "« en négligents ce détail » : l'action en cours s'écrit avec le participe négligeant.",
-      "4": "« surveillants négligeant » : la qualité accordée s'écrit négligents (-ent).",
-      "A": "Il existe bien une option correcte : la 2.",
-      "T": "Les options 1, 3 et 4 confondent l'adjectif verbal et le participe présent."
+      "1": "Dans `surveillants négligeant`, la propriété attribuée au nom exige l’adjectif verbal pluriel `négligents`; dans `en négligents ce détail`, la forme garde un complément verbal et doit être le participe présent invariable `négligeant`.",
+      "2": "`surveillants négligents` emploie l’adjectif verbal accordé avec le nom masculin pluriel, tandis que `en négligeant ce détail` emploie le participe présent invariable qui gouverne le complément `ce détail`.",
+      "3": "Le premier blanc, `surveillants négligents`, convient, mais `en négligents ce détail` accorde à tort une forme qui exprime une action et garde un complément; il faut `en négligeant ce détail`.",
+      "4": "Le second blanc, `en négligeant ce détail`, convient, mais `surveillants négligeant` laisse à tort la propriété du nom sous une forme invariable; il faut l’adjectif pluriel `négligents`.",
+      "A": "Une option chiffrée est correcte, l’option 2; la réponse A ne convient donc pas.",
+      "T": "Une seule des quatre options chiffrées est correcte; la réponse T ne convient donc pas."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -93062,6 +93296,15 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T08:20:13Z"
+        }
       }
     }
   },
@@ -93296,14 +93539,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Règle : « faire appel À quelqu'un » ; pour des personnes au pluriel, on relie par « auxquels » (à + lesquels). Dans cette phrase : nous faisons appel À ces partenaires → les partenaires auxquels nous faisons appel. Donc : option 3.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : remettons l’antécédent dans une phrase simple : « nous faisons régulièrement appel aux partenaires extérieurs ». La locution `faire appel à` impose `à`. L’antécédent `les partenaires extérieurs` est masculin pluriel : `à` + `lesquels` se contracte en `auxquels`.\nDonc : la réponse attendue est l’option 3.",
     "why": {
-      "1": "« dont » reprend un « de » : « faire appel » se construit avec « à ».",
-      "2": "« que » ferait des partenaires un COD : on fait appel À eux (complément indirect).",
-      "3": "Correct : faire appel à → les partenaires auxquels nous faisons appel.",
-      "4": "« desquels » (= de lesquels) reprend un « de » : le verbe demande « à » → auxquels.",
-      "A": "Il existe bien une option correcte : la 3.",
-      "T": "Une seule option restitue le « à » de « faire appel à »."
+      "1": "`dont` représenterait un complément en `de`, mais la locution est `faire appel à` ; il faut `auxquels`.",
+      "2": "`que` ferait de `les partenaires extérieurs` un COD, alors que `faire appel à` exige un complément introduit par `à` ; il faut `auxquels`.",
+      "3": "`auxquels` conserve la préposition de `faire appel à` et porte le masculin pluriel de l’antécédent `les partenaires extérieurs`.",
+      "4": "`desquels` correspond à `de` + `lesquels`, tandis que la locution commande `à` ; la forme attendue est `auxquels`.",
+      "A": "Une option sur quatre est correcte, l’option 3 ; « Aucune » ne convient pas.",
+      "T": "Une seule option sur quatre est correcte ; « Toutes » ne convient pas."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -93313,9 +93556,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
+        "2": "regime_direct_suppose",
         "3": null,
-        "4": "UNK"
+        "4": "regime_de_suppose"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T07:52:04Z"
+        }
       }
     }
   },
@@ -95484,14 +95736,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : l'adjectif verbal décrit une qualité et s'écrit « influent » (en -ent), accordé : des parents influents. Le participe présent décrit l'action en cours, reste invariable et s'écrit « influant » (en -ant) : en influant sur les décisions. Dans cette phrase : « parents ___ » = qualité → influents ; « en ___ sur chaque décision » = action → influant. Donc : influents / influant — option 4.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : dans « des parents particulièrement ___ », la forme en -ant/-ent décrit les parents; l’adverbe « particulièrement » précise cette propriété. C’est l’adjectif verbal « influent », accordé au masculin pluriel : « influents ». Dans « en ___ sur chaque décision », la forme exprime l’action d’exercer une influence et garde le complément introduit par « sur » : c’est le participe présent « influant », qui reste invariable. Le fonctionnement verbal avec « sur chaque décision » est le point qui fait basculer vers le participe présent au second blanc.\nDonc : il faut écrire « influents / influant » ; la réponse attendue est l’option 4.",
     "why": {
-      "1": "Les deux formes sont inversées : l'adjectif en -ent, le participe en -ant.",
-      "2": "« en influents sur chaque décision » : l'action en cours s'écrit avec le participe influant.",
-      "3": "« des parents influant » : la qualité accordée s'écrit influents (-ent).",
-      "4": "Correct : adjectif accordé « influents » (-ent) + participe invariable « influant » (-ant).",
-      "A": "Il existe bien une option correcte : la 4.",
-      "T": "Les options 1, 2 et 3 confondent l'adjectif verbal et le participe présent."
+      "1": "Dans `parents influant`, la propriété du nom exige l’adjectif verbal pluriel `influents`; dans `en influents sur chaque décision`, l’action suivie de son complément exige le participe présent invariable `influant`.",
+      "2": "Le premier blanc, `parents influents`, respecte l’accord de l’adjectif verbal, mais `en influents sur chaque décision` accorde à tort la forme verbale; il faut `en influant sur chaque décision`.",
+      "3": "Le second blanc, `en influant sur chaque décision`, emploie bien le participe présent invariable, mais `parents influant` ne convient pas pour une propriété du nom pluriel; il faut `parents influents`.",
+      "4": "`parents influents` contient l’adjectif verbal accordé au masculin pluriel, et `en influant sur chaque décision` contient le participe présent invariable avec son complément.",
+      "A": "L’option 4 est une option chiffrée correcte; la réponse A est donc exclue.",
+      "T": "Trois options chiffrées sont fautives et seule l’option 4 convient; la réponse T est donc exclue."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -95504,6 +95756,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T08:20:13Z"
+        }
       }
     }
   },
@@ -96878,14 +97139,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Règle : « faire face À quelque chose » ; pour une chose, on relie par « auquel » (à + lequel). Dans cette phrase : l'école doit faire face À ce défi → le défi auquel l'école doit faire face. Donc : option 3.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « l’école doit faire face à ce défi budgétaire cette année ». La locution `faire face à` impose `à`. L’antécédent `le défi budgétaire` est masculin singulier : `à` + `lequel` se contracte en `auquel`.\nDonc : la réponse attendue est l’option 3.",
     "why": {
-      "1": "« dont » reprend un « de » : « faire face » se construit avec « à ».",
-      "2": "« que » ferait du défi un COD : « faire face à » a un complément indirect.",
-      "3": "Correct : faire face à → le défi auquel l'école doit faire face.",
-      "4": "« duquel » (= de lequel) reprend un « de » : le verbe demande « à » → auquel.",
-      "A": "Il existe bien une option correcte : la 3.",
-      "T": "Une seule option restitue le « à » de « faire face à »."
+      "1": "`dont` remplacerait un complément introduit par `de`, mais la locution est `faire face à` ; il faut `auquel`.",
+      "2": "`que` ferait de `le défi budgétaire` un COD, alors que `faire face à` exige un complément introduit par `à` ; il faut `auquel`.",
+      "3": "`auquel` conserve la préposition de `faire face à` et porte le masculin singulier de l’antécédent `le défi budgétaire`.",
+      "4": "`duquel` correspond à `de` + `lequel`, tandis que la locution commande `à` ; la forme attendue est `auquel`.",
+      "A": "Une option sur quatre est correcte, l’option 3 ; « Aucune » ne convient pas.",
+      "T": "Une seule option sur quatre est correcte ; « Toutes » ne convient pas."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -96895,9 +97156,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
+        "2": "regime_direct_suppose",
         "3": null,
-        "4": "UNK"
+        "4": "regime_de_suppose"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T07:52:04Z"
+        }
       }
     }
   },
@@ -98964,7 +99234,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "stem": "Les enseignants ___ à ce syndicat votent aujourd'hui ; en y ___, chacun accepte d'en respecter la charte.",
+    "stem": "Les ___ de ce syndicat votent aujourd'hui ; en y ___, chacun accepte d'en respecter la charte.",
     "options": [
       {
         "key": "1",
@@ -98992,14 +99262,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Règle : l'adjectif verbal décrit une qualité et s'écrit « adhérent » (en -ent), accordé : les enseignants adhérents. Le participe présent décrit l'action et reste invariable, écrit « adhérant » (en -ant) : en y adhérant. Dans cette phrase : « enseignants ___ » = qualité → adhérents ; « en y ___ » = action → adhérant. Donc : adhérents / adhérant — option 2.",
+    "explanation": "Règle : le nom ou l'adjectif « adhérent » s'écrit en -ent et varie en nombre ; le participe présent « adhérant » s'écrit en -ant et reste invariable.\nMéthode : 1. Observe la fonction de chaque forme. 2. Après un déterminant, choisis le nom et accorde-le. 3. Après « en », si la forme exprime une action, choisis le participe présent invariable. 4. Vérifie enfin la terminaison -ent ou -ant.\nDans cette phrase : au premier blanc, l'article « les » et le complément « de ce syndicat » imposent le nom pluriel « adhérents ». Au second, « en y ___ » exprime l'action d'adhérer au syndicat : il faut le participe présent invariable « adhérant ».\nDonc : il faut « adhérents / adhérant », soit l'option 2.",
     "why": {
-      "1": "Les deux formes sont inversées : l'adjectif en -ent, le participe en -ant.",
-      "2": "Correct : adjectif accordé « adhérents » (-ent) + participe invariable « adhérant » (-ant).",
-      "3": "« en y adhérents » : l'action en cours s'écrit avec le participe adhérant.",
-      "4": "« les enseignants adhérant » : la qualité accordée s'écrit adhérents (-ent).",
-      "A": "Il existe bien une option correcte : la 2.",
-      "T": "Les options 1, 3 et 4 confondent l'adjectif verbal et le participe présent."
+      "1": "Les formes sont inversées : après l'article « les », `adhérant` ne peut pas former le nom pluriel attendu, et après « en y », `adhérents` ne peut pas exprimer l'action.",
+      "2": "« Adhérents » est le nom pluriel introduit par « les » ; « adhérant » est le participe présent invariable après « en y ».",
+      "3": "Le premier blanc est correct, mais `en y adhérents` emploie un nom ou adjectif pluriel là où l'action exige le participe présent invariable « adhérant ».",
+      "4": "`Les adhérant de ce syndicat` ne fournit pas le nom pluriel régi par l'article « les » ; seul le second blanc, « en y adhérant », est correct.",
+      "A": "L'option 2 complète correctement les deux blancs ; « Aucune » est donc faux.",
+      "T": "Les options 1, 3 et 4 comportent au moins une forme fautive ; « Toutes » est donc faux."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -106846,7 +107116,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez le pronom relatif qui complète correctement la phrase.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -106874,14 +107144,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Règle : Le recteur exige à ; à + lequel se contracte et s’accorde avec l’antécédent. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 2.",
+    "explanation": "Règle : le pronom relatif se choisit d'après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l'on emploie une forme de « lequel » après « à », on choisit « auquel », « à laquelle », « auxquels » ou « auxquelles ».\nMéthode : 1. Remets l'antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu'une forme de « lequel » convient à cet antécédent. 4. Accorde « lequel » avec l'antécédent et applique, si nécessaire, la contraction avec « à ».\nDans cette phrase : la phrase simple est « tout prestataire doit se conformer à ces exigences ». Le verbe pronominal « se conformer » exige la préposition « à ». L'antécédent « les exigences » est non humain, féminin pluriel : « à + lesquelles » donne « auxquelles ».\nDonc : la forme correcte est « auxquelles », c'est-à-dire l'option 2.",
     "why": {
-      "1": "La forme `dont` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
-      "2": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
-      "3": "La forme `que` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
-      "4": "La forme `sur lesquelles` est fautive ici. La règle décrite dans le corrigé exige la réponse 2.",
-      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
-      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+      "1": "`dont` reprendrait un complément introduit par « de », mais on dit « se conformer à des exigences » et non `se conformer d'exigences`.",
+      "2": "« Auxquelles » porte la préposition « à » exigée par « se conformer à » et s'accorde au féminin pluriel avec « les exigences ».",
+      "3": "`que` reprendrait un complément direct, mais `se conformer les exigences` est impossible : la préposition « à » est obligatoire.",
+      "4": "`sur lesquelles` supposerait la construction `se conformer sur des exigences`, alors que ce verbe exige « à ».",
+      "A": "L'option 2 respecte le régime du verbe et l'accord du relatif ; « Aucune » est donc faux.",
+      "T": "Seule l'option 2 respecte la construction « se conformer à » ; « Toutes » est donc faux."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -106899,13 +107169,13 @@ const QUESTIONS = [
       "cognitive_mode": "analyse_structurelle",
       "writing_situation": null,
       "option_misconceptions": {
-        "1": "UNK",
+        "1": "regime_de_suppose",
         "2": null,
-        "3": "UNK",
-        "4": "UNK"
+        "3": "regime_a_non_identifie",
+        "4": "regime_sur_suppose"
       }
     },
-    "stem": "La responsable a rappelé les exigences ___ tout prestataire doit satisfaire avant la signature du contrat."
+    "stem": "La responsable a rappelé les exigences ___ tout prestataire doit se conformer avant la signature du contrat."
   },
   {
     "id": "solh50-020",
