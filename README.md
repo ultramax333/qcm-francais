@@ -20,6 +20,10 @@ quatre questions ambiguës ont reçu un contexte univoque et une consigne cardin
 L'ordre, les options et les clés sont inchangés. Déploiement par la PR GitHub `#3`, puis contrôle HTTP des fichiers servis. Toutes les questions portent une famille et un mécanisme grammatical fermés. Les
 détails, temps et causes de distracteur non prouvés restent `null` ou `UNK`.
 
+Candidate locale non encore publiée : release `questions-20260812-31d6f240`. Les deux derniers
+corrigés prioritaires (`orth-L27-1` et `orth-L36-7`) ont été validés ; la file est complète à 112/112.
+Leurs énoncés, options et clés sont inchangés.
+
 La carte **Accord du participe passé** est un menu déroulant. Elle conserve un
 entraînement général et propose aussi un entraînement ciblé pour les 22 sous-cas stables actifs
 `mechanism_id + detail_id` de la banque, regroupés en règles générales, infinitif,
