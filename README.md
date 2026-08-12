@@ -14,17 +14,14 @@ son `misconception_id` et son compteur ; une cause absente reste `UNK`.
 « Comment faire » en trois étapes. Famille, mécanisme, détail, temps, chemin canonique et
 codes de cause restent disponibles uniquement dans « Catégorie technique ».
 
-Production vérifiée le 12.08.2026 : version `1.25`, cache `qcm-op001-v125`, **1 747 questions uniques**,
-release `questions-20260812-48a36516`. Trente corrigés prioritaires supplémentaires ont été remédiés,
-quatre questions ambiguës ont reçu un contexte univoque et une consigne cardinale a été neutralisée.
-L'ordre, les options et les clés sont inchangés. Déploiement par la PR GitHub `#3`, puis contrôle HTTP des fichiers servis. Toutes les questions portent une famille et un mécanisme grammatical fermés. Les
-détails, temps et causes de distracteur non prouvés restent `null` ou `UNK`.
-
-Candidate locale non encore publiée : version `1.26`, cache `qcm-op001-v126`, release
+Version `1.26` du 12.08.2026 : cache `qcm-op001-v126`, **1 747 questions uniques**, release
 `questions-20260812-d0894bbb`. Les deux derniers corrigés prioritaires sont validés. Le tableau
 « Mes erreurs » affiche désormais une rubrique scolaire cherchable dans un Bescherelle, une règle
 courte, le résultat et un raccourci vers les seules questions effectivement ratées ; la méthode et
 les données techniques restent repliées.
+
+Toutes les questions portent une famille et un mécanisme grammatical fermés. Les détails, temps et
+causes de distracteur non prouvés restent `null` ou `UNK`.
 
 La carte **Accord du participe passé** est un menu déroulant. Elle conserve un
 entraînement général et propose aussi un entraînement ciblé pour les 22 sous-cas stables actifs
