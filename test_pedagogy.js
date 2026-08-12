@@ -295,6 +295,29 @@ assert.ok(
   'Le feedback Drive sur « se lever » doit produire un type de participe passé visible.'
 );
 
+const auditedParticiplePaths = {
+  'part-8': ['participe_suivi_infinitif/core', 'pronominal_cvd_avant/core'],
+  'part-9': ['mesure_duree_prix/core', 'pronominal_se_coi/sans_cod', 'participe_adjectival_selon_position/avant_stable', 'avoir_cvd_avant/core'],
+  'part-12': ['mesure_duree_prix/core', 'avoir_cvd_avant/core'],
+  'part-13': ['infinitif_sous_entendu_invariable/core', 'participe_suivi_infinitif/core'],
+  'part-29': ['participe_suivi_infinitif/core', 'impersonnel_participe_invariable/core', 'pronominal_se_coi/sans_cod', 'pronominal_se_coi/cod_avant'],
+  'part-39': ['pronominal_accord_sujet/essentiellement', 'participe_adjectival_selon_position/zone_facultative', 'infinitif_sous_entendu_invariable/core', 'pronominal_accord_sujet/autonome'],
+  'part-45': ['avoir_cvd_avant/core', 'pronominal_se_coi/cod_apres', 'pronominal_se_coi/sans_cod'],
+  'part-47': ['impersonnel_participe_invariable/core', 'avoir_cvd_avant/core', 'pronominal_se_coi/sans_cod'],
+  'part-L57-10': ['mesure_duree_prix/core', 'avoir_cvd_avant/core'],
+  'part-L63-7': ['mesure_duree_prix/core', 'avoir_cvd_avant/core'],
+};
+Object.entries(auditedParticiplePaths).forEach(([questionId, expectedPaths]) => {
+  const question = QUESTIONS.find((entry) => entry.id === questionId);
+  assert.ok(question, `Question auditée absente : ${questionId}`);
+  const actualPaths = [
+    `${question.hep.mechanism_id}/${question.hep.detail_id}`,
+    ...(question.hep.additional_rule_paths || [])
+      .map((path) => `${path.mechanism_id}/${path.detail_id}`),
+  ];
+  assert.deepStrictEqual(actualPaths, expectedPaths, `Chemins incomplets : ${questionId}`);
+});
+
 const summary = pedagogy.summarize([
   { id: 'q1', correct: false, family: 'accord_participe_passe', mechanismId: 'avoir_cvd_avant', misconceptionId: 'cod_apres_suppose' },
   { id: 'q2', correct: false, family: 'accord_participe_passe', mechanismId: 'avoir_cvd_avant', misconceptionId: null },

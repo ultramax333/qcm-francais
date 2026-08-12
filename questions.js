@@ -7684,7 +7684,15 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_cvd_avant",
+          "detail_id": "core",
+          "tense_id": "plus_que_parfait"
+        }
+      ]
     }
   },
   {
@@ -7748,9 +7756,9 @@ const QUESTIONS = [
       "additional_rule_paths": [
         {
           "family": "accord_participe_passe",
-          "mechanism_id": "fait_suivi_infinitif",
-          "detail_id": "core",
-          "tense_id": null
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "sans_cod",
+          "tense_id": "passe_compose"
         },
         {
           "family": "accord_participe_passe",
@@ -7944,7 +7952,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -8004,7 +8020,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "participe_suivi_infinitif",
+          "detail_id": "core",
+          "tense_id": "plus_que_parfait"
+        }
+      ]
     }
   },
   {
@@ -9016,9 +9040,9 @@ const QUESTIONS = [
         },
         {
           "family": "accord_participe_passe",
-          "mechanism_id": "pronominal_cvd_avant",
-          "detail_id": "core",
-          "tense_id": null
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "cod_avant",
+          "tense_id": "passe_compose"
         }
       ]
     }
@@ -9625,7 +9649,7 @@ const QUESTIONS = [
         {
           "family": "accord_participe_passe",
           "mechanism_id": "participe_adjectival_selon_position",
-          "detail_id": "avant_stable",
+          "detail_id": "zone_facultative",
           "tense_id": null
         },
         {
@@ -35270,7 +35294,21 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "cod_apres",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "sans_cod",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -35870,7 +35908,21 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": "passe_compose"
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_se_coi",
+          "detail_id": "sans_cod",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -73432,7 +73484,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {
@@ -76975,7 +77035,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "avoir_cvd_avant",
+          "detail_id": "core",
+          "tense_id": "passe_compose"
+        }
+      ]
     }
   },
   {

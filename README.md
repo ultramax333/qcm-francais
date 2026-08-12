@@ -14,8 +14,8 @@ son `misconception_id` et son compteur ; une cause absente reste `UNK`.
 « Comment faire » en trois étapes. Famille, mécanisme, détail, temps, chemin canonique et
 codes de cause restent disponibles uniquement dans « Catégorie technique ».
 
-Version `1.28` du 12.08.2026 : cache `qcm-op001-v128`, **1 747 questions uniques**, release
-`questions-20260812-62321c2b`. Les deux derniers corrigés prioritaires sont validés. Le tableau
+Version `1.29` du 12.08.2026 : cache `qcm-op001-v129`, **1 747 questions uniques**, release
+`questions-20260812-b641469e`. Les deux derniers corrigés prioritaires sont validés. Le tableau
 « Mes erreurs » affiche désormais une rubrique scolaire cherchable dans un Bescherelle, une règle
 courte, le résultat et un raccourci vers les seules questions effectivement ratées ; la méthode et
 les données techniques restent repliées.
@@ -25,6 +25,11 @@ les types précis issus de la taxonomie canonique. La règle et l’explication 
 volet « Voir la règle et l’explication » afin de ne pas surcharger la correction immédiate.
 Le chemin pronominal réfléchi de `eleves-L66-3`, signalé par le feedback Drive, est désormais inclus
 dans les types affichés ; aucun texte, aucune option et aucune clé n’ont changé.
+
+Les 114 questions de la famille applicative `participe` ont ensuite été relues individuellement.
+Dix métadonnées ont été précisées pour que chaque construction réellement testée apparaisse dans
+la correction et dans les statistiques. Le détail normativement variable `zone_facultative` reste
+visible pour l’élève, mais il est exclu de la pondération et de la génération.
 
 Toutes les questions portent une famille et un mécanisme grammatical fermés. Les détails, temps et
 causes de distracteur non prouvés restent `null` ou `UNK`.
