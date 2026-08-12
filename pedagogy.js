@@ -1839,6 +1839,37 @@
       .sort((a, b) => b.count - a.count || a.mechanismLabel.localeCompare(b.mechanismLabel, 'fr'));
   }
 
+  function participleTypeLabels(question) {
+    if (!question || !question.hep) return [];
+    const paths = [{
+      family: question.hep.family,
+      mechanism_id: question.hep.mechanism_id,
+      detail_id: question.hep.detail_id,
+      tense_id: question.hep.tense_id,
+    }].concat(question.hep.additional_rule_paths || []);
+    const labels = paths
+      .filter((path) => (
+        path.family === 'accord_participe_passe'
+        && path.mechanism_id
+        && path.mechanism_id !== 'UNK'
+      ))
+      .map((path) => {
+        const description = describe(
+          path.family,
+          path.mechanism_id,
+          path.tense_id || null,
+          path.detail_id || null
+        );
+        const detail = path.detail_id && path.detail_id !== 'core'
+          ? description.detailLabel
+          : null;
+        return detail
+          ? `${description.learnerTitle} — ${detail}`
+          : description.learnerTitle;
+      });
+    return Array.from(new Set(labels));
+  }
+
   return {
     LABELS_VERSION,
     TENSES,
@@ -1850,6 +1881,7 @@
     PATHS,
     DETAIL_PATHS,
     describe,
+    participleTypeLabels,
     summarize,
   };
 }));

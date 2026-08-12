@@ -14,11 +14,15 @@ son `misconception_id` et son compteur ; une cause absente reste `UNK`.
 « Comment faire » en trois étapes. Famille, mécanisme, détail, temps, chemin canonique et
 codes de cause restent disponibles uniquement dans « Catégorie technique ».
 
-Version `1.26` du 12.08.2026 : cache `qcm-op001-v126`, **1 747 questions uniques**, release
+Version `1.27` du 12.08.2026 : cache `qcm-op001-v127`, **1 747 questions uniques**, release
 `questions-20260812-d0894bbb`. Les deux derniers corrigés prioritaires sont validés. Le tableau
 « Mes erreurs » affiche désormais une rubrique scolaire cherchable dans un Bescherelle, une règle
 courte, le résultat et un raccourci vers les seules questions effectivement ratées ; la méthode et
 les données techniques restent repliées.
+
+Après une réponse portant sur un ou plusieurs participes passés, l’application affiche d’abord le ou
+les types précis issus de la taxonomie canonique. La règle et l’explication complètes restent dans un
+volet « Voir la règle et l’explication » afin de ne pas surcharger la correction immédiate.
 
 Toutes les questions portent une famille et un mécanisme grammatical fermés. Les détails, temps et
 causes de distracteur non prouvés restent `null` ou `UNK`.
