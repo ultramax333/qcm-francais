@@ -1,4 +1,4 @@
-// Fichier généré par le pipeline HEP; ne pas modifier manuellement.
+// Fichier généré par pipeline_HEP.py; ne pas modifier manuellement.
 const RULES = [
   {
     "id": "orthographe",
@@ -2542,7 +2542,7 @@ const QUESTIONS = [
     "id": "orth-49",
     "rule": "orthographe",
     "type": "sentences",
-    "instruction": "Quelle(s) phrase(s) est/sont correctement orthographiée(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -2570,14 +2570,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Toutes correctes : « auspices », « for intérieur », « prémices » (premiers signes), « détonne » (contraste). Réponse : Toutes.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : chacune des quatre propositions repose sur un mot dont la graphie s'apprend par l'usage, et chaque fois le sens attendu par le contexte oriente le choix. 1) « commence sous de bons ... » demande le sens « présages » : la forme attestée est « auspices », nom masculin pluriel figé dans la locution « sous de bons auspices ». 2) « dans son ... intérieur » demande le sens « au fond de sa conscience » : la forme attestée est « for », nom masculin invariable réduit à trois lettres. 3) « les ... du printemps se font sentir » demande le sens « les premiers signes » : la forme attestée est « prémices », féminin pluriel avec accent aigu et finale -ices. 4) « sa franchise ... dans ce milieu feutré » demande le sens « produit un contraste » : la forme attestée est « détonner », de la famille de « ton », avec deux n, conjugué ici « détonne ». Relu en entier, chaque énoncé garde le sens voulu avec la graphie écrite.\nDonc : les quatre phrases portent la graphie attestée du mot concerné, donc les quatre options chiffrées sont correctes et la réponse attendue est Toutes.",
     "why": {
-      "1": "Correcte : auspices = présages.",
-      "2": "Correcte : for intérieur (de forum).",
-      "3": "Correcte : premiers signes = prémices.",
-      "4": "Correcte : contraster = détonner.",
-      "A": "Les quatre sont correctes.",
-      "T": "Correct : aucune faute."
+      "1": "Le contexte impose le sens « sous des présages favorables ». Le mot d'usage qui porte ce sens est « auspices », employé au pluriel dans cette locution figée. La phrase reproduit exactement cette graphie attestée.",
+      "2": "Le contexte impose le sens « au fond de lui-même ». La locution attestée est « dans son for intérieur », où « for » est un nom masculin de trois lettres qui ne s'écrit ainsi que dans cet emploi. La phrase reprend cette forme.",
+      "3": "Le contexte impose le sens « les premiers signes annonciateurs ». Le nom attesté pour cette valeur est « prémices », avec accent aigu et finale -ices, toujours au féminin pluriel. La phrase l'emploie tel quel.",
+      "4": "Le contexte impose le sens « jurer, faire un contraste ». Le verbe attesté est « détonner », construit sur « ton » comme « tonner », avec deux n ; la troisième personne du singulier donne bien « détonne ».",
+      "A": "Comptage : le nombre de phrases correctes est de quatre, et non de zéro, donc Aucune ne convient pas.",
+      "T": "Les quatre mots d'usage examinés correspondent chacun au sens demandé par leur phrase et à leur graphie attestée : le total de quatre options correctes désigne Toutes."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -2609,7 +2609,16 @@ const QUESTIONS = [
           "detail_id": "core",
           "tense_id": null
         }
-      ]
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20260805-9575",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:52:50Z"
+        }
+      }
     }
   },
   {
@@ -3036,7 +3045,7 @@ const QUESTIONS = [
     "id": "orth-59",
     "rule": "orthographe",
     "type": "sentences",
-    "instruction": "Quelle(s) phrase(s) est/sont correctement orthographiée(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -3064,14 +3073,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Toutes correctes : « au bout du compte », « aller de pair », « hormis », « empreint de ». Réponse : Toutes.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : chaque proposition contient une locution dont la graphie relève de l'usage, à vérifier mot à mot. 1) « au bout du compte » signifie « finalement » et garde « compte », nom tiré du verbe compter, comme dans « faire le compte ». 2) « vont de pair » signifie « vont ensemble, sur un pied d'égalité » et garde « pair », mot masculin terminé par -air, sans e final. 3) « hormis un paragraphe » signifie « excepté un paragraphe » : la forme attestée s'écrit en un seul mot terminé par s, y compris devant un nom singulier. 4) « empreint d'émotion » signifie « marqué, imprégné d'émotion » et s'appuie sur la famille d'empreindre et d'empreinte ; « a clos la séance » emploie « clos », participe attesté du verbe clore. Relues en entier, les quatre phrases conservent le sens annoncé.\nDonc : aucune des quatre graphies ne s'écarte de la forme attestée, donc les quatre options chiffrées sont correctes et la réponse attendue est Toutes.",
     "why": {
-      "1": "Correcte : le compte (calcul).",
-      "2": "Correcte : de pair (égalité), sans e.",
-      "3": "Correcte : hormis soudé.",
-      "4": "Correcte : empreint = imprégné.",
-      "A": "Les quatre sont correctes.",
-      "T": "Correct : aucune faute."
+      "1": "Le sens demandé est « en définitive ». La locution attestée est « au bout du compte », avec le nom « compte » de la famille de compter et de décompte, ce que la phrase respecte.",
+      "2": "Le sens demandé est « ensemble, l'un avec l'autre ». Dans « aller de pair », le mot figé est « pair », masculin en -air comme dans « nombre pair » ; la phrase l'écrit bien sans e.",
+      "3": "Le sens demandé est « sauf, excepté ». La préposition attestée est « hormis », soudée en un seul mot et toujours terminée par s ; la phrase reproduit cette graphie invariable.",
+      "4": "Le sens demandé est « imprégné d'émotion » : la forme attestée est « empreint », de la famille d'empreinte. Le participe « clos », qui appartient au verbe clore, est lui aussi la forme attestée dans « a clos la séance ».",
+      "A": "Comptage : quatre phrases sur quatre sont correctes, ce qui exclut Aucune.",
+      "T": "Chacune des quatre locutions examinées correspond au sens exigé par sa phrase et à sa graphie attestée : quatre options correctes se traduisent par Toutes."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -3089,6 +3098,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-9575",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T06:00:19Z"
+        }
       }
     }
   },
@@ -3461,7 +3479,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quelle(s) phrase(s) est/sont correctement écrite(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -3489,14 +3507,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Toutes correctes : « à dessein » (intentionnellement), « décerner », « à l'envi » (sans e), « s'infecter ». Réponse : Toutes.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : chaque proposition met en jeu un mot ou une locution qu'aucune règle productive ne permet de reconstruire, et dont il faut vérifier le sens puis la graphie attestée. 1) « il a agi à dessein » signifie « il a agi volontairement » : la forme attestée est « dessein », nom terminé par -ein, de la famille de l'idée de projet. 2) « lui a décerné le premier prix » signifie « lui a attribué solennellement » : le verbe attesté est « décerner », avec un seul r et la finale -cerner. 3) « ils louaient ses mérites à l'envi » signifie « à qui mieux mieux, en rivalisant » : la locution attestée est « à l'envi », sans e final. 4) « la plaie risque de s'infecter » signifie « d'être envahie par une infection » : le verbe attesté est « infecter », avec le groupe -ct- de la famille d'infection. Relu en entier, chaque énoncé reste cohérent avec ces sens.\nDonc : les quatre graphies correspondent aux formes attestées, donc les quatre options chiffrées sont correctes et la réponse attendue est Toutes.",
     "why": {
-      "1": "Correcte : à dessein = volontairement.",
-      "2": "Correcte : décerner un prix.",
-      "3": "Correcte : à l'envi, sans e final.",
-      "4": "Correcte : contamination = s'infecter.",
-      "A": "Les quatre sont correctes.",
-      "T": "Correct : aucune faute."
+      "1": "Le contexte demande le sens « intentionnellement ». La locution attestée est « à dessein », avec le nom « dessein » en -ein qui désigne l'intention ; la phrase l'écrit ainsi.",
+      "2": "Le contexte demande le sens « attribuer une distinction ». Le verbe attesté est « décerner », de la même famille que « décernement » d'un prix ; le participe « décerné » en découle directement.",
+      "3": "Le contexte demande le sens « en rivalisant, à qui mieux mieux ». La locution attestée est « à l'envi », graphie fixe sans e final, distincte du nom « envie » qui désignerait un désir ; c'est bien la forme écrite ici.",
+      "4": "Le contexte demande le sens « être atteinte par une infection ». Le verbe attesté est « infecter », qui garde le groupe -ct- de « infection » et de « infectieux » ; la forme pronominale « s'infecter » respecte cette graphie.",
+      "A": "Comptage : quatre phrases correctes sur quatre, donc Aucune est exclu.",
+      "T": "Les quatre mots d'usage examinés portent chacun le sens exigé par leur phrase et leur graphie attestée : quatre options correctes donnent Toutes."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -3509,6 +3527,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-9575",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T06:00:19Z"
+        }
       }
     }
   },
@@ -10760,7 +10787,7 @@ const QUESTIONS = [
     "id": "rel-19",
     "rule": "relatifs",
     "type": "sentences",
-    "instruction": "Quelle(s) phrase(s) emploie(nt) le bon pronom relatif ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -10788,14 +10815,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Toutes correctes : « préparé À » → auquel (1) ; « la manière dont » (2) ; « reposer SUR » → sur lequel (3) ; « traiter AVEC » → avec lesquels (4). Réponse : Toutes.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : chaque proposition se vérifie en reconstruisant sa phrase simple et en relevant la préposition exigée. 1) « nous sommes préparés à ce défi » : « être préparé à » impose « à », et l’antécédent non humain masculin singulier donne « à + lequel », soit « auquel ». 2) « il s’exprime de cette manière » : le régime est en « de », et « dont » absorbe cette préposition, d’où « la manière dont ». 3) « tout repose sur ce principe » : « reposer sur » impose « sur », qui reste écrit devant la forme de lequel accordée au masculin singulier, « sur lequel ». 4) « nous traitons avec ces partenaires » : « traiter avec » impose « avec », et une forme de lequel au masculin pluriel, « lesquels », est admise après cette préposition.\nDonc : les quatre propositions expriment la préposition réellement exigée et accordent correctement le relatif; la réponse attendue est « Toutes ».",
     "why": {
-      "1": "Correcte : « être préparé à » → auquel.",
-      "2": "Correcte : tournure figée « la manière dont ».",
-      "3": "Correcte : « reposer sur » → sur lequel.",
-      "4": "Correcte : « traiter avec » → avec lesquels.",
-      "A": "Les quatre relatifs sont corrects.",
-      "T": "Correct : toutes les phrases sont correctes."
+      "1": "La phrase de base est « nous sommes préparés à ce défi » : la préposition « à » est bien portée par le relatif et se contracte avec « lequel » pour donner « auquel », forme du masculin singulier de « un défi ».",
+      "2": "La phrase de base est « il s’exprime de cette manière » : le régime en « de » est absorbé par « dont », ce qui explique qu’aucune préposition ne soit écrite devant le relatif.",
+      "3": "La phrase de base est « tout repose sur ce principe » : « sur » n’a pas de forme contractée avec le relatif et reste donc visible devant « lequel », accordé au masculin singulier.",
+      "4": "La phrase de base est « nous traitons avec ces partenaires » : « avec » reste visible devant la forme de lequel, accordée au masculin pluriel en « lesquels ».",
+      "A": "Les quatre propositions chiffrées expriment la préposition attendue; « Aucune » supposerait qu’aucune ne le fasse.",
+      "T": "Quatre régimes différents ont été vérifiés un à un et sont tous satisfaits, sans préposition manquante ni accord erroné : le décompte de quatre propositions correctes conduit à « Toutes »."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -10813,6 +10840,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-2006",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T18:58:34Z"
+        }
       }
     }
   },
@@ -10908,14 +10944,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "La phrase de base est « il a progressé GRÂCE AU tutorat » : la locution complète doit être conservée → « grâce auquel ».",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase de base est « il a tant progressé grâce au tutorat ». Le complément n'est pas commandé par le verbe seul, mais par la locution « grâce à », qui exprime le moyen ayant permis la progression. Quand une locution introduit le complément, elle passe entière dans la relative : on garde « grâce », puis on choisit la forme de lequel qui convient à l'antécédent. « Le tutorat » est un nom non humain, masculin singulier, donc à + lequel se contracte en « auquel », et l'ensemble donne « grâce auquel ». Si l'on supprime « grâce », la phrase perd la valeur de moyen et laisse un complément que le verbe « progresser » ne commande pas.\nDonc : la forme complète « grâce auquel » est seule à restituer la phrase de base, et la réponse attendue est l'option 2.",
     "why": {
-      "1": "« dont » (= de) ne restitue pas « grâce à ».",
-      "2": "Correct : grâce au tutorat → grâce auquel.",
-      "3": "« duquel » : mauvaise préposition, et incomplet.",
-      "4": "« auquel » seul perd le « grâce » indispensable au sens.",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      "T": "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "`dont` suppose un complément introduit par « de », alors que la phrase de base contient « grâce au tutorat » ; le rapport de moyen disparaît en outre complètement. La forme attendue est « grâce auquel ».",
+      "2": "La locution « grâce à » est conservée entière et suivie de la forme de lequel qui convient à l'antécédent : « le tutorat » est masculin singulier et non humain, donc à + lequel donne « auquel ». La relative se laisse remettre mot pour mot dans la phrase de base « il a tant progressé grâce au tutorat ».",
+      "3": "`duquel` repose sur « de », qui ne figure pas dans la phrase de base, et laisse par ailleurs la locution incomplète. La forme attendue est « grâce auquel ».",
+      "4": "`auquel` garde la préposition « à » mais abandonne « grâce » : la phrase de base deviendrait « il a progressé au tutorat », que le verbe ne commande pas. La forme attendue est « grâce auquel ».",
+      "A": "Une option chiffrée, la deuxième, résiste au contrôle : « Aucune » ne peut donc pas être la réponse.",
+      "T": "Trois des quatre options chiffrées sont fautives : « Toutes » ne peut donc pas être la réponse."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -10931,8 +10967,17 @@ const QUESTIONS = [
       "option_misconceptions": {
         "1": "regime_de_suppose",
         "2": null,
-        "3": "UNK",
+        "3": "regime_de_suppose",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-3554",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T19:48:35Z"
+        }
       }
     }
   },
@@ -11268,14 +11313,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "« souscrire À quelque chose » → « auxquelles ». Le piège : croire le verbe direct (« que ») ou en « de » (« dont »).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « nous avons souscrit à ces conditions ». Le verbe « souscrire » au sens d’adhérer, d’accepter, se construit avec « à » : on souscrit à des conditions, à un engagement. La préposition ne peut pas rester seule dans la subordonnée, c’est donc le relatif qui la porte. L’antécédent « les conditions » est un nom non humain, féminin pluriel : la forme de lequel est « lesquelles », et la contraction « à + lesquelles » donne « auxquelles ».\nDonc : le relatif attendu est « auxquelles », c’est-à-dire l’option 2.",
     "why": {
-      "1": "« dont » suppose « de » : souscrire exige « à ».",
-      "2": "Correct : souscrire à → auxquelles.",
-      "3": "« que » suppose un COD : faux.",
-      "4": "« desquelles » : mauvaise préposition.",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      "T": "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "`dont` porte la préposition « de », mais la phrase de base est « souscrire à ces conditions »; la forme attendue est « auxquelles ».",
+      "2": "« auxquelles » réunit les deux exigences : la préposition « à » de « souscrire à », et l’accord de la forme de lequel avec l’antécédent non humain féminin pluriel « les conditions », par la contraction « à + lesquelles ».",
+      "3": "`que` est le relatif du complément direct, comme dans « les conditions que nous avons acceptées »; ici le verbe demande « à », donc « auxquelles ».",
+      "4": "`desquelles` correspond à « de lesquelles » et suppose de nouveau un régime en « de »; « souscrire » demande « à », d’où « auxquelles ».",
+      "A": "Une proposition chiffrée porte le relatif attendu; « Aucune » ne peut donc pas convenir.",
+      "T": "Trois propositions chiffrées se trompent de préposition; « Toutes » exigerait que les quatre conviennent."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -11291,8 +11336,17 @@ const QUESTIONS = [
       "option_misconceptions": {
         "1": "regime_de_suppose",
         "2": null,
-        "3": "regime_a_non_identifie",
-        "4": "UNK"
+        "3": "regime_direct_suppose",
+        "4": "regime_de_suppose"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-2006",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T18:58:34Z"
+        }
       }
     }
   },
@@ -11928,14 +11982,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "« adhérer À » et « verser (une cotisation) À » : les deux verbes exigent « à » → « à laquelle » deux fois. Le piège : chercher à varier.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : il y a deux lacunes, donc deux phrases de base à reconstituer à partir du même antécédent « l'association ». Première lacune : « il adhère à cette association depuis dix ans » ; la construction impose « à ». Deuxième lacune : « il verse une cotisation à cette association » ; la cotisation est le complément direct, et l'association est le complément indirect, également introduit par « à ». L'antécédent est un nom non humain, féminin singulier : une forme de lequel convient, et à + laquelle donne « à laquelle », sans contraction au féminin singulier. Les deux lacunes réclament donc la même forme, et la variation n'apporte ici aucun argument : seule la préposition exigée par chaque verbe compte.\nDonc : les deux blancs reçoivent « à laquelle », et la réponse attendue est l'option 3.",
     "why": {
-      "1": "1er « dont » fautif : adhérer À → à laquelle.",
-      "2": "2e « dont » fautif : verser À → à laquelle.",
-      "3": "Correct : deux constructions en « à ».",
-      "4": "Aucun des deux verbes ne se construit avec « de ».",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Les options 1, 2 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "Le premier `dont` suppose un complément en « de », alors que la phrase de base est « il adhère à cette association ». La forme attendue est « à laquelle », comme dans la seconde partie de cette option.",
+      "2": "Le second `dont` suppose un complément en « de », alors que la phrase de base est « il verse une cotisation à cette association ». La forme attendue est « à laquelle ».",
+      "3": "Les deux verbes commandent le même complément indirect : on adhère à une association et on verse une cotisation à une association. L'antécédent est féminin singulier et non humain, donc la forme de lequel appropriée est « à laquelle » dans les deux blancs, la répétition étant ici la conséquence normale des deux constructions.",
+      "4": "Les deux `dont` supposent chaque fois un complément en « de », alors qu'aucun des deux verbes ne se construit ainsi. Les formes attendues sont « à laquelle » et « à laquelle ».",
+      "A": "Une option chiffrée, la troisième, résiste au contrôle : « Aucune » ne peut donc pas être la réponse.",
+      "T": "Trois des quatre options chiffrées comportent au moins un relatif fautif : « Toutes » ne peut donc pas être la réponse."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -11953,6 +12007,15 @@ const QUESTIONS = [
         "2": "regime_de_suppose",
         "3": null,
         "4": "regime_de_suppose"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-3554",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T19:48:35Z"
+        }
       }
     }
   },
@@ -12168,14 +12231,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "« s'attendre À quelque chose » → « auquel personne ne s'attendait ».",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « personne ne s’attendait à ce scénario ». Le verbe pronominal « s’attendre » exige la préposition « à », et cette préposition doit être portée par le relatif. L’antécédent « le scénario » est un nom non humain, masculin singulier : la forme de lequel est « lequel », et la contraction « à + lequel » donne « auquel ». Deux vérifications comptent donc ici : la préposition, qui doit être « à », et la nature de l’antécédent, qui n’est pas une personne et interdit « qui » après la préposition.\nDonc : le relatif attendu est « auquel », c’est-à-dire l’option 3.",
     "why": {
-      "1": "« dont » suppose « de » : s'attendre exige « à ».",
-      "2": "« que » suppose un verbe direct : faux.",
-      "3": "Correct : s'attendre à → auquel.",
-      "4": "« à qui » : réservé aux personnes.",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Les options 1, 2 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "`dont` porte « de », alors que la phrase de base est « s’attendre à ce scénario »; la forme attendue est « auquel ».",
+      "2": "`que` suppose un complément direct, comme « le scénario que personne n’imaginait »; « s’attendre » impose « à », donc « auquel ».",
+      "3": "« auquel » porte la préposition « à » de « s’attendre à » et correspond à un antécédent non humain masculin singulier, par la contraction « à + lequel ».",
+      "4": "`à qui` a bien la préposition « à », mais « qui » après préposition reprend une personne, comme « la collègue à qui je pense »; l’antécédent est ici « le scénario », donc « auquel ».",
+      "A": "Une proposition chiffrée porte le relatif attendu; « Aucune » ne peut donc pas convenir.",
+      "T": "Trois propositions chiffrées échouent sur la préposition ou sur la nature de l’antécédent; « Toutes » exigerait que les quatre conviennent."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -12190,9 +12253,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
+        "2": "regime_direct_suppose",
         "3": null,
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-2006",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T18:58:34Z"
+        }
       }
     }
   },
@@ -12288,14 +12360,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "« se charger DE » → dont ; « aboutir À » → auquel. Deux régimes opposés dans la même phrase.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : un seul antécédent, « le guichet », est repris par deux relatives qui ont chacune leur verbe, donc chacune sa préposition. Première relative : « elle se charge de ce guichet » — « se charger » exige « de », et ce « de » est absorbé par « dont ». Seconde relative : « toutes les réclamations aboutissent à ce guichet » — « aboutir » exige « à », et comme l’antécédent est un nom non humain masculin singulier, « à + lequel » donne « auquel ». Le piège tient à ce que le même antécédent impose deux relatifs différents : il faut reconstruire séparément chaque phrase simple au lieu d’aligner les deux blancs.\nDonc : le premier blanc demande « dont » et le second « auquel », c’est-à-dire l’option 1.",
     "why": {
-      "1": "Correct : se charger de (dont) + aboutir à (auquel).",
-      "2": "Les deux inversés.",
-      "3": "2e « dont » fautif : aboutir À.",
-      "4": "1er « auquel » fautif : se charger DE.",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Les options 2, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "Les deux relatives sont traitées séparément : « dont » absorbe le « de » de « se charger de ce guichet », et « auquel » porte le « à » de « aboutir à ce guichet », accordé au masculin singulier.",
+      "2": "Les deux relatifs sont intervertis. `auquel elle se charge` prête à « se charger » un régime en « à » : il faut « dont elle se charge ». Et `dont aboutissent toutes les réclamations` remplace le « à » d’« aboutir à » par un « de » : il faut « auquel aboutissent toutes les réclamations ».",
+      "3": "Le premier « dont » convient, mais le second, dans `et dont aboutissent toutes les réclamations`, impose un « de » là où « aboutir » exige « à »; la forme attendue pour ce second blanc est « auquel ».",
+      "4": "Le second « auquel » convient, mais le premier, dans `auquel elle se charge`, impose un « à » là où « se charger » exige « de »; la forme attendue pour ce premier blanc est « dont ».",
+      "A": "Une combinaison chiffrée satisfait les deux verbes; « Aucune » ne peut donc pas convenir.",
+      "T": "Trois combinaisons chiffrées se trompent sur au moins un des deux régimes; « Toutes » exigerait que les quatre conviennent."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -12313,6 +12385,15 @@ const QUESTIONS = [
         "2": "regime_de_suppose",
         "3": "regime_de_suppose",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-2006",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T18:58:34Z"
+        }
       }
     }
   },
@@ -12560,7 +12641,7 @@ const QUESTIONS = [
     "id": "rel-49",
     "rule": "relatifs",
     "type": "sentences",
-    "instruction": "Quelle(s) phrase(s) emploie(nt) le bon pronom relatif ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -12588,14 +12669,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Toutes correctes : « grâce à », « auprès de » + personne, « responsable de » → dont, « tenir à » → auxquelles. Réponse : Toutes.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : on remet chaque antécédent dans une phrase simple pour lire la préposition exigée. 1) « nous avons tenu grâce à ces moyens » : la locution impose « à », l’antécédent « les moyens » est un nom non humain masculin pluriel, donc la forme de lequel est « lesquels » et la contraction « à + lesquels » donne « auxquels ». 2) « il s’informe auprès de la juriste » : la locution impose « de » et l’antécédent est humain, ce qui autorise « qui » après la préposition. 3) « il est responsable de ce budget » : le « de » du régime est absorbé par « dont », qui contient déjà cette préposition. 4) « elle tient à ces valeurs » : « tenir à » impose « à », l’antécédent « les valeurs » est non humain féminin pluriel, donc « à + lesquelles » donne « auxquelles ».\nDonc : chaque proposition porte la préposition réellement exigée et accorde correctement le relatif avec son antécédent; la réponse attendue est « Toutes ».",
     "why": {
-      "1": "Correcte : grâce à → grâce auxquels.",
-      "2": "Correcte : s'informer auprès de → auprès de qui.",
-      "3": "Correcte : responsable de → dont.",
-      "4": "Correcte : tenir à → auxquelles.",
-      "A": "Les quatre sont correctes.",
-      "T": "Correct : aucun relatif fautif."
+      "1": "La phrase de base est « nous avons tenu grâce à ces moyens » : la préposition « à » de la locution « grâce à » est bien portée par le relatif, et « auxquels » reprend un antécédent non humain masculin pluriel.",
+      "2": "La phrase de base est « il s’informe auprès de la juriste » : la préposition « de » reste visible dans « auprès de », et « qui » est admis après préposition parce que l’antécédent « la juriste » désigne une personne.",
+      "3": "La phrase de base est « il est responsable de ce budget » : « dont » contient déjà le « de » du régime, ce qui explique qu’aucune préposition ne soit répétée devant le relatif.",
+      "4": "La phrase de base est « elle tient à ces valeurs » : « tenir à » exige « à », et la contraction avec un antécédent non humain féminin pluriel produit « auxquelles ».",
+      "A": "Les quatre propositions chiffrées respectent le régime de leur verbe; « Aucune » supposerait qu’aucune ne le fasse.",
+      "T": "Les quatre régimes vérifiés un à un sont satisfaits et aucun relatif ne porte de préposition erronée : le décompte de quatre propositions correctes conduit à « Toutes »."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -12613,6 +12694,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-2006",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T18:58:34Z"
+        }
       }
     }
   },
@@ -12953,14 +13043,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "« se heurter À quelque chose » → le relatif attendu est « auxquels », non proposé. Réponse : Aucune.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « ils se sont heurtés à ces obstacles ». Le verbe pronominal « se heurter » exige la préposition « à » lorsqu’il désigne la rencontre d’une difficulté, et cette préposition doit être portée par le relatif. L’antécédent « les obstacles » est un nom non humain, masculin pluriel : la forme de lequel est « lesquels », et la contraction « à + lesquels » donne « auxquels ». On cherche donc « auxquels » parmi les propositions, et l’on constate qu’aucune ne le propose : trois portent une autre préposition et une supprime toute préposition.\nDonc : le relatif attendu, « auxquels », est absent des propositions chiffrées, et la réponse attendue est « Aucune ».",
     "why": {
-      "1": "« dont » suppose « de » : se heurter exige « à ».",
-      "2": "« que » suppose un verbe direct : faux.",
-      "3": "« desquels » : mauvaise préposition et réservé aux locutions.",
-      "4": "« sur lesquels » : mauvaise préposition.",
-      "A": "Correct : la forme attendue « auxquels » n'est pas proposée.",
-      "T": "Aucune option chiffrée ne convient."
+      "1": "`dont` porte « de », alors que la phrase de base est « se heurter à ces obstacles »; la forme attendue est « auxquels ».",
+      "2": "`que` suppose un complément direct, comme « les obstacles que nous avons franchis »; « se heurter » impose ici « à », donc « auxquels ».",
+      "3": "`desquels` équivaut à « de lesquels » et suppose de nouveau un régime en « de »; la préposition exigée est « à », d’où « auxquels ».",
+      "4": "`sur lesquels` exprime la préposition « sur », qui conviendrait à « compter sur » ou « reposer sur », mais pas à « se heurter à »; la forme attendue est « auxquels ».",
+      "A": "Le relatif exigé par « se heurter à », avec un antécédent non humain masculin pluriel, est « auxquels »; cette forme ne figure dans aucune proposition chiffrée, et les quatre relatifs proposés expriment un autre régime ou aucun. C’est donc « Aucune » qui convient.",
+      "T": "Aucune proposition chiffrée ne porte la préposition « à »; « Toutes » exigerait que les quatre conviennent."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -12970,9 +13060,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
-        "3": "UNK",
-        "4": "UNK"
+        "2": "regime_direct_suppose",
+        "3": "regime_de_suppose",
+        "4": "regime_sur_suppose"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-2006",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T18:58:34Z"
+        }
       }
     }
   },
@@ -19466,7 +19565,7 @@ const QUESTIONS = [
     "id": "eleves-36",
     "rule": "eleves",
     "type": "sentences",
-    "instruction": "Quelle phrase d'élève est correctement écrite ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -19494,14 +19593,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Quatre locutions mal orthographiées : « D'ORES et déjà », « PARMI » (jamais de s), « QUEL QUE soit », « y COMPRIS ». Réponse : Aucune.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : chaque production d'élève contient une locution figée dont la graphie doit être mémorisée telle qu'elle est attestée. 1) le sens visé est « dès maintenant » : la forme attestée est « d'ores et déjà », en quatre éléments avec une apostrophe ; la copie écrit `dores`, un mot unique qui fait disparaître cette apostrophe. 2) le sens visé est « au milieu de » : la préposition attestée est « parmi », qui ne porte jamais de s ; la copie écrit `Parmis`. 3) le sens visé est « peu importe notre âge » : devant le verbe être, la forme attestée s'écrit en deux mots, « quel que soit » ; la copie écrit `quelque soit` en un seul mot. 4) le sens visé est « y inclus » : la locution attestée est « y compris », terminée par s ; la copie écrit `y comprit`. Relues en entier, les quatre phrases contiennent donc chacune une graphie qui n'est pas la forme attestée.\nDonc : aucune des quatre options chiffrées ne présente une locution correctement écrite, et la réponse attendue est Aucune.",
     "why": {
-      "1": "« dores » : la locution s'écrit « d'ores et déjà ».",
-      "2": "« Parmis » : parmi ne prend jamais de s.",
-      "3": "« quelque soit » : devant être → quel que soit.",
-      "4": "« y comprit » : la locution est « y compris ».",
-      "A": "Correct : les quatre locutions sont fautives.",
-      "T": "Aucune n'est correcte."
+      "1": "La forme fautive est `dores`. Le sens « dès à présent » correspond à la locution attestée « d'ores et déjà », dont le premier élément est le mot « ores » précédé de la préposition élidée « de ». La forme attendue est donc « d'ores et déjà ».",
+      "2": "La forme fautive est `Parmis`. La préposition attestée est « parmi », graphie fixe sans s final, quel que soit le nombre du nom qui suit. La forme attendue est « Parmi les solutions proposées ».",
+      "3": "La forme fautive est `quelque soit`. Devant le verbe être, l'usage attesté sépare les deux éléments : « quel que soit notre âge ». La forme attendue est donc « quel que soit », en deux mots.",
+      "4": "La forme fautive est `y comprit`. La locution attestée se termine par s, comme dans « tous y compris » ; il ne s'agit pas ici du passé simple du verbe comprendre. La forme attendue est « y compris des plus jeunes ».",
+      "A": "Les quatre locutions examinées s'écartent chacune de leur graphie attestée : le nombre de phrases correctes est de zéro, ce qui désigne Aucune.",
+      "T": "Comptage : zéro phrase correcte sur quatre, donc Toutes est exclu."
     },
     "gen": {
       "model": "Fable 5",
@@ -19539,7 +19638,16 @@ const QUESTIONS = [
           "detail_id": "avant_stable",
           "tense_id": null
         }
-      ]
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20260805-9575",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:52:50Z"
+        }
+      }
     }
   },
   {
@@ -19768,7 +19876,7 @@ const QUESTIONS = [
     "id": "eleves-40",
     "rule": "eleves",
     "type": "sentences",
-    "instruction": "Quelle phrase d'élève est correctement écrite ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -19796,14 +19904,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "« croire À » → auquel, « s'engager POUR » → pour lequel : la 4 est correcte. Ailleurs : « AUQUEL je m'intéresse », « voilà pourquoi » (sans que), « QUI me tient à cœur ».",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : chaque proposition se juge séparément, en remettant d'abord le mot repris dans une phrase simple. Option 1 : la phrase de base est « je m'intéresse à l'écologie » ; la construction impose « à », l'antécédent « sujet » est un nom non humain, donc le relatif attendu est « auquel » (à + lequel). Option 2 : « voilà pourquoi » annonce déjà la conséquence à lui seul et n'ouvre aucune subordonnée relative ; rien ne justifie un second mot de liaison. Option 3 : la phrase de base est « ce thème me tient à cœur » ; le thème y occupe la fonction sujet, et le relatif sujet est « qui ». Option 4 : deux phrases de base se cachent ici, « je crois à ce combat » et « je suis prêt à m'engager pour ce combat » ; la première impose « à » et donne « auquel », la seconde impose « pour » et donne « pour lequel », tous deux au masculin singulier comme « combat ».\nDonc : une seule proposition aligne chaque relatif sur la préposition exigée par son propre verbe, et la réponse attendue est l'option 4.",
     "why": {
-      "1": "« que » : s'intéresser À → auquel.",
-      "2": "« pourquoi que » : le « que » est de trop.",
-      "3": "« dont il me tient » : le thème est sujet → qui me tient à cœur.",
-      "4": "Correcte : auquel (croire à) + pour lequel (s'engager pour).",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Les options 1, 2 et 3 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "`que` reprend un complément direct, alors que la phrase de base est « je m'intéresse à l'écologie » : la construction impose « à » et l'antécédent « sujet » est non humain. La forme attendue est « un sujet auquel je m'intéresse depuis longtemps ».",
+      "2": "`pourquoi que` : « voilà pourquoi » est une tournure complète qui n'introduit pas de proposition relative ; le mot ajouté n'exerce aucune fonction dans la suite de la phrase. La forme attendue est « Voilà pourquoi je défends cette idée dans ma conclusion ».",
+      "3": "`dont il me tient` : en remettant la phrase à plat, on obtient « ce thème me tient à cœur », où le thème est sujet du verbe ; « dont » reprendrait au contraire un complément introduit par « de ». La forme attendue est « C'est un thème qui me tient vraiment à cœur ».",
+      "4": "Les deux relatifs portent chacun la préposition de leur propre verbe : « croire à ce combat » donne à + lequel, contracté en « auquel » au masculin singulier comme l'antécédent, et « s'engager pour ce combat » donne « pour lequel ». Aucun autre mot de liaison n'est ajouté et la phrase de base se reconstitue mot pour mot.",
+      "A": "Une option chiffrée, la quatrième, résiste au contrôle : « Aucune » ne peut donc pas être la réponse.",
+      "T": "Trois des quatre options chiffrées échouent à ce contrôle : « Toutes » ne peut donc pas être la réponse."
     },
     "gen": {
       "model": "Fable 5",
@@ -19817,9 +19925,9 @@ const QUESTIONS = [
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
-        "1": "UNK",
+        "1": "regime_direct_suppose",
         "2": "UNK",
-        "3": "UNK",
+        "3": "regime_de_suppose",
         "4": null
       },
       "additional_rule_paths": [
@@ -19835,7 +19943,16 @@ const QUESTIONS = [
           "detail_id": "core",
           "tense_id": null
         }
-      ]
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20260804-3554",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T19:48:35Z"
+        }
+      }
     }
   },
   {
@@ -24684,14 +24801,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Adjectif « adhérents » (qualité, variable, -ent) ; participe « adhérant » (action, suivi de son complément « aux statuts »).",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : les deux blancs se traitent séparément. Premier blanc, « Les membres ___ recevront leur carte » : la forme suit le nom « membres », ne commande aucun complément et exprime une propriété ; le test du féminin fonctionne (« les personnes adhérentes »), donc adjectif verbal en -ent, accordé au masculin pluriel : « adhérents ». Second blanc, « tout citoyen ___ aux statuts » : la forme commande le complément « aux statuts », elle garde donc le fonctionnement du verbe adhérer ; le participe présent reste invariable et s'écrit -ant : « adhérant ».\nDonc : la suite attendue est « adhérents / adhérant », soit l'option 2.",
     "why": {
-      "1": "Inversé.",
-      "2": "Correct : adjectif -ents + participe -ant.",
-      "3": "2e segment : action + complément → participe.",
-      "4": "1er segment : qualité → adjectif.",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      "T": "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "Les deux formes sont inversées. `adhérant` reste invariable alors qu'il décrit « les membres » sans commander de complément : il faut l'adjectif verbal accordé « adhérents ». Et `adhérent` prend la graphie adjectivale alors que la forme commande le complément « aux statuts » et doit rester « adhérant ».",
+      "2": "Au premier blanc, la forme décrit les membres sans complément : l'adjectif verbal en -ent s'accorde au masculin pluriel, « adhérents ». Au second, la forme commande le complément « aux statuts » et conserve son fonctionnement verbal : le participe présent reste invariable, « adhérant ». Les deux analyses sont respectées.",
+      "3": "Le premier blanc est bien traité, mais au second `adhérents` accorde une forme suivie du complément « aux statuts », qui garde son fonctionnement verbal et ne qualifie pas un nom. Le participe présent invariable « adhérant » est attendu.",
+      "4": "Le second blanc est bien traité, mais au premier `adhérant` reste invariable alors que la forme ne commande aucun complément et attribue une propriété aux membres. L'adjectif verbal accordé « adhérents » est attendu.",
+      "A": "Une combinaison sur quatre est entièrement correcte, donc le nombre de combinaisons correctes n'est pas nul et « Aucune » est écarté.",
+      "T": "Le compte donne une combinaison correcte sur quatre, et non quatre, donc « Toutes » est écarté."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -24709,6 +24826,15 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-7980",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:34:29Z"
+        }
       }
     }
   },
@@ -24744,14 +24870,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Adjectif « précédent » (l'exercice d'avant) ; participe « précédant » (suivi de son COD « la dictée »).",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : il y a deux blancs, et chacun se traite séparément. Premier blanc, « L'exercice ___ était facile » : la forme ne commande aucun complément et sert à situer l'exercice, elle décrit donc le nom ; le test du féminin le confirme (« la leçon précédente »), et l'adjectif verbal s'écrit -ent et s'accorde : « précédent ». Second blanc, « celui ___ la dictée » : la forme est immédiatement suivie du complément direct « la dictée », elle garde donc le fonctionnement du verbe précéder ; le participe présent reste alors invariable et s'écrit -ant : « précédant ».\nDonc : la seule suite qui respecte les deux analyses est « précédent / précédant », soit l'option 1.",
     "why": {
-      "1": "Correct : adjectif -ent + participe -ant.",
-      "2": "Inversé.",
-      "3": "2e segment : devant un COD → précédant.",
-      "4": "1er segment : qualité → précédent.",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Les options 2, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "Au premier blanc, la forme décrit l'exercice sans commander de complément, ce qui appelle l'adjectif verbal accordé « précédent » ; au second, elle commande le complément direct « la dictée », ce qui appelle le participe présent invariable « précédant ». Les deux analyses sont respectées dans cet ordre.",
+      "2": "Les deux formes sont interverties. Au premier blanc, `précédant` est laissé invariable alors qu'aucun complément ne suit et que la forme décrit l'exercice : il faut « précédent ». Au second, `précédent` prend la graphie adjectivale devant le complément direct « la dictée », où la forme reste verbale : il faut « précédant ».",
+      "3": "Le premier blanc est bien traité, mais au second `précédent` emploie la graphie adjectivale alors que la forme commande le complément direct « la dictée » et conserve son fonctionnement verbal. Le participe présent invariable « précédant » est attendu.",
+      "4": "Le second blanc est bien traité, mais au premier `précédant` reste invariable alors que la forme ne commande aucun complément et attribue une place à l'exercice. L'adjectif verbal accordé « précédent » est attendu.",
+      "A": "Une combinaison sur quatre est entièrement correcte, donc le nombre de combinaisons correctes n'est pas nul et « Aucune » est écarté.",
+      "T": "Trois combinaisons contiennent au moins une forme fautive : le compte est de une correcte sur quatre, donc « Toutes » est écarté."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -24769,6 +24895,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-7980",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:34:29Z"
+        }
       }
     }
   },
@@ -24864,14 +24999,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Adjectif « influent » (puissant) ; participe « influant » (action : influer SUR chaque nomination).",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : les deux blancs demandent deux analyses distinctes. Premier blanc, « Un comité ___ » : la forme suit le nom « comité », ne commande aucun complément et exprime une propriété durable ; le test du féminin fonctionne (« une commission influente »), donc adjectif verbal en -ent, accordé au masculin singulier : « influent ». Second blanc, « ___ discrètement sur chaque nomination » : la forme est modifiée par l'adverbe « discrètement » et commande le complément « sur chaque nomination », ce qui est le fonctionnement du verbe influer ; le participe présent reste invariable et s'écrit -ant : « influant ».\nDonc : la suite attendue est « influent / influant », soit l'option 1.",
     "why": {
-      "1": "Correct : adjectif -ent + participe -ant.",
-      "2": "Inversé.",
-      "3": "2e segment : action + complément → influant.",
-      "4": "1er segment : qualité → influent.",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Les options 2, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "Au premier blanc, la forme décrit le comité sans complément : l'adjectif verbal en -ent est accordé, « influent ». Au second, la forme est modifiée par un adverbe et commande le complément « sur chaque nomination », ce qui prouve son fonctionnement verbal : le participe présent reste invariable, « influant ». Les deux analyses sont respectées.",
+      "2": "Les deux formes sont inversées. `influant` est laissé invariable alors qu'il décrit le nom « comité » sans complément : il faut « influent ». Et `influent` prend la graphie adjectivale alors que la forme commande « sur chaque nomination » et doit rester « influant ».",
+      "3": "Le premier blanc est bien traité, mais au second `influent` emploie la graphie adjectivale alors que la forme est modifiée par « discrètement » et commande le complément « sur chaque nomination ». Le participe présent invariable « influant » est attendu.",
+      "4": "Le second blanc est bien traité, mais au premier `influant` reste invariable alors que la forme qualifie le comité sans commander de complément. L'adjectif verbal accordé « influent » est attendu.",
+      "A": "Une combinaison sur quatre est entièrement correcte, donc le nombre de combinaisons correctes n'est pas nul et « Aucune » est écarté.",
+      "T": "Le compte donne une combinaison correcte sur quatre, et non quatre, donc « Toutes » est écarté."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -24889,6 +25024,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-7980",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:34:29Z"
+        }
       }
     }
   },
@@ -24924,14 +25068,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Le premier mot décrit l'état des élèves : c'est l'adjectif « somnolents », accordé au masculin pluriel. Le second garde le complément « sur leurs cahiers » et exprime ce qu'ils font : c'est le participe présent invariable « somnolant ». L'option 2 est correcte.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : les deux blancs reposent sur le même verbe, mais pas sur la même fonction. Premier blanc, « Des élèves ___ » : le mot est placé juste après le nom « élèves » et en décrit l'état, comme un adjectif ordinaire ; le test du féminin le confirme (« des élèves somnolentes »), et on pourrait remplacer par « fatigués ». C'est l'adjectif verbal : il s'accorde avec « élèves », masculin pluriel, d'où le -s de « somnolents ». Second blanc, « ___ sur leurs cahiers dès la première heure » : la forme ouvre un groupe détaché qui garde ses compléments, « sur leurs cahiers » et « dès la première heure », et dit ce que font les élèves à ce moment-là. C'est le participe présent : il fonctionne encore comme un verbe et reste invariable, « somnolant ». Le repère décisif est donc la présence de ces compléments après le second blanc, qui interdit d'y voir une simple qualité.\nDonc : il faut « des élèves somnolents » puis « somnolant sur leurs cahiers », c'est-à-dire l'option 2.",
     "why": {
-      "1": "Les deux formes sont inversées : « somnolents » décrit l'état des élèves et s'accorde ; « somnolant sur leurs cahiers » exprime l'action et reste invariable.",
-      "2": "Correct : adjectif accordé + participe invariable.",
-      "3": "2e segment : action → somnolant.",
-      "4": "1er segment : état → somnolents.",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      "T": "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "Les deux formes sont à la place l'une de l'autre. Au premier blanc, `des élèves somnolant` laisse invariable un mot qui décrit l'état du nom « élèves » et doit s'accorder : « somnolents ». Au second, `somnolents sur leurs cahiers` accorde une forme qui conserve ses compléments et reste invariable : « somnolant ».",
+      "2": "Le premier mot qualifie « élèves » et supporte le test du féminin : il satisfait la règle de l'adjectif verbal et porte l'accord du masculin pluriel, « somnolents ». Le second garde les compléments « sur leurs cahiers » et « dès la première heure » : il satisfait la règle du participe présent, qui reste invariable, « somnolant ».",
+      "3": "Le premier blanc est correct, mais au second `somnolents sur leurs cahiers dès la première heure` accorde une forme qui commande encore ses compléments : le participe présent est invariable, donc « somnolant ».",
+      "4": "Le second blanc est correct, mais au premier `des élèves somnolant` prive de son accord un mot qui décrit l'état du nom « élèves » : l'adjectif verbal s'accorde, donc « somnolents ».",
+      "A": "L'option 2 respecte les deux blancs ; « Aucune » supposerait que les quatre options chiffrées soient fautives.",
+      "T": "Une seule option chiffrée sur quatre est intégralement correcte ; « Toutes » est donc exclu."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -24949,6 +25093,15 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-0447",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:42:12Z"
+        }
       }
     }
   },
@@ -25136,7 +25289,7 @@ const QUESTIONS = [
     "id": "av-19",
     "rule": "adjverbal",
     "type": "sentences",
-    "instruction": "Quelle(s) phrase(s) est/sont correctement écrite(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -25164,14 +25317,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Toutes correctes : adjectifs « adhérent »/« influent », gérondif « en précédant », participe « équivalant » + complément. Réponse : Toutes.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : chaque proposition contient une forme en -ant ou en -ent, et il faut regarder pour chacune si elle décrit un nom ou si elle garde le fonctionnement d'un verbe. Dans « Le personnel adhérent », la forme ne commande aucun complément et donne une propriété du nom « personnel » ; le test du féminin fonctionne (« une association adhérente »), c'est donc l'adjectif verbal, qui s'accorde et s'écrit -ent. Dans « En précédant le groupe », la forme suit « en » et commande le complément direct « le groupe » : elle se comporte encore comme un verbe, c'est le participe présent, invariable et en -ant. Dans « Des sommes équivalant à un mois de salaire », la forme commande le complément « à un mois de salaire » : là aussi fonctionnement verbal, donc participe présent invariable ; sans ce complément, on aurait l'adjectif « des sommes équivalentes ». Dans « Un homme influent », la forme décrit le nom « homme », le test du féminin fonctionne (« une femme influente ») : adjectif verbal accordé en -ent.\nDonc : les quatre propositions appliquent correctement la distinction, et la réponse attendue est Toutes.",
     "why": {
-      "1": "Correcte : qualité → adhérent.",
-      "2": "Correcte : gérondif → précédant.",
-      "3": "Correcte : participe + complément → équivalant.",
-      "4": "Correcte : qualité → influent.",
-      "A": "Les quatre sont correctes.",
-      "T": "Correct : aucune faute."
+      "1": "La forme suit le nom « personnel » et n'est suivie d'aucun complément : elle exprime une propriété durable, ce que confirme le passage au féminin (« une association adhérente »). L'adjectif verbal s'écrit donc -ent et s'accorde au masculin singulier, ce que la phrase respecte avec « adhérent ».",
+      "2": "Après « en », la forme commande le complément direct « le groupe » : elle conserve le fonctionnement du verbe précéder et ne décrit pas un nom. Le participe présent reste alors invariable et s'écrit -ant, ce que la phrase respecte avec « précédant ».",
+      "3": "La forme commande le complément « à un mois de salaire », donc elle exprime une action et non une propriété des sommes. Elle reste invariable en -ant, ce que la phrase respecte avec « équivalant » ; l'accord « équivalentes » ne serait possible que sans ce complément.",
+      "4": "La forme qualifie le nom « homme » sans aucun complément verbal et supporte le test du féminin (« une femme influente ») : c'est l'adjectif verbal, écrit -ent et accordé au masculin singulier, ce que la phrase respecte avec « influent ».",
+      "A": "Le décompte des propositions fautives est nul, donc « Aucune » ne peut pas être la réponse.",
+      "T": "Le décompte donne quatre propositions correctes sur quatre, ce qui correspond exactement à « Toutes »."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -25189,6 +25342,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-7980",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:26:45Z"
+        }
       }
     }
   },
@@ -26764,7 +26926,7 @@ const QUESTIONS = [
     "id": "ponc-6",
     "rule": "ponctuation",
     "type": "sentences",
-    "instruction": "Quelle phrase est correctement ponctuée ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -27378,7 +27540,7 @@ const QUESTIONS = [
     "id": "ponc-16",
     "rule": "ponctuation",
     "type": "sentences",
-    "instruction": "Quelle phrase est correctement ponctuée ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -28952,7 +29114,7 @@ const QUESTIONS = [
     "id": "prep-2",
     "rule": "prepositions",
     "type": "sentences",
-    "instruction": "Quelle phrase est correctement construite ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -32727,14 +32889,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "« remédier À quelque chose » → le relatif attendu est « auquel » (masculin, « un défaut »), non proposé. Réponse : Aucune.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « on peut remédier à ce défaut ». Le verbe « remédier » exige la préposition « à » : on remédie à quelque chose, on ne remédie pas quelque chose. La préposition doit donc être portée par le relatif. L’antécédent est « un défaut », nom non humain, masculin singulier : la forme de lequel est « lequel », et la contraction « à + lequel » donne « auquel ». Deux conditions doivent donc être réunies en même temps, la préposition « à » et le masculin singulier; aucune proposition ne les réunit, l’une ayant la bonne préposition mais le mauvais genre.\nDonc : le relatif attendu, « auquel », est absent des propositions chiffrées, et la réponse attendue est « Aucune ».",
     "why": {
-      "1": "« dont » suppose « de » : remédier exige « à ».",
-      "2": "« que » suppose un verbe direct : faux.",
-      "3": "« duquel » : mauvaise préposition (« de », pas « à »).",
-      "4": "« à laquelle » : bonne préposition, mais féminin — « un défaut » est masculin (→ auquel).",
-      "A": "Correct : la forme attendue « auquel » n'est pas proposée.",
-      "T": "Aucune option chiffrée ne convient."
+      "1": "`dont` porte « de », alors que la phrase de base est « remédier à ce défaut »; la forme attendue est « auquel ».",
+      "2": "`que` suppose un complément direct, comme « le défaut que l’on corrige »; « remédier » impose « à », donc « auquel ».",
+      "3": "`duquel` équivaut à « de lequel » : le genre et le nombre conviennent, mais la préposition est « de » au lieu de « à »; il faut « auquel ».",
+      "4": "`à laquelle` porte bien la préposition « à », mais accorde la forme de lequel au féminin singulier alors que l’antécédent « un défaut » est masculin; la forme attendue est « auquel ».",
+      "A": "Le relatif exigé par « remédier à », avec un antécédent non humain masculin singulier, est « auquel »; aucune proposition chiffrée ne réunit à la fois cette préposition et ce genre. C’est donc « Aucune » qui convient.",
+      "T": "Chacune des quatre propositions chiffrées échoue sur la préposition ou sur le genre; « Toutes » exigerait que les quatre conviennent."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -32744,9 +32906,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
-        "3": "UNK",
+        "2": "regime_direct_suppose",
+        "3": "regime_de_suppose",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-2006",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T18:58:34Z"
+        }
       }
     }
   },
@@ -34467,14 +34638,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "« tenir À quelque chose » → relatif « auxquels » (masc. pl., « les objectifs »). Cette forme n'est pas proposée → Aucune.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase de base est « nous tenons le plus à ces objectifs ». Le verbe « tenir » pris au sens de « attacher de l'importance » commande un complément introduit par « à » ; ce n'est donc ni un complément direct, ni un complément en « de ». L'antécédent est « les objectifs », nom non humain, masculin pluriel. Une forme de lequel convient à cet antécédent, et à + lesquels se contracte en « auxquels ». La forme attendue est donc « auxquels », au masculin pluriel. Il faut ensuite comparer cette forme aux quatre propositions : l'une traite le complément comme direct, une autre est au singulier, une autre suppose « de », la dernière est au féminin. Aucune ne coïncide avec « auxquels ».\nDonc : la forme requise est absente des options chiffrées, et la réponse attendue est « Aucune ».",
     "why": {
-      "1": "« que » : « tenir » (à) n'est pas transitif direct.",
-      "2": "« auquel » : singulier, or « objectifs » est pluriel.",
-      "3": "« dont » : supposerait « tenir de », pas « tenir à ».",
-      "4": "« auxquelles » : féminin, or « objectifs » est masculin.",
-      "A": "Correct : la forme attendue « auxquels » n'est pas proposée.",
-      "T": "Aucun relatif proposé ne convient."
+      "1": "`que` reprend un complément direct, alors que la phrase de base est « nous tenons à ces objectifs » : la construction impose « à ». La forme attendue est « auxquels ».",
+      "2": "`auquel` porte bien la préposition « à », mais reste au singulier alors que l'antécédent « les objectifs » est au pluriel ; le relatif s'accorde toujours avec son antécédent. La forme attendue est « auxquels ».",
+      "3": "`dont` suppose un complément introduit par « de », ce qui donnerait « tenir de quelque chose », un sens différent, celui de la ressemblance. La forme attendue reste « auxquels ».",
+      "4": "`auxquelles` porte la bonne préposition et le bon nombre, mais le féminin ne correspond pas à l'antécédent masculin « les objectifs ». La forme attendue est « auxquels ».",
+      "A": "La forme réclamée par la construction et par l'antécédent est « auxquels » : masculin pluriel avec « à ». Aucune des quatre propositions ne réunit ces trois exigences en même temps, la première échouant sur la préposition, la deuxième sur le nombre, la troisième sur la préposition et la quatrième sur le genre. C'est donc « Aucune » qui est attendu.",
+      "T": "Le décompte suffit : les quatre options chiffrées sont fautives, donc « Toutes » ne peut pas être la réponse."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -34483,10 +34654,19 @@ const QUESTIONS = [
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
-        "1": "regime_a_non_identifie",
+        "1": "regime_direct_suppose",
         "2": "UNK",
         "3": "regime_de_suppose",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-3554",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T19:48:35Z"
+        }
       }
     }
   },
@@ -35847,14 +36027,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "« personnel navigant » : adjectif (locution consacrée, sans u). « vaquant à » : participe présent de « vaquer » (le reste de l'équipe vaquant à ses tâches). « vacant » = inoccupé, ne se construit pas avec « à ».",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : chaque blanc se juge sur son fonctionnement propre. Premier blanc, « Le personnel ___ assurera la liaison avec l'aéroport » : la forme suit immédiatement le nom « personnel », n'a aucun complément et sert à classer ce personnel, exactement comme un adjectif (on peut dire « le personnel navigant et le personnel au sol »). C'est l'adjectif verbal, qui perd le -u- du verbe naviguer et s'écrit « navigant ». Second blanc, « le reste de l'équipe ___ aux tâches habituelles » : la forme est suivie du complément introduit par « à », « aux tâches habituelles », et exprime ce que fait l'équipe. Elle fonctionne donc comme un verbe : c'est le participe présent de vaquer, invariable, « vaquant à ». C'est cette construction avec « à » qui fait basculer la réponse, car l'adjectif de la même famille, qui signifie « inoccupé » comme dans « un poste vacant », ne se construit pas avec ce complément.\nDonc : il faut « le personnel navigant » puis « vaquant aux tâches habituelles », c'est-à-dire l'option 1.",
     "why": {
-      "1": "Correct : adjectif « navigant » (locution) + participe « vaquant à ».",
-      "2": "« naviguant » : sans complément, c'est l'adjectif « navigant » (sans u) qui s'impose.",
-      "3": "« vacant » : signifie « inoccupé » (poste vacant) ; ici il faut « vaquant à ».",
-      "4": "Les deux segments sont fautifs.",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Les options 2, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "Le premier mot classe le nom « personnel » sans aucun complément : il satisfait la règle de l'adjectif verbal, écrit sans -u-, « navigant ». Le second commande le complément « aux tâches habituelles » et dit ce que fait l'équipe : il satisfait la règle du participe présent de vaquer, invariable, « vaquant ».",
+      "2": "Au premier blanc, `le personnel naviguant assurera la liaison` garde le -u- du verbe alors que la forme n'a aucun complément et sert seulement à qualifier « personnel » : l'adjectif verbal s'écrit « navigant ».",
+      "3": "Au second blanc, `vacant aux tâches habituelles` emploie l'adjectif, qui signifie « inoccupé » et ne se construit pas avec « à » ; la forme commande ici un complément et exprime une action, donc le participe présent « vaquant ».",
+      "4": "Les deux blancs sont fautifs : `naviguant` donne un radical verbal à une forme purement qualifiante, et `vacant aux tâches habituelles` donne une forme adjectivale à une forme qui commande un complément. Il faut « navigant » puis « vaquant ».",
+      "A": "Puisque l'option 1 est intégralement correcte, la réponse « Aucune » ne peut pas être retenue.",
+      "T": "Trois options chiffrées comportent au moins une graphie fautive, ce qui interdit « Toutes »."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -35867,6 +36047,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-0447",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:42:12Z"
+        }
       }
     }
   },
@@ -36787,7 +36976,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quelle phrase est correctement orthographiée ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -36815,14 +37004,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "« vases communicants » : adjectif verbal en -cant, accordé (locution consacrée). Devant un COD, il faut le participe (« communiquant leurs résultats ») ; sans complément, l'adjectif accordé (« coulissantes ») ; et l'adjectif de « négliger » s'écrit « négligente ».",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : il faut examiner, dans chaque proposition, la forme en -ant/-cant et se demander si elle commande un complément (fonctionnement verbal) ou si elle décrit un nom (propriété). Proposition 1 : la forme est immédiatement suivie du complément direct « leurs résultats », donc elle reste verbale ; il faut le participe présent invariable et en -quant, « communiquant leurs résultats ». Proposition 2 : la forme ne commande rien et décrit les vases, comme le montre le test du féminin (« une cuve communicante ») ; l'adjectif verbal s'écrit -cant et prend l'accord du masculin pluriel, « vases communicants ». Proposition 3 : la forme ne commande aucun complément et attribue une propriété aux portes ; il faut donc l'adjectif verbal accordé « coulissantes ». Proposition 4 : la forme décrit l'équipe, mais l'adjectif verbal du verbe négliger a une graphie propre en -ent, « négligente ».\nDonc : une seule proposition applique correctement la règle, et la réponse attendue est 2.",
     "why": {
-      "1": "« communicants » + COD : l'action exige le participe « communiquant ».",
-      "2": "Correct : adjectif « communicants » (locution « vases communicants »).",
-      "3": "« coulissant » sans complément : qualité → adjectif accordé « coulissantes ».",
-      "4": "« négligeante » : l'adjectif s'écrit « négligente » (le participe est « négligeant »).",
-      "A": "La phrase 2 est correcte.",
-      "T": "Les phrases 1, 3 et 4 sont fautives."
+      "1": "`communicants` est suivi du complément direct « leurs résultats » : une forme qui commande un complément garde le fonctionnement du verbe et ne peut ni s'accorder ni prendre la graphie adjectivale. Il faut le participe présent invariable « communiquant leurs résultats ».",
+      "2": "La forme ne commande aucun complément et attribue une propriété aux vases ; le test du féminin le confirme (« une cuve communicante »). L'adjectif verbal prend la graphie -cant et l'accord du masculin pluriel, ce que « vases communicants » respecte.",
+      "3": "`coulissant` est laissé invariable alors qu'aucun complément ne le suit et qu'il décrit une propriété des portes du hall. Cette valeur de propriété impose l'adjectif verbal accordé au féminin pluriel : « les portes coulissantes ».",
+      "4": "`négligeante` accorde la graphie verbale « négligeant » alors que la forme décrit une propriété de l'équipe. L'adjectif verbal correspondant a sa graphie propre en -ent : il faut « une équipe négligente ».",
+      "A": "Une proposition sur quatre résiste à la vérification, donc le nombre de propositions correctes n'est pas nul et « Aucune » est écarté.",
+      "T": "Le nombre de propositions correctes est de une sur quatre, et non de quatre, donc « Toutes » est écarté."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -36835,6 +37024,15 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-7980",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:34:29Z"
+        }
       }
     }
   },
@@ -39298,14 +39496,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "On se réfère « à » des critères, d’où « auxquels » ; un audit repose « sur » des critères, d’où « sur lesquels ».",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : deux lacunes reprennent le même antécédent « les critères », mais elles dépendent de deux verbes différents, et c'est chaque verbe qui impose sa préposition. Première phrase de base : « le règlement se réfère à ces critères » ; la construction impose « à », l'antécédent est non humain, masculin pluriel, donc à + lesquels se contracte en « auxquels ». Seconde phrase de base : « l'audit repose sur ces critères » ; ici la préposition imposée est « sur », qui ne se contracte pas, et la forme de lequel attendue est « sur lesquels ». Les deux relatifs ne peuvent donc pas être identiques, et ils ne peuvent pas non plus être échangés, puisque chacun dépend de son propre verbe.\nDonc : le premier blanc reçoit « auxquels » et le second « sur lesquels », ce qui correspond à l'option 3.",
     "why": {
-      "1": "« Se référer » n’introduit pas son complément par « de », et « reposer » exige ici « sur ».",
-      "2": "Le premier relatif est correct, mais « dont » ne reprend pas un complément en « sur ».",
-      "3": "Correct : « se référer à » et « reposer sur ».",
-      "4": "Les deux prépositions sont interverties.",
-      "A": "L’option 3 est correcte.",
-      "T": "Les options 1, 2 et 4 ne respectent pas les deux régimes."
+      "1": "Les deux relatifs de cette option sont fautifs. Le premier `dont` suppose un complément en « de », alors que la phrase de base est « le règlement se réfère à ces critères » : la construction impose « à », d'où « auxquels ». Au second blanc, `auxquels` suppose lui aussi un régime en « à », alors que la phrase de base est « l'audit repose sur ces critères » : « reposer » impose « sur », préposition qui ne se contracte pas, d'où « sur lesquels ». La forme attendue complète est donc « auxquels / sur lesquels ».",
+      "2": "Le second `dont` suppose un complément en « de », alors que la phrase de base est « l'audit repose sur ces critères ». La forme attendue au second blanc est « sur lesquels ».",
+      "3": "Chaque relatif porte la préposition de son propre verbe : « se référer à » donne à + lesquels, contracté en « auxquels », et « reposer sur » donne « sur lesquels », sans contraction. Les deux formes s'accordent au masculin pluriel avec l'antécédent « les critères ».",
+      "4": "`sur lesquels / auxquels` inverse les deux prépositions : le premier verbe commande « à » et le second « sur ». Les formes attendues sont « auxquels » puis « sur lesquels ».",
+      "A": "Une option chiffrée, la troisième, résiste au contrôle : « Aucune » ne peut donc pas être la réponse.",
+      "T": "Trois des quatre options chiffrées comportent au moins un relatif fautif : « Toutes » ne peut donc pas être la réponse."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -39317,7 +39515,16 @@ const QUESTIONS = [
         "1": "regime_de_suppose",
         "2": "regime_de_suppose",
         "3": null,
-        "4": "UNK"
+        "4": "regime_sur_suppose"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-3554",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T19:55:59Z"
+        }
       }
     }
   },
@@ -39358,14 +39565,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "On aboutit « à » une conclusion ; le relatif attendu est « à laquelle », absent des options.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase de base est « nous avons abouti à cette conclusion ». Le verbe « aboutir », au sens de parvenir au terme d'un raisonnement, commande un complément introduit par « à » : on n'aboutit pas quelque chose, et on n'aboutit pas de quelque chose. L'antécédent « la conclusion » est un nom non humain, féminin singulier ; une forme de lequel convient, et à + laquelle donne « à laquelle », sans contraction au féminin singulier. La forme attendue est donc « à laquelle ». Il reste à comparer cette forme aux quatre propositions : l'une suppose « de », une autre traite le complément comme direct, une autre substitue « sur » à « à », la dernière repose encore sur « de ». Aucune ne coïncide avec « à laquelle ».\nDonc : la forme requise est absente des options chiffrées, et la réponse attendue est « Aucune ».",
     "why": {
-      "1": "« Dont » reprend un complément introduit par « de », non par « à ».",
-      "2": "« Que » correspondrait à un complément direct, alors que « aboutir » est indirect.",
-      "3": "« Aboutir sur » ne convient pas avec le sens abstrait de parvenir à une conclusion.",
-      "4": "« De laquelle » reprendrait un complément en « de ».",
-      "A": "Correct : la forme requise « à laquelle » n’est pas proposée.",
-      "T": "Aucune des quatre options ne respecte le régime « aboutir à »."
+      "1": "`dont` suppose un complément introduit par « de », alors que la construction impose « à ». La forme attendue est « à laquelle ».",
+      "2": "`que` reprend un complément direct, mais on n'aboutit pas quelque chose : le complément est indirect. La forme attendue est « à laquelle ».",
+      "3": "`sur laquelle` substitue « sur » à la préposition exigée ; « aboutir sur » évoque un débouché concret, non le terme d'un raisonnement. La forme attendue est « à laquelle ».",
+      "4": "`de laquelle` repose de nouveau sur « de », préposition que la construction ne commande pas, avec en plus une forme longue inutile ici. La forme attendue est « à laquelle ».",
+      "A": "La phrase de base « nous avons abouti à cette conclusion » impose « à », et l'antécédent féminin singulier non humain donne « à laquelle ». Cette forme n'est présente dans aucune des quatre propositions, qui échouent sur la préposition ou sur le caractère indirect du complément. C'est donc « Aucune » qui est attendu.",
+      "T": "Le décompte suffit : les quatre options chiffrées sont fautives, donc « Toutes » ne peut pas être la réponse."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -39375,9 +39582,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
+        "2": "regime_direct_suppose",
         "3": "regime_sur_suppose",
-        "4": "UNK"
+        "4": "regime_de_suppose"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-3554",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T19:48:35Z"
+        }
       }
     }
   },
@@ -40418,7 +40634,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Quelle phrase est correctement ponctuée ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -40618,7 +40834,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Dans cet extrait de rapport, choisissez la seule phrase correctement orthographiée.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -40646,14 +40862,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Règle : Le participe présent exprime une action et reste inchangé ; l'adjectif décrit un nom et s'accorde avec lui. Un test simple consiste à remplacer la forme par une proposition avec « qui ». Dans cette phrase : 1. « Les résultats qui diffèrent d'une cohorte à l'autre » exprime une action : « différant ». 2. Pour décrire les résultats, l'adjectif est « différents ». 3. Pour décrire l'année, il faut « l'année précédente ». 4. Pour décrire une analyse, il faut « une analyse équivalente ». Donc : seule l'option 1 est correcte.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : chaque proposition contient une forme en -ant, et il faut vérifier si elle commande un complément ou si elle décrit simplement un nom. Proposition 1 : la forme commande le complément « d'une cohorte à l'autre » et équivaut à « les résultats qui diffèrent d'une cohorte à l'autre » ; le fonctionnement verbal est conservé, donc participe présent invariable « différant ». Proposition 2 : la forme ne commande aucun complément et attribue une propriété aux résultats ; il faut l'adjectif verbal accordé « différents ». Proposition 3 : la forme qualifie le nom féminin « année » sans commander de complément ; il faut l'adjectif verbal accordé « précédente ». Proposition 4 : la forme qualifie « une analyse » sans complément ; il faut l'adjectif verbal accordé « équivalente ».\nDonc : une seule proposition applique correctement la règle, et la réponse attendue est 1.",
     "why": {
-      "1": "On peut développer par « les résultats qui diffèrent » : « différant » exprime une action et reste inchangé. La phrase est correcte.",
-      "2": "Ici, le mot décrit « les résultats » ; l'adjectif correct est « différents », et non « différants ».",
-      "3": "Le mot décrit le nom féminin « année » : il faut l'adjectif « précédente ».",
-      "4": "Le mot décrit le nom féminin « analyse » : il faut l'adjectif « équivalente ».",
-      "A": "L'option 1 est correctement construite ; « Aucune » n'est donc pas la réponse.",
-      "T": "Les options 2, 3 et 4 emploient une forme qui ne convient pas au nom décrit ; elles ne sont pas toutes correctes."
+      "1": "La forme commande le complément « d'une cohorte à l'autre » et peut se développer par « les résultats qui diffèrent » : elle garde le fonctionnement du verbe et n'attribue pas une propriété stable. Le participe présent reste donc invariable, ce que « différant » respecte.",
+      "2": "`différants` accorde une forme qui ne commande aucun complément et qui sert simplement à caractériser les résultats. Cette valeur de propriété impose la graphie de l'adjectif verbal : il faut « les résultats différents ».",
+      "3": "`précédant` est laissé invariable alors que la forme qualifie le nom féminin « année » et ne commande aucun complément. Le test du féminin le confirme, et l'adjectif verbal accordé « l'année précédente » est attendu.",
+      "4": "`équivalant` est laissé invariable alors que la forme qualifie « une analyse » sans être suivie d'un complément comme « à ». L'adjectif verbal accordé « une analyse équivalente » est attendu.",
+      "A": "Une proposition sur quatre résiste à la vérification, donc le nombre de propositions correctes n'est pas nul et « Aucune » est écarté.",
+      "T": "Le compte donne une proposition correcte sur quatre, et non quatre, donc « Toutes » est écarté."
     },
     "hep": {
       "slot_id": "maj-slot-04-adjverbal",
@@ -40680,6 +40896,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-7980",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:34:29Z"
+        }
       }
     }
   },
@@ -42548,7 +42773,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -42576,14 +42801,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Le verbe ou la locution se construit avec à; le relatif composé correspondant est auquel.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « la direction tient à ce principe ». Le verbe « tenir » au sens d’attacher de l’importance se construit avec « à »; sans préposition, « tenir quelque chose » signifierait le saisir, ce qui ne correspond pas au contexte de la charte. La préposition doit donc être portée par le relatif. L’antécédent « le principe » est un nom non humain, masculin singulier : la forme de lequel est « lequel », et la contraction « à + lequel » donne « auquel ».\nDonc : le relatif attendu est « auquel », c’est-à-dire l’option 3.",
     "why": {
-      "1": "Chaîne/reconstruction : Se conformer à, se référer à et tenir à imposent auquel. Option 1 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
-      "2": "Chaîne/reconstruction : Se conformer à, se référer à et tenir à imposent auquel. Option 2 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
-      "3": "Chaîne/reconstruction : Se conformer à, se référer à et tenir à imposent auquel. Option 3 : La forme applique exactement la chaîne reconstruite.",
-      "4": "Chaîne/reconstruction : Se conformer à, se référer à et tenir à imposent auquel. Option 4 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
-      "A": "Le verbe « tenir » se construit ici avec « à » : tenir à un principe. L'option 3, « auquel », est donc correcte ; « Aucune » ne convient pas.",
-      "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+      "1": "`lequel` est la forme de lequel sans préposition, employable comme sujet ou après une autre préposition; ici le « à » de « tenir à ce principe » n’est plus exprimé nulle part, il faut donc « auquel ».",
+      "2": "`sur lequel` conviendrait à un verbe construit avec « sur », comme « le principe sur lequel tout repose »; « tenir à » exige « à », d’où « auquel ».",
+      "3": "« auquel » porte la préposition « à » exigée par « tenir à » et correspond à l’antécédent non humain masculin singulier « le principe », par la contraction « à + lequel ».",
+      "4": "`dont` porte « de » et conviendrait à « être responsable de ce principe »; la phrase de base est « tenir à ce principe », donc « auquel ».",
+      "A": "Une proposition chiffrée porte le relatif attendu; « Aucune » ne peut donc pas convenir.",
+      "T": "Trois propositions chiffrées n’expriment pas la préposition « à »; « Toutes » exigerait que les quatre conviennent."
     },
     "hep": {
       "slot_id": "drill40-25",
@@ -42600,10 +42825,19 @@ const QUESTIONS = [
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
-        "1": "UNK",
+        "1": "regime_direct_suppose",
         "2": "regime_sur_suppose",
         "3": null,
         "4": "regime_de_suppose"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-2006",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T18:58:34Z"
+        }
       }
     },
     "stem": "Le principe ___ la direction tient figure dans la charte."
@@ -44110,7 +44344,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -44138,14 +44372,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "La phrase correcte reconstruit séparément le régime de chaque verbe et n'ajoute aucune reprise au relatif.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : deux verbes ont chacun leur régime et il faut les reconstruire séparément. Premier verbe : « nous pensons à cette mesure » — « penser » se construit ici avec « à », l’antécédent « la mesure » est un nom non humain féminin singulier, donc la forme de lequel est « laquelle » et le relatif attendu est « à laquelle ». Second verbe : « ces personnes dépendent du bus » — « dépendre » se construit avec « de », et comme le complément « du bus » reste écrit dans la phrase, le relatif qui reprend « les personnes » est simplement le sujet « qui ». Il faut donc « à laquelle » d’un côté et « qui » de l’autre, sans reprise supplémentaire du complément.\nDonc : la seule proposition qui porte à la fois « à laquelle » pour « penser à » et « qui dépendent du bus » pour « dépendre de » est l’option 3.",
     "why": {
-      "1": "Le scripteur attribue aux deux verbes un régime qu'ils n'ont pas et choisit les relatifs par analogie.",
-      "2": "« les personnes dont dépendent du bus » redouble la préposition : « dont » contient déjà le « de » de « dépendre de ». Il faut « les personnes qui dépendent du bus ».",
-      "3": "La réponse « La mesure à laquelle nous pensons profiterait aux personnes qui dépendent du bus. » est correcte : La phrase correcte reconstruit séparément le régime de chaque verbe et n'ajoute aucune reprise au relatif.",
-      "4": "Le scripteur redouble le complément déjà représenté par le pronom relatif.",
-      "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
-      "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+      "1": "`dont nous pensons` supprime la préposition « à » exigée par « penser à cette mesure » et lui substitue le « de » contenu dans « dont »; il faut « à laquelle nous pensons ». La suite `dépendent au bus` remplace en outre le « de » de « dépendre de » par « à » : la forme attendue est « dépendent du bus ».",
+      "2": "Le début « à laquelle nous pensons » est juste, mais `dont dépendent du bus` cumule deux fois la même préposition : « dont » contient déjà le « de » de « dépendre de », et « du bus » l’exprime une seconde fois. La forme attendue est « les personnes qui dépendent du bus ».",
+      "3": "« à laquelle » porte la préposition « à » exigée par « penser à » et s’accorde avec l’antécédent non humain féminin singulier « la mesure »; « qui dépendent du bus » laisse le complément « du bus » à sa place et emploie le relatif sujet, comme le demande « ces personnes dépendent du bus ».",
+      "4": "`que nous y pensons` traite « penser » comme un verbe à complément direct alors qu’il exige « à », et le pronom `y` reprend une seconde fois le complément déjà représenté par le relatif; il faut « à laquelle nous pensons », sans « y ».",
+      "A": "Une proposition chiffrée satisfait les deux régimes; « Aucune » ne peut donc pas convenir.",
+      "T": "Trois propositions chiffrées portent une préposition ou une reprise fautive; « Toutes » exigerait que les quatre soient correctes."
     },
     "hep": {
       "slot_id": "pond40-07",
@@ -44168,10 +44402,10 @@ const QUESTIONS = [
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
-        "1": "UNK",
+        "1": "regime_de_suppose",
         "2": "UNK",
         "3": null,
-        "4": "UNK"
+        "4": "regime_direct_suppose"
       },
       "additional_rule_paths": [
         {
@@ -44186,7 +44420,16 @@ const QUESTIONS = [
           "detail_id": "core",
           "tense_id": null
         }
-      ]
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20260804-2006",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T18:58:34Z"
+        }
+      }
     },
     "stem": "Quatre élèves formulent une proposition."
   },
@@ -44728,7 +44971,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -44756,14 +44999,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Le verbe de la relative se construit avec à; la préposition est portée par auquel ou laquelle selon l'antécédent.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : on remet l’antécédent dans une phrase simple : « le groupe se réfère à cette procédure ». Le verbe « se référer » exige la préposition « à », et cette préposition doit être portée par le relatif puisqu’elle ne peut pas rester dans la subordonnée. L’antécédent « la procédure » est un nom non humain, féminin singulier : une forme de lequel convient et s’accorde en « laquelle ». La contraction « à + lequel » donne « auquel », mais elle n’a pas lieu au féminin singulier, où l’on écrit « à laquelle ».\nDonc : le relatif qui porte la préposition « à » et s’accorde avec « la procédure » est « à laquelle », c’est-à-dire l’option 4.",
     "why": {
-      "1": "Le candidat choisit dont par attraction d'un complément prépositionnel sans reconstruire le régime en à.",
-      "2": "Le candidat emploie un relatif direct alors que le verbe exige la préposition à.",
-      "3": "Le candidat utilise où sans antécédent de lieu ni de temps.",
-      "4": "La réponse « à laquelle » est correcte : Le verbe de la relative se construit avec à; la préposition est portée par auquel ou laquelle selon l'antécédent.",
-      "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
-      "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+      "1": "`dont` porte la préposition « de », alors que la phrase de base est « se référer à cette procédure » et non « se référer de »; la forme attendue est « à laquelle ».",
+      "2": "`qu’` est un relatif sans préposition, réservé à un complément direct comme « la procédure que le groupe applique »; « se référer » impose « à », donc « à laquelle ».",
+      "3": "`où` ne reprend qu’un antécédent de lieu ou de temps, comme « le jour où » ou « la salle où »; « la procédure » n’est ni l’un ni l’autre et le régime en « à » reste non exprimé. Il faut « à laquelle ».",
+      "4": "« à laquelle » porte la préposition « à » exigée par « se référer à » et accorde la forme de lequel au féminin singulier, comme l’impose l’antécédent non humain « la procédure ».",
+      "A": "Une proposition chiffrée porte le relatif attendu; « Aucune » ne peut donc pas convenir.",
+      "T": "Trois propositions chiffrées ne portent pas la préposition « à »; « Toutes » exigerait que les quatre conviennent."
     },
     "hep": {
       "slot_id": "pond40-15",
@@ -44781,9 +45024,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
-        "3": "UNK",
+        "2": "regime_direct_suppose",
+        "3": "regime_a_non_identifie",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-2006",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T18:58:34Z"
+        }
       }
     },
     "stem": "La procédure ___ le groupe se réfère figure en annexe."
@@ -47090,14 +47342,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "« Se résoudre À quelque chose » : le complément est introduit par « à », d'où le relatif « à laquelle » (se résoudre à cette réduction).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase de base est « la direction s'est finalement résolue à cette réduction d'horaire ». Le verbe pronominal « se résoudre » commande un complément introduit par « à » lorsqu'il signifie se décider pour une mesure. L'antécédent est « la réduction d'horaire », un nom non humain, féminin singulier ; le noyau du groupe est « la réduction », et c'est lui qui commande l'accord, non le complément « d'horaire ». Une forme de lequel convient à cet antécédent, et à + laquelle donne « à laquelle », sans contraction au féminin singulier.\nDonc : le blanc reçoit « à laquelle », et la réponse attendue est l'option 1.",
     "why": {
-      "1": "Correct : se résoudre À une mesure → la mesure à laquelle on se résout.",
-      "2": "« dont » supposerait « se résoudre de », construction qui n'existe pas avec un nom.",
-      "3": "« qu' » traiterait la réduction comme complément direct : « se résoudre quelque chose » est impossible.",
-      "4": "« pour laquelle » calque « la raison pour laquelle » : le verbe exige « à », pas « pour ».",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "La construction « se résoudre à quelque chose » impose « à », et l'antécédent « la réduction » est féminin singulier et non humain : à + laquelle donne « à laquelle ». La relative se remet telle quelle dans la phrase de base « la direction s'est résolue à cette réduction d'horaire ».",
+      "2": "`dont` suppose un complément introduit par « de », construction que le verbe ne commande pas devant un nom de mesure. La forme attendue est « à laquelle ».",
+      "3": "`qu'` reprend un complément direct, alors que le verbe est ici pronominal et indirect : on se résout à quelque chose, on ne se résout pas quelque chose. La forme attendue est « à laquelle ».",
+      "4": "`pour laquelle` calque une tournure de cause comme « la raison pour laquelle » et introduit un rapport de but absent de la phrase de base. La forme attendue est « à laquelle ».",
+      "A": "Une option chiffrée, la première, résiste au contrôle : « Aucune » ne peut donc pas être la réponse.",
+      "T": "Trois des quatre options chiffrées sont fautives : « Toutes » ne peut donc pas être la réponse."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -47108,8 +47360,17 @@ const QUESTIONS = [
       "option_misconceptions": {
         "1": null,
         "2": "regime_de_suppose",
-        "3": "regime_a_non_identifie",
+        "3": "regime_direct_suppose",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-3554",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T19:48:35Z"
+        }
       }
     }
   },
@@ -47482,7 +47743,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -47510,14 +47771,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Quatre locutions correctes malgré leur allure suspecte : « avoir maille à partir », « il s'en est fallu de peu », « pris de court » et « prendre fait et cause ». Réponse : Toutes.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : les quatre propositions reposent sur des locutions figées dont la graphie doit être vérifiée mot à mot, en partant du sens attendu. 1) « ont eu maille à partir avec la gérance » signifie « ont eu des démêlés avec elle » : la forme attestée est « maille à partir », sans s à « maille ». 2) « il s'en est fallu de peu » signifie « il a bien failli arriver quelque chose » : la forme attestée est impersonnelle, avec « il » et le participe « fallu ». 3) « pris de court, le comité a reporté » signifie « pris au dépourvu » : la forme attestée est « de court », écrite comme l'adjectif court. 4) « elle a pris fait et cause pour sa collègue » signifie « elle s'est rangée de son côté » : la forme attestée juxtapose « fait » et « cause » au singulier, sans article. Relue en entier, chaque phrase garde ce sens précis.\nDonc : les quatre locutions apparaissent sous leur graphie attestée, donc les quatre options chiffrées sont correctes et la réponse attendue est Toutes.",
     "why": {
-      "1": "Correcte : « maille à partir » (la maille = ancienne monnaie ; partir = partager), sans s.",
-      "2": "Correcte : « s'en falloir de peu » ; le tour impersonnel « il s'en est fallu » est la forme attestée.",
-      "3": "Correcte : « prendre de court » s'écrit avec « court » (adjectif), pas « cours » ni « courre ».",
-      "4": "Correcte : « prendre fait et cause pour » = se ranger du côté de quelqu'un.",
-      "A": "Les quatre phrases sont correctes.",
-      "T": "Correct : chacune de ces locutions, souvent soupçonnée à tort, est irréprochable."
+      "1": "Le sens demandé est « avoir des démêlés ». La locution attestée est « avoir maille à partir avec », où « maille » reste au singulier ; la phrase la reprend intégralement.",
+      "2": "Le sens demandé est « il a manqué de peu que la séance soit annulée ». Le tour impersonnel attesté est « il s'en est fallu de peu », avec le participe « fallu » invariable dans cette construction ; la phrase l'écrit ainsi.",
+      "3": "Le sens demandé est « pris au dépourvu ». La locution attestée est « prendre de court », écrite avec « court » et non avec une finale en -s ; le participe « Pris de court » suit cette graphie.",
+      "4": "Le sens demandé est « soutenir quelqu'un ouvertement ». La locution attestée est « prendre fait et cause pour », avec les deux noms au singulier et sans déterminant ; la phrase la reproduit.",
+      "A": "Comptage : quatre phrases correctes sur quatre, ce qui exclut Aucune.",
+      "T": "Les quatre locutions examinées portent chacune le sens exigé par leur phrase et leur graphie attestée : quatre options correctes donnent Toutes."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -47530,6 +47791,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-9575",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:52:50Z"
+        }
       }
     }
   },
@@ -47690,14 +47960,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "« Nuire À quelque chose » : le complément est introduit par « à », d'où « auxquelles » (le gel a nui à ces cultures).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase de base est « le gel tardif a nui à ces cultures maraîchères ». Le verbe « nuire » commande toujours un complément introduit par « à » : on nuit à quelqu'un ou à quelque chose. L'antécédent est « les cultures maraîchères », un nom non humain, féminin pluriel. Une forme de lequel convient à cet antécédent, et à + lesquelles se contracte en « auxquelles » : la contraction se fait au pluriel dans les deux genres, alors qu'elle ne se fait pas au féminin singulier. Le relatif prend donc les marques du féminin et du pluriel.\nDonc : le blanc reçoit « auxquelles », et la réponse attendue est l'option 1.",
     "why": {
-      "1": "Correct : nuire À → les cultures auxquelles le gel a nui.",
-      "2": "« que » traiterait « nuire » comme un verbe à complément direct : « nuire quelque chose » n'existe pas.",
-      "3": "« dont » supposerait « nuire de », construction inexistante.",
-      "4": "« sur lesquelles » calque « peser sur » : « nuire » exige « à », pas « sur ».",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "La construction « nuire à quelque chose » impose « à », et l'antécédent « les cultures maraîchères » est féminin pluriel et non humain : à + lesquelles se contracte en « auxquelles ». La relative se remet mot pour mot dans la phrase de base « le gel tardif a nui à ces cultures ».",
+      "2": "`que` reprend un complément direct, mais le verbe ne se construit jamais ainsi : on ne nuit pas quelque chose. La forme attendue est « auxquelles ».",
+      "3": "`dont` suppose un complément introduit par « de », construction que ce verbe ne connaît pas. La forme attendue est « auxquelles ».",
+      "4": "`sur lesquelles` transpose la préposition d'un verbe comme « peser », qui se construit avec « sur » ; celui de la phrase impose « à ». La forme attendue est « auxquelles ».",
+      "A": "Une option chiffrée, la première, résiste au contrôle : « Aucune » ne peut donc pas être la réponse.",
+      "T": "Trois des quatre options chiffrées sont fautives : « Toutes » ne peut donc pas être la réponse."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -47707,9 +47977,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
-        "2": "regime_a_non_identifie",
+        "2": "regime_direct_suppose",
         "3": "regime_de_suppose",
-        "4": "UNK"
+        "4": "regime_sur_suppose"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-3554",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T19:48:35Z"
+        }
       }
     }
   },
@@ -48230,14 +48509,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "« S'adonner À quelque chose » : le complément est introduit par « à », d'où « auxquelles » (ils s'adonnent à ces activités).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase de base est « les élèves s'adonnent à ces activités créatrices le mercredi après-midi ». Le verbe pronominal « s'adonner » commande un complément introduit par « à » ; le pronom « s' » fait partie du verbe et ne tient pas la place du complément, qui reste à exprimer. L'antécédent est « les activités créatrices », un nom non humain, féminin pluriel. Une forme de lequel convient à cet antécédent, et à + lesquelles se contracte en « auxquelles », la contraction se faisant au pluriel dans les deux genres.\nDonc : le blanc reçoit « auxquelles », et la réponse attendue est l'option 1.",
     "why": {
-      "1": "Correct : s'adonner À → les activités auxquelles ils s'adonnent.",
-      "2": "« dont » supposerait « s'adonner de », construction inexistante.",
-      "3": "« qu' » traiterait le verbe comme transitif direct : « s'adonner quelque chose » est impossible.",
-      "4": "« dans lesquelles » calque « s'investir dans » : « s'adonner » exige « à ».",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "La construction « s'adonner à quelque chose » impose « à », et l'antécédent « les activités créatrices » est féminin pluriel et non humain : à + lesquelles se contracte en « auxquelles ». La relative se remet telle quelle dans la phrase de base « les élèves s'adonnent à ces activités ».",
+      "2": "`dont` suppose un complément introduit par « de », construction que ce verbe pronominal ne connaît pas. La forme attendue est « auxquelles ».",
+      "3": "`qu'` reprend un complément direct, alors que le verbe pronominal réclame « à » : on ne s'adonne pas quelque chose. La forme attendue est « auxquelles ».",
+      "4": "`dans lesquelles` transpose la préposition d'un verbe comme « s'investir », qui se construit avec « dans » ; celui de la phrase impose « à ». La forme attendue est « auxquelles ».",
+      "A": "Une option chiffrée, la première, résiste au contrôle : « Aucune » ne peut donc pas être la réponse.",
+      "T": "Trois des quatre options chiffrées sont fautives : « Toutes » ne peut donc pas être la réponse."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -48248,8 +48527,17 @@ const QUESTIONS = [
       "option_misconceptions": {
         "1": null,
         "2": "regime_de_suppose",
-        "3": "regime_a_non_identifie",
+        "3": "regime_direct_suppose",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-3554",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T19:48:35Z"
+        }
       }
     }
   },
@@ -48322,7 +48610,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -48350,14 +48638,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Quatre tournures correctes malgré leur allure suspecte : « sont convenus de » (auxiliaire être soutenu), « faire montre de », « se faire fort de » (fait et fort invariables) et « avoir vent de ». Réponse : Toutes.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : chaque proposition contient une tournure figée dont la forme écrite s'apprend par l'usage. 1) « les deux services sont convenus d'une procédure » signifie « se sont mis d'accord sur une procédure » : dans cet emploi, la forme soignée attestée se construit avec l'auxiliaire être, comme ici. 2) « a fait montre d'un sang-froid remarquable » signifie « a manifesté du sang-froid » : la locution attestée est « faire montre de », avec le nom « montre » sans déterminant, et « sang-froid » garde son trait d'union. 3) « elle s'est fait fort d'obtenir un délai » signifie « elle s'est déclarée capable de l'obtenir » : dans cette tournure figée, « fait » et « fort » gardent leur forme attestée, sans marque supplémentaire. 4) « les riverains ont eu vent du projet » signifie « en ont été informés par des bruits » : la locution attestée est « avoir vent de », avec « vent » au singulier et sans article. Relue en entier, chaque phrase garde ce sens.\nDonc : les quatre tournures apparaissent sous leur forme attestée, donc les quatre options chiffrées sont correctes et la réponse attendue est Toutes.",
     "why": {
-      "1": "Correcte : « convenir de » se conjugue avec être dans l'usage soigné : ils sont convenus d'une procédure.",
-      "2": "Correcte : « faire montre de » (= manifester) est la locution attestée, sans rapport avec la montre-bracelet.",
-      "3": "Correcte : dans « se faire fort de », « fait » et « fort » restent invariables.",
-      "4": "Correcte : « avoir vent de » (= apprendre par des bruits) est la locution consacrée.",
-      "A": "Les quatre phrases sont correctes.",
-      "T": "Correct : chacune de ces tournures, souvent soupçonnée à tort, est irréprochable."
+      "1": "Le sens demandé est « se mettre d'accord sur quelque chose ». Dans cet emploi, la forme soignée attestée du verbe convenir se construit avec l'auxiliaire être : « les deux services sont convenus d'une procédure commune ». La phrase suit cette construction.",
+      "2": "Le sens demandé est « faire preuve de, manifester ». La locution attestée est « faire montre de », où « montre » est employé seul, sans déterminant ; le nom « sang-froid » conserve par ailleurs son trait d'union, comme l'usage l'atteste.",
+      "3": "Le sens demandé est « se déclarer capable d'obtenir un délai ». Dans la tournure figée « se faire fort de », les deux mots « fait » et « fort » se maintiennent tels quels, c'est la forme attestée et c'est celle qu'écrit la phrase.",
+      "4": "Le sens demandé est « être informé par la rumeur ». La locution attestée est « avoir vent de », avec « vent » au singulier et sans article ; la phrase la reproduit exactement dans « ont eu vent du projet ».",
+      "A": "Comptage : quatre phrases correctes sur quatre, donc Aucune ne convient pas.",
+      "T": "Les quatre tournures correspondent chacune au sens exigé par leur phrase et à leur forme attestée : quatre options correctes désignent Toutes."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -48378,7 +48666,16 @@ const QUESTIONS = [
           "detail_id": "core",
           "tense_id": "passe_compose"
         }
-      ]
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20260805-9575",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:52:50Z"
+        }
+      }
     }
   },
   {
@@ -48778,14 +49075,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "« Déroger À quelque chose » : le complément est introduit par « à », d'où « auxquels » (le comité a dérogé à ces usages).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : l'antécédent du relatif est le groupe « les usages », un nom non humain au masculin pluriel. Si l'on remet la subordonnée en phrase simple, on obtient « le comité a dérogé à ces usages » : le verbe « déroger » relie son complément par la préposition « à », et non directement. Le relatif doit donc porter cette préposition. Comme l'antécédent ne désigne pas des personnes, on emploie une forme de « lequel », ici « lesquels » au masculin pluriel, ce qui donne « à lesquels ». La contraction obligatoire de « à » et de « lesquels » produit « auxquels ».\nDonc : la forme attendue est « auxquels », c'est-à-dire l'option 2.",
     "why": {
-      "1": "« que » traiterait « déroger » comme transitif direct : « déroger quelque chose » n'existe pas.",
-      "2": "Correct : déroger À → les usages auxquels le comité a dérogé.",
-      "3": "« dont » supposerait « déroger de », construction inexistante.",
-      "4": "« sur lesquels » calque « s'asseoir sur les usages » : « déroger » exige « à ».",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`que` reprend un complément direct, sans préposition : la subordonnée deviendrait « le comité a dérogé ces usages ». « Déroger » n'admet pas ce type de complément, la préposition « à » manque ; la forme attendue est « auxquels ».",
+      "2": "« auxquels » porte la préposition « à » exigée par « déroger » et s'accorde avec l'antécédent masculin pluriel « les usages » : à + lesquels se contracte en « auxquels ». La subordonnée se relit « le comité a dérogé à ces usages », construction conforme au verbe.",
+      "3": "`dont` équivaut à « de » suivi de l'antécédent : il imposerait « le comité a dérogé de ces usages ». Le complément de « déroger » n'est pas introduit par « de » mais par « à » ; il faut « auxquels ».",
+      "4": "`sur lesquels` impose la préposition « sur », qui conviendrait à un verbe comme « s'appuyer ». « Déroger » demande « à », d'où la forme correcte « auxquels ».",
+      "A": "Une option chiffrée, la deuxième, fournit exactement le relatif exigé par la construction ; « Aucune » ne peut donc pas être retenue.",
+      "T": "Trois des quatre options chiffrées se trompent de préposition ou l'omettent ; « Toutes » supposerait que les quatre soient également valables."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -48794,10 +49091,19 @@ const QUESTIONS = [
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
-        "1": "regime_a_non_identifie",
+        "1": "regime_direct_suppose",
         "2": null,
         "3": "regime_de_suppose",
-        "4": "UNK"
+        "4": "regime_sur_suppose"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-4728",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T20:08:00Z"
+        }
       }
     }
   },
@@ -49318,14 +49624,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "« Parvenir À quelque chose » : le complément est introduit par « à », d'où « auxquels » (l'équipe est parvenue à ces objectifs).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : le relatif reprend « les objectifs intermédiaires », nom non humain au masculin pluriel. La subordonnée remise en phrase simple donne « l'équipe est parvenue à ces objectifs intermédiaires » : le verbe « parvenir » construit son complément avec la préposition « à », qui doit donc apparaître dans le relatif. L'antécédent ne désignant pas des personnes, on prend une forme de « lequel », soit « lesquels » pour un masculin pluriel. La suite « à lesquels » se contracte obligatoirement en « auxquels ».\nDonc : le relatif attendu est « auxquels », c'est-à-dire l'option 4.",
     "why": {
-      "1": "« que » traiterait « parvenir » comme transitif direct : « parvenir quelque chose » n'existe pas.",
-      "2": "« dont » supposerait « parvenir de », construction inexistante.",
-      "3": "« vers lesquels » évoque la direction : « parvenir » marque l'aboutissement et exige « à ».",
-      "4": "Correct : parvenir À → les objectifs auxquels l'équipe est parvenue.",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`que` est le relatif du complément direct : il donnerait « l'équipe est parvenue ces objectifs », sans la préposition que réclame « parvenir ». La forme correcte est « auxquels ».",
+      "2": "`dont` contient la préposition « de » : il ferait lire « l'équipe est parvenue de ces objectifs ». Ce n'est pas la construction du verbe, qui exige « à » ; il faut « auxquels ».",
+      "3": "`vers lesquels` introduit une orientation, comme dans « se diriger vers ». « Parvenir » marque l'aboutissement et se construit avec « à » : on écrit « auxquels ».",
+      "4": "« auxquels » restitue la préposition « à » demandée par « parvenir » et s'accorde au masculin pluriel avec « les objectifs intermédiaires » : à + lesquels donne « auxquels ». On relit « l'équipe est parvenue à ces objectifs », phrase conforme.",
+      "A": "Le relatif exigé figure bien parmi les options chiffrées, en quatrième position ; « Aucune » est donc écarté.",
+      "T": "Seule une option sur quatre respecte le régime du verbe ; « Toutes » en supposerait quatre correctes."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -49334,10 +49640,19 @@ const QUESTIONS = [
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
-        "1": "regime_a_non_identifie",
+        "1": "regime_direct_suppose",
         "2": "regime_de_suppose",
-        "3": "UNK",
+        "3": "regime_a_non_identifie",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-4728",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T20:08:00Z"
+        }
       }
     }
   },
@@ -49918,14 +50233,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "« Se soustraire À quelque chose » : le complément est introduit par « à », d'où « auxquelles » (se soustraire à ces obligations).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : l'antécédent est « les obligations de service », nom non humain au féminin pluriel. En phrase simple, la subordonnée devient « il a tenté de se soustraire à ces obligations » : le verbe pronominal « se soustraire » relie son complément par la préposition « à ». Cette préposition doit donc être portée par le relatif. L'antécédent n'étant pas une personne, on emploie une forme de « lequel » : « lesquelles » au féminin pluriel. « À lesquelles » se contracte en « auxquelles ».\nDonc : le relatif attendu est « auxquelles », c'est-à-dire l'option 4.",
     "why": {
-      "1": "« que » traiterait le verbe comme transitif direct : « se soustraire quelque chose » n'existe pas.",
-      "2": "« dont » supposerait « se soustraire de », construction inexistante.",
-      "3": "« desquelles » habille la même erreur de régime en « de » d'une forme composée.",
-      "4": "Correct : se soustraire À → les obligations auxquelles il a tenté de se soustraire.",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`que` reprend un complément direct : on lirait « il a tenté de se soustraire ces obligations », sans la préposition réclamée par le verbe. Il faut « auxquelles ».",
+      "2": "`dont` vaut « de » suivi de l'antécédent, ce qui donnerait « se soustraire de ces obligations ». Le verbe se construit avec « à » et non avec « de » : la forme correcte est « auxquelles ».",
+      "3": "`desquelles` est la forme composée de « de » et de « lesquelles » : elle installe le même régime en « de », simplement sous une forme plus longue. La préposition attendue reste « à », d'où « auxquelles ».",
+      "4": "« auxquelles » porte la préposition « à » exigée par « se soustraire » et s'accorde au féminin pluriel avec « les obligations de service » : à + lesquelles donne « auxquelles ». La subordonnée se relit « il a tenté de se soustraire à ces obligations ».",
+      "A": "Le relatif conforme au régime du verbe est proposé en quatrième position ; « Aucune » ne convient donc pas.",
+      "T": "Les options 1, 2 et 3 échouent toutes sur la préposition ; « Toutes » est par conséquent impossible."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -49934,10 +50249,19 @@ const QUESTIONS = [
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
-        "1": "regime_a_non_identifie",
+        "1": "regime_direct_suppose",
         "2": "regime_de_suppose",
-        "3": "UNK",
+        "3": "regime_de_suppose",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-4728",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T20:08:00Z"
+        }
       }
     }
   },
@@ -50010,7 +50334,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -50038,14 +50362,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Quatre locutions correctes malgré leur allure suspecte : « d'arrache-pied », « au demeurant », « à bon escient » et « en catimini ». Réponse : Toutes.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : les quatre propositions contiennent une locution figée dont la graphie ne se déduit d'aucune règle et se vérifie mot à mot. 1) « ont révisé d'arrache-pied » signifie « sans relâche, avec acharnement » : la forme attestée associe « arrache » et « pied » par un trait d'union, au singulier. 2) « au demeurant, le budget reste équilibré » signifie « au reste, par ailleurs » : la forme attestée est « au demeurant », construite sur le verbe demeurer. 3) « à bon escient » signifie « en connaissance de cause » : la forme attestée est « escient », avec le groupe -sci- que l'on retrouve dans « science » et « conscience ». 4) « ajoutée en catimini » signifie « en cachette » : la forme attestée est « catimini », en un mot, sans consonne double. Relue en entier, chaque phrase garde exactement ce sens.\nDonc : les quatre locutions sont écrites sous leur graphie attestée, donc les quatre options chiffrées sont correctes et la réponse attendue est Toutes.",
     "why": {
-      "1": "Correcte : « d'arrache-pied » (avec trait d'union) = sans relâche.",
-      "2": "Correcte : « au demeurant » (= au reste) est la locution consacrée.",
-      "3": "Correcte : « à bon escient » (en connaissance de cause), avec -scient comme « science ».",
-      "4": "Correcte : « en catimini » (= en cachette) s'écrit bien ainsi.",
-      "A": "Les quatre phrases sont correctes.",
-      "T": "Correct : chacune de ces locutions, souvent soupçonnée à tort, est irréprochable."
+      "1": "Le sens demandé est « sans relâche ». La locution attestée est « d'arrache-pied », soudée par un trait d'union et figée au singulier ; la phrase la reproduit exactement.",
+      "2": "Le sens demandé est « au reste, cela dit ». La locution attestée est « au demeurant », formée sur le participe présent de demeurer et écrite en deux mots ; c'est bien la graphie employée.",
+      "3": "Le sens demandé est « à propos, en connaissance de cause ». Le nom attesté est « escient », dont le groupe -sci- rappelle « science » ; la phrase l'écrit avec cette suite de lettres.",
+      "4": "Le sens demandé est « discrètement, en cachette ». Le mot attesté est « catimini », en un seul mot avec un seul t et un seul n ; la phrase respecte cette graphie.",
+      "A": "Comptage : quatre phrases correctes sur quatre, ce qui exclut Aucune.",
+      "T": "Les quatre locutions correspondent chacune au sens exigé par leur phrase et à leur graphie attestée : quatre options correctes désignent Toutes."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -50058,6 +50382,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-9575",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:52:50Z"
+        }
       }
     }
   },
@@ -50458,14 +50791,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "« Se plier À quelque chose » : le complément est introduit par « à », d'où « auxquelles » (se plier à ces exigences).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : le relatif reprend « les exigences du cahier des charges », nom non humain au féminin pluriel. Remise en phrase simple, la subordonnée donne « le prestataire a fini par se plier à ces exigences » : le verbe pronominal « se plier » introduit son complément par la préposition « à ». Le relatif doit donc contenir cette préposition. Comme l'antécédent ne désigne pas des personnes, on utilise une forme de « lequel », ici « lesquelles » au féminin pluriel ; « à lesquelles » se contracte en « auxquelles ».\nDonc : la forme attendue est « auxquelles », c'est-à-dire l'option 3.",
     "why": {
-      "1": "« que » traiterait le verbe comme transitif direct : « se plier quelque chose » n'existe pas.",
-      "2": "« dont » supposerait « se plier de », construction inexistante.",
-      "3": "Correct : se plier À → les exigences auxquelles il a fini par se plier.",
-      "4": "« devant lesquelles » calque « s'incliner devant » : « se plier » exige « à ».",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`que` est le relatif du complément direct : il produirait « le prestataire a fini par se plier ces exigences », où la préposition « à » manque. On attend « auxquelles ».",
+      "2": "`dont` équivaut à « de » suivi de l'antécédent : « se plier de ces exigences » ne correspond pas au verbe, qui demande « à ». La forme correcte est « auxquelles ».",
+      "3": "« auxquelles » restitue la préposition « à » exigée par « se plier » et l'accorde avec l'antécédent féminin pluriel « les exigences » : à + lesquelles donne « auxquelles ». On relit « le prestataire a fini par se plier à ces exigences ».",
+      "4": "`devant lesquelles` impose la préposition « devant », qui conviendrait à « s'incliner devant ». « Se plier » réclame « à » : il faut « auxquelles ».",
+      "A": "L'option 3 fournit le relatif exigé par la construction, ce qui exclut « Aucune ».",
+      "T": "Trois options sur quatre choisissent une préposition étrangère au verbe ou n'en mettent aucune ; « Toutes » ne tient pas."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -50474,10 +50807,19 @@ const QUESTIONS = [
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
-        "1": "regime_a_non_identifie",
+        "1": "regime_direct_suppose",
         "2": "regime_de_suppose",
         "3": null,
-        "4": "UNK"
+        "4": "regime_a_non_identifie"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-4728",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T20:08:00Z"
+        }
       }
     }
   },
@@ -50550,7 +50892,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -50578,14 +50920,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Quatre locutions correctes malgré leur allure suspecte : « tambour battant », « faire fi de », « bon an mal an » et « peu ou prou ». Réponse : Toutes.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : chaque proposition emploie une locution figée dont la graphie s'apprend par l'usage, et non par un raisonnement d'accord. 1) « avance tambour battant » signifie « avance rondement, avec énergie » : la forme attestée reste au singulier et sans trait d'union. 2) « ont fait fi des mises en garde » signifie « les ont dédaignées » : le mot figé est « fi », deux lettres seulement, employé uniquement dans cette locution. 3) « bon an mal an, l'effectif reste stable » signifie « en moyenne, une année dans l'autre » : la forme attestée aligne les quatre mots sans virgule ni trait d'union. 4) « ont, peu ou prou, doublé » signifie « ont plus ou moins doublé » : le mot figé est « prou », terminé par -ou, employé seulement dans cette locution. Relue en entier, chaque phrase conserve ce sens.\nDonc : les quatre locutions apparaissent sous leur graphie attestée, donc les quatre options chiffrées sont correctes et la réponse attendue est Toutes.",
     "why": {
-      "1": "Correcte : « tambour battant » (= rondement) est figée au singulier.",
-      "2": "Correcte : « faire fi de » (= mépriser) s'écrit bien « fi ».",
-      "3": "Correcte : « bon an mal an » (= en moyenne), sans virgule ni s.",
-      "4": "Correcte : « peu ou prou » (= plus ou moins) ; « prou » vient de l'ancien français « assez ».",
-      "A": "Les quatre phrases sont correctes.",
-      "T": "Correct : chacune de ces locutions, souvent soupçonnée à tort, est irréprochable."
+      "1": "Le sens demandé est « rapidement et avec entrain ». La locution attestée est « tambour battant », figée au singulier et écrite sans trait d'union ; la phrase la reproduit telle quelle.",
+      "2": "Le sens demandé est « mépriser, ne pas tenir compte de ». Dans « faire fi de », le mot figé s'écrit « fi », sans autre lettre, et n'existe que dans cet emploi ; la phrase respecte cette graphie.",
+      "3": "Le sens demandé est « en moyenne, bon nombre d'années ». La locution attestée est « bon an mal an », quatre mots séparés, sans virgule interne ni s ; c'est exactement la forme écrite.",
+      "4": "Le sens demandé est « plus ou moins ». Le mot figé attesté est « prou », terminé par -ou et réservé à la locution « peu ou prou » ; la phrase l'emploie correctement entre virgules.",
+      "A": "Comptage : quatre phrases correctes sur quatre, donc Aucune est écarté.",
+      "T": "Chacune des quatre locutions correspond au sens de sa phrase et à sa graphie attestée : le total de quatre options correctes conduit à Toutes."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -50598,6 +50940,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-9575",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:52:50Z"
+        }
       }
     }
   },
@@ -51058,14 +51409,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "« Survivre À quelque chose » : le complément est introduit par « à », d'où « auxquelles » (l'atelier a survécu à ces coupes).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : l'antécédent du relatif est « les coupes budgétaires », nom non humain au féminin pluriel. La subordonnée remise en phrase simple donne « l'atelier de reliure a survécu à ces coupes budgétaires » : le verbe « survivre » relie son complément par la préposition « à ». Le relatif doit donc porter cette préposition. L'antécédent ne désignant pas des personnes, on écarte les formes réservées aux humains et on emploie une forme de « lequel » : « lesquelles » au féminin pluriel. « À lesquelles » se contracte en « auxquelles ».\nDonc : le relatif attendu est « auxquelles », c'est-à-dire l'option 2.",
     "why": {
-      "1": "« que » traiterait « survivre » comme transitif direct : « survivre quelque chose » n'existe pas.",
-      "2": "Correct : survivre À → les coupes auxquelles l'atelier a survécu.",
-      "3": "« dont » supposerait « survivre de », construction inexistante.",
-      "4": "« à qui » se réserve aux personnes : pour un antécédent inanimé comme « les coupes », on emploie « auxquelles ».",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`que` reprend un complément direct : il donnerait « l'atelier a survécu ces coupes », sans la préposition qu'impose « survivre ». La forme correcte est « auxquelles ».",
+      "2": "« auxquelles » contient la préposition « à » exigée par « survivre » et s'accorde au féminin pluriel avec « les coupes budgétaires » : à + lesquelles donne « auxquelles ». La subordonnée se relit « l'atelier de reliure a survécu à ces coupes ».",
+      "3": "`dont` vaut « de » suivi de l'antécédent : « survivre de ces coupes » n'est pas la construction du verbe, qui demande « à ». Il faut « auxquelles ».",
+      "4": "`à qui` retient bien la préposition « à », mais « qui » précédé d'une préposition ne reprend que des personnes. L'antécédent « les coupes budgétaires » désigne des choses, ce qui impose la forme de « lequel » : « auxquelles ».",
+      "A": "Le relatif exigé apparaît en deuxième position parmi les options chiffrées ; « Aucune » est donc écarté.",
+      "T": "Une seule option satisfait à la fois la préposition et la nature de l'antécédent ; « Toutes » en exigerait quatre."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -51074,10 +51425,19 @@ const QUESTIONS = [
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
-        "1": "regime_a_non_identifie",
+        "1": "regime_direct_suppose",
         "2": null,
         "3": "regime_de_suppose",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-4728",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T20:08:00Z"
+        }
       }
     }
   },
@@ -51598,14 +51958,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "« Échapper À quelque chose » : le complément est introduit par « à », d'où « auxquelles » (échapper à ces poursuites).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : le relatif reprend « les poursuites », nom non humain au féminin pluriel. En phrase simple, la subordonnée devient « le prévenu a échappé de justesse à ces poursuites » : le verbe « échapper » introduit ici son complément par la préposition « à ». Cette préposition doit donc figurer dans le relatif. L'antécédent n'étant pas une personne, on emploie une forme de « lequel », soit « lesquelles » au féminin pluriel, et « à lesquelles » se contracte en « auxquelles ».\nDonc : la forme attendue est « auxquelles », c'est-à-dire l'option 4.",
     "why": {
-      "1": "« que » traiterait « échapper » comme transitif direct : hors de la locution figée « l'échapper belle », « échapper quelque chose » n'existe pas.",
-      "2": "« dont » supposerait « échapper de », employé pour un lieu (« échapper de prison »), pas pour des poursuites.",
-      "3": "« desquelles » habille la même erreur de régime en « de » d'une forme composée.",
-      "4": "Correct : échapper À → les poursuites auxquelles il a échappé.",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`que` reprend un complément direct : il donnerait « le prévenu a échappé ces poursuites ». En dehors de la locution figée « l'échapper belle », le verbe ne se construit pas ainsi ; on attend « auxquelles ».",
+      "2": "`dont` équivaut à « de » suivi de l'antécédent. Le tour « échapper de » se rencontre pour un lieu que l'on quitte, non pour des poursuites que l'on évite : la construction utile ici est « échapper à », donc « auxquelles ».",
+      "3": "`desquelles` est la forme composée de « de » et de « lesquelles » : elle maintient le même régime en « de », simplement allongé. La préposition attendue est « à », d'où « auxquelles ».",
+      "4": "« auxquelles » porte la préposition « à » demandée par « échapper » et s'accorde au féminin pluriel avec « les poursuites » : à + lesquelles donne « auxquelles ». On relit « le prévenu a échappé de justesse à ces poursuites ».",
+      "A": "Le relatif conforme au régime du verbe figure en quatrième position ; « Aucune » ne peut donc pas être choisi.",
+      "T": "Les trois autres propositions échouent sur la préposition ; « Toutes » supposerait quatre formes recevables."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -51614,10 +51974,19 @@ const QUESTIONS = [
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
-        "1": "regime_a_non_identifie",
+        "1": "regime_direct_suppose",
         "2": "regime_de_suppose",
-        "3": "UNK",
+        "3": "regime_de_suppose",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-4728",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T20:08:00Z"
+        }
       }
     }
   },
@@ -51658,14 +52027,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Le mot s'écrit « pouls » (du latin pulsus), avec -ls final muet : prendre le pouls. Aucune option ne porte cette graphie.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : « prendre le ___ des équipes de terrain » demande un mot qui signifie, au sens figuré, « se renseigner sur l'état d'esprit, sonder ». Le mot d'usage qui porte ce sens est celui qui désigne d'abord le battement des artères, et sa graphie attestée est « pouls », avec la finale muette -ls. Aucune règle productive ne permet de la reconstruire : elle se mémorise avec la locution « prendre le pouls ». On compare ensuite chaque option à cette graphie : `poul` s'arrête au l, `pou` ne garde que trois lettres et correspond à un autre mot, `poult` ajoute un t, `poulx` ajoute un x. Aucune ne reproduit la finale -ls attestée, et relire la phrase entière avec l'une ou l'autre ne rétablit ni le sens ni la graphie.\nDonc : la graphie attendue « pouls » ne figure dans aucune des quatre options chiffrées, et la réponse attendue est Aucune.",
     "why": {
-      "1": "« poul » : la graphie phonétique omet le -s final hérité du latin pulsus.",
-      "2": "« pou » désigne l'insecte parasite : prendre le pou des équipes est un contresens.",
-      "3": "« poult » : aucun t dans ce mot.",
-      "4": "« poulx » : le x est une fantaisie graphique ; la finale est -ls.",
-      "A": "Correct : la graphie attendue « pouls » ne figure dans aucune option.",
-      "T": "Chaque option déforme le mot d'une façon différente."
+      "1": "La forme fautive est `poul`. Elle transcrit le mot tel qu'on l'entend et supprime le s de la finale muette. La forme attendue est « pouls ».",
+      "2": "La forme fautive ici est `pou` : cette graphie est celle du nom qui désigne l'insecte parasite, et elle ne correspond pas au sens « sonder l'état d'esprit » exigé par la phrase. La forme attendue est « pouls ».",
+      "3": "La forme fautive est `poult`. La finale attestée du mot ne comporte aucun t ; ce t est ajouté par analogie avec d'autres mots terminés par un t muet, comme « saut » ou « défaut ». La forme attendue est « pouls ».",
+      "4": "La forme fautive est `poulx`. Le x ne figure dans aucune graphie attestée de ce mot, dont la finale muette s'écrit -ls. La forme attendue est « pouls ».",
+      "A": "Les quatre options s'écartent chacune de la graphie attestée « pouls » : le nombre d'options correctes est de zéro, ce qui désigne Aucune.",
+      "T": "Comptage : zéro option correcte sur quatre, donc Toutes est exclu."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -51678,6 +52047,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-9575",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:52:50Z"
+        }
       }
     }
   },
@@ -52618,14 +52996,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "« Procéder À quelque chose » : le complément est introduit par « à », d'où « auxquelles » (procéder à ces vérifications).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : l'antécédent est « les vérifications comptables », nom non humain au féminin pluriel. La subordonnée remise en phrase simple donne « le greffe a procédé à ces vérifications comptables » : le verbe « procéder », au sens de réaliser une opération, relie son complément par la préposition « à ». Le relatif doit donc porter cette préposition. Comme l'antécédent ne désigne pas des personnes, on emploie une forme de « lequel » : « lesquelles » au féminin pluriel ; « à lesquelles » se contracte en « auxquelles ».\nDonc : le relatif attendu est « auxquelles », c'est-à-dire l'option 4.",
     "why": {
-      "1": "« dont » supposerait « procéder de » (= découler de), qui a un tout autre sens.",
-      "2": "« qu' » traiterait « procéder » comme transitif direct : « procéder quelque chose » n'existe pas.",
-      "3": "« sur lesquelles » calque « travailler sur » : « procéder » exige « à ».",
-      "4": "Correct : procéder À → les vérifications auxquelles le greffe a procédé.",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`dont` vaut « de » suivi de l'antécédent. « Procéder de » existe, mais au sens de découler d'une cause, ce qui ne correspond pas au greffe qui effectue des vérifications. La construction utile est « procéder à », donc « auxquelles ».",
+      "2": "`qu'` est le relatif du complément direct : il donnerait « le greffe a procédé ces vérifications », sans la préposition que réclame le verbe. La forme correcte est « auxquelles ».",
+      "3": "`sur lesquelles` impose la préposition « sur », qui conviendrait à « travailler sur ». « Procéder » demande « à » : il faut « auxquelles ».",
+      "4": "« auxquelles » restitue la préposition « à » exigée par « procéder » et s'accorde au féminin pluriel avec « les vérifications comptables » : à + lesquelles donne « auxquelles ». On relit « le greffe a procédé à ces vérifications ».",
+      "A": "L'option 4 fournit exactement le relatif demandé par la construction, ce qui exclut « Aucune ».",
+      "T": "Trois propositions sur quatre se trompent de préposition ou l'omettent ; « Toutes » est donc impossible."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -52635,9 +53013,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
-        "3": "UNK",
+        "2": "regime_direct_suppose",
+        "3": "regime_sur_suppose",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-4728",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T20:08:00Z"
+        }
       }
     }
   },
@@ -53790,7 +54177,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -53818,14 +54205,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Quatre locutions correctes malgré leur allure suspecte : « à son corps défendant », « à cor et à cri » (le cor de chasse), « de longue main » et « en son âme et conscience ». Réponse : Toutes.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : chaque proposition emploie une locution figée dont la graphie relève de l'usage et se contrôle mot à mot. 1) « c'est à son corps défendant qu'elle a signé » signifie « c'est malgré elle, à contrecœur » : la forme attestée associe « corps » et « défendant », figés dans cet ordre. 2) « réclament à cor et à cri » signifie « réclament avec insistance » : la forme attestée est « cor », le nom de l'instrument de chasse, en trois lettres. 3) « préparée de longue main » signifie « préparée de longue date, avec soin » : la forme attestée est « de longue main », avec « main » au singulier. 4) « il affirme, en son âme et conscience » signifie « en toute sincérité » : la forme attestée juxtapose « âme » et « conscience » au singulier, sans article devant le second nom. Relue en entier, chaque phrase garde ce sens.\nDonc : les quatre locutions apparaissent sous leur graphie attestée, donc les quatre options chiffrées sont correctes et la réponse attendue est Toutes.",
     "why": {
-      "1": "Correcte : « à son corps défendant » (= à contrecœur), avec le participe présent figé.",
-      "2": "Correcte : « à cor et à cri » invoque le cor de chasse, pas le corps.",
-      "3": "Correcte : « de longue main » (= de longue date, avec soin) est la locution consacrée.",
-      "4": "Correcte : « en son âme et conscience », formule figée du serment.",
-      "A": "Les quatre phrases sont correctes.",
-      "T": "Correct : chacune de ces locutions, souvent soupçonnée à tort, est irréprochable."
+      "1": "Le sens demandé est « contre son gré ». La locution attestée est « à son corps défendant », où « corps » garde son s et « défendant » sa forme en -ant ; la phrase la reproduit intégralement.",
+      "2": "Le sens demandé est « à grand bruit, avec insistance ». Dans « à cor et à cri », le mot attesté est « cor », qui renvoie à l'instrument dont on sonne ; la phrase emploie bien cette graphie de trois lettres.",
+      "3": "Le sens demandé est « depuis longtemps et de façon préméditée ». La locution attestée est « de longue main », avec « main » au singulier et sans article ; c'est la forme écrite dans la phrase.",
+      "4": "Le sens demandé est « en toute sincérité, sous serment ». La formule attestée est « en son âme et conscience », les deux noms au singulier et le second sans déterminant ; la phrase respecte cette graphie.",
+      "A": "Comptage : quatre phrases correctes sur quatre, ce qui exclut Aucune.",
+      "T": "Les quatre locutions correspondent chacune au sens exigé par leur phrase et à leur graphie attestée : quatre options correctes conduisent à Toutes."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -53838,6 +54225,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-9575",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:52:50Z"
+        }
       }
     }
   },
@@ -54178,14 +54574,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "« Se raccrocher À quelque chose » : il faudrait « auxquelles », qui n'est pas proposé.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : le relatif reprend « les quelques certitudes », nom non humain au féminin pluriel. Remise en phrase simple, la subordonnée donne « il se raccroche à ces quelques certitudes » : le verbe pronominal « se raccrocher » relie son complément par la préposition « à ». Le relatif doit donc contenir cette préposition et, l'antécédent ne désignant pas des personnes, prendre une forme de « lequel » : « lesquelles » au féminin pluriel, contracté en « auxquelles » après « à ». Aucune des quatre propositions chiffrées ne donne cette forme : trois supposent un régime en « de » et une un régime en « sur ».\nDonc : la réponse attendue est « Aucune », c'est-à-dire A.",
     "why": {
-      "1": "« dont » supposerait « se raccrocher de », construction inexistante.",
-      "2": "« qu' » traiterait le verbe comme transitif direct : « se raccrocher quelque chose » n'existe pas.",
-      "3": "« desquelles » habille la même erreur de régime en « de » d'une forme composée.",
-      "4": "« sur lesquelles » calque « s'appuyer sur » : « se raccrocher » exige « à ».",
-      "A": "Correct : le relatif attendu « auxquelles » ne figure dans aucune option.",
-      "T": "Aucune option ne restitue le régime du verbe."
+      "1": "`dont` équivaut à « de » suivi de l'antécédent : il ferait lire « il se raccroche de ces certitudes ». Le verbe demande « à », d'où la forme « auxquelles », absente des propositions.",
+      "2": "`qu'` reprend un complément direct : il donnerait « il se raccroche ces certitudes », sans la préposition exigée. La forme correcte serait « auxquelles ».",
+      "3": "`desquelles` est la forme composée de « de » et de « lesquelles » : elle installe le même régime en « de » sous une forme plus longue, alors que la préposition attendue est « à » dans « auxquelles ».",
+      "4": "`sur lesquelles` impose la préposition « sur », qui conviendrait à « s'appuyer sur ». « Se raccrocher » réclame « à », donc « auxquelles ».",
+      "A": "Le seul relatif compatible avec « se raccrocher à » et avec un antécédent féminin pluriel non humain est « auxquelles ». Cette forme ne figure dans aucune des quatre propositions chiffrées, qui échouent toutes sur la préposition : « Aucune » est donc la réponse.",
+      "T": "Aucune des quatre options chiffrées ne restitue le régime du verbe ; « Toutes » est exclu."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -54195,9 +54591,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
-        "3": "UNK",
-        "4": "UNK"
+        "2": "regime_direct_suppose",
+        "3": "regime_de_suppose",
+        "4": "regime_sur_suppose"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-4728",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T20:08:00Z"
+        }
       }
     }
   },
@@ -55258,14 +55663,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "« Songer À quelque chose » : le complément est introduit par « à », d'où « auxquelles » (songer à ces économies).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : l'antécédent du relatif est « les économies d'énergie », nom non humain au féminin pluriel. La subordonnée remise en phrase simple donne « chaque service songe à ces économies d'énergie » : le verbe « songer » introduit son complément par la préposition « à ». Cette préposition doit donc apparaître dans le relatif. Puisque l'antécédent ne désigne pas des personnes, on emploie une forme de « lequel », ici « lesquelles » au féminin pluriel, et « à lesquelles » se contracte en « auxquelles ».\nDonc : la forme attendue est « auxquelles », c'est-à-dire l'option 4.",
     "why": {
-      "1": "« dont » supposerait « songer de », construction inexistante.",
-      "2": "« qu' » traiterait « songer » comme transitif direct : « songer quelque chose » n'existe pas.",
-      "3": "« sur lesquelles » calque « réfléchir sur » : « songer » exige « à ».",
-      "4": "Correct : songer À → les économies auxquelles chaque service songe.",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`dont` vaut « de » suivi de l'antécédent : il donnerait « chaque service songe de ces économies ». Le verbe se construit avec « à », d'où « auxquelles ».",
+      "2": "`qu'` reprend un complément direct : on lirait « chaque service songe ces économies », sans la préposition réclamée par « songer ». La forme correcte est « auxquelles ».",
+      "3": "`sur lesquelles` impose la préposition « sur », qui conviendrait à « réfléchir sur ». « Songer » demande « à » : il faut « auxquelles ».",
+      "4": "« auxquelles » porte la préposition « à » exigée par « songer » et s'accorde au féminin pluriel avec « les économies d'énergie » : à + lesquelles donne « auxquelles ». On relit « chaque service songe à ces économies depuis l'automne ».",
+      "A": "Le relatif attendu est bien proposé, en quatrième position ; « Aucune » ne convient pas.",
+      "T": "Seule une option respecte la préposition imposée par le verbe ; « Toutes » en supposerait quatre."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -55275,9 +55680,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
-        "3": "UNK",
+        "2": "regime_direct_suppose",
+        "3": "regime_sur_suppose",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-4728",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T20:08:00Z"
+        }
       }
     }
   },
@@ -56398,14 +56812,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "« S'abonner À quelque chose » : le complément est introduit par « à », d'où « auxquelles » (s'abonner à ces revues).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : le relatif reprend « les revues pédagogiques », nom non humain au féminin pluriel. Remise en phrase simple, la subordonnée donne « le centre de documentation s'est abonné à ces revues pédagogiques » : le verbe pronominal « s'abonner » relie son complément par la préposition « à ». Le relatif doit donc porter cette préposition, et l'antécédent ne désignant pas des personnes, on prend une forme de « lequel » : « lesquelles » au féminin pluriel, contracté en « auxquelles » après « à ». Le participe « abonné » reste au masculin singulier parce qu'il s'accorde avec le sujet « le centre de documentation », ce qui ne renseigne pas sur le relatif.\nDonc : la forme attendue est « auxquelles », c'est-à-dire l'option 4.",
     "why": {
-      "1": "« dont » supposerait « s'abonner de », construction inexistante.",
-      "2": "« qu' » traiterait le verbe comme transitif direct : « s'abonner quelque chose » n'existe pas.",
-      "3": "« desquelles » habille la même erreur de régime en « de » d'une forme composée.",
-      "4": "Correct : s'abonner À → les revues auxquelles le centre s'est abonné.",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`dont` équivaut à « de » suivi de l'antécédent : il ferait lire « le centre s'est abonné de ces revues ». Le verbe demande « à », donc « auxquelles ».",
+      "2": "`qu'` reprend un complément direct : il donnerait « le centre s'est abonné ces revues », sans la préposition exigée. On attend « auxquelles ».",
+      "3": "`desquelles` est la forme composée de « de » et de « lesquelles » : elle conserve le régime en « de » sous une forme plus longue, alors que « s'abonner » impose « à », donc « auxquelles ».",
+      "4": "« auxquelles » restitue la préposition « à » demandée par « s'abonner » et s'accorde au féminin pluriel avec « les revues pédagogiques » : à + lesquelles donne « auxquelles ». On relit « le centre de documentation s'est abonné à ces revues ».",
+      "A": "Une option chiffrée, la quatrième, donne le relatif exigé par la construction ; « Aucune » est donc écarté.",
+      "T": "Les options 1, 2 et 3 se trompent toutes de préposition ou l'omettent ; « Toutes » ne peut pas être retenu."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -56415,9 +56829,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
-        "3": "UNK",
+        "2": "regime_direct_suppose",
+        "3": "regime_de_suppose",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-4728",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T20:08:00Z"
+        }
       }
     }
   },
@@ -58438,14 +58861,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "« Réserver quelque chose À quelqu'un » : le complément d'attribution est en « à », d'où « auxquels » (l'appui est réservé à ces élèves).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « cet appui de midi est réservé à ces élèves allophones ». Le verbe « réserver » se construit avec deux compléments : on réserve quelque chose (l'appui) à quelqu'un (les élèves) ; la préposition exigée est donc « à ». Dans la subordonnée, l'antécédent « les élèves allophones » occupe la place de ce complément introduit par « à », et non celle du complément direct. Il faut ensuite regarder ce qu'est cet antécédent : il désigne des personnes. Or, quand la reprise porte sur des personnes, un complément en « à » peut se reprendre de deux manières, soit par « à qui », soit par « à » suivi d'une forme de lequel ; les deux sont admises. Ici, aucune proposition ne présente « à qui » : il ne reste donc que la forme de lequel, qu'il faut construire correctement. On l'accorde avec l'antécédent, masculin pluriel, ce qui donne « lesquels », puis on applique la contraction obligatoire à + lesquels = auxquels.\nDonc : la seule reprise qui restitue la préposition « à » et l'accord masculin pluriel est « auxquels », c'est-à-dire l'option 4.",
     "why": {
-      "1": "« dont » supposerait « réservé de », construction inexistante.",
-      "2": "« que » ferait des élèves le COD alors qu'ils sont le destinataire (réservé À eux).",
-      "3": "« envers lesquels » calque « attentif envers » : « réservé » appelle son complément en « à ».",
-      "4": "Correct : réservé À → les élèves auxquels cet appui est réservé.",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Une seule option restitue la construction du participe."
+      "1": "`dont` reprend un complément introduit par « de ». Or on ne dit pas « réserver quelque chose de quelqu'un » : le destinataire de « réservé » est introduit par « à ». La forme attendue est « auxquels ».",
+      "2": "`que` reprend un complément direct, sans préposition. Ici les élèves ne sont pas la chose réservée : la chose réservée est « cet appui de midi », et les élèves en sont les destinataires, introduits par « à ». La forme attendue est « auxquels ».",
+      "3": "`envers lesquels` impose la préposition « envers », qui convient à des verbes comme « être attentif envers ». « Réserver » n'admet pas ce complément : sa construction est « réserver quelque chose à quelqu'un ». La forme attendue est « auxquels ».",
+      "4": "La construction « réserver quelque chose à quelqu'un » impose la préposition « à » devant la reprise de l'antécédent ; l'antécédent « les élèves allophones » est masculin pluriel, donc la forme de lequel qui lui correspond est « lesquels », et à + lesquels se contracte obligatoirement en « auxquels ». La phrase reconstruite « cet appui est réservé à ces élèves » se retrouve exactement.",
+      "A": "« Aucune » supposerait que les quatre propositions chiffrées échouent. Ce n'est pas le cas : une proposition chiffrée respecte la construction du verbe, donc « Aucune » est à écarter.",
+      "T": "« Toutes » supposerait quatre propositions chiffrées correctes. Le décompte est ici d'une seule proposition valable contre trois prépositions incompatibles, donc « Toutes » est à écarter."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -58455,9 +58878,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
-        "3": "UNK",
+        "2": "regime_direct_suppose",
+        "3": "regime_a_non_identifie",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-6042",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:09:34Z"
+        }
       }
     }
   },
@@ -61200,14 +61632,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "« Se vouer À quelque chose » : le complément est introduit par « à », d'où « à laquelle » (se vouer à la médiation).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « elle s'est vouée à la médiation scolaire depuis dix ans ». Le verbe pronominal « se vouer » demande toujours un complément introduit par « à » : on se voue à une cause, à une tâche. C'est donc cette préposition que la reprise relative doit porter. L'antécédent est « la médiation scolaire », groupe nominal féminin singulier ; la forme de lequel qui lui correspond est « laquelle ». Au féminin singulier, il n'y a pas de contraction : on écrit « à laquelle », alors que la contraction ne joue qu'avec lequel, lesquels et lesquelles (auquel, auxquels, auxquelles).\nDonc : la reprise correcte est « à laquelle », c'est-à-dire l'option 3.",
     "why": {
-      "1": "« dont » supposerait « se vouer de », construction inexistante.",
-      "2": "« qu' » traiterait le verbe comme transitif direct : « se vouer quelque chose » n'existe pas.",
-      "3": "Correct : se vouer À → la médiation à laquelle elle s'est vouée.",
-      "4": "« pour laquelle » calque « militer pour » : « se vouer » exige « à ».",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`dont` équivaut à un complément en « de ». Le verbe employé est « se vouer à » et non « se vouer de » : la préposition attendue est « à », d'où « à laquelle ».",
+      "2": "`qu'` reprend un complément direct, sans préposition. « Se vouer » ne se construit pas directement : on ne se voue pas quelque chose, on se voue à quelque chose. La forme attendue est « à laquelle ».",
+      "3": "La construction est « se vouer à quelque chose » : la reprise doit donc être précédée de « à ». L'antécédent « la médiation scolaire » est féminin singulier, ce qui donne « laquelle », sans contraction au féminin singulier : « à laquelle ». La phrase de base « elle s'est vouée à la médiation scolaire » est ainsi restituée mot pour mot.",
+      "4": "`pour laquelle` impose la préposition « pour », qui conviendrait à « militer pour » ou « se battre pour ». Elle change la construction du verbe employé, qui exige « à ». La forme attendue est « à laquelle ».",
+      "A": "« Aucune » exigerait que les quatre propositions chiffrées soient fautives. Une proposition chiffrée respecte pourtant la construction du verbe, donc « Aucune » est à écarter.",
+      "T": "« Toutes » exigerait quatre propositions chiffrées correctes. Le décompte donne une seule proposition valable et trois régimes incompatibles, donc « Toutes » est à écarter."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -61217,9 +61649,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
+        "2": "regime_direct_suppose",
         "3": null,
-        "4": "UNK"
+        "4": "regime_a_non_identifie"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-6042",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:09:34Z"
+        }
       }
     }
   },
@@ -62456,14 +62897,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "« S'astreindre À quelque chose » : le complément est introduit par « à », d'où « à laquelle » (s'astreindre à cette routine).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « la gardienne s'astreint à cette routine d'entraînement depuis janvier ». Le verbe pronominal « s'astreindre » exige un complément introduit par « à » : on s'astreint à un régime, à un horaire, à une routine. La reprise relative doit donc porter cette préposition. L'antécédent est « la routine d'entraînement », féminin singulier ; la forme de lequel accordée avec lui est « laquelle ». La contraction ne concerne que lequel, lesquels et lesquelles, donc on écrit ici « à laquelle » sans contraction.\nDonc : la reprise correcte est « à laquelle », c'est-à-dire l'option 1.",
     "why": {
-      "1": "Correct : s'astreindre À → la routine à laquelle elle s'astreint.",
-      "2": "« dont » supposerait « s'astreindre de », construction inexistante.",
-      "3": "« qu' » traiterait le verbe comme transitif direct : « s'astreindre quelque chose » n'existe pas.",
-      "4": "« sous laquelle » calque « plier sous » : « s'astreindre » exige « à ».",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "Le verbe de la subordonnée est « s'astreindre à » : la reprise de l'antécédent doit être précédée de « à ». L'antécédent « la routine d'entraînement » étant féminin singulier, la forme de lequel accordée est « laquelle », sans contraction possible au féminin singulier ; on obtient « à laquelle », qui restitue exactement « la gardienne s'astreint à cette routine ».",
+      "2": "`dont` reprend un complément en « de ». La construction employée est « s'astreindre à », jamais « s'astreindre de » : il faut donc « à laquelle ».",
+      "3": "`qu'` supposerait un complément direct, sans préposition. Or « s'astreindre » ne reçoit pas de complément direct : son complément est toujours introduit par « à ». La forme attendue est « à laquelle ».",
+      "4": "`sous laquelle` impose la préposition « sous », qui conviendrait à « plier sous une contrainte ». La contrainte exprimée ici passe par le régime en « à » du verbe employé, d'où « à laquelle ».",
+      "A": "« Aucune » supposerait quatre propositions chiffrées fautives, alors qu'une proposition chiffrée respecte le régime du verbe : « Aucune » est donc à écarter.",
+      "T": "« Toutes » supposerait que les quatre propositions chiffrées conviennent. Le compte réel est de une correcte pour trois incorrectes, donc « Toutes » est à écarter."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -62474,8 +62915,17 @@ const QUESTIONS = [
       "option_misconceptions": {
         "1": null,
         "2": "regime_de_suppose",
-        "3": "regime_a_non_identifie",
-        "4": "UNK"
+        "3": "regime_direct_suppose",
+        "4": "regime_a_non_identifie"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-6042",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:09:34Z"
+        }
       }
     }
   },
@@ -63096,14 +63546,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "« Recourir À quelque chose » : le complément est introduit par « à », d'où « à laquelle » (recourir à cette procédure).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « le comité a recouru à cette procédure d'urgence en juin ». Le verbe « recourir » se construit avec « à » : on recourt à un moyen, à une procédure. La reprise relative doit donc porter cette préposition. L'antécédent est « la procédure d'urgence », féminin singulier, ce qui donne la forme de lequel accordée « laquelle ». Comme la contraction ne touche que lequel, lesquels et lesquelles, on écrit ici « à laquelle ».\nDonc : la reprise correcte est « à laquelle », c'est-à-dire l'option 3.",
     "why": {
-      "1": "« dont » supposerait « recourir de », construction inexistante.",
-      "2": "« qu' » traiterait le verbe comme transitif direct : « recourir quelque chose » n'existe pas.",
-      "3": "Correct : recourir À → la procédure à laquelle le comité a recouru.",
-      "4": "« vers laquelle » calque « se tourner vers » : « recourir » exige « à ».",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`dont` remplace un complément introduit par « de ». « Recourir » n'admet pas ce régime : on recourt à quelque chose. Il faut « à laquelle ».",
+      "2": "`qu'` remplace un complément direct. Le verbe « recourir » n'en accepte pas : son complément est obligatoirement précédé de « à ». La forme attendue est « à laquelle ».",
+      "3": "La construction « recourir à quelque chose » impose la préposition « à » devant la reprise. L'antécédent « la procédure d'urgence » est féminin singulier, donc la forme de lequel accordée est « laquelle » et l'ensemble s'écrit « à laquelle », sans contraction ; on retrouve la phrase de base « le comité a recouru à cette procédure ».",
+      "4": "`vers laquelle` impose la préposition « vers », qui conviendrait à « se tourner vers une solution ». Le verbe écrit dans la phrase est « recourir », dont le complément se construit avec « à » : la forme attendue est « à laquelle ».",
+      "A": "« Aucune » n'est possible que si les quatre propositions chiffrées échouent ; ici une proposition chiffrée suit le régime du verbe, donc « Aucune » est écartée.",
+      "T": "« Toutes » n'est possible qu'avec quatre propositions chiffrées correctes ; le décompte est d'une seule correcte, donc « Toutes » est écartée."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -63113,9 +63563,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
+        "2": "regime_direct_suppose",
         "3": null,
-        "4": "UNK"
+        "4": "regime_a_non_identifie"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-6042",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:09:34Z"
+        }
       }
     }
   },
@@ -63810,14 +64269,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "« Se cramponner À quelque chose » : le complément est introduit par « à », d'où « à laquelle » (se cramponner à cette version).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « le témoin se cramponne à cette version des faits depuis l'automne ». Le verbe pronominal « se cramponner » demande un complément introduit par « à » : on se cramponne à une rampe, à une idée, à une version. La reprise relative doit donc porter « à ». L'antécédent est le groupe « la version des faits », dont le noyau « version » est féminin singulier ; la forme de lequel accordée est « laquelle ». Au féminin singulier il n'y a pas de contraction, d'où « à laquelle ».\nDonc : la reprise correcte est « à laquelle », c'est-à-dire l'option 4.",
     "why": {
-      "1": "« dont » supposerait « se cramponner de », construction inexistante.",
-      "2": "« qu' » traiterait le verbe comme transitif direct : « se cramponner quelque chose » n'existe pas.",
-      "3": "« sur laquelle » calque « s'arc-bouter sur » : « se cramponner » exige « à ».",
-      "4": "Correct : se cramponner À → la version à laquelle il se cramponne.",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`dont` correspond à un complément en « de », que le verbe n'admet pas : on se cramponne à quelque chose. La forme attendue est « à laquelle ».",
+      "2": "`qu'` correspond à un complément direct. « Se cramponner » n'en reçoit jamais : son complément est introduit par « à ». La forme attendue est « à laquelle ».",
+      "3": "`sur laquelle` impose la préposition « sur », qui conviendrait à « s'arc-bouter sur » ou « s'appuyer sur ». Le verbe écrit ici est « se cramponner », qui se construit avec « à », d'où « à laquelle ».",
+      "4": "Le verbe « se cramponner à » impose la préposition « à » devant la reprise de l'antécédent. Le noyau de l'antécédent, « la version », est féminin singulier : la forme de lequel accordée est « laquelle », sans contraction, ce qui donne « à laquelle » et restitue « le témoin se cramponne à cette version ».",
+      "A": "« Aucune » supposerait qu'aucune proposition chiffrée ne convienne, alors qu'une proposition chiffrée respecte le régime du verbe : elle est écartée.",
+      "T": "« Toutes » supposerait quatre propositions chiffrées correctes ; il n'y en a qu'une, les trois autres imposant une préposition étrangère au verbe : elle est écartée."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -63827,9 +64286,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
+        "2": "regime_direct_suppose",
         "3": "regime_sur_suppose",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-6042",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T20:41:51Z"
+        }
       }
     }
   },
@@ -63990,14 +64458,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "« S'évertuer À quelque chose » : le complément est introduit par « à », d'où « auxquelles » (s'évertuer à ces simplifications).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : pour relever la préposition, on part de la construction attestée du verbe pronominal « s'évertuer », qui s'emploie avec « à » suivi le plus souvent d'un infinitif : « le nouveau secrétaire général s'évertue à obtenir ces simplifications administratives », « il s'évertue à convaincre les doyens ». Ce verbe n'a donc jamais de complément direct : ce qu'il vise est toujours amené par « à ». La reprise relative doit porter cette même préposition, puisque les simplifications administratives sont ce à quoi le secrétaire général s'évertue. L'antécédent est « les simplifications administratives », féminin pluriel ; la forme de lequel qui s'accorde avec lui est « lesquelles ». Au pluriel, la contraction est obligatoire : à + lesquelles = auxquelles.\nDonc : la reprise correcte est « auxquelles », c'est-à-dire l'option 4.",
     "why": {
-      "1": "« dont » supposerait « s'évertuer de », construction inexistante.",
-      "2": "« qu' » traiterait le verbe comme transitif direct : « s'évertuer quelque chose » n'existe pas.",
-      "3": "« pour lesquelles » calque « militer pour » : « s'évertuer » exige « à ».",
-      "4": "Correct : s'évertuer À → les simplifications auxquelles il s'évertue.",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`dont` reprendrait un complément en « de ». Le verbe employé se construit avec « à » et non avec « de » : la forme attendue est « auxquelles ».",
+      "2": "`qu'` reprendrait un complément direct. « S'évertuer » ne reçoit pas de complément direct ; son complément est toujours introduit par « à ». La forme attendue est « auxquelles ».",
+      "3": "`pour lesquelles` impose la préposition « pour », propre à des verbes de but comme « militer pour ». Le seul régime que reconnaisse le verbe de la subordonnée est celui en « à », d'où « auxquelles ».",
+      "4": "Le complément de « s'évertuer » est toujours amené par « à », comme le montre la construction attestée « s'évertuer à obtenir ces simplifications » : la reprise doit donc être précédée de « à ». L'antécédent « les simplifications administratives » est féminin pluriel, donc la forme de lequel accordée est « lesquelles », et à + lesquelles se contracte obligatoirement en « auxquelles ».",
+      "A": "« Aucune » demanderait que les quatre propositions chiffrées soient fautives ; une proposition chiffrée respecte pourtant la préposition et l'accord, donc « Aucune » est écartée.",
+      "T": "« Toutes » demanderait quatre propositions chiffrées correctes ; le décompte donne une correcte contre trois, donc « Toutes » est écartée."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -64007,9 +64475,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
-        "3": "UNK",
+        "2": "regime_direct_suppose",
+        "3": "regime_a_non_identifie",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-6042",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:09:34Z"
+        }
       }
     }
   },
@@ -64490,14 +64967,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "« Se rallier À quelque chose » : le complément est introduit par « à », d'où « à laquelle » (se rallier à cette proposition).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « tous les groupes se sont ralliés à cette proposition de compromis ». Le verbe pronominal « se rallier » exige un complément introduit par « à » : on se rallie à un avis, à une proposition. La reprise relative doit donc porter « à ». L'antécédent est le groupe « la proposition de compromis », dont le noyau « proposition » est féminin singulier ; la forme de lequel accordée est « laquelle », sans contraction au féminin singulier.\nDonc : la reprise correcte est « à laquelle », c'est-à-dire l'option 4.",
     "why": {
-      "1": "« dont » supposerait « se rallier de », construction inexistante.",
-      "2": "« qu' » traiterait le verbe comme transitif direct : « se rallier quelque chose » n'existe pas.",
-      "3": "« derrière laquelle » calque « se ranger derrière » : « se rallier » exige « à ».",
-      "4": "Correct : se rallier À → la proposition à laquelle tous se sont ralliés.",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`dont` renvoie à un complément en « de », inconnu de ce verbe : on se rallie à quelque chose. La forme attendue est « à laquelle ».",
+      "2": "`qu'` renvoie à un complément direct. « Se rallier » n'admet pas de complément direct : son complément est introduit par « à ». La forme attendue est « à laquelle ».",
+      "3": "`derrière laquelle` impose la préposition « derrière », qui s'emploie avec « se ranger derrière quelqu'un » et vise des personnes. L'antécédent est ici une proposition, et le verbe écrit demande « à » : la forme attendue est « à laquelle ».",
+      "4": "Le verbe « se rallier à » impose « à » devant la reprise de l'antécédent ; le noyau « la proposition » est féminin singulier, donc la forme de lequel accordée est « laquelle » et l'ensemble s'écrit « à laquelle », ce qui restitue « tous les groupes se sont ralliés à cette proposition ».",
+      "A": "« Aucune » n'est justifiée que si les quatre propositions chiffrées échouent ; une proposition chiffrée respecte ici la construction, donc « Aucune » est écartée.",
+      "T": "« Toutes » n'est justifiée qu'avec quatre propositions chiffrées correctes ; on n'en compte qu'une, donc « Toutes » est écartée."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -64507,9 +64984,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
-        "3": "UNK",
+        "2": "regime_direct_suppose",
+        "3": "regime_a_non_identifie",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-6042",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:09:34Z"
+        }
       }
     }
   },
@@ -65104,14 +65590,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "« S'attacher À quelque chose » : le complément est introduit par « à », d'où « auxquelles » (s'attacher à ces valeurs).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « l'établissement s'attache à ces valeurs de respect ». Au sens de « tenir à, être fidèle à », le verbe pronominal « s'attacher » se construit avec « à ». La reprise relative doit donc porter cette préposition. L'antécédent est « les valeurs de respect », féminin pluriel ; la forme de lequel accordée avec lui est « lesquelles », et la contraction est obligatoire au pluriel : à + lesquelles = auxquelles.\nDonc : la reprise correcte est « auxquelles », c'est-à-dire l'option 4.",
     "why": {
-      "1": "« dont » supposerait « s'attacher de », construction inexistante.",
-      "2": "« qu' » traiterait le verbe comme transitif direct : « s'attacher quelque chose » a un autre sens (fixer sur soi).",
-      "3": "« pour lesquelles » calque « militer pour » : « s'attacher » exige « à ».",
-      "4": "Correct : s'attacher À → les valeurs auxquelles l'établissement s'attache.",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`dont` reprend un complément en « de ». Le verbe employé demande « à » et non « de » : il faut « auxquelles ».",
+      "2": "`qu'` reprend un complément direct. Employé directement, « attacher quelque chose » signifie fixer un objet, ce qui ne correspond pas au sens de la phrase ; l'attachement à des valeurs se construit avec « à », d'où « auxquelles ».",
+      "3": "`pour lesquelles` impose la préposition « pour », propre à des verbes d'engagement comme « militer pour ». Le verbe de la phrase demande « à » : la forme attendue est « auxquelles ».",
+      "4": "La construction « s'attacher à quelque chose » impose « à » devant la reprise. L'antécédent « les valeurs de respect » est féminin pluriel, donc la forme de lequel accordée est « lesquelles », que la contraction obligatoire transforme en « auxquelles » : on retrouve « l'établissement s'attache à ces valeurs ».",
+      "A": "« Aucune » exigerait quatre propositions chiffrées fautives ; une proposition chiffrée est conforme au régime et à l'accord, donc « Aucune » est écartée.",
+      "T": "« Toutes » exigerait quatre propositions chiffrées correctes ; le décompte est d'une seule, donc « Toutes » est écartée."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -65121,9 +65607,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
-        "3": "UNK",
+        "2": "regime_direct_suppose",
+        "3": "regime_a_non_identifie",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-6042",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:09:34Z"
+        }
       }
     }
   },
@@ -65298,14 +65793,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "« Excellent » (adjectif, -ent) qualifie le dossier ; « excellant » (participe présent, -ant) exprime l'action en cours (excellant dans la négociation).",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : les deux blancs s'analysent séparément. Premier blanc, « un dossier ___ » : la forme suit le nom « dossier », ne commande aucun complément et exprime une qualité ; le test du féminin fonctionne (« une candidature excellente »), donc adjectif verbal en -ent, accordé au masculin singulier : « excellent ». Second blanc, « ___ dans la négociation, la candidate a même obtenu un délai » : la forme se rapporte à l'action de la candidate et commande le complément « dans la négociation », ce qui est le fonctionnement du verbe exceller ; le participe présent reste invariable et s'écrit -ant : « excellant ».\nDonc : la suite attendue est « excellent / excellant », soit l'option 3.",
     "why": {
-      "1": "« un dossier excellant » : la qualité stable s'écrit avec l'adjectif excellent.",
-      "2": "« excellent dans la négociation, la candidate… » : l'action en cours exige le participe excellant.",
-      "3": "Correct : adjectif excellent (qualité) ; participe excellant (action, suivi de son complément).",
-      "4": "Inverse l'adjectif et le participe.",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Trois options confondent la qualité et l'action en cours."
+      "1": "Le second blanc est bien traité, mais au premier `excellant` reste invariable alors que la forme qualifie le nom « dossier » sans commander de complément. Cette valeur de qualité impose l'adjectif verbal accordé « un dossier excellent ».",
+      "2": "Le premier blanc est bien traité, mais au second `excellent` emploie la graphie adjectivale alors que la forme commande le complément « dans la négociation » et décrit ce que fait la candidate. Le participe présent invariable « excellant » est attendu.",
+      "3": "Au premier blanc, la forme qualifie le dossier sans complément : l'adjectif verbal en -ent est accordé, « excellent ». Au second, la forme commande le complément « dans la négociation » et se rapporte à l'action de la candidate : le participe présent reste invariable, « excellant ». Les deux analyses sont respectées.",
+      "4": "Les deux formes sont interverties. `excellant` qualifie le dossier sans complément et doit devenir l'adjectif accordé « excellent » ; `excellent` commande le complément « dans la négociation » et doit devenir le participe présent invariable « excellant ».",
+      "A": "Une combinaison sur quatre est entièrement correcte, donc le nombre de combinaisons correctes n'est pas nul et « Aucune » est écarté.",
+      "T": "Le compte donne une combinaison correcte sur quatre, et non quatre, donc « Toutes » est écarté."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -65318,6 +65813,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-7980",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:34:29Z"
+        }
       }
     }
   },
@@ -65658,14 +66162,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "« Concourir À quelque chose » (= y contribuer) : le complément est introduit par « à », d'où « auquel » (concourir à ce succès).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « toutes les volées ont concouru au succès de la fête interculturelle ». Au sens de « contribuer à », le verbe « concourir » se construit avec « à ». La reprise relative doit donc porter cette préposition. L'antécédent est « le succès de la fête interculturelle » : le noyau est « le succès », masculin singulier, et non « la fête ». La forme de lequel accordée est donc « lequel », et la contraction est obligatoire au masculin singulier : à + lequel = auquel.\nDonc : la reprise correcte est « auquel », c'est-à-dire l'option 3.",
     "why": {
-      "1": "« dont » supposerait « concourir de », construction inexistante.",
-      "2": "« qu' » traiterait le verbe comme transitif direct : « concourir quelque chose » n'existe pas.",
-      "3": "Correct : concourir À → le succès auquel toutes les volées ont concouru.",
-      "4": "« pour lequel » calque « travailler pour » : « concourir » exige « à ».",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime du verbe."
+      "1": "`dont` reprend un complément en « de ». « Concourir » au sens de contribuer se construit avec « à » : la forme attendue est « auquel ».",
+      "2": "`qu'` reprend un complément direct, que « concourir » n'admet pas : son complément est introduit par « à ». La forme attendue est « auquel ».",
+      "3": "La construction « concourir à quelque chose » impose « à » devant la reprise, et le noyau de l'antécédent est « le succès », masculin singulier : la forme de lequel accordée est « lequel », que la contraction obligatoire transforme en « auquel ». On retrouve « toutes les volées ont concouru à ce succès ».",
+      "4": "`pour lequel` impose la préposition « pour », qui conviendrait à « travailler pour un résultat ». Le verbe écrit dans la phrase demande « à », d'où « auquel ».",
+      "A": "« Aucune » supposerait que les quatre propositions chiffrées échouent ; une proposition chiffrée respecte la préposition et l'accord, donc « Aucune » est écartée.",
+      "T": "« Toutes » supposerait quatre propositions chiffrées correctes ; on n'en compte qu'une, donc « Toutes » est écartée."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -65675,9 +66179,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
+        "2": "regime_direct_suppose",
         "3": null,
-        "4": "UNK"
+        "4": "regime_a_non_identifie"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-6042",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:09:34Z"
+        }
       }
     }
   },
@@ -65884,7 +66397,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quelle phrase est correctement ponctuée ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -67526,7 +68039,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quatre critiques rédigées par les membres du club de lecture. Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -67554,14 +68067,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Quatre phrases correctes : « auxquels… attachée » (régime + accord), « trouvée » (l' = la fin), « je lui trouve » (trouver qqch À qqn) et « lues » (les = les pages). Réponse : Toutes.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : les quatre critiques se vérifient une par une, en remettant chaque fois la phrase de base en ordre. Option 1 : « je me suis attachée à ces personnages » ; la construction impose « à », l'antécédent est pluriel, donc à + lesquels se contracte en « auxquels », et le participe s'accorde avec le pronom réfléchi « me », complément direct placé avant, qui reprend la lectrice : « attachée ». Option 2 : « j'ai trouvé la fin un peu rapide » ; le complément direct « la fin » est repris par « l' » placé avant le verbe, ce qui commande l'accord « trouvée ». Option 3 : on trouve quelque chose à quelqu'un ; « un ton absolument unique » est le complément direct et l'autrice est le complément indirect, repris par « lui ». Option 4 : « j'ai lu les cent pages du milieu d'une traite » ; le complément direct est repris par « les » placé avant le verbe, ce qui commande l'accord « lues ».\nDonc : les quatre phrases respectent chacune la construction de leur verbe et l'accord attendu, et la réponse est « Toutes ».",
     "why": {
-      "1": "Correcte : s'attacher à → auxquels ; « attachée » s'accorde avec la lectrice.",
-      "2": "Correcte : le COD « l' » (= la fin) est antéposé → trouvée.",
-      "3": "Correcte : « trouver un ton à quelqu'un » → lui (COI).",
-      "4": "Correcte : « les » (= les cent pages) antéposé → lues.",
-      "A": "Les quatre phrases sont correctes.",
-      "T": "Correct : chaque pronom et chaque accord suit exactement sa règle."
+      "1": "« s'attacher à quelque chose » impose « à » ; l'antécédent « les personnages » est au pluriel, donc à + lesquels donne la forme contractée « auxquels ». Le participe suit le pronom réfléchi « me », placé avant le verbe et repris par la locutrice, ce qui justifie la marque du féminin dans « attachée ».",
+      "2": "Le pronom « l' » reprend « la fin », annoncée en tête de phrase ; ce complément direct précède le verbe, ce qui commande l'accord au féminin singulier dans « trouvée ».",
+      "3": "La construction est « trouver quelque chose à quelqu'un » : le complément direct est « un ton absolument unique » et l'autrice est le complément indirect, que reprend exactement le pronom « lui », sans préposition supplémentaire.",
+      "4": "Le pronom « les » reprend « les cent pages du milieu », annoncées en tête ; ce complément direct est placé avant le verbe et impose la marque du féminin pluriel dans « lues ».",
+      "A": "Les quatre options chiffrées résistent au contrôle : « Aucune » ne peut donc pas être la réponse.",
+      "T": "Le décompte est complet : quatre options chiffrées sur quatre sont correctes, ce qui correspond exactement à « Toutes »."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -67594,7 +68107,16 @@ const QUESTIONS = [
           "detail_id": "cent",
           "tense_id": null
         }
-      ]
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20260804-3554",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T19:48:35Z"
+        }
+      }
     }
   },
   {
@@ -67874,14 +68396,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "« Communicant » (adjectif, -cant) qualifie les vases ; « en communiquant » (participe présent, -quant) exprime l'action.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : les deux blancs se traitent l'un après l'autre, et le verbe communiquer change de graphie selon la valeur retenue. Premier blanc, « des vases ___ » : la forme ne commande aucun complément et attribue une propriété aux vases ; le test du féminin fonctionne (« une cuve communicante »), donc adjectif verbal, qui perd le u du radical et s'écrit -cant, avec l'accord du masculin pluriel : « communicants ». Second blanc, « en ___ les résultats du test aux parents » : après « en », la forme commande le complément direct « les résultats du test » et le complément « aux parents », donc elle garde le fonctionnement du verbe ; le participe présent conserve le u du radical et reste invariable : « communiquant ».\nDonc : la suite attendue est « communicants / communiquant », soit l'option 1.",
     "why": {
-      "1": "Correct : adjectif en -cant (vases communicants) ; participe en -quant (en communiquant).",
-      "2": "« vases communiquants » : l'adjectif s'écrit -cant.",
-      "3": "« en communicant les résultats » : l'action s'écrit -quant.",
-      "4": "Inverse les deux graphies.",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Trois options confondent l'adjectif et le participe."
+      "1": "Au premier blanc, la forme décrit les vases sans commander de complément : l'adjectif verbal s'écrit -cant et s'accorde au masculin pluriel, « communicants ». Au second, après « en », la forme commande le complément direct « les résultats du test » : le participe présent garde le u du radical et reste invariable, « communiquant ». Les deux analyses sont respectées.",
+      "2": "Le second blanc est bien traité, mais au premier `communiquants` accorde la graphie verbale en -quant alors que la forme attribue une propriété aux vases et ne commande aucun complément. L'adjectif verbal s'écrit sans u : « des vases communicants ».",
+      "3": "Le premier blanc est bien traité, mais au second `communicant` emploie la graphie adjectivale alors que la forme, après « en », commande le complément direct « les résultats du test ». Le participe présent garde le u et reste invariable : « en communiquant ».",
+      "4": "Les deux graphies sont interverties. `communiquants` accorde la forme verbale là où la propriété des vases appelle l'adjectif « communicants » ; `communicant` emploie la graphie adjectivale là où le complément direct « les résultats du test » impose le participe présent « communiquant ».",
+      "A": "Une combinaison sur quatre est entièrement correcte, donc le nombre de combinaisons correctes n'est pas nul et « Aucune » est écarté.",
+      "T": "Le compte donne une combinaison correcte sur quatre, et non quatre, donc « Toutes » est écarté."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -67894,6 +68416,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-7980",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:34:29Z"
+        }
       }
     }
   },
@@ -68114,14 +68645,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Phrase de base : « grâce à ce fonds, trois familles ont pu financer le camp » → la locution se conserve : grâce auquel.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : la phrase simple est « grâce à ce fonds de dépannage, trois familles ont pu financer le camp de ski ». Le verbe de la subordonnée est « ont pu financer », dont le complément direct est déjà « le camp de ski » : l'antécédent n'est donc ni son complément direct ni un complément en « de ». Le fonds exprime le moyen, et ce moyen est introduit par la locution « grâce à », qui se termine par la préposition « à ». Cette locution doit être conservée entière devant la reprise. L'antécédent « le fonds de dépannage » est masculin singulier : la forme de lequel accordée est « lequel », et la contraction obligatoire donne à + lequel = auquel, précédé de « grâce ».\nDonc : la reprise correcte est « grâce auquel », c'est-à-dire l'option 4.",
     "why": {
-      "1": "« dont » (= de) ne rend pas le moyen exprimé par « grâce à ».",
-      "2": "« auquel » ampute la locution : les familles n'ont pas « pu financer au fonds ».",
-      "3": "« duquel » suppose une préposition en « de » complète, absente ici.",
-      "4": "Correct : grâce à + lequel → grâce auquel.",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Une seule option conserve la locution de moyen."
+      "1": "`dont` équivaut à un complément en « de », alors que le rapport exprimé est celui du moyen, marqué par « grâce à ». La forme attendue est « grâce auquel ».",
+      "2": "`auquel` conserve la préposition « à » mais supprime le mot « grâce », donc l'idée de moyen. On obtiendrait « les familles ont pu financer le camp au fonds », qui ne correspond à aucune construction de « financer ». La forme attendue est « grâce auquel ».",
+      "3": "`duquel` suppose une préposition ou une locution en « de » dans la phrase de base, par exemple « au moyen de ». Aucune ne s'y trouve : le moyen y est marqué par « grâce à ». La forme attendue est « grâce auquel ».",
+      "4": "La phrase de base « grâce à ce fonds, trois familles ont pu financer le camp » contient la locution « grâce à », qui se conserve entièrement dans la subordonnée relative. L'antécédent « le fonds de dépannage » est masculin singulier, donc la forme de lequel accordée est « lequel », et la contraction obligatoire à + lequel = auquel donne « grâce auquel ».",
+      "A": "« Aucune » ne vaudrait que si les quatre propositions chiffrées échouaient ; une proposition chiffrée conserve la locution complète, donc « Aucune » est écartée.",
+      "T": "« Toutes » ne vaudrait qu'avec quatre propositions chiffrées correctes ; le décompte est d'une seule correcte pour trois fautives, donc « Toutes » est écartée."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -68132,8 +68663,17 @@ const QUESTIONS = [
       "option_misconceptions": {
         "1": "regime_de_suppose",
         "2": "UNK",
-        "3": "UNK",
+        "3": "regime_de_suppose",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260804-6042",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-04T20:41:51Z"
+        }
       }
     }
   },
@@ -68674,14 +69214,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "« Faire face À quelque chose » : la locution exige « à », d'où « auxquels » (faire face à ces imprévus).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : l'antécédent du relatif est le groupe nominal `les imprévus de dernière minute`, qui désigne des choses et non des personnes. Je le remets dans une phrase simple, sans relatif : « l'intendance a fait face à ces imprévus ». Cette phrase simple montre la construction réellement employée, la locution `faire face`, qui réclame la préposition `à` : on fait face à quelque chose. Il n'existe ni `faire face quelque chose`, ni `faire face de quelque chose`, ni `faire face devant quelque chose`. Le relatif doit donc reprendre l'antécédent en gardant cette préposition `à`. Comme l'antécédent n'est pas humain, une forme de lequel convient ; elle s'accorde avec `imprévus`, masculin pluriel, ce qui donne `lesquels`, puis `à` + `lesquels` se contracte obligatoirement en `auxquels`.\nDonc : la seule forme qui restitue le régime de la locution et l'accord de l'antécédent est `auxquels`, et la réponse attendue est l'option 3.",
     "why": {
-      "1": "« dont » supposerait « faire face de », construction inexistante.",
-      "2": "« qu' » traiterait la locution comme transitive directe : « faire face quelque chose » n'existe pas.",
-      "3": "Correct : faire face À → les imprévus auxquels l'intendance a fait face.",
-      "4": "« devant lesquels » calque « se dresser devant » : la locution exige « à ».",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Une seule option restitue le régime de la locution."
+      "1": "`dont` reprend toujours un complément introduit par `de` : il faudrait pouvoir dire « l'intendance a fait face de ces imprévus », ce qui n'existe pas. La locution impose `à`, et la forme attendue est `auxquels`.",
+      "2": "`qu'` reprend un complément direct, c'est-à-dire un complément construit sans préposition. Or la phrase simple est « faire face à ces imprévus », jamais « faire face ces imprévus » : le complément est indirect, et il faut `auxquels`.",
+      "3": "La phrase simple « l'intendance a fait face à ces imprévus » contient bien la préposition `à` ; l'antécédent `imprévus`, non humain et masculin pluriel, appelle `lesquels`, et `à` + `lesquels` donne la contraction `auxquels`. Le régime de la locution et l'accord sont donc tous deux respectés.",
+      "4": "`devant lesquels` place une préposition de lieu que la construction ne demande pas : on se dresse devant un obstacle, mais on fait face `à` quelque chose. La préposition exigée par la locution n'est pas reconnue, alors qu'elle commande la forme `auxquels`.",
+      "A": "`Aucune` ne s'applique que si les quatre options numérotées sont fautives ; ici l'option 3 est correcte, le compte des options correctes n'est donc pas nul.",
+      "T": "`Toutes` supposerait quatre options numérotées correctes ; trois d'entre elles sont fautives, le compte n'est pas atteint."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -68691,9 +69231,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
+        "2": "regime_direct_suppose",
         "3": null,
-        "4": "UNK"
+        "4": "regime_a_non_identifie"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-8863",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:16:28Z"
+        }
       }
     }
   },
@@ -70230,14 +70779,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "« Provocant » (adjectif, -cant) qualifie la question ; « en provoquant » (participe présent, -quant) exprime l'action.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : la forme en -ant revient deux fois et il faut la traiter séparément. Premier emploi, « Le jury a jugé la question ___ » : le mot se rapporte au nom « la question » et en exprime une propriété, ce que confirme le test du féminin (on peut dire « une question provocante », « une remarque provocante »). C'est donc l'adjectif verbal : il s'accorde au féminin singulier avec « question » et il prend la graphie propre à l'adjectif, en -cant, « provocante ». Second emploi, « en ___ ouvertement le règlement du concours » : la forme suit « en » et commande un complément direct, « le règlement du concours » ; elle continue donc de fonctionner comme un verbe. C'est le participe présent (ici au gérondif) : il reste invariable et conserve le radical du verbe provoquer, avec -qu-, « provoquant ». Le point qui fait basculer la réponse est la présence de ce complément direct après le second blanc.\nDonc : il faut « la question provocante » puis « en provoquant ouvertement le règlement », c'est-à-dire l'option 4.",
     "why": {
-      "1": "« une question provoquante » : l'adjectif s'écrit -cant.",
-      "2": "« en provocant le règlement » : l'action s'écrit -quant.",
-      "3": "Inverse les deux graphies.",
-      "4": "Correct : adjectif provocante (-cant) ; participe provoquant (-quant).",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Trois options confondent l'adjectif et le participe."
+      "1": "Au premier blanc, `provoquante` transporte le radical verbal en -qu- dans un mot qui se rapporte au nom « la question » et s'accorde avec lui : la règle de l'adjectif verbal impose la graphie en -cant, donc « provocante ». Le second blanc est bien traité, mais l'option entière est fautive.",
+      "2": "Le premier blanc est correct, mais au second `en provocant ouvertement le règlement` applique la graphie de l'adjectif à une forme qui garde un complément direct et fonctionne comme un verbe : le participe présent conserve le radical de provoquer, donc « en provoquant ».",
+      "3": "Les deux graphies sont échangées : `provoquante` donne au mot rapporté à « la question » le radical verbal, et `provocant` donne la graphie adjectivale à la forme qui commande « le règlement du concours ». Il faut « provocante » puis « en provoquant ».",
+      "4": "Le premier mot se rapporte à « la question » et supporte le test du féminin : il satisfait la règle de l'adjectif verbal, accordé et écrit en -cant, « provocante ». Le second, précédé de « en » et suivi du complément direct « le règlement du concours », satisfait la règle du participe présent : invariable et écrit avec le radical verbal, « provoquant ».",
+      "A": "Une option chiffrée respecte les deux graphies, la 4 ; « Aucune » ne se choisit que si les quatre sont fautives.",
+      "T": "Trois des quatre options chiffrées comportent au moins une graphie fautive ; « Toutes » exigerait que les quatre soient correctes."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -70250,6 +70799,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-0447",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:42:12Z"
+        }
       }
     }
   },
@@ -72318,14 +72876,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Règle : pour choisir un pronom relatif, on reconstruit la phrase simple et on garde la préposition demandée par le verbe. On dit « s'inscrire à un concours ». Dans cette phrase : « à + lequel » se contracte en « auquel ». Donc : le concours auquel elle s'est inscrite — option 3.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : l'antécédent est `le concours intercantonal`, un nom de chose, masculin singulier. La phrase simple correspondante est « elle s'est inscrite à ce concours ». Le verbe pronominal `s'inscrire` construit son complément avec `à` quand il désigne ce à quoi on adhère ou ce que l'on rejoint : on s'inscrit à un cours, à un concours. Le relatif doit donc porter cette préposition `à`. L'antécédent n'étant pas humain, une forme de lequel convient ; elle s'accorde avec `concours`, masculin singulier, ce qui donne `lequel`, puis `à` + `lequel` se contracte obligatoirement en `auquel` : on n'écrit jamais « à lequel ».\nDonc : la forme qui restitue le régime du verbe et l'accord de l'antécédent est `auquel`, et la réponse attendue est l'option 3.",
     "why": {
-      "1": "« dans lequel » supposerait « s'inscrire dans un concours » ; la construction attendue est « s'inscrire à ».",
-      "2": "« duquel » correspond à « de lequel » ; or le verbe demande « à ».",
-      "3": "Correct : s'inscrire à ce concours → le concours auquel elle s'est inscrite.",
-      "4": "« par lequel » exprimerait un passage ou un moyen, pas le complément demandé par « s'inscrire à ».",
-      "A": "L'option 3 conserve la préposition du verbe ; « Aucune » ne convient pas.",
-      "T": "Les options 1, 2 et 4 emploient une préposition qui ne correspond pas à « s'inscrire à »."
+      "1": "`dans lequel` suppose un régime en `dans`, qui situerait quelque chose à l'intérieur du concours. La phrase simple est « s'inscrire à ce concours », pas « s'inscrire dans ce concours » : la préposition du verbe n'est pas reconnue et la forme attendue est `auquel`.",
+      "2": "`duquel` correspond à `de` + `lequel` : il faudrait « s'inscrire de ce concours », construction inexistante. Le verbe demande `à`, donc `auquel`.",
+      "3": "La phrase simple « elle s'est inscrite à ce concours » montre la préposition `à` exigée par le verbe ; l'antécédent `concours`, non humain et masculin singulier, appelle `lequel`, et la contraction obligatoire de `à` + `lequel` donne exactement `auquel`.",
+      "4": "`par lequel` ajoute une valeur de moyen ou de passage, absente ici : le concours n'est pas l'instrument de l'inscription, il en est le complément introduit par `à`. Il faut `auquel`.",
+      "A": "`Aucune` exigerait que les quatre options numérotées soient fautives ; comme l'option 3 est correcte, ce compte n'est pas atteint.",
+      "T": "`Toutes` exigerait quatre options numérotées correctes ; il n'y en a qu'une, le compte est donc faux."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -72334,10 +72892,19 @@ const QUESTIONS = [
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
-        "1": "UNK",
-        "2": "UNK",
+        "1": "regime_a_non_identifie",
+        "2": "regime_de_suppose",
         "3": null,
-        "4": "UNK"
+        "4": "relation_instrumentale_supposee"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-8863",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:16:28Z"
+        }
       }
     }
   },
@@ -72932,14 +73499,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Règle : on choisit le pronom relatif en reconstruisant la phrase de base et en repérant la préposition exigée. « Faire allusion » se construit avec « à » : faire allusion À quelque chose. Dans cette phrase : la phrase de base est « la conseillère a fait allusion À cette réforme » → à + laquelle. Donc : à laquelle — option 3.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : le relatif est inséré juste après `La réforme des grilles horaires`. L'antécédent est le noyau de ce groupe, `la réforme`, et non le complément `des grilles horaires` : c'est bien à la réforme que la conseillère d'État a fait allusion. La phrase simple est donc « la conseillère d'État a fait allusion à cette réforme ». La locution `faire allusion` réclame la préposition `à` : on ne dit ni « faire allusion quelque chose », ni « faire allusion de quelque chose ». Le relatif doit conserver ce `à`. L'antécédent n'est pas humain, une forme de lequel convient ; elle s'accorde avec `réforme`, féminin singulier, ce qui donne `laquelle`, et le féminin singulier ne se contracte pas après `à` : on écrit `à laquelle` en deux mots.\nDonc : la forme attendue est `à laquelle`, et la réponse attendue est l'option 3.",
     "why": {
-      "1": "« dont » remplacerait un complément en « de » : « faire allusion de » n'existe pas.",
-      "2": "« que » remplacerait un complément direct : « faire allusion quelque chose » n'existe pas.",
-      "3": "Correct : faire allusion À → la réforme à laquelle elle a fait allusion.",
-      "4": "« sur laquelle » calque « s'exprimer sur » : la locution exige « à ».",
-      "A": "Il existe bien une option correcte : la 3 conserve la préposition exigée.",
-      "T": "Les options 1, 2 et 4 reconstruisent des constructions impossibles."
+      "1": "`dont` reprend un complément introduit par `de`. La phrase simple serait « faire allusion de cette réforme », qui n'existe pas ; la locution impose `à`, d'où `à laquelle`.",
+      "2": "`que` reprend un complément direct, sans préposition. Or « faire allusion cette réforme » est impossible : le complément est introduit par `à`, et la forme correcte est `à laquelle`.",
+      "3": "La phrase simple « la conseillère d'État a fait allusion à cette réforme » contient la préposition `à` exigée par la locution ; l'antécédent `réforme`, non humain et féminin singulier, appelle `laquelle`, qui reste en deux mots après `à`.",
+      "4": "`sur laquelle` prête à la locution un régime en `sur`, celui de verbes comme s'exprimer ou revenir. `Faire allusion` se construit uniquement avec `à`, ce qui donne `à laquelle`.",
+      "A": "`Aucune` supposerait zéro option numérotée correcte ; l'option 3 étant correcte, ce compte est faux.",
+      "T": "`Toutes` supposerait les quatre options numérotées correctes ; trois d'entre elles sont fautives."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -72949,9 +73516,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
+        "2": "regime_direct_suppose",
         "3": null,
         "4": "regime_sur_suppose"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-8863",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:16:28Z"
+        }
       }
     }
   },
@@ -74246,14 +74822,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Règle : pour choisir le pronom relatif, on reconstruit la phrase de base et on repère la préposition du verbe. « Prendre part À quelque chose » se construit avec « à » ; « à » + « lequel » se contractent en « auquel ». Dans cette phrase : la phrase de base est « elle a pris part À ce groupe » → auquel. Donc : option 2.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : l'antécédent est `le groupe de travail`, un nom de chose, masculin singulier ; le noyau du groupe est `groupe`, ce qui commande l'accord. La phrase simple est « elle a pris part à ce groupe de travail ». La locution `prendre part` réclame la préposition `à` : on dit `prendre part à une décision` ou `prendre part à un projet`, mais il n'existe ni `prendre part une décision`, ni `prendre part de cette décision`. Le relatif doit donc porter ce `à`. L'antécédent n'étant pas humain, une forme de lequel convient ; elle s'accorde au masculin singulier avec `groupe`, ce qui donne `lequel`, puis `à` + `lequel` se contracte obligatoirement en `auquel`.\nDonc : la forme qui respecte le régime de la locution et l'accord de l'antécédent est `auquel`, et la réponse attendue est l'option 2.",
     "why": {
-      "1": "« dont » remplacerait un complément en « de » : « prendre part de » n'existe pas.",
-      "2": "Correct : prendre part À → le groupe auquel elle a pris part.",
-      "3": "« qu' » remplacerait un complément direct : « prendre part quelque chose » n'existe pas.",
-      "4": "« pour lequel » calque « travailler pour » : la locution exige « à ».",
-      "A": "Il existe bien une option correcte : la 2.",
-      "T": "Les options 1, 3 et 4 reconstruisent une phrase de base impossible."
+      "1": "`dont` remplace un complément introduit par `de` : il faudrait « prendre part de ce groupe », construction inexistante. La locution impose `à`, donc `auquel`.",
+      "2": "La phrase simple « elle a pris part à ce groupe de travail » contient la préposition `à` exigée par la locution ; l'antécédent `groupe`, non humain et masculin singulier, appelle `lequel`, et la contraction obligatoire de `à` + `lequel` donne `auquel`.",
+      "3": "`qu'` reprend un complément direct, construit sans préposition ; or « prendre part ce groupe » est impossible. Le complément est introduit par `à`, d'où `auquel`.",
+      "4": "`pour lequel` exprime un but ou un bénéficiaire, valeur que la locution ne demande pas : elle prend part au groupe, elle ne prend pas part pour lui. La préposition réellement imposée, `à`, n'est pas reconnue, et il faut `auquel`.",
+      "A": "`Aucune` ne vaut que si les quatre options numérotées sont fautives ; l'option 2 est correcte, le compte n'y est pas.",
+      "T": "`Toutes` demanderait quatre options numérotées correctes ; une seule l'est."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -74264,8 +74840,17 @@ const QUESTIONS = [
       "option_misconceptions": {
         "1": "regime_de_suppose",
         "2": null,
-        "3": "regime_a_non_identifie",
-        "4": "UNK"
+        "3": "regime_direct_suppose",
+        "4": "regime_a_non_identifie"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-8863",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:22:52Z"
+        }
       }
     }
   },
@@ -75480,14 +76065,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Règle : on choisit le pronom relatif d'après la préposition qu'exige le verbe. « Renoncer À quelque chose » se construit avec « à », d'où « à laquelle ». Dans cette phrase : la phrase de base est « elle a renoncé À cette formation » → à laquelle. Donc : option 1.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : l'antécédent est `la formation continue`, un nom de chose, féminin singulier. La phrase simple correspondante est « elle a renoncé à cette formation continue faute de temps ». Le verbe `renoncer` construit toujours son complément avec `à` : on renonce à un projet, à un poste ; on ne dit ni « renoncer un projet », ni « renoncer de ce projet ». Le relatif doit donc conserver cette préposition `à`. L'antécédent n'étant pas humain, une forme de lequel convient ; elle s'accorde avec `formation`, féminin singulier, ce qui donne `laquelle`. La contraction en `auquel` ou `auxquelles` ne concerne pas le féminin singulier : on écrit `à laquelle` en deux mots.\nDonc : la forme attendue est `à laquelle`, et la réponse attendue est l'option 1.",
     "why": {
-      "1": "Correct : renoncer À → la formation à laquelle elle a renoncé.",
-      "2": "« dont » remplacerait un complément en « de » : « renoncer de » n'existe pas.",
-      "3": "« qu' » remplacerait un complément direct : « renoncer quelque chose » n'existe pas.",
-      "4": "« pour laquelle » calque « opter pour » : « renoncer » exige « à ».",
-      "A": "Il existe bien une option correcte : la 1.",
-      "T": "Les options 2, 3 et 4 reconstruisent une phrase de base impossible."
+      "1": "La phrase simple « elle a renoncé à cette formation » montre la préposition `à` exigée par le verbe ; l'antécédent `formation`, non humain et féminin singulier, appelle `laquelle`, qui reste séparé de `à` puisque le féminin singulier ne se contracte pas.",
+      "2": "`dont` reprend un complément introduit par `de`. Il faudrait pouvoir dire « elle a renoncé de cette formation », ce qui n'existe pas : le verbe impose `à`, donc `à laquelle`.",
+      "3": "`qu'` reprend un complément direct, construit sans préposition ; or « renoncer cette formation » est impossible. Le complément de `renoncer` est indirect, d'où `à laquelle`.",
+      "4": "`pour laquelle` introduit un but ou un motif, comme dans opter pour une formation. `Renoncer` demande au contraire `à`, ce qui donne `à laquelle`.",
+      "A": "`Aucune` exigerait que les quatre options numérotées soient fautives ; l'option 1 est correcte, ce compte n'est pas atteint.",
+      "T": "`Toutes` exigerait quatre options numérotées correctes ; trois d'entre elles sont fautives."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -75498,8 +76083,17 @@ const QUESTIONS = [
       "option_misconceptions": {
         "1": null,
         "2": "regime_de_suppose",
-        "3": "regime_a_non_identifie",
-        "4": "UNK"
+        "3": "regime_direct_suppose",
+        "4": "regime_a_non_identifie"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-8863",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:16:28Z"
+        }
       }
     }
   },
@@ -78022,7 +78616,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quelle phrase est correctement ponctuée ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -85586,14 +86180,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Règle : « songer À quelque chose » (= y penser) se construit avec « à » ; pour une chose, « à + lequel » se contracte en « auquel ». Dans cette phrase : il faudrait « le stage auquel elle songe » — cette forme ne figure dans aucune option. Donc : réponse A (Aucune).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : l'antécédent est `le stage en entreprise`, un nom de chose, masculin singulier. La phrase simple correspondante est « elle songe à ce stage depuis la rentrée ». Le verbe `songer`, au sens de penser à quelque chose, se construit obligatoirement avec `à` : on dit `songer à un projet`, mais il n'existe ni `songer ce stage`, ni `songer de ce stage`. Le relatif doit donc porter cette préposition `à`. Comme l'antécédent n'est pas humain, on ne peut pas employer `qui` après `à` : `à qui` est réservé aux personnes. Il faut une forme de lequel, accordée au masculin singulier avec `stage`, soit `lequel`, puis la contraction obligatoire de `à` + `lequel`, qui donne `auquel`. Je compare alors cette forme attendue aux quatre options : `dont`, `à qui`, `qu'` et `pour lequel` ; `auquel` n'y figure pas, et aucune des quatre ne réunit à la fois la préposition `à` et une forme compatible avec un antécédent non humain.\nDonc : les quatre options numérotées sont fautives et la réponse attendue est `Aucune`.",
     "why": {
-      "1": "« dont » remplacerait un complément en « de » : « songer de » n'existe pas.",
-      "2": "« à qui » se réserve aux personnes : un stage est une chose → auquel.",
-      "3": "« qu' » ferait du stage le complément direct de « songer », qui n'en a pas.",
-      "4": "« pour lequel » calque « militer pour » : « songer » exige « à ».",
-      "A": "Correct : la forme attendue « auquel » (songer à + chose) ne figure dans aucune option.",
-      "T": "Impossible : chaque option emploie un mauvais régime ou un relatif de personne."
+      "1": "`dont` reprend un complément introduit par `de` : il faudrait « elle songe de ce stage », qui n'existe pas. Le verbe impose `à`, et la forme attendue serait `auquel`.",
+      "2": "`à qui` conserve bien la préposition `à`, mais `qui` précédé d'une préposition ne reprend que des personnes. L'antécédent `stage` désigne une chose : il appelle une forme de lequel, donc `auquel`.",
+      "3": "`qu'` reprend un complément direct, construit sans préposition ; or « elle songe ce stage » est impossible. Le complément de `songer` est indirect, d'où `auquel`.",
+      "4": "`pour lequel` exprime un but ou un bénéficiaire, comme dans militer pour un projet. `Songer` demande `à` et non `pour`, ce qui donnerait `auquel`.",
+      "A": "La phrase simple « elle songe à ce stage » impose la préposition `à`, et l'antécédent `stage`, chose au masculin singulier, impose la contraction `auquel`. Cette forme n'est proposée par aucune des quatre options : `Aucune` est donc la réponse correcte.",
+      "T": "`Toutes` supposerait les quatre options numérotées correctes ; aucune ne l'est."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -85604,8 +86198,17 @@ const QUESTIONS = [
       "option_misconceptions": {
         "1": "regime_de_suppose",
         "2": "UNK",
-        "3": "regime_a_non_identifie",
-        "4": "UNK"
+        "3": "regime_direct_suppose",
+        "4": "regime_a_non_identifie"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-8863",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:22:52Z"
+        }
       }
     }
   },
@@ -86640,14 +87243,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Règle : « se heurter À quelque chose » se construit avec « à » ; il faudrait donc « auxquels » (le projet s'est heurté à ces obstacles). Dans cette phrase : cette forme ne figure dans aucune option. Donc : réponse A (Aucune).",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : l'antécédent est `les obstacles`, un nom de chose, masculin pluriel. La phrase simple correspondante est « le projet de rénovation s'est heurté à ces obstacles depuis deux ans ». Le verbe pronominal `se heurter` construit son complément avec `à` : on se heurte à une difficulté, à un refus ; il n'existe ni « se heurter une difficulté », ni « se heurter de », ni « se heurter sur » dans ce sens. Le relatif doit donc porter cette préposition `à`. L'antécédent n'étant pas humain, une forme de lequel convient ; accordée au masculin pluriel avec `obstacles`, elle donne `lesquels`, et `à` + `lesquels` se contracte obligatoirement en `auxquels`. Je compare cette forme attendue aux quatre options proposées, `dont`, `que`, `desquels` et `sur lesquels` : aucune ne comporte la préposition `à` du verbe.\nDonc : les quatre options numérotées sont fautives et la réponse attendue est `Aucune`.",
     "why": {
-      "1": "« dont » remplacerait un complément en « de » : « se heurter de » n'existe pas.",
-      "2": "« que » ferait des obstacles le complément direct de « se heurter », qui n'en a pas.",
-      "3": "« desquels » habille un régime en « de » qui n'est pas celui du verbe.",
-      "4": "« sur lesquels » calque « buter sur » : « se heurter » exige « à » → auxquels.",
-      "A": "Correct : la forme attendue « auxquels » (se heurter à) ne figure dans aucune option.",
-      "T": "Impossible : chaque option emploie un mauvais régime."
+      "1": "`dont` reprend un complément introduit par `de` : il faudrait « le projet s'est heurté de ces obstacles », ce qui n'existe pas. Le verbe impose `à`, et la forme attendue serait `auxquels`.",
+      "2": "`que` reprend un complément direct, construit sans préposition ; or « le projet s'est heurté ces obstacles » est impossible. Le complément est indirect, d'où `auxquels`.",
+      "3": "`desquels` correspond à `de` + `lesquels` : la forme s'accorde bien au masculin pluriel, mais elle habille un régime en `de` que le verbe ne demande pas. Il faut la contraction de `à` + `lesquels`, soit `auxquels`.",
+      "4": "`sur lesquels` prête au verbe un régime en `sur`, celui de buter sur quelque chose. `Se heurter` se construit avec `à`, ce qui donne `auxquels`.",
+      "A": "La phrase simple « le projet s'est heurté à ces obstacles » impose la préposition `à`, et l'antécédent `obstacles`, chose au masculin pluriel, impose la contraction `auxquels`. Cette forme ne figure dans aucune des quatre options : `Aucune` est donc la réponse correcte.",
+      "T": "`Toutes` supposerait les quatre options numérotées correctes ; aucune ne l'est."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -86657,9 +87260,18 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "regime_de_suppose",
-        "2": "regime_a_non_identifie",
-        "3": "UNK",
-        "4": "UNK"
+        "2": "regime_direct_suppose",
+        "3": "regime_de_suppose",
+        "4": "regime_sur_suppose"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-8863",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:16:28Z"
+        }
       }
     }
   },
@@ -87032,7 +87644,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Quatre phrases du bilan de la semaine de la lecture rédigé par la classe. Quelle phrase est correctement écrite ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -99548,14 +100160,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : l'adjectif verbal décrit une qualité et s'écrit « équivalent » (en -ent), accordé : des appréciations équivalentes. Le participe présent décrit l'action et reste invariable, écrit « équivalant » (en -ant) : en équivalant chacune à un 5. Dans cette phrase : « appréciations ___ » = qualité → équivalentes ; « en ___ chacune » = action → équivalant. Donc : équivalentes / équivalant — option 4.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : les deux blancs viennent du verbe équivaloir, mais leur fonctionnement diffère. Premier blanc, « Deux appréciations tout à fait ___ ont été attribuées » : la forme se rapporte au nom « appréciations » et en exprime une propriété, celle d'avoir la même valeur ; le test du singulier le confirme (« un résultat équivalent »), et un autre adjectif peut prendre la place (« deux appréciations tout à fait semblables »). C'est l'adjectif verbal : il s'écrit en -ent et s'accorde au féminin pluriel avec « appréciations », « équivalentes ». Second blanc, « en ___ chacune à un bon 5 » : la forme est précédée de « en » et garde son fonctionnement de verbe, puisqu'elle commande le complément « à un bon 5 » ; « chacune » n'est pas ce complément, c'est un pronom distributif, c'est-à-dire un mot qui reprend les appréciations une par une. C'est le participe présent au gérondif : invariable et écrit en -ant, « équivalant ». Ce qui fait basculer la réponse est le rapport au nom d'un côté et le complément verbal « à un bon 5 » de l'autre.\nDonc : il faut « des appréciations tout à fait équivalentes » puis « en équivalant chacune à un bon 5 », c'est-à-dire l'option 4.",
     "why": {
-      "1": "Les deux formes sont inversées : l'adjectif en -ent, le participe en -ant.",
-      "2": "« en équivalentes chacune » : l'action en cours s'écrit avec le participe équivalant.",
-      "3": "« des appréciations équivalant » : la qualité accordée s'écrit équivalentes (-ent).",
-      "4": "Correct : adjectif accordé « équivalentes » (-ent) + participe invariable « équivalant » (-ant).",
-      "A": "Il existe bien une option correcte : la 4.",
-      "T": "Les options 1, 2 et 3 confondent l'adjectif verbal et le participe présent."
+      "1": "Les deux formes sont inversées. Au premier blanc, `tout à fait équivalant` emploie la graphie verbale en -ant pour un mot modifié par un degré et accordé au nom : il faut « équivalentes ». Au second, `en équivalentes chacune` accorde une forme qui commande un complément et reste invariable : il faut « équivalant ».",
+      "2": "Le premier blanc est correct, mais au second `en équivalentes chacune à un bon 5` accorde et écrit en -ent une forme précédée de « en » qui commande le complément « à un bon 5 », le pronom distributif « chacune » ne faisant que reprendre les appréciations une par une : le participe présent est invariable et s'écrit « équivalant ».",
+      "3": "Le second blanc est correct, mais au premier `deux appréciations tout à fait équivalant` refuse l'accord à un mot modifié par le degré « tout à fait » et rapporté au nom : l'adjectif verbal s'écrit « équivalentes ».",
+      "4": "Le premier mot se rapporte au nom « appréciations » et en dit une propriété, ce que confirme le singulier « un résultat équivalent » : il satisfait la règle de l'adjectif verbal, en -ent et accordé au féminin pluriel, « équivalentes ». Le second, introduit par « en », commande le complément « à un bon 5 » et se rattache au pronom distributif « chacune », qui reprend les appréciations une par une : il satisfait la règle du participe présent, en -ant et invariable, « équivalant ».",
+      "A": "L'option 4 est correcte sur les deux blancs, ce qui écarte « Aucune ».",
+      "T": "Seule une option chiffrée sur quatre est correcte, ce qui écarte « Toutes »."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -99568,6 +100180,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-0447",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:48:18Z"
+        }
       }
     }
   },
@@ -100688,14 +101309,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Règle : l'adjectif verbal décrit une qualité et s'écrit « excellent » (en -ent), accordé : des résultats excellents. Le participe présent décrit l'action et reste invariable, écrit « excellant » (en -ant) : en excellant dans toutes les matières. Dans cette phrase : « résultats ___ » = qualité → excellents ; « en ___ dans » = action → excellant. Donc : excellents / excellant — option 2.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : il faut examiner chaque blanc à part. Premier blanc, « Des résultats ___ ont été salués par tout le jury » : la forme suit le nom « résultats » et en dit la qualité ; on peut la remplacer par un adjectif ordinaire (« des résultats remarquables ») et faire le test du féminin (« des notes excellentes »). C'est l'adjectif verbal : il s'écrit en -ent et s'accorde au masculin pluriel, « excellents ». Second blanc, « en ___ dans absolument toutes les matières » : la forme est précédée de « en » et suivie du complément « dans absolument toutes les matières » ; elle exprime la manière dont l'élève a impressionné et garde donc son fonctionnement verbal. C'est le participe présent au gérondif : invariable et écrit en -ant, « excellant ». Le complément prépositionnel après le second blanc est le point décisif.\nDonc : il faut « des résultats excellents » puis « en excellant dans absolument toutes les matières », c'est-à-dire l'option 2.",
     "why": {
-      "1": "Les deux formes sont inversées : l'adjectif en -ent, le participe en -ant.",
-      "2": "Correct : adjectif accordé « excellents » (-ent) + participe invariable « excellant » (-ant).",
-      "3": "« en excellents dans » : l'action en cours s'écrit avec le participe excellant.",
-      "4": "« des résultats excellant » : la qualité accordée s'écrit excellents (-ent).",
-      "A": "Il existe bien une option correcte : la 2.",
-      "T": "Les options 1, 3 et 4 confondent l'adjectif verbal et le participe présent."
+      "1": "Les deux formes sont permutées. Au premier blanc, `des résultats excellant` emploie la graphie verbale pour un mot qui qualifie le nom et doit s'accorder : « excellents ». Au second, `en excellents dans toutes les matières` accorde une forme qui garde son complément : « excellant ».",
+      "2": "Le premier mot qualifie « résultats » et supporte le remplacement par un adjectif : il satisfait la règle de l'adjectif verbal, en -ent et accordé au masculin pluriel, « excellents ». Le second, précédé de « en » et suivi de « dans absolument toutes les matières », satisfait la règle du participe présent, en -ant et invariable, « excellant ».",
+      "3": "Le premier blanc est correct, mais au second `en excellents dans absolument toutes les matières` accorde une forme qui exprime la manière et commande un complément : le participe présent reste invariable, « excellant ».",
+      "4": "Le second blanc est correct, mais au premier `des résultats excellant` laisse sans accord un mot qui dit la qualité du nom « résultats » : l'adjectif verbal s'écrit « excellents ».",
+      "A": "La réponse « Aucune » supposerait quatre options chiffrées fautives, alors que la 2 est correcte.",
+      "T": "Trois options chiffrées comportent une forme fautive, ce qui interdit « Toutes »."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -100708,6 +101329,15 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-0447",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:42:12Z"
+        }
       }
     }
   },
@@ -101856,14 +102486,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : l'adjectif verbal décrit une qualité et s'écrit « communicant » (avec c), accordé : des salles communicantes. Le participe présent décrit l'action et reste invariable, écrit « communiquant » (avec qu) : en communiquant directement. Dans cette phrase : « salles ___ » = qualité → communicantes ; « en ___ directement » = action → communiquant. Donc : communicantes / communiquant — option 4.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : les deux blancs viennent du verbe communiquer, et seule leur fonction change la graphie. Premier blanc, « Deux salles ___ permettent enfin le décloisonnement » : la forme suit le nom « salles », n'a aucun complément et décrit une propriété durable de ces salles (des salles qui donnent l'une sur l'autre) ; le test du singulier le confirme (« une salle communicante »). C'est l'adjectif verbal : il perd le -qu- du verbe, s'écrit avec un c et s'accorde au féminin pluriel, « communicantes ». Second blanc, « en ___ directement » : la forme est précédée de « en », modifiée par l'adverbe « directement » et dit comment les deux classes peuvent travailler ensemble ; elle fonctionne donc comme un verbe. C'est le participe présent au gérondif : invariable et écrit avec le radical verbal en -qu-, « communiquant ». Le point qui tranche est donc le gérondif « en » suivi d'une modification adverbiale, et non d'un nom qualifié.\nDonc : il faut « deux salles communicantes » puis « en communiquant directement », c'est-à-dire l'option 4.",
     "why": {
-      "1": "Les deux formes sont inversées : l'adjectif avec c (communicantes), le participe avec qu (communiquant).",
-      "2": "« en communicantes directement » : l'action en cours s'écrit avec qu → communiquant.",
-      "3": "« deux salles communiquant » : la qualité accordée s'écrit communicantes (c).",
-      "4": "Correct : adjectif accordé « communicantes » (c) + participe invariable « communiquant » (qu).",
-      "A": "Il existe bien une option correcte : la 4.",
-      "T": "Les options 1, 2 et 3 confondent l'orthographe de l'adjectif et du participe."
+      "1": "Les deux graphies sont échangées. Au premier blanc, `deux salles communiquant` garde le radical verbal en -qu- pour un mot qui décrit une propriété des salles et s'accorde : « communicantes ». Au second, `en communicantes directement` donne la graphie et l'accord de l'adjectif à un gérondif : « communiquant ».",
+      "2": "Le premier blanc est correct, mais au second `en communicantes directement` accorde et écrit avec un c une forme introduite par « en » qui exprime la manière : le participe présent garde le -qu- du verbe et reste invariable, « communiquant ».",
+      "3": "Le second blanc est correct, mais au premier `deux salles communiquant` conserve le radical verbal en -qu- et l'invariabilité pour un mot qui qualifie « salles » : l'adjectif verbal s'écrit avec un c et s'accorde, « communicantes ».",
+      "4": "Le premier mot qualifie « salles » sans aucun complément : il satisfait la règle de l'adjectif verbal, écrit avec un c et accordé au féminin pluriel, « communicantes ». Le second, précédé de « en » et modifié par l'adverbe « directement », satisfait la règle du participe présent, écrit avec -qu- et invariable, « communiquant ».",
+      "A": "L'option 4 respecte les deux graphies, si bien que « Aucune » ne convient pas.",
+      "T": "« Toutes » exigerait quatre options chiffrées correctes ; trois d'entre elles sont fautives."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -101876,6 +102506,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-0447",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:42:12Z"
+        }
       }
     }
   },
@@ -102876,14 +103515,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Règle : l'adjectif verbal décrit une qualité et s'écrit « divergent » (en -ent), accordé : des avis divergents. Le participe présent décrit l'action et reste invariable, écrit « divergeant » (en -eant) : en divergeant à ce point. Dans cette phrase : « avis ___ » = qualité → divergents ; « en ___ à ce point » = action → divergeant. Donc : divergents / divergeant — option 2.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : les deux blancs se distinguent par leur fonction. Premier blanc, « Deux avis franchement ___ ont été exprimés en conseil » : la forme se rapporte au nom « avis » et en dit une propriété, celle d'aller dans des directions opposées ; le test du singulier le confirme (« un avis divergent »). L'adverbe « franchement » est un adverbe de manière employé ici comme intensifieur, c'est-à-dire comme un mot qui renforce ; il ne décide de rien à lui seul, puisqu'il peut aussi porter sur un verbe (« en divergeant franchement »). C'est bien le rattachement au nom qui tranche. On a donc l'adjectif verbal : il s'écrit en -ent, sans e après le g, et s'accorde au masculin pluriel, « divergents ». Second blanc, « en ___ à ce point sur les priorités » : la forme est précédée de « en » et suivie des compléments « à ce point » et « sur les priorités » ; elle dit ce que font les collègues et garde donc son fonctionnement verbal. C'est le participe présent au gérondif : invariable et écrit avec le e qui maintient le son du g devant a, « divergeant ». Ce qui fait basculer la réponse est la propriété attribuée au nom d'un côté et le fonctionnement verbal de l'autre.\nDonc : il faut « deux avis franchement divergents » puis « en divergeant à ce point », c'est-à-dire l'option 2.",
     "why": {
-      "1": "Les deux formes sont inversées : l'adjectif en -ent, le participe en -eant.",
-      "2": "Correct : adjectif accordé « divergents » (-ent) + participe invariable « divergeant » (-eant).",
-      "3": "« en divergents à ce point » : l'action en cours s'écrit avec le participe divergeant.",
-      "4": "« deux avis divergeant » : la qualité accordée s'écrit divergents (-ent).",
-      "A": "Il existe bien une option correcte : la 2.",
-      "T": "Les options 1, 3 et 4 confondent l'adjectif verbal et le participe présent."
+      "1": "Les deux formes sont inversées. Au premier blanc, `deux avis franchement divergeant` emploie la graphie verbale en -eant pour un mot qui se rapporte au nom « avis » et s'accorde avec lui : « divergents ». Au second, `en divergents à ce point` accorde une forme suivie de ses compléments : « divergeant ».",
+      "2": "Le premier mot se rapporte au nom « avis » et en exprime une propriété, ce que confirme le singulier « un avis divergent » : il satisfait la règle de l'adjectif verbal, en -ent et accordé au masculin pluriel, « divergents ». Le second, introduit par « en » et suivi de « à ce point sur les priorités », satisfait la règle du participe présent, en -eant et invariable, « divergeant ».",
+      "3": "Le premier blanc est correct, mais au second `en divergents à ce point sur les priorités` accorde en -ent une forme au gérondif qui commande ses compléments : le participe présent reste invariable et s'écrit « divergeant ».",
+      "4": "Le second blanc est correct, mais au premier `deux avis franchement divergeant` refuse l'accord à un mot qui se rapporte au nom « avis » et en dit une propriété (« un avis divergent » au singulier) : l'adjectif verbal s'écrit « divergents ».",
+      "A": "Il existe une option chiffrée entièrement correcte, la 2 ; « Aucune » est donc exclu.",
+      "T": "Les quatre options chiffrées ne sont pas correctes ensemble, puisque trois sont fautives."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -102896,6 +103535,15 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-0447",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:48:18Z"
+        }
       }
     }
   },
@@ -103924,14 +104572,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : l'adjectif verbal décrit une qualité et s'écrit « convergent » (en -ent), accordé : des analyses convergentes. Le participe présent décrit l'action et reste invariable, écrit « convergeant » (en -eant) : en convergeant vers la même conclusion. Dans cette phrase : « analyses ___ » = qualité → convergentes ; « en ___ vers » = action → convergeant. Donc : convergentes / convergeant — option 4.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : chaque blanc se juge sur ce qu'il fait dans la phrase. Premier blanc, « Deux analyses tout à fait ___ rassurent le comité » : la forme se rapporte au nom « analyses » et en exprime une propriété, celle d'aller dans le même sens ; le test du singulier le confirme (« une analyse convergente »), et un autre adjectif peut prendre la place (« deux analyses tout à fait semblables »). Le degré « tout à fait » ne prouve rien à lui seul, car il peut aussi porter sur un verbe (« elles ont tout à fait convergé ») : seul le rattachement au nom est probant. On a donc l'adjectif verbal : il s'écrit en -ent, sans e après le g, et s'accorde au féminin pluriel, « convergentes ». Second blanc, « en ___ vers la même conclusion » : la forme est précédée de « en » et suivie du complément « vers la même conclusion » ; elle exprime le mouvement des analyses et garde son fonctionnement verbal. C'est le participe présent au gérondif : invariable et écrit avec le e qui conserve le son du g devant a, « convergeant ». C'est le complément introduit par « vers » qui interdit d'y voir un adjectif.\nDonc : il faut « deux analyses tout à fait convergentes » puis « en convergeant vers la même conclusion », c'est-à-dire l'option 4.",
     "why": {
-      "1": "Les deux formes sont inversées : l'adjectif en -ent, le participe en -eant.",
-      "2": "« en convergentes vers » : l'action en cours s'écrit avec le participe convergeant.",
-      "3": "« deux analyses convergeant » : la qualité accordée s'écrit convergentes (-ent).",
-      "4": "Correct : adjectif accordé « convergentes » (-ent) + participe invariable « convergeant » (-eant).",
-      "A": "Il existe bien une option correcte : la 4.",
-      "T": "Les options 1, 2 et 3 confondent l'adjectif verbal et le participe présent."
+      "1": "Les deux graphies sont permutées. Au premier blanc, `deux analyses tout à fait convergeant` donne la forme verbale en -eant à un mot qui se rapporte au nom « analyses » et en exprime une propriété (« une analyse convergente » au singulier) : « convergentes ». Au second, `en convergentes vers la même conclusion` accorde un gérondif suivi de son complément : « convergeant ».",
+      "2": "Le premier blanc est correct, mais au second `en convergentes vers la même conclusion` accorde en -ent une forme précédée de « en » et suivie de son complément : le participe présent reste invariable et s'écrit « convergeant ».",
+      "3": "Le second blanc est correct, mais au premier `deux analyses tout à fait convergeant` laisse sans accord un mot qui se rapporte au nom « analyses » et en dit une propriété : l'adjectif verbal s'écrit « convergentes ».",
+      "4": "Le premier mot se rapporte au nom « analyses » et en exprime une propriété, ce que confirme le singulier « une analyse convergente » : il satisfait la règle de l'adjectif verbal, en -ent et accordé au féminin pluriel, « convergentes ». Le second, introduit par « en » et suivi de « vers la même conclusion », satisfait la règle du participe présent, en -eant et invariable, « convergeant ».",
+      "A": "Une option chiffrée, la 4, est correcte sur les deux blancs, ce qui exclut « Aucune ».",
+      "T": "« Toutes » demanderait les quatre options chiffrées correctes ; trois comportent une forme fautive."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -103944,6 +104592,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-0447",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:48:18Z"
+        }
       }
     }
   },
@@ -104718,14 +105375,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "« Provocantes » est un adjectif accordé avec « remarques »; après « en », « provoquant » est un participe présent invariable.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : les deux blancs se traitent l'un après l'autre. Premier blanc, « Les remarques ___ du rapporteur » : la forme ne commande aucun complément et attribue une propriété aux remarques ; le test du féminin fonctionne (« une remarque provocante »), c'est donc l'adjectif verbal, qui s'écrit -cant et s'accorde ici au féminin pluriel : « provocantes ». Second blanc, « en ___ une réaction inutile » : après « en », la forme commande le complément direct « une réaction inutile », elle conserve donc le fonctionnement du verbe provoquer ; le participe présent reste invariable et garde le u du radical : « provoquant ».\nDonc : la suite attendue est « provocantes / provoquant », soit l'option 2.",
     "why": {
-      "1": "Les deux formes sont interverties.",
-      "2": "Correct : adjectif féminin pluriel, puis participe présent invariable.",
-      "3": "Le premier adjectif devrait être au pluriel, et la seconde graphie ne convient pas au participe présent.",
-      "4": "L’adjectif s’écrit « provocantes »; le participe s’écrit « provoquant ».",
-      "A": "L’option 2 est correcte.",
-      "T": "Les options 1, 3 et 4 sont fautives."
+      "1": "Les deux formes sont inversées. `provoquant` est laissé invariable alors qu'il décrit « les remarques » sans commander de complément : il faut l'adjectif verbal accordé « provocantes ». Et `provocantes` est accordé après « en », où la forme commande le complément direct « une réaction inutile » et doit rester « provoquant ».",
+      "2": "Au premier blanc, la forme décrit les remarques sans complément, donc l'adjectif verbal en -cant s'accorde au féminin pluriel : « provocantes ». Au second, la forme commande le complément direct « une réaction inutile », donc le participe présent en -quant reste invariable : « provoquant ». Les deux analyses sont respectées.",
+      "3": "`provocante` choisit bien l'adjectif verbal, mais ne reprend pas le pluriel du nom « remarques », qu'il qualifie : il faut « provocantes ». De plus, `provoquantes` accorde après « en » une forme qui commande le complément direct « une réaction inutile » et qui reste invariable : « provoquant ».",
+      "4": "`provoquantes` accorde la graphie verbale en -quant alors que la forme décrit les remarques : l'adjectif verbal s'écrit « provocantes ». Et `provocant` emploie la graphie adjectivale après « en », où la forme commande un complément direct et s'écrit « provoquant ».",
+      "A": "Une combinaison sur quatre est entièrement correcte, donc le nombre de combinaisons correctes n'est pas nul et « Aucune » est écarté.",
+      "T": "Le compte donne une combinaison correcte sur quatre, et non quatre, donc « Toutes » est écarté."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -104738,6 +105395,15 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-7980",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:34:29Z"
+        }
       }
     }
   },
@@ -105308,7 +105974,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez le pronom relatif qui complète correctement la phrase.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -105336,14 +106002,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Règle : Le recteur exige à ; à + lequel se contracte et s’accorde avec l’antécédent. Dans cette phrase : il faut analyser séparément les quatre propositions et vérifier laquelle remplit exactement la fonction imposée par le contexte. Donc : la réponse correcte est 3.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : l'antécédent du relatif est `la procédure`, un nom de chose, féminin singulier. Remis dans une phrase simple, l'énoncé donne « chaque candidat doit se conformer à cette procédure ». Le verbe pronominal `se conformer` n'admet pas de complément direct : il réclame toujours la préposition `à`, comme le montre l'impossibilité de dire « se conformer cette procédure » ou « se conformer de cette procédure ». Le relatif doit donc conserver ce `à`. L'antécédent n'étant pas humain, une forme de lequel convient ; elle s'accorde avec `procédure`, féminin singulier, ce qui donne `laquelle`. La contraction ne concerne que le masculin singulier et le pluriel (`auquel`, `auxquels`, `auxquelles`) : au féminin singulier, on écrit les deux mots séparés, `à laquelle`.\nDonc : la forme qui respecte à la fois le régime du verbe et le genre de l'antécédent est `à laquelle`, et la réponse attendue est l'option 3.",
     "why": {
-      "1": "La forme `que` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
-      "2": "La forme `dont` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
-      "3": "Cette option respecte la règle décrite dans le corrigé et s’insère correctement dans la phrase.",
-      "4": "La forme `sur laquelle` est fautive ici. La règle décrite dans le corrigé exige la réponse 3.",
-      "A": "Aucune convient uniquement si les quatre options numérotées sont fautives; ce n’est le cas que lorsque la réponse attendue est A.",
-      "T": "Toutes convient uniquement si les quatre options numérotées sont correctes; ce n’est le cas que lorsque la réponse attendue est T."
+      "1": "`que` sert à reprendre un complément direct, construit sans préposition. Il faudrait dire « le candidat doit se conformer cette procédure », ce qui est impossible : le verbe exige `à`, d'où `à laquelle`.",
+      "2": "`dont` équivaut à un complément introduit par `de`. Or on ne dit pas « se conformer de cette procédure » ; la préposition demandée est `à`, et la forme attendue est `à laquelle`.",
+      "3": "La phrase simple « chaque candidat doit se conformer à cette procédure » contient la préposition `à` exigée par le verbe ; l'antécédent `procédure`, non humain et féminin singulier, appelle `laquelle`, qui reste en deux mots après `à`, sans contraction.",
+      "4": "`sur laquelle` introduit un régime en `sur` que le verbe ne demande pas : on peut s'appuyer sur une procédure, mais s'y conformer se dit avec `à`. La forme correcte reste `à laquelle`.",
+      "A": "`Aucune` ne conviendrait que si les quatre options numérotées étaient fautives ; l'option 3 étant correcte, ce compte n'est pas atteint.",
+      "T": "`Toutes` demanderait quatre options numérotées correctes ; une seule l'est, les trois autres sont fautives."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -105361,10 +106027,19 @@ const QUESTIONS = [
       "cognitive_mode": "analyse_structurelle",
       "writing_situation": null,
       "option_misconceptions": {
-        "1": "UNK",
-        "2": "UNK",
+        "1": "regime_direct_suppose",
+        "2": "regime_de_suppose",
         "3": null,
-        "4": "UNK"
+        "4": "regime_sur_suppose"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260805-8863",
+        "feedback_provenance": {
+          "model": "claude-opus-5",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-05T05:16:28Z"
+        }
       }
     },
     "stem": "Le secrétariat a simplifié la procédure ___ chaque candidat doit se conformer avant son inscription."
