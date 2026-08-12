@@ -288,6 +288,12 @@ assert.deepStrictEqual(
   }),
   []
 );
+assert.ok(
+  pedagogy.participleTypeLabels(
+    QUESTIONS.find((question) => question.id === 'eleves-L66-3')
+  ).includes('Verbe pronominal : « se » est COD'),
+  'Le feedback Drive sur « se lever » doit produire un type de participe passé visible.'
+);
 
 const summary = pedagogy.summarize([
   { id: 'q1', correct: false, family: 'accord_participe_passe', mechanismId: 'avoir_cvd_avant', misconceptionId: 'cod_apres_suppose' },

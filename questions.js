@@ -1,4 +1,4 @@
-// Fichier généré par pipeline_HEP.py; ne pas modifier manuellement.
+// Fichier généré par le pipeline HEP; ne pas modifier manuellement.
 const RULES = [
   {
     "id": "orthographe",
@@ -78574,6 +78574,12 @@ const QUESTIONS = [
         {
           "family": "accord_participe_passe",
           "mechanism_id": "participe_sans_auxiliaire",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "accord_participe_passe",
+          "mechanism_id": "pronominal_cvd_avant",
           "detail_id": "core",
           "tense_id": null
         }
