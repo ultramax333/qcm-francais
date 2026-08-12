@@ -55213,14 +55213,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Le verbe s'écrit « obnubiler » (du latin obnubilare, couvrir de nuages) : ob-nu-bi-lé. Aucune option ne porte cette graphie.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : le sens est celui d’une personne entièrement absorbée, et le masculin singulier convient à « le directeur ». La graphie attestée est `obnubilé`, lettre par lettre o-b-n-u-b-i-l-é. L’option 1 donne o-m-n-i-b-u-l-é, l’option 2 o-b-n-i-b-u-l-é, l’option 3 o-b-n-u-b-u-l-é et l’option 4 o-m-n-u-b-i-l-é : aucune ne reproduit exactement la graphie attestée.\nDonc : aucune option chiffrée n’est correcte ; il faut choisir A.",
     "why": {
-      "1": "« omnibulé » : contamination très répandue d'« omnibus » ; le préfixe est ob-.",
-      "2": "« obnibulé » intervertit les voyelles du radical (-nubi-).",
-      "3": "« obnubulé » répète le u au lieu du i.",
-      "4": "« omnubilé » cumule le préfixe fautif et une voyelle déplacée.",
-      "A": "Correct : la graphie attendue « obnubilé » ne figure dans aucune option.",
-      "T": "Chaque option déforme le mot d'une façon différente."
+      "1": "`omnibulé` échoue à reproduire la graphie attestée : la deuxième lettre est m au lieu de b, la quatrième i au lieu de u et la sixième u au lieu de i. La forme attendue est `obnubilé`.",
+      "2": "`obnibulé` échoue à reproduire la graphie attestée : la quatrième lettre est i au lieu de u et la sixième u au lieu de i. La forme attendue est `obnubilé`.",
+      "3": "`obnubulé` échoue à reproduire la graphie attestée : la sixième lettre est u au lieu de i. La forme attendue est `obnubilé`.",
+      "4": "`omnubilé` échoue à reproduire la graphie attestée : la deuxième lettre est m au lieu de b. La forme attendue est `obnubilé`.",
+      "A": "Aucune des quatre options chiffrées ne reproduit exactement `obnubilé` ; A est donc la réponse attendue.",
+      "T": "T exigerait quatre options chiffrées correctes, alors qu’aucune ne reproduit `obnubilé`."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -55233,6 +55233,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0003",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T09:37:21Z"
+        }
       }
     }
   },
@@ -60435,14 +60444,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Le mot s'écrit « verglas » : verre + glas (glace), avec un -s final muet.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : Le mot recherché est un nom qui désigne la couche de glace couvrant la rampe. Pour ce mot, aucune règle productive sûre ne permet de déduire la finale : il faut reconnaître et mémoriser sa graphie attestée, `verglas`. Parmi les propositions, seule l’option 1 reproduit le mot entier avec sa finale `-as`.\nDonc : il faut choisir l’option 1, `verglas`.",
     "why": {
-      "1": "Correct : verglas (finale en -as, comme « frimas »).",
-      "2": "« verglat » : la finale muette est un s, pas un t.",
-      "3": "« verglace » confond le nom avec le verbe « verglacer » (il verglace).",
-      "4": "« verglar » invente une finale en -ar.",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Les options 2, 3 et 4 déforment la finale du mot."
+      "1": "`verglas` est la graphie attestée du nom qui désigne ici la couche de glace couvrant la rampe ; sa finale s’écrit `-as`.",
+      "2": "La finale `-at` de `verglat` ne correspond pas à la graphie lexicale attestée ; la forme attendue est `verglas`.",
+      "3": "La finale `-ace` de `verglace` ne correspond pas à la graphie lexicale attestée du nom ; la forme attendue est `verglas`.",
+      "4": "La finale `-ar` de `verglar` ne correspond pas à la graphie lexicale attestée ; la forme attendue est `verglas`.",
+      "A": "Une option chiffrée est correcte, l’option 1 ; `Aucune` ne convient donc pas.",
+      "T": "Une seule option chiffrée est correcte ; les options 2, 3 et 4 ne donnent pas la graphie attestée, donc `Toutes` ne convient pas."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -60455,6 +60464,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260812-0002",
+        "feedback_provenance": {
+          "model": "gpt-5.6-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-12T09:32:56Z"
+        }
       }
     }
   },
@@ -79534,7 +79552,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "regime_verbal_de",
+      "mechanism_id": "regimes_multiples",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -79546,7 +79564,19 @@ const QUESTIONS = [
       "additional_rule_paths": [
         {
           "family": "prepositions_regies",
+          "mechanism_id": "regime_verbal_de",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "prepositions_regies",
           "mechanism_id": "regime_verbal_direct",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "prepositions_regies",
+          "mechanism_id": "regime_verbal_a",
           "detail_id": "core",
           "tense_id": null
         }

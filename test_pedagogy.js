@@ -328,6 +328,7 @@ assert.deepStrictEqual(negation.path, [
   'négation complète',
 ]);
 assert.strictEqual(negation.learnerSource, 'mechanism');
+assert.match(negation.revisionTitle, /^Négation — /);
 assert.match(negation.learnerExplanation, /^Exemple :/);
 assert.deepStrictEqual(negation.learnerSteps.length, 3);
 assert.doesNotMatch(negation.learnerTitle, /\b(?:ne|pas|jamais|plus|rien|personne)\b|n’/i);

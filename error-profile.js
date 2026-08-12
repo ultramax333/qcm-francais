@@ -5,7 +5,7 @@
 }(typeof window !== 'undefined' ? window : globalThis, function () {
   'use strict';
 
-  const SCHEMA_VERSION = 'hep-local-error-profile/1.1';
+  const SCHEMA_VERSION = 'hep-local-error-profile/1.2';
 
   function valueOrUnknown(value) {
     return value == null || value === '' ? 'UNK' : String(value);
@@ -58,13 +58,16 @@
     )
       ? hep.option_misconceptions[selected]
       : null;
+    // La séance garde son instantané brut dans l'historique. Pour le tableau
+    // courant, une question dont la clé et la carte concordent reçoit toutefois
+    // la taxonomie active, afin d'éviter deux lignes après un renommage de règle.
     return Object.assign({}, attempt, {
-      family: isKnown(attempt.family) ? attempt.family : hep.family,
-      mechanismId: isKnown(attempt.mechanismId)
-        ? attempt.mechanismId
-        : hep.mechanism_id,
-      detailId: isKnown(attempt.detailId) ? attempt.detailId : hep.detail_id,
-      tenseId: isKnown(attempt.tenseId) ? attempt.tenseId : hep.tense_id,
+      family: isKnown(hep.family) ? hep.family : attempt.family,
+      mechanismId: isKnown(hep.mechanism_id)
+        ? hep.mechanism_id
+        : attempt.mechanismId,
+      detailId: isKnown(hep.detail_id) ? hep.detail_id : attempt.detailId,
+      tenseId: isKnown(hep.tense_id) ? hep.tense_id : attempt.tenseId,
       misconceptionId: isKnown(attempt.misconceptionId)
         ? attempt.misconceptionId
         : bankMisconception,
@@ -108,6 +111,7 @@
             lastSeen: null,
             lastError: null,
             questionIds: new Set(),
+            errorQuestionIds: new Set(),
             distractors: new Map(),
           };
           rows.set(key, row);
@@ -120,6 +124,7 @@
           row.currentCorrectStreak += 1;
         } else {
           row.errors += 1;
+          if (attempt.id) row.errorQuestionIds.add(String(attempt.id));
           row.currentCorrectStreak = 0;
           if (sessionDate) row.lastError = sessionDate;
           const misconceptionId = valueOrUnknown(attempt.misconceptionId);
@@ -163,6 +168,7 @@
       lastSeen: row.lastSeen,
       lastError: row.lastError,
       questionIds: Array.from(row.questionIds).sort(),
+      errorQuestionIds: Array.from(row.errorQuestionIds).sort(),
       distractors: Array.from(row.distractors.values()).sort((a, b) =>
         b.count - a.count ||
         a.misconceptionId.localeCompare(b.misconceptionId, 'fr') ||

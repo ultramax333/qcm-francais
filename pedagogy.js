@@ -5,7 +5,7 @@
 }(typeof window !== 'undefined' ? window : globalThis, function () {
   'use strict';
 
-  const LABELS_VERSION = 'hep-pedagogy-labels/2.4';
+  const LABELS_VERSION = 'hep-pedagogy-labels/2.5';
 
   const TENSES = {
     present: 'présent',
@@ -78,6 +78,15 @@
   // les chemins canoniques restent séparés et inchangés plus bas.
   function learnerGuide(title, explanation, steps) {
     return { title, explanation, steps };
+  }
+
+  function revisionTitle(familyLabel, learnerTitle) {
+    if (!familyLabel) return learnerTitle || 'Règle à préciser';
+    if (!learnerTitle) return familyLabel;
+    if (learnerTitle.toLocaleLowerCase('fr').startsWith(familyLabel.toLocaleLowerCase('fr'))) {
+      return learnerTitle;
+    }
+    return `${familyLabel} — ${learnerTitle}`;
   }
 
   const DEFAULT_LEARNER_GUIDANCE = {
@@ -1749,6 +1758,7 @@
           'Aucune cause personnelle de l’erreur n’est déduite de cette seule réponse.',
         ],
         learnerTitle: 'Cette erreur doit encore être précisée',
+        revisionTitle: 'Règle grammaticale à préciser',
         learnerExplanation: 'La question ne contient pas encore assez d’informations pour nommer précisément la règle. Relis sa correction détaillée : elle reste la source la plus fiable.',
         learnerSteps: [
           'Relis la phrase et la réponse que tu avais choisie.',
@@ -1789,6 +1799,7 @@
         `Conclusion attendue : ${path[path.length - 1]}.`,
       ],
       learnerTitle: learner.title,
+      revisionTitle: revisionTitle(FAMILIES[family] || family, learner.title),
       learnerExplanation: learner.explanation,
       learnerSteps: learner.steps.slice(),
       learnerSource: specificLearner ? 'mechanism' : 'unknown',

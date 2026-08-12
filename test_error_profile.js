@@ -48,7 +48,7 @@ const history = [
 ];
 
 const result = profile.build(history);
-assert.strictEqual(result.schemaVersion, 'hep-local-error-profile/1.1');
+assert.strictEqual(result.schemaVersion, 'hep-local-error-profile/1.2');
 assert.strictEqual(result.sessions, 3);
 assert.strictEqual(result.attempts, 5);
 assert.strictEqual(result.errors, 3);
@@ -62,6 +62,7 @@ assert.strictEqual(known.sessions, 3);
 assert.strictEqual(known.errorSessions, 2);
 assert.strictEqual(known.currentCorrectStreak, 1);
 assert.deepStrictEqual(known.questionIds, ['q1', 'q2', 'q3', 'q5']);
+assert.deepStrictEqual(known.errorQuestionIds, ['q1', 'q3']);
 assert.deepStrictEqual(known.distractors, [
   { misconceptionId: 'cod_apres_suppose', selected: '2', count: 2 },
 ]);
@@ -69,12 +70,13 @@ assert.deepStrictEqual(known.distractors, [
 const unknown = result.rows.find((row) => row.mechanismId === 'UNK');
 assert.strictEqual(unknown.errors, 1);
 assert.strictEqual(unknown.errorRate, 1);
+assert.deepStrictEqual(unknown.errorQuestionIds, ['q4']);
 assert.deepStrictEqual(unknown.distractors, [
   { misconceptionId: 'UNK', selected: '4', count: 1 },
 ]);
 
 assert.deepStrictEqual(profile.build([]), {
-  schemaVersion: 'hep-local-error-profile/1.1',
+  schemaVersion: 'hep-local-error-profile/1.2',
   sessions: 0,
   attempts: 0,
   errors: 0,
@@ -132,7 +134,7 @@ assert.strictEqual(notEnriched.rows[0].mechanismId, 'UNK');
 const classifiedHistory = JSON.parse(JSON.stringify(legacyHistory));
 classifiedHistory[0].log[0].family = 'accord_participe_passe';
 classifiedHistory[0].log[0].mechanismId = 'avoir_cvd_apres';
-const preservedSnapshot = profile.build(classifiedHistory, bank);
-assert.strictEqual(preservedSnapshot.rows[0].mechanismId, 'avoir_cvd_apres');
+const reconciledSnapshot = profile.build(classifiedHistory, bank);
+assert.strictEqual(reconciledSnapshot.rows[0].mechanismId, 'avoir_cvd_avant');
 
 console.log('OK — profil cumulatif des erreurs.');

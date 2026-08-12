@@ -513,7 +513,7 @@ p { margin: 0; }
 }
 .error-table {
   width: 100%;
-  min-width: 1050px;
+  min-width: 720px;
   border-collapse: collapse;
   background: var(--bg-card);
   font-size: 0.78rem;
@@ -535,7 +535,15 @@ p { margin: 0; }
   letter-spacing: 0.03em;
 }
 .error-table tbody tr:last-child td { border-bottom: none; }
-.error-rule-cell { min-width: 280px; }
+.error-rule-cell { min-width: 390px; }
+.error-reference-label {
+  margin-bottom: 3px;
+  color: var(--accent);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
 .error-rule-label { font-weight: 650; color: var(--text); }
 .error-rule-explanation {
   margin-top: 5px;
@@ -573,6 +581,33 @@ p { margin: 0; }
   color: var(--text-dim);
   font-size: 0.78rem;
   line-height: 1.45;
+}
+.error-review-details {
+  margin-top: 9px;
+  color: var(--text-dim);
+  font-size: 0.76rem;
+}
+.error-review-details > summary {
+  color: var(--accent);
+  cursor: pointer;
+  font-weight: 650;
+}
+.error-detail-line {
+  margin-top: 8px;
+  line-height: 1.4;
+}
+.error-result-cell {
+  min-width: 155px;
+  line-height: 1.5;
+}
+.error-result-cell strong,
+.error-result-cell span { display: inline; }
+.error-result-cell .error-progress { margin-top: 5px; }
+.error-source-cell { min-width: 160px; }
+.error-source-button {
+  width: 100%;
+  padding: 9px 10px;
+  font-size: 0.78rem;
 }
 .error-number { white-space: nowrap; text-align: center !important; }
 .bad-number { color: #fca5a5; font-weight: 700; }
