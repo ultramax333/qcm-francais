@@ -20,9 +20,11 @@ quatre questions ambiguës ont reçu un contexte univoque et une consigne cardin
 L'ordre, les options et les clés sont inchangés. Déploiement par la PR GitHub `#3`, puis contrôle HTTP des fichiers servis. Toutes les questions portent une famille et un mécanisme grammatical fermés. Les
 détails, temps et causes de distracteur non prouvés restent `null` ou `UNK`.
 
-Candidate locale non encore publiée : release `questions-20260812-31d6f240`. Les deux derniers
-corrigés prioritaires (`orth-L27-1` et `orth-L36-7`) ont été validés ; la file est complète à 112/112.
-Leurs énoncés, options et clés sont inchangés.
+Candidate locale non encore publiée : version `1.26`, cache `qcm-op001-v126`, release
+`questions-20260812-d0894bbb`. Les deux derniers corrigés prioritaires sont validés. Le tableau
+« Mes erreurs » affiche désormais une rubrique scolaire cherchable dans un Bescherelle, une règle
+courte, le résultat et un raccourci vers les seules questions effectivement ratées ; la méthode et
+les données techniques restent repliées.
 
 La carte **Accord du participe passé** est un menu déroulant. Elle conserve un
 entraînement général et propose aussi un entraînement ciblé pour les 22 sous-cas stables actifs

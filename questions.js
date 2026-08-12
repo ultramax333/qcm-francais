@@ -79552,7 +79552,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "prepositions_regies",
-      "mechanism_id": "regime_verbal_de",
+      "mechanism_id": "regimes_multiples",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -79564,7 +79564,19 @@ const QUESTIONS = [
       "additional_rule_paths": [
         {
           "family": "prepositions_regies",
+          "mechanism_id": "regime_verbal_de",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "prepositions_regies",
           "mechanism_id": "regime_verbal_direct",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "prepositions_regies",
+          "mechanism_id": "regime_verbal_a",
           "detail_id": "core",
           "tense_id": null
         }

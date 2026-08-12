@@ -548,7 +548,7 @@
       el('div', {
         class: 'rule-desc',
         text: errorProfile && errorProfile.attempts
-          ? `${errorProfile.errors} erreur(s) sur ${errorProfile.attempts} réponse(s) · ${errorRows} mécanisme(s)`
+          ? `${errorProfile.errors} erreur(s) sur ${errorProfile.attempts} réponse(s) · ${errorRows} point(s) à réviser`
           : 'Tableau cumulatif détaillé par mécanisme grammatical.',
       }),
     ]);
@@ -618,7 +618,11 @@
 
   const EXAM_SIZE = 60; // examen blanc = 60 questions, comme le vrai OP001
 
-  function buildSession(ruleId, mode, mechanismId, detailId) {
+  function buildSession(ruleId, mode, mechanismId, detailId, questionIds) {
+    if (Array.isArray(questionIds) && questionIds.length) {
+      const byId = new Map(QUESTIONS.map((question) => [question.id, question]));
+      return questionIds.map((id) => byId.get(id)).filter(Boolean);
+    }
     if (ruleId === 'review') {
       const ids = Object.keys(loadReview());
       return shuffle(QUESTIONS.filter((q) => ids.indexOf(q.id) !== -1)).slice(0, SESSION_SIZE);
@@ -629,16 +633,17 @@
     return questionsForRule(ruleId, mechanismId, detailId);
   }
 
-  function startQuiz(ruleId, mode, mechanismId, detailId) {
+  function startQuiz(ruleId, mode, mechanismId, detailId, questionIds) {
     mode = mode || 'learn';
     const startedAt = new Date();
-    const questions = buildSession(ruleId, mode, mechanismId, detailId);
+    const questions = buildSession(ruleId, mode, mechanismId, detailId, questionIds);
     if (!questions.length) return;
     state = {
       view: 'quiz',
       ruleId,
       mechanismId: mechanismId || null,
       detailId: detailId || null,
+      sourceQuestionIds: Array.isArray(questionIds) ? questionIds.slice() : null,
       mode,
       questions,
       index: 0,
@@ -934,6 +939,7 @@
       ruleId: state.ruleId,
       mechanismId: state.mechanismId || null,
       detailId: state.detailId || null,
+      sourceQuestionIds: state.sourceQuestionIds ? state.sourceQuestionIds.slice() : null,
       mode: state.mode,
       total: log.length,
       correct,
@@ -1222,7 +1228,8 @@
       entry.ruleId,
       entry.mode,
       entry.mechanismId,
-      entry.detailId
+      entry.detailId,
+      entry.sourceQuestionIds
     ));
     const home = el('button', { class: 'btn secondary', text: 'Accueil' });
     home.addEventListener('click', () => { state = { view: 'home' }; render(); });
@@ -1261,7 +1268,6 @@
     const profile = ERROR_PROFILE.build(loadHistory(), QUESTIONS);
     const rows = profile.rows.filter((row) => row.errors > 0);
     const rate = profile.attempts ? Math.round(profile.errorRate * 100) : 0;
-    const repeatedSignals = rows.filter((row) => row.errors >= 2 && row.errorSessions >= 2).length;
 
     const summary = el('div', { class: 'error-summary-grid' }, [
       el('div', { class: 'error-summary-stat' }, [
@@ -1277,8 +1283,8 @@
         el('span', { text: 'taux d’erreur' }),
       ]),
       el('div', { class: 'error-summary-stat' }, [
-        el('strong', { text: String(repeatedSignals) }),
-        el('span', { text: 'signaux répétés' }),
+        el('strong', { text: String(rows.length) }),
+        el('span', { text: 'points à réviser' }),
       ]),
     ]);
     wrap.appendChild(summary);
@@ -1316,18 +1322,14 @@
     const table = el('table', { class: 'error-table' });
     const head = el('thead', {}, [
       el('tr', {}, [
-        el('th', { text: 'Explication pédagogique' }),
-        el('th', { text: 'Erreurs' }),
-        el('th', { text: 'Essais' }),
-        el('th', { text: 'Taux' }),
-        el('th', { text: 'Séances' }),
-        el('th', { text: 'Distracteurs choisis' }),
-        el('th', { text: 'Progrès' }),
-        el('th', { text: 'Dernière erreur' }),
+        el('th', { text: 'Point à réviser' }),
+        el('th', { text: 'Mon résultat' }),
+        el('th', { text: 'Questions sources' }),
       ]),
     ]);
     table.appendChild(head);
     const body = el('tbody', {});
+    const currentQuestionIds = new Set(QUESTIONS.map((question) => question.id));
 
     rows.forEach((row) => {
       const description = PEDAGOGY
@@ -1339,15 +1341,11 @@
         )
         : null;
       const label = description
-        ? description.learnerTitle
-        : 'Erreur à revoir';
+        ? description.revisionTitle
+        : 'Règle grammaticale à préciser';
       const streak = row.currentCorrectStreak
         ? `${row.currentCorrectStreak} réussite(s) depuis`
         : 'À retravailler';
-      const distractorCell = el('td', {
-        class: 'error-distractors',
-        'data-label': 'Choix erronés',
-      });
       const distractorList = el('div', { class: 'error-distractor-list' });
       row.distractors.forEach((distractor) => {
         distractorList.appendChild(el('div', {
@@ -1357,8 +1355,6 @@
             : `Choix ${distractor.selected} · × ${distractor.count}`,
         }));
       });
-      distractorCell.appendChild(distractorList);
-
       const learnerSteps = description
         ? description.learnerSteps
         : [
@@ -1369,34 +1365,58 @@
       const steps = el('ol', { class: 'error-rule-steps' });
       learnerSteps.forEach((step) => steps.appendChild(el('li', { text: step })));
 
+      const details = el('details', { class: 'error-review-details' });
+      details.appendChild(el('summary', { text: 'Méthode et détails' }));
+      details.appendChild(steps);
+      details.appendChild(el('div', {
+        class: 'error-detail-line',
+        text: `${row.errorSessions}/${row.sessions} séance(s) avec erreur · dernière erreur ${row.lastError ? formatDate(row.lastError) : 'inconnue'}`,
+      }));
+      if (row.distractors.length) {
+        details.appendChild(el('div', { class: 'pedagogy-section-label', text: 'Choix erronés enregistrés' }));
+        details.appendChild(distractorList);
+      }
+      if (description) details.appendChild(pedagogyTechnicalPanel(description, row.distractors));
+
+      const sourceIds = (row.errorQuestionIds || []).filter((id) => currentQuestionIds.has(id));
+      const sourceButton = el('button', {
+        class: 'btn secondary error-source-button',
+        title: sourceIds.length ? `Questions : ${sourceIds.join(', ')}` : '',
+        text: sourceIds.length
+          ? `Revoir ${sourceIds.length} question${sourceIds.length > 1 ? 's' : ''}`
+          : 'Question indisponible',
+      });
+      if (sourceIds.length) {
+        sourceButton.addEventListener('click', () => startQuiz(
+          'review',
+          'learn',
+          row.mechanismId === 'UNK' ? null : row.mechanismId,
+          row.detailId === 'UNK' ? null : row.detailId,
+          sourceIds
+        ));
+      } else {
+        sourceButton.disabled = true;
+      }
+
       body.appendChild(el('tr', {}, [
-        el('td', { class: 'error-rule-cell', 'data-label': 'À comprendre' }, [
+        el('td', { class: 'error-rule-cell', 'data-label': 'Point à réviser' }, [
+          el('div', { class: 'error-reference-label', text: 'À chercher dans le Bescherelle' }),
           el('div', { class: 'error-rule-label', text: label }),
-          el('div', { class: 'pedagogy-section-label', text: 'La règle, simplement' }),
+          el('div', { class: 'pedagogy-section-label', text: 'À retenir' }),
           el('div', {
             class: 'error-rule-explanation',
             text: description ? description.learnerExplanation : 'Relis la correction détaillée de la question.',
           }),
-          el('div', { class: 'pedagogy-section-label', text: 'Comment faire' }),
-          steps,
-          description ? pedagogyTechnicalPanel(description, row.distractors) : null,
+          details,
         ]),
-        el('td', { class: 'error-number bad-number', 'data-label': 'Erreurs', text: String(row.errors) }),
-        el('td', { class: 'error-number', 'data-label': 'Essais', text: String(row.attempts) }),
-        el('td', { class: 'error-number', 'data-label': 'Taux', text: `${Math.round(row.errorRate * 100)} %` }),
-        el('td', {
-          class: 'error-number',
-          'data-label': 'Séances',
-          text: `${row.errorSessions}/${row.sessions}`,
-          title: 'Séances avec au moins une erreur / séances où ce mécanisme a été rencontré',
-        }),
-        distractorCell,
-        el('td', { class: 'error-progress', 'data-label': 'Progrès', text: streak }),
-        el('td', {
-          class: 'error-date',
-          'data-label': 'Dernière erreur',
-          text: row.lastError ? formatDate(row.lastError) : '—',
-        }),
+        el('td', { class: 'error-result-cell', 'data-label': 'Mon résultat' }, [
+          el('strong', { class: 'bad-number', text: `${row.errors} erreur${row.errors > 1 ? 's' : ''}` }),
+          el('span', { text: ` sur ${row.attempts} essai${row.attempts > 1 ? 's' : ''} · ${Math.round(row.errorRate * 100)} %` }),
+          el('div', { class: 'error-progress', text: streak }),
+        ]),
+        el('td', { class: 'error-source-cell', 'data-label': 'Questions sources' }, [
+          sourceButton,
+        ]),
       ]));
     });
 
@@ -1405,7 +1425,7 @@
     wrap.appendChild(tableWrap);
     wrap.appendChild(el('div', {
       class: 'error-footnote',
-      text: 'Les catégories techniques restent utilisées pour regrouper les erreurs et pondérer les futurs quiz. Elles sont masquées dans l’explication principale pour privilégier une méthode compréhensible. Une cause inconnue reste non classée : aucune interprétation n’est inventée.',
+      text: 'Les premières lignes sont les points les plus souvent manqués. Les noms visibles utilisent des rubriques grammaticales scolaires ; les codes internes restent dans « Méthode et détails » et continuent de pondérer les futurs quiz.',
     }));
     return wrap;
   }
