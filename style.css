@@ -346,6 +346,22 @@ p { margin: 0; }
 .explanation.is-correct { border-left-color: var(--good); }
 .explanation.is-incorrect { border-left-color: var(--bad); }
 .explanation strong { color: var(--text); }
+.participle-type-line {
+  margin-top: 5px;
+  color: var(--text);
+  font-weight: 650;
+  line-height: 1.45;
+}
+.answer-explanation-details { margin-top: 8px; }
+.answer-explanation-details > summary {
+  color: var(--accent);
+  cursor: pointer;
+  font-weight: 600;
+}
+.answer-explanation-text {
+  margin-top: 8px;
+  line-height: 1.5;
+}
 
 .memo-wrap {
   margin-top: 16px;

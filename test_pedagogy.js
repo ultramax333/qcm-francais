@@ -250,6 +250,45 @@ assert.deepStrictEqual(
   ]
 );
 
+assert.deepStrictEqual(
+  pedagogy.participleTypeLabels({
+    hep: {
+      family: 'accord_participe_passe',
+      mechanism_id: 'pronominal_se_coi',
+      detail_id: 'cod_avant',
+      tense_id: null,
+      additional_rule_paths: [
+        {
+          family: 'accord_participe_passe',
+          mechanism_id: 'participe_sans_auxiliaire',
+          detail_id: 'core',
+          tense_id: null,
+        },
+        {
+          family: 'accord_participe_passe',
+          mechanism_id: 'participe_sans_auxiliaire',
+          detail_id: 'core',
+          tense_id: null,
+        },
+      ],
+    },
+  }),
+  [
+    'Verbe pronominal : « se » est COI — COD avant',
+    'Participe passé employé sans auxiliaire',
+  ]
+);
+assert.deepStrictEqual(
+  pedagogy.participleTypeLabels({
+    hep: {
+      family: 'subjonctif_indicatif',
+      mechanism_id: 'apres_que_indicatif',
+      detail_id: 'core',
+    },
+  }),
+  []
+);
+
 const summary = pedagogy.summarize([
   { id: 'q1', correct: false, family: 'accord_participe_passe', mechanismId: 'avoir_cvd_avant', misconceptionId: 'cod_apres_suppose' },
   { id: 'q2', correct: false, family: 'accord_participe_passe', mechanismId: 'avoir_cvd_avant', misconceptionId: null },

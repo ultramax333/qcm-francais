@@ -172,6 +172,29 @@
     return details;
   }
 
+  function appendQuestionCorrection(container, question) {
+    const types = PEDAGOGY && PEDAGOGY.participleTypeLabels
+      ? PEDAGOGY.participleTypeLabels(question)
+      : [];
+    if (!types.length) {
+      container.appendChild(document.createTextNode(question.explanation || ''));
+      return;
+    }
+    container.appendChild(el('div', {
+      class: 'participle-type-line',
+      text: `${types.length > 1 ? 'Types' : 'Type'} de participe passé : ${types.join(' ; ')}`,
+    }));
+    if (question.explanation) {
+      const details = el('details', { class: 'answer-explanation-details' });
+      details.appendChild(el('summary', { text: 'Voir la règle et l’explication' }));
+      details.appendChild(el('div', {
+        class: 'answer-explanation-text',
+        text: question.explanation,
+      }));
+      container.appendChild(details);
+    }
+  }
+
   function formatDate(iso) {
     const d = new Date(iso);
     return d.toLocaleDateString('fr-CH', { day: '2-digit', month: '2-digit', year: 'numeric' }) +
@@ -789,7 +812,7 @@
       const expl = el('div', { class: 'explanation ' + (isCorrect ? 'is-correct' : 'is-incorrect') });
       const strong = el('strong', { text: isCorrect ? 'Correct. ' : 'Incorrect. ' });
       expl.appendChild(strong);
-      expl.appendChild(document.createTextNode(q.explanation));
+      appendQuestionCorrection(expl, q);
       card.appendChild(expl);
     }
 
@@ -1089,7 +1112,11 @@
         const row = el('div', { class: 'missed-item' });
         row.appendChild(el('div', { class: 'missed-prompt', text: (q && (q.type === 'blank' ? q.stem : q.instruction)) || l.prompt }));
         row.appendChild(el('div', { class: 'missed-answers', text: `Ta réponse : ${l.selected || '—'} · Attendue : ${l.answer}` }));
-        if (q && q.explanation) row.appendChild(el('div', { class: 'missed-expl', text: q.explanation }));
+        if (q && q.explanation) {
+          const correction = el('div', { class: 'missed-expl' });
+          appendQuestionCorrection(correction, q);
+          row.appendChild(correction);
+        }
         box.appendChild(row);
       });
       wrap.appendChild(box);
