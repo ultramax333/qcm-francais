@@ -104,7 +104,7 @@ intégration manuelle de `questions.js` rendrait l'identifiant de banque obsolè
   mais encore sans question ne sont jamais affichés ni appliqués par défaut.
 - `error-profile.js` — agrégation cumulative locale, sans dupliquer les séances
   dans la mémoire de génération
-- `questions.js` — la banque locale active de 1 747 questions
+- `questions.js` — la banque locale active de 1 744 questions
 - `config.js` — configuration (ID client Google Drive)
 - `manifest.json`, `sw.js`, `icon.svg` — installation PWA / hors-ligne
 - `static-server.ps1` — serveur statique local (développement, Windows)
