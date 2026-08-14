@@ -28,10 +28,10 @@ volet « Voir la règle et l’explication » afin de ne pas surcharger la corre
 Le chemin pronominal réfléchi de `eleves-L66-3`, signalé par le feedback Drive, est désormais inclus
 dans les types affichés ; aucun texte, aucune option et aucune clé n’ont changé.
 
-Les 114 questions de la famille applicative `participe` ont ensuite été relues individuellement.
+Les 114 questions alors présentes dans la famille applicative `participe` ont été relues individuellement.
 Dix métadonnées ont été précisées pour que chaque construction réellement testée apparaisse dans
-la correction et dans les statistiques. Le détail normativement variable `zone_facultative` reste
-visible pour l’élève, mais il est exclu de la pondération et de la génération.
+la correction et dans les statistiques. Après le retrait des trois cas ambigus en version 1.30,
+la banque active contient 111 questions dans cette famille.
 
 Toutes les questions portent une famille et un mécanisme grammatical fermés. Les détails, temps et
 causes de distracteur non prouvés restent `null` ou `UNK`.
@@ -42,7 +42,7 @@ entraînement général et propose aussi un entraînement ciblé pour les 22 sou
 verbes pronominaux, cas particuliers et révisions combinées. Chaque cas affiche
 avant le lancement sa règle en langage scolaire, un exemple et une méthode en
 trois étapes. Le filtre utilise directement le couple canonique de la question;
-aucune taxonomie parallèle n'est créée. Les quatre couples à norme variable restent
+aucune taxonomie parallèle n'est créée. Les trois couples à norme variable encore présents restent
 dans le mélange général mais sont exclus du ciblage. Un sous-cas prévu sans question
 active reste masqué jusqu'à la publication d'une question correspondante. Les questions composites
 peuvent conserver jusqu'à trois chemins de règle secondaires pour la traçabilité, sans les compter
