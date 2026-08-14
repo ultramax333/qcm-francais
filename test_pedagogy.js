@@ -301,7 +301,6 @@ const auditedParticiplePaths = {
   'part-12': ['mesure_duree_prix/core', 'avoir_cvd_avant/core'],
   'part-13': ['infinitif_sous_entendu_invariable/core', 'participe_suivi_infinitif/core'],
   'part-29': ['participe_suivi_infinitif/core', 'impersonnel_participe_invariable/core', 'pronominal_se_coi/sans_cod', 'pronominal_se_coi/cod_avant'],
-  'part-39': ['pronominal_accord_sujet/essentiellement', 'participe_adjectival_selon_position/zone_facultative', 'infinitif_sous_entendu_invariable/core', 'pronominal_accord_sujet/autonome'],
   'part-45': ['avoir_cvd_avant/core', 'pronominal_se_coi/cod_apres', 'pronominal_se_coi/sans_cod'],
   'part-47': ['impersonnel_participe_invariable/core', 'avoir_cvd_avant/core', 'pronominal_se_coi/sans_cod'],
   'part-L57-10': ['mesure_duree_prix/core', 'avoir_cvd_avant/core'],

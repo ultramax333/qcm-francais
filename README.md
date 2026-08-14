@@ -14,8 +14,10 @@ son `misconception_id` et son compteur ; une cause absente reste `UNK`.
 « Comment faire » en trois étapes. Famille, mécanisme, détail, temps, chemin canonique et
 codes de cause restent disponibles uniquement dans « Catégorie technique ».
 
-Version `1.29` du 12.08.2026 : cache `qcm-op001-v129`, **1 747 questions uniques**, release
-`questions-20260812-b641469e`. Les deux derniers corrigés prioritaires sont validés. Le tableau
+Version `1.30` du 14.08.2026 : cache `qcm-op001-v130`, **1 744 questions uniques**, release
+`questions-20260814-c3c227a5`. Trois questions sur des zones normatives ambiguës ont été retirées
+et le corrigé de `drill40h-08-2` explique désormais correctement et pas à pas l’accord de
+« entendu ». Le tableau
 « Mes erreurs » affiche désormais une rubrique scolaire cherchable dans un Bescherelle, une règle
 courte, le résultat et un raccourci vers les seules questions effectivement ratées ; la méthode et
 les données techniques restent repliées.

@@ -1,4 +1,4 @@
-// Fichier généré par le pipeline HEP; ne pas modifier manuellement.
+// Fichier généré par pipeline_HEP.py; ne pas modifier manuellement.
 const RULES = [
   {
     "id": "orthographe",
@@ -8032,66 +8032,6 @@ const QUESTIONS = [
     }
   },
   {
-    "id": "part-14",
-    "rule": "participe",
-    "type": "blank",
-    "stem": "Vous trouverez ___ les attestations demandées ; les pièces ___ sont numérotées de 1 à 4.",
-    "options": [
-      {
-        "key": "1",
-        "text": "ci-jointes / ci-jointes"
-      },
-      {
-        "key": "2",
-        "text": "ci-joint / ci-joint"
-      },
-      {
-        "key": "3",
-        "text": "ci-joint / ci-jointes"
-      },
-      {
-        "key": "4",
-        "text": "ci-jointes / ci-joint"
-      },
-      {
-        "key": "A",
-        "text": "Aucune"
-      },
-      {
-        "key": "T",
-        "text": "Toutes"
-      }
-    ],
-    "answer": "3",
-    "explanation": "« ci-joint » placé en tête (devant le nom) est invariable ; placé APRÈS le nom, il s'accorde : « les pièces ci-jointes ».",
-    "why": {
-      "1": "1er « ci-jointes » fautif : en tête de phrase, invariable.",
-      "2": "2e « ci-joint » fautif : après le nom, accord requis.",
-      "3": "Correct : invariable devant, accordé après le nom.",
-      "4": "Les deux inversés.",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Les options 1, 2 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
-    },
-    "gen": {
-      "model": "mixte (pré-suivi)",
-      "thinking": "standard",
-      "tracked": false
-    },
-    "hep": {
-      "metadata_schema_version": "hep-question/2.1",
-      "family": "accord_participe_passe",
-      "mechanism_id": "participe_adjectival_selon_position",
-      "detail_id": "zone_facultative",
-      "tense_id": null,
-      "option_misconceptions": {
-        "1": "UNK",
-        "2": "UNK",
-        "3": null,
-        "4": "UNK"
-      }
-    }
-  },
-  {
     "id": "part-15",
     "rule": "participe",
     "type": "blank",
@@ -9585,86 +9525,6 @@ const QUESTIONS = [
         "3": "UNK",
         "4": "UNK"
       }
-    }
-  },
-  {
-    "id": "part-39",
-    "rule": "participe",
-    "type": "sentences",
-    "instruction": "Quelle(s) phrase(s) présente(nt) un accord correct ?",
-    "options": [
-      {
-        "key": "1",
-        "text": "Elles se sont éprises du même sujet de recherche."
-      },
-      {
-        "key": "2",
-        "text": "Mis à part deux détails, tout se tient."
-      },
-      {
-        "key": "3",
-        "text": "Les excuses qu'il a cru devoir présenter ont surpris."
-      },
-      {
-        "key": "4",
-        "text": "Trois semaines se sont écoulées sans nouvelle."
-      },
-      {
-        "key": "A",
-        "text": "Aucune"
-      },
-      {
-        "key": "T",
-        "text": "Toutes"
-      }
-    ],
-    "answer": "T",
-    "explanation": "Règle : Chaque phrase demande une vérification différente. Un terme technique n'aide que si l'on montre quel mot commande l'accord. Dans cette phrase : 1. « S'éprendre » s'emploie avec « se » et son participe s'accorde ici avec « elles » : « éprises ». 2. Devant le nom, « mis à part » peut rester inchangé comme une expression fixe ; « mises à part » est aussi admis si l'on conserve la valeur du participe. 3. Dans « les excuses qu'il a cru devoir présenter », « que » reprend les excuses à présenter : ce mot complète « présenter », pas « cru », qui reste inchangé. 4. Ce sont « trois semaines » qui se sont écoulées : féminin pluriel, donc « écoulées ». Donc : les quatre phrases proposées sont correctes ; la réponse est T.",
-    "why": {
-      "1": "« Éprises » reprend le sujet féminin pluriel « elles » : cette phrase est correcte.",
-      "2": "« Mis à part » peut rester inchangé devant le nom. La variante « mises à part » serait également admise : la forme proposée est correcte.",
-      "3": "« Que » reprend les excuses que l'on doit présenter ; il complète « présenter » et non « cru ». « Cru » reste donc inchangé.",
-      "4": "Le sujet est « trois semaines », féminin pluriel ; « écoulées » porte correctement les marques du féminin pluriel.",
-      "A": "Les quatre phrases ont un accord admis ; il est faux de répondre qu'aucune n'est correcte.",
-      "T": "Chaque phrase a été vérifiée séparément et les quatre accords sont admis : « Toutes » est la bonne réponse."
-    },
-    "gen": {
-      "model": "mixte (pré-suivi)",
-      "thinking": "standard",
-      "tracked": false
-    },
-    "hep": {
-      "metadata_schema_version": "hep-question/2.1",
-      "family": "accord_participe_passe",
-      "mechanism_id": "pronominal_accord_sujet",
-      "detail_id": "essentiellement",
-      "tense_id": "passe_compose",
-      "option_misconceptions": {
-        "1": null,
-        "2": null,
-        "3": null,
-        "4": null
-      },
-      "additional_rule_paths": [
-        {
-          "family": "accord_participe_passe",
-          "mechanism_id": "participe_adjectival_selon_position",
-          "detail_id": "zone_facultative",
-          "tense_id": null
-        },
-        {
-          "family": "accord_participe_passe",
-          "mechanism_id": "infinitif_sous_entendu_invariable",
-          "detail_id": "core",
-          "tense_id": "passe_compose"
-        },
-        {
-          "family": "accord_participe_passe",
-          "mechanism_id": "pronominal_accord_sujet",
-          "detail_id": "autonome",
-          "tense_id": "passe_compose"
-        }
-      ]
     }
   },
   {
@@ -41705,14 +41565,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Le CVD antéposé désigne les personnes qui accomplissent l'action de l'infinitif; vu s'accorde ici au masculin pluriel.",
+    "explanation": "Règle : Avec l’auxiliaire avoir, un participe passé suivi d’un infinitif s’accorde avec le CVD placé avant si ce CVD accomplit lui-même l’action de l’infinitif. Méthode : 1. Repérez le CVD placé avant le participe. 2. Repérez l’infinitif qui suit. 3. Demandez-vous si le CVD accomplit l’action de cet infinitif. 4. S’il l’accomplit, accordez le participe avec lui ; sinon, laissez le participe invariable. Dans cette phrase : Le public a entendu qui ? « les musiciens », repris par « que ». Les musiciens jouent eux-mêmes. Le CVD est masculin pluriel : « entendu » s’accorde donc avec lui et devient « entendus ». Donc : il faut choisir l’option 4, « entendus ».",
     "why": {
-      "1": "Chaîne/reconstruction : Le CVD pluriel antéposé accomplit l'action de l'infinitif de perception; le participe s'accorde au masculin pluriel. Option 1 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
-      "2": "Chaîne/reconstruction : Le CVD pluriel antéposé accomplit l'action de l'infinitif de perception; le participe s'accorde au masculin pluriel. Option 2 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
-      "3": "Chaîne/reconstruction : Le CVD pluriel antéposé accomplit l'action de l'infinitif de perception; le participe s'accorde au masculin pluriel. Option 3 : La forme suit un mauvais accord, régime, mode, temps ou support syntaxique.",
-      "4": "Chaîne/reconstruction : Le CVD pluriel antéposé accomplit l'action de l'infinitif de perception; le participe s'accorde au masculin pluriel. Option 4 : La forme applique exactement la chaîne reconstruite.",
-      "A": "Aucune est la clé uniquement lorsque les quatre options chiffrées sont fautives.",
-      "T": "Toutes est la clé uniquement lorsque les quatre options chiffrées sont correctes."
+      "1": "« Entendue » est au féminin singulier, alors que le CVD « les musiciens » est masculin pluriel.",
+      "2": "« Entendu » est bien masculin, mais il reste au singulier alors que le CVD « les musiciens » est pluriel.",
+      "3": "« Entendues » est bien pluriel, mais son féminin ne correspond pas au CVD masculin « les musiciens ».",
+      "4": "« Entendus » convient : « les musiciens » jouent eux-mêmes et le participe s’accorde avec ce CVD masculin pluriel placé avant.",
+      "A": "L’option 4 est correcte ; « Aucune » ne peut donc pas être la réponse.",
+      "T": "Une seule forme convient, l’option 4 ; « Toutes » ne peut donc pas être la réponse."
     },
     "hep": {
       "slot_id": "drill40-08",
@@ -41733,6 +41593,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20260814-0001",
+        "feedback_provenance": {
+          "model": "gpt-5.6-codex",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-08-14T12:00:00Z"
+        }
       }
     },
     "stem": "Les musiciens que le public a ___ jouer ont reçu une longue ovation."
@@ -81939,66 +81808,6 @@ const QUESTIONS = [
       "tense_id": null,
       "option_misconceptions": {
         "1": "UNK",
-        "2": "UNK",
-        "3": "UNK",
-        "4": "UNK"
-      }
-    }
-  },
-  {
-    "id": "part-L71-7",
-    "rule": "participe",
-    "type": "blank",
-    "gen": {
-      "model": "Fable 5",
-      "thinking": "standard",
-      "tracked": true
-    },
-    "stem": "Vous trouverez ___ la facture du transport ; la quittance ___ vous servira pour le remboursement.",
-    "options": [
-      {
-        "key": "1",
-        "text": "ci-joint / ci-jointe"
-      },
-      {
-        "key": "2",
-        "text": "ci-jointe / ci-jointe"
-      },
-      {
-        "key": "3",
-        "text": "ci-joint / ci-joint"
-      },
-      {
-        "key": "4",
-        "text": "ci-jointe / ci-joint"
-      },
-      {
-        "key": "A",
-        "text": "Aucune"
-      },
-      {
-        "key": "T",
-        "text": "Toutes"
-      }
-    ],
-    "answer": "1",
-    "explanation": "Règle : « ci-joint » placé AVANT le nom (en tête de la mention) reste invariable : vous trouverez ci-joint la facture. Placé APRÈS le nom, il devient adjectif et s'accorde : la quittance ci-jointe. Dans cette phrase : « ___ la facture » (avant le nom) → ci-joint ; « la quittance ___ » (après le nom) → ci-jointe. Donc : ci-joint / ci-jointe — option 1.",
-    "why": {
-      "1": "Correct : invariable avant le nom (ci-joint la facture) ; accordé après le nom (la quittance ci-jointe).",
-      "2": "« ci-jointe la facture » accorde une forme que la position antéposée laisse invariable.",
-      "3": "« la quittance ci-joint » : placé après le nom, il s'accorde → ci-jointe.",
-      "4": "Inverse les deux positions : invariable avant, accordé après.",
-      "A": "Il existe bien une option correcte : la 1.",
-      "T": "Les options 2, 3 et 4 fautent sur au moins une des deux positions."
-    },
-    "hep": {
-      "metadata_schema_version": "hep-question/2.1",
-      "family": "accord_participe_passe",
-      "mechanism_id": "participe_adjectival_selon_position",
-      "detail_id": "zone_facultative",
-      "tense_id": null,
-      "option_misconceptions": {
-        "1": null,
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
