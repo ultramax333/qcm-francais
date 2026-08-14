@@ -14,10 +14,13 @@ son `misconception_id` et son compteur ; une cause absente reste `UNK`.
 « Comment faire » en trois étapes. Famille, mécanisme, détail, temps, chemin canonique et
 codes de cause restent disponibles uniquement dans « Catégorie technique ».
 
-Version `1.30` du 14.08.2026 : cache `qcm-op001-v130`, **1 744 questions uniques**, release
-`questions-20260814-c3c227a5`. Trois questions sur des zones normatives ambiguës ont été retirées
-et le corrigé de `drill40h-08-2` explique désormais correctement et pas à pas l’accord de
-« entendu ». Le tableau
+Version `1.31` du 14.08.2026 : cache `qcm-op001-v131`, **1 754 questions uniques**, release
+`questions-20260814-4b135c45`. Le lot `hep-b1-20260814-0001` ajoute dix questions produites et
+contrôlées par la boucle Sol High complète, sans remplacement d’une question existante. La famille
+canonique **Négation** possède désormais sa propre carte d’entraînement, portant le menu à 16 cartes.
+Les trois
+questions normativement ambiguës restent retirées et le corrigé de `drill40h-08-2` conserve sa
+version pédagogique corrigée. Le tableau
 « Mes erreurs » affiche désormais une rubrique scolaire cherchable dans un Bescherelle, une règle
 courte, le résultat et un raccourci vers les seules questions effectivement ratées ; la méthode et
 les données techniques restent repliées.
@@ -104,7 +107,7 @@ intégration manuelle de `questions.js` rendrait l'identifiant de banque obsolè
   mais encore sans question ne sont jamais affichés ni appliqués par défaut.
 - `error-profile.js` — agrégation cumulative locale, sans dupliquer les séances
   dans la mémoire de génération
-- `questions.js` — la banque locale active de 1 744 questions
+- `questions.js` — la banque locale active de 1 754 questions
 - `config.js` — configuration (ID client Google Drive)
 - `manifest.json`, `sw.js`, `icon.svg` — installation PWA / hors-ligne
 - `static-server.ps1` — serveur statique local (développement, Windows)

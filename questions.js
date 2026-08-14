@@ -74,6 +74,11 @@ const RULES = [
     "id": "vocabulaire",
     "label": "Vocabulaire en contexte",
     "desc": "Choisir le synonyme exact du mot « en gras » dans son contexte précis"
+  },
+  {
+    "id": "negation",
+    "label": "négation",
+    "desc": "Construire et interpréter une phrase négative dans un écrit scolaire ou formel."
   }
 ];
 
@@ -109928,6 +109933,706 @@ const QUESTIONS = [
       }
     },
     "stem": "Les recommandations de l’audit, malgré les réserves de plusieurs membres du comité, sont ___ dans le rapport final."
+  },
+  {
+    "id": "cand-slot-20260814-02-graphie-usage-v5",
+    "rule": "orthographe",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "acceuil"
+      },
+      {
+        "key": "2",
+        "text": "accueil"
+      },
+      {
+        "key": "3",
+        "text": "acueil"
+      },
+      {
+        "key": "4",
+        "text": "accueille"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "2",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : le groupe « un espace d’___ » demande un nom. Le mot recherché désigne le lieu prévu pour accueillir le public. Parmi les formes proposées, seule `accueil` correspond à la graphie attestée de ce nom : elle conserve les deux c et s’écrit avec la suite -ueil.\nDonc : la réponse correcte est la proposition 2, `accueil`.",
+    "why": {
+      "1": "La proposition 1 est incorrecte : `acceuil` inverse les voyelles de la terminaison du nom. La graphie attestée est `accueil`, avec -ueil.",
+      "2": "La proposition 2 est correcte : `accueil` est la graphie attestée du nom qui convient dans le groupe « un espace d’accueil ».",
+      "3": "La proposition 3 est incorrecte : `acueil` supprime l’un des deux c du nom. La graphie attestée est `accueil`, avec deux c.",
+      "4": "La proposition 4 est incorrecte : `accueille` est une forme du verbe « accueillir », alors que « un espace d’___ » exige ici le nom. La forme attendue est `accueil`.",
+      "A": "La réponse A est incorrecte, car la proposition 2, `accueil`, est correcte.",
+      "T": "La réponse T est incorrecte, car seule la proposition 2 est correcte ; les propositions 1, 3 et 4 contiennent une graphie ou une forme qui ne convient pas."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260814-0001",
+      "slot_id": "slot-20260814-02-graphie-usage",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "orthographe_lexicale",
+      "mechanism_id": "graphie_lexicale_usage",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "courriel",
+      "communicative_purpose": "annoncer une activité et en préciser l'organisation",
+      "cognitive_mode": "rappel_regle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": null,
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Avant le spectacle en plein air, un espace d’___ sera aménagé près de l’entrée du parc."
+  },
+  {
+    "id": "cand-slot-20260814-06-nombres-r1",
+    "rule": "nombres",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "L’équipe a préparé trois cent quarante colis d’hygiène."
+      },
+      {
+        "key": "2",
+        "text": "Le dépôt comptait six cents sacs de couchage au moment de l’inventaire."
+      },
+      {
+        "key": "3",
+        "text": "Les partenaires ont financé quatre-vingts kits de premiers secours."
+      },
+      {
+        "key": "4",
+        "text": "Au total, deux cent quatre-vingt mille articles ont été redistribués."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "T",
+    "explanation": "Règle : Cent et vingt prennent s seulement s’ils sont multipliés et terminaux ; mille reste toujours invariable.\nMéthode : 1. Décompose le nombre en éléments simples. 2. Repère les éléments qui peuvent varier, notamment vingt et cent. 3. Applique les traits d’union et les accords prévus par la règle précise. 4. Relis le nombre entier pour vérifier sa valeur.\nDans cette phrase : 1) Dans `trois cent quarante`, cent est multiplié, mais il est suivi de quarante : il reste sans s. 2) Dans `six cents`, cent est multiplié et termine le nombre : il prend un s. 3) Dans `quatre-vingts`, vingt est multiplié et termine le nombre : il prend un s. 4) Dans `deux cent quatre-vingt mille`, cent est suivi d’un autre nombre, vingt est suivi de mille et mille reste toujours invariable : aucun de ces trois éléments ne prend de s.\nDonc : les quatre formulations sont correctes ; la réponse attendue est T, « Toutes ».",
+    "why": {
+      "1": "`trois cent quarante` est correct : cent est multiplié par trois, mais il est suivi de quarante ; il reste donc invariable.",
+      "2": "`six cents` est correct : cent est multiplié par six et termine le nombre avant `sacs` ; il prend donc un s.",
+      "3": "`quatre-vingts` est correct : vingt est multiplié par quatre et termine le nombre avant `kits` ; il prend donc un s.",
+      "4": "`deux cent quatre-vingt mille` est correct : cent est suivi de quatre-vingt, vingt est suivi de mille et mille est toujours invariable ; les trois formes restent donc sans s.",
+      "A": "`Aucune` est faux : les options 1, 2, 3 et 4 respectent toutes l’accord de cent et de vingt ainsi que l’invariabilité de mille ; la forme attendue est `Toutes`.",
+      "T": "`Toutes` est correct : dans l’option 1, cent est suivi de quarante et reste invariable ; dans l’option 2, cent termine le nombre et prend un s ; dans l’option 3, vingt termine le nombre et prend un s ; dans l’option 4, cent et vingt sont suivis d’un autre nombre, tandis que mille reste invariable."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260814-0001",
+      "slot_id": "slot-20260814-06-nombres",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "nombres_traits_union",
+      "mechanism_id": "cent_vingt_mille",
+      "detail_id": "cent",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "présenter les résultats chiffrés d'une collecte",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null
+      }
+    },
+    "stem": "Le rapport final recense plusieurs catégories de matériel remises aux bénéficiaires. Quelles formulations respectent l’écriture des nombres ?"
+  },
+  {
+    "id": "cand-slot-20260814-08-interrogation-indirecte-r1",
+    "rule": "discours",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "J’aimerais savoir à quelle date votre équipe instruira ma demande et elle m’enverra sa réponse par quel moyen."
+      },
+      {
+        "key": "2",
+        "text": "J’aimerais savoir à quelle date votre équipe instruira ma demande et par quel moyen elle m’enverra sa réponse."
+      },
+      {
+        "key": "3",
+        "text": "J’aimerais savoir à quelle date votre équipe instruira-t-elle ma demande et par quel moyen elle m’enverra sa réponse."
+      },
+      {
+        "key": "4",
+        "text": "J’aimerais savoir à quelle date votre équipe instruira ma demande et par quel moyen m’enverra sa réponse."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "2",
+    "explanation": "Règle : Après le mot interrogatif, la subordonnée garde l’ordre normal sujet puis verbe.\nMéthode : 1. Repère le verbe qui introduit la question rapportée. 2. Conserve le mot interrogatif nécessaire. 3. Utilise l’ordre d’une phrase déclarative, sans inversion du sujet ni est-ce que. 4. Vérifie le temps, le mode et la ponctuation de la phrase complète.\nDans cette phrase : `J’aimerais savoir` introduit deux interrogations indirectes coordonnées. Après `à quelle date`, le sujet `votre équipe` précède le verbe `instruira`. Après `par quel moyen`, le sujet `elle` précède aussi le verbe `enverra`.\nDonc : seule la phrase 2 respecte l’ordre sujet-verbe dans les deux interrogations indirectes et exprime complètement quand et comment la demande sera traitée.",
+    "why": {
+      "1": "La suite `elle m’enverra sa réponse par quel moyen` est fautive dans cette interrogation indirecte : le groupe interrogatif doit précéder le sujet et le verbe. On attend `par quel moyen elle m’enverra sa réponse`.",
+      "2": "Cette phrase est correcte : après `à quelle date` et `par quel moyen`, chaque interrogation indirecte suit l’ordre sujet-verbe, soit `votre équipe instruira` puis `elle m’enverra`.",
+      "3": "Le morceau `votre équipe instruira-t-elle` est fautif : l’inversion appartient à l’interrogation directe et ne convient pas après `J’aimerais savoir`. On attend `votre équipe instruira`.",
+      "4": "Le morceau `par quel moyen m’enverra sa réponse` est fautif : la seconde interrogation indirecte doit comporter un sujet avant le verbe. On attend `par quel moyen elle m’enverra sa réponse`.",
+      "A": "La réponse A ne convient pas, car une option chiffrée est correcte : l’option 2.",
+      "T": "La réponse T ne convient pas, car une seule option chiffrée est correcte, et non les quatre : l’option 2."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260814-0001",
+      "slot_id": "slot-20260814-08-interrogation-indirecte",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "interrogation_indirecte",
+      "mechanism_id": "ordre_declaratif",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "courriel",
+      "communicative_purpose": "demander quand et comment un dossier sera traité",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": null,
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Quelle phrase peut figurer dans un message adressé au secrétariat au sujet du suivi d’une demande d’admission ?"
+  },
+  {
+    "id": "candidate-slot-20260814-01-regime-a",
+    "rule": "relatifs",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "auxquels"
+      },
+      {
+        "key": "2",
+        "text": "dont"
+      },
+      {
+        "key": "3",
+        "text": "sur lesquels"
+      },
+      {
+        "key": "4",
+        "text": "que"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "1",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : La proposition de base est « le service communal se référera aux critères ». Le verbe se référer impose la préposition à. L’antécédent critères est masculin pluriel : à + lesquels donne auxquels.\nDonc : l’option 1, `auxquels`, est la réponse attendue.",
+    "why": {
+      "1": "`auxquels` restitue la construction se référer à et s’accorde au masculin pluriel avec critères : cette option est correcte.",
+      "2": "`dont` reprendrait un complément introduit par de, alors que se référer exige à ; la forme attendue est `auxquels`.",
+      "3": "`sur lesquels` introduit la préposition sur, que se référer n’exige pas ici ; la forme attendue est `auxquels`.",
+      "4": "`que` marque un complément direct et supprime la préposition exigée par se référer à ; la forme attendue est `auxquels`.",
+      "A": "L’option A est incorrecte, car une option numérotée, l’option 1, est correcte.",
+      "T": "L’option T est incorrecte, car seule l’option 1 est correcte ; les quatre options numérotées ne le sont pas."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260814-0001",
+      "slot_id": "slot-20260814-01-regime-a",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "pronoms_relatifs",
+      "mechanism_id": "regime_a_auquel",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "note_administrative",
+      "communicative_purpose": "préciser la procédure applicable au dossier",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": "regime_de_suppose",
+        "3": "regime_sur_suppose",
+        "4": "regime_direct_suppose"
+      }
+    },
+    "stem": "La note précise les critères ___ le service communal se référera pour examiner la demande de soutien."
+  },
+  {
+    "id": "candidate-slot-20260814-03-avoir-cvd-avant",
+    "rule": "participe",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "Les tables que l'association a emprunté lundi se trouvent désormais dans le local principal."
+      },
+      {
+        "key": "2",
+        "text": "La tente que les bénévoles ont montés devant la salle sera démontée demain."
+      },
+      {
+        "key": "3",
+        "text": "Les rallonges que l'association avait réservées figurent désormais dans l'inventaire."
+      },
+      {
+        "key": "4",
+        "text": "Le projecteur que l'équipe a rapportée fonctionne à nouveau correctement."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "3",
+    "explanation": "Règle : Avec avoir, identifie le COD antéposé et accorde le participe avec son genre et son nombre.\nMéthode : 1. Repère l’auxiliaire avoir et le participe passé. 2. Trouve le COD en posant la question qui ? ou quoi ? après le verbe. 3. Vérifie que ce COD est placé avant le participe passé. 4. Accorde le participe avec le genre et le nombre de ce COD.\nDans cette phrase : Dans l’option 1, le CVD antéposé « les tables », féminin pluriel, impose la forme « empruntées ». Dans l’option 2, le CVD antéposé « la tente », féminin singulier, impose la forme « montée ». Dans l’option 3, le CVD antéposé « les rallonges », féminin pluriel, impose la forme « réservées ». Dans l’option 4, le CVD antéposé « le projecteur », masculin singulier, impose la forme « rapporté ». Seule la troisième formulation porte l’accord exigé.\nDonc : l’option 3 est la réponse attendue.",
+    "why": {
+      "1": "Dans le cas de l’auxiliaire avoir avec un CVD placé avant, `a emprunté` ne s’accorde pas avec les tables, féminin pluriel ; la forme attendue est `a empruntées`.",
+      "2": "Dans le cas de l’auxiliaire avoir avec un CVD placé avant, `ont montés` s’accorde à tort avec le sujet les bénévoles ; le CVD la tente impose la forme `ont montée`.",
+      "3": "Dans le cas de l’auxiliaire avoir avec un CVD placé avant, `avait réservées` s’accorde correctement au féminin pluriel avec les rallonges.",
+      "4": "Dans le cas de l’auxiliaire avoir avec un CVD placé avant, `a rapportée` prend à tort le féminin de l’équipe ; le CVD le projecteur impose la forme `a rapporté`.",
+      "A": "L’option A est incorrecte, car une option numérotée, l’option 3, est correcte.",
+      "T": "L’option T est incorrecte, car seule l’option 3 est correcte ; les options 1, 2 et 4 présentent un accord fautif."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260814-0001",
+      "slot_id": "slot-20260814-03-avoir-cvd-avant",
+      "profile": "perfectionnement",
+      "domain": "orthographe",
+      "family": "accord_participe_passe",
+      "mechanism_id": "avoir_cvd_avant",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "dresser le bilan du matériel emprunté et rendu",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": null,
+        "4": "UNK"
+      }
+    },
+    "stem": "Quelle formulation convient au rapport sur le matériel prêté à l'association ?"
+  },
+  {
+    "id": "candidate-slot-20260814-04-possession-dont",
+    "rule": "relatifs",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "laquelle"
+      },
+      {
+        "key": "2",
+        "text": "que"
+      },
+      {
+        "key": "3",
+        "text": "qui"
+      },
+      {
+        "key": "4",
+        "text": "dont"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "4",
+    "explanation": "Règle : Dont reprend un groupe en de qui complète un nom et exprime ici la possession.\nMéthode : 1. Repère l’antécédent du pronom relatif. 2. Remets cet antécédent dans la proposition relative pour trouver sa fonction. 3. Conserve la préposition exigée par la construction. 4. Choisis le pronom compatible avec la fonction et l’antécédent.\nDans cette phrase : La relation à reconstruire est « le prototype de l’équipe a résisté ». Le groupe de l’équipe complète le nom prototype et exprime la possession ; il est repris par dont. Le groupe le prototype reste le sujet de a résisté.\nDonc : l’option 4, `dont`, est la réponse attendue.",
+    "why": {
+      "1": "`laquelle` sans préposition ne reprend pas le complément du nom de l’équipe ; la forme attendue est `dont`.",
+      "2": "`que` remplirait une fonction de complément direct, alors que le lien à exprimer est le prototype de l’équipe ; la forme attendue est `dont`.",
+      "3": "`qui` serait le sujet de a résisté, mais cette fonction est déjà remplie par le prototype ; la forme attendue est `dont`.",
+      "4": "`dont` reprend correctement de l’équipe dans la relation possessive le prototype de l’équipe, sans remplacer le sujet le prototype.",
+      "A": "L’option A est incorrecte, car une option numérotée, l’option 4, est correcte.",
+      "T": "L’option T est incorrecte, car seule l’option 4 est correcte ; les quatre options numérotées ne le sont pas."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260814-0001",
+      "slot_id": "slot-20260814-04-possession-dont",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "pronoms_relatifs",
+      "mechanism_id": "possession_dont",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "article",
+      "communicative_purpose": "présenter une équipe et les résultats de son projet",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": "UNK",
+        "4": null
+      }
+    },
+    "stem": "L'équipe ___ le prototype a résisté à tous les essais présentera ses résultats au forum scientifique."
+  },
+  {
+    "id": "candidate-slot-20260814-05-negation-complete",
+    "rule": "negation",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "Parlez pas à voix haute dans les espaces de travail."
+      },
+      {
+        "key": "2",
+        "text": "Ne mangez dans la salle de consultation."
+      },
+      {
+        "key": "3",
+        "text": "N'utilisez pas jamais les postes réservés aux recherches documentaires."
+      },
+      {
+        "key": "4",
+        "text": "Ne vous plus servez des casiers après la fermeture."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : La proposition 1 contient `pas`, mais omet `ne` devant `parlez`. Dans la proposition 2, `ne` précède bien `mangez`, mais le second terme négatif `pas` manque. Dans la proposition 3, `n’` et `jamais` suffisent à exprimer la négation : l’ajout de `pas` est redondant. Dans la proposition 4, `ne` est bien placé, mais `plus` doit suivre le verbe `servez`.\nDonc : aucune des quatre consignes n’est correctement formulée; la réponse est A.",
+    "why": {
+      "1": "La forme `Parlez pas` omet `ne`, exigé dans une consigne écrite formelle. La forme attendue est `Ne parlez pas à voix haute dans les espaces de travail.`",
+      "2": "La forme `Ne mangez` ne comporte pas de second terme négatif : `ne` ne suffit pas ici. La forme attendue est `Ne mangez pas dans la salle de consultation.`",
+      "3": "La forme `N’utilisez pas jamais` cumule inutilement `pas` et `jamais` dans la même négation. La forme attendue est `N’utilisez jamais les postes réservés aux recherches documentaires.`",
+      "4": "La forme `Ne vous plus servez` place `plus` avant le verbe, alors que ce second terme négatif doit suivre l’impératif. La forme attendue est `Ne vous servez plus des casiers après la fermeture.`",
+      "A": "A est correct : les quatre propositions numérotées sont fautives. La première omet `ne`, la deuxième omet `pas`, la troisième cumule `pas` et `jamais`, et la quatrième place `plus` avant le verbe.",
+      "T": "`Toutes` est faux, puisqu’aucune des quatre propositions numérotées ne présente une négation complète et correctement placée. La réponse attendue est `Aucune`."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260814-0001",
+      "slot_id": "slot-20260814-05-negation-complete",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "consigne",
+      "communicative_purpose": "rappeler les comportements interdits dans les espaces de travail",
+      "cognitive_mode": "rappel_regle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Quelle consigne est correctement formulée pour les usagers de la médiathèque ?"
+  },
+  {
+    "id": "candidate-slot-20260814-07-participe-detache",
+    "rule": "pronoms",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "Accompagnée par la responsable de la sécurité, l'architecte a inspecté les accès réservés aux élèves."
+      },
+      {
+        "key": "2",
+        "text": "Guidés par le chef de chantier, les défauts de la toiture ont été relevés par les visiteurs."
+      },
+      {
+        "key": "3",
+        "text": "Équipés de casques et de gilets, le parcours de visite a commencé dans la cour intérieure."
+      },
+      {
+        "key": "4",
+        "text": "Informée des travaux urgents, la fermeture de l'escalier a été recommandée par l'ingénieure."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "1",
+    "explanation": "Règle : Le participe détaché doit se rattacher sans ambiguïté au nom qui accomplit ou subit l’action.\nMéthode : 1. Repère le groupe détaché au début ou au milieu de la phrase. 2. Trouve la personne ou la chose qui accomplit l’action exprimée dans ce groupe. 3. Vérifie que le sujet de la proposition principale désigne la même personne ou la même chose. 4. Réécris la phrase si les deux sujets ne correspondent pas.\nDans cette phrase : Dans la proposition 1, le participe passé détaché `Accompagnée` se rattache à `l’architecte`, sujet de `a inspecté`; l’accord et le sens sont cohérents. Dans la proposition 2, `Guidés` se rattache grammaticalement à `les défauts`, qui ne peuvent pas être guidés. Dans la proposition 3, `Équipés` se rattache à `le parcours`, qui ne peut pas porter de casque ni de gilet. Dans la proposition 4, `Informée` se rattache à `la fermeture`, qui ne peut pas recevoir une information.\nDonc : seule la proposition 1 rattache correctement le participe détaché au sujet de la proposition principale; la réponse est 1.",
+    "why": {
+      "1": "Le cas applicable est celui du participe passé détaché rattaché au sujet : `Accompagnée` désigne `l’architecte`, sujet de la proposition principale. Le féminin singulier et le sens sont cohérents; la proposition est correcte.",
+      "2": "Dans le cas du participe passé détaché rattaché au sujet, `Guidés` désigne grammaticalement `les défauts de la toiture`, qui ne peuvent pas être guidés; l’agent `les visiteurs`, placé plus loin, n’est pas le sujet. La forme attendue est `Guidés par le chef de chantier, les visiteurs ont relevé les défauts de la toiture.`",
+      "3": "Dans le cas du participe passé détaché rattaché au sujet, `Équipés de casques et de gilets` se rattache à `le parcours de visite`, qui ne peut pas être équipé et avec lequel le pluriel ne s’accorde pas. La forme attendue est `Équipés de casques et de gilets, les visiteurs ont commencé le parcours de visite dans la cour intérieure.`",
+      "4": "Dans le cas du participe passé détaché rattaché au sujet, `Informée des travaux urgents` se rattache à `la fermeture de l’escalier`, qui ne peut pas être informée; `l’ingénieure`, placée plus loin, n’est pas le sujet. La forme attendue est `Informée des travaux urgents, l’ingénieure a recommandé la fermeture de l’escalier.`",
+      "A": "`Aucune` est faux, car une proposition numérotée est correcte : la proposition 1. La réponse attendue est `1`.",
+      "T": "`Toutes` est faux, car une seule proposition numérotée est correcte : la proposition 1. La réponse attendue est `1`."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260814-0001",
+      "slot_id": "slot-20260814-07-participe-detache",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "rupture_syntaxique",
+      "mechanism_id": "participe_detache_sujet_implicite",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "rendre compte des constats effectués lors de la visite",
+      "cognitive_mode": "jugement_semantique",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Quelle formulation convient au compte rendu de la visite du chantier scolaire ?"
+  },
+  {
+    "id": "candidate-slot-20260814-09-regimes-coordonnes",
+    "rule": "prepositions",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "Les équipes devront se familiariser et recourir à la nouvelle plateforme dès lundi."
+      },
+      {
+        "key": "2",
+        "text": "Les équipes devront se familiariser avec la nouvelle plateforme et en recourir dès lundi."
+      },
+      {
+        "key": "3",
+        "text": "Les équipes devront se familiariser avec la nouvelle plateforme et y recourir dès lundi."
+      },
+      {
+        "key": "4",
+        "text": "Les équipes devront se familiariser à la nouvelle plateforme et y recourir dès lundi."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "3",
+    "explanation": "Règle : Chaque terme coordonné garde la préposition exigée par son propre recteur.\nMéthode : 1. Repère le mot qui commande le complément. 2. Reconstitue sa construction habituelle avec ce complément. 3. Choisis la préposition exigée par cette construction. 4. Applique la contraction nécessaire, puis relis l’ensemble.\nDans cette phrase : Les deux constructions se vérifient séparément : on se familiarise avec la nouvelle plateforme et l’on recourt à la nouvelle plateforme. Dans la seconde construction, y reprend à la nouvelle plateforme. Seule l’option 3 conserve avec après se familiariser et le régime en à, repris par y, après recourir.\nDonc : l’option 3 est la réponse attendue.",
+    "why": {
+      "1": "Dans `se familiariser et recourir à la nouvelle plateforme`, la préposition à ne convient qu’à recourir ; se familiariser exige avec. La formulation attendue est `se familiariser avec la nouvelle plateforme et y recourir`.",
+      "2": "`en recourir` reprendrait un complément introduit par de, alors que recourir exige à ; la forme attendue est `y recourir`.",
+      "3": "`se familiariser avec la nouvelle plateforme et y recourir` respecte les deux constructions : se familiariser avec et recourir à, repris par y.",
+      "4": "`se familiariser à la nouvelle plateforme` reprend à tort la préposition de recourir ; la forme attendue est `se familiariser avec la nouvelle plateforme`.",
+      "A": "L’option A est incorrecte, car une option numérotée, l’option 3, est correcte.",
+      "T": "L’option T est incorrecte, car seule l’option 3 respecte les deux régimes ; les quatre options numérotées ne sont pas correctes."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260814-0001",
+      "slot_id": "slot-20260814-09-regimes-coordonnes",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "prepositions_regies",
+      "mechanism_id": "coordination_regimes_differents",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "note_administrative",
+      "communicative_purpose": "expliquer les actions attendues avant la mise en service",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": null,
+        "4": "UNK"
+      }
+    },
+    "stem": "Quelle formulation convient à la note d'équipe sur la nouvelle procédure informatique ?"
+  },
+  {
+    "id": "candidate-slot-20260814-10-sujet-eloigne",
+    "rule": "sujetverbe",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "exigent"
+      },
+      {
+        "key": "2",
+        "text": "nécessitent"
+      },
+      {
+        "key": "3",
+        "text": "requièrent"
+      },
+      {
+        "key": "4",
+        "text": "exige"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "4",
+    "explanation": "Règle : Repère le vrai sujet malgré les compléments ou incises placés entre lui et le verbe.\nMéthode : 1. Repère le verbe conjugué. 2. Trouve son sujet, même s’il est éloigné ou placé après le verbe. 3. Relève la personne et le nombre du sujet. 4. Choisis la forme verbale qui porte les mêmes marques.\nDans cette phrase : Le verbe a pour sujet le groupe la coordination des trente stands. Son noyau est coordination, nom singulier ; des trente stands est un complément du nom et ne commande pas l’accord. Le verbe doit donc être à la troisième personne du singulier.\nDonc : l’option 4, `exige`, est la réponse attendue.",
+    "why": {
+      "1": "`exigent` s’accorde à tort au pluriel avec le nom proche stands ; le noyau singulier coordination exige la forme `exige`.",
+      "2": "`nécessitent` porte à tort le pluriel de stands ; avec le sujet singulier la coordination, la forme attendue est `nécessite`.",
+      "3": "`requièrent` porte à tort le pluriel de stands ; avec le sujet singulier la coordination, la forme attendue est `requiert`.",
+      "4": "`exige` est correctement à la troisième personne du singulier et s’accorde avec le noyau du sujet, coordination.",
+      "A": "L’option A est incorrecte, car une option numérotée, l’option 4, est correcte.",
+      "T": "L’option T est incorrecte, car seule l’option 4 porte l’accord singulier exigé par le sujet ; les quatre options numérotées ne sont pas correctes."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20260814-0001",
+      "slot_id": "slot-20260814-10-sujet-eloigne",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "accord_sujet_verbe",
+      "mechanism_id": "sujet_eloigne",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "évaluer l'organisation et la participation au festival",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": "UNK",
+        "4": null
+      }
+    },
+    "stem": "Selon le rapport, la coordination des trente stands ___ encore plusieurs ajustements avant la prochaine édition du festival."
   }
 ];
 
