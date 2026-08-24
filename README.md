@@ -14,10 +14,13 @@ son `misconception_id` et son compteur ; une cause absente reste `UNK`.
 « Comment faire » en trois étapes. Famille, mécanisme, détail, temps, chemin canonique et
 codes de cause restent disponibles uniquement dans « Catégorie technique ».
 
-Version `1.31` du 14.08.2026 : cache `qcm-op001-v131`, **1 754 questions uniques**, release
+Version `1.32` du 24.08.2026 : cache `qcm-op001-v132`, **1 754 questions uniques**, release
 `questions-20260814-4b135c45`. Le lot `hep-b1-20260814-0001` ajoute dix questions produites et
 contrôlées par la boucle Sol High complète, sans remplacement d’une question existante. La famille
 canonique **Négation** possède désormais sa propre carte d’entraînement, portant le menu à 16 cartes.
+Le nouveau **Test adaptatif — 20 questions** utilise uniquement les résultats conservés sur l’appareil :
+il privilégie les thèmes les moins réussis, donne la priorité aux questions encore inédites dans ces
+thèmes et garde une petite part de découverte. Le test complet réellement aléatoire reste disponible.
 Les trois
 questions normativement ambiguës restent retirées et le corrigé de `drill40h-08-2` conserve sa
 version pédagogique corrigée. Le tableau

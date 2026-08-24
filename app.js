@@ -4,10 +4,12 @@
   const APP = document.getElementById('app');
   const HISTORY_KEY = 'qcm-op001-history-v1';
   const MIX_ID = 'mix';
+  const ADAPTIVE_ID = 'adaptive';
   const APP_VERSION = (window.CONFIG && CONFIG.APP_VERSION) || '';
   const BANK_RELEASE = (window.CONFIG && CONFIG.BANK_RELEASE) || 'UNK';
   const PEDAGOGY = window.HEP_PEDAGOGY;
   const ERROR_PROFILE = window.HEP_ERROR_PROFILE;
+  const ADAPTIVE_QUIZ = window.HEP_ADAPTIVE_QUIZ;
 
   let state = { view: 'home' };
 
@@ -224,6 +226,7 @@
 
   function ruleLabel(ruleId) {
     if (ruleId === MIX_ID) return 'Toutes les règles (mélangées)';
+    if (ruleId === ADAPTIVE_ID) return 'Test adaptatif — selon mes résultats';
     if (ruleId === 'review') return 'Révision des erreurs';
     if (ruleId === 'exam') return 'Examen blanc';
     const r = RULES.find((r) => r.id === ruleId);
@@ -303,6 +306,17 @@
     const unseen = shuffle(pool.filter((q) => !s.has(q.id)));
     const seen = shuffle(pool.filter((q) => s.has(q.id)));
     return unseen.concat(seen).slice(0, SESSION_SIZE);
+  }
+
+  function questionsForAdaptiveQuiz() {
+    if (!ADAPTIVE_QUIZ) return questionsForRule(MIX_ID);
+    return ADAPTIVE_QUIZ.build({
+      questions: QUESTIONS,
+      rules: RULES,
+      mastery: loadMastery(),
+      seenIds: loadSeen(),
+      limit: SESSION_SIZE,
+    }).questions;
   }
 
   // ---------- Google Drive (scope drive.file : l'app ne voit que ses fichiers) ----------
@@ -586,6 +600,16 @@
     exam.addEventListener('click', () => startExam());
     wrap.appendChild(exam);
 
+    const adaptive = el('button', { class: 'special-card adaptive-card' }, [
+      el('div', { class: 'rule-name', text: '🎯 Test adaptatif — 20 questions' }),
+      el('div', {
+        class: 'rule-desc',
+        text: 'Priorité aux thèmes que tu réussis le moins, avec quelques questions de découverte.',
+      }),
+    ]);
+    adaptive.addEventListener('click', () => startAdaptiveQuiz());
+    wrap.appendChild(adaptive);
+
     const mastery = loadMastery();
     const list = el('div', { class: 'rule-list' });
     RULES.forEach((rule) => {
@@ -650,6 +674,9 @@
       const ids = Object.keys(loadReview());
       return shuffle(QUESTIONS.filter((q) => ids.indexOf(q.id) !== -1)).slice(0, SESSION_SIZE);
     }
+    if (ruleId === ADAPTIVE_ID) {
+      return questionsForAdaptiveQuiz();
+    }
     if (mode === 'exam') {
       return shuffle(QUESTIONS.slice()).slice(0, EXAM_SIZE);
     }
@@ -687,6 +714,7 @@
   }
   function startReview() { startQuiz('review', 'learn'); }
   function startExam() { startQuiz('exam', 'exam'); }
+  function startAdaptiveQuiz() { startQuiz(ADAPTIVE_ID, 'learn'); }
 
   // ---------- test de connexion Google Drive (diagnostic, sur l'accueil) ----------
   // Statut transitoire (pas persisté) affiché pendant/après le test. Ce n'est
