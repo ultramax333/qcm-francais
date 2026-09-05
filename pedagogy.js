@@ -515,6 +515,11 @@
     ),
 
     // Majuscules des peuples et des langues
+    toponyme_et_derive: learnerGuide(
+      'Majuscule au nom de pays, minuscule à l’adjectif',
+      'Exemple : « la Suisse » mais « un village suisse ». Le nom propre du pays prend une majuscule ; l’adjectif qui qualifie un nom garde la minuscule.',
+      ['Repère si le mot nomme un pays ou qualifie un nom.', 'Pour le nom du pays, mets une majuscule.', 'Pour l’adjectif dérivé, garde la minuscule.']
+    ),
     nom_peuple_adjectif_langue: learnerGuide(
       'Majuscule au peuple, minuscule à l’adjectif et à la langue',
       'Exemple : « une Suissesse parle français et lit un journal suisse ». Le nom d’une personne ou d’un peuple prend une majuscule ; l’adjectif et le nom de langue gardent une minuscule.',
@@ -1005,8 +1010,8 @@
     ),
     pronom_possessif_accord: learnerGuide(
       'Accorder « le mien », « la vôtre », « les leurs »',
-      'Exemple : « mon livre » devient « le mien » et « mes clés » devient « les miennes ». Le pronom possessif s’accorde avec l’objet possédé, pas avec son propriétaire.',
-      ['Repère le nom remplacé.', 'Trouve son genre et son nombre.', 'Choisis l’article et la forme du pronom possessif correspondants.']
+      'Exemple : « mon livre » devient « le mien » et « mes clés » devient « les miennes ». Le pronom possessif s’accorde avec le nom remplacé. « Votre livre » s’écrit sans accent ; « le vôtre », qui remplace ce nom, en prend un.',
+      ['Repère le nom remplacé et trouve son genre et son nombre.', 'Choisis l’article et la forme du pronom possessif correspondants.', 'Distingue « votre livre », sans accent, de « le vôtre », avec accent : le premier accompagne le nom, le second le remplace.']
     ),
     pronom_reflechi_indefini_soi: learnerGuide(
       'Employer « soi » avec un sujet indéfini',
@@ -1339,6 +1344,7 @@
     futur_vers_conditionnel: ['futur transformé en conditionnel', 'Après un verbe introducteur au passé, transforme le futur du discours direct en conditionnel.'],
     imperatif_vers_de_infinitif: ['impératif transformé en de + infinitif', 'Pour rapporter un ordre, emploie demander/ordonner de suivi de l’infinitif.'],
     mise_en_evidence_c_est_qui_que: ['phrase emphatique : mise en évidence avec c’est… que', 'Dans une phrase emphatique, choisis qui pour mettre le sujet en évidence et que pour mettre en évidence un autre élément.'],
+    toponyme_et_derive: ['nom de pays ou forme dérivée', 'Un nom propre de pays prend une majuscule ; l’adjectif qui en dérive garde la minuscule.'],
     nom_peuple_adjectif_langue: ['nom de peuple, adjectif ou langue', 'Mets une majuscule au nom d’un peuple ; garde la minuscule pour l’adjectif et pour le nom de la langue.'],
     leur_leurs: ['leur déterminant ou leur pronom', 'Devant un nom, leur est un déterminant et peut devenir leurs ; devant un verbe ou sans nom, le pronom leur reste invariable.'],
     quel_que_quelque: ['quel que / quelque', 'Écris quel que en deux mots devant être et accorde quel ; ailleurs, vérifie si quelque est déterminant ou adverbe.'],
@@ -1441,6 +1447,7 @@
     futur_vers_conditionnel: ['introducteur au passé', 'futur du discours direct', 'transposition des temps', 'conditionnel au discours indirect'],
     imperatif_vers_de_infinitif: ['ordre au discours direct', 'verbe introducteur de demande', 'suppression de l’impératif', 'de + infinitif'],
     mise_en_evidence_c_est_qui_que: ['phrase neutre', 'élément mis en évidence', 'fonction sujet ou autre', 'c’est… qui ou c’est… que'],
+    toponyme_et_derive: ['toponyme', 'nom propre de pays', 'casse uniquement', 'majuscule'],
     nom_peuple_adjectif_langue: ['gentilé', 'nature non précisée', 'fonction à établir', 'majuscule ou minuscule'],
     leur_leurs: ['opposition leur / leurs', 'nature non précisée', 'test du nom suivant', 'variation ou invariabilité'],
     quel_que_quelque: ['opposition quel que / quelque', 'construction non précisée', 'nature à établir', 'graphie et accord'],
@@ -1685,6 +1692,8 @@
       peuple: ['gentilé', 'nom de personne ou de peuple', 'emploi nominal', 'majuscule'],
       adjectif: ['gentilé', 'adjectif relationnel', 'emploi adjectival', 'minuscule'],
       langue: ['gentilé', 'nom de langue', 'désignation linguistique', 'minuscule'],
+      peuple_majuscule: ['gentilé', 'nom de personne ou de peuple', 'casse uniquement', 'majuscule'],
+      adjectif_minuscule: ['gentilé', 'adjectif de nationalité', 'casse uniquement', 'minuscule'],
     },
     leur_leurs: {
       determinant: ['opposition leur / leurs', 'déterminant devant un nom', 'nombre du nom', 'leur ou leurs'],

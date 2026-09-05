@@ -14,8 +14,9 @@ son `misconception_id` et son compteur ; une cause absente reste `UNK`.
 « Comment faire » en trois étapes. Famille, mécanisme, détail, temps, chemin canonique et
 codes de cause restent disponibles uniquement dans « Catégorie technique ».
 
-Version locale `1.33` du 05.09.2026, non publiée : cache `qcm-op001-v133`. Dernière publication :
-`1.32` du 24.08.2026. **1 754 questions uniques**, release
+Version `1.33` du 05.09.2026 : cache `qcm-op001-v133`. Validation : 255 tests Python et les
+trois suites JavaScript réussis. Base pédagogique synchronisée (214 mécanismes), avec une règle
+générale des possessifs conservée et la distinction votre/vôtre explicitée. **1 754 questions uniques**, release
 `questions-20260814-4b135c45`. Le lot `hep-b1-20260814-0001` ajoute dix questions produites et
 contrôlées par la boucle Sol High complète, sans remplacement d’une question existante. La famille
 canonique **Négation** possède désormais sa propre carte d’entraînement, portant le menu à 16 cartes.

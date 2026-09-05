@@ -120,6 +120,23 @@ Object.entries({
 });
 
 const learnerTitles = new Set();
+const countryGuide = pedagogy.describe('gentiles_majuscules', 'toponyme_et_derive');
+assert.strictEqual(countryGuide.fallback, false);
+assert.strictEqual(countryGuide.learnerSource, 'mechanism');
+assert.match(countryGuide.learnerExplanation, /la Suisse/);
+assert.match(countryGuide.learnerExplanation, /village suisse/);
+assert.strictEqual(countryGuide.learnerSteps.length, 3);
+assert.deepStrictEqual(
+  pedagogy.DETAIL_PATHS.nom_peuple_adjectif_langue.peuple_majuscule,
+  ['gentilé', 'nom de personne ou de peuple', 'casse uniquement', 'majuscule']
+);
+assert.deepStrictEqual(
+  pedagogy.DETAIL_PATHS.nom_peuple_adjectif_langue.adjectif_minuscule,
+  ['gentilé', 'adjectif de nationalité', 'casse uniquement', 'minuscule']
+);
+const possessiveGuide = pedagogy.describe('pronoms_reprise', 'pronom_possessif_accord');
+assert.match(possessiveGuide.learnerExplanation, /les miennes/);
+assert.match(possessiveGuide.learnerExplanation, /le vôtre/);
 const learnerExplanations = new Set();
 
 Object.entries(pedagogy.LEARNER_GUIDANCE).forEach(([mechanismId, guide]) => {
