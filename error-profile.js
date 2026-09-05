@@ -66,8 +66,8 @@
       mechanismId: isKnown(hep.mechanism_id)
         ? hep.mechanism_id
         : attempt.mechanismId,
-      detailId: isKnown(hep.detail_id) ? hep.detail_id : attempt.detailId,
-      tenseId: isKnown(hep.tense_id) ? hep.tense_id : attempt.tenseId,
+      detailId: Object.hasOwn(hep, 'detail_id') ? hep.detail_id : attempt.detailId,
+      tenseId: Object.hasOwn(hep, 'tense_id') ? hep.tense_id : attempt.tenseId,
       misconceptionId: isKnown(attempt.misconceptionId)
         ? attempt.misconceptionId
         : bankMisconception,
@@ -82,8 +82,16 @@
   function build(history, questions) {
     const rows = new Map();
     const byId = questionIndex(questions);
+    const sessionIds = new Set();
     const sessions = (Array.isArray(history) ? history : [])
       .filter((entry) => entry && Array.isArray(entry.log))
+      .filter((entry) => {
+        const id = entry.sessionId || entry.session_id;
+        if (!id) return true; // Pas de rapprochement inventé des anciennes séances.
+        if (sessionIds.has(id)) return false;
+        sessionIds.add(id);
+        return true;
+      })
       .slice()
       .sort((a, b) => Date.parse(a.date || 0) - Date.parse(b.date || 0));
 
@@ -93,7 +101,7 @@
 
       entry.log.forEach((rawAttempt) => {
         const attempt = enrichFromCurrentBank(rawAttempt, byId);
-        if (!attempt) return;
+        if (!attempt || typeof attempt.correct !== 'boolean') return;
         const key = rowKey(attempt);
         let row = rows.get(key);
         if (!row) {
@@ -113,11 +121,14 @@
             questionIds: new Set(),
             errorQuestionIds: new Set(),
             distractors: new Map(),
+            recentResults: [],
           };
           rows.set(key, row);
         }
 
         const isCorrect = attempt.correct === true;
+        row.recentResults.push(isCorrect);
+        if (row.recentResults.length > 20) row.recentResults.shift();
         row.attempts += 1;
         if (isCorrect) {
           row.correct += 1;
@@ -160,6 +171,8 @@
       tenseId: row.tenseId,
       attempts: row.attempts,
       correct: row.correct,
+      recentAttempts: row.recentResults.length,
+      recentErrors: row.recentResults.filter((correct) => !correct).length,
       errors: row.errors,
       errorRate: row.attempts ? row.errors / row.attempts : 0,
       sessions: row.sessions,

@@ -14,13 +14,21 @@ son `misconception_id` et son compteur ; une cause absente reste `UNK`.
 « Comment faire » en trois étapes. Famille, mécanisme, détail, temps, chemin canonique et
 codes de cause restent disponibles uniquement dans « Catégorie technique ».
 
-Version `1.32` du 24.08.2026 : cache `qcm-op001-v132`, **1 754 questions uniques**, release
+Version locale `1.33` du 05.09.2026, non publiée : cache `qcm-op001-v133`. Dernière publication :
+`1.32` du 24.08.2026. **1 754 questions uniques**, release
 `questions-20260814-4b135c45`. Le lot `hep-b1-20260814-0001` ajoute dix questions produites et
 contrôlées par la boucle Sol High complète, sans remplacement d’une question existante. La famille
 canonique **Négation** possède désormais sa propre carte d’entraînement, portant le menu à 16 cartes.
 Le nouveau **Test adaptatif — 20 questions** utilise uniquement les résultats conservés sur l’appareil :
-il privilégie les thèmes les moins réussis, donne la priorité aux questions encore inédites dans ces
-thèmes et garde une petite part de découverte. Le test complet réellement aléatoire reste disponible.
+il cible le chemin famille/mécanisme/détail/temps avec les 20 dernières tentatives de chaque chemin.
+80 % des places favorisent les difficultés observées ; 20 % sont tirées parmi l'ensemble des cas.
+Le poids `(erreurs + 1) / (tentatives + 4)` tempère les petits échantillons. Les cas sont tirés
+proportionnellement au poids, avec réduction des répétitions dans la séance et priorité aux questions
+inédites au sein de chaque cas. Les places des petits groupes sont redistribuées. Les anciennes clés
+incompatibles, les questions retirées et les demandes locales « À supprimer » ne renforcent pas le ciblage.
+Sans journal détaillé, les compteurs familiaux servent de repli. Le test aléatoire reste disponible.
+Le tableau cumulatif conserve toutes les tentatives historiques ; la fenêtre récente sert seulement
+au ciblage adaptatif. Une séance avec le même identifiant est comptée une seule fois.
 Les trois
 questions normativement ambiguës restent retirées et le corrigé de `drill40h-08-2` conserve sa
 version pédagogique corrigée. Le tableau
@@ -37,7 +45,7 @@ dans les types affichés ; aucun texte, aucune option et aucune clé n’ont cha
 Les 114 questions alors présentes dans la famille applicative `participe` ont été relues individuellement.
 Dix métadonnées ont été précisées pour que chaque construction réellement testée apparaisse dans
 la correction et dans les statistiques. Après le retrait des trois cas ambigus en version 1.30,
-la banque active contient 111 questions dans cette famille.
+la banque active contient 112 questions dans cette famille depuis l'ajout du lot du 14.08.
 
 Toutes les questions portent une famille et un mécanisme grammatical fermés. Les détails, temps et
 causes de distracteur non prouvés restent `null` ou `UNK`.
@@ -110,6 +118,7 @@ intégration manuelle de `questions.js` rendrait l'identifiant de banque obsolè
   mais encore sans question ne sont jamais affichés ni appliqués par défaut.
 - `error-profile.js` — agrégation cumulative locale, sans dupliquer les séances
   dans la mémoire de génération
+- `adaptive-quiz.js` — tirage par cas grammatical et résultats récents, sans modèle ni serveur
 - `questions.js` — la banque locale active de 1 754 questions
 - `config.js` — configuration (ID client Google Drive)
 - `manifest.json`, `sw.js`, `icon.svg` — installation PWA / hors-ligne
@@ -120,5 +129,6 @@ intégration manuelle de `questions.js` rendrait l'identifiant de banque obsolè
 ```powershell
 node test_pedagogy.js
 node test_error_profile.js
+node test_adaptive_quiz.js
 python -m pytest ..\analyse_gpt\test_feedback_import_HEP.py -q
 ```

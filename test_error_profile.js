@@ -137,4 +137,24 @@ classifiedHistory[0].log[0].mechanismId = 'avoir_cvd_apres';
 const reconciledSnapshot = profile.build(classifiedHistory, bank);
 assert.strictEqual(reconciledSnapshot.rows[0].mechanismId, 'avoir_cvd_avant');
 
+assert.deepStrictEqual(profile.build([...history, history[0]]), result,
+  'Une séance possédant le même identifiant ne doit pas doubler les statistiques.');
+const cleared = JSON.parse(JSON.stringify(bank));
+cleared[0].hep.detail_id = null;
+cleared[0].hep.tense_id = null;
+const old = JSON.parse(JSON.stringify(legacyHistory));
+old[0].log[0].detailId = 'obsolete';
+old[0].log[0].tenseId = 'obsolete';
+const clearResult = profile.build(old, cleared).rows[0];
+assert.strictEqual(clearResult.detailId, 'UNK');
+assert.strictEqual(clearResult.tenseId, 'UNK');
+assert.strictEqual(old[0].log[0].detailId, 'obsolete', 'L’instantané historique reste intact.');
+const progress = profile.build([{ log: Array.from({ length: 30 }, (_, i) => ({
+  family: 'f', mechanismId: 'm', correct: i >= 10,
+})) }]).rows[0];
+assert.strictEqual(progress.errors, 10);
+assert.strictEqual(progress.recentAttempts, 20);
+assert.strictEqual(progress.recentErrors, 0);
+assert.strictEqual(profile.build([{ log: [{ id: 'incomplete' }] }]).attempts, 0);
+
 console.log('OK — profil cumulatif des erreurs.');

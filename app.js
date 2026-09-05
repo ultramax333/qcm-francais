@@ -228,7 +228,7 @@
     if (ruleId === MIX_ID) return 'Toutes les règles (mélangées)';
     if (ruleId === ADAPTIVE_ID) return 'Test adaptatif — selon mes résultats';
     if (ruleId === 'review') return 'Révision des erreurs';
-    if (ruleId === 'exam') return 'Examen blanc';
+    if (ruleId === 'exam') return 'Entraînement long — 60 questions';
     const r = RULES.find((r) => r.id === ruleId);
     return r ? r.label : ruleId;
   }
@@ -314,6 +314,8 @@
       questions: QUESTIONS,
       rules: RULES,
       mastery: loadMastery(),
+      history: loadHistory(),
+      errorProfile: ERROR_PROFILE,
       seenIds: loadSeen(),
       limit: SESSION_SIZE,
     }).questions;
@@ -594,8 +596,8 @@
 
     // Carte « Examen blanc »
     const exam = el('button', { class: 'special-card exam-card' }, [
-      el('div', { class: 'rule-name', text: '📝 Examen blanc' }),
-      el('div', { class: 'rule-desc', text: `${EXAM_SIZE} questions en conditions réelles, correction et score à la fin.` }),
+      el('div', { class: 'rule-name', text: '📝 Entraînement long' }),
+      el('div', { class: 'rule-desc', text: `${EXAM_SIZE} questions mélangées, correction et score à la fin. Sans article de vocabulaire annexé.` }),
     ]);
     exam.addEventListener('click', () => startExam());
     wrap.appendChild(exam);
@@ -604,7 +606,7 @@
       el('div', { class: 'rule-name', text: '🎯 Test adaptatif — 20 questions' }),
       el('div', {
         class: 'rule-desc',
-        text: 'Priorité aux thèmes que tu réussis le moins, avec quelques questions de découverte.',
+        text: 'Tes difficultés précises et tes progrès récents, avec 20 % de révision variée.',
       }),
     ]);
     adaptive.addEventListener('click', () => startAdaptiveQuiz());
@@ -783,7 +785,7 @@
     const card = el('div', { class: 'question-card' });
     card.appendChild(el('div', {
       class: 'question-instruction',
-      text: q.type === 'sentences' ? (q.instruction || 'Quelle est la seule proposition correcte ?') : 'Complétez la phrase suivante',
+      text: 'Examinez les propositions puis choisissez votre réponse.',
     }));
 
     if (q.type === 'blank') {
@@ -1118,7 +1120,7 @@
     ]));
 
     // Détail par règle (test mélangé et examen blanc)
-    if (entry.ruleId === MIX_ID || entry.mode === 'exam') {
+    if (entry.ruleId === MIX_ID || entry.ruleId === ADAPTIVE_ID || entry.mode === 'exam') {
       const list = el('div', { class: 'history-list' });
       Object.keys(entry.perRule).forEach((rid) => {
         const s = entry.perRule[rid];
