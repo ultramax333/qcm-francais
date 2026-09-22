@@ -13,6 +13,17 @@
 
   let state = { view: 'home' };
 
+  function questionContext(question) {
+    const stem = String(question.stem || '').trim();
+    if (stem) return stem;
+    // Legacy vocabulary stores the source sentence and target word here.
+    // Ordinary grammatical titles remain hidden behind the neutral instruction.
+    if (question.rule === 'vocabulaire' || question.type === 'vocabulary') {
+      return String(question.instruction || '').trim();
+    }
+    return '';
+  }
+
   // ---------- persistence ----------
   function loadHistory() {
     try {
@@ -788,9 +799,10 @@
       text: 'Examinez les propositions puis choisissez votre réponse.',
     }));
 
-    if (q.type === 'blank') {
+    const context = questionContext(q);
+    if (context) {
       const stemEl = el('div', { class: 'question-stem' });
-      const parts = q.stem.split('___');
+      const parts = context.split('___');
       const nbBlanks = parts.length - 1;
       // Après réponse, remplit les trous avec le texte choisi. Pour une phrase
       // à plusieurs trous, l'option est du type « x / y » : on répartit chaque

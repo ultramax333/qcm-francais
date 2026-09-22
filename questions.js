@@ -715,14 +715,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "« Ça » (= cela, pronom) en tête de phrase ; « sa décision » (déterminant possessif).",
+    "explanation": "Règle : Ça est un pronom démonstratif qui signifie cela. Sa est un déterminant possessif placé devant un nom féminin singulier.\nMéthode : Essaie de remplacer le mot par cela. Si ce remplacement convient, écris ça. Devant un nom, vérifie si ma ou ta peut remplacer le possessif sa.\nDans cette phrase : « Cela m’étonnerait » convient : il faut Ça au premier blanc. « Ta décision » convient au second : il faut sa devant décision.\nDonc : « Ça m’étonnerait que sa décision soit déjà prise. » L’option 2 est correcte.",
     "why": {
-      "1": "« Sa m'étonnerait » impossible : il faut le pronom « Ça » (= cela).",
-      "2": "Correct : « Ça » (cela) + « sa » (possessif devant le nom).",
-      "3": "« ça décision » fautif : devant un nom, c'est le possessif « sa ».",
-      "4": "Double faute.",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      "T": "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "`Sa m’étonnerait` exige le pronom `Ça`, remplaçable par cela ; `ça décision` exige le possessif `sa` devant le nom décision. Les deux blancs sont fautifs.",
+      "2": "Ça signifie cela ; sa détermine le nom féminin singulier décision. Les deux formes conviennent.",
+      "3": "Le premier Ça convient, mais `ça décision` est incorrect : il faut le possessif `sa` devant décision.",
+      "4": "Seul `Sa m’étonnerait` est fautif : le sujet signifie cela et s’écrit `Ça`. Le second sa, devant décision, est correct.",
+      "A": "L’option 2 remplit correctement les deux blancs : Aucune est donc faux.",
+      "T": "Les options 1, 3 et 4 comportent au moins une erreur : Toutes est donc faux."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -740,6 +740,15 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "audit-20260922-corrections-certaines",
+        "feedback_provenance": {
+          "model": "UNAVAILABLE",
+          "reasoning": "UNAVAILABLE",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-09-22T07:41:40Z"
+        }
       }
     }
   },
@@ -10265,7 +10274,7 @@ const QUESTIONS = [
     "id": "rel-12",
     "rule": "relatifs",
     "type": "sentences",
-    "instruction": "Quelle est la seule phrase correcte ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -24545,7 +24554,7 @@ const QUESTIONS = [
     "id": "av-8",
     "rule": "adjverbal",
     "type": "blank",
-    "stem": "___ ce formulaire, puis ___ -le au secrétariat avant midi.",
+    "stem": "___ ce formulaire, puis ___-le au secrétariat avant midi.",
     "options": [
       {
         "key": "1",
@@ -24573,14 +24582,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Impératif 2e pers. : « remplir » (3e groupe) GARDE le s (« Remplis ») ; « envoyer » (en -er) le PERD (« envoie-le »).",
+    "explanation": "Règle : À l’impératif, relève le groupe du verbe et la présence éventuelle de y ou en avant de décider du s final.\nMéthode : 1. Retrouve l’infinitif du verbe. 2. Relève le mode, le temps et la personne demandés par la phrase. 3. Choisis le radical correspondant, régulier ou irrégulier. 4. Ajoute la terminaison correcte et vérifie la forme entière.\nDans cette phrase : les deux verbes donnent des consignes à une personne tutoyée : il faut l’impératif présent, à la deuxième personne du singulier. « Remplir » appartient au deuxième groupe, comme le montre « remplissant » ; son impératif est « remplis », avec s. « Envoyer » appartient au premier groupe ; son impératif est « envoie », sans s devant le pronom « le ». Ce pronom se rattache au verbe par un trait d’union : « envoie-le ».\nDonc : on écrit « Remplis ce formulaire, puis envoie-le au secrétariat avant midi. » La combinaison correcte est l’option 3.",
     "why": {
-      "1": "« Rempli » : remplir garde son s à l'impératif.",
-      "2": "« envoies » : les verbes en -er perdent le s.",
-      "3": "Correct : Remplis (avec s) + envoie (sans s).",
-      "4": "Double faute.",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Les options 1, 2 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "`Rempli` est le participe passé, non l’impératif demandé. À la deuxième personne du singulier, le verbe du deuxième groupe « remplir » donne « remplis ». « Envoie » convient au second blanc.",
+      "2": "« Remplis » convient, mais `envoies` conserve à tort le s du présent de l’indicatif. À l’impératif devant « le », on écrit « envoie-le ».",
+      "3": "« Remplis » porte le s de l’impératif du deuxième groupe ; « envoie » est l’impératif du premier groupe, sans s devant « le ». Les deux consignes sont correctement conjuguées.",
+      "4": "Les deux formes sont fautives : `Rempli` doit devenir « remplis » à l’impératif, tandis que `envoies` doit perdre son s devant « le » : « envoie-le ».",
+      "A": "Une combinaison, l’option 3, convient aux deux blancs : « Aucune » ne convient pas.",
+      "T": "Les options 1, 2 et 4 comportent au moins une forme fautive ; une seule combinaison sur quatre est correcte."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -24598,6 +24607,15 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "audit-20260922-corrections-certaines",
+        "feedback_provenance": {
+          "model": "UNAVAILABLE",
+          "reasoning": "UNAVAILABLE",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-09-22T07:42:31Z"
+        }
       }
     }
   },
@@ -25149,14 +25167,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Passé simple de « ouvrir » (3e groupe) : « il ouvrit » — pas de forme en -a pour ce groupe.",
+    "explanation": "Règle : Le radical et la série de terminaisons du passé simple dépendent du verbe et de son groupe.\nMéthode : 1. Retrouve l’infinitif du verbe. 2. Relève le mode, le temps et la personne demandés par la phrase. 3. Choisis le radical correspondant, régulier ou irrégulier. 4. Ajoute la terminaison correcte et vérifie la forme entière.\nDans cette phrase : les verbes « jeta » et « sortit » présentent des actions successives au passé simple. Le premier verbe est « ouvrir », du troisième groupe, et son sujet est « il », troisième personne du singulier. « Ouvrir » suit ici la série en -i- : j’ouvris, tu ouvris, il ouvrit. On retient donc le radical ouvr- et la terminaison -it. Il faut vérifier la conjugaison du verbe précis : tous les verbes du troisième groupe ne suivent pas la même série.\nDonc : « Il ouvrit la porte, jeta un dernier regard et sortit sans un mot. » L’option 2 est correcte.",
     "why": {
-      "1": "« ouvra » : passé simple calqué sur le 1er groupe, inexistant.",
-      "2": "Correct : il ouvrit.",
-      "3": "« ouvris » : 1re/2e personne.",
-      "4": "« ouvrât » : subjonctif imparfait, hors contexte.",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      "T": "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "`Ouvra` applique à « ouvrir » une terminaison en -a qui n’appartient pas à sa conjugaison. À la troisième personne du singulier du passé simple, il faut « ouvrit ».",
+      "2": "« Ouvrit » est la troisième personne du singulier du passé simple d’« ouvrir » ; cette forme s’accorde avec « il » et s’insère dans la suite « jeta » et « sortit ».",
+      "3": "`Ouvris` correspond à « je » ou « tu » au passé simple. Le sujet « il » demande la terminaison -it : « ouvrit ».",
+      "4": "`Ouvrât` n’est pas une forme correcte du verbe « ouvrir ». Son imparfait du subjonctif est « ouvrît » ; le récit demande ici l’indicatif passé simple « ouvrit », sans accent.",
+      "A": "L’option 2 fournit la forme correcte « ouvrit » : « Aucune » ne convient pas.",
+      "T": "Les options 1 et 4 donnent des formes inexistantes d’« ouvrir », et l’option 3 ne correspond pas au sujet « il » : une seule option est correcte."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -25174,6 +25192,15 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "audit-20260922-corrections-certaines",
+        "feedback_provenance": {
+          "model": "UNAVAILABLE",
+          "reasoning": "UNAVAILABLE",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-09-22T07:42:31Z"
+        }
       }
     }
   },
@@ -27132,7 +27159,8 @@ const QUESTIONS = [
     "id": "ponc-10",
     "rule": "ponctuation",
     "type": "sentences",
-    "instruction": "On veut dire que SEULS les dossiers incomplets seront écartés. Quelle ponctuation est correcte ?",
+    "stem": "On veut dire que seuls les dossiers incomplets seront écartés.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -27746,7 +27774,8 @@ const QUESTIONS = [
     "id": "ponc-20",
     "rule": "ponctuation",
     "type": "sentences",
-    "instruction": "On veut dire que TOUS les stagiaires — lesquels ont, de fait, terminé leur essai — seront évalués. Quelle ponctuation est correcte ?",
+    "stem": "On veut dire que tous les stagiaires — lesquels ont, de fait, terminé leur essai — seront évalués.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -38708,12 +38737,13 @@ const QUESTIONS = [
     "id": "ponc-30",
     "rule": "ponctuation",
     "type": "sentences",
+    "stem": "Le sens voulu est : tous les élèves sont sortis.",
     "gen": {
       "model": "Fable 5",
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quelle ponctuation donne le sens « TOUS les élèves sont sortis » ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -39821,12 +39851,13 @@ const QUESTIONS = [
     "id": "ponc-31",
     "rule": "ponctuation",
     "type": "sentences",
+    "stem": "On veut préciser que seule la version contenant les corrections sera publiée.",
     "gen": {
       "model": "Sol 5.6",
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "On veut préciser que seule la version contenant les corrections sera publiée. Quelle phrase traduit ce sens ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -40093,7 +40124,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule phrase correctement rédigée.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -40357,12 +40388,13 @@ const QUESTIONS = [
     "id": "solmaj-05-1",
     "rule": "ponctuation",
     "type": "sentences",
+    "stem": "La note doit indiquer qu'une seule personne est concernée et préciser sa fonction.",
     "gen": {
       "model": "Sol 5.6",
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "La note doit indiquer qu'une seule personne est concernée et préciser sa fonction. Choisissez la formulation qui convient.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -43899,7 +43931,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -43968,7 +44000,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -44037,7 +44069,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -44106,7 +44138,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -44175,7 +44207,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -44244,7 +44276,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -44431,7 +44463,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -44520,7 +44552,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -44595,7 +44627,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -44684,7 +44716,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -44753,7 +44785,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -44822,7 +44854,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -44891,7 +44923,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -45116,7 +45148,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -45185,7 +45217,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -45254,7 +45286,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -45323,7 +45355,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -45392,7 +45424,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -45461,7 +45493,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -45530,7 +45562,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -45599,7 +45631,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -45668,7 +45700,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -45737,7 +45769,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -45806,7 +45838,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -45875,7 +45907,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -45944,7 +45976,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -46013,7 +46045,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -46082,7 +46114,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -46151,7 +46183,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -46220,7 +46252,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -46289,7 +46321,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -46358,7 +46390,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -46427,7 +46459,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -46496,7 +46528,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -46565,7 +46597,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -46634,7 +46666,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -46703,7 +46735,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la seule formulation correcte dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -49262,14 +49294,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "« D'en » = de + en (impossible DE EN sortir) ; « dans » est la préposition de temps ou de lieu (dans dix minutes).",
+    "explanation": "Règle : D’en réunit la préposition de et le pronom en : le e de de s’élide devant en. Dans est une préposition qui peut introduire un délai.\nMéthode : Repère la construction du premier groupe : impossible de sortir. Vérifie ensuite si en remplace le lieu ou la situation dont on sort. Pour un délai avant un événement, emploie dans.\nDans cette phrase : On écrit « impossible d’en sortir » : de devient d’ devant en. La séance reprend après un délai de dix minutes : on écrit « dans dix minutes ».\nDonc : d’en / dans, option 2.",
     "why": {
-      "1": "Inverse les deux : après « impossible de », le pronom « en » s'élide en « d'en ».",
-      "2": "Correct : impossible d'en sortir (de + en) ; reprise dans dix minutes (préposition).",
-      "3": "« reprend d'en dix minutes » : le repère temporel exige la préposition « dans ».",
-      "4": "« impossible dans sortir » : il faut « de » + « en » élidés → d'en.",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      "T": "Trois options confondent la préposition et la contraction dans au moins une place."
+      "1": "`Impossible dans sortir` exige la construction `impossible d’en sortir` : de s’élide devant en. `D’en dix minutes` doit devenir `dans dix minutes`, car dans introduit le délai.",
+      "2": "D’en associe de, élidé en d’, au pronom en. Dans introduit le délai de dix minutes.",
+      "3": "Le premier d’en convient, mais `d’en dix minutes` ne peut pas introduire ce délai : il faut `dans dix minutes`.",
+      "4": "`Impossible dans sortir` ne convient pas : la construction est impossible de sortir, puis `impossible d’en sortir` avec le pronom en. Le second dans est correct.",
+      "A": "L’option 2 convient aux deux constructions : Aucune est faux.",
+      "T": "Les options 1, 3 et 4 confondent d’en et dans à au moins un emplacement : Toutes est faux."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -49282,6 +49314,15 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "audit-20260922-corrections-certaines",
+        "feedback_provenance": {
+          "model": "UNAVAILABLE",
+          "reasoning": "UNAVAILABLE",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-09-22T07:41:40Z"
+        }
       }
     }
   },
@@ -56966,14 +57007,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Aucun de ces mots ne prend d'accent circonflexe : cime, égout, pédiatre et zone s'écrivent sans accent, malgré l'envie d'en mettre un. Réponse : Toutes.",
+    "explanation": "Règle : L’accentuation appartient à la graphie de chaque mot. Cime et zone n’ont aucun accent ; égout et pédiatre ont un accent aigu sur leur premier e. Aucun de ces quatre mots ne prend d’accent circonflexe.\nMéthode : Vérifie séparément chaque mot : la présence d’un accent aigu ne signifie pas qu’il faut aussi un circonflexe. Mémorise les graphies cime, égout, pédiatre et zone.\nDans cette phrase : Les quatre propositions emploient correctement ces mots. Égout conserve é et un u sans circonflexe ; pédiatre conserve é et un a sans circonflexe. Cime et zone restent sans accent.\nDonc : les quatre phrases sont correctement écrites ; la réponse est T, Toutes.",
     "why": {
-      "1": "Correcte : « cime » s'écrit sans accent (contrairement à « abîme »).",
-      "2": "Correcte : « égout » (de égoutter) ne prend pas d'accent sur le u.",
-      "3": "Correcte : « pédiatre » s'écrit sans accent (comme psychiatre).",
-      "4": "Correcte : « zone » ne prend pas d'accent (contrairement à « cône » qui en prend un).",
-      "A": "Les quatre phrases sont correctes.",
-      "T": "Correct : chacun de ces mots, souvent coiffé d'un circonflexe fautif, s'écrit sans accent."
+      "1": "Cime s’écrit sans accent circonflexe sur le i. La phrase est correcte.",
+      "2": "Égout porte un accent aigu sur le e, mais aucun circonflexe sur le u. La phrase est correcte.",
+      "3": "Pédiatre porte un accent aigu sur le e, mais aucun circonflexe sur le a. La phrase est correcte.",
+      "4": "Zone s’écrit sans accent sur le o. La phrase est correcte.",
+      "A": "Les quatre phrases sont correctes : Aucune est faux.",
+      "T": "Toutes est correct : cime et zone sont sans accent ; égout et pédiatre conservent leur accent aigu et ne prennent pas de circonflexe."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -56986,6 +57027,15 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
+      },
+      "remediation": {
+        "batch_id": "audit-20260922-corrections-certaines",
+        "feedback_provenance": {
+          "model": "UNAVAILABLE",
+          "reasoning": "UNAVAILABLE",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-09-22T07:41:40Z"
+        }
       }
     }
   },
@@ -70251,12 +70301,13 @@ const QUESTIONS = [
     "id": "ponc-L52-10",
     "rule": "ponctuation",
     "type": "sentences",
+    "stem": "Le sens voulu est : tous les élèves de la salle étaient sortis après avoir terminé.",
     "gen": {
       "model": "Fable 5",
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quelle phrase signifie que TOUS les élèves de la salle étaient sortis après avoir terminé ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
