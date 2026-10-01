@@ -7,6 +7,7 @@ const ASSETS = [
   './pedagogy.js',
   './error-profile.js',
   './adaptive-quiz.js',
+  './peer-feedback.js',
   './questions.js',
   './config.js',
   './manifest.json',

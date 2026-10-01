@@ -17,6 +17,12 @@ window.CONFIG = {
   BANK_RELEASE: 'questions-20260922-d788c6e3',
   GOOGLE_CLIENT_ID: '200483680701-h963rk5t3l7v5j64ojgg2k410av8l9ft.apps.googleusercontent.com',
   DRIVE_FOLDER_NAME: 'QCM Français OP001',
+  FEEDBACK_FORM: {
+    url: 'https://docs.google.com/forms/d/e/1FAIpQLSfBK5VkmZTA-2KzAeBr-w4KEnUq2T8W8_YqlGYVAunMIHNvww/viewform',
+    question: 'entry.1704761187',
+    comment: 'entry.1464607448',
+    release: 'entry.1348145644',
+  },
 };
 
 if (typeof module !== 'undefined') {

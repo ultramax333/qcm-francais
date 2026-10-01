@@ -10,6 +10,7 @@
   const PEDAGOGY = window.HEP_PEDAGOGY;
   const ERROR_PROFILE = window.HEP_ERROR_PROFILE;
   const ADAPTIVE_QUIZ = window.HEP_ADAPTIVE_QUIZ;
+  const PEER_FEEDBACK = window.HEP_PEER_FEEDBACK;
 
   let state = { view: 'home' };
 
@@ -377,7 +378,8 @@
       return new Error(`${context} (${res.status})${reason ? ' : ' + reason : ''}${hint}`);
     },
     async findOrCreateFolder(name) {
-      const q = encodeURIComponent(`name='${name}' and mimeType='application/vnd.google-apps.folder' and trashed=false`);
+      const safeName = String(name).replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+      const q = encodeURIComponent(`name='${safeName}' and mimeType='application/vnd.google-apps.folder' and trashed=false and 'me' in owners`);
       const res = await fetch(`https://www.googleapis.com/drive/v3/files?q=${q}&fields=files(id,name)`, {
         headers: { Authorization: 'Bearer ' + this.token },
       });
@@ -420,6 +422,24 @@
     const d = new Date(entry.date);
     const p = (n) => String(n).padStart(2, '0');
     return `qcm-feedback-${d.getFullYear()}${p(d.getMonth() + 1)}${p(d.getDate())}-${p(d.getHours())}${p(d.getMinutes())}.md`;
+  }
+
+  function peerFeedbackButton(entries, status) {
+    if (!PEER_FEEDBACK || !CONFIG.FEEDBACK_FORM) return null;
+    const button = el('button', { class: 'btn', text: 'Transmettre mes remarques' });
+    button.addEventListener('click', () => {
+      const payload = PEER_FEEDBACK.build(entries, BANK_RELEASE, 'hep-pf1-' + utcCompact(new Date()) + '-' + randomHex8());
+      if (!payload) {
+        status.textContent = 'Ajoute une remarque, un pouce ou une demande de suppression sur une question avant cet envoi.';
+        return;
+      }
+      const url = PEER_FEEDBACK.formLink(CONFIG.FEEDBACK_FORM, payload);
+      if (!url) { status.textContent = 'Formulaire de retours indisponible.'; return; }
+      const link = el('a', { href: url, target: '_blank', rel: 'noopener noreferrer' });
+      document.body.appendChild(link); link.click(); link.remove();
+      status.textContent = 'Le formulaire s’ouvre avec tes remarques. Clique sur « Envoyer » pour les transmettre. Tes résultats ne sont pas inclus.';
+    });
+    return button;
   }
 
   function downloadFeedback(entry) {
@@ -565,6 +585,7 @@
       el('div', { class: 'title', text: 'QCM Français — OP001' }),
       el('div', { class: 'subtitle', text: 'Entraînement par règle, phrases inédites' }),
     ]));
+    wrap.appendChild(el('div', { class: 'feedback-note', text: 'Tes résultats restent dans ce navigateur. Chacun possède son propre historique. Tu peux transmettre uniquement tes remarques sur les questions à Maxim.' }));
 
     // Séances brutes non encore synchronisées. Le pipeline importe ensuite
     // chaque session de façon idempotente pour éviter tout double comptage.
@@ -572,7 +593,7 @@
     if (nPending > 0) {
       const pd = el('button', { class: 'special-card pending-card' }, [
         el('div', { class: 'rule-name', text: `📤 Séances à synchroniser (${nPending})` }),
-        el('div', { class: 'rule-desc', text: 'Envoie-les pour que tes erreurs puissent peser sur les futurs quiz.' }),
+        el('div', { class: 'rule-desc', text: 'Sauvegarde tes séances sur ton Drive ou transmets uniquement tes remarques à Maxim.' }),
       ]);
       pd.addEventListener('click', () => { state = { view: 'pending' }; render(); });
       wrap.appendChild(pd);
@@ -895,11 +916,26 @@
 
       if (state.mode !== 'exam' && showDetails) {
         const memoWrap = el('div', { class: 'memo-wrap' });
-        memoWrap.appendChild(el('label', { class: 'memo-label', text: '💬 Mémo pour Claude (facultatif) — « trop facile », « ambigu », « le distracteur 2 marche aussi »…' }));
+        memoWrap.appendChild(el('label', { class: 'memo-label', text: '💬 Remarque sur cette question — « ambiguë », « une autre réponse semble correcte », « explication peu claire »…' }));
         const memoField = el('textarea', { class: 'memo-field', rows: '2', placeholder: 'Ton idée de correction sur cette question…' });
         memoField.value = state.memos[q.id] || '';
         memoField.addEventListener('input', (e) => { state.memos[q.id] = e.target.value; });
         memoWrap.appendChild(memoField);
+        if (PEER_FEEDBACK && CONFIG.FEEDBACK_FORM) {
+          const reportLink = el('a', { class: 'btn btn-secondary', text: 'Signaler un problème',
+            target: '_blank', rel: 'noopener noreferrer' });
+          const updateReportLink = () => {
+            const payload = { bank_release: BANK_RELEASE, reports: [{ question_id: q.id,
+              comment: state.memos[q.id] || '', positive_feedback: !!state.likes[q.id],
+              deletion_requested: !!state.deletionRequests[q.id] }] };
+            reportLink.href = PEER_FEEDBACK.formLink(CONFIG.FEEDBACK_FORM, payload);
+          };
+          updateReportLink();
+          memoField.addEventListener('input', updateReportLink);
+          memoWrap.appendChild(reportLink);
+          memoWrap.appendChild(el('div', { class: 'muted',
+            text: 'Formulaire prérempli : confirme avec « Envoyer ». Aucun score ni historique n’est transmis.' }));
+        }
         if (q.gen) {
           memoWrap.appendChild(el('div', {
             class: 'gen-tag',
@@ -1033,6 +1069,7 @@
       correct,
       total: log.length,
       feedback: entry.feedback,
+      log: entry.log.map((item) => ({ id: item.id, memo: item.memo, like: item.like, deletionRequested: item.deletionRequested })),
     });
     state = { view: 'result', entry };
     render();
@@ -1249,8 +1286,10 @@
     const status = el('div', { class: 'feedback-status' });
 
     const fbRow = el('div', { class: 'btn-row' });
+    const peerButton = peerFeedbackButton([entry], status);
+    if (peerButton) fbRow.appendChild(peerButton);
     if (DRIVE.configured()) {
-      const driveBtn = el('button', { class: 'btn', text: 'Envoyer vers Google Drive' });
+      const driveBtn = el('button', { class: 'btn secondary', text: 'Sauvegarder sur mon Google Drive' });
       driveBtn.addEventListener('click', async () => {
         driveBtn.disabled = true;
         status.textContent = 'Connexion à Google Drive…';
@@ -1258,7 +1297,7 @@
           if (!DRIVE.token) await DRIVE.connect();
           status.textContent = 'Envoi du fichier…';
           const r = await DRIVE.upload(feedbackFilename(entry), entry.feedback);
-          status.textContent = '✅ Envoyé dans le dossier « ' + ((window.CONFIG && CONFIG.DRIVE_FOLDER_NAME) || 'Drive') + ' » : ' + r.name;
+          status.textContent = '✅ Sauvegardé sur ton propre Google Drive : ' + r.name + '. Cet envoi ne transmet rien à Maxim.';
           state.memos = {}; state.likes = {}; state.deletionRequests = {}; // reset après envoi réussi
           removePending(entry.date); // déjà envoyée : plus besoin de la garder en attente
         } catch (e) {
@@ -1545,7 +1584,7 @@
 
     wrap.appendChild(el('div', { class: 'header' }, [
       el('div', { class: 'title', text: 'Séances à synchroniser' }),
-      el('div', { class: 'subtitle', text: 'Tentatives pas encore envoyées au système de pondération' }),
+      el('div', { class: 'subtitle', text: 'Séances conservées sur cet appareil, pas encore sauvegardées sur ton Drive' }),
     ]));
 
     const pending = loadPending();
@@ -1576,8 +1615,12 @@
     const status = el('div', { class: 'feedback-status' });
     const fbRow = el('div', { class: 'btn-row' });
 
+    const historyByDate = new Map(loadHistory().map((entry) => [entry.date, entry]));
+    const peerEntries = pending.map((entry) => entry.log ? entry : historyByDate.get(entry.date)).filter(Boolean);
+    const peerButton = peerFeedbackButton(peerEntries, status);
+    if (peerButton) fbRow.appendChild(peerButton);
     if (DRIVE.configured()) {
-      const driveBtn = el('button', { class: 'btn', text: 'Envoyer vers Google Drive' });
+      const driveBtn = el('button', { class: 'btn secondary', text: 'Sauvegarder sur mon Google Drive' });
       driveBtn.addEventListener('click', async () => {
         driveBtn.disabled = true;
         status.textContent = 'Connexion à Google Drive…';
@@ -1586,7 +1629,7 @@
           status.textContent = 'Envoi du fichier…';
           const combined = buildCombinedFeedback(loadPending());
           const r = await DRIVE.upload(combinedFeedbackFilename(), combined);
-          status.textContent = '✅ Envoyé : ' + r.name;
+          status.textContent = '✅ Sauvegardé sur ton propre Drive : ' + r.name;
           clearPending();
           setTimeout(() => { state = { view: 'home' }; render(); }, 900);
         } catch (e) {
