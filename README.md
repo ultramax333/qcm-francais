@@ -1,6 +1,6 @@
 # QCM Français — OP001 (HEP Vaud)
 
-Mise à jour locale du 01.10.2026 après la publication 1.34, **pas encore publiée** : consignes
+Version **1.35** du 01.10.2026, cache `qcm-op001-v135` : consignes
 explicites selon la tâche, rappel du choix unique 1–4/Aucune/Toutes et panneau
 « Remarque / signalement ». Le contexte utile est conservé ; une consigne générique stockée comme
 contexte n'est pas répétée. Banque, clés, métadonnées et sauvegardes personnelles inchangées.
