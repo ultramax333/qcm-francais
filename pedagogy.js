@@ -96,6 +96,16 @@
   };
 
   const LEARNER_GUIDANCE = {
+    dont_partitif: learnerGuide(
+      '« Dont » : désigner une partie d’un ensemble',
+      'Exemple : « Dix élèves participent, dont trois débutants. » « Dont » signifie ici « parmi lesquels » : les trois débutants font partie des dix élèves. C’est la valeur partitive de « dont ».',
+      ['Repère l’ensemble nommé avant « dont ».', 'Vérifie que le groupe qui suit en désigne une partie.', 'Essaie de remplacer « dont » par « parmi lesquels » ou « parmi lesquelles ».']
+    ),
+    deux_points_explication: learnerGuide(
+      'Deux-points : annoncer une explication',
+      'Exemple : « La sortie est annulée : la route est fermée. » Les deux-points annoncent que la suite explique ce qui vient d’être dit. Ici, la fermeture de la route explique l’annulation.',
+      ['Lis les deux parties de la phrase.', 'Demande si la seconde explique ou développe la première.', 'Vérifie que la première partie forme une proposition complète avant les deux-points.']
+    ),
     // Accord adjectif-nom
     donneur_eloigne: learnerGuide(
       'Accorder un adjectif éloigné du nom',

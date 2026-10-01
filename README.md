@@ -1,5 +1,17 @@
 # QCM Français — OP001 (HEP Vaud)
 
+État local du 01.10.2026, **non publié** : 688 questions réparées après contre-revue indépendante,
+dont dix clés, sans ajout ni retrait. Banque de 1 754 IDs, release `questions-20261001-6ef235f2`.
+Des sous-règles et deux fiches apprenant ont aussi été précisées. Les arbitrages et la revue des
+titres sont traités ; la version publique vérifiée ci-dessous reste historique.
+
+Le bouton local « Signaler un problème » ouvre un formulaire Google prérempli avec l'ID de la
+question et la version de banque. Ni réponses, ni scores, ni historique personnel ne sont transmis.
+Les sauvegardes Drive restent sur le compte de leur propriétaire ; sur un même navigateur/profil,
+le stockage local est commun. Les remarques de tiers sont une revue qualité, jamais des erreurs
+personnelles ajoutées à la pondération. Les réponses du formulaire restent privées ; leur récupération
+automatique dans le projet n'est pas encore raccordée.
+
 Petite app web (PWA) d'entraînement aux QCM de français de l'examen OP001, par règle
 de grammaire. Phrases originales au format de l'examen (options 1-4 + « Aucune » / « Toutes »),
 correction immédiate avec explication par option, suivi de progression, mémo par question,
