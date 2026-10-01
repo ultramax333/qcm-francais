@@ -271,6 +271,12 @@ p { margin: 0; }
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
+.question-answer-guide {
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  line-height: 1.45;
+  margin-bottom: 16px;
+}
 .question-stem {
   font-size: 1.15rem;
   line-height: 1.5;

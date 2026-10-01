@@ -16,13 +16,32 @@
 
   function questionContext(question) {
     const stem = String(question.stem || '').trim();
-    if (stem) return stem;
+    // A generic instruction accidentally stored as a stem is not a context.
+    if (stem && stem !== 'Examinez les propositions puis choisissez votre réponse.') return stem;
     // Legacy vocabulary stores the source sentence and target word here.
     // Ordinary grammatical titles remain hidden behind the neutral instruction.
     if (question.rule === 'vocabulaire' || question.type === 'vocabulary') {
       return String(question.instruction || '').trim();
     }
     return '';
+  }
+
+  function questionInstruction(question) {
+    const context = questionContext(question);
+    // The visible task, not the grammatical family or the answer, determines the wording.
+    // Some historical sentences/vocabulary questions actually contain a blank.
+    if (context.includes('___')) {
+      return 'Repérez les propositions qui complètent correctement la phrase.';
+    }
+    if (question.rule === 'vocabulaire' || question.type === 'vocabulary') {
+      return 'Repérez les propositions qui donnent le sens du mot ou de l’expression dans ce contexte.';
+    }
+    if (question.type === 'transformation') {
+      return 'Repérez les reformulations qui respectent le sens et les informations du texte.';
+    }
+    return context
+      ? 'Repérez les phrases correctement écrites et qui respectent le contexte donné.'
+      : 'Repérez les phrases correctement écrites.';
   }
 
   // ---------- persistence ----------
@@ -817,7 +836,11 @@
     const card = el('div', { class: 'question-card' });
     card.appendChild(el('div', {
       class: 'question-instruction',
-      text: 'Examinez les propositions puis choisissez votre réponse.',
+      text: questionInstruction(q),
+    }));
+    card.appendChild(el('div', {
+      class: 'question-answer-guide',
+      text: 'Un seul choix : le numéro de la proposition qui convient, « Aucune » si aucune ne convient, ou « Toutes » si les quatre conviennent.',
     }));
 
     const context = questionContext(q);
@@ -908,7 +931,7 @@
       toolbar.appendChild(deletionBtn);
 
       if (state.mode !== 'exam') {
-        const detBtn = el('button', { class: 'details-btn', text: (showDetails ? '▾' : '▸') + ' mémo / infos' });
+        const detBtn = el('button', { class: 'details-btn', text: (showDetails ? '▾' : '▸') + ' Remarque / signalement' });
         detBtn.addEventListener('click', () => { state.detailsOpen[q.id] = !showDetails; render(); });
         toolbar.appendChild(detBtn);
       }
@@ -1275,12 +1298,12 @@
     const fb = el('div', { class: 'feedback-box' });
     fb.appendChild(el('div', { class: 'feedback-title', text: 'Feedback de la séance' }));
     const bits = [];
-    if (memoCount) bits.push(`${memoCount} mémo(s)`);
+    if (memoCount) bits.push(`${memoCount} remarque(s)`);
     if (likeCount) bits.push(`${likeCount} 👍`);
     if (deletionCount) bits.push(`${deletionCount} à supprimer`);
     fb.appendChild(el('div', {
       class: 'feedback-sub',
-      text: bits.length ? `${bits.join(' + ')} à envoyer, avec le récap des réponses.` : 'Aucun mémo ni pouce — tu peux quand même envoyer les stats.',
+      text: bits.length ? `${bits.join(' + ')} à envoyer, avec le récap des réponses.` : 'Aucune remarque ni pouce — tu peux quand même envoyer les stats.',
     }));
 
     const status = el('div', { class: 'feedback-status' });
