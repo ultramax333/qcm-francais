@@ -1,11 +1,12 @@
 # QCM Français — OP001 (HEP Vaud)
 
-État local du 01.10.2026, **non publié** : 688 questions réparées après contre-revue indépendante,
+Version **1.34** du 01.10.2026, cache `qcm-op001-v134` : 688 questions réparées après contre-revue indépendante,
 dont dix clés, sans ajout ni retrait. Banque de 1 754 IDs, release `questions-20261001-6ef235f2`.
 Des sous-règles et deux fiches apprenant ont aussi été précisées. Les arbitrages et la revue des
-titres sont traités ; la version publique vérifiée ci-dessous reste historique.
+titres sont traités. Validation : 307 tests Python et cinq suites JavaScript réussis ;
+les indications sur la version 1.33 ci-dessous sont historiques.
 
-Le bouton local « Signaler un problème » ouvre un formulaire Google prérempli avec l'ID de la
+Le bouton « Signaler un problème » ouvre un formulaire Google prérempli avec l'ID de la
 question et la version de banque. Ni réponses, ni scores, ni historique personnel ne sont transmis.
 Les sauvegardes Drive restent sur le compte de leur propriétaire ; sur un même navigateur/profil,
 le stockage local est commun. Les remarques de tiers sont une revue qualité, jamais des erreurs
