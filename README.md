@@ -1,5 +1,39 @@
 # QCM Français — OP001 (HEP Vaud)
 
+Version **1.38**, du 02.10.2026, cache `qcm-op001-v138` :
+question `orth-L22-1` (vice / vis) supprimée sur demande, corrigé de `dis-L40-6` enrichi
+pour expliquer la conservation de la négation au discours indirect. Banque unique de
+1 782 questions, dont 30 négations ; release `questions-20261002-2d53e15e`.
+Les quatre nouveaux feedbacks Drive sont importés dans le suivi privé ; une appréciation
+publique positive est conservée séparément. Aucun score de camarade ne pèse sur les erreurs
+personnelles. Preuves : `../analyse_gpt/audit_banque/retours_20261002/rapport_retours.json`.
+Trois réparations de négation acceptées indépendamment (un énoncé et deux explications)
+sont incluses, sans changement de clé ni d'option. Validation finale avant publication :
+372 tests Python et quatre suites JavaScript ; huit suites JavaScript revérifiées pour la release.
+Préparation de publication : `2026-10-02T11:35:58Z`, soit le 02.10.2026 à 13:35 en heure suisse.
+L'accueil explique désormais l'ajout à l'écran d'accueil et la conservation locale :
+l'installation n'est ni obligatoire pour enregistrer l'historique ni une sauvegarde.
+La navigation privée et l'effacement des données du site peuvent faire perdre les progrès.
+
+### Progrès après correction d'une question (1.38)
+
+Chaque correction via le pipeline avance automatiquement `progress_revision` si l'énoncé,
+les options, la clé, la consigne ou le corrigé changent. Une simple mise à jour de classement
+ou une nouvelle version de l'application ne réinitialise rien.
+Au chargement d'une banque plus récente, seule la question révisée redevient non vue et sort
+de l'ancienne pile de révision. Ses anciennes tentatives restent archivées, mais ne comptent
+plus dans la maîtrise, « Mes erreurs » ou le test adaptatif. Les nouvelles tentatives comptent
+normalement ; la migration ne se répète pas à chaque visite. Le marquage couvre aussi les
+personnes qui sautent plusieurs versions. Aucun effet à distance avant leur mise à jour.
+Les compteurs des familles concernées sont reconstruits depuis les tentatives détaillées
+compatibles. Un ancien compteur sans journal détaillé ne permet pas de séparer les questions :
+il est remplacé par les seules tentatives prouvables, sans supprimer les anciennes séances.
+`question-progress.js` est chargé avant l'application et inclus dans le cache hors ligne.
+Export courant `hep-feedback/1.3` : `progress_revision` est transmis au pipeline privé,
+qui conserve les archives et exclut les anciennes versions du poids actif de génération.
+La validation historique de ce mécanisme précédait les réparations ciblées ; la validation
+finale de la banque et de la release figure en tête de ce document.
+
 Version **1.37**, du 02.10.2026, cache `qcm-op001-v137` :
 navigation Retour/Avancer entre écrans, reprise de la même séance pendant la visite,
 retour des questions sources vers « Mes erreurs » et aucun recomptage des résultats.
@@ -115,13 +149,25 @@ Puis ouvre http://localhost:5500
 Le site est 100 % statique : pousse ce dossier sur un dépôt GitHub, puis active
 **Settings → Pages → Deploy from a branch → main / root**.
 
+### Date et heure de la version
+
+Les en-têtes affichent la version et « Mise à jour le JJ.MM.AAAA à HH:mm (heure suisse) ».
+La source unique est `CONFIG.APP_PUBLISHED_AT` dans `config.js`, un instant ISO 8601 fixe
+avec `Z` ou un décalage explicite, affiché dans le fuseau `Europe/Zurich` (heure d'été comprise).
+Il représente la préparation de la release destinée à être publiée, pas l'heure de visite
+ni la fin exacte du déploiement Pages. À chaque publication autorisée, renseigner cet instant
+avec `APP_VERSION` et le nouveau `CACHE` de `sw.js`, puis vérifier les fichiers servis.
+Pour une version locale non publiée, conserver `APP_PUBLISHED_AT: null` : l'interface indique
+« Version locale — non publiée ». Une valeur absente, invalide ou sans fuseau utilise aussi
+ce repli, sans inventer de date. La version 1.38 utilise l'instant fixe indiqué en tête.
+
 ## Google Drive (facultatif)
 Pour l'envoi automatique des mémos/stats vers Google Drive, renseigne `GOOGLE_CLIENT_ID`
 dans `config.js` (voir les instructions détaillées en tête de ce fichier). Tant que c'est
 vide, les boutons **Copier** et **Télécharger** du feedback restent disponibles.
 
 Chaque nouvelle séance exporte un Markdown humain avec un bloc machine
-`hep-feedback/1.2`. Le booléen `deletion_requested` est indépendant de la justesse
+`hep-feedback/1.3`. Le booléen `deletion_requested` est indépendant de la justesse
 de la réponse : il alimente la file de revue à l'import et ne supprime jamais une
 question automatiquement. L'importeur reste compatible avec `hep-feedback/1.0`
 et `hep-feedback/1.1` (`detail_id=null` pour ces historiques). Le champ nullable
@@ -158,7 +204,7 @@ intégration manuelle de `questions.js` rendrait l'identifiant de banque obsolè
 - `error-profile.js` — agrégation cumulative locale, sans dupliquer les séances
   dans la mémoire de génération
 - `adaptive-quiz.js` — tirage par cas grammatical et résultats récents, sans modèle ni serveur
-- `questions.js` — la banque locale active de 1 783 questions
+- `questions.js` — la banque active de 1 782 questions
 - `config.js` — configuration (ID client Google Drive)
 - `manifest.json`, `sw.js`, `icon.svg` — installation PWA / hors-ligne
 - `static-server.ps1` — serveur statique local (développement, Windows)

@@ -52675,66 +52675,6 @@ const QUESTIONS = [
     }
   },
   {
-    "id": "orth-L22-1",
-    "rule": "orthographe",
-    "type": "blank",
-    "gen": {
-      "model": "Fable 5",
-      "thinking": "standard",
-      "tracked": true
-    },
-    "stem": "L'avocate a soulevé un ___ de procédure ; pendant ce temps, l'ouvrier resserrait la dernière ___ du portail.",
-    "options": [
-      {
-        "key": "1",
-        "text": "vice / vis"
-      },
-      {
-        "key": "2",
-        "text": "vis / vice"
-      },
-      {
-        "key": "3",
-        "text": "vice / vice"
-      },
-      {
-        "key": "4",
-        "text": "vis / vis"
-      },
-      {
-        "key": "A",
-        "text": "Aucune"
-      },
-      {
-        "key": "T",
-        "text": "Toutes"
-      }
-    ],
-    "answer": "1",
-    "explanation": "Le « vice » est le défaut (vice de procédure) ; la « vis » est la pièce filetée qu'on serre.",
-    "why": {
-      "1": "Correct : défaut juridique = vice ; pièce filetée = vis.",
-      "2": "Inverse les deux homophones.",
-      "3": "« resserrer le vice du portail » : la pièce qu'on serre est une vis.",
-      "4": "« un vis de procédure » : le défaut s'écrit vice.",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Trois options placent au moins un homophone à contre-emploi."
-    },
-    "hep": {
-      "metadata_schema_version": "hep-question/2.1",
-      "family": "orthographe_lexicale",
-      "mechanism_id": "paronyme_lexical",
-      "detail_id": "core",
-      "tense_id": null,
-      "option_misconceptions": {
-        "1": null,
-        "2": "UNK",
-        "3": "UNK",
-        "4": "UNK"
-      }
-    }
-  },
-  {
     "id": "orth-L22-2",
     "rule": "orthographe",
     "type": "sentences",
@@ -63027,14 +62967,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Une question totale rapportée est introduite par « si », qui s'élide devant « ils » : « s'ils ». L'interrogation indirecte reprend ensuite l'ordre déclaratif, sans inversion ni « est-ce que ». Ici, le plus-que-parfait « avaient reçu » situe la réception avant la demande. L'option 3 est la seule à réunir ces éléments.",
+    "explanation": "Règle : Une question à laquelle on répond par oui ou non est rapportée avec si. Devant ils, si devient s'ils. Dans cette transposition, on conserve la forme négative de la question d'origine ; le mot si introduit la question, il n'annule pas ne… pas.\nMéthode : Repérez d'abord N'avez-vous pas reçu, puis remplacez la forme interrogative par si + sujet + verbe, sans inversion ni est-ce que. Enfin, situez la réception du lien avant la demande passée.\nDans cette phrase : N'avez-vous pas reçu devient s'ils n'avaient pas reçu. Le plus-que-parfait situe la réception avant la demande ; conserver ne… pas rapporte la question négative telle qu'elle a été posée, sans affirmer que les doyens n'ont pas reçu le lien.\nDonc : option 3.",
     "why": {
-      "1": "« si ils » : devant « il(s) », « si » s'élide obligatoirement en « s' ».",
-      "2": "« n'avaient-ils » conserve la reprise pronominale de l'interrogation directe.",
-      "3": "Correct : s'ils + ordre déclaratif + plus-que-parfait.",
-      "4": "« est-ce que » est une marque directe : après « demander », c'est « si ».",
-      "A": "L'option 3 contient bien « s'ils », l'ordre déclaratif et « avaient reçu » ; « Aucune » ne convient donc pas.",
-      "T": "Les options 1, 2 et 4 fautent sur l'élision, l'inversion ou la marque directe."
+      "1": "La forme si ils est fautive : devant il ou ils, si s'élide en s'. Il faut s'ils.",
+      "2": "N'avaient-ils conserve l'inversion de la question directe. Après demandé si, on emploie ici l'ordre sujet puis verbe : ils n'avaient pas reçu.",
+      "3": "S'ils introduit correctement la question rapportée ; n'avaient pas reçu conserve sa forme négative et situe la réception avant la demande passée.",
+      "4": "Après elle leur a demandé, la question totale est introduite par si, et non par est-ce que.",
+      "A": "L'option 3 convient. Si introduit ici une question rapportée, et non la réponse si à une question négative : il ne supprime donc pas la négation.",
+      "T": "Les options 1, 2 et 4 ont une faute d'élision ou de construction interrogative ; seule l'option 3 convient."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -111640,7 +111580,7 @@ const QUESTIONS = [
     "why": {
       "1": "Dans `retournez pas`, « ne » manque devant le verbe conjugué à l'impératif. La forme attendue est « ne retournez pas ».",
       "2": "« Ne retournez pas » exprime l'interdiction avec « ne » avant le verbe conjugué « retournez » et « pas » après lui.",
-      "3": "Dans `ne pas retournez`, « pas » est placé avant le verbe conjugué alors qu'il doit le suivre. La forme attendue est « ne retournez pas ».",
+      "3": "Dans `ne pas retournez`, « retournez » est écrit à l’impératif : on attend « ne retournez pas ». Une consigne à l’infinitif serait aussi correcte, mais elle s’écrirait « ne pas retourner », avec -er.",
       "4": "Dans `ne retournez`, le second terme de la négation attendue manque. La forme attendue est « ne retournez pas ».",
       "A": "L'option 2 complète correctement la consigne ; « Aucune » ne convient donc pas.",
       "T": "Les options 1, 3 et 4 comportent une négation incomplète ou mal placée ; « Toutes » ne convient donc pas."
@@ -111667,7 +111607,8 @@ const QUESTIONS = [
         "4": "UNK"
       }
     },
-    "stem": "Note de sécurité : « En cas d'alarme, ___ dans le bâtiment pour récupérer vos affaires. »"
+    "stem": "Note de sécurité : « En cas d'alarme, ___ dans le bâtiment pour récupérer vos affaires. »",
+    "progress_revision": 1
   },
   {
     "id": "candidate-slot-20261002-13-negation",
@@ -112857,7 +112798,8 @@ const QUESTIONS = [
         "4": "UNK"
       }
     },
-    "stem": "Le secrétariat prépare un courriel pour annoncer qu’il sera impossible de s’inscrire à une formation après le 15 octobre. Quelle phrase transmet correctement cette information dans un écrit formel ?"
+    "stem": "Le secrétariat prépare un courriel pour annoncer qu’il sera impossible de s’inscrire à une formation après le 15 octobre.",
+    "progress_revision": 1
   },
   {
     "id": "candidate-slot-hep-b1-20261002-0007-04-negation-refill-1d347a53a62c",
@@ -112969,7 +112911,7 @@ const QUESTIONS = [
     "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : conserver l’emballage implique de ne pas jeter le carton avant le retour de la caméra. On choisit donc la négation ne… pas. « Jetez » est le verbe conjugué à l’impératif : on place « Ne » avant ce verbe et « pas » après lui, ce qui donne « Ne jetez pas le carton avant d’avoir rendu la caméra. » Aucun marqueur supplémentaire n’est nécessaire.\nDonc : seule l’option 4, « Ne jetez pas », formule correctement cette consigne négative.",
     "why": {
       "1": "Dans `Jetez pas`, « Ne » manque : la négation est incomplète dans ce courriel écrit. La forme attendue est « Ne jetez pas ».",
-      "2": "Dans `Ne pas jetez`, « pas » précède le verbe conjugué « jetez » alors qu’il doit le suivre ici. La forme attendue est « Ne jetez pas ».",
+      "2": "Dans `Ne pas jetez`, « jetez » est écrit à l’impératif : on attend « Ne jetez pas ». La consigne infinitive « Ne pas jeter » serait également correcte, mais elle s’écrit avec -er.",
       "3": "Dans `Jetez ne pas`, « ne » est placé après le verbe conjugué alors qu’il doit le précéder. La forme attendue est « Ne jetez pas ».",
       "4": "« Ne jetez pas » encadre correctement le verbe conjugué « jetez » avec « Ne » et « pas ». Cette consigne interdit de jeter le carton avant le retour de la caméra.",
       "A": "« Aucune » ne convient pas : l’option 4 forme correctement la consigne négative.",
@@ -112997,7 +112939,8 @@ const QUESTIONS = [
         "4": null
       }
     },
-    "stem": "Le courriel du service de prêt demande de conserver l’emballage pour le retour : « ___ le carton avant d’avoir rendu la caméra. »"
+    "stem": "Le courriel du service de prêt demande de conserver l’emballage pour le retour : « ___ le carton avant d’avoir rendu la caméra. »",
+    "progress_revision": 1
   }
 ];
 

@@ -6,11 +6,34 @@
   const MIX_ID = 'mix';
   const ADAPTIVE_ID = 'adaptive';
   const APP_VERSION = (window.CONFIG && CONFIG.APP_VERSION) || '';
+  const APP_PUBLISHED_AT = window.CONFIG && CONFIG.APP_PUBLISHED_AT;
   const BANK_RELEASE = (window.CONFIG && CONFIG.BANK_RELEASE) || 'UNK';
   const PEDAGOGY = window.HEP_PEDAGOGY;
   const ERROR_PROFILE = window.HEP_ERROR_PROFILE;
   const ADAPTIVE_QUIZ = window.HEP_ADAPTIVE_QUIZ;
   const PEER_FEEDBACK = window.HEP_PEER_FEEDBACK;
+  const QUESTION_PROGRESS = window.HEP_QUESTION_PROGRESS;
+
+  function releaseLabel(version, publishedAt) {
+    const prefix = version ? 'v' + version + ' · ' : '';
+    // A fixed release timestamp must include its timezone; never use the visit time.
+    if (typeof publishedAt !== 'string' ||
+        !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})$/.test(publishedAt)) {
+      return prefix + 'Version locale — non publiée';
+    }
+    const date = new Date(publishedAt);
+    if (!Number.isFinite(date.getTime())) return prefix + 'Version locale — non publiée';
+    const parts = new Intl.DateTimeFormat('fr-CH', {
+      timeZone: 'Europe/Zurich', year: 'numeric', month: '2-digit', day: '2-digit',
+      hour: '2-digit', minute: '2-digit', hourCycle: 'h23',
+    }).formatToParts(date);
+    const values = Object.fromEntries(parts.map(part => [part.type, part.value]));
+    return prefix + `Mise à jour le ${values.day}.${values.month}.${values.year} à ${values.hour}:${values.minute} (heure suisse)`;
+  }
+
+  function releaseInfo(className) {
+    return el('span', { class: className, text: releaseLabel(APP_VERSION, APP_PUBLISHED_AT) });
+  }
 
   let state = { view: 'home' };
 
@@ -211,7 +234,12 @@
   }
 
   function statsForRule(ruleId) {
-    const h = loadHistory().filter((a) => a.ruleId === ruleId);
+    const byId = new Map(QUESTIONS.map(q => [q.id, q]));
+    const h = loadHistory().filter((a) => a.ruleId === ruleId).map(entry => {
+      if (!QUESTION_PROGRESS || !Array.isArray(entry.log)) return entry;
+      const log = entry.log.filter(a => QUESTION_PROGRESS.compatible(a, byId.get(a.id)));
+      return { ...entry, total: log.length, correct: log.filter(a => a.correct).length };
+    }).filter(entry => entry.total > 0);
     if (h.length === 0) return null;
     const last = h[h.length - 1];
     const best = h.reduce((m, a) => (a.correct / a.total > m.correct / m.total ? a : m), h[0]);
@@ -684,12 +712,17 @@
   // ---------- views ----------
   function renderHome() {
     const wrap = el('div', {});
-    if (APP_VERSION) wrap.appendChild(el('div', { class: 'version-bar', text: 'v' + APP_VERSION }));
+    wrap.appendChild(releaseInfo('version-bar'));
     wrap.appendChild(el('div', { class: 'header' }, [
       el('div', { class: 'title', text: 'QCM Français — OP001' }),
       el('div', { class: 'subtitle', text: 'Entraînement par règle, phrases inédites' }),
     ]));
-    wrap.appendChild(el('div', { class: 'feedback-note', text: 'Tes résultats restent dans ce navigateur. Chacun possède son propre historique. Tu peux transmettre uniquement tes remarques sur les questions à Maxim.' }));
+    wrap.appendChild(el('aside', { class: 'home-notice' }, [
+      el('strong', { text: 'Garde le site à portée de main' }),
+      el('p', { text: 'Ajoute le site à ton écran d’accueil pour le retrouver facilement. Ton historique est enregistré dans ce navigateur, même sans installation.' }),
+      el('p', { text: 'L’ajout n’est pas une sauvegarde : évite la navigation privée et n’efface pas les données du site si tu veux garder tes progrès.' }),
+    ]));
+    wrap.appendChild(el('div', { class: 'feedback-note', text: 'Tes résultats restent dans ce navigateur. Chacun possède son propre historique. Tu peux me transmettre tes questions.' }));
 
     // Séances brutes non encore synchronisées. Le pipeline importe ensuite
     // chaque session de façon idempotente pour éviter tout double comptage.
@@ -697,7 +730,7 @@
     if (nPending > 0) {
       const pd = el('button', { class: 'special-card pending-card' }, [
         el('div', { class: 'rule-name', text: `📤 Séances à synchroniser (${nPending})` }),
-        el('div', { class: 'rule-desc', text: 'Sauvegarde tes séances sur ton Drive ou transmets uniquement tes remarques à Maxim.' }),
+        el('div', { class: 'rule-desc', text: 'Sauvegarde tes séances sur ton Drive ou transmets-moi tes questions.' }),
       ]);
       pd.addEventListener('click', () => navigate({ view: 'pending' }));
       wrap.appendChild(pd);
@@ -896,7 +929,7 @@
 
     const nav = el('div', { class: 'top-nav' }, [
       el('button', { class: 'back', text: navigationBackLabel() }),
-      el('span', { class: 'version-tag', text: APP_VERSION ? 'v' + APP_VERSION : '' }),
+      releaseInfo('version-tag'),
     ]);
     nav.querySelector('.back').addEventListener('click', navigateBack);
     wrap.appendChild(nav);
@@ -1112,6 +1145,7 @@
       }
       return {
         id: q.id,
+        progressRevision: q.progress_revision || 0,
         rule: q.rule,
         prompt: q.type === 'blank' ? q.stem : (q.instruction || ''),
         selected: sel,
@@ -1192,7 +1226,7 @@
     const deletionRequested = log.filter((l) => l.deletionRequested);
     const lines = [];
     const meta = {
-      schema_version: 'hep-feedback/1.2',
+      schema_version: 'hep-feedback/1.3',
       quiz_id: trace.quizId,
       session_id: trace.sessionId,
       attempted_at: trace.attemptedAt,
@@ -1209,9 +1243,10 @@
       'misconception_id',
       'grammar_confidence', 'misconception_confidence', 'classification_source',
       'positive_feedback', 'deletion_requested',
+      'progress_revision',
     ];
     lines.push(`<!-- HEP_FEEDBACK_META ${JSON.stringify(meta)} -->`);
-    lines.push('```tsv hep-feedback/1.2');
+    lines.push('```tsv hep-feedback/1.3');
     lines.push(columns.join('\t'));
     log.forEach((l, index) => {
       lines.push([
@@ -1219,7 +1254,7 @@
         l.sourceBatchId, l.family, l.mechanismId, l.detailId, l.tenseId,
         l.misconceptionId,
         l.grammarConfidence, l.misconceptionConfidence, l.classificationSource, l.like,
-        l.deletionRequested,
+        l.deletionRequested, l.progressRevision || 0,
       ].map(tsvCell).join('\t'));
     });
     lines.push('```');
@@ -1263,6 +1298,7 @@
   function renderResult() {
     const { entry } = state;
     const wrap = el('div', {});
+    wrap.appendChild(releaseInfo('version-bar'));
     wrap.appendChild(el('div', { class: 'header' }, [
       el('div', { class: 'title', text: 'Résultat' }),
       el('div', { class: 'subtitle', text: sessionLabel(entry.ruleId, entry.mechanismId, entry.detailId) }),
@@ -1404,7 +1440,7 @@
           if (!DRIVE.token) await DRIVE.connect();
           status.textContent = 'Envoi du fichier…';
           const r = await DRIVE.upload(feedbackFilename(entry), entry.feedback);
-          status.textContent = '✅ Sauvegardé sur ton propre Google Drive : ' + r.name + '. Cet envoi ne transmet rien à Maxim.';
+          status.textContent = '✅ Sauvegardé sur ton propre Google Drive : ' + r.name + '. Cet envoi ne me transmet rien.';
           state.memos = {}; state.likes = {}; state.deletionRequests = {}; // reset après envoi réussi
           removePending(entry.date); // déjà envoyée : plus besoin de la garder en attente
         } catch (e) {
@@ -1459,7 +1495,7 @@
     const wrap = el('div', {});
     const nav = el('div', { class: 'top-nav' }, [
       el('button', { class: 'back', text: navigationBackLabel() }),
-      el('span', { class: 'version-tag', text: APP_VERSION ? 'v' + APP_VERSION : '' }),
+      releaseInfo('version-tag'),
     ]);
     nav.querySelector('.back').addEventListener('click', navigateBack);
     wrap.appendChild(nav);
@@ -1649,7 +1685,7 @@
     const wrap = el('div', {});
     const nav = el('div', { class: 'top-nav' }, [
       el('button', { class: 'back', text: navigationBackLabel() }),
-      el('span', { class: 'version-tag', text: APP_VERSION ? 'v' + APP_VERSION : '' }),
+      releaseInfo('version-tag'),
     ]);
     nav.querySelector('.back').addEventListener('click', navigateBack);
     wrap.appendChild(nav);
@@ -1659,6 +1695,11 @@
     ]));
 
     const h = loadHistory().slice().reverse();
+    const byId = new Map(QUESTIONS.map(q => [q.id, q]));
+    if (QUESTION_PROGRESS && h.some(entry => (entry.log || []).some(a =>
+      byId.has(a.id) && !QUESTION_PROGRESS.compatible(a, byId.get(a.id))))) {
+      wrap.appendChild(el('p', { class: 'feedback-note', text: 'Ces scores sont ceux des anciennes séances. Les résultats des questions corrigées restent archivés, mais ne comptent plus dans ta maîtrise actuelle.' }));
+    }
     if (h.length === 0) {
       wrap.appendChild(el('div', { class: 'empty-state', text: 'Aucune tentative pour l’instant.' }));
       return wrap;
@@ -1684,7 +1725,7 @@
     const wrap = el('div', {});
     const nav = el('div', { class: 'top-nav' }, [
       el('button', { class: 'back', text: navigationBackLabel() }),
-      el('span', { class: 'version-tag', text: APP_VERSION ? 'v' + APP_VERSION : '' }),
+      releaseInfo('version-tag'),
     ]);
     nav.querySelector('.back').addEventListener('click', navigateBack);
     wrap.appendChild(nav);
@@ -1788,6 +1829,7 @@
     return wrap;
   }
 
+  if (QUESTION_PROGRESS) QUESTION_PROGRESS.resetChanged(localStorage, QUESTIONS);
   initializeNavigation();
   render();
 

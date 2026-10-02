@@ -19,4 +19,6 @@ assert(/a\.btn\s*\{[^}]*min-height: 44px/.test(css));
 assert(/\.btn-row\s*\{ flex-wrap: wrap; \}/.test(css));
 assert(/input, textarea, select, \.memo-field\s*\{ font-size: 16px; \}/.test(css), 'Safari : taille de saisie mobile suffisante.');
 assert.notStrictEqual(manifest.orientation, 'portrait', 'Le mode paysage doit rester utilisable.');
+assert(/\.version-tag\s*\{[^}]*min-width: 0;[^}]*flex: 1 1 0;[^}]*overflow-wrap: anywhere;/.test(css),
+  'La date de version peut se replier dans les en-têtes mobiles.');
 console.log('OK — contrats mobiles : zoom, encoches, saisie, paysage et zones tactiles.');

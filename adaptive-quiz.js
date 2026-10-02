@@ -88,13 +88,16 @@
     const history = Array.isArray(settings.history) ? settings.history : [];
     const byId = new Map(questions.map((q) => [q.id, q]));
     const flagged = new Set(history.flatMap((entry) => entry && Array.isArray(entry.log) ? entry.log : [])
-      .filter((attempt) => attempt && attempt.deletionRequested).map((attempt) => attempt.id));
+      .filter((attempt) => attempt && attempt.deletionRequested && byId.has(attempt.id)
+        && (attempt.progressRevision || 0) === (byId.get(attempt.id).progress_revision || 0))
+      .map((attempt) => attempt.id));
     // Un changement de clé ou une suppression ne doit pas renforcer une difficulté.
     const compatibleHistory = history.filter((entry) => entry && Array.isArray(entry.log)).map((entry) => ({
       ...entry,
       log: entry.log.filter((attempt) => {
         const q = attempt && byId.get(attempt.id);
         return q && !flagged.has(q.id) && (attempt.answer || attempt.expected) === q.answer
+          && (attempt.progressRevision || 0) === (q.progress_revision || 0)
           && (!attempt.rule || attempt.rule === q.rule);
       }),
     }));

@@ -100,6 +100,8 @@
       const sessionDate = validDate(entry.date);
 
       entry.log.forEach((rawAttempt) => {
+        const current = rawAttempt && byId.get(String(rawAttempt.id || ''));
+        if (current && (rawAttempt.progressRevision || 0) !== (current.progress_revision || 0)) return;
         const attempt = enrichFromCurrentBank(rawAttempt, byId);
         if (!attempt || typeof attempt.correct !== 'boolean') return;
         const key = rowKey(attempt);

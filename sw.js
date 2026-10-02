@@ -1,10 +1,11 @@
-const CACHE = 'qcm-op001-v137';
+const CACHE = 'qcm-op001-v138';
 const ASSETS = [
   './',
   './index.html',
   './style.css',
   './app.js',
   './pedagogy.js',
+  './question-progress.js',
   './error-profile.js',
   './adaptive-quiz.js',
   './peer-feedback.js',

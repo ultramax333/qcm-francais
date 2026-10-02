@@ -28,7 +28,7 @@ class Element {
   all() { return [this, ...this.children.flatMap(child => child.all())]; }
 }
 
-function launch() {
+function launch(config = {}) {
   const app = new Element('main');
   const storage = new Map();
   const listeners = {};
@@ -37,7 +37,8 @@ function launch() {
   let exited = false;
   const window = {
     scrollY: 0,
-    CONFIG: {},
+    CONFIG: config,
+    HEP_QUESTION_PROGRESS: require('./question-progress.js'),
     scrollTo(x, y) { this.scrollY = y; },
     addEventListener(name, fn) { (listeners[name] ||= []).push(fn); },
     history: {
@@ -80,7 +81,7 @@ function launch() {
   const source = fs.readFileSync(path.join(__dirname, 'app.js'), 'utf8');
   vm.runInNewContext(source.replace(/\}\)\(\);\s*$/, `
     window.testApp = { getState: () => state, startQuiz, selectAnswer, nextQuestion,
-      navigate, navigateBack, navigateHome };
+      navigate, navigateBack, navigateHome, releaseLabel };
   })();`), context);
   const button = text => {
     const node = app.all().find(node => node.textContent === text);
@@ -97,6 +98,38 @@ function launch() {
 }
 
 const h = launch();
+const localRelease = launch({ APP_VERSION: '1.38', APP_PUBLISHED_AT: null });
+assert.strictEqual(localRelease.app.querySelector('.version-bar').textContent,
+  'v1.38 · Version locale — non publiée');
+const releaseLabel = localRelease.api.releaseLabel;
+assert.strictEqual(releaseLabel('1.38', '2026-10-02T12:35:00Z'),
+  'v1.38 · Mise à jour le 02.10.2026 à 14:35 (heure suisse)');
+assert.strictEqual(releaseLabel('1.38', '2026-01-02T12:35:00Z'),
+  'v1.38 · Mise à jour le 02.01.2026 à 13:35 (heure suisse)');
+assert.strictEqual(releaseLabel('1.38', '2026-10-02T14:35:00+02:00'),
+  releaseLabel('1.38', '2026-10-02T12:35:00Z'));
+for (const invalid of [undefined, null, '', 'not-a-date', '2026-10-02T14:35:00', '2026-99-02T14:35:00Z']) {
+  assert.strictEqual(releaseLabel('1.38', invalid), 'v1.38 · Version locale — non publiée');
+}
+for (const view of ['history', 'errors', 'pending']) {
+  localRelease.api.navigate({ view });
+  assert.strictEqual(localRelease.app.querySelector('.version-tag').textContent,
+    'v1.38 · Version locale — non publiée');
+}
+localRelease.api.startQuiz('test', 'learn');
+assert.strictEqual(localRelease.app.querySelector('.version-tag').textContent,
+  'v1.38 · Version locale — non publiée');
+const notice = h.app.querySelector('.home-notice');
+assert(notice, 'Home displays the installation and local-history notice.');
+const noticeText = notice.all().map(node => node.textContent).join(' ');
+assert(noticeText.includes('écran d’accueil'));
+assert(noticeText.includes('même sans installation'), 'Installation is not required for history.');
+assert(noticeText.includes('n’est pas une sauvegarde'));
+assert(noticeText.includes('navigation privée'));
+assert(noticeText.includes('n’efface pas les données du site'));
+const homeNodes = h.app.all();
+assert(homeNodes.indexOf(notice) < homeNodes.findIndex(node => node.className.includes('special-card')),
+  'The notice precedes the training cards.');
 assert.strictEqual(h.entries.length, 2, 'Initial home replaces the entry, no artificial Back trap.');
 h.button('Voir l’historique de mes tentatives').click();
 assert.strictEqual(h.api.getState().view, 'history');
@@ -141,7 +174,10 @@ h.api.nextQuestion();
 assert.strictEqual(h.api.getState().view, 'result');
 assert.strictEqual(h.entries.length, 4, 'Results replace the completed quiz.');
 const completed = h.api.getState();
+assert(h.app.querySelector('.version-bar'), 'Le résultat conserve les informations de version en haut.');
 const historyBefore = h.storage.get('qcm-op001-history-v1');
+assert.strictEqual(JSON.parse(historyBefore)[0].log[0].progressRevision, 0);
+assert(JSON.parse(historyBefore)[0].feedback.includes('hep-feedback/1.3'));
 const pendingBefore = h.storage.get('qcm-pending-feedback-v1');
 const completedMastery = h.storage.get('qcm-mastery-v1');
 h.window.history.back();
