@@ -711,10 +711,11 @@
 
   // ---------- views ----------
   function renderHome() {
-    const wrap = el('div', {});
+    const wrap = el('div', { class: 'page home-page' });
     wrap.appendChild(releaseInfo('version-bar'));
     wrap.appendChild(el('div', { class: 'header' }, [
-      el('div', { class: 'title', text: 'QCM Français — OP001' }),
+      el('div', { class: 'home-eyebrow', text: 'RÉVISION · OP001' }),
+      el('h1', { class: 'title', text: 'QCM Français' }),
       el('div', { class: 'subtitle', text: 'Entraînement par règle, phrases inédites' }),
     ]));
     wrap.appendChild(el('aside', { class: 'home-notice' }, [
@@ -722,7 +723,22 @@
       el('p', { text: 'Ajoute le site à ton écran d’accueil pour le retrouver facilement. Ton historique est enregistré dans ce navigateur, même sans installation.' }),
       el('p', { text: 'L’ajout n’est pas une sauvegarde : évite la navigation privée et n’efface pas les données du site si tu veux garder tes progrès.' }),
     ]));
-    wrap.appendChild(el('div', { class: 'feedback-note', text: 'Tes résultats restent dans ce navigateur. Chacun possède son propre historique. Tu peux me transmettre tes questions.' }));
+    wrap.appendChild(el('p', { class: 'home-privacy', text: 'Tes résultats restent dans ce navigateur. Chacun possède son propre historique. Tu peux me transmettre tes questions.' }));
+    const histLink = el('button', { class: 'footer-link home-history-link', text: 'Voir l’historique de mes tentatives' });
+    histLink.addEventListener('click', () => navigate({ view: 'history' }));
+    wrap.appendChild(histLink);
+
+    wrap.appendChild(el('h2', { class: 'home-section-heading', text: 'Choisir un entraînement' }));
+    const actions = el('div', { class: 'home-actions' });
+    const adaptive = el('button', { class: 'special-card adaptive-card' }, [
+      el('div', { class: 'rule-name', text: '🎯 Test adaptatif — 20 questions' }),
+      el('div', {
+        class: 'rule-desc',
+        text: 'Tes difficultés précises et tes progrès récents, avec 20 % de révision variée.',
+      }),
+    ]);
+    adaptive.addEventListener('click', () => startAdaptiveQuiz());
+    actions.appendChild(adaptive);
 
     // Séances brutes non encore synchronisées. Le pipeline importe ensuite
     // chaque session de façon idempotente pour éviter tout double comptage.
@@ -733,7 +749,7 @@
         el('div', { class: 'rule-desc', text: 'Sauvegarde tes séances sur ton Drive ou transmets-moi tes questions.' }),
       ]);
       pd.addEventListener('click', () => navigate({ view: 'pending' }));
-      wrap.appendChild(pd);
+      actions.appendChild(pd);
     }
 
     // Carte « Revoir mes erreurs » (uniquement s'il y a des erreurs en attente)
@@ -744,7 +760,7 @@
         el('div', { class: 'rule-desc', text: 'Seulement les questions ratées ; une question sort après 2 réussites d’affilée.' }),
       ]);
       rv.addEventListener('click', () => startReview());
-      wrap.appendChild(rv);
+      actions.appendChild(rv);
     }
 
     const errorProfile = ERROR_PROFILE
@@ -761,7 +777,7 @@
       }),
     ]);
     errorCard.addEventListener('click', () => navigate({ view: 'errors' }));
-    wrap.appendChild(errorCard);
+    actions.appendChild(errorCard);
 
     // Carte « Examen blanc »
     const exam = el('button', { class: 'special-card exam-card' }, [
@@ -769,18 +785,10 @@
       el('div', { class: 'rule-desc', text: `${EXAM_SIZE} questions mélangées, correction et score à la fin. Sans article de vocabulaire annexé.` }),
     ]);
     exam.addEventListener('click', () => startExam());
-    wrap.appendChild(exam);
+    actions.appendChild(exam);
+    wrap.appendChild(actions);
 
-    const adaptive = el('button', { class: 'special-card adaptive-card' }, [
-      el('div', { class: 'rule-name', text: '🎯 Test adaptatif — 20 questions' }),
-      el('div', {
-        class: 'rule-desc',
-        text: 'Tes difficultés précises et tes progrès récents, avec 20 % de révision variée.',
-      }),
-    ]);
-    adaptive.addEventListener('click', () => startAdaptiveQuiz());
-    wrap.appendChild(adaptive);
-
+    wrap.appendChild(el('h2', { class: 'home-section-heading', text: 'Travailler une règle' }));
     const mastery = loadMastery();
     const list = el('div', { class: 'rule-list' });
     RULES.forEach((rule) => {
@@ -809,21 +817,18 @@
     const totalSeen = seenCount(MIX_ID);
     wrap.appendChild(el('div', { class: 'seen-total', text: `Progression : ${totalSeen.seen}/${totalSeen.total} questions déjà vues` }));
 
-    const histLink = el('div', { class: 'footer-link', text: 'Voir l’historique de mes tentatives' });
-    histLink.addEventListener('click', () => navigate({ view: 'history' }));
-    wrap.appendChild(histLink);
-
-    const resetLink = el('div', { class: 'footer-link', text: 'Réinitialiser les questions vues' });
+    const resetLink = el('button', { class: 'footer-link', text: 'Réinitialiser les questions vues' });
     resetLink.addEventListener('click', () => {
       if (confirm('Remettre à zéro le suivi des questions déjà vues ?')) { resetSeen(); render(); }
     });
     wrap.appendChild(resetLink);
 
     if (DRIVE.configured()) {
-      const testLink = el('div', {
+      const testLink = el('button', {
         class: 'footer-link',
         text: driveTestRunning ? '⏳ Test en cours…' : '🔧 Tester la connexion Google Drive',
       });
+      testLink.disabled = driveTestRunning;
       if (!driveTestRunning) testLink.addEventListener('click', () => { testDriveConnection(); });
       wrap.appendChild(testLink);
       if (driveTestStatus) {
@@ -925,7 +930,7 @@
   function renderQuiz() {
     const { questions, index } = state;
     const q = questions[index];
-    const wrap = el('div', {});
+    const wrap = el('div', { class: 'page quiz-page' });
 
     const nav = el('div', { class: 'top-nav' }, [
       el('button', { class: 'back', text: navigationBackLabel() }),
@@ -1030,6 +1035,8 @@
           class: 'like-btn' + (state.likes[q.id] ? ' active' : ''),
           text: state.likes[q.id] ? '👍 ✓' : '👍',
           title: 'Question bien construite',
+          'aria-label': 'Question bien construite',
+          'aria-pressed': state.likes[q.id] ? 'true' : 'false',
         });
         likeBtn.addEventListener('click', () => { state.likes[q.id] = !state.likes[q.id]; render(); });
         toolbar.appendChild(likeBtn);
@@ -1048,7 +1055,7 @@
       toolbar.appendChild(deletionBtn);
 
       if (state.mode !== 'exam') {
-        const detBtn = el('button', { class: 'details-btn', text: (showDetails ? '▾' : '▸') + ' Remarque / signalement' });
+        const detBtn = el('button', { class: 'details-btn', text: (showDetails ? '▾' : '▸') + ' Remarque / signalement', 'aria-expanded': showDetails ? 'true' : 'false' });
         detBtn.addEventListener('click', () => { state.detailsOpen[q.id] = !showDetails; render(); });
         toolbar.appendChild(detBtn);
       }
@@ -1056,8 +1063,8 @@
 
       if (state.mode !== 'exam' && showDetails) {
         const memoWrap = el('div', { class: 'memo-wrap' });
-        memoWrap.appendChild(el('label', { class: 'memo-label', text: '💬 Remarque sur cette question — « ambiguë », « une autre réponse semble correcte », « explication peu claire »…' }));
-        const memoField = el('textarea', { class: 'memo-field', rows: '2', placeholder: 'Ton idée de correction sur cette question…' });
+        memoWrap.appendChild(el('label', { class: 'memo-label', for: 'question-memo', text: '💬 Remarque sur cette question — « ambiguë », « une autre réponse semble correcte », « explication peu claire »…' }));
+        const memoField = el('textarea', { id: 'question-memo', class: 'memo-field', rows: '2', placeholder: 'Ton idée de correction sur cette question…' });
         memoField.value = state.memos[q.id] || '';
         memoField.addEventListener('input', (e) => { state.memos[q.id] = e.target.value; });
         memoWrap.appendChild(memoField);
@@ -1297,10 +1304,10 @@
 
   function renderResult() {
     const { entry } = state;
-    const wrap = el('div', {});
+    const wrap = el('div', { class: 'page result-page' });
     wrap.appendChild(releaseInfo('version-bar'));
     wrap.appendChild(el('div', { class: 'header' }, [
-      el('div', { class: 'title', text: 'Résultat' }),
+      el('h1', { class: 'title', text: 'Résultat' }),
       el('div', { class: 'subtitle', text: sessionLabel(entry.ruleId, entry.mechanismId, entry.detailId) }),
     ]));
 
@@ -1492,7 +1499,7 @@
   }
 
   function renderErrorDashboard() {
-    const wrap = el('div', {});
+    const wrap = el('div', { class: 'page errors-page' });
     const nav = el('div', { class: 'top-nav' }, [
       el('button', { class: 'back', text: navigationBackLabel() }),
       releaseInfo('version-tag'),
@@ -1501,7 +1508,7 @@
     wrap.appendChild(nav);
 
     wrap.appendChild(el('div', { class: 'header' }, [
-      el('div', { class: 'title', text: 'Mes erreurs' }),
+      el('h1', { class: 'title', text: 'Mes erreurs' }),
       el('div', {
         class: 'subtitle',
         text: 'Cumul détaillé des séances conservées sur cet appareil.',
@@ -1682,7 +1689,7 @@
   }
 
   function renderHistory() {
-    const wrap = el('div', {});
+    const wrap = el('div', { class: 'page history-page' });
     const nav = el('div', { class: 'top-nav' }, [
       el('button', { class: 'back', text: navigationBackLabel() }),
       releaseInfo('version-tag'),
@@ -1691,7 +1698,7 @@
     wrap.appendChild(nav);
 
     wrap.appendChild(el('div', { class: 'header' }, [
-      el('div', { class: 'title', text: 'Historique' }),
+      el('h1', { class: 'title', text: 'Historique' }),
     ]));
 
     const h = loadHistory().slice().reverse();
@@ -1722,7 +1729,7 @@
   }
 
   function renderPending() {
-    const wrap = el('div', {});
+    const wrap = el('div', { class: 'page pending-page' });
     const nav = el('div', { class: 'top-nav' }, [
       el('button', { class: 'back', text: navigationBackLabel() }),
       releaseInfo('version-tag'),
@@ -1731,7 +1738,7 @@
     wrap.appendChild(nav);
 
     wrap.appendChild(el('div', { class: 'header' }, [
-      el('div', { class: 'title', text: 'Séances à synchroniser' }),
+      el('h1', { class: 'title', text: 'Séances à synchroniser' }),
       el('div', { class: 'subtitle', text: 'Séances conservées sur cet appareil, pas encore sauvegardées sur ton Drive' }),
     ]));
 
@@ -1817,7 +1824,7 @@
     }
     wrap.appendChild(fb);
 
-    const clearLink = el('div', { class: 'footer-link', text: 'Vider la liste sans envoyer' });
+    const clearLink = el('button', { class: 'footer-link', text: 'Vider la liste sans envoyer' });
     clearLink.addEventListener('click', () => {
       if (confirm('Supprimer ces séances en attente sans les envoyer ? Elles resteront visibles dans le tableau local, mais ne pèseront pas sur la génération.')) {
         clearPending();

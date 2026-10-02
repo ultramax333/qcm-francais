@@ -1,5 +1,17 @@
 # QCM Français — OP001 (HEP Vaud)
 
+Version **1.39**, du 02.10.2026, cache `qcm-op001-v139` :
+refonte visuelle sombre, palette bleu nuit/pervenche, textes et corrigés plus lisibles,
+accueil organisé par mode puis par règle. L’installation et la conservation locale
+restent expliquées en haut ; l’historique est directement accessible au clavier.
+Grille sur tablette/ordinateur, quiz en une colonne, zoom et zones tactiles conservés.
+La banque, les règles de tirage et le stockage des résultats sont inchangés.
+Préparation de publication : `2026-10-02T12:27:35Z`, soit le 02.10.2026 à 14:27 en heure suisse.
+Neuf suites JavaScript et 37 contrôles responsive réussis ; banque de 1 782 questions
+inchangée, release `questions-20261002-2d53e15e`.
+Preuves responsive Chromium et limites :
+`../analyse_gpt/audit_banque/design_site_20261002/rapport.md`.
+
 Version **1.38**, du 02.10.2026, cache `qcm-op001-v138` :
 question `orth-L22-1` (vice / vis) supprimée sur demande, corrigé de `dis-L40-6` enrichi
 pour expliquer la conservation de la négation au discours indirect. Banque unique de
@@ -159,7 +171,7 @@ ni la fin exacte du déploiement Pages. À chaque publication autorisée, rensei
 avec `APP_VERSION` et le nouveau `CACHE` de `sw.js`, puis vérifier les fichiers servis.
 Pour une version locale non publiée, conserver `APP_PUBLISHED_AT: null` : l'interface indique
 « Version locale — non publiée ». Une valeur absente, invalide ou sans fuseau utilise aussi
-ce repli, sans inventer de date. La version 1.38 utilise l'instant fixe indiqué en tête.
+ce repli, sans inventer de date. La version 1.39 utilise l'instant fixe indiqué en tête.
 
 ## Google Drive (facultatif)
 Pour l'envoi automatique des mémos/stats vers Google Drive, renseigne `GOOGLE_CLIENT_ID`
@@ -217,5 +229,6 @@ node test_error_profile.js
 node test_adaptive_quiz.js
 node test_navigation.js
 node test_mobile_layout.js
+node test_design.js
 python -m pytest ..\analyse_gpt\test_feedback_import_HEP.py -q
 ```
