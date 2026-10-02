@@ -14,6 +14,91 @@
 
   let state = { view: 'home' };
 
+  // One real browser-history entry per screen, not per answer. Keep the live
+  // quiz objects in memory so Back/Forward never draws or records them again.
+  const navigationSnapshots = new Map();
+  const navigationOwner = 'qcm-' + Date.now() + '-' + Math.random().toString(36).slice(2);
+  let navigationSequence = 0;
+  let navigationEntry = null;
+
+  function navigationMarker(nextState, index, previousView) {
+    return {
+      owner: navigationOwner,
+      id: ++navigationSequence,
+      index,
+      view: nextState.view,
+      previousView: previousView || 'home',
+    };
+  }
+
+  function rememberNavigation() {
+    if (!navigationEntry) return;
+    navigationSnapshots.set(navigationEntry.id, { state, scrollY: window.scrollY || 0 });
+  }
+
+  function navigate(nextState, replace) {
+    rememberNavigation();
+    const marker = navigationMarker(
+      nextState,
+      replace ? navigationEntry.index : navigationEntry.index + 1,
+      replace ? navigationEntry.previousView : state.view
+    );
+    const historyState = Object.assign({}, window.history.state, { qcmNavigation: marker });
+    window.history[replace ? 'replaceState' : 'pushState'](historyState, '');
+    navigationEntry = marker;
+    state = nextState;
+    navigationSnapshots.set(marker.id, { state, scrollY: 0 });
+    render();
+    window.scrollTo(0, 0);
+  }
+
+  function navigateBack() {
+    if (navigationEntry.index > 0) window.history.back();
+    else navigate({ view: 'home' }, true);
+  }
+
+  function navigateHome() {
+    if (navigationEntry.index > 0) window.history.go(-navigationEntry.index);
+    else navigate({ view: 'home' }, true);
+  }
+
+  function navigationBackLabel() {
+    const labels = { home: 'Accueil', errors: 'Mes erreurs', result: 'Résultat',
+      history: 'Historique', pending: 'Séances à synchroniser' };
+    return '← ' + (labels[navigationEntry.previousView] || 'Retour');
+  }
+
+  function initializeNavigation() {
+    navigationEntry = navigationMarker(state, 0);
+    window.history.replaceState(Object.assign({}, window.history.state,
+      { qcmNavigation: navigationEntry }), '');
+    rememberNavigation();
+    if ('scrollRestoration' in window.history) window.history.scrollRestoration = 'manual';
+    window.addEventListener('popstate', (event) => {
+      rememberNavigation();
+      const marker = event.state && event.state.qcmNavigation;
+      const snapshot = marker && marker.owner === navigationOwner
+        && navigationSnapshots.get(marker.id);
+      if (!snapshot) return; // External/older document entries remain browser-owned.
+      navigationEntry = marker;
+      state = snapshot.state;
+      render();
+      window.scrollTo(0, snapshot.scrollY);
+    });
+    window.addEventListener('beforeunload', (event) => {
+      // A same-document Back keeps the quiz; a reload/close can discard it.
+      // Mobile browsers may omit this confirmation, so it is not a save system.
+      if (state.view !== 'quiz') return;
+      const hasUnfinishedData = Object.keys(state.responses).length
+        || Object.values(state.memos).some(memo => memo.trim())
+        || Object.values(state.likes).some(Boolean)
+        || Object.values(state.deletionRequests).some(Boolean);
+      if (!hasUnfinishedData) return;
+      event.preventDefault();
+      event.returnValue = '';
+    });
+  }
+
   function questionContext(question) {
     const stem = String(question.stem || '').trim();
     // A generic instruction accidentally stored as a stem is not a context.
@@ -614,7 +699,7 @@
         el('div', { class: 'rule-name', text: `📤 Séances à synchroniser (${nPending})` }),
         el('div', { class: 'rule-desc', text: 'Sauvegarde tes séances sur ton Drive ou transmets uniquement tes remarques à Maxim.' }),
       ]);
-      pd.addEventListener('click', () => { state = { view: 'pending' }; render(); });
+      pd.addEventListener('click', () => navigate({ view: 'pending' }));
       wrap.appendChild(pd);
     }
 
@@ -642,7 +727,7 @@
           : 'Tableau cumulatif détaillé par mécanisme grammatical.',
       }),
     ]);
-    errorCard.addEventListener('click', () => { state = { view: 'errors' }; render(); });
+    errorCard.addEventListener('click', () => navigate({ view: 'errors' }));
     wrap.appendChild(errorCard);
 
     // Carte « Examen blanc »
@@ -692,7 +777,7 @@
     wrap.appendChild(el('div', { class: 'seen-total', text: `Progression : ${totalSeen.seen}/${totalSeen.total} questions déjà vues` }));
 
     const histLink = el('div', { class: 'footer-link', text: 'Voir l’historique de mes tentatives' });
-    histLink.addEventListener('click', () => { state = { view: 'history' }; render(); });
+    histLink.addEventListener('click', () => navigate({ view: 'history' }));
     wrap.appendChild(histLink);
 
     const resetLink = el('div', { class: 'footer-link', text: 'Réinitialiser les questions vues' });
@@ -741,7 +826,7 @@
     const startedAt = new Date();
     const questions = buildSession(ruleId, mode, mechanismId, detailId, questionIds);
     if (!questions.length) return;
-    state = {
+    navigate({
       view: 'quiz',
       ruleId,
       mechanismId: mechanismId || null,
@@ -762,8 +847,7 @@
       startTime: startedAt.getTime(),
       quizId: makeTraceId('q', startedAt),
       sessionId: makeTraceId('s', startedAt),
-    };
-    render();
+    });
   }
   function startReview() { startQuiz('review', 'learn'); }
   function startExam() { startQuiz('exam', 'exam'); }
@@ -811,10 +895,10 @@
     const wrap = el('div', {});
 
     const nav = el('div', { class: 'top-nav' }, [
-      el('button', { class: 'back', text: '← Accueil' }),
+      el('button', { class: 'back', text: navigationBackLabel() }),
       el('span', { class: 'version-tag', text: APP_VERSION ? 'v' + APP_VERSION : '' }),
     ]);
-    nav.querySelector('.back').addEventListener('click', () => { state = { view: 'home' }; render(); });
+    nav.querySelector('.back').addEventListener('click', navigateBack);
     wrap.appendChild(nav);
 
     const alreadySeen = state.seenAtStart && state.seenAtStart.has(q.id);
@@ -1094,8 +1178,8 @@
       feedback: entry.feedback,
       log: entry.log.map((item) => ({ id: item.id, memo: item.memo, like: item.like, deletionRequested: item.deletionRequested })),
     });
-    state = { view: 'result', entry };
-    render();
+    // Replace the completed quiz: revisiting results must never finish it twice.
+    navigate({ view: 'result', entry }, true);
   }
 
   // Construit le texte Markdown envoyé/exporté en fin de séance :
@@ -1363,7 +1447,7 @@
       entry.sourceQuestionIds
     ));
     const home = el('button', { class: 'btn secondary', text: 'Accueil' });
-    home.addEventListener('click', () => { state = { view: 'home' }; render(); });
+    home.addEventListener('click', navigateHome);
     row.appendChild(retry);
     row.appendChild(home);
     wrap.appendChild(row);
@@ -1374,10 +1458,10 @@
   function renderErrorDashboard() {
     const wrap = el('div', {});
     const nav = el('div', { class: 'top-nav' }, [
-      el('button', { class: 'back', text: '← Accueil' }),
+      el('button', { class: 'back', text: navigationBackLabel() }),
       el('span', { class: 'version-tag', text: APP_VERSION ? 'v' + APP_VERSION : '' }),
     ]);
-    nav.querySelector('.back').addEventListener('click', () => { state = { view: 'home' }; render(); });
+    nav.querySelector('.back').addEventListener('click', navigateBack);
     wrap.appendChild(nav);
 
     wrap.appendChild(el('div', { class: 'header' }, [
@@ -1434,7 +1518,7 @@
     ]);
     if (syncCount) {
       const syncButton = el('button', { class: 'btn secondary', text: 'Synchroniser maintenant' });
-      syncButton.addEventListener('click', () => { state = { view: 'pending' }; render(); });
+      syncButton.addEventListener('click', () => navigate({ view: 'pending' }));
       syncBox.appendChild(syncButton);
     }
     wrap.appendChild(syncBox);
@@ -1564,10 +1648,10 @@
   function renderHistory() {
     const wrap = el('div', {});
     const nav = el('div', { class: 'top-nav' }, [
-      el('button', { class: 'back', text: '← Accueil' }),
+      el('button', { class: 'back', text: navigationBackLabel() }),
       el('span', { class: 'version-tag', text: APP_VERSION ? 'v' + APP_VERSION : '' }),
     ]);
-    nav.querySelector('.back').addEventListener('click', () => { state = { view: 'home' }; render(); });
+    nav.querySelector('.back').addEventListener('click', navigateBack);
     wrap.appendChild(nav);
 
     wrap.appendChild(el('div', { class: 'header' }, [
@@ -1599,10 +1683,10 @@
   function renderPending() {
     const wrap = el('div', {});
     const nav = el('div', { class: 'top-nav' }, [
-      el('button', { class: 'back', text: '← Accueil' }),
+      el('button', { class: 'back', text: navigationBackLabel() }),
       el('span', { class: 'version-tag', text: APP_VERSION ? 'v' + APP_VERSION : '' }),
     ]);
-    nav.querySelector('.back').addEventListener('click', () => { state = { view: 'home' }; render(); });
+    nav.querySelector('.back').addEventListener('click', navigateBack);
     wrap.appendChild(nav);
 
     wrap.appendChild(el('div', { class: 'header' }, [
@@ -1645,6 +1729,7 @@
     if (DRIVE.configured()) {
       const driveBtn = el('button', { class: 'btn secondary', text: 'Sauvegarder sur mon Google Drive' });
       driveBtn.addEventListener('click', async () => {
+        const pendingScreen = state;
         driveBtn.disabled = true;
         status.textContent = 'Connexion à Google Drive…';
         try {
@@ -1654,7 +1739,7 @@
           const r = await DRIVE.upload(combinedFeedbackFilename(), combined);
           status.textContent = '✅ Sauvegardé sur ton propre Drive : ' + r.name;
           clearPending();
-          setTimeout(() => { state = { view: 'home' }; render(); }, 900);
+          setTimeout(() => { if (state === pendingScreen) navigateHome(); }, 900);
         } catch (e) {
           status.textContent = '❌ ' + (e.message || 'Échec de l\'envoi.') + ' — utilise Copier ou Télécharger.';
           driveBtn.disabled = false;
@@ -1695,8 +1780,7 @@
     clearLink.addEventListener('click', () => {
       if (confirm('Supprimer ces séances en attente sans les envoyer ? Elles resteront visibles dans le tableau local, mais ne pèseront pas sur la génération.')) {
         clearPending();
-        state = { view: 'home' };
-        render();
+        navigateHome();
       }
     });
     wrap.appendChild(clearLink);
@@ -1704,6 +1788,7 @@
     return wrap;
   }
 
+  initializeNavigation();
   render();
 
   if ('serviceWorker' in navigator) {

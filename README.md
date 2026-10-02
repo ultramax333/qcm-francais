@@ -1,5 +1,18 @@
 # QCM Français — OP001 (HEP Vaud)
 
+Version **1.37 locale, non publiée**, du 02.10.2026, cache `qcm-op001-v137` :
+navigation Retour/Avancer entre écrans, reprise de la même séance pendant la visite,
+retour des questions sources vers « Mes erreurs » et aucun recomptage des résultats.
+À l'accueil, Retour peut quitter normalement : aucun piège d'historique.
+Zoom autorisé, marges d'encoche sur les quatre côtés, boutons tactiles de 44 px minimum,
+saisie des remarques de 16 px sur mobile et mode paysage autorisé.
+Banque inchangée : 1 783 questions, dont 30 négations, même release.
+Sept suites JavaScript réussies ; essais navigateur aux largeurs 320, 360, 390 et 844 px.
+Ces essais responsive ne sont pas une certification Safari/iPhone ou Android physique.
+Après rechargement ou fermeture, une séance inachevée n'est pas restaurée automatiquement ;
+les séances terminées et statistiques persistées restent conservées. L'avertissement de fermeture
+est un repli du navigateur, non garanti sur mobile. Aucun push/déploiement effectué.
+
 Version **1.36 locale, non publiée**, du 02.10.2026, cache `qcm-op001-v136` :
 29 questions de négation ajoutées après contrôles indépendants, soit 30 dans cette carte et
 1 783 questions / IDs uniques. Les 1 754 anciennes questions sont conservées à l'identique.
@@ -144,7 +157,7 @@ intégration manuelle de `questions.js` rendrait l'identifiant de banque obsolè
 - `error-profile.js` — agrégation cumulative locale, sans dupliquer les séances
   dans la mémoire de génération
 - `adaptive-quiz.js` — tirage par cas grammatical et résultats récents, sans modèle ni serveur
-- `questions.js` — la banque locale active de 1 754 questions
+- `questions.js` — la banque locale active de 1 783 questions
 - `config.js` — configuration (ID client Google Drive)
 - `manifest.json`, `sw.js`, `icon.svg` — installation PWA / hors-ligne
 - `static-server.ps1` — serveur statique local (développement, Windows)
@@ -155,5 +168,7 @@ intégration manuelle de `questions.js` rendrait l'identifiant de banque obsolè
 node test_pedagogy.js
 node test_error_profile.js
 node test_adaptive_quiz.js
+node test_navigation.js
+node test_mobile_layout.js
 python -m pytest ..\analyse_gpt\test_feedback_import_HEP.py -q
 ```
