@@ -17,9 +17,9 @@
 // n'est PAS exposé sur window, ce qui casserait les gardes `window.CONFIG`.
 
 window.CONFIG = {
-  APP_VERSION: '1.39',
-  APP_PUBLISHED_AT: '2026-10-02T12:27:35Z',
-  BANK_RELEASE: 'questions-20261002-2d53e15e',
+  APP_VERSION: '1.40',
+  APP_PUBLISHED_AT: '2026-10-02T19:41:46Z',
+  BANK_RELEASE: 'questions-20261002-6a71b2f4',
   GOOGLE_CLIENT_ID: '200483680701-h963rk5t3l7v5j64ojgg2k410av8l9ft.apps.googleusercontent.com',
   DRIVE_FOLDER_NAME: 'QCM Français OP001',
   FEEDBACK_FORM: {

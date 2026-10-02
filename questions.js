@@ -595,14 +595,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Les quatre sont correctes : « Quant à » (1), « censée » = supposée (2), « Quoique » = bien que + ellipse (3), « ne » explétif dans la locution figée « il n'y paraît » (4). Réponse : Toutes.",
+    "explanation": "Règle : Chaque phrase porte un mot ou une locution différent ; leurs graphies attestées doivent être contrôlées une par une.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : On contrôle chaque tournure séparément. Quant à signifie en ce qui concerne. Censée signifie supposée et s'accorde avec elle, au féminin singulier. Quoique fatigué signifie bien que fatigué : la locution s'écrit ici en un mot. Dans plus qu'il n'y paraît, le ne est explétif, permis avec la comparaison ; il ne transforme pas l'énoncé en négation. Chaque phrase est donc correctement écrite.\nDonc : Les quatre propositions sont correctes : réponseT.",
     "why": {
-      "1": "Correcte : « Quant à » (en ce qui concerne).",
-      "2": "Correcte : « censée » (= supposée), accordé au féminin.",
-      "3": "Correcte : « Quoique fatigué » (= bien que fatigué).",
-      "4": "Correcte : la locution impersonnelle figée est « plus qu'il n'y paraît ».",
-      "A": "Les quatre phrases sont correctes, donc « Aucune » est faux.",
-      "T": "Correct : aucune ne contient de faute."
+      "1": "Correct : quant à signifie en ce qui concerne ; quand serait un mot de temps et ne convient pas dans cette locution.",
+      "2": "Correct : censée signifie supposée et porte le féminin singulier correspondant à elle.",
+      "3": "Correct : quoique signifie bien que ; dans quoique fatigué, l'ellipse du verbe est admise.",
+      "4": "Correct : plus qu'il n'y paraît emploie un ne explétif admis avec la comparaison ; on pourrait aussi ne pas le mettre.",
+      "A": "Les quatre phrases sont correctes : « Aucune » est exclu.",
+      "T": "Correct : les graphies et constructions des propositions 1 à 4 sont toutes admises."
     },
     "gen": {
       "model": "Opus 4.8",
@@ -612,7 +612,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "graphie_composee",
+      "mechanism_id": "graphies_lexicales_multiples",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -620,8 +620,23 @@ const QUESTIONS = [
         "2": null,
         "3": null,
         "4": null
-      }
-    }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "qu_en_quant_quand",
+          "detail_id": "core",
+          "tense_id": null
+        },
+        {
+          "family": "homophones_grammaticaux",
+          "mechanism_id": "quoique_quoi_que",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
+    },
+    "progress_revision": 1
   },
   {
     "id": "orth-10",
@@ -1984,14 +1999,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "« la chaire » (le poste de professeur) ; « faire bonne chère » (bien manger — avec un accent grave). « chair » = la matière du corps.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : Le premier blanc désigne un poste d'enseignement universitaire : la chaire d'histoire, avec -aire. Le second appartient à la locution faire bonne chère, avec accent grave : bien manger. Chair, sans e final, désigne notamment la matière du corps et ne convient dans aucun de ces deux emplois. Il faut reconnaître les mots et leur sens, pas seulement poser un accent.\nDonc : La paire « chaire / chère » convient : réponse 3.",
     "why": {
-      "1": "1er « chère » fautif : le poste universitaire = chaire.",
-      "2": "2e « chair » fautif : la locution est « faire bonne chère ».",
-      "3": "Correct : chaire (poste) + bonne chère (locution).",
-      "4": "1er « chair » fautif : le corps, pas le poste.",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Les options 1, 2 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "Chère appartient à faire bonne chère, pas au poste universitaire ; chair ne convient pas dans la locution du second blanc.",
+      "2": "Chaire convient pour le poste universitaire. Le second mot doit être chère, non chair, dans faire bonne chère.",
+      "3": "Correct : la chaire d'histoire nomme le poste ; faire bonne chère est la locution signifiant bien manger.",
+      "4": "Le second chère convient, mais chair ne nomme pas un poste universitaire : il faut chaire.",
+      "A": "La paire 3 est correcte : « Aucune » est exclu.",
+      "T": "Les paires 1, 2 et 4 confondent au moins un de ces mots : « Toutes » est exclu."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -2001,7 +2016,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "accentuation",
+      "mechanism_id": "graphie_lexicale_usage",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -2010,7 +2025,8 @@ const QUESTIONS = [
         "3": null,
         "4": "UNK"
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "orth-34",
@@ -4785,14 +4801,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "« douter que » (incertitude) → subjonctif « arrive » ; « SE douter que » (= être quasi sûr) → INDICATIF « a ». Deux verbes proches, deux modes opposés.",
+    "explanation": "Règle : Analyse chaque subordonnée séparément : déclencheur, valeur de sens, puis mode et temps.\nMéthode : 1. Repère la construction qui introduit la proposition. 2. Vérifie le sens et le mode réellement imposé ou permis par cette construction. 3. Choisis l’indicatif lorsque la construction présente ici le fait comme constaté, ou le subjonctif lorsqu’elle l’exige pour un fait voulu, évalué ou non affirmé. 4. Conjugue ensuite le verbe au temps et à la personne demandés.\nDans cette phrase : on sépare les deux propositions introduites par que. Dans « Je doute qu’il… », douter exprime l’incertitude : l’arrivée n’est pas affirmée, ce qui appelle ici le subjonctif. À la troisième personne du singulier, le subjonctif présent d’arriver est « arrive ». Sa forme ressemble à celle de l’indicatif présent, mais c’est bien la construction je doute que qui permet d’identifier son mode. Dans « je me doute qu’il… », se douter signifie au contraire tenir le fait pour probable : le locuteur pense qu’une excuse existe. Cette construction affirmative appelle l’indicatif ; avoir au présent avec il donne « a », et non le subjonctif « ait ». Le petit mot me change donc le sens et le mode du second verbe.\nDonc : il faut « arrive / a », soit la réponse 2.",
     "why": {
-      "1": "Les deux inversés (indicatif après douter, subjonctif après se douter).",
-      "2": "Correct : subjonctif (douter que) + indicatif (se douter que).",
-      "3": "2e « ait » fautif : « se douter que » garde l'indicatif.",
-      "4": "1er « arrivera » fautif : « douter que » exige le subjonctif.",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      "T": "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "`arrivera` est un futur de l’indicatif alors que je doute que appelle ici le subjonctif « arrive ». Puis `ait` est un subjonctif après je me doute que, qui appelle l’indicatif « a ». On attend « arrive / a ».",
+      "2": "« Arrive » est le subjonctif présent requis par l’incertitude de je doute que ; « a » est l’indicatif présent requis par le sens affirmatif de je me doute que. Les deux choix respectent leur construction.",
+      "3": "Le premier « arrive » convient après je doute que. En revanche, `ait` ne respecte pas le mode de je me doute que : cette supposition affirmée demande l’indicatif « a ». Il faut « arrive / a ».",
+      "4": "Le second « a » convient après je me doute que, mais `arrivera` affirme l’arrivée à l’indicatif malgré je doute que. Le premier blanc exige le subjonctif « arrive » : « arrive / a ».",
+      "A": "1 option numérotée correcte sur 4, la 2 : Aucune est exclu.",
+      "T": "3 options numérotées fautives sur 4, les 1, 3 et 4 : Toutes est exclu."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -4810,8 +4826,18 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-0001",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-02T19:19:09Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "mode-21",
@@ -17152,7 +17178,7 @@ const QUESTIONS = [
     "id": "eleves-4",
     "rule": "eleves",
     "type": "sentences",
-    "instruction": "Quelle(s) phrase(s) d'élève est/sont correctement écrite(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -17180,14 +17206,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Les quatre sont correctes malgré leur allure suspecte : « après que » + indicatif, « quatre-vingts » avec s (multiplié, non suivi d'un nombre), « succédé » invariable, « Vas-y » avec s de liaison. Réponse : Toutes.",
+    "explanation": "Règle : Après que présente le fait comme réalisé et commande l’indicatif, au temps exigé par l’ordre des actions.\nMéthode : 1. Repère la construction qui introduit la proposition. 2. Vérifie le sens et le mode réellement imposé ou permis par cette construction. 3. Choisis l’indicatif lorsque la construction présente ici le fait comme constaté, ou le subjonctif lorsqu’elle l’exige pour un fait voulu, évalué ou non affirmé. 4. Conjugue ensuite le verbe au temps et à la personne demandés.\nDans cette phrase : on vérifie les quatre productions séparément. 1) « Après que » introduit la remise de la copie comme un fait réalisé avant la sortie : on garde l’indicatif. « A rendu » est un passé composé de l’indicatif et situe cette première action avant « est sorti ». 2) Dans « quatre-vingts élèves », vingt est multiplié par quatre et n’est suivi d’aucun autre nombre : il prend s. Élèves est un nom, pas un nombre supplémentaire. 3) « Se sont succédé » est un pronominal réciproque : les personnes succèdent les unes aux autres. Succéder à qui ? Aux autres ; se est donc COI, et aucun COD ne commande d’accord. Succédé reste invariable malgré l’auxiliaire être. 4) À l’impératif, on écrit normalement va, mais devant le pronom y on ajoute un s pour la liaison et un trait d’union : « Vas-y ».\nDonc : les quatre phrases satisfont chacune leur règle ; la réponse est T, Toutes.",
     "why": {
-      "1": "Correcte : après que + indicatif (a rendu).",
-      "2": "Correcte : quatre-vingts prend un s ici.",
-      "3": "Correcte : se succéder → invariable.",
-      "4": "Correcte : « va » reprend son s devant « y ».",
-      "A": "Les quatre sont correctes.",
-      "T": "Correct : aucune faute — malgré les apparences."
+      "1": "Après que présente ici une action réalisée ; « a rendu » est à l’indicatif, au passé composé. La remise de la copie précède la sortie exprimée par « est sorti ».",
+      "2": "Dans « quatre-vingts élèves », vingt est multiplié et ne précède aucun autre nombre. Le nom élèves ne supprime pas le s de quatre-vingts.",
+      "3": "Le pronominal réciproque se succéder se reconstruit en succéder à quelqu’un : se est COI, sans COD à accorder. Le participe « succédé » reste donc invariable.",
+      "4": "« Vas-y » est l’impératif va suivi du pronom y : cette position exige le s de liaison et le trait d’union, tous deux présents.",
+      "A": "4 options numérotées correctes sur 4 : Aucune ne convient pas.",
+      "T": "L’indicatif après après que, le s de quatre-vingts, l’invariabilité de succédé et le s de Vas-y sont chacun justifiés. Les quatre phrases sont donc correctes : T."
     },
     "gen": {
       "model": "Fable 5",
@@ -17225,8 +17251,18 @@ const QUESTIONS = [
           "detail_id": "affirmatif",
           "tense_id": "imperatif_present"
         }
-      ]
-    }
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20261002-0001",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-02T19:19:09Z"
+        }
+      }
+    },
+    "progress_revision": 1
   },
   {
     "id": "eleves-5",
@@ -17814,7 +17850,7 @@ const QUESTIONS = [
     "id": "eleves-13",
     "rule": "eleves",
     "type": "sentences",
-    "instruction": "Quelle(s) phrase(s) d'élève est/sont correctement écrite(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -17842,14 +17878,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Toutes correctes : « se faire + infinitif » invariable (1), COD « les » antéposé → regardées (2), « se rendre compte » invariable (3), « en » → participe invariable (4). Réponse : Toutes.",
+    "explanation": "Règle : Le participe fait suivi immédiatement d’un infinitif reste invariable.\nMéthode : 1. Repère la forme fait ou faite, faits, faites. 2. Vérifie qu’elle est suivie immédiatement d’un infinitif. 3. Dans cette construction, garde fait invariable, même si un COD est placé avant.\nDans cette phrase : chaque participe relève d’un cas différent. 1) Dans « s’est fait critiquer », on repère fait immédiatement suivi de l’infinitif critiquer. C’est le cas faire + infinitif : fait reste invariable, même avec le sujet féminin elle et la forme pronominale. 2) Dans « il ne les a même pas regardées », l’auxiliaire est avoir. Il a regardé quoi ? Les publicités, reprises par le COD les placé avant a regardées. Le participe s’accorde avec ce COD féminin pluriel : regardées. 3) « S’est rendu compte » est un pronominal réfléchi que l’on analyse avec rendre compte à soi-même. On a rendu quoi ? Compte, COD placé après rendu ; à qui ? À soi-même, repris par se, COI. Aucun COD placé avant ne commande d’accord : rendu reste invariable. 4) Dans « il en a supprimé des dizaines », le participe est employé avec avoir. Il a supprimé quoi ? Des dizaines de messages. Le groupe de quantité « des dizaines » suit le participe, tandis qu’en reprend des messages. Cette construction ne donne pas d’accord avec les messages annoncés au début : supprimé reste invariable.\nDonc : les quatre accords sont justifiés ; la réponse est T, Toutes.",
     "why": {
-      "1": "Correcte : fait + infinitif, invariable.",
-      "2": "Correcte : les (= les publicités) antéposé → regardées.",
-      "3": "Correcte : locution figée, rendu invariable.",
-      "4": "Correcte : COD « en » → supprimé invariable.",
-      "A": "Les quatre sont correctes.",
-      "T": "Correct : aucune faute."
+      "1": "« Fait » est immédiatement suivi de l’infinitif critiquer : la règle spéciale faire + infinitif impose l’invariabilité. Le féminin elle ne change donc pas fait en faite.",
+      "2": "Avec avoir, on cherche le COD : il a regardé quoi ? Les publicités, reprises par les avant le participe. Ce COD féminin pluriel justifie « regardées ».",
+      "3": "Dans ce pronominal réfléchi, se représente à soi-même et est COI. Le COD compte suit le participe : il n’y a pas de COD antéposé qui ferait accorder « rendu ».",
+      "4": "Le participe est employé avec avoir ; « des dizaines », qui indique la quantité supprimée, vient après lui, et en reprend des messages. Aucun accord avec messages n’est requis : « supprimé » reste invariable.",
+      "A": "4 options numérotées correctes sur 4 : Aucune est exclu.",
+      "T": "Fait obéit à l’invariabilité devant l’infinitif, regardées s’accorde avec les antéposé, rendu n’a pas de COD antéposé et supprimé ne s’accorde pas avec les messages repris par en. Les quatre phrases conviennent : T."
     },
     "gen": {
       "model": "Fable 5",
@@ -17887,8 +17923,18 @@ const QUESTIONS = [
           "detail_id": "core",
           "tense_id": null
         }
-      ]
-    }
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20261002-0001",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-02T19:28:14Z"
+        }
+      }
+    },
+    "progress_revision": 1
   },
   {
     "id": "eleves-14",
@@ -19089,7 +19135,7 @@ const QUESTIONS = [
     "id": "eleves-30",
     "rule": "eleves",
     "type": "sentences",
-    "instruction": "Quelle phrase d'élève est correctement écrite ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -19117,14 +19163,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Quatre fautes de terminaison : « subI » (participe sans t), « S'est déroulé », « faiT », « remisE » (la coupe). Réponse : Aucune.",
+    "explanation": "Règle : Certains verbes ont un participe passé irrégulier qu’il faut distinguer des formes construites par analogie.\nMéthode : 1. Retrouve l’infinitif du verbe. 2. Relève le mode, le temps et la personne demandés par la phrase. 3. Choisis le radical correspondant, régulier ou irrégulier. 4. Ajoute la terminaison correcte et vérifie la forme entière.\nDans cette phrase : on retrouve le verbe et sa construction dans chaque proposition. 1) « Ils ont subit » contient avoir au présent, qui doit être suivi du participe passé de subir pour former le passé composé. Ce participe s’écrit subi, sans t ; subit est notamment une forme du présent. Avec avoir, le COD « une lourde défaite » vient après, donc on garde subi. 2) Le verbe est se dérouler, employé au passé composé : le pronom se s’élide devant est, ce qui donne « s’est déroulé ». « C’est » correspond à ce est et ne permet pas de construire ce verbe pronominal. 3) Après « ont », il faut le participe passé irrégulier de faire : fait, et non fais. Avec avoir, le sujet ils ne fait pas accorder le participe. 4) « La coupe leur a été remis » est une construction passive : le participe remis est employé avec être, ici sous la forme a été. Il s’accorde avec le sujet « la coupe », féminin singulier : remise. Leur répond à la question à qui ? et ne commande pas cet accord.\nDonc : les quatre phrases contiennent une faute ; la réponse est A, Aucune.",
     "why": {
-      "1": "« subit » : participe passé → subi (subit = présent).",
-      "2": "« c'est déroulé » : pronominal → s'est déroulé.",
-      "3": "« fais » : participe → fait.",
-      "4": "« remis » : la coupe → remise.",
-      "A": "Correct : chaque phrase contient une faute.",
-      "T": "Aucune n'est correcte."
+      "1": "`ont subit` emploie une forme avec t au lieu du participe passé de subir. Après l’auxiliaire avoir, on attend « ont subi » ; le COD une lourde défaite est placé après et n’entraîne pas d’accord.",
+      "2": "`c’est déroulé` ne construit pas le verbe pronominal se dérouler : il faut le pronom se élidé devant est, soit « Le tournoi s’est déroulé sans le moindre incident. »",
+      "3": "`ont tous fais` utilise fais au lieu du participe passé irrégulier de faire, qui s’écrit fait. Avec avoir, ils ne commande pas d’accord : « Ils ont tous fait de leur mieux ».",
+      "4": "`a été remis` contient un participe passé employé avec être dans la construction passive. Le sujet la coupe est féminin singulier ; il faut « La coupe leur a été remise », sans accorder avec le COI leur.",
+      "A": "La première phrase exige subi, la deuxième s’est, la troisième fait et la quatrième remise. Chaque option numérotée contient donc une faute ; A est la réponse attendue.",
+      "T": "0 phrase correcte sur 4 : Toutes ne convient pas."
     },
     "gen": {
       "model": "Fable 5",
@@ -19156,8 +19202,18 @@ const QUESTIONS = [
           "detail_id": "core",
           "tense_id": null
         }
-      ]
-    }
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20261002-0001",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-02T19:19:09Z"
+        }
+      }
+    },
+    "progress_revision": 1
   },
   {
     "id": "eleves-31",
@@ -25676,14 +25732,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "« en fait » = en réalité (correction de l'apparence). « en effet » CONFIRME — c'est le piège classique.",
+    "explanation": "Règle : Le connecteur met deux faits en contraste sans exprimer la cause, la conséquence ou la concession.\nMéthode : 1. Détermine le lien logique entre les deux idées. 2. Nomme ce lien simplement : cause, conséquence, opposition, concession, addition ou explication. 3. Essaie le connecteur dans la phrase et vérifie qu’il exprime bien ce lien. 4. Contrôle aussi la construction et la ponctuation qui l’accompagnent.\nDans cette phrase : Le premier fait est une apparence : il paraissait ravi. Le second révèle une réalité opposée : il cherchait déjà à partir. En fait signifie ici en réalité et rectifie l'impression initiale. En effet la confirmerait, alors que ainsi et c'est pourquoi introduiraient une conséquence. Le lien voulu est donc un contraste entre l'apparence et la réalité.\nDonc : Le connecteur « en fait » convient : réponse 2.",
     "why": {
-      "1": "« en effet » confirmerait, or la suite contredit.",
-      "2": "Correct : la réalité contredit l'apparence.",
-      "3": "« ainsi » : conséquence, contresens.",
-      "4": "« c'est pourquoi » : conséquence, contresens.",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      "T": "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "En effet annoncerait une confirmation ou une explication de sa satisfaction apparente ; chercher à partir contredit cette impression.",
+      "2": "Correct : en fait introduit la réalité qui rectifie l'apparence d'un homme ravi du poste.",
+      "3": "Ainsi présenterait le départ comme une conséquence ou une illustration de sa satisfaction, pas comme sa rectification.",
+      "4": "C'est pourquoi ferait de sa satisfaction apparente la cause de sa recherche d'un départ ; ce n'est pas le lien voulu.",
+      "A": "Le connecteur 2 convient : « Aucune » est exclu.",
+      "T": "Les connecteurs 1, 3 et 4 n'expriment pas la rectification attendue : « Toutes » est exclu."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -25693,7 +25749,7 @@ const QUESTIONS = [
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "explication_confirmation",
+      "mechanism_id": "opposition",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -25702,7 +25758,8 @@ const QUESTIONS = [
         "3": "UNK",
         "4": "UNK"
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "con-5",
@@ -30880,7 +30937,7 @@ const QUESTIONS = [
     "id": "nb-10",
     "rule": "nombres",
     "type": "blank",
-    "stem": "Cette charte a huit ___ ans ; elle fut signée il y a huit ___ trois ans exactement.",
+    "stem": "Cette charte a environ huit ___ ans ; elle fut signée il y a huit ___ trois ans exactement.",
     "options": [
       {
         "key": "1",
@@ -30908,14 +30965,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "« huit cents ans » (multiplié, final → s) ; « huit cent trois » (suivi d'un nombre → sans s).",
+    "explanation": "Règle : Cent et vingt prennent s seulement s’ils sont multipliés et terminaux ; mille reste toujours invariable.\nMéthode : 1. Décompose le nombre en éléments simples. 2. Repère les éléments qui peuvent varier, notamment vingt et cent. 3. Applique les traits d’union et les accords prévus par la règle précise. 4. Relis le nombre entier pour vérifier sa valeur.\nDans cette phrase : La charte a environ huit cents ans : dans ce premier nombre, cent est multiplié par huit et termine le nombre, donc il prend s. L'âge exact est huit cent trois ans : cent est toujours multiplié, mais suivi de trois, donc il reste sans s. Le nom ans ne compte pas comme un autre élément du nombre. L'approximation de 800 ans est désormais compatible avec les 803 ans exacts.\nDonc : Il faut « cents / cent » : réponse 2.",
     "why": {
-      "1": "Inversé.",
-      "2": "Correct : cents final / cent suivi.",
-      "3": "2e « cents » fautif devant « trois ».",
-      "4": "1er « cent » fautif : final → s.",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      "T": "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "Le premier cent doit prendre s dans huit cents ; le second doit rester sans s devant trois. La paire inverse les deux accords.",
+      "2": "Correct : huit cents est multiplié et terminal ; huit cent trois est suivi d'un autre élément numérique.",
+      "3": "Le premier cents convient, mais le second ne prend pas s : il est suivi de trois.",
+      "4": "Le second cent convient devant trois, mais le premier doit prendre s puisqu'il termine huit cents.",
+      "A": "La paire 2 convient : « Aucune » est exclu.",
+      "T": "Les paires 1, 3 et 4 contiennent au moins une erreur d'accord de cent : « Toutes » est exclu."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -30934,7 +30991,8 @@ const QUESTIONS = [
         "3": "UNK",
         "4": "UNK"
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "voc-1",
@@ -32805,7 +32863,7 @@ const QUESTIONS = [
       "thinking": "moyen",
       "tracked": true
     },
-    "stem": "Elle a réorganisé tout le service sans que personne ne s'en ___.",
+    "stem": "Elle a réorganisé tout le service sans que personne s'en ___.",
     "options": [
       {
         "key": "1",
@@ -32833,14 +32891,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "« sans que » impose le subjonctif : « aperçoive » (le « ne » est explétif).",
+    "explanation": "Règle : Bien que, quoique ou sans que présentent un fait concédé ou écarté et commandent le subjonctif.\nMéthode : 1. Repère la construction qui introduit la proposition. 2. Vérifie le sens et le mode réellement imposé ou permis par cette construction. 3. Choisis l’indicatif lorsque la construction présente ici le fait comme constaté, ou le subjonctif lorsqu’elle l’exige pour un fait voulu, évalué ou non affirmé. 4. Conjugue ensuite le verbe au temps et à la personne demandés.\nDans cette phrase : La construction est « sans que personne s'en aperçoive » : sans que écarte le fait de s'apercevoir de la réorganisation et exige le subjonctif. Avec personne, on prend la troisième personne du singulier : aperçoive. On n'ajoute pas ne ici : sans exprime déjà le sens négatif et la principale est affirmative.\nDonc : Il faut « aperçoive » : réponse 3.",
     "why": {
-      "1": "« aperçoit » (indicatif) fautif après « sans que ».",
-      "2": "« apercevait » (imparfait) fautif.",
-      "3": "Correct : sans que + subjonctif.",
-      "4": "« apercevra » (futur) fautif.",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Les options 1, 2 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "« Aperçoit » est au présent de l'indicatif ; « sans que » exige ici le subjonctif.",
+      "2": "« Apercevait » est à l'imparfait de l'indicatif ; ce n'est pas le mode exigé après « sans que ».",
+      "3": "Correct : « sans que personne s'en aperçoive » emploie le subjonctif présent à la troisième personne du singulier.",
+      "4": "« Apercevra » est au futur de l'indicatif, non au subjonctif demandé.",
+      "A": "La forme 3 complète correctement la phrase : « Aucune » est exclu.",
+      "T": "Les formes 1, 2 et 4 sont à l'indicatif : « Toutes » est exclu."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -32854,7 +32912,8 @@ const QUESTIONS = [
         "3": null,
         "4": "UNK"
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "part-41",
@@ -39770,19 +39829,19 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Le pronom « y » reprend « à ces garanties » ; « en » reprend « de leur efficacité ».",
+    "explanation": "Règle : Y reprend généralement un lieu ou un complément de chose introduit par à.\nMéthode : 1. Repère le mot ou le groupe repris par le pronom. 2. Trouve la fonction du pronom dans la nouvelle phrase. 3. Choisis la forme correspondant à cette fonction et à la préposition éventuelle. 4. Vérifie sa place et les accords nécessaires.\nDans cette phrase : Le premier verbe est tenir à ces garanties : le complément de chose introduit par à se reprend par y, d'où il y tient. Le second est douter de leur efficacité : le complément introduit par de se reprend par en, d'où tout en en doutant. Le premier en du second groupe introduit le gérondif ; le second est le pronom. On choisit chaque reprise d'après le régime de son propre verbe, pas d'après un ordre de deux pronoms devant un même verbe.\nDonc : La paire « y / en » convient : réponse 1.",
     "why": {
-      "1": "Correct : « y tenir » et « en douter ».",
-      "2": "Les deux pronoms sont intervertis.",
-      "3": "« Tenir à » exige une reprise par « y », non par un pronom direct.",
-      "4": "« Douter de » exige une reprise par « en », non par « les ».",
-      "A": "L’option 1 est correcte.",
-      "T": "Les options 2, 3 et 4 comportent une erreur de reprise."
+      "1": "Correct : tenir à ces garanties donne y tenir ; douter de leur efficacité donne en douter.",
+      "2": "Les reprises sont inversées : à ces garanties demande y et de leur efficacité demande en.",
+      "3": "En convient pour douter de leur efficacité, mais les serait direct : tenir à ces garanties demande y.",
+      "4": "Y convient pour tenir à ces garanties, mais les serait direct : douter de leur efficacité demande en.",
+      "A": "La paire 1 est correcte : « Aucune » est exclu.",
+      "T": "Les paires 2, 3 et 4 emploient au moins un pronom incompatible avec le régime de son verbe : « Toutes » est exclu."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "pronoms_reprise",
-      "mechanism_id": "ordre_pronoms_complements",
+      "mechanism_id": "lieu_ou_a_y",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -39790,8 +39849,17 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
-      }
-    }
+      },
+      "additional_rule_paths": [
+        {
+          "family": "pronoms_reprise",
+          "mechanism_id": "complement_de_en",
+          "detail_id": "core",
+          "tense_id": null
+        }
+      ]
+    },
+    "progress_revision": 1
   },
   {
     "id": "dis-26",
@@ -46908,14 +46976,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Mille est toujours invariable; cent prend un s seulement lorsqu'il est multiplié et non suivi; vingt prend un s dans quatre-vingts seulement lorsqu'aucun autre numéral ne suit.",
+    "explanation": "Règle : Cent et vingt prennent s seulement s’ils sont multipliés et terminaux ; mille reste toujours invariable.\nMéthode : 1. Décompose le nombre en éléments simples. 2. Repère les éléments qui peuvent varier, notamment vingt et cent. 3. Applique les traits d’union et les accords prévus par la règle précise. 4. Relis le nombre entier pour vérifier sa valeur.\nDans cette phrase : Les deux quantités sont 280 dossiers et 3200 brochures. Dans deux cent quatre-vingts, cent est suivi de quatre-vingts, donc il n'a pas de s ; vingt, multiplié par quatre, termine le nombre et prend s. Dans trois mille deux cents, mille reste invariable ; cent, multiplié par deux, termine le nombre et prend s. Les noms dossiers et brochures ne retirent pas le caractère terminal du dernier élément du nombre.\nDonc : La phrase 4 est correctement orthographiée : réponse 4.",
     "why": {
-      "1": "Le candidat accorde cent lorsqu'il est suivi et laisse vingt invariable alors qu'il termine quatre-vingts; il pluralise aussi mille.",
-      "2": "Le candidat oublie le s de quatre-vingts lorsqu'il est final dans le premier nombre.",
-      "3": "Deux fautes : « deux cents » devrait rester invariable devant « quatre-vingts », et « milles » est impossible, mille ne prenant jamais de s. « quatre-vingts », final devant le nom, est en revanche correct.",
-      "4": "La réponse « L'association a reçu deux cent quatre-vingts dossiers et distribué trois mille deux cents brochures. » est correcte : Mille est toujours invariable; cent prend un s seulement lorsqu'il est multiplié et non suivi; vingt prend un s dans quatre-vingts seulement lorsqu'aucun autre numéral ne suit.",
-      "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
-      "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+      "1": "Dans 280, cent est suivi et reste sans s, alors que quatre-vingts terminal prend s. Dans 3200, mille reste sans s et deux cents terminal prend s : les quatre graphies soulignées par la comparaison sont erronées dans ce choix.",
+      "2": "« Deux cent » et « trois mille deux cents » conviennent. Il manque seulement le s de quatre-vingts, qui termine le premier nombre.",
+      "3": "Quatre-vingts et deux cents terminaux conviennent. En revanche, cent ne prend pas s devant quatre-vingts, et mille reste invariable.",
+      "4": "Correct : « deux cent quatre-vingts dossiers » et « trois mille deux cents brochures » respectent les trois règles d'accord.",
+      "A": "La phrase 4 est correcte : « Aucune » est exclu.",
+      "T": "Les phrases 1, 2 et 3 contiennent au moins une erreur sur cent, vingt ou mille : « Toutes » est exclu."
     },
     "hep": {
       "slot_id": "pond40-40",
@@ -46938,7 +47006,8 @@ const QUESTIONS = [
         "4": null
       }
     },
-    "stem": "Le bilan réunit trois quantités."
+    "stem": "Le bilan réunit deux quantités.",
+    "progress_revision": 1
   },
   {
     "id": "orth-92",
@@ -53760,19 +53829,19 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Quatre tournures correctes malgré leur allure suspecte : « force est de », « d'aucuns » (= certains), « qui plus est » et « en tout état de cause ». Réponse : Toutes.",
+    "explanation": "Règle : Chaque phrase porte un mot ou une locution différent ; leurs graphies attestées doivent être contrôlées une par une.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : Chaque phrase comporte une tournure consacrée différente. Force est de constater se construit sans article devant force. D'aucuns signifie certains et s'emploie avec jugent au pluriel. Qui plus est ajoute une information et peut être encadré de virgules. En tout état de cause introduit une conclusion maintenue quoi qu'il arrive. Rien ne rend ces graphies suspectes fautives.\nDonc : Les quatre phrases sont correctes : réponseT.",
     "why": {
-      "1": "Correcte : « force est de + infinitif » (= on ne peut que), tournure figée sans article.",
-      "2": "Correcte : « d'aucuns » (= certains), pronom archaïque parfaitement vivant à l'écrit.",
-      "3": "Correcte : « qui plus est » (= de surcroît), locution figée.",
-      "4": "Correcte : « en tout état de cause » (= quoi qu'il arrive), formule consacrée.",
-      "A": "Les quatre phrases sont correctes.",
-      "T": "Correct : chacune de ces tournures, souvent soupçonnée à tort, est irréprochable."
+      "1": "Correct : force est de constater est une tournure consacrée sans article devant force ; l'infinitif constater suit de.",
+      "2": "Correct : d'aucuns signifie certains ; le verbe jugent est au pluriel.",
+      "3": "Correct : exigu est la graphie du masculin singulier ; qui plus est ajoute mal aéré et est correctement encadré de virgules.",
+      "4": "Correct : en tout état de cause est la locution attestée pour une conclusion maintenue quelles que soient les circonstances.",
+      "A": "Les quatre phrases sont correctes : « Aucune » est exclu.",
+      "T": "Correct : les tournures force est de, d'aucuns, qui plus est et en tout état de cause sont toutes admises."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "paronyme_lexical",
+      "mechanism_id": "graphies_lexicales_multiples",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -53781,7 +53850,8 @@ const QUESTIONS = [
         "3": null,
         "4": null
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "orth-L24-3",
@@ -59713,7 +59783,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "Depuis ___ de contrôle, on suit le second ___ de scrutin sur les écrans.",
+    "stem": "Depuis ___ de contrôle, on suit ___ de scrutin sur les écrans.",
     "options": [
       {
         "key": "1",
@@ -59741,14 +59811,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "« Tour » change de sens avec le genre : LA tour est l'édifice élevé, LE tour est la rotation ou l'étape (tour de scrutin).",
+    "explanation": "Règle : Certains noms ont une forme identique mais un sens différent au masculin et au féminin ; l’article permet d’identifier le sens attendu.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : Le premier blanc désigne un édifice : on se trouve dans la tour de contrôle, au féminin. Le second désigne une étape du vote : on suit le tour de scrutin, au masculin. En replaçant la paire 2, on obtient « Depuis la tour de contrôle, on suit le tour de scrutin sur les écrans », sans doublon d'article.\nDonc : La paire « la tour / le tour » convient : réponse 2.",
     "why": {
-      "1": "Inverse les deux genres.",
-      "2": "Correct : la tour (édifice) ; le tour (étape du scrutin).",
-      "3": "« le tour de contrôle » : l'édifice est féminin (la tour).",
-      "4": "« la tour de scrutin » : l'étape de vote est masculine (le tour).",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      "T": "Trois options attribuent au moins un mauvais genre."
+      "1": "« Le tour de contrôle » ne nomme pas l'édifice féminin et « la tour de scrutin » donne le mauvais genre à l'étape du vote.",
+      "2": "Correct : « la tour de contrôle » désigne l'édifice ; « le tour de scrutin » désigne l'étape du vote.",
+      "3": "Le second groupe « le tour de scrutin » convient, mais l'édifice doit se dire « la tour de contrôle ».",
+      "4": "L'édifice est bien « la tour », mais l'étape de vote est « le tour de scrutin ».",
+      "A": "La paire 2 convient aux deux blancs : « Aucune » est exclu.",
+      "T": "Les paires 1, 3 et 4 donnent au moins un mauvais genre : « Toutes » est exclu."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -59762,7 +59832,8 @@ const QUESTIONS = [
         "3": "UNK",
         "4": "UNK"
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "orth-L35-5",
@@ -60399,7 +60470,7 @@ const QUESTIONS = [
       },
       {
         "key": "2",
-        "text": "plastique / plastique"
+        "text": "plastik / plastique"
       },
       {
         "key": "3",
@@ -60419,19 +60490,19 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Le « plastic » (sans -que) est l'explosif ; le « plastique » est la matière synthétique.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : Le premier blanc désigne un explosif : plastic et plastique sont tous deux admis dans ce sens par l'OQLF. Le second désigne la matière des gobelets : on écrit plastique, non plastic. Parmi les choix désormais proposés, seul plastic / plastique remplit les deux blancs. Plastik n'est pas la graphie française de ce nom d'explosif. Il ne faut donc pas déduire de cette réponse que l'expression attentat au plastique serait toujours fautive.\nDonc : La paire « plastic / plastique » est la seule correcte parmi ces choix : réponse 3.",
     "why": {
-      "1": "Inverse les deux : l'explosif s'écrit plastic, la matière plastique.",
-      "2": "« un attentat au plastique » : l'explosif s'écrit plastic.",
-      "3": "Correct : explosif = plastic ; matière = plastique.",
-      "4": "« des gobelets en plastic » : la matière s'écrit plastique.",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Trois options placent au moins un des deux mots à contre-emploi."
+      "1": "Plastique peut bien désigner l'explosif au premier blanc. L'erreur est au second : la matière des gobelets s'écrit plastique, non plastic.",
+      "2": "Le second plastique convient pour les gobelets. Au premier blanc, il faudrait une graphie française admise, plastic ou plastique, et non plastik.",
+      "3": "Correct : plastic désigne l'explosif et plastique la matière des gobelets. Plastique serait également admis au premier blanc, mais cette paire ne figure plus dans les autres choix.",
+      "4": "Le premier plastic convient pour l'explosif. Le second ne convient pas pour la matière des gobelets, qui s'écrit plastique.",
+      "A": "La paire 3 convient aux deux blancs : « Aucune » est exclu.",
+      "T": "Les paires 1 et 4 écrivent plastic pour la matière ; la paire 2 écrit plastik pour l'explosif. « Toutes » est exclu."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "paronyme_lexical",
+      "mechanism_id": "graphie_lexicale_usage",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -60440,7 +60511,8 @@ const QUESTIONS = [
         "3": null,
         "4": "UNK"
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "orth-L36-6",
@@ -60668,14 +60740,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Dans « que se passe-t-il », « que » est le sujet réel de « se passer » : il se transpose en « ce qui » (ce qui se passait).",
+    "explanation": "Règle : Choisis ce qui si le pronom est sujet du verbe suivant, ce que s’il en est le COD.\nMéthode : 1. Repère le verbe qui introduit la question rapportée. 2. Conserve le mot interrogatif nécessaire. 3. Utilise l’ordre d’une phrase déclarative, sans inversion du sujet ni est-ce que. 4. Vérifie le temps, le mode et la ponctuation de la phrase complète.\nDans cette phrase : Le registre introduit une question indirecte par a demandé. La phrase 3 utilise la construction personnelle « ce qui se passait » : ce qui est sujet de se passait. Une autre formulation correcte serait « ce qu'il se passait », avec le sujet impersonnel il ; elle ne figure pas parmi les choix. La phrase 1 écrit seulement « ce que se passait » : ce n'est ni ce qui, ni ce qu'il. L'imparfait se passait transpose le présent de la question rapportée après a demandé.\nDonc : La réponse est 3. « Ce qu'il se passait » serait également correct, mais ce n'est pas le texte de l'option 1.",
     "why": {
-      "1": "« ce que » serait complément ; or le pronom est ici sujet de « se passait » → « ce qui ».",
-      "2": "« qu'est-ce qui » est une marque de l'interrogation directe : elle disparaît.",
-      "3": "Correct : sujet → « ce qui » + imparfait de concordance.",
-      "4": "« quoi se passait » calque l'oral : le neutre sujet se dit « ce qui ».",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Les options 1, 2 et 4 confondent les fonctions ou gardent une marque directe."
+      "1": "Le texte est « ce que se passait », sans il : il manque le sujet de se passait. On pourrait écrire « ce qui se passait » ou « ce qu'il se passait » ; la seconde tournure est correcte, mais n'est pas proposée ici.",
+      "2": "« Qu'est-ce qui » appartient à la question directe. Après « il a demandé », on écrit ici « ce qui se passait » ou « ce qu'il se passait ».",
+      "3": "Correct : « ce qui se passait » utilise ce qui comme sujet de se passait et rapporte la question à l'imparfait.",
+      "4": "« Quoi se passait » ne fournit pas la construction de sujet attendue dans cette interrogation indirecte ; il faudrait « ce qui se passait » ou « ce qu'il se passait ».",
+      "A": "La phrase 3 est correcte : « Aucune » est exclu.",
+      "T": "Les phrases 1, 2 et 4 ne sont pas des formulations correctes de cette question indirecte : « Toutes » est exclu."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -60690,7 +60762,8 @@ const QUESTIONS = [
         "4": "UNK"
       }
     },
-    "stem": "Alerté par le bruit, le veilleur a demandé : « Que se passe-t-il dans l'aile est ? » Le registre de nuit rapporte sa question."
+    "stem": "Alerté par le bruit, le veilleur a demandé : « Que se passe-t-il dans l'aile est ? » Le registre de nuit rapporte sa question.",
+    "progress_revision": 1
   },
   {
     "id": "rel-L36-10",
@@ -60789,19 +60862,19 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Le mot s'écrit « chrysanthème » : chry- (du grec khrusos, or) puis -anthème (fleur), avec deux h. Aucune option ne porte cette graphie.",
+    "explanation": "Règle : Quand aucune règle productive ne suffit, la forme correcte est la graphie attestée du mot ; elle doit être mémorisée avec un exemple.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : Le nom de la fleur s'écrit chrysanthème, au pluriel chrysanthèmes. Il contient le groupe chry- avec h et y, puis -santhème avec un second h après t. Les quatre choix altèrent au moins une de ces lettres ; aucun ne donne chrysanthèmes. Ce n'est pas un problème de consonne doublée : les deux h occupent des places distinctes.\nDonc : Aucun choix n'écrit « chrysanthèmes » correctement : réponseA.",
     "why": {
-      "1": "« crysanthèmes » perd le h de chry-.",
-      "2": "« chrisanthèmes » remplace le y par un i.",
-      "3": "« chrysantèmes » perd le h d'-anthème (anthos, fleur).",
-      "4": "« crisanthèmes » cumule les deux pertes.",
-      "A": "Correct : la graphie attendue « chrysanthèmes » ne figure dans aucune option.",
-      "T": "Chaque option ampute le mot d'une lettre grecque différente."
+      "1": "Crysanthèmes omet le h du groupe initial chry-.",
+      "2": "Chrisanthèmes remplace le y du groupe chry- par i.",
+      "3": "Chrysantèmes omet le h placé après t dans -anthème.",
+      "4": "Crisanthèmes omet le h initial et remplace y par i ; la présence du second h ne répare pas ces deux erreurs.",
+      "A": "Correct : la graphie chrysanthèmes ne figure dans aucun choix.",
+      "T": "Chaque forme 1 à 4 diffère de la graphie attestée : « Toutes » est exclu."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "orthographe_lexicale",
-      "mechanism_id": "consonne_double",
+      "mechanism_id": "graphie_lexicale_usage",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -60810,7 +60883,8 @@ const QUESTIONS = [
         "3": "UNK",
         "4": "UNK"
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "orth-L37-2",
@@ -63000,7 +63074,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "Chaque parti promet de désengorger la ligne ; ___, rien n'a changé pour les pendulaires depuis un an.",
+    "stem": "Chaque parti promet de désengorger la ligne ; ___ rien n'a changé pour les pendulaires depuis un an.",
     "options": [
       {
         "key": "1",
@@ -63028,19 +63102,19 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Après les promesses, la phrase revient au constat brut : « toujours est-il que » (= le fait demeure que) marque ce retour au réel.",
+    "explanation": "Règle : Le connecteur doit opposer un fait admis à une conséquence inattendue et respecter le mode qu’il régit.\nMéthode : 1. Détermine le lien logique entre les deux idées. 2. Nomme ce lien simplement : cause, conséquence, opposition, concession, addition ou explication. 3. Essaie le connecteur dans la phrase et vérifie qu’il exprime bien ce lien. 4. Contrôle aussi la construction et la ponctuation qui l’accompagnent.\nDans cette phrase : Les promesses laissent attendre une amélioration, mais aucun changement n'est constaté depuis un an. « Toujours est-il que » signifie ici « quoi qu'il en soit » et ramène à ce résultat contraire à l'attente. La proposition qui suit est à l'indicatif : « rien n'a changé ». Que est suivi directement de cette proposition, sans virgule en l'absence d'incise.\nDonc : La locution « toujours est-il que » convient : réponse 4.",
     "why": {
-      "1": "« si bien que » ferait de l'immobilisme la conséquence des promesses : la relation est un contraste, pas une conséquence.",
-      "2": "« afin que » exprimerait un but, absurde ici.",
-      "3": "« d'autant plus que » renforcerait une cause qui n'existe pas.",
-      "4": "Correct : « toujours est-il que » ramène au fait constaté malgré les promesses.",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Une seule option exprime le retour au constat."
+      "1": "« Si bien que » ferait de l'absence de changement une conséquence des promesses ; la phrase souligne au contraire que les promesses n'ont pas produit le résultat attendu.",
+      "2": "« Afin que » introduirait un but au subjonctif. L'absence de changement n'est pas présentée comme le but des promesses, et « n'a changé » est à l'indicatif.",
+      "3": "« D'autant plus que » ajouterait une raison renforçant la première assertion. L'absence de changement ne renforce pas la promesse d'amélioration.",
+      "4": "Correct : « toujours est-il que rien n'a changé » revient au constat malgré les promesses, avec l'indicatif et sans virgule après que.",
+      "A": "La locution 4 convient : « Aucune » est exclu.",
+      "T": "Les locutions 1, 2 et 3 ne rendent pas le lien voulu : « Toutes » est exclu."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
       "family": "connecteurs_logiques",
-      "mechanism_id": "explication_confirmation",
+      "mechanism_id": "concession",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -63049,7 +63123,8 @@ const QUESTIONS = [
         "3": "UNK",
         "4": null
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "ponc-L40-8",
@@ -69362,14 +69437,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "« Peu importe » (quantité : cela importe peu) ; « il se peut que » (verbe pouvoir).",
+    "explanation": "Règle : Pour chaque blanc, identifie la catégorie grammaticale et applique un test de remplacement avant de choisir la forme.\nMéthode : 1. Repère la fonction du mot dans la phrase. 2. Détermine sa catégorie grammaticale. 3. Fais le test de remplacement prévu par la règle précise. 4. Choisis la graphie qui garde une phrase correcte et conserve le sens.\nDans cette phrase : pour le premier blanc, on repère déjà le verbe importe. Le mot recherché en modifie le sens : « le retard importe peu », c’est-à-dire qu’il n’a pas beaucoup d’importance. Le remplacement par « importe beaucoup » montre qu’il s’agit d’un adverbe : on écrit « Peu importe ». Pour le second blanc, dans « il se… que », il manque au contraire un verbe conjugué. Le changement de temps donne « il se pouvait toutefois que la grève se prolonge » : pouvait est une forme de pouvoir. Au présent avec il, ce verbe s’écrit « peut ». Les deux mots se prononcent pareil, mais leur fonction et le test de remplacement les distinguent.\nDonc : il faut « Peu / peut », soit la réponse 4.",
     "why": {
-      "1": "Inverse les deux homophones.",
-      "2": "« il se peu que » : c'est le verbe pouvoir → peut.",
-      "3": "« Peut importe » : la locution s'écrit avec l'adverbe de quantité → peu.",
-      "4": "Correct : peu importe (quantité) ; il se peut (pouvoir).",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Trois options placent au moins un homophone à contre-emploi."
+      "1": "`Peut importe` met un verbe là où l’on attend l’adverbe de « le retard importe peu » ; il faut « Peu importe ». Puis `il se peu` prive la construction de son verbe pouvoir : il faut « il se peut ». La paire attendue est « Peu / peut ».",
+      "2": "Le premier « Peu » convient, puisqu’on peut reconstruire « le retard importe peu ». Mais `il se peu` ne contient pas la forme conjuguée de pouvoir, reconnaissable par « il se pouvait » : il faut « il se peut ».",
+      "3": "Le second « peut » est bien le verbe pouvoir dans « il se peut ». En revanche, `Peut importe` ne convient pas : le premier mot est l’adverbe peu qui modifie importe. Il faut « Peu importe ».",
+      "4": "« Peu » est l’adverbe de « le retard importe peu ». « Peut » est le présent de pouvoir avec il, confirmé par le remplacement « il se pouvait ». Les deux fonctions sont respectées.",
+      "A": "1 option numérotée correcte sur 4, la 4 : Aucune est exclu.",
+      "T": "3 options numérotées fautives sur 4, les 1, 2 et 3 : Toutes est exclu."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -69382,8 +69457,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-0001",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-02T19:19:09Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "orth-L51-3",
@@ -70689,7 +70774,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quatre notices biographiques rédigées pour l'exposition d'arts visuels. Quelle notice est correctement écrite ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -70717,14 +70802,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "« Née à Vevey, elle… » : l'apposition s'accorde et se rattache au bon sujet. Ailleurs : « exposées », « ce paysage » et une rupture (ce ne sont pas les sculptures qui ont été formées).",
+    "explanation": "Règle : Le groupe détachable ajoute une précision à un nom : il s’encadre de virgules.\nMéthode : 1. Repère les groupes et les propositions de la phrase. 2. Détermine le lien entre eux : séparation, ajout, explication, citation ou énumération. 3. Choisis le signe qui rend ce lien visible sans couper un groupe essentiel. 4. Relis la phrase pour vérifier le sens et le rythme syntaxique.\nDans cette phrase : on contrôle le mot auquel chaque précision détachée se rapporte, puis son accord et les autres formes. 1) « Née à Vevey » précise le sujet elle. Née est ici un participe passé employé sans auxiliaire ; il prend le féminin singulier d’elle. Placé au début, le groupe est séparé de la proposition principale par une virgule. 2) « Exposé dans toute l’Europe » précise « ses œuvres » et est bien encadré de virgules, mais le participe sans auxiliaire doit prendre le féminin pluriel du nom œuvres : « exposées ». 3) Devant le nom paysage, on attend un déterminant démonstratif, que l’on peut remplacer par ce…-là : « ce paysage ». Se est un pronom, il ne détermine pas un nom. 4) « Formé à Genève » doit préciser la personne formée, alors que le sujet qui suit est « ses sculptures ». Ce sujet ne désigne pas l’artiste : le groupe détaché n’est pas rattaché au bon sujet.\nDonc : seule la notice 1 est correctement écrite ; la réponse est 1.",
     "why": {
-      "1": "Correcte : participe apposé accordé avec « elle ».",
-      "2": "« exposé » : l'apposition s'accorde avec « ses œuvres » → exposées.",
-      "3": "« se paysage » : devant le nom, c'est le démonstratif ce.",
-      "4": "« Formé à Genève, ses sculptures… » : le participe détaché doit se rapporter au sujet — or ce sont les sculptures, pas l'artiste.",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Les options 2, 3 et 4 contiennent une erreur d'accord, d'homophone ou de construction."
+      "1": "« Née à Vevey » se rapporte au sujet elle : le participe passé sans auxiliaire est au féminin singulier. La virgule détache cette précision initiale sans séparer elle de son verbe.",
+      "2": "`exposé` se rapporte à œuvres, féminin pluriel. Le participe passé employé sans auxiliaire doit s’accorder avec ce nom : « Ses œuvres, exposées dans toute l’Europe, restent abordables. »",
+      "3": "`se paysage` emploie un pronom devant un nom. Le déterminant démonstratif attendu est ce, comme dans ce paysage-là : « ce paysage lacustre ».",
+      "4": "Dans `Formé à Genève, ses sculptures`, le groupe détaché décrit l’artiste, mais le sujet désigne ses sculptures. Le sujet attendu doit désigner la personne formée : « Formé à Genève, il… », et non ses sculptures.",
+      "A": "1 notice correcte sur 4, la 1 : Aucune ne convient pas.",
+      "T": "3 notices fautives sur 4, les 2, 3 et 4 : Toutes ne convient pas."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -70751,8 +70836,18 @@ const QUESTIONS = [
           "detail_id": "core",
           "tense_id": null
         }
-      ]
-    }
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20261002-0001",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-02T19:19:09Z"
+        }
+      }
+    },
+    "progress_revision": 1
   },
   {
     "id": "mode-L53-6",
@@ -70763,7 +70858,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "La nouvelle grille horaire est entrée en vigueur sans que personne ne s'en ___ avant les vacances.",
+    "stem": "La nouvelle grille horaire est entrée en vigueur sans que personne s'en ___ avant les vacances.",
     "options": [
       {
         "key": "1",
@@ -70791,14 +70886,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "« Sans que » impose le subjonctif : sans que personne ne s'en aperçoive.",
+    "explanation": "Règle : Bien que, quoique ou sans que présentent un fait concédé ou écarté et commandent le subjonctif.\nMéthode : 1. Repère la construction qui introduit la proposition. 2. Vérifie le sens et le mode réellement imposé ou permis par cette construction. 3. Choisis l’indicatif lorsque la construction présente ici le fait comme constaté, ou le subjonctif lorsqu’elle l’exige pour un fait voulu, évalué ou non affirmé. 4. Conjugue ensuite le verbe au temps et à la personne demandés.\nDans cette phrase : Après sans que, il faut le subjonctif : « sans que personne s'en aperçoive avant les vacances ». Personne commande la troisième personne du singulier. Le passé composé de la principale n'impose pas de remplacer le subjonctif présent par un indicatif. Ne n'est pas ajouté : sans que suffit ici à exprimer la nuance négative.\nDonc : On choisit « aperçoive » : réponse 3.",
     "why": {
-      "1": "« aperçoit » : l'indicatif ne suit jamais « sans que ».",
-      "2": "« apercevra » : le futur ne convient pas davantage.",
-      "3": "Correct : sans que + subjonctif (aperçoive).",
-      "4": "Est aperçu donne ici s'en est aperçu, passé composé du pronominal s'apercevoir, non un passif. Il est à l'indicatif ; après sans que il faudrait un subjonctif, par exemple s'en soit aperçu.",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Les options 1, 2 et 4 emploient un mode ou une forme que la locution n'admet pas."
+      "1": "« Aperçoit » est un présent de l'indicatif ; le mode exigé est le subjonctif.",
+      "2": "« Apercevra » est un futur de l'indicatif, que la construction « sans que » n'admet pas ici.",
+      "3": "Correct : « personne s'en aperçoive » est au subjonctif présent.",
+      "4": "« Est aperçu » donnerait « personne s'en est aperçu », passé composé du verbe pronominal s'apercevoir, à l'indicatif. Un temps composé au subjonctif serait « s'en soit aperçu », absent de ce choix.",
+      "A": "Le choix 3 convient : « Aucune » est exclu.",
+      "T": "Les choix 1, 2 et 4 sont à l'indicatif : « Toutes » est exclu."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -70812,7 +70907,8 @@ const QUESTIONS = [
         "3": null,
         "4": "UNK"
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "dis-L53-7",
@@ -71025,7 +71121,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "Le jury a jugé la question ___ ; en ___ ouvertement le règlement du concours, le candidat s'est disqualifié.",
+    "stem": "Le jury a jugé la question ___ ; en ___ ouvertement les membres du jury, le candidat s'est disqualifié.",
     "options": [
       {
         "key": "1",
@@ -71053,14 +71149,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : la forme en -ant revient deux fois et il faut la traiter séparément. Premier emploi, « Le jury a jugé la question ___ » : le mot se rapporte au nom « la question » et en exprime une propriété, ce que confirme le test du féminin (on peut dire « une question provocante », « une remarque provocante »). C'est donc l'adjectif verbal : il s'accorde au féminin singulier avec « question » et il prend la graphie propre à l'adjectif, en -cant, « provocante ». Second emploi, « en ___ ouvertement le règlement du concours » : la forme suit « en » et commande un complément direct, « le règlement du concours » ; elle continue donc de fonctionner comme un verbe. C'est le participe présent (ici au gérondif) : il reste invariable et conserve le radical du verbe provoquer, avec -qu-, « provoquant ». Le point qui fait basculer la réponse est la présence de ce complément direct après le second blanc.\nDonc : il faut « la question provocante » puis « en provoquant ouvertement le règlement », c'est-à-dire l'option 4.",
+    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : Le premier mot décrit la question : c'est un adjectif au féminin singulier, provocante, avec c. Le second suit en et exprime l'action du candidat envers les membres du jury : c'est le participe présent du verbe provoquer, provoquant, avec qu, invariable. La graphie n'est donc pas la même dans les deux emplois. En insérant la paire 4, on lit une question provocante et un candidat se disqualifiant en provoquant les membres du jury.\nDonc : La paire « provocante / provoquant » convient : réponse 4.",
     "why": {
-      "1": "Au premier blanc, `provoquante` transporte le radical verbal en -qu- dans un mot qui se rapporte au nom « la question » et s'accorde avec lui : la règle de l'adjectif verbal impose la graphie en -cant, donc « provocante ». Le second blanc est bien traité, mais l'option entière est fautive.",
-      "2": "Le premier blanc est correct, mais au second `en provocant ouvertement le règlement` applique la graphie de l'adjectif à une forme qui garde un complément direct et fonctionne comme un verbe : le participe présent conserve le radical de provoquer, donc « en provoquant ».",
-      "3": "Les deux graphies sont échangées : `provoquante` donne au mot rapporté à « la question » le radical verbal, et `provocant` donne la graphie adjectivale à la forme qui commande « le règlement du concours ». Il faut « provocante » puis « en provoquant ».",
-      "4": "Le premier mot se rapporte à « la question » et supporte le test du féminin : il satisfait la règle de l'adjectif verbal, accordé et écrit en -cant, « provocante ». Le second, précédé de « en » et suivi du complément direct « le règlement du concours », satisfait la règle du participe présent : invariable et écrit avec le radical verbal, « provoquant ».",
-      "A": "Une option chiffrée respecte les deux graphies, la 4 ; « Aucune » ne se choisit que si les quatre sont fautives.",
-      "T": "Trois des quatre options chiffrées comportent au moins une graphie fautive ; « Toutes » exigerait que les quatre soient correctes."
+      "1": "Le second provoquant est bien le participe présent. Le premier doit être l'adjectif féminin provocante, avec c, non provoquante.",
+      "2": "Le premier provocante est correct. Le second exprime une action après en : il faut le participe présent provoquant, avec qu.",
+      "3": "Le premier emploie la graphie verbale au lieu de l'adjectif provocante ; le second emploie la graphie de l'adjectif au lieu du participe provoquant.",
+      "4": "Correct : provocante décrit la question et s'accorde au féminin ; provoquant exprime l'action envers les membres du jury et reste invariable.",
+      "A": "La paire 4 convient : « Aucune » est exclu.",
+      "T": "Les paires 1, 2 et 3 confondent au moins une des deux graphies : « Toutes » est exclu."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -71083,7 +71179,8 @@ const QUESTIONS = [
           "generated_at": "2026-08-05T05:42:12Z"
         }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "orth-L54-1",
@@ -84710,19 +84807,19 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Règle : le verbe s'accorde avec son sujet pluriel (les casiers se trouvent) ; le nom prend un s après un nombre supérieur à un (cinq documents) ; l'épithète s'accorde (repas chauds). Dans ces phrases : « se trouve » → trouvent ; « cinq document » → documents ; « repas chaud » → chauds. La phrase 3 n'a aucune faute. Donc : option 3.",
+    "explanation": "Règle : Le déterminant et la quantité indiquent si le nom est singulier ou pluriel. Un nom dénombrable au pluriel prend généralement un s ; chaque accompagne un nom singulier.\nMéthode : 1. Repère le nom et le mot qui indique son nombre. 2. Détermine s’il désigne une ou plusieurs unités. 3. Applique la marque du singulier ou du pluriel, puis vérifie les exceptions.\nDans cette phrase : La phrase 2 donne une quantité de cinq unités : il faut cinq documents, au pluriel. Les autres phrases se vérifient séparément : les casiers est le sujet pluriel de se trouvent dans la phrase 1 ; chaud doit s'accorder au pluriel avec repas dans la phrase 4, donc chauds. Dans la phrase 3, adressez-vous est un impératif correctement formé, avec le pronom après le verbe et un trait d'union. La réception est bien le lieu auquel on s'adresse.\nDonc : Seule la phrase 3 est correctement écrite : réponse 3.",
     "why": {
-      "1": "« les casiers se trouve » : le sujet pluriel exige « se trouvent ».",
-      "2": "« cinq document » : après cinq, le nom prend le pluriel → documents.",
-      "3": "Correcte : impératif et construction sans faute.",
-      "4": "« repas chaud » : l'épithète s'accorde avec le pluriel → chauds.",
-      "A": "Il existe bien une phrase correcte : la 3.",
-      "T": "Les phrases 1, 2 et 4 fautent sur un accord ou un pluriel."
+      "1": "Les casiers est un sujet pluriel : il faut « se trouvent », non « se trouve ». Le sujet n'est pas éloigné du verbe dans cette phrase.",
+      "2": "Cinq indique plusieurs unités : il faut « cinq documents », avec s au nom.",
+      "3": "Correct : « adressez-vous » est un impératif affirmatif correctement écrit avec trait d'union ; « à la réception » complète s'adresser à.",
+      "4": "Repas est au pluriel après les ; l'adjectif doit s'accorder : « les repas chauds ».",
+      "A": "La phrase 3 est correcte : « Aucune » est exclu.",
+      "T": "Les phrases 1, 2 et 4 contiennent respectivement une erreur d'accord verbal, de pluriel nominal et d'accord adjectival : « Toutes » est exclu."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "accord_sujet_verbe",
-      "mechanism_id": "sujet_eloigne",
+      "family": "orthographe_lexicale",
+      "mechanism_id": "nombre_du_nom",
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
@@ -84739,7 +84836,8 @@ const QUESTIONS = [
           "tense_id": "imperatif_present"
         }
       ]
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "mode-L76-4",
@@ -92681,7 +92779,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "stem": "Les enseignants attendaient une réponse ; ces bonnes nouvelles, la directrice ___ a aussitôt fait part en salle des maîtres.",
+    "stem": "Les enseignants attendaient une réponse ; ces bonnes nouvelles, la directrice ___ a aussitôt fait part en salle des maîtres. Complétez en reprenant explicitement les nouvelles et les enseignants par des pronoms.",
     "options": [
       {
         "key": "1",
@@ -92709,14 +92807,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : « faire part DE quelque chose À quelqu'un » : la chose (de…) se reprend par « en », la personne (à…) par « leur ». L'ordre est « leur en ». Dans cette phrase : faire part DE ces nouvelles AUX enseignants → elle leur en a fait part. Donc : option 4.",
+    "explanation": "Règle : Identifie la fonction de chaque pronom, puis applique l’ordre fixe devant le verbe ou à l’impératif.\nMéthode : 1. Repère le mot ou le groupe repris par le pronom. 2. Trouve la fonction du pronom dans la nouvelle phrase. 3. Choisis la forme correspondant à cette fonction et à la préposition éventuelle. 4. Vérifie sa place et les accords nécessaires.\nDans cette phrase : On doit reprendre explicitement les deux groupes indiqués. La construction est faire part de ces bonnes nouvelles aux enseignants. Le complément de ces nouvelles devient en ; aux enseignants devient leur. Devant l'auxiliaire a, ces pronoms se placent dans l'ordre leur en : « la directrice leur en a aussitôt fait part ». Une phrase avec en seul peut être correcte si les destinataires restent implicites, mais elle n'accomplit pas la double reprise demandée ici.\nDonc : La double reprise attendue est « leur en » : réponse 4.",
     "why": {
-      "1": "« les leur » : le complément « de ces nouvelles » se reprend par « en », pas par « les ».",
-      "2": "« leur a fait part » : il manque « en » pour reprendre « de ces nouvelles ».",
-      "3": "« en a fait part » : il manque « leur » pour reprendre « aux enseignants ».",
-      "4": "Correct : leur (aux enseignants) + en (de ces nouvelles) → leur en a fait part.",
-      "A": "Il existe bien une option correcte : la 4.",
-      "T": "Une seule option reprend à la fois le « à » et le « de » du verbe."
+      "1": "Les reprendrait un COD ; or les nouvelles dépendent de de dans faire part de, et se reprennent par en. Il faut leur en.",
+      "2": "Leur reprend les enseignants, mais il manque en pour reprendre de ces nouvelles.",
+      "3": "En reprend correctement les nouvelles. Sans leur, les destinataires restent implicites : cette phrase peut fonctionner ailleurs, mais elle ne respecte pas la reprise explicite des deux groupes demandée ici.",
+      "4": "Correct : leur reprend aux enseignants, en reprend de ces nouvelles ; leur précède en devant a.",
+      "A": "Le choix 4 effectue les deux reprises demandées : « Aucune » est exclu.",
+      "T": "Les choix 1, 2 et 3 ne reprennent pas correctement les deux groupes : « Toutes » est exclu."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -92730,7 +92828,8 @@ const QUESTIONS = [
         "3": "UNK",
         "4": null
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "part-L90-7",
@@ -96565,14 +96664,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Règle : l'adjectif « inférieur » se construit avec la préposition « à » : inférieur À quelque chose. Dans cette phrase : « inférieur ___ nos prévisions » appelle « à » ; or aucune option ne propose « à ». Donc : réponse A (Aucune).",
+    "explanation": "Règle : Repère l’adjectif recteur, puis conserve la préposition imposée par sa construction.\nMéthode : 1. Repère le mot qui commande le complément. 2. Reconstitue sa construction habituelle avec ce complément. 3. Choisis la préposition exigée par cette construction. 4. Applique la contraction nécessaire, puis relis l’ensemble.\nDans cette phrase : on compare « le taux de réussite » à « nos prévisions ». Le blanc introduit le complément de l’adjectif « inférieur », dont la construction est « inférieur à quelque chose ». On reconstitue « inférieur à nos prévisions », sans contraction devant nos. L’option 1 propose de : cette préposition pourrait introduire un écart chiffré, mais « nos prévisions » désigne ici le terme de la comparaison. L’option 2 propose que, comme après plus bas, alors que l’adjectif inférieur exige à. Les options 3 et 4, sur et envers, ne conviennent pas non plus à cette construction.\nDonc : la réponse est A ; il faut à, absent des quatre options.",
     "why": {
-      "1": "« inférieur de » : l'adjectif se construit avec « à » (le « de » servirait à chiffrer l'écart).",
-      "2": "« inférieur que » : « inférieur » se construit avec « à », pas comme un comparatif en « que ».",
-      "3": "« inférieur sur » : la préposition correcte est « à ».",
-      "4": "« inférieur envers » : on est inférieur À quelque chose.",
-      "A": "Correct : la préposition attendue « à » ne figure dans aucune option.",
-      "T": "Impossible : aucune option ne donne le « à » qu'exige « inférieur »."
+      "1": "`inférieur de nos prévisions` confond le terme de comparaison avec un éventuel écart chiffré ; pour comparer aux prévisions, il faut « inférieur à nos prévisions ».",
+      "2": "`inférieur que nos prévisions` calque la construction sur un comparatif avec plus ; inférieur se construit avec à : « inférieur à nos prévisions ».",
+      "3": "`inférieur sur nos prévisions` introduit le complément par sur au lieu de la préposition à imposée par inférieur : « inférieur à nos prévisions ».",
+      "4": "`inférieur envers nos prévisions` emploie envers pour une comparaison qui exige à ; on attend « inférieur à nos prévisions ».",
+      "A": "La comparaison exige inférieur à nos prévisions. Ni de, ni que, ni sur, ni envers ne donne cette construction ; A est donc la réponse attendue.",
+      "T": "0 option numérotée correcte sur 4 : on ne peut pas choisir Toutes."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -96585,8 +96684,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-0001",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-02T19:19:09Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "orth-L97-1",
@@ -98134,7 +98243,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "stem": "Les causes exactes de cette amélioration restent discutées ; ___, les résultats scolaires de la classe ont nettement progressé.",
+    "stem": "Les causes exactes de cette amélioration restent discutées ; ___ les résultats scolaires de la classe ont nettement progressé.",
     "options": [
       {
         "key": "1",
@@ -98183,7 +98292,8 @@ const QUESTIONS = [
         "3": null,
         "4": "UNK"
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "sv-L99-8",
@@ -98942,14 +99052,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Règle : l'adjectif « friand » se construit avec la préposition « de » : friand DE quelque chose. Dans cette phrase : « friands ___ ce genre d'activités » appelle « de » ; or aucune option ne propose « de ». Donc : réponse A (Aucune).",
+    "explanation": "Règle : Repère l’adjectif recteur, puis conserve la préposition imposée par sa construction.\nMéthode : 1. Repère le mot qui commande le complément. 2. Reconstitue sa construction habituelle avec ce complément. 3. Choisis la préposition exigée par cette construction. 4. Applique la contraction nécessaire, puis relis l’ensemble.\nDans cette phrase : le blanc relie l’adjectif « friands » à son complément « ce genre d’activités en plein air ». Ce n’est donc pas « se montrent » qui commande la préposition. On reconstruit « être friand de quelque chose », puis « friands de ce genre d’activités ». Devant « ce », la préposition de reste telle quelle, sans contraction. L’option 1 donne « friands à », la 2 « friands pour », la 3 « friands envers » et la 4 « friands avec » : aucune ne conserve la construction de l’adjectif.\nDonc : la réponse est A, car la préposition attendue est de et ne figure pas parmi les quatre propositions.",
     "why": {
-      "1": "« friand à » : l'adjectif se construit avec « de ».",
-      "2": "« friand pour » : la préposition correcte est « de ».",
-      "3": "« friand envers » : on est friand DE quelque chose.",
-      "4": "« friand avec » : même erreur de régime, il faut « de ».",
-      "A": "Correct : la préposition attendue « de » ne figure dans aucune option.",
-      "T": "Impossible : aucune option ne donne le « de » qu'exige « friand »."
+      "1": "`friands à ce genre d’activités` ne respecte pas la construction friand de quelque chose ; il faut « friands de ce genre d’activités ».",
+      "2": "Dans `friands pour ce genre d’activités`, pour ne peut pas introduire ce qui plaît aux jeunes après friands ; on attend « friands de ce genre d’activités ».",
+      "3": "`friands envers ce genre d’activités` emploie envers alors que le complément de friands doit être introduit par de : « friands de ce genre d’activités ».",
+      "4": "`friands avec ce genre d’activités` remplace à tort la préposition de exigée par l’adjectif ; la forme attendue est « friands de ce genre d’activités ».",
+      "A": "Les quatre prépositions proposées échouent au même test : compléter friands par de ce genre d’activités. Aucune option numérotée ne fournit de ; A convient.",
+      "T": "0 option numérotée correcte sur 4 : Toutes ne convient pas."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -98962,8 +99072,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-0001",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-02T19:19:09Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "orth-L101-1",
@@ -99155,7 +99275,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "stem": "Face à ces critiques parfois blessantes des parents, le jeune stagiaire a bien du mal à ne pas ___ formaliser.",
+    "stem": "Dans le sens de « se sentir offensé », face à ces critiques parfois blessantes des parents, le jeune stagiaire a bien du mal à ne pas ___ formaliser.",
     "options": [
       {
         "key": "1",
@@ -99183,14 +99303,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Règle : « se formaliser DE quelque chose » : le verbe est pronominal (se) et son complément en « de » se reprend par « en », d'où « s'en formaliser ». Dans cette phrase : la forme attendue est « s'en formaliser » (se + en) ; aucune option ne réunit le réfléchi et le « en ». Donc : réponse A (Aucune).",
+    "explanation": "Règle : Un complément de chose introduit par de se reprend généralement par en.\nMéthode : 1. Repère le mot ou le groupe repris par le pronom. 2. Trouve la fonction du pronom dans la nouvelle phrase. 3. Choisis la forme correspondant à cette fonction et à la préposition éventuelle. 4. Vérifie sa place et les accords nécessaires.\nDans cette phrase : Le sens demandé est se sentir offensé, donc le verbe est se formaliser de quelque chose, non formaliser quelque chose au sens de lui donner une forme explicite. Le complément de ces critiques se reprend par en ; le pronom se doit aussi rester. La suite serait « à ne pas s'en formaliser ». Aucun choix ne propose s'en.\nDonc : Aucune proposition ne donne « s'en » dans le sens demandé : réponseA.",
     "why": {
-      "1": "« s'y formaliser » : « se formaliser » se construit avec « de » (→ en), pas avec « à » (→ y).",
-      "2": "« les formaliser » : « se formaliser » n'a pas de complément direct, et le réfléchi manque.",
-      "3": "« en formaliser » : le « en » est juste, mais il manque le réfléchi « s' » du verbe pronominal.",
-      "4": "« leur formaliser » : ni le bon pronom ni le réfléchi.",
-      "A": "Correct : la forme « s'en formaliser » (se + en) ne figure dans aucune option.",
-      "T": "Impossible : aucune option ne réunit le réfléchi et le pronom « en »."
+      "1": "S'y garde le pronom se, mais remplace le complément par y, correspondant à un groupe en à. Se formaliser, dans le sens demandé, se construit avec de : il faut s'en.",
+      "2": "Les formaliser existe au sens transitif de mettre en forme ou de rendre formel. Ce n'est pas le sens s'offenser explicitement demandé ; dans ce sens, il faut s'en formaliser.",
+      "3": "En reprendrait bien de ces critiques, mais le pronom se manque : le verbe demandé est se formaliser.",
+      "4": "Leur ne reprend ni le complément de ces critiques, qui demande en, ni le pronom se nécessaire au verbe demandé.",
+      "A": "Correct : dans le sens s'offenser, la suite attendue est s'en formaliser ; s'en n'est proposé dans aucun choix.",
+      "T": "Les quatre choix échouent dans le sens précisé : « Toutes » est exclu."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -99204,7 +99324,8 @@ const QUESTIONS = [
         "3": "UNK",
         "4": "UNK"
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "part-L101-6",
@@ -100824,7 +100945,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "stem": "Le maître a discrètement réorganisé tout le fond de la classe sans que personne ne s'en ___ vraiment compte.",
+    "stem": "Le maître a discrètement réorganisé tout le fond de la classe sans que personne s'en ___ vraiment compte.",
     "options": [
       {
         "key": "1",
@@ -100852,14 +100973,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Règle : « sans que » commande le subjonctif : il faut « rende ». Dans cette phrase : « sans que personne ne s'en ___ compte » → rende. Donc : option 3.",
+    "explanation": "Règle : Bien que, quoique ou sans que présentent un fait concédé ou écarté et commandent le subjonctif.\nMéthode : 1. Repère la construction qui introduit la proposition. 2. Vérifie le sens et le mode réellement imposé ou permis par cette construction. 3. Choisis l’indicatif lorsque la construction présente ici le fait comme constaté, ou le subjonctif lorsqu’elle l’exige pour un fait voulu, évalué ou non affirmé. 4. Conjugue ensuite le verbe au temps et à la personne demandés.\nDans cette phrase : La locution sans que impose le subjonctif. Le sujet personne est singulier : le verbe rendre prend la forme rende, dans « sans que personne s'en rende vraiment compte ». La principale affirmative ne permet pas le ne explétif ajouté dans l'ancien énoncé ; sans exprime déjà l'absence de prise de conscience.\nDonc : Il faut « rende » : réponse 3.",
     "why": {
-      "1": "« rend » (indicatif) : « sans que » exige le subjonctif.",
-      "2": "« rendra » (futur) : l'indicatif est exclu après « sans que ».",
-      "3": "Correct : « sans que » + subjonctif → ne s'en rende compte.",
-      "4": "« rendrait » (conditionnel) : mode exclu ici.",
-      "A": "Il existe bien une option correcte : la 3.",
-      "T": "Les options 1, 2 et 4 emploient un mode que « sans que » n'admet pas."
+      "1": "« Rend » est au présent de l'indicatif ; « sans que » impose le subjonctif.",
+      "2": "« Rendra » est au futur de l'indicatif, non au subjonctif.",
+      "3": "Correct : « sans que personne s'en rende vraiment compte » contient le subjonctif présent attendu.",
+      "4": "« Rendrait » est au conditionnel présent ; la locution exige le subjonctif dans cette phrase.",
+      "A": "Le choix 3 est correct : « Aucune » est exclu.",
+      "T": "Les choix 1, 2 et 4 n'emploient pas le subjonctif requis : « Toutes » est exclu."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -100873,7 +100994,8 @@ const QUESTIONS = [
         "3": null,
         "4": "UNK"
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "ponc-L104-5",
@@ -101305,7 +101427,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "stem": "___ salle de classe est bien plus lumineuse que la ___, qui donne malheureusement sur la cour intérieure.",
+    "stem": "___ nouvelle salle de classe est bien plus lumineuse que la ___ de l'an dernier, qui donnait malheureusement sur la cour intérieure.",
     "options": [
       {
         "key": "1",
@@ -101333,14 +101455,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Règle : « votre » (sans accent) est le déterminant possessif, devant un nom (votre salle) ; « le/la vôtre » (avec accent circonflexe) est le pronom possessif, qui remplace un nom. Dans cette phrase : « ___ salle » = déterminant → Votre ; « la ___ » = pronom → vôtre. Donc : Votre / vôtre — option 1.",
+    "explanation": "Règle : L’accent fait partie de la graphie du mot et peut aussi distinguer deux formes de sens ou de fonction différents.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : Les deux salles sont maintenant distinctes : la nouvelle et celle de l'an dernier. Devant nouvelle salle, Votre accompagne le nom : c'est le déterminant possessif, sans accent. Après la, vôtre remplace salle : c'est le pronom possessif, avec accent circonflexe. On écrit donc « Votre nouvelle salle » et « la vôtre de l'an dernier ».\nDonc : Il faut « Votre / vôtre » : réponse 1.",
     "why": {
-      "1": "Correct : déterminant « Votre salle » (sans accent) + pronom « la vôtre » (accent).",
-      "2": "Inverse les deux : déterminant « Votre » (sans accent) + pronom « la vôtre » (accent).",
-      "3": "« la votre » : le pronom possessif prend l'accent circonflexe → la vôtre.",
-      "4": "« Vôtre salle » : devant le nom, le déterminant s'écrit sans accent → Votre.",
-      "A": "Il existe bien une option correcte : la 1.",
-      "T": "Les options 2, 3 et 4 placent mal l'accent entre déterminant et pronom."
+      "1": "Correct : Votre est déterminant devant nouvelle salle ; vôtre est pronom après la, pour la salle de l'an dernier.",
+      "2": "Les accents sont inversés : le déterminant devant salle s'écrit Votre, et le pronom après la s'écrit vôtre.",
+      "3": "Votre convient devant salle, mais le pronom après la doit s'écrire vôtre avec accent.",
+      "4": "Vôtre convient après la, mais le déterminant placé devant nouvelle salle s'écrit Votre sans accent.",
+      "A": "La paire 1 convient : « Aucune » est exclu.",
+      "T": "Les paires 2, 3 et 4 confondent la graphie du déterminant et celle du pronom : « Toutes » est exclu."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -101354,7 +101476,8 @@ const QUESTIONS = [
         "3": "UNK",
         "4": "UNK"
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "rel-L105-3",
@@ -102454,14 +102577,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Règle : l'adjectif « enclin » se construit avec la préposition « à » : enclin À quelque chose. Dans cette phrase : « enclin ___ la rêverie » appelle « à » ; or aucune option ne propose « à ». Donc : réponse A (Aucune).",
+    "explanation": "Règle : Repère l’adjectif recteur, puis conserve la préposition imposée par sa construction.\nMéthode : 1. Repère le mot qui commande le complément. 2. Reconstitue sa construction habituelle avec ce complément. 3. Choisis la préposition exigée par cette construction. 4. Applique la contraction nécessaire, puis relis l’ensemble.\nDans cette phrase : « la rêverie » complète l’adjectif « enclin » : elle indique vers quoi va la disposition de l’élève. La construction à retrouver est « être enclin à quelque chose ». On obtient donc « enclin à la rêverie », sans contraction puisque l’article est la. Les précisions « doux et discret » ne changent pas cette construction. La proposition 1 produit « enclin de », la 2 « enclin pour », la 3 « enclin vers » et la 4 « enclin envers ». Même si vers exprime ailleurs une direction, il ne remplace pas ici la préposition imposée par enclin.\nDonc : la réponse est A ; aucune des quatre prépositions proposées n’est le à attendu.",
     "why": {
-      "1": "« enclin de » : l'adjectif se construit avec « à ».",
-      "2": "« enclin pour » : la préposition correcte est « à ».",
-      "3": "« enclin vers » : on est enclin À quelque chose.",
-      "4": "« enclin envers » : même erreur de régime, il faut « à ».",
-      "A": "Correct : la préposition attendue « à » ne figure dans aucune option.",
-      "T": "Impossible : aucune option ne donne le « à » qu'exige « enclin »."
+      "1": "`enclin de la rêverie` ne suit pas la construction enclin à quelque chose ; il faut « enclin à la rêverie ».",
+      "2": "`enclin pour la rêverie` introduit le complément par pour, alors que l’adjectif exige à : « enclin à la rêverie ».",
+      "3": "Dans `enclin vers la rêverie`, l’idée de direction ne suffit pas à autoriser vers ; la construction de l’adjectif est « enclin à la rêverie ».",
+      "4": "`enclin envers la rêverie` ne respecte pas la préposition imposée par enclin ; on attend « enclin à la rêverie ».",
+      "A": "Aucune des quatre formes ne permet de reconstruire enclin à la rêverie : à manque dans les propositions. Il faut donc choisir A.",
+      "T": "0 option numérotée correcte sur 4 : Toutes est exclu."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -102474,8 +102597,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-0001",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-02T19:19:09Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "orth-L107-2",

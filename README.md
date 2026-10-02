@@ -1,5 +1,16 @@
 # QCM Français — OP001 (HEP Vaud)
 
+Version **1.40**, du 02.10.2026, cache `qcm-op001-v140` :
+21 réparations du scan et neuf corrigés supplémentaires acceptés indépendamment,
+soit 30 questions modifiées et 29 corrigés enrichis. Les 1 782 identifiants et toutes
+les clés sont conservés ; release `questions-20261002-6a71b2f4`.
+Les corrections réinitialisent le progrès des seules questions révisées, sans effacer
+les séances archivées. Les propositions encore en revue et la carte protégée restent intactes.
+Préparation de publication : `2026-10-02T19:41:46Z`, soit le 02.10.2026 à 21:41 en heure suisse.
+Validation de la banque : 372 tests Python ; neuf suites JavaScript revérifiées pour la release.
+Preuves : `../analyse_gpt/audit_banque/reparations_scan_20261002/application.json`
+et `../analyse_gpt/audit_banque/remediation_erreurs_20261002/application_01.json`.
+
 Version **1.39**, du 02.10.2026, cache `qcm-op001-v139` :
 refonte visuelle sombre, palette bleu nuit/pervenche, textes et corrigés plus lisibles,
 accueil organisé par mode puis par règle. L’installation et la conservation locale
@@ -171,7 +182,7 @@ ni la fin exacte du déploiement Pages. À chaque publication autorisée, rensei
 avec `APP_VERSION` et le nouveau `CACHE` de `sw.js`, puis vérifier les fichiers servis.
 Pour une version locale non publiée, conserver `APP_PUBLISHED_AT: null` : l'interface indique
 « Version locale — non publiée ». Une valeur absente, invalide ou sans fuseau utilise aussi
-ce repli, sans inventer de date. La version 1.39 utilise l'instant fixe indiqué en tête.
+ce repli, sans inventer de date. La version 1.40 utilise l'instant fixe indiqué en tête.
 
 ## Google Drive (facultatif)
 Pour l'envoi automatique des mémos/stats vers Google Drive, renseigne `GOOGLE_CLIENT_ID`
