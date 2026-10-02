@@ -1,6 +1,6 @@
 # QCM Français — OP001 (HEP Vaud)
 
-Version **1.37 locale, non publiée**, du 02.10.2026, cache `qcm-op001-v137` :
+Version **1.37**, du 02.10.2026, cache `qcm-op001-v137` :
 navigation Retour/Avancer entre écrans, reprise de la même séance pendant la visite,
 retour des questions sources vers « Mes erreurs » et aucun recomptage des résultats.
 À l'accueil, Retour peut quitter normalement : aucun piège d'historique.
@@ -11,13 +11,14 @@ Sept suites JavaScript réussies ; essais navigateur aux largeurs 320, 360, 390 
 Ces essais responsive ne sont pas une certification Safari/iPhone ou Android physique.
 Après rechargement ou fermeture, une séance inachevée n'est pas restaurée automatiquement ;
 les séances terminées et statistiques persistées restent conservées. L'avertissement de fermeture
-est un repli du navigateur, non garanti sur mobile. Aucun push/déploiement effectué.
+est un repli du navigateur, non garanti sur mobile.
+Publication autorisée le 02.10.2026 avec les 29 ajouts de négation de la version locale 1.36.
 
 Version **1.36 locale, non publiée**, du 02.10.2026, cache `qcm-op001-v136` :
 29 questions de négation ajoutées après contrôles indépendants, soit 30 dans cette carte et
 1 783 questions / IDs uniques. Les 1 754 anciennes questions sont conservées à l'identique.
 Release `questions-20261002-43f33f4d`. Cinq suites JavaScript et 320 tests Python réussis.
-Le site public reste en 1.35 jusqu'à une publication explicite ; sauvegardes et interface inchangées.
+État historique avant la publication 1.37 : site public en 1.35, sauvegardes et interface inchangées.
 
 Version **1.35** du 01.10.2026, cache `qcm-op001-v135` : consignes
 explicites selon la tâche, rappel du choix unique 1–4/Aucune/Toutes et panneau
