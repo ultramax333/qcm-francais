@@ -1,5 +1,11 @@
 # QCM Français — OP001 (HEP Vaud)
 
+Version **1.36 locale, non publiée**, du 02.10.2026, cache `qcm-op001-v136` :
+29 questions de négation ajoutées après contrôles indépendants, soit 30 dans cette carte et
+1 783 questions / IDs uniques. Les 1 754 anciennes questions sont conservées à l'identique.
+Release `questions-20261002-43f33f4d`. Cinq suites JavaScript et 320 tests Python réussis.
+Le site public reste en 1.35 jusqu'à une publication explicite ; sauvegardes et interface inchangées.
+
 Version **1.35** du 01.10.2026, cache `qcm-op001-v135` : consignes
 explicites selon la tâche, rappel du choix unique 1–4/Aucune/Toutes et panneau
 « Remarque / signalement ». Le contexte utile est conservé ; une consigne générique stockée comme

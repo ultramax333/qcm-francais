@@ -110968,6 +110968,2036 @@ const QUESTIONS = [
       }
     },
     "stem": "Selon le rapport, la coordination des trente stands ___ encore plusieurs ajustements avant la prochaine édition du festival."
+  },
+  {
+    "id": "candidate-slot-20261002-01-negation",
+    "rule": "negation",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-6.1-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "La bibliothèque ne prête pas les ouvrages signalés comme réservés."
+      },
+      {
+        "key": "2",
+        "text": "Les lecteurs peuvent pas retirer leurs réservations le dimanche."
+      },
+      {
+        "key": "3",
+        "text": "Le personnel ne range les retours dans ce casier."
+      },
+      {
+        "key": "4",
+        "text": "Les cartes arrivées à échéance n'ont été pas renouvelées."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "1",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : la première proposition nie le prêt des ouvrages réservés. Le verbe conjugué est « prête » : « ne » le précède et « pas » le suit. Les autres propositions omettent un des deux éléments ou placent « pas » trop loin de l'auxiliaire conjugué.\nDonc : seule l'option 1 est correcte : « La bibliothèque ne prête pas les ouvrages signalés comme réservés. »",
+    "why": {
+      "1": "« Ne prête pas » exprime une négation complète : « ne » précède le verbe conjugué « prête » et « pas » le suit.",
+      "2": "Dans `peuvent pas retirer`, « ne » manque devant le verbe conjugué « peuvent ». La forme attendue est « ne peuvent pas retirer ».",
+      "3": "Dans `ne range`, le second terme de la négation attendue manque. Il faut écrire « ne range pas ».",
+      "4": "Dans `n'ont été pas renouvelées`, « pas » est mal placé : il doit suivre l'auxiliaire avoir conjugué, « ont ». La forme attendue est « n'ont pas été renouvelées ».",
+      "A": "L'option 1 est correcte ; « Aucune » ne convient donc pas.",
+      "T": "Les options 2, 3 et 4 comportent chacune une négation incomplète ou mal placée ; « Toutes » ne convient donc pas."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20261002-0005",
+      "slot_id": "slot-20261002-01-negation",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "facile",
+      "source_genre": "note_administrative",
+      "communicative_purpose": "transmettre une information ou une consigne pratique dans un écrit formel",
+      "cognitive_mode": "rappel_regle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Formulations proposées pour une note destinée aux usagers de la bibliothèque :"
+  },
+  {
+    "id": "candidate-slot-20261002-02-negation",
+    "rule": "negation",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-6.1-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "organisons pas"
+      },
+      {
+        "key": "2",
+        "text": "n'organisons pas"
+      },
+      {
+        "key": "3",
+        "text": "ne pas organisons"
+      },
+      {
+        "key": "4",
+        "text": "n'organisons"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "2",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : le comité annonce l'absence de séance durant les vacances. Le verbe conjugué « organisons » commence par une voyelle : on place donc « n' » devant ce verbe et « pas » après lui. On obtient « Nous n'organisons pas de séance d'entraînement durant les vacances d'automne. »\nDonc : la réponse attendue est l'option 2, « n'organisons pas ».",
+    "why": {
+      "1": "Dans `organisons pas`, le premier élément de la négation manque. Devant la voyelle initiale d'« organisons », il faut « n' » : « n'organisons pas ».",
+      "2": "« N'organisons pas » contient les deux éléments attendus, correctement placés autour du verbe conjugué.",
+      "3": "Dans `ne pas organisons`, « pas » précède à tort le verbe conjugué : il doit être placé après « organisons ». Une fois « pas » replacé après le verbe, « ne » précède directement « organisons » et devient « n' » devant sa voyelle initiale. La forme attendue est « n'organisons pas ».",
+      "4": "Dans `n'organisons`, « pas » manque après le verbe conjugué. La forme attendue est « n'organisons pas ».",
+      "A": "L'option 2 complète correctement la phrase ; « Aucune » ne convient donc pas.",
+      "T": "Les options 1, 3 et 4 ne construisent pas la négation complète attendue ; « Toutes » ne convient donc pas."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20261002-0005",
+      "slot_id": "slot-20261002-02-negation",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "facile",
+      "source_genre": "courriel",
+      "communicative_purpose": "transmettre une information ou une consigne pratique dans un écrit formel",
+      "cognitive_mode": "rappel_regle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": null,
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Courriel du comité de l'association sportive : « Nous ___ de séance d'entraînement durant les vacances d'automne. »"
+  },
+  {
+    "id": "candidate-slot-20261002-03-negation",
+    "rule": "negation",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-6.1-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "Les correspondances annoncées aux voyageurs leur ont pas été garanties."
+      },
+      {
+        "key": "2",
+        "text": "Les correspondances annoncées aux voyageurs leur n'ont pas été garanties."
+      },
+      {
+        "key": "3",
+        "text": "Les correspondances annoncées aux voyageurs ne leur ont pas été garanties."
+      },
+      {
+        "key": "4",
+        "text": "Les correspondances annoncées aux voyageurs ne leur ont été pas garanties."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "3",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : on nie que les correspondances aient été garanties aux voyageurs. Le pronom « leur » représente « aux voyageurs » ; l'auxiliaire conjugué est « ont ». On place « ne » avant « leur » et « pas » immédiatement après « ont » : « ne leur ont pas été garanties ».\nDonc : seule l'option 3 est correcte.",
+    "why": {
+      "1": "Dans `leur ont pas été garanties`, « ne » manque avant le pronom « leur ». La forme attendue est « ne leur ont pas été garanties ».",
+      "2": "Dans `leur n'ont pas été garanties`, le premier élément négatif est mal placé : il doit précéder le pronom complément « leur ». La forme attendue est « ne leur ont pas été garanties ».",
+      "3": "Dans « ne leur ont pas été garanties », « ne » précède le pronom complément « leur » et « pas » suit immédiatement l'auxiliaire avoir conjugué, « ont ».",
+      "4": "Dans `ne leur ont été pas garanties`, « pas » est placé après « été » au lieu de suivre l'auxiliaire conjugué « ont ». La forme attendue est « ne leur ont pas été garanties ».",
+      "A": "L'option 3 est correcte ; « Aucune » ne convient donc pas.",
+      "T": "Les options 1, 2 et 4 présentent une omission ou un placement incorrect des éléments négatifs ; « Toutes » ne convient donc pas."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20261002-0005",
+      "slot_id": "slot-20261002-03-negation",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "transmettre une information ou une consigne pratique dans un écrit formel",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": null,
+        "4": "UNK"
+      }
+    },
+    "stem": "Formulations proposées pour un rapport sur les perturbations du réseau de transport public :"
+  },
+  {
+    "id": "candidate-slot-20261002-04-negation",
+    "rule": "negation",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-6.1-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "a pas délivré"
+      },
+      {
+        "key": "2",
+        "text": "a ne pas délivré"
+      },
+      {
+        "key": "3",
+        "text": "n'a délivré"
+      },
+      {
+        "key": "4",
+        "text": "n'a pas délivré"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "4",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : la note indique que le badge n'a pas été délivré avant la signature. Dans « a délivré », l'auxiliaire avoir conjugué est « a ». On place « n' » devant « a », qui commence par une voyelle, puis « pas » immédiatement après : « L'entreprise n'a pas délivré de badge définitif à la stagiaire avant la signature de la convention. »\nDonc : la réponse attendue est l'option 4, « n'a pas délivré ».",
+    "why": {
+      "1": "Dans `a pas délivré`, « n' » manque devant l'auxiliaire avoir conjugué, « a ». La forme attendue est « n'a pas délivré ».",
+      "2": "Dans `a ne pas délivré`, « ne » se trouve après l'auxiliaire conjugué alors qu'il doit le précéder sous la forme « n' ». La forme attendue est « n'a pas délivré ».",
+      "3": "Dans `n'a délivré`, « pas » manque après l'auxiliaire conjugué « a ». La forme attendue est « n'a pas délivré ».",
+      "4": "« N'a pas délivré » place « n' » avant l'auxiliaire avoir conjugué, « a », et « pas » immédiatement après lui.",
+      "A": "L'option 4 complète correctement la phrase ; « Aucune » ne convient donc pas.",
+      "T": "Les options 1, 2 et 3 comportent une négation incomplète ou mal placée ; « Toutes » ne convient donc pas."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20261002-0005",
+      "slot_id": "slot-20261002-04-negation",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "facile",
+      "source_genre": "note_administrative",
+      "communicative_purpose": "transmettre une information ou une consigne pratique dans un écrit formel",
+      "cognitive_mode": "rappel_regle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": "UNK",
+        "4": null
+      }
+    },
+    "stem": "Note de suivi du stage professionnel : « L'entreprise ___ de badge définitif à la stagiaire avant la signature de la convention. »"
+  },
+  {
+    "id": "candidate-slot-20261002-05-negation",
+    "rule": "negation",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-6.1-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "On n'envoie pas de copie papier lorsque le dossier est transmis par voie électronique."
+      },
+      {
+        "key": "2",
+        "text": "On accepte pas les demandes envoyées à cette ancienne adresse."
+      },
+      {
+        "key": "3",
+        "text": "Le service ne traite les dossiers pendant la fermeture annuelle."
+      },
+      {
+        "key": "4",
+        "text": "L'équipe n'a reçu pas les justificatifs demandés."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "1",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : la première proposition nie l'envoi d'une copie papier lorsque le dossier est transmis électroniquement. Le verbe conjugué est « envoie » : « n' » le précède et « pas » le suit. La liaison entendue dans « on envoie » ne suffit pas à écrire une négation ; « n' » doit apparaître dans le texte.\nDonc : seule l'option 1 est correcte : « On n'envoie pas de copie papier lorsque le dossier est transmis par voie électronique. »",
+    "why": {
+      "1": "« On n'envoie pas » comporte « n' » devant « envoie » et « pas » après ce verbe : la négation écrite est complète.",
+      "2": "Dans `On accepte pas`, « n' » manque devant « accepte ». La liaison après « on » ne remplace pas cet élément à l'écrit. La forme attendue est « On n'accepte pas ».",
+      "3": "Dans `ne traite`, le second terme de la négation attendue manque. La forme attendue est « ne traite pas ».",
+      "4": "Dans `n'a reçu pas`, « pas » doit suivre immédiatement l'auxiliaire avoir conjugué, « a ». La forme attendue est « n'a pas reçu ».",
+      "A": "L'option 1 est correcte ; « Aucune » ne convient donc pas.",
+      "T": "Les options 2, 3 et 4 comportent une omission ou un mauvais placement dans la négation ; « Toutes » ne convient donc pas."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20261002-0005",
+      "slot_id": "slot-20261002-05-negation",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "facile",
+      "source_genre": "courriel",
+      "communicative_purpose": "transmettre une information ou une consigne pratique dans un écrit formel",
+      "cognitive_mode": "rappel_regle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Formulations proposées pour un courriel du service communal à une personne ayant déposé une demande :"
+  },
+  {
+    "id": "candidate-slot-20261002-06-negation",
+    "rule": "negation",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-6.1-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "leur a pas communiqué"
+      },
+      {
+        "key": "2",
+        "text": "ne leur a pas communiqué"
+      },
+      {
+        "key": "3",
+        "text": "leur n'a pas communiqué"
+      },
+      {
+        "key": "4",
+        "text": "ne leur a communiqué pas"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "2",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : les responsables attendent encore la réponse ; on nie donc que la direction leur ait communiqué sa décision. « Leur » représente les responsables de classe et l'auxiliaire conjugué est « a ». On place « ne » avant « leur » et « pas » immédiatement après « a » : « la direction ne leur a pas communiqué sa décision concernant les horaires ».\nDonc : la réponse attendue est l'option 2, « ne leur a pas communiqué ».",
+    "why": {
+      "1": "Dans `leur a pas communiqué`, « ne » manque avant le pronom complément « leur ». La forme attendue est « ne leur a pas communiqué ».",
+      "2": "« Ne leur a pas communiqué » place « ne » avant le pronom complément « leur » et « pas » juste après l'auxiliaire avoir conjugué, « a ».",
+      "3": "Dans `leur n'a pas communiqué`, le premier élément négatif est placé après « leur » alors qu'il doit précéder ce pronom complément. La forme attendue est « ne leur a pas communiqué ».",
+      "4": "Dans `ne leur a communiqué pas`, « pas » est placé après « communiqué » au lieu de suivre l'auxiliaire conjugué « a ». La forme attendue est « ne leur a pas communiqué ».",
+      "A": "L'option 2 complète correctement la phrase ; « Aucune » ne convient donc pas.",
+      "T": "Les options 1, 3 et 4 présentent une omission ou un placement incorrect des éléments négatifs ; « Toutes » ne convient donc pas."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20261002-0005",
+      "slot_id": "slot-20261002-06-negation",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "transmettre une information ou une consigne pratique dans un écrit formel",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": null,
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Rapport de rentrée : « Les responsables de classe attendent une réponse : la direction ___ sa décision concernant les horaires. »"
+  },
+  {
+    "id": "candidate-slot-20261002-07-negation",
+    "rule": "negation",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-6.1-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "Le guichet délivre pas de billets après le début du spectacle."
+      },
+      {
+        "key": "2",
+        "text": "Les réservations ne restent valables après l'heure indiquée."
+      },
+      {
+        "key": "3",
+        "text": "La réservation ne comprend pas l'entrée à l'exposition temporaire."
+      },
+      {
+        "key": "4",
+        "text": "Les billets payés en ligne n'ont été pas envoyés par courrier."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "3",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : la troisième proposition indique que l'entrée à l'exposition temporaire est exclue de la réservation. Le verbe conjugué est « comprend » ; « ne » le précède et « pas » le suit. Les autres propositions omettent un élément négatif ou placent « pas » après « été » au lieu de l'auxiliaire conjugué.\nDonc : seule l'option 3 est correcte : « La réservation ne comprend pas l'entrée à l'exposition temporaire. »",
+    "why": {
+      "1": "Dans `délivre pas`, « ne » manque devant le verbe conjugué « délivre ». La forme attendue est « ne délivre pas ».",
+      "2": "Dans `ne restent`, « pas » manque après le verbe conjugué. La forme attendue est « ne restent pas ».",
+      "3": "« Ne comprend pas » comporte les deux éléments négatifs correctement placés autour du verbe conjugué « comprend ».",
+      "4": "Dans `n'ont été pas envoyés`, « pas » doit suivre immédiatement l'auxiliaire avoir conjugué, « ont ». La forme attendue est « n'ont pas été envoyés ».",
+      "A": "L'option 3 est correcte ; « Aucune » ne convient donc pas.",
+      "T": "Les options 1, 2 et 4 comportent une négation incomplète ou mal placée ; « Toutes » ne convient donc pas."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20261002-0005",
+      "slot_id": "slot-20261002-07-negation",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "facile",
+      "source_genre": "note_administrative",
+      "communicative_purpose": "transmettre une information ou une consigne pratique dans un écrit formel",
+      "cognitive_mode": "rappel_regle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": null,
+        "4": "UNK"
+      }
+    },
+    "stem": "Formulations proposées pour une note pratique accompagnant une réservation culturelle :"
+  },
+  {
+    "id": "candidate-slot-20261002-08-negation",
+    "rule": "negation",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-6.1-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "avons pas remis"
+      },
+      {
+        "key": "2",
+        "text": "avons ne pas remis"
+      },
+      {
+        "key": "3",
+        "text": "n'avons remis"
+      },
+      {
+        "key": "4",
+        "text": "n'avons pas remis"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "4",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : les câbles sont dans une pochette séparée ; on nie donc leur placement dans la caisse. Dans « avons remis », l'auxiliaire avoir conjugué est « avons ». On place « n' » devant cet auxiliaire qui commence par une voyelle et « pas » immédiatement après : « Nous n'avons pas remis les câbles de raccordement dans la caisse de transport ».\nDonc : la réponse attendue est l'option 4, « n'avons pas remis ».",
+    "why": {
+      "1": "Dans `avons pas remis`, « n' » manque devant l'auxiliaire avoir conjugué, « avons ». La forme attendue est « n'avons pas remis ».",
+      "2": "Dans `avons ne pas remis`, « ne » est placé après l'auxiliaire conjugué au lieu de le précéder sous la forme « n' ». La forme attendue est « n'avons pas remis ».",
+      "3": "Dans `n'avons remis`, « pas » manque après l'auxiliaire conjugué « avons ». La forme attendue est « n'avons pas remis ».",
+      "4": "« N'avons pas remis » comporte « n' » devant l'auxiliaire avoir conjugué, « avons », et « pas » immédiatement après lui.",
+      "A": "L'option 4 complète correctement la phrase ; « Aucune » ne convient donc pas.",
+      "T": "Les options 1, 2 et 3 ne construisent pas la négation complète attendue ; « Toutes » ne convient donc pas."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20261002-0005",
+      "slot_id": "slot-20261002-08-negation",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "facile",
+      "source_genre": "courriel",
+      "communicative_purpose": "transmettre une information ou une consigne pratique dans un écrit formel",
+      "cognitive_mode": "rappel_regle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": "UNK",
+        "4": null
+      }
+    },
+    "stem": "Courriel accompagnant du matériel prêté : « Nous ___ les câbles de raccordement dans la caisse de transport ; ils sont dans une pochette séparée. »"
+  },
+  {
+    "id": "candidate-slot-20261002-09-negation",
+    "rule": "negation",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-6.1-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "Les bénévoles chargés du montage ne se sont pas présentés à l'heure convenue."
+      },
+      {
+        "key": "2",
+        "text": "Les bénévoles chargés du montage se sont pas présentés à l'heure convenue."
+      },
+      {
+        "key": "3",
+        "text": "Les bénévoles chargés du montage se ne sont pas présentés à l'heure convenue."
+      },
+      {
+        "key": "4",
+        "text": "Les bénévoles chargés du montage ne se sont présentés pas à l'heure convenue."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "1",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : on nie que les bénévoles se soient présentés à l'heure convenue. Dans « se sont présentés », l'auxiliaire conjugué est « sont » et le pronom « se » le précède. On place « ne » avant « se » et « pas » immédiatement après « sont » : « ne se sont pas présentés ».\nDonc : seule l'option 1 est correcte.",
+    "why": {
+      "1": "« Ne se sont pas présentés » place « ne » avant le pronom « se » et « pas » immédiatement après l'auxiliaire être conjugué, « sont ».",
+      "2": "Dans `se sont pas présentés`, « ne » manque avant le pronom « se ». La forme attendue est « ne se sont pas présentés ».",
+      "3": "Dans `se ne sont pas présentés`, « ne » est placé après « se » alors qu'il doit précéder ce pronom. La forme attendue est « ne se sont pas présentés ».",
+      "4": "Dans `ne se sont présentés pas`, « pas » est placé après « présentés » au lieu de suivre l'auxiliaire conjugué « sont ». La forme attendue est « ne se sont pas présentés ».",
+      "A": "L'option 1 est correcte ; « Aucune » ne convient donc pas.",
+      "T": "Les options 2, 3 et 4 présentent une omission ou un placement incorrect dans la négation ; « Toutes » ne convient donc pas."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20261002-0005",
+      "slot_id": "slot-20261002-09-negation",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "transmettre une information ou une consigne pratique dans un écrit formel",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Formulations proposées pour le rapport consacré à l'organisation d'une fête de quartier :"
+  },
+  {
+    "id": "candidate-slot-20261002-10-negation",
+    "rule": "negation",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-6.1-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "retournez pas"
+      },
+      {
+        "key": "2",
+        "text": "ne retournez pas"
+      },
+      {
+        "key": "3",
+        "text": "ne pas retournez"
+      },
+      {
+        "key": "4",
+        "text": "ne retournez"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "2",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : la note de sécurité interdit de retourner dans le bâtiment en cas d'alarme. « Retournez » est un verbe conjugué à l'impératif. On place « ne » devant lui et « pas » après lui : « En cas d'alarme, ne retournez pas dans le bâtiment pour récupérer vos affaires. »\nDonc : la réponse attendue est l'option 2, « ne retournez pas ».",
+    "why": {
+      "1": "Dans `retournez pas`, « ne » manque devant le verbe conjugué à l'impératif. La forme attendue est « ne retournez pas ».",
+      "2": "« Ne retournez pas » exprime l'interdiction avec « ne » avant le verbe conjugué « retournez » et « pas » après lui.",
+      "3": "Dans `ne pas retournez`, « pas » est placé avant le verbe conjugué alors qu'il doit le suivre. La forme attendue est « ne retournez pas ».",
+      "4": "Dans `ne retournez`, le second terme de la négation attendue manque. La forme attendue est « ne retournez pas ».",
+      "A": "L'option 2 complète correctement la consigne ; « Aucune » ne convient donc pas.",
+      "T": "Les options 1, 3 et 4 comportent une négation incomplète ou mal placée ; « Toutes » ne convient donc pas."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20261002-0005",
+      "slot_id": "slot-20261002-10-negation",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "facile",
+      "source_genre": "note_administrative",
+      "communicative_purpose": "transmettre une information ou une consigne pratique dans un écrit formel",
+      "cognitive_mode": "rappel_regle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": null,
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Note de sécurité : « En cas d'alarme, ___ dans le bâtiment pour récupérer vos affaires. »"
+  },
+  {
+    "id": "candidate-slot-20261002-13-negation",
+    "rule": "negation",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-6.1-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "Le secrétariat ne les diffuse plus sur papier."
+      },
+      {
+        "key": "2",
+        "text": "Le secrétariat les diffuse plus sur papier."
+      },
+      {
+        "key": "3",
+        "text": "Le secrétariat les ne diffuse plus sur papier."
+      },
+      {
+        "key": "4",
+        "text": "Le secrétariat ne plus les diffuse sur papier."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "1",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : la diffusion sur papier a cessé. On choisit ne… plus pour exprimer cet arrêt. Le pronom les désigne les procès-verbaux et reste devant diffuse : ne se place avant les, tandis que plus suit le verbe conjugué. On obtient « Le secrétariat ne les diffuse plus sur papier », sans ajouter pas.\nDonc : seule l'option 1 exprime correctement l'abandon de la diffusion sur papier dans cette note.",
+    "why": {
+      "1": "Dans « ne les diffuse plus », ne précède le pronom les et plus suit diffuse. La négation complète indique que la diffusion sur papier a cessé.",
+      "2": "Dans `les diffuse plus`, ne manque. Pour exprimer l'arrêt de la diffusion dans un écrit formel, il faut « Le secrétariat ne les diffuse plus sur papier. »",
+      "3": "Dans `les ne diffuse plus`, ne est placé après le pronom les. Il doit le précéder : « Le secrétariat ne les diffuse plus sur papier. »",
+      "4": "Dans `ne plus les diffuse`, plus est placé avant le verbe conjugué. Il faut « ne les diffuse plus » : « Le secrétariat ne les diffuse plus sur papier. »",
+      "A": "A ne convient pas : l'option 1 est correcte.",
+      "T": "T ne convient pas : seule l'option 1 est correcte ; les trois autres omettent ou déplacent un élément de la négation."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20261002-0005",
+      "slot_id": "slot-20261002-13-negation",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "facile",
+      "source_genre": "note_administrative",
+      "communicative_purpose": "transmettre une information ou une consigne pratique dans un écrit formel",
+      "cognitive_mode": "rappel_regle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "La note de réunion annonce l'abandon de la diffusion des procès-verbaux sur papier."
+  },
+  {
+    "id": "candidate-slot-20261002-14-negation",
+    "rule": "negation",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-6.1-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "vous demandons pas"
+      },
+      {
+        "key": "2",
+        "text": "ne vous demandons pas"
+      },
+      {
+        "key": "3",
+        "text": "vous ne demandons pas"
+      },
+      {
+        "key": "4",
+        "text": "ne vous pas demandons"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "2",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : l'autorisation existante suffit, donc aucun nouveau formulaire n'est demandé. On choisit ne… pas. Le verbe conjugué est demandons et vous désigne les destinataires de la demande : ne se place avant vous, puis pas après demandons. La phrase devient « pour la sortie de vendredi, nous ne vous demandons pas de nouveau formulaire », sans autre marqueur négatif.\nDonc : l'option 2 complète correctement la phrase.",
+    "why": {
+      "1": "Dans `vous demandons pas`, ne manque avant vous. La forme attendue à l'écrit est « nous ne vous demandons pas de nouveau formulaire ».",
+      "2": "Dans « ne vous demandons pas », ne précède le pronom vous et pas suit demandons. La phrase indique correctement qu'aucun nouveau formulaire n'est demandé.",
+      "3": "Dans `vous ne demandons pas`, ne est placé après vous. Il doit précéder ce pronom complément : « nous ne vous demandons pas de nouveau formulaire ».",
+      "4": "Dans `ne vous pas demandons`, pas est placé avant demandons. Il doit suivre le verbe conjugué : « nous ne vous demandons pas de nouveau formulaire ».",
+      "A": "A ne convient pas : l'option 2 fournit une phrase correcte.",
+      "T": "T ne convient pas : seule l'option 2 est correcte ; les options 1, 3 et 4 omettent ou déplacent un élément de la négation."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20261002-0005",
+      "slot_id": "slot-20261002-14-negation",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "facile",
+      "source_genre": "courriel",
+      "communicative_purpose": "transmettre une information ou une consigne pratique dans un écrit formel",
+      "cognitive_mode": "rappel_regle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": null,
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "L'autorisation remise en septembre couvre cette activité ; pour la sortie de vendredi, nous ___ de nouveau formulaire."
+  },
+  {
+    "id": "candidate-slot-20261002-16-negation",
+    "rule": "negation",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-6.1-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "y accueille plus le public"
+      },
+      {
+        "key": "2",
+        "text": "y n'accueille plus le public"
+      },
+      {
+        "key": "3",
+        "text": "ne plus y accueille le public"
+      },
+      {
+        "key": "4",
+        "text": "n'y accueille plus le public"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "4",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : l'accueil du public cesse après midi. On choisit ne… plus. Le pronom y renvoie au guichet ; ne devient n' devant y et se place avant ce pronom, tandis que plus suit accueille. On obtient « on n'y accueille plus le public après midi ». Aucun pas supplémentaire n'est nécessaire.\nDonc : l'option 4 complète correctement la phrase.",
+    "why": {
+      "1": "Dans `y accueille plus le public`, n' manque. La négation écrite attendue est « on n'y accueille plus le public après midi ».",
+      "2": "Dans `y n'accueille plus`, n' est placé après y. Il doit précéder ce pronom : « on n'y accueille plus le public après midi ».",
+      "3": "Dans `ne plus y accueille`, plus est placé avant le verbe et ne n'est pas placé directement devant y sous la forme n'. Il faut « on n'y accueille plus le public après midi ».",
+      "4": "Dans « n'y accueille plus », n' précède y et plus suit accueille. Cette négation complète exprime correctement la fin de l'accueil après midi.",
+      "A": "A ne convient pas : l'option 4 fournit une phrase correcte.",
+      "T": "T ne convient pas : une seule option est correcte, la 4 ; les options 1, 2 et 3 présentent une négation incomplète ou mal placée."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20261002-0005",
+      "slot_id": "slot-20261002-16-negation",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "facile",
+      "source_genre": "note_administrative",
+      "communicative_purpose": "transmettre une information ou une consigne pratique dans un écrit formel",
+      "cognitive_mode": "rappel_regle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": "UNK",
+        "4": null
+      }
+    },
+    "stem": "Le guichet est fermé l'après-midi ; on ___ après midi."
+  },
+  {
+    "id": "candidate-slot-20261002-17-negation",
+    "rule": "negation",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-6.1-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "Nous n'y emmenons pas les élèves sans autorisation."
+      },
+      {
+        "key": "2",
+        "text": "Nous y emmenons pas les élèves sans autorisation."
+      },
+      {
+        "key": "3",
+        "text": "Nous y n'emmenons pas les élèves sans autorisation."
+      },
+      {
+        "key": "4",
+        "text": "Nous n'y pas emmenons les élèves sans autorisation."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "1",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : le courriel exclut une visite sans autorisation des parents. On choisit ne… pas. Le pronom y désigne le musée : ne devient n' devant y et précède ce pronom ; pas suit le verbe conjugué emmenons. La formulation « Nous n'y emmenons pas les élèves sans autorisation » conserve la condition imposée par le contexte, sans marqueur négatif supplémentaire.\nDonc : seule l'option 1 convient.",
+    "why": {
+      "1": "Dans « n'y emmenons pas », n' précède y et pas suit emmenons. La phrase exprime correctement que les élèves ne sont pas emmenés au musée sans autorisation.",
+      "2": "Dans `y emmenons pas`, n' manque. À l'écrit formel, il faut « Nous n'y emmenons pas les élèves sans autorisation. »",
+      "3": "Dans `y n'emmenons pas`, n' est placé après y. Il doit précéder ce pronom : « Nous n'y emmenons pas les élèves sans autorisation. »",
+      "4": "Dans `n'y pas emmenons`, pas est placé avant le verbe conjugué. Il doit suivre emmenons : « Nous n'y emmenons pas les élèves sans autorisation. »",
+      "A": "A ne convient pas : l'option 1 est correcte.",
+      "T": "T ne convient pas : seule l'option 1 est correcte ; les autres omettent n' ou placent mal un élément de la négation."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20261002-0005",
+      "slot_id": "slot-20261002-17-negation",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "facile",
+      "source_genre": "courriel",
+      "communicative_purpose": "transmettre une information ou une consigne pratique dans un écrit formel",
+      "cognitive_mode": "rappel_regle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Le courriel présente une visite du musée et rappelle que l'autorisation des parents est indispensable."
+  },
+  {
+    "id": "candidate-slot-20261002-18-negation",
+    "rule": "negation",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-6.1-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "le leur a toujours pas envoyé"
+      },
+      {
+        "key": "2",
+        "text": "ne le leur a toujours pas envoyé"
+      },
+      {
+        "key": "3",
+        "text": "le leur n'a toujours pas envoyé"
+      },
+      {
+        "key": "4",
+        "text": "ne le leur a toujours envoyé pas"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "2",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : malgré les rappels, l'envoi du bulletin n'a pas encore eu lieu. La tournure toujours pas exprime cette attente qui se prolonge. Le pronom le désigne le bulletin et leur désigne les anciens membres. Au passé composé avec l'auxiliaire avoir, ne se place avant les deux pronoms, et toujours pas après l'auxiliaire conjugué a, avant le participe passé envoyé : « le secrétariat ne le leur a toujours pas envoyé ». Aucun autre marqueur négatif n'est nécessaire.\nDonc : l'option 2 complète correctement la phrase.",
+    "why": {
+      "1": "Dans `le leur a toujours pas envoyé`, ne manque. Il doit précéder les deux pronoms : « le secrétariat ne le leur a toujours pas envoyé ».",
+      "2": "Dans « ne le leur a toujours pas envoyé », ne précède le et leur, puis toujours pas suit l'auxiliaire avoir, avant envoyé. La phrase exprime correctement que le bulletin reste attendu.",
+      "3": "Dans `le leur n'a toujours pas envoyé`, n' est placé après les pronoms le et leur. Il faut placer ne avant ces pronoms : « le secrétariat ne le leur a toujours pas envoyé ».",
+      "4": "Dans `ne le leur a toujours envoyé pas`, pas est placé après le participe passé. Au passé composé avec l'auxiliaire avoir, toujours pas se place après a et avant envoyé : « le secrétariat ne le leur a toujours pas envoyé ».",
+      "A": "A ne convient pas : l'option 2 fournit une phrase correcte.",
+      "T": "T ne convient pas : seule l'option 2 est correcte ; les options 1, 3 et 4 omettent ou déplacent un élément de la négation."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20261002-0005",
+      "slot_id": "slot-20261002-18-negation",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "transmettre une information ou une consigne pratique dans un écrit formel",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": null,
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Les anciens membres attendent encore le bulletin de l'association ; malgré leurs rappels, le secrétariat ___."
+  },
+  {
+    "id": "candidate-slot-20261002-20-negation",
+    "rule": "negation",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-6.1-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "la ferment pas"
+      },
+      {
+        "key": "2",
+        "text": "la ne ferment pas"
+      },
+      {
+        "key": "3",
+        "text": "ne la pas ferment"
+      },
+      {
+        "key": "4",
+        "text": "ne la ferment pas"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "4",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : pour laisser entrer les intervenants, les utilisateurs s'abstiennent de fermer la salle à clé. On choisit ne… pas. Le pronom la désigne la salle et précède ferment : ne se place avant la et pas après le verbe conjugué. On obtient « les utilisateurs ne la ferment pas à clé pendant les activités », sans autre marqueur négatif.\nDonc : l'option 4 complète correctement la phrase.",
+    "why": {
+      "1": "Dans `la ferment pas`, ne manque devant la. La forme attendue à l'écrit est « les utilisateurs ne la ferment pas à clé pendant les activités ».",
+      "2": "Dans `la ne ferment pas`, ne est placé après le pronom la. Il doit le précéder : « les utilisateurs ne la ferment pas à clé pendant les activités ».",
+      "3": "Dans `ne la pas ferment`, pas est placé avant ferment. Il doit suivre le verbe conjugué : « les utilisateurs ne la ferment pas à clé pendant les activités ».",
+      "4": "Dans « ne la ferment pas », ne précède le pronom la et pas suit ferment. La phrase indique correctement que la salle reste accessible aux intervenants.",
+      "A": "A ne convient pas : l'option 4 fournit une phrase correcte.",
+      "T": "T ne convient pas : seule l'option 4 est correcte ; les options 1, 2 et 3 omettent ou déplacent un élément de la négation."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20261002-0005",
+      "slot_id": "slot-20261002-20-negation",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "facile",
+      "source_genre": "courriel",
+      "communicative_purpose": "transmettre une information ou une consigne pratique dans un écrit formel",
+      "cognitive_mode": "rappel_regle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": "UNK",
+        "4": null
+      }
+    },
+    "stem": "Pour permettre l'accès des intervenants à la salle, les utilisateurs ___ à clé pendant les activités."
+  },
+  {
+    "id": "candidate-slot-20261002-23-negation",
+    "rule": "negation",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-6.1-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "Nous pouvons pas répartir les tâches avant de connaître les disponibilités de chacun."
+      },
+      {
+        "key": "2",
+        "text": "Nous ne pas pouvons répartir les tâches avant de connaître les disponibilités de chacun."
+      },
+      {
+        "key": "3",
+        "text": "Nous ne pouvons pas répartir les tâches avant de connaître les disponibilités de chacun."
+      },
+      {
+        "key": "4",
+        "text": "Nous ne pouvons répartir pas les tâches avant de connaître les disponibilités de chacun."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "3",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : On nie la possibilité de répartir les tâches avant de connaître les disponibilités. Le verbe conjugué est « pouvons » : « ne » se place avant ce verbe et « pas » juste après, avant l’infinitif « répartir ». On obtient « Nous ne pouvons pas répartir les tâches avant de connaître les disponibilités de chacun ».\nDonc : Seule l’option 3 présente la négation complète correctement placée. La réponse est 3.",
+    "why": {
+      "1": "Dans `Nous pouvons pas`, « ne » manque devant le verbe conjugué. La négation complète exigée à l’écrit est « Nous ne pouvons pas ».",
+      "2": "Dans `Nous ne pas pouvons`, « pas » est placé avant le verbe conjugué au lieu de le suivre. La forme attendue est « Nous ne pouvons pas ».",
+      "3": "Dans « Nous ne pouvons pas répartir », « ne » et « pas » encadrent correctement le verbe conjugué « pouvons », avant l’infinitif « répartir ».",
+      "4": "Dans `Nous ne pouvons répartir pas`, « pas » est placé après l’infinitif au lieu de suivre le verbe conjugué « pouvons ». La forme attendue est « Nous ne pouvons pas répartir ».",
+      "A": "L’option 3 est correcte : on ne peut donc pas choisir « Aucune ».",
+      "T": "Une seule option sur quatre est correcte, l’option 3 : on ne peut donc pas choisir « Toutes »."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20261002-0005",
+      "slot_id": "slot-20261002-23-negation",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "facile",
+      "source_genre": "courriel",
+      "communicative_purpose": "transmettre une information ou une consigne pratique dans un écrit formel",
+      "cognitive_mode": "rappel_regle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": null,
+        "4": "UNK"
+      }
+    },
+    "stem": "Dans un courriel préparant un travail de groupe :"
+  },
+  {
+    "id": "candidate-slot-20261002-24-negation",
+    "rule": "negation",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-6.1-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "les a pas remis"
+      },
+      {
+        "key": "2",
+        "text": "les a ne pas remis"
+      },
+      {
+        "key": "3",
+        "text": "ne les a remis pas"
+      },
+      {
+        "key": "4",
+        "text": "ne les a pas remis"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "4",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : On nie la remise des deux colis au dépôt. Le pronom « les » reprend ces colis et se place devant l’auxiliaire conjugué « a ». « Ne » se place avant « les a », tandis que « pas » se place après « a », avant « remis ». La phrase complétée est « Deux colis supplémentaires étaient attendus hier ; le transporteur ne les a pas remis à notre dépôt ».\nDonc : Seule l’option 4 place correctement les deux éléments de la négation autour de l’auxiliaire conjugué, en tenant compte du pronom « les ». La réponse est 4.",
+    "why": {
+      "1": "Dans `les a pas remis`, « ne » manque. Avec le pronom « les » devant l’auxiliaire, la négation complète attendue est « ne les a pas remis ».",
+      "2": "Dans `les a ne pas remis`, « ne » est placé après l’auxiliaire conjugué « a ». Il doit précéder le groupe « les a » : la forme attendue est « ne les a pas remis ».",
+      "3": "Dans `ne les a remis pas`, « pas » est placé après « remis » au lieu de suivre l’auxiliaire conjugué « a ». La forme attendue est « ne les a pas remis ».",
+      "4": "Dans « ne les a pas remis », « ne » précède le pronom « les » et l’auxiliaire « a » ; « pas » suit cet auxiliaire et précède « remis ». La négation est complète et correctement placée.",
+      "A": "L’option 4 est correcte : on ne peut donc pas choisir « Aucune ».",
+      "T": "Une seule option sur quatre est correcte, l’option 4 : on ne peut donc pas choisir « Toutes »."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20261002-0005",
+      "slot_id": "slot-20261002-24-negation",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "niveau_examen",
+      "source_genre": "rapport",
+      "communicative_purpose": "transmettre une information ou une consigne pratique dans un écrit formel",
+      "cognitive_mode": "analyse_structurelle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": "UNK",
+        "4": null
+      }
+    },
+    "stem": "Deux colis supplémentaires étaient attendus hier ; le transporteur ___ à notre dépôt."
+  },
+  {
+    "id": "cand-hep-b1-20261002-0007-01-negation-refill",
+    "rule": "negation",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-6.1-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "Les dictionnaires de la salle de référence ne s’empruntent pas."
+      },
+      {
+        "key": "2",
+        "text": "Les lecteurs peuvent pas réserver les journaux du jour."
+      },
+      {
+        "key": "3",
+        "text": "Les ouvrages anciens se ne trouvent plus dans la salle principale."
+      },
+      {
+        "key": "4",
+        "text": "Les prêts ne pas se prolongent pendant la fermeture annuelle."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "1",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : La note indique que les dictionnaires ne peuvent pas être empruntés. Dans l’option 1, ne précède le pronom se, élidé en s’, puis le verbe conjugué empruntent ; pas suit ce verbe. La négation est complète et correctement placée. L’option 2 omet ne ; l’option 3 place ne après se ; l’option 4 place pas avant le verbe.\nDonc : Seule l’option 1 est correcte.",
+    "why": {
+      "1": "Dans « ne s’empruntent pas », ne se place avant le pronom s’ et pas après le verbe conjugué empruntent : la négation est complète.",
+      "2": "Dans `peuvent pas`, ne manque devant le verbe conjugué. Dans cet écrit formel, il faut « Les lecteurs ne peuvent pas réserver les journaux du jour. »",
+      "3": "Dans `se ne trouvent plus`, ne est placé après le pronom se. Il doit le précéder : « Les ouvrages anciens ne se trouvent plus dans la salle principale. »",
+      "4": "Dans `ne pas se prolongent`, pas est placé avant le verbe conjugué. Il faut « Les prêts ne se prolongent pas pendant la fermeture annuelle. »",
+      "A": "Aucune ne convient pas : l’option 1 présente une négation complète et correctement placée.",
+      "T": "Toutes ne convient pas : seule l’option 1 est correcte ; les options 2, 3 et 4 comportent chacune une erreur de négation."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20261002-0007",
+      "slot_id": "slot-hep-b1-20261002-0007-01-negation-refill",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "facile",
+      "source_genre": "note_administrative",
+      "communicative_purpose": "transmettre une information ou une consigne pratique dans un écrit formel",
+      "cognitive_mode": "rappel_regle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Une note de la bibliothèque présente les conditions de consultation et de prêt."
+  },
+  {
+    "id": "cand-hep-b1-20261002-0007-02-negation-refill",
+    "rule": "negation",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-6.1-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "y entrez pas"
+      },
+      {
+        "key": "2",
+        "text": "n’y entrez pas"
+      },
+      {
+        "key": "3",
+        "text": "y n’entrez pas"
+      },
+      {
+        "key": "4",
+        "text": "n’y pas entrez"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "2",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : L’association interdit d’entrer dans la salle avec des chaussures d’extérieur. Le pronom y désigne la salle. À l’impératif négatif, ne se place avant y et devient n’ devant cette voyelle ; pas suit le verbe entrez. On obtient n’y entrez pas. L’option 1 omet n’ ; l’option 3 inverse n’ et y ; l’option 4 place pas avant le verbe.\nDonc : La réponse attendue est l’option 2 : « Pour préserver le revêtement, n’y entrez pas avec des chaussures d’extérieur. »",
+    "why": {
+      "1": "Dans `y entrez pas`, n’ manque avant y. La négation écrite complète exige « n’y entrez pas ».",
+      "2": "Dans « n’y entrez pas », n’ précède le pronom y et pas suit le verbe entrez : l’interdiction est correctement formulée.",
+      "3": "Dans `y n’entrez pas`, n’ est placé après y. Il doit précéder ce pronom : « n’y entrez pas ».",
+      "4": "Dans `n’y pas entrez`, pas précède le verbe entrez. Il doit le suivre : « n’y entrez pas ».",
+      "A": "Aucune ne convient pas : l’option 2 complète correctement la consigne.",
+      "T": "Toutes ne convient pas : seule l’option 2 respecte la présence et la place des éléments de la négation."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20261002-0007",
+      "slot_id": "slot-hep-b1-20261002-0007-02-negation-refill",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "facile",
+      "source_genre": "courriel",
+      "communicative_purpose": "transmettre une information ou une consigne pratique dans un écrit formel",
+      "cognitive_mode": "rappel_regle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": null,
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "L’association sportive écrit à ses membres : « La salle vient d’être rénovée. Pour préserver le revêtement, ___ avec des chaussures d’extérieur. »"
+  },
+  {
+    "id": "cand-hep-b1-20261002-0007-03-negation-refill",
+    "rule": "negation",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-6.1-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "Les conducteurs ont jamais laissé les voyageurs sans information."
+      },
+      {
+        "key": "2",
+        "text": "La centrale nous n’a pas transmis de nouvel horaire."
+      },
+      {
+        "key": "3",
+        "text": "Personne n’attendait à l’arrêt provisoire lors du dernier passage."
+      },
+      {
+        "key": "4",
+        "text": "La panne ne pas concernait les autres lignes."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "3",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : Dans l’option 3, personne indique qu’aucun voyageur n’attendait à l’arrêt. Ce sujet négatif s’accompagne de ne, élidé en n’ devant attendait ; il n’est pas nécessaire d’ajouter pas. L’option 1 omet n’ devant ont ; l’option 2 place n’ après nous ; l’option 4 place pas avant concernait.\nDonc : Seule l’option 3 est correcte.",
+    "why": {
+      "1": "Dans `ont jamais`, n’ manque devant le verbe conjugué ont. Il faut « Les conducteurs n’ont jamais laissé les voyageurs sans information. »",
+      "2": "Dans `nous n’a pas transmis`, n’ est placé après le pronom nous. Il doit le précéder : « La centrale ne nous a pas transmis de nouvel horaire. »",
+      "3": "Dans « Personne n’attendait », personne exprime l’absence de voyageurs et n’ complète la négation devant attendait. Aucun pas supplémentaire n’est nécessaire.",
+      "4": "Dans `ne pas concernait`, pas précède le verbe conjugué concernait. Il faut « La panne ne concernait pas les autres lignes. »",
+      "A": "Aucune ne convient pas : l’option 3 construit correctement la négation avec personne et n’.",
+      "T": "Toutes ne convient pas : seule l’option 3 est correcte ; les trois autres présentent une omission ou un mauvais placement d’un marqueur négatif."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20261002-0007",
+      "slot_id": "slot-hep-b1-20261002-0007-03-negation-refill",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "facile",
+      "source_genre": "rapport",
+      "communicative_purpose": "transmettre une information ou une consigne pratique dans un écrit formel",
+      "cognitive_mode": "rappel_regle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": null,
+        "4": "UNK"
+      }
+    },
+    "stem": "Un rapport décrit les effets d’une interruption du trafic sur une ligne de bus."
+  },
+  {
+    "id": "cand-hep-b1-20261002-0007-05-negation-refill",
+    "rule": "negation",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-6.1-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "Nous ne traitons plus les demandes déposées sur papier."
+      },
+      {
+        "key": "2",
+        "text": "Le guichet ouvre pas le jeudi après-midi."
+      },
+      {
+        "key": "3",
+        "text": "Vous nous ne trouverez pas à l’ancienne adresse."
+      },
+      {
+        "key": "4",
+        "text": "Les démarches ne pas nécessitent de rendez-vous."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "1",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : Dans l’option 1, le service annonce la fin du traitement des demandes sur papier. Ne précède traitons et plus suit ce verbe : ne… plus exprime correctement cette cessation. L’option 2 omet n’ devant ouvre ; l’option 3 place ne après nous ; l’option 4 place pas avant nécessitent.\nDonc : Seule l’option 1 est correcte.",
+    "why": {
+      "1": "Dans « ne traitons plus », ne et plus encadrent le verbe conjugué traitons. Plus indique que le traitement des demandes sur papier a cessé.",
+      "2": "Dans `ouvre pas`, n’ manque devant ouvre. Il faut « Le guichet n’ouvre pas le jeudi après-midi. »",
+      "3": "Dans `nous ne trouverez pas`, ne est placé après le pronom nous. Il doit le précéder : « Vous ne nous trouverez pas à l’ancienne adresse. »",
+      "4": "Dans `ne pas nécessitent`, pas précède le verbe conjugué nécessitent. Il faut « Les démarches ne nécessitent pas de rendez-vous. »",
+      "A": "Aucune ne convient pas : l’option 1 présente une négation correcte avec ne… plus.",
+      "T": "Toutes ne convient pas : seule l’option 1 est correcte ; les options 2, 3 et 4 comportent une erreur dans la construction de la négation."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20261002-0007",
+      "slot_id": "slot-hep-b1-20261002-0007-05-negation-refill",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "facile",
+      "source_genre": "courriel",
+      "communicative_purpose": "transmettre une information ou une consigne pratique dans un écrit formel",
+      "cognitive_mode": "rappel_regle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Le service communal informe les habitantes et les habitants de ses nouvelles modalités d’accueil."
+  },
+  {
+    "id": "cand-hep-b1-20261002-0007-06-negation-refill",
+    "rule": "negation",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-6.1-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "en avait été informé"
+      },
+      {
+        "key": "2",
+        "text": "n’en avait été informé"
+      },
+      {
+        "key": "3",
+        "text": "en n’avait été informé"
+      },
+      {
+        "key": "4",
+        "text": "ne en avait été informé"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "2",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : Le rapport indique qu’aucun participant n’avait reçu l’information avant la réunion. Personne est le sujet négatif ; en renvoie au changement de salle. Ne doit précéder en et devient n’ devant sa voyelle : personne n’en avait été informé. Personne porte déjà le sens négatif, donc aucun pas n’est nécessaire. L’option 1 omet n’ ; l’option 3 le place après en ; l’option 4 conserve ne sans l’élider.\nDonc : La réponse attendue est l’option 2 : « Personne n’en avait été informé avant la réunion. »",
+    "why": {
+      "1": "Dans `Personne en avait été informé`, ne manque malgré le sujet négatif personne. Il faut « Personne n’en avait été informé avant la réunion. »",
+      "2": "Dans « Personne n’en avait été informé », personne exprime l’absence de participants informés et n’ précède correctement le pronom en. Il n’est pas nécessaire d’ajouter pas.",
+      "3": "Dans `en n’avait été informé`, n’ est placé après le pronom en. Il doit le précéder : « n’en avait été informé ».",
+      "4": "Dans `ne en avait été informé`, ne doit s’élider devant la voyelle de en. La forme attendue est « n’en avait été informé ».",
+      "A": "Aucune ne convient pas : l’option 2 complète correctement la négation introduite par personne.",
+      "T": "Toutes ne convient pas : seule l’option 2 respecte la présence, la place et l’élision de ne."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20261002-0007",
+      "slot_id": "slot-hep-b1-20261002-0007-06-negation-refill",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "facile",
+      "source_genre": "rapport",
+      "communicative_purpose": "transmettre une information ou une consigne pratique dans un écrit formel",
+      "cognitive_mode": "rappel_regle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": null,
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Lors du conseil des enseignants, le changement de salle a surpris tous les participants. Le rapport indique : « Personne ___ avant la réunion. »"
+  },
+  {
+    "id": "cand-hep-b1-20261002-0007-07-negation-refill",
+    "rule": "negation",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-6.1-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "Le guichet accepte pas de réservation par téléphone."
+      },
+      {
+        "key": "2",
+        "text": "La billetterie vous ne transmet pas de confirmation imprimée."
+      },
+      {
+        "key": "3",
+        "text": "Les places réservées ne sont plus disponibles à la vente."
+      },
+      {
+        "key": "4",
+        "text": "La réservation ne pas garantit une place au premier rang."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "3",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : Dans l’option 3, la note annonce que les places réservées ont cessé d’être disponibles à la vente. Ne précède sont et plus le suit : ne… plus exprime correctement ce changement. L’option 1 omet n’ devant accepte ; l’option 2 place ne après vous ; l’option 4 place pas avant garantit.\nDonc : Seule l’option 3 est correcte.",
+    "why": {
+      "1": "Dans `accepte pas`, n’ manque devant accepte. Il faut « Le guichet n’accepte pas de réservation par téléphone. »",
+      "2": "Dans `vous ne transmet pas`, ne est placé après le pronom vous. Il doit le précéder : « La billetterie ne vous transmet pas de confirmation imprimée. »",
+      "3": "Dans « ne sont plus disponibles », ne précède le verbe conjugué sont et plus le suit. La négation indique que les places réservées ne sont désormais plus proposées à la vente.",
+      "4": "Dans `ne pas garantit`, pas précède le verbe conjugué garantit. Il faut « La réservation ne garantit pas une place au premier rang. »",
+      "A": "Aucune ne convient pas : l’option 3 présente une négation complète et correctement placée.",
+      "T": "Toutes ne convient pas : seule l’option 3 est correcte ; les options 1, 2 et 4 comportent une erreur de négation."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20261002-0007",
+      "slot_id": "slot-hep-b1-20261002-0007-07-negation-refill",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "facile",
+      "source_genre": "note_administrative",
+      "communicative_purpose": "transmettre une information ou une consigne pratique dans un écrit formel",
+      "cognitive_mode": "rappel_regle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": null,
+        "4": "UNK"
+      }
+    },
+    "stem": "Une note de la billetterie présente les modalités de réservation pour un spectacle."
+  },
+  {
+    "id": "cand-hep-b1-20261002-0007-09-negation-refill",
+    "rule": "negation",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-6.1-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "Les organisateurs n’ont rien laissé sur la place après le rangement."
+      },
+      {
+        "key": "2",
+        "text": "Les bénévoles ont pas utilisé de produits chimiques."
+      },
+      {
+        "key": "3",
+        "text": "Les riverains se ne sont pas plaints du bruit."
+      },
+      {
+        "key": "4",
+        "text": "La collecte ne pas comprenait les déchets encombrants."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "1",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : Dans l’option 1, le rapport indique qu’aucun objet n’est resté sur la place après le rangement. Rien exprime cette absence ; ne devient n’ devant ont et rien se place après cet auxiliaire conjugué. La négation n’ont rien laissé est complète. L’option 2 omet n’ devant ont ; l’option 3 place ne après se ; l’option 4 place pas avant comprenait.\nDonc : Seule l’option 1 est correcte.",
+    "why": {
+      "1": "Dans « n’ont rien laissé », n’ précède l’auxiliaire conjugué ont et rien le suit. Rien exprime ce qui n’a pas été laissé sur la place ; aucun pas supplémentaire n’est nécessaire.",
+      "2": "Dans `ont pas utilisé`, n’ manque devant ont. Il faut « Les bénévoles n’ont pas utilisé de produits chimiques. »",
+      "3": "Dans `se ne sont pas plaints`, ne est placé après le pronom se. Il doit le précéder : « Les riverains ne se sont pas plaints du bruit. »",
+      "4": "Dans `ne pas comprenait`, pas précède le verbe conjugué comprenait. Il faut « La collecte ne comprenait pas les déchets encombrants. »",
+      "A": "Aucune ne convient pas : l’option 1 construit correctement la négation avec n’ et rien.",
+      "T": "Toutes ne convient pas : seule l’option 1 est correcte ; les trois autres comportent une omission ou un mauvais placement d’un marqueur négatif."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20261002-0007",
+      "slot_id": "slot-hep-b1-20261002-0007-09-negation-refill",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "facile",
+      "source_genre": "rapport",
+      "communicative_purpose": "transmettre une information ou une consigne pratique dans un écrit formel",
+      "cognitive_mode": "rappel_regle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": null,
+        "2": "UNK",
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Le rapport d’une journée de nettoyage du quartier fait le bilan du travail des bénévoles."
+  },
+  {
+    "id": "cand-hep-b1-20261002-0007-10-negation-refill",
+    "rule": "negation",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-6.1-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "On obstrue pas"
+      },
+      {
+        "key": "2",
+        "text": "On n’obstrue pas"
+      },
+      {
+        "key": "3",
+        "text": "On ne obstrue pas"
+      },
+      {
+        "key": "4",
+        "text": "On obstrue ne pas"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "2",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : La note interdit d’obstruer les issues de secours. Le verbe conjugué est obstrue : ne doit le précéder et s’élide en n’ devant sa voyelle initiale ; pas doit le suivre. On obtient on n’obstrue pas. La liaison entendue après on dans on obstrue ne remplace pas le n’ écrit de la négation. L’option 1 omet n’ ; l’option 3 n’élide pas ne ; l’option 4 place ne après le verbe.\nDonc : La réponse attendue est l’option 2 : « On n’obstrue pas les issues de secours, même pour quelques minutes. »",
+    "why": {
+      "1": "Dans `On obstrue pas`, n’ manque devant obstrue. La liaison après on ne suffit pas à écrire la négation : il faut « On n’obstrue pas ».",
+      "2": "Dans « On n’obstrue pas », n’ précède le verbe obstrue et pas le suit. L’élision de ne devant la voyelle initiale est respectée.",
+      "3": "Dans `On ne obstrue pas`, ne doit s’élider devant la voyelle initiale de obstrue. La forme attendue est « On n’obstrue pas ».",
+      "4": "Dans `On obstrue ne pas`, ne est placé après le verbe. Il doit précéder obstrue et s’élider : « On n’obstrue pas ».",
+      "A": "Aucune ne convient pas : l’option 2 formule correctement l’interdiction dans cet écrit formel.",
+      "T": "Toutes ne convient pas : seule l’option 2 respecte la présence, la place et l’élision de ne."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20261002-0007",
+      "slot_id": "slot-hep-b1-20261002-0007-10-negation-refill",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "facile",
+      "source_genre": "note_administrative",
+      "communicative_purpose": "transmettre une information ou une consigne pratique dans un écrit formel",
+      "cognitive_mode": "rappel_regle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": null,
+        "3": "UNK",
+        "4": "UNK"
+      }
+    },
+    "stem": "Le responsable rappelle une interdiction dans une note de sécurité : « ___ les issues de secours, même pour quelques minutes. »"
+  },
+  {
+    "id": "candidate-hep-b1-20261002-0007-11-negation-refill",
+    "rule": "negation",
+    "type": "sentences",
+    "gen": {
+      "model": "gpt-6.1-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "Après le 15 octobre, on pourra plus s’inscrire à la formation."
+      },
+      {
+        "key": "2",
+        "text": "Après le 15 octobre, il sera possible de ne pas s’inscrire à la formation."
+      },
+      {
+        "key": "3",
+        "text": "Après le 15 octobre, vous ne pourrez plus vous inscrire à la formation."
+      },
+      {
+        "key": "4",
+        "text": "Après le 15 octobre, vous ne pourrez vous inscrire pas à la formation."
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "3",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : Le courriel annonce la fin de la possibilité de s’inscrire après le 15 octobre. Dans l’option 3, « ne » se place avant le verbe conjugué « pourrez » et « plus » juste après : « vous ne pourrez plus vous inscrire ». Cette négation porte sur la possibilité de s’inscrire, et « plus » marque la fin de cette possibilité. L’option 1 omet « ne » ; l’option 2 présente l’absence d’inscription comme possible ; l’option 4 place « pas » après l’infinitif au lieu d’encadrer le verbe conjugué.\nDonc : Seule l’option 3 transmet correctement l’information dans un écrit formel. La réponse est 3.",
+    "why": {
+      "1": "Dans `on pourra plus s’inscrire`, « ne » manque devant le verbe conjugué « pourra ». L’écrit formel exige ici la négation complète. La forme attendue est « Après le 15 octobre, on ne pourra plus s’inscrire à la formation ».",
+      "2": "Le passage `il sera possible de ne pas s’inscrire` est grammatical, mais il affirme qu’on pourra choisir de ne pas s’inscrire. La négation porte sur « s’inscrire », alors que le courriel doit nier la possibilité de s’inscrire. La formulation attendue est « Après le 15 octobre, il ne sera plus possible de s’inscrire à la formation ».",
+      "3": "« Ne » et « plus » encadrent correctement le verbe conjugué « pourrez ». « Plus » indique que la possibilité de s’inscrire prendra fin après le 15 octobre : cette phrase respecte le sens demandé et le registre formel.",
+      "4": "Dans `vous ne pourrez vous inscrire pas`, « pas » est mal placé : les marqueurs doivent ici encadrer le verbe conjugué « pourrez ». Pour exprimer la fin de la possibilité d’inscription, on attend « Après le 15 octobre, vous ne pourrez plus vous inscrire à la formation ».",
+      "A": "« Aucune » ne convient pas : l’option 3 contient une négation complète et transmet l’impossibilité de s’inscrire après la date indiquée.",
+      "T": "« Toutes » ne convient pas : seule l’option 3 est correcte. L’option 1 omet « ne », l’option 2 transmet une autre information et l’option 4 place mal « pas »."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20261002-0007",
+      "slot_id": "slot-hep-b1-20261002-0007-11-negation-refill",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "facile",
+      "source_genre": "courriel",
+      "communicative_purpose": "transmettre une information ou une consigne pratique dans un écrit formel",
+      "cognitive_mode": "rappel_regle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": null,
+        "4": "UNK"
+      }
+    },
+    "stem": "Le secrétariat prépare un courriel pour annoncer qu’il sera impossible de s’inscrire à une formation après le 15 octobre. Quelle phrase transmet correctement cette information dans un écrit formel ?"
+  },
+  {
+    "id": "candidate-slot-hep-b1-20261002-0007-04-negation-refill-1d347a53a62c",
+    "rule": "negation",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-6.1-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "les emportez pas"
+      },
+      {
+        "key": "2",
+        "text": "les n’emportez pas"
+      },
+      {
+        "key": "3",
+        "text": "ne pas les emportez"
+      },
+      {
+        "key": "4",
+        "text": "ne les emportez pas"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "4",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : les dossiers doivent rester au bureau ; l’action de les emporter chez soi est donc interdite. On choisit la négation ne… pas. Le verbe conjugué est « emportez » et « les » reprend les dossiers. On place « ne » avant « les emportez » et « pas » après le verbe : « Vous ne les emportez pas chez vous, même pour terminer une tâche. » Aucun marqueur supplémentaire n’est nécessaire.\nDonc : seule l’option 4, « ne les emportez pas », complète correctement la phrase.",
+    "why": {
+      "1": "Dans `les emportez pas`, « ne » manque : la négation est incomplète dans cette note écrite. La forme attendue est « ne les emportez pas ».",
+      "2": "Dans `les n’emportez pas`, le marqueur négatif est mal placé : il doit précéder le pronom « les ». Devant « les », on écrit « ne ». La forme attendue est « ne les emportez pas ».",
+      "3": "Dans `ne pas les emportez`, « pas » est placé avant le verbe conjugué alors qu’il doit le suivre ici. La forme attendue est « ne les emportez pas ».",
+      "4": "« Ne les emportez pas » place « ne » avant le pronom « les » et le verbe conjugué « emportez », puis « pas » après le verbe. La négation complète exprime l’interdiction demandée.",
+      "A": "« Aucune » ne convient pas : l’option 4 complète correctement la phrase.",
+      "T": "« Toutes » ne convient pas : seule l’option 4 est correcte ; les trois autres omettent ou placent mal un élément de la négation."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20261002-0007",
+      "slot_id": "slot-hep-b1-20261002-0007-04-negation-refill",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "facile",
+      "source_genre": "note_administrative",
+      "communicative_purpose": "transmettre une information ou une consigne pratique dans un écrit formel",
+      "cognitive_mode": "rappel_regle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": "UNK",
+        "4": null
+      }
+    },
+    "stem": "La note d’accueil précise que les dossiers doivent rester dans le bureau pendant toute la durée du stage : « Vous ___ chez vous, même pour terminer une tâche. »"
+  },
+  {
+    "id": "candidate-slot-hep-b1-20261002-0007-08-negation-refill-1d347a53a62c",
+    "rule": "negation",
+    "type": "blank",
+    "gen": {
+      "model": "gpt-6.1-sol",
+      "thinking": "high",
+      "tracked": true
+    },
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
+    "options": [
+      {
+        "key": "1",
+        "text": "Jetez pas"
+      },
+      {
+        "key": "2",
+        "text": "Ne pas jetez"
+      },
+      {
+        "key": "3",
+        "text": "Jetez ne pas"
+      },
+      {
+        "key": "4",
+        "text": "Ne jetez pas"
+      },
+      {
+        "key": "A",
+        "text": "Aucune"
+      },
+      {
+        "key": "T",
+        "text": "Toutes"
+      }
+    ],
+    "answer": "4",
+    "explanation": "Règle : Dans un écrit scolaire ou formel, place ne ou n’ avant le verbe conjugué et conserve le second terme négatif qui porte la négation, par exemple pas, plus, jamais, rien ou personne.\nMéthode : 1. Détermine exactement ce qui est nié ou limité. 2. Choisis les marqueurs de négation adaptés au sens. 3. Place-les correctement autour du verbe ou de l’élément concerné. 4. Vérifie qu’aucun marqueur inutile ne change le sens.\nDans cette phrase : conserver l’emballage implique de ne pas jeter le carton avant le retour de la caméra. On choisit donc la négation ne… pas. « Jetez » est le verbe conjugué à l’impératif : on place « Ne » avant ce verbe et « pas » après lui, ce qui donne « Ne jetez pas le carton avant d’avoir rendu la caméra. » Aucun marqueur supplémentaire n’est nécessaire.\nDonc : seule l’option 4, « Ne jetez pas », formule correctement cette consigne négative.",
+    "why": {
+      "1": "Dans `Jetez pas`, « Ne » manque : la négation est incomplète dans ce courriel écrit. La forme attendue est « Ne jetez pas ».",
+      "2": "Dans `Ne pas jetez`, « pas » précède le verbe conjugué « jetez » alors qu’il doit le suivre ici. La forme attendue est « Ne jetez pas ».",
+      "3": "Dans `Jetez ne pas`, « ne » est placé après le verbe conjugué alors qu’il doit le précéder. La forme attendue est « Ne jetez pas ».",
+      "4": "« Ne jetez pas » encadre correctement le verbe conjugué « jetez » avec « Ne » et « pas ». Cette consigne interdit de jeter le carton avant le retour de la caméra.",
+      "A": "« Aucune » ne convient pas : l’option 4 forme correctement la consigne négative.",
+      "T": "« Toutes » ne convient pas : seule l’option 4 est correcte ; les trois autres présentent une négation incomplète ou mal placée."
+    },
+    "hep": {
+      "metadata_schema_version": "hep-question/2.1",
+      "source_batch_id": "hep-b1-20261002-0007",
+      "slot_id": "slot-hep-b1-20261002-0007-08-negation-refill",
+      "profile": "perfectionnement",
+      "domain": "syntaxe",
+      "family": "negation",
+      "mechanism_id": "negation_complete_ne_pas",
+      "detail_id": "core",
+      "tense_id": null,
+      "difficulty": "facile",
+      "source_genre": "courriel",
+      "communicative_purpose": "transmettre une information ou une consigne pratique dans un écrit formel",
+      "cognitive_mode": "rappel_regle",
+      "writing_situation": null,
+      "option_misconceptions": {
+        "1": "UNK",
+        "2": "UNK",
+        "3": "UNK",
+        "4": null
+      }
+    },
+    "stem": "Le courriel du service de prêt demande de conserver l’emballage pour le retour : « ___ le carton avant d’avoir rendu la caméra. »"
   }
 ];
 
