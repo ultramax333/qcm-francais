@@ -5,6 +5,51 @@ const { QUESTIONS } = require('./questions.js');
 const pedagogy = require('./pedagogy.js');
 const canonicalPedagogy = require('../analyse_gpt/pedagogy_HEP.json');
 
+// Copies mécaniques des règles et chemins acceptés lors du préflight pédagogique.
+[
+  'accord_adjectif_invariabilite_participe', 'participe_present_avec_complement',
+  'futur_vers_conditionnel', 'hypothese_condition_subjonctif', 'coi_lui_leur',
+  'pronominal_accord_sujet', 'pronominal_se_coi', 'etre_accord_sujet',
+  'participe_suivi_infinitif', 'avoir_en_invariable', 'quantifieur_pluriel',
+  'ordre_declaratif', 'infinitif_participe', 'certitude_indicatif',
+  'doute_possibilite', 'souhait_volonte',
+].forEach((id) => {
+  const entry = canonicalPedagogy.mechanisms[id];
+  assert.strictEqual(pedagogy.MECHANISMS[id][1], entry.explanation);
+});
+assert.strictEqual(pedagogy.MECHANISMS.coi_lui_leur[0], canonicalPedagogy.mechanisms.coi_lui_leur.label);
+Object.entries(canonicalPedagogy.mechanisms).forEach(([id, entry]) => {
+  assert.deepStrictEqual(pedagogy.PATHS[id], entry.details[entry.default_detail_id]);
+});
+[
+  ['accord_adjectif_invariabilite_participe', 'adjectif'],
+  ['accord_adjectif_invariabilite_participe', 'participe'],
+  ['participe_present_avec_complement', 'core'], ['futur_vers_conditionnel', 'core'],
+  ['hypothese_condition_subjonctif', 'core'], ['coi_lui_leur', 'core'],
+  ['coi_lui_leur', 'singulier'], ['coi_lui_leur', 'pluriel'],
+  ['pronominal_accord_sujet', 'essentiellement'], ['pronominal_se_coi', 'sans_cod'],
+  ['etre_accord_sujet', 'core'], ['participe_suivi_infinitif', 'core'],
+  ['avoir_en_invariable', 'core'], ['mesure_duree_prix', 'core'],
+  ['quantifieur_pluriel', 'core'], ['ordre_declaratif', 'core'],
+  ['certitude_indicatif', 'core'], ['doute_possibilite', 'core'],
+].forEach(([id, detailId]) => {
+  const entry = canonicalPedagogy.mechanisms[id];
+  assert.deepStrictEqual(
+    pedagogy.describe(entry.family, id, null, detailId).path, entry.details[detailId]
+  );
+});
+const infinitiveGuide = pedagogy.LEARNER_GUIDANCE.participe_suivi_infinitif;
+assert.match(infinitiveGuide.steps.join(' '), /COD du participe/);
+assert.match(infinitiveGuide.steps.join(' '), /sujet de l’infinitif/);
+assert.doesNotMatch(infinitiveGuide.steps.join(' '), /subit le changement/);
+const enGuide = pedagogy.LEARNER_GUIDANCE.avoir_en_invariable;
+assert.match(enGuide.steps.join(' '), /lui-même COD/);
+assert.match(enGuide.steps.join(' '), /généralement/);
+assert.match(enGuide.steps.join(' '), /autre COD/);
+assert.match(pedagogy.LEARNER_GUIDANCE.mesure_duree_prix.explanation, /prendre/);
+assert.match(pedagogy.LEARNER_GUIDANCE.hypothese_condition_subjonctif.explanation, /seras/);
+assert.match(pedagogy.LEARNER_GUIDANCE.doute_possibilite.explanation, /accepterait/);
+
 const canonicalPairs = new Set(
   QUESTIONS
     .filter((question) => (
@@ -385,7 +430,11 @@ assert.match(
 );
 assert.match(
   pedagogy.describe('adjectif_verbal_participe_present', 'participe_present_avec_complement').learnerExplanation,
-  /exprime une action/
+  /les élèves préparent leur examen/
+);
+assert.match(
+  pedagogy.describe('adjectif_verbal_participe_present', 'participe_present_avec_complement').learnerExplanation,
+  /un complément ne suffit pas à décider/
 );
 assert.strictEqual(
   pedagogy.describe('accord_participe_passe', 'participe_adjectival_selon_position').learnerSource,

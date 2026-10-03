@@ -919,14 +919,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Le mot attendu est « voire » (= et même), avec un e final. « voir » (le verbe) est LA faute classique — et la bonne forme n'est pas proposée. Réponse : Aucune.",
+    "explanation": "Règle : Deux mots proches par la forme ont des sens différents ; le contexte détermine lequel convient.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : on passe de « des semaines » à « des mois », une durée plus longue. Le mot recherché doit donc introduire une amplification : « et même des mois ». C’est le sens de « voire ». Examinons les quatre propositions : « voir » désigne une perception ; « à voir » introduit quelque chose à examiner ; « savoir » renvoie à une connaissance ou peut annoncer une précision ; « avoir » exprime notamment la possession. Aucune ne marque ici l’amplification attendue. En relisant l’ensemble, on obtient : « Cette refonte demandera des semaines, voire des mois de travail. »\nDonc : la réponse est A, « Aucune », puisque « voire » ne figure pas parmi les quatre propositions.",
     "why": {
-      "1": "« voir » = le verbe ; l'adverbe « et même » s'écrit « voire ».",
-      "2": "« à voir » n'a pas ce sens.",
-      "3": "« savoir » (= à savoir) introduirait une précision, pas une gradation.",
-      "4": "« avoir » n'a aucun sens ici.",
-      "A": "Correct : la forme attendue « voire » n'est pas proposée.",
-      "T": "Aucune forme proposée ne convient."
+      "1": "Dans `voir des mois de travail`, le verbe « voir » ne relie pas les deux durées par une amplification. Pour signifier « des semaines, et même des mois », il faut écrire « voire des mois de travail ».",
+      "2": "Le groupe `à voir` évoque quelque chose à examiner et ne signifie pas « et même ». La progression entre « semaines » et « mois » demande « voire ».",
+      "3": "Le mot `savoir` ne marque pas une durée plus importante : une précision annoncerait ce que recouvrent les semaines, alors que les mois dépassent cette durée. Le mot attendu est « voire ».",
+      "4": "L’infinitif `avoir` ne peut pas introduire l’amplification entre les deux compléments de durée. Il faut « voire des mois de travail ».",
+      "A": "Les quatre propositions échouent à exprimer « et même » : « voir » renvoie à la perception, « à voir » à un examen, « savoir » à la connaissance ou à une précision, et « avoir » à la possession. La forme nécessaire, « voire », est absente.",
+      "T": "Aucune des quatre propositions ne convient ; « Toutes » supposerait quatre propositions correctes."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -944,8 +944,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:11:47Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "orth-15",
@@ -5051,14 +5061,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "« sitôt que » (comme « dès que ») se construit avec l'INDICATIF — ici le futur antérieur « auras fini ». Le subjonctif « aies fini » est le piège.",
+    "explanation": "Règle : Une construction telle que il est certain que à l’affirmatif appelle l’indicatif. Vérifie le régime de l’expression précise : la réalité ou la certitude du fait ne suffit pas à déterminer le mode, et l’indicatif ne garantit pas sa réalisation.\nMéthode : 1. Repère la construction qui introduit la proposition. 2. Vérifie le sens et le mode réellement imposé ou permis par cette construction. 3. Choisis l’indicatif lorsque la construction présente ici le fait comme constaté, ou le subjonctif lorsqu’elle l’exige pour un fait voulu, évalué ou non affirmé. 4. Conjugue ensuite le verbe au temps et à la personne demandés.\nDans cette phrase : repère « Sitôt que », qui introduit le moment à partir duquel tu dois envoyer le fichier et appelle ici l’indicatif. L’impératif « envoie-moi » situe l’envoi à venir ; ta partie devra être terminée avant cet envoi. Il faut donc un futur antérieur, qui exprime une action achevée avant une autre action future. Avec le sujet « tu », le futur de l’auxiliaire avoir est « auras » : on obtient « auras fini ». Le participe passé relève du cas avec avoir : le COD « ta partie » suit le verbe, donc « fini » ne s’accorde pas avec lui.\nDonc : choisis l’option 2, « auras fini ».",
     "why": {
-      "1": "« aies fini » (subjonctif) fautif : sitôt que → indicatif.",
-      "2": "Correct : futur antérieur après « sitôt que ».",
-      "3": "« aurais fini » (conditionnel) fautif ici.",
-      "4": "« finie » : accord fautif en plus du mauvais mode.",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      "T": "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "« `aies fini` » est un subjonctif passé. Ici, « Sitôt que » appelle l’indicatif et l’achèvement précède un envoi à venir : il faut « auras fini ».",
+      "2": "« auras fini » associe l’auxiliaire avoir au futur, à la personne de « tu », et le participe « fini ». Ce futur antérieur situe la fin du travail avant l’envoi.",
+      "3": "« `aurais fini` » est un conditionnel passé. La phrase donne une consigne pour l’avenir, sans repère passé ni hypothèse justifiant cette forme : il faut « auras fini ».",
+      "4": "« `aies finie` » cumule deux erreurs : le subjonctif remplace l’indicatif attendu et « finie » s’accorde à tort avec le COD placé après l’auxiliaire avoir. Il faut « auras fini ».",
+      "A": "Une option chiffrée convient : la 2. « Aucune » est donc exclue.",
+      "T": "Une seule option chiffrée convient ; les trois autres échouent. « Toutes » est donc exclue."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -5076,8 +5086,18 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:57:00Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "mode-25",
@@ -5171,14 +5191,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "« Que » en tête de phrase exprime un souhait/un ordre indirect et appelle le subjonctif : « Que chacun prenne ».",
+    "explanation": "Règle : Une construction telle que souhaiter que, vouloir que ou ordonner que appelle le subjonctif. Vérifie le verbe précis : espérer que au sens d’attendre un événement appelle normalement l’indicatif. Le sens général de souhait ne suffit donc pas à imposer un mode unique.\nMéthode : 1. Repère la construction qui introduit la proposition. 2. Vérifie le sens et le mode réellement imposé ou permis par cette construction. 3. Choisis l’indicatif lorsque la construction présente ici le fait comme constaté, ou le subjonctif lorsqu’elle l’exige pour un fait voulu, évalué ou non affirmé. 4. Conjugue ensuite le verbe au temps et à la personne demandés.\nDans cette phrase : Le premier blanc introduit une demande adressée à chacun : on demande que chaque personne assume ses responsabilités. « Que » peut introduire directement cette demande, sans verbe comme « souhaiter » ou « vouloir ». C’est ce sens de demande qui appelle le subjonctif dans « Que chacun ___ ses responsabilités ». Le sujet « chacun » est à la troisième personne du singulier. Au présent du subjonctif, « prendre » donne « prenne » : on obtient donc « Que chacun prenne ses responsabilités ». La suite « et la situation se débloquera » annonce la conséquence au futur de l’indicatif ; elle ne change pas le mode exigé dans la première partie.\nDonc : La réponse est 2 : « Que chacun prenne ses responsabilités, et la situation se débloquera. »",
     "why": {
-      "1": "« prend » fautif : le « que » injonctif exige le subjonctif.",
-      "2": "Correct : « Que chacun prenne » (subjonctif de souhait).",
-      "3": "« Si… prenne » : jamais de subjonctif après « si ».",
-      "4": "« Pourvu chacun » : il manque « que » (pourvu que).",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      "T": "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "Dans `Que chacun prend`, « prend » est au présent de l’indicatif. Ici, « Que » introduit une demande qui appelle le subjonctif. Avec le sujet singulier « chacun », la forme attendue est « prenne » : « Que chacun prenne ».",
+      "2": "« Que » introduit la demande d’assumer ses responsabilités. « Prenne » est le présent du subjonctif de « prendre » à la troisième personne du singulier, comme l’exige le sujet « chacun ». Les deux blancs conviennent donc ensemble.",
+      "3": "Dans `Si chacun prenne`, « si » introduit une condition, mais « prenne » est au subjonctif. Dans cette construction conditionnelle, on emploie le présent de l’indicatif : « Si chacun prend ses responsabilités, la situation se débloquera ».",
+      "4": "Dans `Pourvu chacun prend`, la locution qui introduit la condition est incomplète : il faut « pourvu que ». Cette locution exige ensuite le subjonctif ; `prend` doit donc devenir « prenne ». La construction attendue est « Pourvu que chacun prenne ».",
+      "A": "Une option chiffrée convient, la 2 : « Aucune » ne convient donc pas.",
+      "T": "Une seule des quatre options chiffrées convient ; les options 1, 3 et 4 échouent. « Toutes » ne convient donc pas."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -5196,8 +5216,18 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T11:00:31Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "mode-27",
@@ -6343,7 +6373,7 @@ const QUESTIONS = [
     "id": "mode-46",
     "rule": "modes",
     "type": "blank",
-    "stem": "Le vote aura lieu à condition qu'il y ___ quorum en début de séance.",
+    "stem": "Le vote aura lieu pourvu qu'il y ___ quorum en début de séance.",
     "options": [
       {
         "key": "1",
@@ -6371,14 +6401,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "« à condition que » impose le subjonctif : « qu'il y ait quorum ».",
+    "explanation": "Règle : Vérifie le régime de chaque locution : à supposer que, à moins que et pourvu que demandent le subjonctif. Après à condition que, le subjonctif est courant, mais l’indicatif futur est également admis ; ce futur peut être transposé au conditionnel dans un repère passé. N’étends pas un régime exclusif à toutes les locutions de condition.\nMéthode : 1. Repère la construction qui introduit la proposition. 2. Vérifie le sens et le mode réellement imposé ou permis par cette construction. 3. Choisis l’indicatif lorsque la construction présente ici le fait comme constaté, ou le subjonctif lorsqu’elle l’exige pour un fait voulu, évalué ou non affirmé. 4. Conjugue ensuite le verbe au temps et à la personne demandés.\nDans cette phrase : « Pourvu que » exige le subjonctif. Avec le sujet impersonnel « il », avoir au subjonctif présent donne « ait » : « pourvu qu’il y ait quorum ». « Aura » est au futur de l’indicatif, « a » au présent de l’indicatif et « aurait » au conditionnel présent.\nDonc : La réponse est 2, « ait ».",
     "why": {
-      "1": "Futur fautif.",
-      "2": "Correct : à condition que + subjonctif.",
-      "3": "Indicatif fautif.",
-      "4": "Conditionnel fautif.",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      "T": "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "« Aura » est un futur de l’indicatif ; « pourvu que », qui introduit la condition, exige le subjonctif.",
+      "2": "« Ait » est le subjonctif présent d’avoir à la troisième personne du singulier : « pourvu qu’il y ait quorum ».",
+      "3": "« A » est le présent de l’indicatif ; il ne satisfait pas le régime de « pourvu que ».",
+      "4": "« Aurait » est un conditionnel présent ; ce n’est pas le subjonctif demandé après « pourvu que ».",
+      "A": "« Aucune » est exclu : l’option 2 fournit la forme exigée avec le sujet « il ».",
+      "T": "« Toutes » est exclu : les options 1, 3 et 4 sont respectivement au futur, au présent de l’indicatif et au conditionnel."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -6397,7 +6427,8 @@ const QUESTIONS = [
         "3": "UNK",
         "4": "UNK"
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "mode-47",
@@ -7739,7 +7770,7 @@ const QUESTIONS = [
     "id": "part-9",
     "rule": "participe",
     "type": "sentences",
-    "instruction": "Quelle(s) phrase(s) présente(nt) un accord correct ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -7767,14 +7798,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Toutes correctes : « couru » invariable (distance, pas un COD) (1) ; « se faire mal » → « fait » invariable (2) ; « vu » devant le nom invariable (3) ; COD « que » antéposé → « cueillies » (4). Réponse : Toutes.",
+    "explanation": "Règle : Un complément de mesure, de durée ou de prix d’un verbe employé intransitivement ne commande pas l’accord du participe. Mais une quantité peut être COD : il faut vérifier le sens et la construction du verbe, puis appliquer l’accord avec avoir si ce COD est placé avant.\nMéthode : 1. Repère le groupe associé au participe et le sens précis du verbe. 2. Vérifie si le verbe est employé avec une simple mesure ou avec un COD : peser trois kilos exprime un poids, tandis que peser des caisses porte sur les objets pesés. 3. Si le verbe est intransitif et que le groupe exprime seulement sa mesure, sa durée ou son prix, garde le participe invariable. 4. Si le groupe est un COD, applique la règle de l’accord avec avoir : accorde seulement lorsqu’il est placé avant. Une quantité peut être COD, notamment avec perdre, dépenser ou passer.\nDans cette phrase : 1. Dans « il a couru les kilomètres », courir est employé pour exprimer une distance parcourue. Le groupe « les kilomètres », repris par que, indique combien de kilomètres il a couru ; c’est un complément de mesure, sans fonction de COD dans cet emploi. Couru reste donc invariable. Dans « l’ont épuisé », on demande « les kilomètres ont épuisé qui ? » : l’ reprend il et est un COD masculin singulier placé avant. Le participe épuisé s’accorde avec lui.\n2. « Elle s’est fait mal » est un pronominal réfléchi. On fait mal à qui ? À soi-même : se est COI. Aucun COD ne précède fait, qui reste invariable. Il ne s’agit pas du cas fait suivi d’un infinitif : « en tombant » exprime la circonstance de la blessure.\n3. « Vu les circonstances » emploie vu avant le nom avec la valeur d’une préposition : il introduit la raison du report et reste invariable. Dans la construction passive « la séance est reportée », le sujet séance est féminin singulier ; il commande reportée.\n4. Avec avoir dans « il a cueilli les fleurs », les fleurs sont COD : il a cueilli quoi ? Les fleurs. Ce COD est repris par que avant le participe, d’où cueillies au féminin pluriel. Dans « les fleurs ont fané », fané est employé avec avoir sans COD et reste invariable.\nDonc : les quatre phrases présentent les accords attendus. La réponse est T, « Toutes ».",
     "why": {
-      "1": "Correcte : « kilomètres » = distance, pas un COD → « couru » invariable.",
-      "2": "Correcte : « se faire mal » → « fait » invariable.",
-      "3": "Correcte : « vu » devant le nom est invariable.",
-      "4": "Correcte : COD « que » (fém. plur.) antéposé → « cueillies ».",
-      "A": "Les quatre accords sont corrects, donc « Aucune » est faux.",
-      "T": "Correct : toutes les phrases sont correctes."
+      "1": "Les kilomètres mesurent la distance dans cet emploi de courir et ne commandent pas d’accord : « couru » convient. Pour « épuisé », le COD l’ placé avant reprend il, masculin singulier, ce qui justifie cette forme.",
+      "2": "Dans « s’est fait mal », se reprend la personne à qui le mal est fait : c’est un COI. En l’absence de COD placé avant, « fait » reste invariable malgré le sujet féminin elle.",
+      "3": "Vu introduit les circonstances comme une préposition et reste invariable. Reportée appartient à une construction passive avec être : il prend le féminin singulier du sujet « la séance ».",
+      "4": "Que reprend « les fleurs », COD féminin pluriel placé avant cueillies : les marques -ies sont attendues. Fané ne prend aucune marque du sujet fleurs, car il est employé avec avoir sans COD.",
+      "A": "Les quatre options présentent les accords attendus. Le nombre d’options correctes est quatre, et non zéro.",
+      "T": "Les quatre phrases sont à retenir : la distance laisse couru invariable et l’ commande épuisé ; se COI laisse fait invariable ; vu est prépositif et reportée suit séance ; que commande cueillies tandis que fané n’a pas de COD."
     },
     "gen": {
       "model": "Opus 4.8",
@@ -7812,8 +7843,18 @@ const QUESTIONS = [
           "detail_id": "core",
           "tense_id": null
         }
-      ]
-    }
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T05:30:37Z"
+        }
+      }
+    },
+    "progress_revision": 1
   },
   {
     "id": "part-10",
@@ -8171,14 +8212,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Même verbe, deux règles : « se rendre quelque part » (pronominal) → accord « rendues » ; « se rendre compte » (locution figée, COD « compte » postposé) → invariable « rendu ».",
+    "explanation": "Règle : Les emplois pronominaux autonomes ou passifs relevant de cette règle, ainsi que la plupart des essentiellement pronominaux, accordent leur participe avec le sujet. Vérifie l’emploi précis et les exceptions : s’arroger s’accorde avec son COD placé avant, non automatiquement avec le sujet.\nMéthode : 1. Identifie l’emploi pronominal précis et vérifie qu’il relève de l’accord avec le sujet. 2. Dans les emplois autonomes ou passifs relevant de cette règle, se n’est pas un COD ou un COI donneur d’accord. 3. Pour les essentiellement pronominaux, vérifie les exceptions : s’arroger suit l’accord avec le COD placé avant. 4. Lorsque l’accord avec le sujet s’applique, relève son genre et son nombre et accorde le participe.\nDans cette phrase : les deux emplois de « se rendre » ne suivent pas le même accord. Pour le premier blanc, « se rendre à la convocation » signifie aller à la convocation. C’est un pronominal autonome : « se » fait partie de cet emploi et n’est pas un COD ou un COI distinct. Le participe s’accorde avec « elles », féminin pluriel, d’où « rendues ». Pour le second blanc, il faut analyser la locution pronominale « se rendre compte ». Elles ont rendu quoi ? « Compte », COD placé après le participe. À qui ? À elles-mêmes : « se » est COI et ne commande pas l’accord. Aucun COD ne précède ce second participe, qui reste donc invariable : « rendu ». Le point décisif est le changement de construction entre le déplacement et la locution « se rendre compte ».\nDonc : il faut « rendues / rendu », soit l’option 3.",
     "why": {
-      "1": "1er « rendu » fautif : « se rendre à » s'accorde avec le sujet.",
-      "2": "2e « rendues » fautif : « se rendre compte » est invariable.",
-      "3": "Correct : « rendues » (déplacement) + « rendu » (locution figée).",
-      "4": "Les deux inversés.",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Les options 1, 2 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "Le premier `rendu` laisse sans accord le participe de « se rendre à la convocation ». Cet emploi pronominal autonome s’accorde avec « elles », féminin pluriel : il faut « rendues / rendu ».",
+      "2": "Le second `rendues` reçoit à tort les marques du sujet. Dans « se rendre compte », « se » est COI et « compte » est COD placé après : le second participe doit rester « rendu ». Il faut « rendues / rendu ».",
+      "3": "Le premier « rendues » s’accorde avec « elles » dans l’emploi pronominal autonome de déplacement. Le second « rendu » reste invariable puisque « se » est COI et que le COD « compte » le suit.",
+      "4": "Le premier `rendu` manque l’accord féminin pluriel avec « elles », tandis que le second `rendues` accorde à tort la locution dont le COD « compte » suit le participe. Les formes attendues sont « rendues / rendu ».",
+      "A": "Une combinaison sur quatre convient : la 3. Il y a donc une réponse correcte.",
+      "T": "Les combinaisons 1, 2 et 4 contiennent au moins une forme fautive ; seule la 3 convient."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -8204,8 +8245,18 @@ const QUESTIONS = [
           "detail_id": "rendre_compte",
           "tense_id": "passe_compose"
         }
-      ]
-    }
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T05:35:13Z"
+        }
+      }
+    },
+    "progress_revision": 1
   },
   {
     "id": "part-17",
@@ -9480,14 +9531,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "« s'écouler » (pronominal, sujet réel en tête) → accord avec « trois années » : « écoulées ». À distinguer de la tournure impersonnelle « il s'est écoulé trois années » (invariable).",
+    "explanation": "Règle : Les emplois pronominaux autonomes ou passifs relevant de cette règle, ainsi que la plupart des essentiellement pronominaux, accordent leur participe avec le sujet. Vérifie l’emploi précis et les exceptions : s’arroger s’accorde avec son COD placé avant, non automatiquement avec le sujet.\nMéthode : 1. Identifie l’emploi pronominal précis et vérifie qu’il relève de l’accord avec le sujet. 2. Dans les emplois autonomes ou passifs relevant de cette règle, se n’est pas un COD ou un COI donneur d’accord. 3. Pour les essentiellement pronominaux, vérifie les exceptions : s’arroger suit l’accord avec le COD placé avant. 4. Lorsque l’accord avec le sujet s’applique, relève son genre et son nombre et accorde le participe.\nDans cette phrase : « se sont écoulées » est une construction pronominale. « S’écouler » signifie ici passer, en parlant du temps : c’est un pronominal autonome, dans lequel « se » n’est pas un COD ou un COI distinct. Cet emploi relève de l’accord avec le sujet. Qu’est-ce qui s’est écoulé ? « Trois années ». Ce groupe est le sujet exprimé du verbe ; il ne faut donc pas traiter le participe comme invariable. Le nom « années » est féminin et « trois » indique le pluriel. On reporte les deux marques sur « écoulé » : un « e » pour le féminin et un « s » pour le pluriel, soit « écoulées ».\nDonc : la forme attendue est « écoulées », option 3.",
     "why": {
-      "1": "« écoulé » : ici le sujet est réel → accord.",
-      "2": "« écoulés » : masculin, or « années » est féminin.",
-      "3": "Correct : accord avec le sujet « trois années ».",
-      "4": "« écoulée » : singulier fautif.",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Les options 1, 2 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "La forme `écoulé` ne porte ni le féminin ni le pluriel du sujet « trois années ». Dans cet emploi pronominal autonome, l’accord avec ce sujet donne « écoulées ».",
+      "2": "La forme `écoulés` marque le pluriel, mais conserve le masculin. Le sujet contient le nom féminin « années » : il faut « écoulées ».",
+      "3": "« Écoulées » porte à la fois le féminin et le pluriel de « trois années », sujet avec lequel ce pronominal autonome accorde son participe.",
+      "4": "La forme `écoulée` marque le féminin, mais reste au singulier. Le sujet désigne trois années : le pluriel exige « écoulées ».",
+      "A": "Une forme sur quatre satisfait l’accord : la 3. Il existe donc une option correcte.",
+      "T": "Les formes 1, 2 et 4 ne portent pas toutes les marques du sujet ; seule la 3 convient."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -9505,8 +9556,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T05:35:13Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "part-38",
@@ -9540,14 +9601,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "« croire » suivi d'un infinitif : le COD réel est la proposition infinitive (reconnaître…) → « cru » invariable, malgré le « que » antéposé.",
+    "explanation": "Règle : Vérifie la construction particulière, puis distingue le COD du participe des compléments de l’infinitif. Dans le cas relevant de cette règle, le participe s’accorde avec son COD placé avant lorsque celui-ci est sujet de l’infinitif ; cela n’exige pas une action volontaire. Un groupe seulement COD de l’infinitif ne commande pas cet accord. Fait + infinitif conserve sa règle d’invariabilité.\nMéthode : 1. Repère le participe suivi d’un infinitif et vérifie les règles particulières, notamment l’invariabilité de fait + infinitif. 2. Reconstitue la phrase pour distinguer le COD du participe des compléments de l’infinitif. 3. Dans la construction relevant de cette règle, vérifie si le COD placé avant le participe est aussi sujet de l’infinitif. 4. Accorde avec ce COD lorsqu’il est sujet de l’infinitif ; un groupe seulement COD de l’infinitif ne commande pas l’accord du participe.\nDans cette phrase : Le participe de croire est employé avec avoir et suivi de l’infinitif reconnaître : il faut donc analyser à quel verbe appartient le complément placé avant. La reconstruction donne « il a cru reconnaître les silhouettes dans la brume ». Il a cru quoi ? Reconnaître les silhouettes. Il a pensé reconnaître quoi ? Les silhouettes. Que reprend ainsi « les silhouettes » comme COD de reconnaître, et non comme COD accordable de cru. Les silhouettes ne sont pas non plus le sujet de reconnaître : c’est il qui pense les reconnaître. Leur féminin pluriel ne commande donc aucun accord du participe cru. Les formes `crue`, `crus` et `crues` ajoutent des marques qui ne sont pas justifiées par cette construction.\nDonc : on écrit « Les silhouettes qu’il a cru reconnaître dans la brume n’étaient que des ombres ». La réponse est 1.",
     "why": {
-      "1": "Correct : cru + infinitif → invariable.",
-      "2": "« crue » : accord fautif (le COD est l'infinitive).",
-      "3": "« crus » : accord fautif.",
-      "4": "« crues » : LE piège du féminin pluriel, mais invariable ici.",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Les options 2, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "Dans « il a cru reconnaître les silhouettes », les silhouettes sont COD de reconnaître. Le pronom que placé avant ne fournit donc pas de COD accordable à cru : la forme « cru » convient.",
+      "2": "`crue` ajoute une marque féminine au participe de croire. Or que reprend le COD de reconnaître, sans commander d’accord avec cru. La forme attendue est « cru ».",
+      "3": "`crus` ajoute une marque de pluriel fondée sur silhouettes. Ce nom complète reconnaître et ne commande pas l’accord du participe de croire : il faut « cru ».",
+      "4": "`crues` reprend le féminin pluriel de silhouettes comme si ce groupe commandait l’accord de cru. Il est seulement COD de l’infinitif reconnaître ; la forme attendue est « cru ».",
+      "A": "Une forme convient dans la phrase : la 1, « cru ». Le nombre de réponses correctes n’est donc pas zéro.",
+      "T": "Les formes 2, 3 et 4 portent des marques d’accord injustifiées. Une seule forme sur quatre convient ; « Toutes » ne convient pas."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -9565,8 +9626,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T14:05:57Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "part-40",
@@ -9840,14 +9911,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "« dont » exprime ici la valeur partitive (parmi lesquels) : « vingt témoins, dont trois ont accepté ».",
+    "explanation": "Règle : Dont peut introduire la partie prélevée dans un ensemble : plusieurs éléments, dont certains…\nMéthode : 1. Repère l’antécédent du pronom relatif. 2. Remets cet antécédent dans la proposition relative pour trouver sa fonction. 3. Conserve la préposition exigée par la construction. 4. Choisis le pronom compatible avec la fonction et l’antécédent.\nDans cette phrase : l’antécédent est « vingt témoins », qui désigne l’ensemble interrogé. La suite indique que trois personnes seulement, prises dans cet ensemble, ont accepté de témoigner. On peut reconstruire : « Trois seulement de ces vingt témoins ont accepté de témoigner. » « Trois seulement » est le sujet de « ont accepté » ; le lien à établir concerne donc l’ensemble dans lequel ces trois personnes sont prises. « Dont » exprime ce lien : « vingt témoins, dont trois seulement… ». On parle de valeur partitive parce qu’on distingue une partie d’un ensemble.\nDonc : la réponse est 2, « dont ».",
     "why": {
-      "1": "« que » (COD) ne convient pas ici.",
-      "2": "Correct : « dont trois » = parmi lesquels trois (valeur partitive).",
-      "3": "« qui » ferait de « trois » le complément, ce qui casse la construction.",
-      "4": "« auxquels » suppose un verbe en « à » : ce n'est pas le cas.",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      "T": "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "Dans `que trois seulement ont accepté de témoigner`, « que » présenterait les vingt témoins comme un COD de la relative. Or la phrase les présente comme l’ensemble dont trois personnes sont issues. Il faut « dont trois seulement ont accepté de témoigner ».",
+      "2": "« Dont trois seulement » relie les trois personnes à l’ensemble des vingt témoins : trois de ces vingt témoins ont accepté. « Dont » exprime bien la partie prise dans cet ensemble.",
+      "3": "Dans `qui trois seulement ont accepté de témoigner`, « qui » reprendrait les vingt témoins comme sujet, alors que « trois seulement » remplit déjà cette fonction. Pour introduire trois membres de l’ensemble, il faut « dont ».",
+      "4": "Dans `auxquels trois seulement ont accepté de témoigner`, « auxquels » introduit un complément en « à » que la construction ne demande pas. Le lien est « trois de ces vingt témoins » : la forme attendue est « dont ».",
+      "A": "L’option 2 est la seule qui convient ; il y a donc une réponse correcte, ce qui exclut « Aucune ».",
+      "T": "Une option est correcte et trois sont fautives ; « Toutes » exigerait quatre options correctes."
     },
     "gen": {
       "model": "Opus 4.8",
@@ -9865,8 +9936,18 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:11:47Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "rel-5",
@@ -18331,7 +18412,7 @@ const QUESTIONS = [
     "id": "eleves-19",
     "rule": "eleves",
     "type": "sentences",
-    "instruction": "Quelle(s) phrase(s) d'élève est/sont correctement écrite(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -18359,14 +18440,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Toutes correctes : « quelque » adverbe (= environ) invariable (1), « quoi qu'on en dise » en deux mots (2), accords justes (3), construction de « se méfier de » (4). Réponse : Toutes.",
+    "explanation": "Règle : Quel que s’écrit en deux mots devant être et s’accorde ; quelque dépend de son emploi déterminant ou adverbial.\nMéthode : 1. Repère la fonction du mot dans la phrase. 2. Détermine sa catégorie grammaticale. 3. Fais le test de remplacement prévu par la règle précise. 4. Choisis la graphie qui garde une phrase correcte et conserve le sens.\nDans cette phrase : les quatre productions doivent être examinées séparément. Dans la 1, « quelque » porte sur le nombre « deux cents » et signifie « environ ». Le remplacement « Environ deux cents élèves » conserve le sens : « quelque » est un adverbe et reste invariable. Dans la 2, « quoi qu’on en dise » signifie « quelle que soit la chose que l’on en dise » ; « quoi que » s’écrit donc en deux mots, et « dise » est au subjonctif. Dans la 3, « passées » est un participe passé sans auxiliaire qui décrit « heures », féminin pluriel : il prend « -ées ». « Toutes » renvoie à la totalité de ces heures et porte également les marques du féminin pluriel. « Perdues » est ici un participe passé employé comme adjectif attribut du sujet : il décrit l’état des heures par l’intermédiaire du verbe être. « Sont » relie le sujet « les heures » à cette description ; il ne forme pas ici un temps composé. L’adjectif « perdues » s’accorde donc avec le sujet « les heures », féminin pluriel. Dans la 4, le verbe se construit avec « de » : on se méfie de quelque chose. Devant « les conclusions », « de + les » donne « des conclusions ».\nDonc : les quatre phrases sont correctement écrites ; la réponse est T, « Toutes ».",
     "why": {
-      "1": "Correcte : quelque = environ, invariable.",
-      "2": "Correcte : quoi que (= quelle que soit la chose).",
-      "3": "Correcte : passées / toutes / perdues bien accordés.",
-      "4": "Correcte : se méfier DE quelque chose.",
-      "A": "Les quatre sont correctes.",
-      "T": "Correct : aucune faute."
+      "1": "« Quelque » peut être remplacé par « environ » devant « deux cents ». Il indique une quantité approximative comme adverbe, reste invariable et s’écrit en un seul mot.",
+      "2": "« Quoi qu’on en dise » porte sur ce que l’on peut dire, quelle que soit cette chose. Ce sens appelle « quoi que » en deux mots ; l’élision donne « quoi qu’on » et « dise » est au subjonctif.",
+      "3": "« Passées », sans auxiliaire, décrit les « heures », et « toutes » porte sur ces mêmes heures. « Perdues » est employé comme adjectif attribut du sujet : il décrit l’état des heures, auquel le verbe « sont » relie le sujet. Cet emploi adjectival impose l’accord avec « les heures ». Les trois formes portent ainsi les marques du féminin pluriel.",
+      "4": "La construction est « se méfier de quelque chose ». Le complément « les conclusions trop rapides » est introduit par « de », contracté avec « les » en « des » : « se méfier des conclusions » respecte ce régime.",
+      "A": "Les quatre phrases chiffrées conviennent : le nombre de phrases correctes est quatre, et non zéro.",
+      "T": "La 1 emploie l’adverbe invariable « quelque », la 2 la locution « quoi que », la 3 les accords féminins pluriels attendus et la 4 la construction « se méfier de ». Les quatre phrases conviennent : « Toutes » est la réponse."
     },
     "gen": {
       "model": "Fable 5",
@@ -18404,8 +18485,18 @@ const QUESTIONS = [
           "detail_id": "core",
           "tense_id": null
         }
-      ]
-    }
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T14:10:24Z"
+        }
+      }
+    },
+    "progress_revision": 1
   },
   {
     "id": "eleves-20",
@@ -18485,7 +18576,7 @@ const QUESTIONS = [
     "id": "eleves-21",
     "rule": "eleves",
     "type": "sentences",
-    "instruction": "Quelle phrase d'élève est correctement écrite ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -18513,14 +18604,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "« se fouler LA CHEVILLE » : COD après le verbe → « foulé » invariable, correct. Ailleurs : « achetées » (COD « que » = les baskets, fém.), « entraînés » (accord du pronominal), « donné » (COD « rendez-vous » postposé).",
+    "explanation": "Règle : Dans un emploi pronominal où se est COI, se ne commande pas l’accord. Cherche un éventuel autre COD et sa position : accorde avec ce COD s’il précède, sinon garde le participe invariable. L’absence de COD ne suffit pas à classer un pronominal dans ce mécanisme.\nMéthode : 1. Repère le verbe pronominal et reconstitue sa construction sans le pronom. 2. Vérifie si se répond à à qui ? ou à quoi ? : dans ce cas, il est COI et ne commande pas l’accord. 3. Cherche un éventuel autre COD et regarde s’il est placé avant ou après le participe. 4. Accorde seulement avec cet autre COD s’il est placé avant ; sinon, garde le participe invariable.\nDans cette phrase : en 1, le pronominal « s’acheter » se construit comme acheter quelque chose à soi-même. Il a acheté quoi ? Les baskets, reprises par « que », COD placé avant le participe. À qui ? À lui-même : « s’ » est COI. L’accord se fait donc avec « baskets », féminin pluriel : « achetées ». En 2, l’emploi pronominal est réfléchi, mais « s’ » est COI : elle a foulé quoi ? « La cheville », COD placé après ; à qui ? À elle-même. Le COD suit le participe, qui reste invariable : « foulé ». En 3, le pronominal réfléchi « s’entraîner » s’analyse ici comme entraîner qui ? Eux-mêmes. « Se » est COD placé avant et reprend « ils », masculin pluriel : il faut « entraînés ». En 4, le pronominal réciproque signifie donner rendez-vous les unes aux autres. « Se » est COI et « rendez-vous » est le COD placé après : le participe reste « donné ».\nDonc : la phrase 2 est la seule correctement écrite.",
     "why": {
-      "1": "« achetés » : les baskets (fém.) antéposées → achetées.",
-      "2": "Correcte : COD « la cheville » après → invariable.",
-      "3": "« entraîné » : s'entraîner → accord → entraînés.",
-      "4": "« données » : COD « rendez-vous » après → donné.",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      "T": "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "Le participe `achetés` est masculin alors que son COD antérieur « que » reprend « les baskets », féminin pluriel. « S’ » est COI ; l’accord attendu avec le COD est « achetées ».",
+      "2": "Dans « s’est foulé la cheville », « la cheville » répond à « foulé quoi ? » et suit le participe. « S’ » signifie à elle-même, donc est COI. Aucun COD antérieur ne commande d’accord : « foulé » reste invariable.",
+      "3": "Le participe `entraîné` ne porte pas le pluriel du COD « se », placé avant et reprenant « ils ». Dans cet emploi pronominal réfléchi, il faut « se sont entraînés ».",
+      "4": "Le participe `données` s’accorde à tort avec les joueuses : elles ont donné quoi ? Rendez-vous ; à qui ? Les unes aux autres. « Se » est COI et le COD suit : il faut « se sont donné rendez-vous ».",
+      "A": "Une phrase sur quatre est correcte : la 2. Le total n’est donc pas nul.",
+      "T": "Les phrases 1, 3 et 4 présentent un accord fautif ; seule la 2 convient."
     },
     "gen": {
       "model": "Fable 5",
@@ -18538,8 +18629,18 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T14:09:01Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "eleves-22",
@@ -20375,7 +20476,7 @@ const QUESTIONS = [
     "id": "eleves-46",
     "rule": "eleves",
     "type": "sentences",
-    "instruction": "Quelle(s) phrase(s) d'élève est/sont correctement écrite(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -20403,14 +20504,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Toutes correctes : « duré » invariable (durée = mesure), « dispersée » (pronominal), « quelque » adverbe invariable, « il s'est vendu » impersonnel invariable. Réponse : Toutes.",
+    "explanation": "Règle : Un complément de mesure, de durée ou de prix d’un verbe employé intransitivement ne commande pas l’accord du participe. Mais une quantité peut être COD : il faut vérifier le sens et la construction du verbe, puis appliquer l’accord avec avoir si ce COD est placé avant.\nMéthode : 1. Repère le groupe associé au participe et le sens précis du verbe. 2. Vérifie si le verbe est employé avec une simple mesure ou avec un COD : peser trois kilos exprime un poids, tandis que peser des caisses porte sur les objets pesés. 3. Si le verbe est intransitif et que le groupe exprime seulement sa mesure, sa durée ou son prix, garde le participe invariable. 4. Si le groupe est un COD, applique la règle de l’accord avec avoir : accorde seulement lorsqu’il est placé avant. Une quantité peut être COD, notamment avec perdre, dépenser ou passer.\nDans cette phrase : 1. Dans « le concert a duré deux heures », durer indique une durée : « deux heures » répond à « combien de temps ? », et non à la recherche d’un objet sur lequel porterait l’action. Ce complément de mesure, même repris par que avant le participe, ne commande aucun accord : duré reste invariable. Dans « les deux heures ont filé », filé est employé avec avoir sans COD ; le sujet pluriel ne commande pas son accord.\n2. « La foule s’est dispersée » relève de l’emploi pronominal autonome : se disperser signifie ici se séparer progressivement, et se n’a pas une fonction distincte de COD ou de COI. Le participe s’accorde avec le sujet « la foule », féminin singulier : dispersée.\n3. « Quelque cinq mille personnes » signifie « environ cinq mille personnes ». Quelque modifie le nombre et fonctionne comme un adverbe : il reste invariable. « Personnes », féminin pluriel, commande en revanche « étaient présentes ».\n4. Dans « il s’est vendu des milliers de billets », il est impersonnel : il ne reprend ni un vendeur ni les billets. Cette tournure impersonnelle impose l’invariabilité du participe vendu ; le groupe pluriel placé après ne commande pas son accord.\nDonc : les quatre phrases sont correctement écrites. La réponse est T, « Toutes ».",
     "why": {
-      "1": "Correcte : deux heures = mesure → duré.",
-      "2": "Correcte : se disperser → accord avec la foule.",
-      "3": "Correcte : quelque = environ, invariable.",
-      "4": "Correcte : tournure impersonnelle → vendu invariable.",
-      "A": "Les quatre sont correctes.",
-      "T": "Correct : aucune faute — malgré les apparences."
+      "1": "La reconstruction « le concert a duré deux heures » fait apparaître une mesure de temps, sans COD accordable : « duré » reste invariable. « Filé » a également la forme attendue, car il est employé avec avoir sans COD.",
+      "2": "Dans cet emploi pronominal autonome de se disperser, le sujet « la foule » commande l’accord. Ce nom est féminin singulier, même s’il désigne plusieurs personnes : la terminaison -ée de « dispersée » convient.",
+      "3": "Quelque peut être remplacé par « environ » devant « cinq mille » : c’est un adverbe invariable. Le pluriel de personnes porte sur « étaient présentes », sans ajouter de -s à quelque.",
+      "4": "Le il de « il s’est vendu » n’a pas de référent : la construction est impersonnelle. Le participe « vendu » reste donc invariable malgré « des milliers de billets ».",
+      "A": "Les quatre phrases sont correctes. Le comptage donne quatre réponses valables, et non zéro.",
+      "T": "Chaque option respecte son fonctionnement : duré exprime une mesure sans COD ; dispersée suit le sujet féminin singulier ; quelque signifie environ ; vendu appartient à une tournure impersonnelle. Les quatre phrases sont donc à retenir."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -20442,14 +20543,24 @@ const QUESTIONS = [
           "detail_id": "core",
           "tense_id": null
         }
-      ]
-    }
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T05:30:37Z"
+        }
+      }
+    },
+    "progress_revision": 1
   },
   {
     "id": "eleves-47",
     "rule": "eleves",
     "type": "sentences",
-    "instruction": "Quelle phrase d'élève est correctement écrite ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -20477,14 +20588,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "« nous nous étions levés » (se lever, accord) : correct. Ailleurs : « rendu compte » INVARIABLE (1, hypercorrection), rupture de construction (3), « prises » (4).",
+    "explanation": "Règle : Dans ce pronominal, se est COD antéposé : il commande l’accord du participe.\nMéthode : 1. Repère le verbe pronominal et son pronom se. 2. Reconstitue la construction pour vérifier que se répond à qui ? ou quoi ? sans préposition. 3. Puisque se est COD placé avant, retrouve son genre et son nombre dans le sujet. 4. Accorde le participe passé avec ce COD.\nDans cette phrase : en 1, la locution pronominale « se rendre compte » contient le COD « compte », placé après le participe. « Nous » signifie ici à nous-mêmes : c’est un COI, qui ne commande pas l’accord. Il faut donc « rendu ». En 2, « nous nous étions levés » est un pronominal réfléchi au plus-que-parfait. Nous avions levé qui ? Nous-mêmes : le second « nous » est COD, placé avant le participe. Il reprend le sujet pluriel « nous » et commande l’accord « levés ». En 3, le participe détaché « Arrivés à Rome » n’a pas de sujet propre exprimé. Il doit décrire le sujet de la principale, mais celui-ci est « la visite » : le rattachement ne correspond pas aux personnes arrivées. En 4, `ai prise` contient l’auxiliaire avoir. J’ai pris quoi ? Les photos, reprises par « que », COD placé avant le participe. Ce COD féminin pluriel impose « prises ».\nDonc : seule la phrase 2 satisfait les règles applicables.",
     "why": {
-      "1": "« rendus compte » : la locution est invariable → rendu.",
-      "2": "Correcte : se lever → accord avec nous.",
-      "3": "« la visite » n'arrive pas à Rome : rupture.",
-      "4": "« prise » : les photos antéposées → prises.",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      "T": "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "Dans `rendus compte`, le participe est accordé à tort : « nous » est COI et le COD « compte » vient après. La forme attendue est « Nous nous sommes rendu compte ».",
+      "2": "Dans « nous nous étions levés », le second « nous » répond à « levé qui ? » : nous-mêmes. Ce pronom COD précède le participe et porte le pluriel du sujet, ce qui justifie « levés ».",
+      "3": "Le groupe `Arrivés à Rome, la visite` rattache le participe aux personnes arrivées alors que le sujet exprimé est « la visite ». Le sujet doit désigner ces personnes : « Arrivés à Rome, nous avons commencé la visite aussitôt. »",
+      "4": "Le participe `prise` reste au singulier malgré le COD « que », qui reprend « les photos » et le précède. Avec l’auxiliaire avoir, ce COD féminin pluriel exige « prises ».",
+      "A": "Une phrase sur quatre convient : la 2. Il existe donc une phrase correcte.",
+      "T": "Les phrases 1, 3 et 4 comportent une erreur ; le total est d’une phrase correcte sur quatre."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -20522,8 +20633,18 @@ const QUESTIONS = [
           "detail_id": "core",
           "tense_id": "passe_compose"
         }
-      ]
-    }
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T14:09:01Z"
+        }
+      }
+    },
+    "progress_revision": 1
   },
   {
     "id": "eleves-48",
@@ -20973,7 +21094,7 @@ const QUESTIONS = [
     "id": "eleves-54",
     "rule": "eleves",
     "type": "sentences",
-    "instruction": "Quelle phrase d'élève est correctement écrite ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -21001,14 +21122,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : s'est appartient au verbe pronominal ; après avoir, le participe est donné, accordé avec le COD antéposé. Une virgule ne sépare pas le verbe de son COD.\nMéthode : repérez le verbe, le COD éventuel et les groupes liés.\nDans cette phrase : 1 demande il s'est ; 2 demande données, accordé avec notes ; 3 sépare attend de son COD les résultats ; 4 emploie correctement s'inscrire.\nDonc : réponse 4.",
+    "explanation": "Règle : Identifie démonstratif, possessif, présentatif ou verbe pronominal avant de choisir la graphie.\nMéthode : 1. Repère la fonction du mot dans la phrase. 2. Détermine sa catégorie grammaticale. 3. Fais le test de remplacement prévu par la règle précise. 4. Choisis la graphie qui garde une phrase correcte et conserve le sens.\nDans cette phrase : examinons séparément les quatre productions. Dans la 1, le verbe est « s’inscrire » : le pronom « se » devient « s’ » devant « est ». Il faut donc « Il s’est inscrit », et non le présentatif « c’est », que l’on pourrait remplacer par « cela est ». Dans la 2, « a » est l’auxiliaire avoir : il demande un participe passé, non l’infinitif « donner ». On a donné quoi ? Les notes. Le COD « que », qui reprend « notes », est placé avant le participe ; ce nom étant féminin pluriel, il faut « données ». Dans la 3, on attend quoi ? Les résultats. La virgule coupe le verbe de son COD et doit être supprimée. Dans la 4, « se sont inscrits » est un pronominal réfléchi : ils ont inscrit qui ? Eux-mêmes. « Se » est donc COD placé avant le participe. Il reprend « ils », masculin pluriel, ce qui commande « inscrits ».\nDonc : seule la phrase 4 est correctement écrite.",
     "why": {
-      "1": "Il s'est inscrit emploie le verbe pronominal, non c'est.",
-      "2": "Que reprend notes, COD féminin pluriel antéposé : données, non donner.",
-      "3": "La virgule sépare attend de son COD les résultats.",
-      "4": "Ils se sont inscrits est correctement conjugué et accordé.",
-      "A": "L'option 4 convient.",
-      "T": "Les options 1, 2 et 3 échouent."
+      "1": "Dans `Il c’est inscrit`, « c’est » correspond à « cela est » et ne construit pas le verbe pronominal « s’inscrire ». Il faut le pronom « s’ » suivi de l’auxiliaire : « Il s’est inscrit ».",
+      "2": "La forme `donner` est un infinitif, alors que l’auxiliaire avoir demande ici un participe passé. Le COD « que » reprend « notes », féminin pluriel, et précède le participe : il faut « Les notes qu’on nous a données ».",
+      "3": "La ponctuation `On attend, les résultats` sépare « attend » de son COD « les résultats ». Ce complément doit rester lié au verbe : il faut « On attend les résultats pour vendredi au plus tard. »",
+      "4": "Dans le pronominal réfléchi « se sont inscrits », « se » représente les personnes inscrites et répond à « qui ? ». Ce COD précède le participe et reprend « ils », masculin pluriel : l’accord « inscrits » convient.",
+      "A": "Une phrase chiffrée est correctement écrite, la 4 : « Aucune » ne convient pas.",
+      "T": "Les phrases 1, 2 et 3 comportent chacune une erreur : une seule des quatre convient."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -21046,8 +21167,18 @@ const QUESTIONS = [
           "detail_id": "core",
           "tense_id": "passe_compose"
         }
-      ]
-    }
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:07:54Z"
+        }
+      }
+    },
+    "progress_revision": 1
   },
   {
     "id": "eleves-55",
@@ -21568,7 +21699,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quelle phrase d'élève est correctement écrite ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -21596,14 +21727,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "« permis » reste invariable (« nous » est COI, le COD « de progresser » suit) : correct. Ailleurs : « fournis » (COD antéposé), « entraînés » (pronominal accordé), « gagnée » (l' = la coupe, féminin).",
+    "explanation": "Règle : Avec avoir, identifie le COD antéposé et accorde le participe avec son genre et son nombre.\nMéthode : 1. Repère l’auxiliaire avoir et le participe passé. 2. Trouve le COD en posant la question qui ? ou quoi ? après le verbe. 3. Vérifie que ce COD est placé avant le participe passé. 4. Accorde le participe avec le genre et le nombre de ce COD.\nDans cette phrase : chaque proposition demande d’identifier le donneur d’accord. 1. Dans `qu’il a fournit`, l’auxiliaire est avoir. Il a fourni quoi ? « Les efforts », repris par « qu’ », COD placé avant le participe. Le participe de fournir est « fourni » ; le masculin pluriel du COD donne « fournis ». 2. Dans « nous a permis de progresser », l’auxiliaire est avoir. L’entraîneuse a permis à qui ? À nous : « nous » est COI. Elle a permis quoi ? « De progresser très vite », complément placé après le participe. Aucun COD ne précède donc « permis », qui reste invariable. 3. `Se sont entraîné` est un pronominal réfléchi : ils ont entraîné qui ? Eux-mêmes. « Se » est COD placé avant le participe et reprend « ils », masculin pluriel. Il faut donc « entraînés ». 4. Dans `l’avons gagné`, l’auxiliaire est avoir. Nous avons gagné quoi ? La coupe, reprise par « l’ ». Ce COD féminin singulier précède le participe : il faut « gagnée ».\nDonc : seule la proposition 2 présente la forme attendue. La réponse est 2.",
     "why": {
-      "1": "« fournit » : participe « fournis », accordé au COD antéposé.",
-      "2": "Correcte : « nous a permis de » → permis invariable.",
-      "3": "« entraîné » : s'entraîner s'accorde avec le sujet → entraînés.",
-      "4": "« gagné » : « l' » (= la coupe) → gagnée.",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      "T": "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "Dans `a fournit`, la forme attendue est « a fournis ». Le participe de fournir est « fourni », et le COD « qu’ », reprenant « les efforts », est placé avant lui : il impose le masculin pluriel.",
+      "2": "« Nous » signifie « à nous » dans « nous a permis » : c’est un COI, qui ne commande pas l’accord. Le COD « de progresser très vite » vient après le participe employé avec avoir ; « permis » conserve donc sa forme invariable.",
+      "3": "Dans `se sont entraîné`, « se » est COD : ils ont entraîné eux-mêmes. Ce COD masculin pluriel précède le participe du pronominal réfléchi ; la forme attendue est « se sont entraînés ».",
+      "4": "Dans `l’avons gagné`, « l’ » reprend « la coupe », COD féminin singulier placé avant le participe employé avec avoir. L’accord exige « l’avons gagnée ».",
+      "A": "Une proposition est correcte, la 2 ; A correspondrait à zéro proposition correcte.",
+      "T": "Une seule proposition sur quatre est correcte ; les propositions 1, 3 et 4 empêchent de choisir T."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -21624,8 +21755,18 @@ const QUESTIONS = [
           "detail_id": "cod_apres",
           "tense_id": "passe_compose"
         }
-      ]
-    }
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T11:24:59Z"
+        }
+      }
+    },
+    "progress_revision": 1
   },
   {
     "id": "eleves-63",
@@ -22110,7 +22251,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quelle(s) phrase(s) d'élève est/sont correctement écrite(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -22138,14 +22279,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Toutes correctes : « fallu » toujours invariable, « rendu compte » invariable, « vu » devant le nom invariable, « qui ont » (qui = eux). Réponse : Toutes.",
+    "explanation": "Règle : Dans une tournure impersonnelle comme il a fallu ou il y a eu, aucun nom ne commande l’accord du participe.\nMéthode : 1. Repère une tournure impersonnelle, par exemple il a fallu ou il y a eu. 2. Vérifie que le pronom il ne désigne aucune personne ni aucune chose précise. 3. Aucun nom ne commande alors l’accord. 4. Garde le participe passé invariable.\nDans cette phrase : 1. « Il a fallu » est une tournure impersonnelle : il ne désigne aucune personne ni aucune chose. Le participe « fallu » reste donc invariable. En reconstituant « il a fallu prendre les mesures », on voit que « les mesures », repris par que, est le COD de prendre ; ce groupe ne commande pas l’accord de fallu.\n2. « Elle s’est rendu compte » est le cas pronominal de la locution se rendre compte. On rend compte à qui ? À soi-même : se est COI. On rend quoi ? Compte : ce COD se trouve après le participe. Aucun COD ne précède donc rendu, qui reste invariable malgré le sujet féminin elle.\n3. « Vu » précède « les circonstances » et introduit la raison du report. Il a ici la valeur d’une préposition, comme dans « en raison des circonstances » : il reste invariable.\n4. Dans « eux qui ont le plus insisté », qui reprend eux : l’auxiliaire prend donc la forme plurielle ont. Le participe insisté est employé avec avoir, sans COD ; il reste invariable.\nDonc : les quatre phrases sont correctement écrites. La réponse est T, « Toutes ».",
     "why": {
-      "1": "Correcte : falloir → fallu invariable.",
-      "2": "Correcte : se rendre compte → rendu invariable.",
-      "3": "Correcte : « vu » en tête, invariable.",
-      "4": "Correcte : « eux qui » → 3e personne du pluriel.",
-      "A": "Les quatre sont correctes.",
-      "T": "Correct : aucune faute — malgré les apparences."
+      "1": "Dans « il a fallu prendre », il est impersonnel. « Que », qui reprend « les mesures », complète prendre et non fallu : aucun accord avec mesures ne s’applique à « fallu ».",
+      "2": "Dans « s’est rendu compte », se répond à « à qui ? » et compte répond à « quoi ? ». Le COI se ne commande aucun accord, et le COD compte suit rendu : la forme sans -e est attendue.",
+      "3": "« Vu les circonstances » introduit le motif du report. Vu est placé avant le nom avec une valeur de préposition ; le féminin pluriel de circonstances ne lui transmet donc aucune marque d’accord.",
+      "4": "Qui reprend « eux », ce qui donne « ils ont insisté ». Insister n’a pas de COD dans cette phrase : avec avoir, « insisté » conserve sa forme invariable.",
+      "A": "Quatre phrases sur quatre sont correctes ; aucune n’est à écarter. « Aucune » correspondrait à zéro phrase correcte.",
+      "T": "Les quatre options satisfont leur règle : fallu relève de l’impersonnel ; rendu a un COD placé après ; vu introduit un groupe nominal comme une préposition ; ont suit eux et insisté n’a pas de COD. La réponse « Toutes » couvre donc les quatre phrases."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -22178,8 +22319,18 @@ const QUESTIONS = [
           "detail_id": "core",
           "tense_id": null
         }
-      ]
-    }
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T05:30:37Z"
+        }
+      }
+    },
+    "progress_revision": 1
   },
   {
     "id": "eleves-70",
@@ -22490,7 +22641,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quelle phrase d'élève est correctement écrite ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -22518,14 +22669,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Quatre hypercorrections (accords indus) : « coûté » invariable (prix, mesure), « permis » invariable (se = COI), « succédé » invariable (se = COI), « rendu compte » invariable. Aucune n'est correcte.",
+    "explanation": "Règle : Un complément de mesure, de durée ou de prix d’un verbe employé intransitivement ne commande pas l’accord du participe. Mais une quantité peut être COD : il faut vérifier le sens et la construction du verbe, puis appliquer l’accord avec avoir si ce COD est placé avant.\nMéthode : 1. Repère le groupe associé au participe et le sens précis du verbe. 2. Vérifie si le verbe est employé avec une simple mesure ou avec un COD : peser trois kilos exprime un poids, tandis que peser des caisses porte sur les objets pesés. 3. Si le verbe est intransitif et que le groupe exprime seulement sa mesure, sa durée ou son prix, garde le participe invariable. 4. Si le groupe est un COD, applique la règle de l’accord avec avoir : accorde seulement lorsqu’il est placé avant. Une quantité peut être COD, notamment avec perdre, dépenser ou passer.\nDans cette phrase : 1. En reconstituant « ce concert m’a coûté cent francs », on trouve le prix du concert : « cent francs » répond à « combien ? ». Coûter est ici employé avec un complément de prix, sans COD accordable. La reprise de ce prix par que avant le participe ne change pas sa fonction : il faut coûté, sans -s.\n2. `Elle s’est permise de me corriger` est un pronominal réfléchi où se est COI : elle a permis quoi ? De me corriger ; à qui ? À elle-même. Le COD est le groupe infinitif placé après le participe. Se ne commande donc pas l’accord, et il faut permis.\n3. `Ils se sont succédés` est un pronominal réciproque : ils ont succédé les uns aux autres. Succéder se construit avec à ; se est donc COI. Il n’y a aucun COD, et le participe doit rester succédé.\n4. `On s’est vite rendus compte` relève de la locution pronominale se rendre compte. Se correspond à « à soi-même » et est COI ; compte est le COD placé après. Le participe reste rendu, quel que soit le nombre de personnes représentées par on.\nDonc : aucune des quatre phrases n’est correctement écrite. La réponse est A, « Aucune ».",
     "why": {
-      "1": "« coûtés » : un prix (mesure) → coûté invariable.",
-      "2": "« permise » : se permettre → permis invariable.",
-      "3": "« succédés » : se succéder (se = COI) → succédé invariable.",
-      "4": "« rendus » : se rendre compte → rendu invariable.",
-      "A": "Correct : les quatre sont des hypercorrections fautives.",
-      "T": "Aucune n'est correcte."
+      "1": "`coûtés` reçoit un -s indu : les cent francs expriment le prix du concert, sans être un COD de coûter dans cet emploi. La forme attendue est « coûté ».",
+      "2": "`s’est permise` accorde le participe avec elle alors que se est COI : elle permet de corriger à elle-même. Le COD suit le participe ; il faut « s’est permis ».",
+      "3": "`se sont succédés` traite se comme un COD. Or on succède à quelqu’un : se est COI, sans autre COD dans la phrase. Il faut « se sont succédé ».",
+      "4": "`rendus compte` porte un pluriel que ni le COI se ni le COD compte, placé après, ne peuvent commander. Dans cette locution, la forme attendue est « rendu compte ».",
+      "A": "Chaque option contient un accord indu : `coûtés` doit devenir coûté, `permise` doit devenir permis, `succédés` doit devenir succédé et `rendus` doit devenir rendu. Le comptage donne donc zéro phrase correcte : « Aucune ».",
+      "T": "Les quatre phrases comportent une faute. Il y a zéro phrase correcte sur quatre ; « Toutes » ne convient donc pas."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -22538,8 +22689,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T14:05:57Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "eleves-75",
@@ -24527,7 +24688,7 @@ const QUESTIONS = [
     "id": "av-6",
     "rule": "adjverbal",
     "type": "blank",
-    "stem": "Une pâtissière ___, ___ particulièrement dans les desserts glacés, a reçu le premier prix.",
+    "stem": "Une ___ pâtissière, en ___ particulièrement dans les desserts glacés, a reçu le premier prix.",
     "options": [
       {
         "key": "1",
@@ -24555,14 +24716,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Adjectif « excellente » (variable) ; participe présent « excellant » (invariable, suivi de son complément « dans les desserts »).",
+    "explanation": "Règle : Lorsque la syntaxe établit que la forme conserve le fonctionnement du verbe, elle est un participe présent et reste invariable. Un complément prépositionnel peut aussi dépendre d’un adjectif : sa seule présence ne suffit pas.\nMéthode : 1. Observe la forme à distinguer dans toute la phrase. 2. Vérifie si elle fonctionne comme un adjectif ou comme un verbe, notamment dans un gérondif ou une proposition participiale. 3. Croise les indices : variation au féminin, négation verbale et construction des compléments. Le seul sens d’action ou un complément prépositionnel ne suffit pas. 4. Accorde l’adjectif verbal avec le nom auquel il se rapporte ; garde le participe présent invariable et vérifie la graphie.\nDans cette phrase : Devant le nom féminin singulier « pâtissière », l’adjectif est « excellente ». Le second blanc suit « en » et forme le gérondif « en excellant particulièrement dans les desserts glacés » : le participe présent reste invariable. L’option 1 inverse ces emplois ; l’option 3 place un adjectif dans le gérondif ; l’option 4 place le participe devant le nom.\nDonc : La réponse est 2, « excellente / excellant ».",
     "why": {
-      "1": "Inversé.",
-      "2": "Correct : adjectif accordé + participe invariable.",
-      "3": "2e segment : action → participe excellant.",
-      "4": "1er segment : qualité → adjectif excellente.",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      "T": "Les options 1, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "« Excellant » ne convient pas comme adjectif devant « pâtissière », et « excellente » ne peut pas former le gérondif après « en ».",
+      "2": "« Excellente » qualifie et accompagne le nom féminin singulier ; « en excellant » est un gérondif dont le participe reste invariable.",
+      "3": "Le premier « excellente » convient, mais le second doit être « excellant » après « en ».",
+      "4": "Le second « excellant » convient au gérondif, mais le premier blanc demande l’adjectif féminin « excellente » devant « pâtissière ».",
+      "A": "« Aucune » est exclu : l’option 2 respecte les deux constructions.",
+      "T": "« Toutes » est exclu : les options 1, 3 et 4 échouent chacune sur au moins un des deux emplois."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -24581,7 +24742,8 @@ const QUESTIONS = [
         "3": "UNK",
         "4": "UNK"
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "av-7",
@@ -29503,14 +29665,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Obligation morale À L'ÉGARD de quelqu'un → « envers ». « après » (fâché après…) est un régionalisme fautif à l'écrit.",
+    "explanation": "Règle : Une locution se construit avec une préposition fixe qu’il faut restituer entièrement.\nMéthode : 1. Repère le mot qui commande le complément. 2. Reconstitue sa construction habituelle avec ce complément. 3. Choisis la préposition exigée par cette construction. 4. Applique la contraction nécessaire, puis relis l’ensemble.\nDans cette phrase : le groupe « a des obligations strictes » indique ce que l’entreprise doit respecter. « Ses clients les plus fidèles » désigne les personnes à l’égard desquelles ces obligations existent. On reconstitue donc « avoir des obligations envers ses clients ». « Envers » exprime cette relation ; aucune contraction n’est nécessaire devant « ses ». La phrase devient : « L’entreprise a des obligations strictes envers ses clients les plus fidèles. »\nDonc : la réponse est 1, « envers ».",
     "why": {
-      "1": "Correct : obligations envers quelqu'un.",
-      "2": "« vers » : direction spatiale, contresens.",
-      "3": "« après » : tour familier/régional, fautif à l'écrit.",
-      "4": "« contre » : hostilité, contresens.",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Les options 2, 3 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "« Envers ses clients » identifie les personnes à l’égard desquelles l’entreprise a des obligations. Ce groupe complète bien la construction « avoir des obligations envers quelqu’un ».",
+      "2": "Dans `obligations strictes vers ses clients`, « vers » indique une direction plutôt que les personnes auxquelles les obligations sont dues. Il faut « obligations strictes envers ses clients ».",
+      "3": "Dans `obligations strictes après ses clients`, « après » ne construit pas le lien entre les obligations et leurs bénéficiaires. La préposition attendue est « envers ».",
+      "4": "Dans `obligations strictes contre ses clients`, « contre » exprime une opposition incompatible avec la relation demandée. Il faut « envers ses clients ».",
+      "A": "Une option sur quatre convient : l’option 1. « Aucune » est donc exclue.",
+      "T": "Trois options sur quatre ne conviennent pas ; une seule est correcte, ce qui exclut « Toutes »."
     },
     "gen": {
       "model": "mixte (pré-suivi)",
@@ -29528,8 +29690,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:11:47Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "prep-7",
@@ -34987,11 +35159,11 @@ const QUESTIONS = [
     "options": [
       {
         "key": "1",
-        "text": "ou / soit"
+        "text": "et / et"
       },
       {
         "key": "2",
-        "text": "soit / ou"
+        "text": "ni / ni"
       },
       {
         "key": "3",
@@ -35011,14 +35183,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Alternative exclusive à deux termes : corrélation « soit… soit… » (les deux membres identiques) → soit / soit.",
+    "explanation": "Règle : Les deux marqueurs doivent exprimer des possibilités alternatives et introduire des constructions parallèles.\nMéthode : 1. Détermine le lien logique entre les deux idées. 2. Nomme ce lien simplement : cause, conséquence, opposition, concession, addition ou explication. 3. Essaie le connecteur dans la phrase et vérifie qu’il exprime bien ce lien. 4. Contrôle aussi la construction et la ponctuation qui l’accompagnent.\nDans cette phrase : Le dilemme exige de choisir entre accepter et refuser, sans entre-deux. « Soit accepter soit refuser » présente ces deux possibilités parallèles. « Et accepter et refuser » cumule les deux actions ; « ni accepter ni refuser » les exclut toutes deux. Dans « il faut et accepter ou refuser », le premier « et » n’a pas de premier terme à coordonner. La construction « soit… ou… » est également admise pour exprimer une alternative.\nDonc : La réponse est 3, « soit / soit ».",
     "why": {
-      "1": "« ou / soit » : corrélation dépareillée.",
-      "2": "« soit / ou » : corrélation dépareillée.",
-      "3": "Correct : soit… soit… (alternative).",
-      "4": "« et / ou » : addition, pas alternative exclusive.",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Les options 1, 2 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "« Et accepter et refuser » demande les deux actions, alors que le dilemme impose d’en choisir une.",
+      "2": "« Ni accepter ni refuser » exclut les deux actions, contrairement au choix obligatoire annoncé.",
+      "3": "« Soit accepter soit refuser » présente les deux possibilités parallèles entre lesquelles il faut choisir.",
+      "4": "Dans « il faut et accepter ou refuser », le premier « et » n’a pas de premier terme à coordonner ; la construction ne forme pas l’alternative attendue.",
+      "A": "« Aucune » est exclu : l’option 3 exprime correctement le choix entre accepter et refuser.",
+      "T": "« Toutes » est exclu : l’option 1 cumule les actions, l’option 2 les exclut et l’option 4 ne construit pas correctement l’alternative."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -35032,7 +35204,8 @@ const QUESTIONS = [
         "3": null,
         "4": "UNK"
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "ponc-24",
@@ -35445,14 +35618,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "« de bons (conseils) » est partitif → le pronom est « en » : « il en donne toujours de bons ».",
+    "explanation": "Règle : Un complément de chose introduit par de se reprend généralement par en.\nMéthode : 1. Repère le mot ou le groupe repris par le pronom. 2. Trouve la fonction du pronom dans la nouvelle phrase. 3. Choisis la forme correspondant à cette fonction et à la préposition éventuelle. 4. Vérifie sa place et les accords nécessaires.\nDans cette phrase : le groupe à reprendre est « des conseils ». On développe la seconde proposition : « Il donne toujours de bons conseils. » Le COD est l’ensemble « de bons conseils » ; il ne s’agit ni d’un lieu ni de personnes qui recevraient quelque chose. Pour éviter de répéter « conseils » tout en conservant « de bons », on emploie « en » : « Il en donne toujours de bons. » « En » reprend ici des conseils en quantité non précisée, et « de bons » indique leur qualité. Le pronom se place devant le verbe conjugué « donne ».\nDonc : la réponse est 3, « en ».",
     "why": {
-      "1": "« les » : reprise définie, incompatible avec le partitif « de bons ».",
-      "2": "« y » : reprend un complément en « à », pas un partitif.",
-      "3": "Correct : partitif « de bons » → en.",
-      "4": "« leur » : pronom COI (à eux), hors sujet ici.",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Les options 1, 2 et 4 contiennent chacune une erreur ; « Toutes » ne convient donc pas. Leurs justifications indiquent séparément la règle qui n'est pas respectée."
+      "1": "Dans `il les donne toujours de bons`, « les » reprendrait des conseils déterminés comme un COD complet et ne permet pas cette construction avec « de bons ». Pour reprendre le nom tout en conservant cette précision, il faut « il en donne toujours de bons ».",
+      "2": "Dans `il y donne toujours de bons`, « y » pourrait reprendre un lieu ou un complément de chose en « à », mais ne reprend pas « conseils » dans « de bons conseils ». Il faut « il en donne toujours de bons ».",
+      "3": "« En » reprend les conseils dont il donne une quantité non précisée. « De bons » conserve la qualification du nom sous-entendu : « il en donne toujours de bons » équivaut à « il donne toujours de bons conseils ».",
+      "4": "Dans `il leur donne toujours de bons`, « leur » désignerait plusieurs destinataires, alors que le groupe à reprendre est « des conseils ». Il faut « en » pour reprendre ces conseils : « il en donne toujours de bons ».",
+      "A": "L’option 3 convient : il y a une option correcte, ce qui exclut « Aucune ».",
+      "T": "Trois options sont fautives et une convient ; « Toutes » ne peut donc pas être retenue."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -35465,8 +35638,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:11:47Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "sv-25",
@@ -41079,14 +41262,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : chaque proposition contient une forme en -ant, et il faut vérifier si elle commande un complément ou si elle décrit simplement un nom. Proposition 1 : la forme commande le complément « d'une cohorte à l'autre » et équivaut à « les résultats qui diffèrent d'une cohorte à l'autre » ; le fonctionnement verbal est conservé, donc participe présent invariable « différant ». Proposition 2 : la forme ne commande aucun complément et attribue une propriété aux résultats ; il faut l'adjectif verbal accordé « différents ». Proposition 3 : la forme qualifie le nom féminin « année » sans commander de complément ; il faut l'adjectif verbal accordé « précédente ». Proposition 4 : la forme qualifie « une analyse » sans complément ; il faut l'adjectif verbal accordé « équivalente ».\nDonc : une seule proposition applique correctement la règle, et la réponse attendue est 1.",
+    "explanation": "Règle : Distingue l’emploi adjectival du fonctionnement verbal par la syntaxe et des tests concordants. L’adjectif verbal s’accorde ; le participe présent reste invariable. Le seul sens d’action ou la présence d’un complément prépositionnel ne suffit pas à choisir.\nMéthode : 1. Observe la forme à distinguer dans toute la phrase. 2. Vérifie si elle fonctionne comme un adjectif ou comme un verbe, notamment dans un gérondif ou une proposition participiale. 3. Croise les indices : variation au féminin, négation verbale et construction des compléments. Le seul sens d’action ou un complément prépositionnel ne suffit pas. 4. Accorde l’adjectif verbal avec le nom auquel il se rapporte ; garde le participe présent invariable et vérifie la graphie.\nDans cette phrase : il faut examiner séparément les quatre propositions. Dans la 1, « Les résultats différant d’une cohorte à l’autre » forme un groupe initial où « résultats » est le sujet de « différant », distinct du sujet « le groupe » de la proposition principale. On peut développer ce groupe en « comme les résultats diffèrent d’une cohorte à l’autre » : cette construction établit le fonctionnement verbal, donc le participe présent invariable « différant ». Dans la 2, le mot caractérise directement « résultats » ; le féminin « des données différentes » confirme l’adjectif, qui doit s’écrire « différents » au masculin pluriel. Dans la 3, il désigne l’année antérieure : « l’année précédente », adjectif féminin singulier. Dans la 4, le remplacement par « comparable » et le féminin « équivalente » établissent également l’adjectif lié à « analyse ».\nDonc : seule la proposition 1 emploie la forme attendue ; la réponse est 1.",
     "why": {
-      "1": "La forme commande le complément « d'une cohorte à l'autre » et peut se développer par « les résultats qui diffèrent » : elle garde le fonctionnement du verbe et n'attribue pas une propriété stable. Le participe présent reste donc invariable, ce que « différant » respecte.",
-      "2": "`différants` accorde une forme qui ne commande aucun complément et qui sert simplement à caractériser les résultats. Cette valeur de propriété impose la graphie de l'adjectif verbal : il faut « les résultats différents ».",
-      "3": "`précédant` est laissé invariable alors que la forme qualifie le nom féminin « année » et ne commande aucun complément. Le test du féminin le confirme, et l'adjectif verbal accordé « l'année précédente » est attendu.",
-      "4": "`équivalant` est laissé invariable alors que la forme qualifie « une analyse » sans être suivie d'un complément comme « à ». L'adjectif verbal accordé « une analyse équivalente » est attendu.",
-      "A": "Une proposition sur quatre résiste à la vérification, donc le nombre de propositions correctes n'est pas nul et « Aucune » est écarté.",
-      "T": "Le compte donne une proposition correcte sur quatre, et non quatre, donc « Toutes » est écarté."
+      "1": "« Différant » a pour sujet propre « les résultats » dans le groupe initial, tandis que « le groupe » est le sujet de « a repris ». La reformulation « comme les résultats diffèrent » confirme le participe présent, qui reste invariable malgré « résultats » au pluriel.",
+      "2": "`différants` caractérise ici le nom « résultats ». Le test « des données différentes » établit l’adjectif : sa graphie est « différents » au masculin pluriel, et non celle du participe présent suivie d’un s.",
+      "3": "`l’année précédant` ne respecte pas la forme adjectivale liée au nom féminin « année ». Pour désigner l’année antérieure, il faut « l’année précédente ».",
+      "4": "`une analyse équivalant` emploie la graphie verbale dans une construction où le mot caractérise « analyse ». L’adjectif doit prendre le féminin singulier : « une analyse équivalente ».",
+      "A": "La proposition 1 convient ; le nombre de propositions correctes est un.",
+      "T": "Les propositions 2, 3 et 4 sont fautives ; les quatre propositions ne conviennent donc pas."
     },
     "hep": {
       "slot_id": "maj-slot-04-adjverbal",
@@ -41115,15 +41298,16 @@ const QUESTIONS = [
         "4": "UNK"
       },
       "remediation": {
-        "batch_id": "hep-rem-20260805-7980",
+        "batch_id": "hep-rem-20261002-6872",
         "feedback_provenance": {
-          "model": "claude-opus-5",
+          "model": "gpt-6.1-sol",
           "reasoning": "high",
           "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
-          "generated_at": "2026-08-05T05:34:29Z"
+          "generated_at": "2026-10-03T05:39:18Z"
         }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "solmaj-09-1",
@@ -42654,7 +42838,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -42682,14 +42866,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : Pour une hypothèse actuelle introduite par « si », on met le verbe qui suit « si » à l'imparfait et la conséquence au conditionnel présent. Le conditionnel présente ce qui arriverait si la condition se réalisait. Dans cette phrase : la condition est « si la direction la retenait » ; « retenait » est à l'imparfait. La conséquence serait que « la solution resterait applicable » ; « resterait » est au conditionnel. Donc : on écrit « resterait / retenait » ; l'option 4 est correcte.",
+    "explanation": "Règle : Dans l’hypothèse présente irréelle, la condition prend l’imparfait et le résultat le conditionnel présent.\nMéthode : 1. Repère le temps qui sert de point de référence. 2. Situe l’autre action avant, pendant ou après ce repère. 3. Détermine si l’action est accomplie, en cours ou seulement envisagée. 4. Choisis le temps qui exprime exactement cette relation.\nDans cette phrase : « envisage » fixe le repère dans le présent du rapport, et « sans la tenir pour acquise » indique que la fermeture reste une hypothèse. La condition est introduite par « si » : « si la direction la… », où « la » reprend la solution. Pour cette hypothèse, on place « retenir » à l’imparfait : « si la direction la retenait ». Cet imparfait exprime ici une condition envisagée, pas un événement passé raconté. L’autre partie donne le résultat soumis à cette condition : la solution serait encore applicable dans ce scénario. Elle prend donc le conditionnel présent, « resterait ». L’ordre des blancs est résultat, puis condition : « resterait / retenait ».\nDonc : la réponse attendue est l’option 4.",
     "why": {
-      "1": "« Restera » présente la conséquence comme certaine, alors que la fermeture n'est qu'envisagée ; il faut « resterait ».",
-      "2": "Les temps sont inversés : la conséquence demande « resterait » et la condition après « si » demande « retenait ».",
-      "3": "Après « si » exprimant cette condition, on n'emploie pas « retiendrait » ; il faut l'imparfait « retenait ».",
-      "4": "« Resterait » exprime la conséquence possible et « retenait » la condition : cette combinaison est correcte.",
-      "A": "La combinaison de l'option 4 convient ; « Aucune » n'est donc pas la réponse.",
-      "T": "Une seule combinaison construit correctement l'hypothèse ; les quatre options ne sont pas toutes correctes."
+      "1": "`restera` est au futur simple, alors que le résultat de l’hypothèse construite avec « si la direction la retenait » demande le conditionnel présent « resterait ». Le second verbe, « retenait », convient.",
+      "2": "Les deux temps ne correspondent pas aux rôles des propositions : `restait` doit devenir « resterait » pour le résultat envisagé ; `retiendra` doit devenir « retenait » après « si » dans cette construction hypothétique.",
+      "3": "« Resterait » exprime bien le résultat conditionnel, mais `si la direction la retiendrait` place le conditionnel dans la condition. Dans l’hypothèse ciblée, il faut l’imparfait : « si la direction la retenait ».",
+      "4": "« Retenait » présente la condition à l’imparfait après « si », et « resterait » donne au conditionnel présent le résultat dépendant de cette condition. Les deux temps construisent le scénario envisagé par le rapport.",
+      "A": "La combinaison 4 convient ; il y a une réponse correcte.",
+      "T": "Les trois autres combinaisons comportent un temps inadéquat ; le total est d’une réponse correcte sur quatre."
     },
     "hep": {
       "slot_id": "drill40-20",
@@ -42710,9 +42894,19 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T05:39:18Z"
+        }
       }
     },
-    "stem": "Le rapport envisage la fermeture de la salle sans la tenir pour acquise: la solution ___ applicable si la direction la ___."
+    "stem": "Le rapport envisage la fermeture de la salle sans la tenir pour acquise: la solution ___ applicable si la direction la ___.",
+    "progress_revision": 1
   },
   {
     "id": "drill40q-21-4",
@@ -43511,7 +43705,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Choisissez la forme ou la phrase qui convient dans ce contexte.",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -43539,14 +43733,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Règle : Quand on rapporte une question, on garde le mot interrogatif, mais on retire l'inversion du sujet. Si la question était future depuis un moment désormais passé, le futur devient un conditionnel. Les pronoms s'adaptent aussi à la personne dont on rapporte les paroles. Dans cette phrase : « Quand recevrai-je mes résultats ? » devient après « Karim a demandé » : « quand il recevrait ses résultats ». Donc : l'option 1 est correcte.",
+    "explanation": "Règle : Dans une transposition ancrée au moment passé des paroles, le conditionnel exprime le futur vu depuis ce repère. Le passé de l’introducteur ne rend pas toujours cette transposition obligatoire : après un passé composé, notamment, un futur encore actuel pour le narrateur peut être conservé selon le contexte.\nMéthode : 1. Repère les paroles d’origine et le verbe qui les rapporte. 2. Adapte les personnes et les déterminants au nouveau point de vue. 3. Transpose les temps et les repères de temps ou de lieu lorsque le contexte l’exige. 4. Retire les marques du discours direct et vérifie la phrase obtenue.\nDans cette phrase : « a demandé » introduit les paroles de Karim, prononcées lundi. Sa question porte sur le moment de réception des résultats : on conserve donc « quand », et non « si ». Dans le compte rendu, Karim est désigné par « il » ; « je » devient ainsi « il » et « mes résultats » devient « ses résultats ». La réception était future au moment de sa question. Pour la présenter depuis ce repère passé, on peut employer le conditionnel « recevrait », qui exprime ici un évènement à venir vu depuis lundi. Cette transposition est valable, mais « lundi » et « maintenant » ne suffisent pas à rendre le conditionnel obligatoire : le futur peut être conservé si la réception reste à venir pour le narrateur. Enfin, la question rapportée ne conserve pas l’inversion « recevrai-je » : le pronom sujet précède le verbe dans « quand il recevrait ses résultats ».\nDonc : la réponse est 1, « Karim a demandé quand il recevrait ses résultats. »",
     "why": {
-      "1": "La question rapportée garde « quand », prend l'ordre « il recevrait » et adapte « mes » en « ses » : cette option est correcte.",
-      "2": "L'inversion « recevrait-il » appartient à la question directe. Dans la question rapportée, il faut « quand il recevrait ».",
-      "3": "« Quand » ne se place pas après le verbe dans cette construction et ne doit pas être remplacé par « si ».",
-      "4": "« Recevra » et « mes » gardent le point de vue de la question directe. Il faut « recevrait ses résultats ».",
-      "A": "L'option 1 rapporte correctement la question ; « Aucune » n'est donc pas la réponse.",
-      "T": "Les options 2, 3 et 4 conservent ou déplacent mal un élément de la question directe ; elles ne sont pas toutes correctes."
+      "1": "« Quand » conserve la question sur le moment ; « il » et « ses » renvoient à Karim. « Recevrait » situe la réception après les paroles du lundi, et l’ordre « il recevrait » convient à l’interrogation indirecte.",
+      "2": "Dans `quand recevrait-il`, le pronom sujet reste inversé comme dans une question directe. Après « a demandé », il faut « quand il recevrait ses résultats ».",
+      "3": "La suite `s’il recevrait quand` transforme la question sur une date en question introduite par « si » et laisse « quand » à une place inadéquate. Pour conserver la demande d’origine, il faut « quand il recevrait ses résultats ».",
+      "4": "Dans `mes résultats`, le possessif désigne les résultats du narrateur au lieu de ceux de Karim. Le changement de personne exige « ses résultats ». Cette erreur suffit à exclure l’option ; « recevra » peut être conservé si la réception reste future pour le narrateur, tandis que « recevrait » constitue une transposition valable depuis les paroles du lundi.",
+      "A": "Il y a une réponse chiffrée correcte, la 1 : « Aucune » ne convient pas.",
+      "T": "Trois propositions sur quatre ne conviennent pas : la réponse ne peut pas être « Toutes »."
     },
     "hep": {
       "slot_id": "drill40-32",
@@ -43567,9 +43761,19 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T14:10:24Z"
+        }
       }
     },
-    "stem": "Karim a demandé lundi: « Quand recevrai-je mes résultats? » Le compte rendu rapporte maintenant sa question."
+    "stem": "Karim a demandé lundi: « Quand recevrai-je mes résultats? » Le compte rendu rapporte maintenant sa question.",
+    "progress_revision": 1
   },
   {
     "id": "drill40t-33-4",
@@ -44606,14 +44810,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : deux verbes ont chacun leur régime et il faut les reconstruire séparément. Premier verbe : « nous pensons à cette mesure » — « penser » se construit ici avec « à », l’antécédent « la mesure » est un nom non humain féminin singulier, donc la forme de lequel est « laquelle » et le relatif attendu est « à laquelle ». Second verbe : « ces personnes dépendent du bus » — « dépendre » se construit avec « de », et comme le complément « du bus » reste écrit dans la phrase, le relatif qui reprend « les personnes » est simplement le sujet « qui ». Il faut donc « à laquelle » d’un côté et « qui » de l’autre, sans reprise supplémentaire du complément.\nDonc : la seule proposition qui porte à la fois « à laquelle » pour « penser à » et « qui dépendent du bus » pour « dépendre de » est l’option 3.",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : il faut examiner séparément les deux relatives. Pour « la mesure », on reconstruit « nous pensons à la mesure ». La préposition « à » doit être conservée. « La mesure » désigne une chose et est féminin singulier : la forme correspondante est « laquelle », d’où « à laquelle nous pensons ». Pour « les personnes », on reconstruit « les personnes dépendent du bus ». Ces personnes sont le sujet de « dépendent » : leur reprise demande « qui ». Le complément du verbe reste « du bus », puisque l’on dépend de quelque chose et que « de » suivi de « le bus » donne « du bus ». On obtient ainsi « La mesure à laquelle nous pensons profiterait aux personnes qui dépendent du bus ».\nDonc : la réponse est 3, qui respecte les deux constructions.",
     "why": {
-      "1": "`dont nous pensons` supprime la préposition « à » exigée par « penser à cette mesure » et lui substitue le « de » contenu dans « dont »; il faut « à laquelle nous pensons ». La suite `dépendent au bus` remplace en outre le « de » de « dépendre de » par « à » : la forme attendue est « dépendent du bus ».",
-      "2": "Le début « à laquelle nous pensons » est juste, mais `dont dépendent du bus` cumule deux fois la même préposition : « dont » contient déjà le « de » de « dépendre de », et « du bus » l’exprime une seconde fois. La forme attendue est « les personnes qui dépendent du bus ».",
-      "3": "« à laquelle » porte la préposition « à » exigée par « penser à » et s’accorde avec l’antécédent non humain féminin singulier « la mesure »; « qui dépendent du bus » laisse le complément « du bus » à sa place et emploie le relatif sujet, comme le demande « ces personnes dépendent du bus ».",
-      "4": "`que nous y pensons` traite « penser » comme un verbe à complément direct alors qu’il exige « à », et le pronom `y` reprend une seconde fois le complément déjà représenté par le relatif; il faut « à laquelle nous pensons », sans « y ».",
-      "A": "Une proposition chiffrée satisfait les deux régimes; « Aucune » ne peut donc pas convenir.",
-      "T": "Trois propositions chiffrées portent une préposition ou une reprise fautive; « Toutes » exigerait que les quatre soient correctes."
+      "1": "Le segment `dont nous pensons` impose « de » alors que la phrase de base est « nous pensons à la mesure » : il faut « à laquelle nous pensons ». Dans `dépendent au bus`, « à » remplace également la préposition exigée par « dépendre de » : il faut « dépendent du bus ».",
+      "2": "Dans `les personnes dont dépendent du bus`, « dont » ne peut pas être le sujet de « dépendent ». Ce sont les personnes qui dépendent du bus, et le complément « du bus » est déjà exprimé. Il faut donc « les personnes qui dépendent du bus ».",
+      "3": "« À laquelle » conserve le « à » de « penser à la mesure » et reprend « mesure » au féminin singulier. « Qui » reprend « les personnes » comme sujet de « dépendent », tandis que « du bus » conserve le complément introduit par « de ».",
+      "4": "Dans `que nous y pensons`, « que » ne peut pas reprendre « la mesure » comme COD, car on pense à cette mesure. De plus, « y » occupe déjà la place du complément en « à ». La relative attendue est « à laquelle nous pensons », sans « y ».",
+      "A": "Une proposition sur quatre, la 3, respecte toutes les constructions ; « Aucune » ne convient pas.",
+      "T": "Les propositions 1, 2 et 4 sont fautives : une seule proposition est correcte, ce qui exclut « Toutes »."
     },
     "hep": {
       "slot_id": "pond40-07",
@@ -44656,16 +44860,17 @@ const QUESTIONS = [
         }
       ],
       "remediation": {
-        "batch_id": "hep-rem-20260804-2006",
+        "batch_id": "hep-rem-20261002-6872",
         "feedback_provenance": {
-          "model": "claude-opus-5",
+          "model": "gpt-6.1-sol",
           "reasoning": "high",
           "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
-          "generated_at": "2026-08-04T18:58:34Z"
+          "generated_at": "2026-10-03T10:11:47Z"
         }
       }
     },
-    "stem": "Quatre élèves formulent une proposition."
+    "stem": "Quatre élèves formulent une proposition.",
+    "progress_revision": 1
   },
   {
     "id": "pond40-08-1",
@@ -44704,14 +44909,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Règle : après « avoir », on cherche ce qui a été préparé. Si ce mot est placé avant le verbe, le participe passé s'accorde avec lui. Après la préposition « à », on emploie l'infinitif en -er. Dans cette phrase : « que » remplace « les affiches » : nous avons préparé quoi ? Les affiches. Comme ce groupe est féminin pluriel et placé avant « avons préparé », on écrit « préparées ». Rien n'est placé avant « ont aidé », donc « aidé » ne change pas. Enfin, après « à », on écrit « orienter ». Donc : l'option 2 est correcte.",
+    "explanation": "Règle : Avec avoir, identifie le COD antéposé et accorde le participe avec son genre et son nombre.\nMéthode : 1. Repère l’auxiliaire avoir et le participe passé. 2. Trouve le COD en posant la question qui ? ou quoi ? après le verbe. 3. Vérifie que ce COD est placé avant le participe passé. 4. Accorde le participe avec le genre et le nombre de ce COD.\nDans cette phrase : nous avons préparé quoi ? Les affiches, reprises par le COD « que », placé avant le participe. Ce COD féminin pluriel commande « préparées ». Les affiches ont aidé qui ? « Les bénévoles », COD placé après le participe : « aidé » reste invariable, sans accord avec le sujet « les affiches ». Enfin, la construction « aider les bénévoles à orienter le public » demande un infinitif ; le remplacement par « à conduire le public » confirme « orienter ». 1. Dans `avons préparer`, le temps composé demande le participe accordé « préparées ». Dans `ont aidées`, l’accord est injustifié puisque le COD suit : il faut « ont aidé ». Dans `à orienté`, il faut l’infinitif « à orienter ». 2. « Préparées », « aidé » et « orienter » respectent ces trois constructions. 3. Dans `avons préparé`, il manque le féminin pluriel commandé par le COD « que » : il faut « préparées » ; les deux autres formes sont correctes. 4. « Préparées » est correct, mais `ont aider` doit devenir « ont aidé » et `à orienté` doit devenir « à orienter ».\nDonc : seule la proposition 2 est correctement écrite. La réponse est 2.",
     "why": {
-      "1": "Après « avons », il faut le participe passé « préparées », pas l'infinitif « préparer ». Après « à », il faut au contraire l'infinitif « orienter », pas « orienté ».",
-      "2": "« Préparées » s'accorde avec « les affiches », placé avant le verbe ; « aidé » reste inchangé et « orienter » est bien à l'infinitif après « à ».",
-      "3": "« Que » remplace « les affiches ». Comme ce groupe féminin pluriel est placé avant « avons préparé », il faut écrire « préparées ».",
-      "4": "Après « ont », il faut le participe passé « aidé », pas l'infinitif « aider » ; après « à », il faut l'infinitif « orienter », pas « orienté ».",
-      "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
-      "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+      "1": "Dans `avons préparer`, il faut le participe « préparées », accordé avec le COD « que », placé avant et reprenant « les affiches ». Dans `ont aidées`, le COD « les bénévoles » suit le participe : il faut « ont aidé ». Dans `à orienté`, la construction « aider quelqu’un à accomplir une action » demande l’infinitif « à orienter ».",
+      "2": "« Préparées » prend le féminin pluriel du COD « que », placé avant et reprenant « les affiches ». « Aidé » reste invariable parce que son COD « les bénévoles » vient après. « Orienter » est l’infinitif demandé par la construction « aider les bénévoles à orienter le public ».",
+      "3": "Dans `avons préparé`, le participe `préparé` ne porte pas le féminin pluriel du COD « que », placé avant et reprenant « les affiches ». Il faut « Les affiches que nous avons préparées ». « Ont aidé » et « à orienter » sont corrects.",
+      "4": "Dans `ont aider`, le temps composé demande le participe « aidé », invariable puisque le COD « les bénévoles » vient après. Dans `à orienté`, il faut l’infinitif « à orienter », comme dans « à conduire le public ». « Préparées » porte déjà l’accord attendu.",
+      "A": "La proposition 2 réunit les trois formes correctes : « préparées », « aidé » et « orienter ». « Aucune » ne convient donc pas.",
+      "T": "La proposition 1 comporte trois erreurs, la 3 omet l’accord de « préparées » et la 4 confond deux fois infinitif et participe. Seule la proposition 2 est correcte : « Toutes » ne convient donc pas."
     },
     "hep": {
       "slot_id": "pond40-08",
@@ -44754,7 +44959,8 @@ const QUESTIONS = [
         }
       ]
     },
-    "stem": "Quatre élèves racontent la fin d'une collecte."
+    "stem": "Quatre élèves racontent la fin d'une collecte.",
+    "progress_revision": 1
   },
   {
     "id": "pond40-09-1",
@@ -46148,14 +46354,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Le premier indicateur s'améliore, mais le second contredit l'effet attendu; seul un connecteur concessif marque cette opposition sans inventer de causalité.",
+    "explanation": "Règle : Le connecteur doit opposer un fait admis à une conséquence inattendue et respecter le mode qu’il régit.\nMéthode : 1. Détermine le lien logique entre les deux idées. 2. Nomme ce lien simplement : cause, conséquence, opposition, concession, addition ou explication. 3. Essaie le connecteur dans la phrase et vérifie qu’il exprime bien ce lien. 4. Contrôle aussi la construction et la ponctuation qui l’accompagnent.\nDans cette phrase : la première proposition établit une baisse des frais d’inscription. Cette baisse pourrait faire attendre une augmentation du nombre de bénéficiaires. Or la seconde proposition indique que cette augmentation n’a pas eu lieu ; le rapport ne peut donc pas conclure à un meilleur accès. Les deux propositions expriment ainsi une concession : un fait est admis, mais le résultat attendu ne se produit pas. « Pourtant » relie précisément la baisse des frais à ce résultat inattendu. Il s’insère devant la seconde proposition, sans imposer de changement de mode verbal.\nDonc : la réponse est 3, « Pourtant ».",
     "why": {
-      "1": "Le candidat présente l'absence de hausse des bénéficiaires comme l'effet de la baisse des frais, relation que les données démentent.",
-      "2": "Le candidat reformule la baisse des frais alors que la seconde proposition apporte un résultat distinct et défavorable.",
-      "3": "La réponse « Pourtant » est correcte : Le premier indicateur s'améliore, mais le second contredit l'effet attendu; seul un connecteur concessif marque cette opposition sans inventer de causalité.",
-      "4": "Le candidat introduit une justification, mais l'absence de hausse ne prouve pas la baisse des frais déjà mesurée.",
-      "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
-      "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+      "1": "Le connecteur `En conséquence` présente la stagnation du nombre de bénéficiaires comme une conséquence de la baisse des frais. La phrase souligne plutôt que l’effet attendu ne s’est pas produit : il faut « Pourtant ».",
+      "2": "Le connecteur `Autrement dit` annoncerait une reformulation de la baisse des frais. L’absence d’augmentation des bénéficiaires est une autre information, qui contrarie l’attente créée par cette baisse : le connecteur attendu est « Pourtant ».",
+      "3": "« Pourtant » admet la baisse des frais tout en introduisant le résultat inattendu : les bénéficiaires ne sont pas plus nombreux. Il exprime la concession entre les deux constats.",
+      "4": "Le connecteur `En effet` ferait de la seconde proposition une confirmation ou une explication de la première. La stagnation des bénéficiaires ne confirme pas la baisse des frais ; elle contrarie son effet attendu. Il faut « Pourtant ».",
+      "A": "Une option chiffrée convient, la 3 : « Aucune » ne convient pas.",
+      "T": "Une seule option chiffrée convient sur quatre : « Toutes » ne convient pas."
     },
     "hep": {
       "slot_id": "pond40-28",
@@ -46176,9 +46382,19 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:07:54Z"
+        }
       }
     },
-    "stem": "Les frais d'inscription ont baissé de 20 %. ___, le nombre de bénéficiaires n'a pas augmenté et le rapport refuse de conclure à un meilleur accès."
+    "stem": "Les frais d'inscription ont baissé de 20 %. ___, le nombre de bénéficiaires n'a pas augmenté et le rapport refuse de conclure à un meilleur accès.",
+    "progress_revision": 1
   },
   {
     "id": "pond40rrrrrrrrrrr-29-3",
@@ -46201,7 +46417,7 @@ const QUESTIONS = [
       },
       {
         "key": "3",
-        "text": "Le candidat joindra ou bien l'original signé, soit une copie certifiée."
+        "text": "Le candidat joindra et l'original signé et une copie certifiée."
       },
       {
         "key": "4",
@@ -46217,14 +46433,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Dans une alternative corrélative, les deux branches parallèles sont introduites symétriquement par soit : « soit X, soit Y ».",
+    "explanation": "Règle : Les deux marqueurs doivent exprimer des possibilités alternatives et introduire des constructions parallèles.\nMéthode : 1. Détermine le lien logique entre les deux idées. 2. Nomme ce lien simplement : cause, conséquence, opposition, concession, addition ou explication. 3. Essaie le connecteur dans la phrase et vérifie qu’il exprime bien ce lien. 4. Contrôle aussi la construction et la ponctuation qui l’accompagnent.\nDans cette phrase : Une seule forme de justificatif est requise. Avec « soit… soit… », la virgule est facultative entre deux courts groupes : l’option 1 exprime donc correctement l’alternative et sa virgule est admise. « Soit… ou… » est également admis, mais on ne met pas de virgule devant « ou » lorsqu’il remplace le second « soit » : l’option 2 ne respecte pas cette règle. L’option 3 cumule les deux documents avec « et… et… ». L’option 4 les réunit aussi par « et » ; le « soit » initial ne construit pas deux possibilités alternatives.\nDonc : La réponse est 1.",
     "why": {
-      "1": "La réponse « Le candidat joindra soit l'original signé, soit une copie certifiée. » est correcte : Dans une alternative corrélative, les deux branches parallèles sont introduites symétriquement par soit : « soit X, soit Y ».",
-      "2": "Le candidat mélange soit avec ou et rompt la corrélation attendue entre les deux branches de l'alternative.",
-      "3": "Le candidat ouvre l'alternative par ou bien puis la ferme par soit, au lieu de reprendre le même corrélatif.",
-      "4": "Le candidat coordonne les deux moyens par et après un seul soit, ce qui supprime l'alternative et laisse la corrélation inachevée.",
-      "A": "Une option chiffrée est correcte; « Aucune » ne convient donc pas.",
-      "T": "Trois options chiffrées sont fautives; « Toutes » ne convient donc pas."
+      "1": "« Soit l’original signé, soit une copie certifiée » présente les deux possibilités ; la virgule entre ces deux courts groupes introduits par « soit » est facultative et admise.",
+      "2": "« Soit… ou… » est admis, mais la virgule devant « ou » remplaçant le second « soit » doit être retirée.",
+      "3": "« Et l’original signé et une copie certifiée » demande les deux documents, alors qu’une seule forme est requise.",
+      "4": "« L’original signé et une copie certifiée » cumule les documents ; le « soit » initial ne transforme pas cette addition en alternative.",
+      "A": "« Aucune » est exclu : l’option 1 respecte le choix d’un seul justificatif et la ponctuation.",
+      "T": "« Toutes » est exclu : l’option 2 échoue sur la virgule, tandis que les options 3 et 4 cumulent les justificatifs."
     },
     "hep": {
       "slot_id": "pond40-29",
@@ -46247,7 +46463,8 @@ const QUESTIONS = [
         "4": "UNK"
       }
     },
-    "stem": "Une seule des deux formes de justificatif est requise."
+    "stem": "Une seule des deux formes de justificatif est requise. Choisissez la phrase qui exprime cette alternative et respecte la ponctuation.",
+    "progress_revision": 1
   },
   {
     "id": "pond40-30-1",
@@ -48146,14 +48363,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Rapporté par Marc à sa sœur : « te prendre » (= Marc) devient « me prendre », « chez ta sœur » (= l'interlocutrice actuelle) devient « chez toi », et après « a dit » le futur se transpose en « passerait ».",
+    "explanation": "Règle : Vérifie séparément les temps, les personnes, les possessifs et les repères de lieu ou de date avant de choisir la transformation complète.\nMéthode : 1. Repère les paroles d’origine et le verbe qui les rapporte. 2. Adapte les personnes et les déterminants au nouveau point de vue. 3. Transpose les temps et les repères de temps ou de lieu lorsque le contexte l’exige. 4. Retire les marques du discours direct et vérifie la phrase obtenue.\nDans cette phrase : il faut d’abord retrouver les personnes désignées dans les paroles de Lucie. « Je » désigne Lucie, « te » désigne Marc et « ta sœur » désigne la sœur de Marc. Maintenant, c’est Marc qui parle à cette sœur. Lucie devient donc « elle », tandis que Marc se désigne lui-même par « me ». La sœur est son interlocutrice actuelle : le lieu « chez ta sœur » devient alors « chez toi ». Pour présenter le déplacement comme futur depuis le moment des paroles de Lucie, on peut employer « passerait », au conditionnel. Cette transposition est valable ; le passé composé « a dit » ne la rend pas à lui seul obligatoire. On introduit les paroles par « que » et on obtient « qu’elle passerait me prendre chez toi ». Le changement d’interlocuteur est décisif pour choisir les deux derniers pronoms.\nDonc : la réponse est 4, « Lucie a dit qu’elle passerait me prendre chez toi. »",
     "why": {
-      "1": "Recopie les pronoms du discours direct : pour Marc qui parle, « te » désigne désormais lui-même (« me »), et « ta sœur » est la personne à qui il s'adresse (« toi »).",
-      "2": "« chez ta sœur » garde le possessif du discours direct : Marc s'adresse justement à sa sœur, donc « chez toi ».",
-      "3": "« la prendre chez sa sœur » bascule tout à la 3e personne : c'est bien Marc (« me ») que Lucie doit prendre, chez l'interlocutrice (« toi »).",
-      "4": "Correct : conditionnel « passerait », « me prendre » (= Marc) et « chez toi » (= sa sœur, à qui il parle).",
-      "A": "L'option 4 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 4 explique la règle à appliquer.",
-      "T": "Les options 1, 2 et 3 laissent chacune un pronom ou un temps non ajusté."
+      "1": "Les expressions `te prendre` et `chez ta sœur` gardent les désignations utilisées lorsque Lucie parlait à Marc. Marc parle maintenant en son propre nom à sa sœur : il faut « me prendre chez toi ».",
+      "2": "Dans `chez ta sœur`, « ta » renvoie désormais à la sœur de l’interlocutrice, alors que le lieu annoncé est le domicile de cette interlocutrice elle-même : il faut « chez toi ». Cette erreur de référence exclut l’option ; le maintien de « passera » n’est pas nécessairement fautif si le déplacement reste à venir pour Marc.",
+      "3": "La suite `la prendre chez sa sœur` désigne une personne féminine à prendre et sa sœur. Or Lucie doit prendre Marc, qui rapporte lui-même les propos à sa sœur. Les formes attendues sont « me prendre chez toi ».",
+      "4": "« Elle » désigne Lucie, « me » désigne Marc qui parle et « toi » désigne sa sœur à qui il s’adresse. « Passerait » exprime l’action future depuis le moment des paroles de Lucie : les personnes, le lieu et le temps sont adaptés.",
+      "A": "Une option chiffrée est correcte, la 4 : « Aucune » ne convient pas.",
+      "T": "Une seule transformation sur quatre convient : « Toutes » ne convient pas."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -48166,9 +48383,19 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T14:10:24Z"
+        }
       }
     },
-    "stem": "Lucie a dit à Marc : « Je passerai te prendre chez ta sœur. » Marc rapporte fidèlement ces propos à sa sœur."
+    "stem": "Lucie a dit à Marc : « Je passerai te prendre chez ta sœur. » Marc rapporte fidèlement ces propos à sa sœur.",
+    "progress_revision": 1
   },
   {
     "id": "rel-L13-10",
@@ -50344,7 +50571,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "L'an dernier encore, nous ___ les salles de sport avec le collège voisin.",
+    "stem": "Complétez avec le verbe partager à l’imparfait de l’indicatif : l’an dernier encore, nous ___ les salles de sport avec le collège voisin.",
     "options": [
       {
         "key": "1",
@@ -50372,14 +50599,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "À l'imparfait, le e intercalaire des verbes en -ger disparaît devant i : nous partagions (mais nous partageons au présent).",
+    "explanation": "Règle : L’imparfait se forme sur le radical de nous au présent, avec la terminaison correspondant à la personne.\nMéthode : 1. Retrouve l’infinitif du verbe. 2. Relève le mode, le temps et la personne demandés par la phrase. 3. Choisis le radical correspondant, régulier ou irrégulier. 4. Ajoute la terminaison correcte et vérifie la forme entière.\nDans cette phrase : L’imparfait de partager est demandé avec le sujet « nous ». À partir de « nous partageons », on retire « -ons » et on ajoute « -ions » ; le e de protection du g disparaît devant i, ce qui donne « nous partagions ». « Partageions » conserve un e inutile. « Partageons » est au présent et « partagerions » au conditionnel présent. Un présent narratif peut évoquer l’année passée, mais il ne répond pas à l’imparfait explicitement demandé.\nDonc : La réponse est 1, « partagions ».",
     "why": {
-      "1": "Correct : imparfait « nous partagions » ; le e ne s'intercale que devant a et o.",
-      "2": "« partageions » garde un e parasite : devant i, le g reste doux sans e.",
-      "3": "« partageons » est un présent : « l'an dernier encore » impose l'imparfait.",
-      "4": "« partagerions » est un conditionnel : le repère passé demande un fait réel, à l'imparfait.",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Les options 2, 3 et 4 fautent sur la graphie ou sur le temps."
+      "1": "« Partagions » est l’imparfait de partager avec « nous » ; devant i, le g conserve sa prononciation sans e ajouté.",
+      "2": "« Partageions » conserve à tort le e de protection devant la terminaison « -ions ».",
+      "3": "« Partageons » est un présent correctement formé, utilisable dans un récit passé, mais l’énoncé demande l’imparfait.",
+      "4": "« Partagerions » est un conditionnel présent correctement formé ; il ne correspond pas à l’imparfait demandé.",
+      "A": "« Aucune » est exclu : l’option 1 fournit l’imparfait demandé avec la bonne graphie.",
+      "T": "« Toutes » est exclu : l’option 2 présente une graphie incorrecte et les options 3 et 4 donnent d’autres temps."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -50393,7 +50620,8 @@ const QUESTIONS = [
         "3": "UNK",
         "4": "UNK"
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "dis-L17-9",
@@ -51833,7 +52061,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "Un ___ de fièvre l'a cloué au lit ; son remplaçant, par ___ de zèle, a réorganisé tout le classement.",
+    "stem": "Complétez en nommant d’abord une crise passagère, puis un dépassement de la mesure : un ___ de fièvre l’a cloué au lit ; son remplaçant, par ___ de zèle, a réorganisé tout le classement.",
     "options": [
       {
         "key": "1",
@@ -51861,14 +52089,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Un « accès » de fièvre est une poussée soudaine ; un « excès » de zèle est un dépassement de la mesure.",
+    "explanation": "Règle : Deux mots proches par la forme ont des sens différents ; le contexte détermine lequel convient.\nMéthode : 1. Identifie le mot et le sens qu’il doit avoir dans la phrase. 2. Cherche l’indice utile : famille du mot, composition, accent, consonne ou mot proche. 3. Écarte les formes qui ne correspondent ni au sens ni à la graphie attestée. 4. Relis le mot choisi dans la phrase entière.\nDans cette phrase : Le premier blanc doit nommer une crise passagère de fièvre : c’est un « accès ». Le second doit nommer un zèle qui dépasse la mesure : c’est un « excès ». « Accès de zèle » peut désigner un mouvement passager, mais ce n’est pas le sens demandé au second blanc. L’option 1 inverse les deux sens ; l’option 2 ne donne pas le nom demandé pour la crise ; l’option 4 ne donne pas celui demandé pour le dépassement.\nDonc : La réponse est 3, « accès / excès ».",
     "why": {
-      "1": "Inverse les deux : la poussée soudaine est un accès, le trop-plein un excès.",
-      "2": "« un excès de fièvre » : la poussée brutale se dit accès.",
-      "3": "Correct : poussée de fièvre = accès ; zèle démesuré = excès.",
-      "4": "« par accès de zèle » : le dépassement de la juste mesure se dit excès.",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Trois options confondent la poussée et le dépassement."
+      "1": "« Excès / accès » inverse les sens demandés : le premier blanc nomme une crise passagère et le second un dépassement de la mesure.",
+      "2": "Le second « excès » nomme bien le dépassement de zèle, mais le premier « excès » ne nomme pas la crise passagère demandée.",
+      "3": "« Accès » nomme la crise passagère de fièvre et « excès » le dépassement de la mesure dans le zèle.",
+      "4": "Le premier « accès » convient à la crise. Le second désignerait un mouvement passager de zèle plutôt que le dépassement demandé.",
+      "A": "« Aucune » est exclu : l’option 3 fournit les deux mots correspondant aux sens indiqués.",
+      "T": "« Toutes » est exclu : l’option 1 inverse les sens, l’option 2 manque le premier et l’option 4 manque le second."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -51882,7 +52110,8 @@ const QUESTIONS = [
         "3": null,
         "4": "UNK"
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "orth-L20-5",
@@ -53648,14 +53877,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "La déclaration passe par « que + imparfait » ; la question devient « ce que » + ordre déclaratif, et « en » (penser DE cela) est conservé.",
+    "explanation": "Règle : L’interrogation indirecte exclut est-ce que et l’inversion interrogative du pronom sujet. L’ordre sujet-verbe convient généralement ; certaines constructions admettent aussi un sujet nominal placé après le verbe, comme dans Je me demande où se trouve la sortie.\nMéthode : 1. Repère le verbe qui introduit la question rapportée. 2. Choisis la forme interrogative nécessaire à la subordonnée. 3. Supprime est-ce que et l’inversion interrogative du pronom sujet ; un sujet nominal peut être placé après le verbe selon la construction. 4. Vérifie les repères temporels, le mode et la ponctuation de la phrase complète.\nDans cette phrase : la trésorière formule d’abord une déclaration, puis une question. La déclaration est introduite par « que » ; dans la transposition depuis ses paroles passées, « le budget est bouclé » devient « le budget était bouclé ». La question demande l’avis du comité sur ce budget. Reconstituons la réponse possible : « Le comité pense quelque chose de ce budget. » Ce que le comité pense est le COD ; dans la question rapportée, on le représente par « ce que ». Le groupe « de ce budget » est repris par « en », qu’il faut conserver. « Vous » désignait les membres du comité : le procès-verbal les nomme « le comité », avec le verbe au singulier « pensait ». Après « a demandé », on obtient donc « ce que le comité en pensait », sans « est-ce que » ni inversion du pronom sujet.\nDonc : la réponse est 1.",
     "why": {
-      "1": "Correct : complétive à l'imparfait, puis interrogative indirecte en « ce que … en pensait ».",
-      "2": "« qu'est-ce que » est une marque de l'interrogation directe : elle disparaît.",
-      "3": "« y pensait » : on pense À quelque chose (y), mais ici on pense quelque chose DE ce budget → en.",
-      "4": "« ce dont … en pensait » cumule « dont » et « en », qui reprennent tous deux le complément en « de ».",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Les options 2, 3 et 4 fautent sur la marque directe ou sur le pronom."
+      "1": "« Que le budget était bouclé » rapporte la déclaration. « Ce que » représente l’avis demandé, « le comité » désigne les destinataires et « en » reprend « de ce budget » : « ce que le comité en pensait » conserve le sens de la question.",
+      "2": "La suite `a demandé qu’est-ce que` conserve la construction d’une interrogation directe après le verbe introducteur. Il faut une interrogation indirecte : « a demandé ce que le comité en pensait ».",
+      "3": "Dans `ce que le comité y pensait`, « y » renvoie à un complément en « à ». Or la question demande ce que le comité pense « de ce budget » : il faut « ce que le comité en pensait ».",
+      "4": "La suite `ce dont le comité en pensait` emploie « dont » pour un complément en « de » déjà repris par « en », alors que l’élément demandé est le COD de « penser ». Il faut « ce que le comité en pensait ».",
+      "A": "L’option 1 rapporte les deux parties des propos : une option chiffrée convient.",
+      "T": "Seule l’option 1 convient ; les trois autres ne permettent pas de choisir « Toutes »."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -53668,9 +53897,19 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:07:54Z"
+        }
       }
     },
-    "stem": "La trésorière a déclaré au comité : « Le budget est bouclé ; qu'en pensez-vous ? » Le procès-verbal rapporte ses propos."
+    "stem": "La trésorière a déclaré au comité : « Le budget est bouclé ; qu'en pensez-vous ? » Le procès-verbal rapporte ses propos.",
+    "progress_revision": 1
   },
   {
     "id": "rel-L23-10",
@@ -59631,14 +59870,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "« Tenir quelque chose DE quelqu'un » : la ténacité est le COD (elle tient cette ténacité de son aïeule), d'où « qu' » — le « de » de la phrase appartient à « de son aïeule ».",
+    "explanation": "Règle : Emploie que lorsque le pronom relatif remplit directement la fonction de complément du verbe, sans préposition.\nMéthode : 1. Repère l’antécédent du pronom relatif. 2. Remets cet antécédent dans la proposition relative pour trouver sa fonction. 3. Conserve la préposition exigée par la construction. 4. Choisis le pronom compatible avec la fonction et l’antécédent.\nDans cette phrase : l’antécédent est « la ténacité ». Pour trouver sa fonction, on reconstruit « elle tient cette ténacité de son aïeule horlogère ». Elle tient quoi de son aïeule ? Cette ténacité : ce groupe est le COD de « tient », sans préposition. « De son aïeule horlogère » indique séparément de qui elle tient cette qualité. Le « de » de ce second complément ne s’applique donc pas à « la ténacité ». Le relatif qui reprend le COD est « que » ; devant « elle », il s’élide en « qu’ ». On obtient « La ténacité qu’elle tient de son aïeule horlogère impressionne tout le jury de diplôme ».\nDonc : la réponse est 3, « qu’ ».",
     "why": {
-      "1": "« dont » doublerait le complément en « de » déjà exprimé (« de son aïeule ») : le relatif reprend ici le COD.",
-      "2": "« de laquelle » commet la même redondance que « dont » sous une forme composée.",
-      "3": "Correct : tenir qqch de qqn → la ténacité qu'elle tient de son aïeule.",
-      "4": "« à laquelle » supposerait « tenir à » (= être attaché à), qui changerait le sens et laisserait « de son aïeule » inexpliqué.",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Une seule option analyse correctement la construction du verbe."
+      "1": "Dans `la ténacité dont elle tient`, « dont » attribue à « la ténacité » une fonction de complément en « de ». Or elle tient cette ténacité de son aïeule : la ténacité est le COD. Il faut « la ténacité qu’elle tient ».",
+      "2": "Dans `la ténacité de laquelle elle tient`, « de laquelle » ajoute une préposition devant la qualité héritée. Cette qualité complète directement « tient » ; la forme attendue est « qu’elle tient de son aïeule ».",
+      "3": "« Qu’ » reprend « la ténacité », COD dans « elle tient cette ténacité de son aïeule ». La préposition « de » reste attachée à la personne dont provient cette qualité, et « que » s’élide devant « elle ».",
+      "4": "Dans `la ténacité à laquelle elle tient`, « à laquelle » correspondrait à « tenir à cette ténacité », c’est-à-dire y être attachée. Ici, elle tient cette qualité de son aïeule : la qualité est un COD, repris par « qu’ ».",
+      "A": "Une réponse, l’option 3, convient ; « Aucune » est donc exclue.",
+      "T": "Une seule option sur quatre respecte la fonction du groupe repris ; les trois autres excluent « Toutes »."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -59647,12 +59886,22 @@ const QUESTIONS = [
       "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
-        "1": "UNK",
+        "1": "dont_generalise_au_cvd_direct",
         "2": "UNK",
         "3": null,
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:11:47Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "orth-L35-1",
@@ -61237,14 +61486,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "« Clore » prend un accent circonflexe à la 3e personne du présent : elle clôt (l'accent distingue la forme et se maintient).",
+    "explanation": "Règle : Au présent, le radical et la terminaison doivent correspondre au verbe et à la personne du sujet. Méthode : Retrouve l’infinitif du verbe. Relève le mode, le temps et la personne demandés par la phrase. Choisis le radical correspondant, régulier ou irrégulier. Ajoute la terminaison correcte et vérifie la forme entière. Dans cette phrase : l’infinitif est « clore » et « la présidente » correspond à « elle », troisième personne du singulier. La forme du présent de l’indicatif est « clôt » (2), avec un circonflexe sur o. « clot » (1) omet cet accent ; « close » (3) ne fournit pas l’indicatif attendu ; « clos » (4) ne correspond pas à cette personne. Donc : option 2 ; ni Aucune ni Toutes.",
     "why": {
-      "1": "« clot » : la 3e personne de clore porte l'accent circonflexe (clôt).",
-      "2": "Correct : présent de clore → elle clôt.",
-      "3": "« close » est le subjonctif (qu'elle close) ou le féminin du participe : rien ne l'appelle ici.",
-      "4": "« clos » est le participe passé : il faut un présent de l'indicatif.",
-      "A": "L'option 2 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 2 explique la règle à appliquer.",
-      "T": "Les options 1, 3 et 4 fautent sur l'accent, le mode ou la forme."
+      "1": "« clot » omet le circonflexe de « elle clôt ». La suppression du circonflexe sur i et u prévue par les rectifications orthographiques ne concerne pas ce o.",
+      "2": "« clôt » est la forme du présent de l’indicatif de « clore » à la troisième personne du singulier, celle de « la présidente ».",
+      "3": "« close » peut être un subjonctif présent ou le féminin du participe passé. Ici, aucune construction n’appelle ce subjonctif et aucun auxiliaire ne permet d’employer le participe.",
+      "4": "« clos » est notamment le présent avec je ou tu, ainsi que le participe passé masculin. Avec « la présidente », il faut la troisième personne « clôt ».",
+      "A": "Aucune est exclu puisque « la présidente clôt la séance » fournit une complétion correcte.",
+      "T": "Toutes est exclu : l’option 1 omet l’accent requis, l’option 3 ne convient pas à cette construction et l’option 4 ne donne pas la personne attendue."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -61258,7 +61507,8 @@ const QUESTIONS = [
         "3": "UNK",
         "4": "UNK"
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "dis-L37-9",
@@ -61450,7 +61700,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quatre stagiaires racontent leur première semaine dans leur rapport. Quelle phrase est correctement écrite ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -61478,14 +61728,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "« Je me suis attelée » : s'atteler à s'accorde avec le sujet (une stagiaire). Ailleurs : « rendu compte » reste invariable (le COD est « compte »), « données » devait s'accorder, et l'infinitif passé fait « après avoir terminé ».",
+    "explanation": "Règle : Les emplois pronominaux autonomes ou passifs relevant de cette règle, ainsi que la plupart des essentiellement pronominaux, accordent leur participe avec le sujet. Vérifie l’emploi précis et les exceptions : s’arroger s’accorde avec son COD placé avant, non automatiquement avec le sujet.\nMéthode : 1. Identifie l’emploi pronominal précis et vérifie qu’il relève de l’accord avec le sujet. 2. Dans les emplois autonomes ou passifs relevant de cette règle, se n’est pas un COD ou un COI donneur d’accord. 3. Pour les essentiellement pronominaux, vérifie les exceptions : s’arroger suit l’accord avec le COD placé avant. 4. Lorsque l’accord avec le sujet s’applique, relève son genre et son nombre et accorde le participe.\nDans cette phrase : 1. `Je m’en suis rendue compte` relève de la locution pronominale se rendre compte. On rend compte à qui ? À soi-même : me est COI. On rend quoi ? Compte : ce COD vient après le participe. En reprend ce dont la personne prend conscience et ne commande pas cet accord. Il faut donc rendu, sans marque féminine.\n2. Dans `les consignes qu’on m’a donné`, le participe `donné` est employé avec avoir. On a donné quoi ? Les consignes, repris par que avant le participe. Ce COD est féminin pluriel, comme le montrent aussi claires et complètes. M’ répond à « à qui ? » et est COI ; il ne change pas le donneur d’accord. Il faut données.\n3. Dans « je me suis attelée à l’inventaire », s’atteler à signifie ici se mettre au travail sur une tâche. C’est un emploi pronominal autonome : me n’a pas une fonction distincte de COD ou de COI. Le participe s’accorde avec le sujet je ; pour la stagiaire qui écrit au féminin, l’accord attendu est attelée, féminin singulier.\n4. `Après avoir terminée ma journée` contient un infinitif passé, formé avec avoir et un participe passé. Avoir conserve sa règle d’accord : la personne a terminé quoi ? Sa journée, COD placé après le participe. Il faut donc terminé, sans -e ; le féminin de journée ne commande pas d’accord dans cette position.\nDonc : seule la phrase 3 est correctement écrite. La réponse est 3.",
     "why": {
-      "1": "« rendue compte » : dans se rendre compte, le COD est « compte », placé après → participe invariable (rendu).",
-      "2": "« qu'on m'a donné » : le COD « que » (= les consignes) est antéposé → « données ».",
-      "3": "Correcte : s'atteler à → accord avec le sujet féminin (attelée).",
-      "4": "« après avoir terminée » : dans l'infinitif passé, le participe reste au masculin (terminé), le COD suivant.",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Les options 1, 2 et 4 contiennent chacune une erreur d'accord du participe."
+      "1": "`rendue compte` accorde le participe au féminin malgré le COI me et le COD compte placé après. Dans cette locution, la forme attendue est « rendu compte ».",
+      "2": "`qu’on m’a donné` laisse le participe sans les marques du COD placé avant. Que reprend les consignes, féminin pluriel ; avec avoir, il faut « qu’on m’a données ».",
+      "3": "S’atteler à est ici un emploi pronominal autonome signifiant se mettre à une tâche. Le participe suit le sujet je : l’accord féminin singulier « attelée » convient à la stagiaire qui écrit au féminin.",
+      "4": "`avoir terminée ma journée` accorde le participe avec un COD placé après. Dans cet infinitif passé avec avoir, ma journée ne commande pas d’accord à cette position : il faut « avoir terminé ma journée ».",
+      "A": "La phrase 3 est correcte. Le comptage donne une phrase correcte sur quatre, et non zéro.",
+      "T": "Les phrases 1, 2 et 4 comportent une faute d’accord du participe. Une seule phrase est correcte ; « Toutes » ne convient pas."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -61518,8 +61768,18 @@ const QUESTIONS = [
           "detail_id": "cod_apres",
           "tense_id": null
         }
-      ]
-    }
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T14:05:57Z"
+        }
+      }
+    },
+    "progress_revision": 1
   },
   {
     "id": "eleves-L38-3",
@@ -61530,7 +61790,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quatre élèves racontent leur semaine d'échange linguistique. Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -61558,14 +61818,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Quatre accords corrects malgré leur allure : « téléphoné » (se = COI) et « prêté » (COD après) restent invariables ; « s'est achevée » et « se sont aperçus » s'accordent avec le sujet. Réponse : Toutes.",
+    "explanation": "Règle : Dans un emploi pronominal où se est COI, se ne commande pas l’accord. Cherche un éventuel autre COD et sa position : accorde avec ce COD s’il précède, sinon garde le participe invariable. L’absence de COD ne suffit pas à classer un pronominal dans ce mécanisme.\nMéthode : 1. Repère le verbe pronominal et reconstitue sa construction sans le pronom. 2. Vérifie si se répond à à qui ? ou à quoi ? : dans ce cas, il est COI et ne commande pas l’accord. 3. Cherche un éventuel autre COD et regarde s’il est placé avant ou après le participe. 4. Accorde seulement avec cet autre COD s’il est placé avant ; sinon, garde le participe invariable.\nDans cette phrase : chaque option relève d’un cas pronominal précis. En 1, l’emploi est réciproque : elles ont téléphoné à qui ? Les unes aux autres. « Se » est donc COI. Téléphoner n’a ici aucun COD, si bien que « téléphoné » reste invariable. En 2, nous avons prêté quoi ? « Nos notes », COD placé après le participe ; à qui ? Les uns aux autres, exprimé par le COI « nous ». Cet emploi réciproque garde donc « prêté » invariable. En 3, « s’achever » a un sens passif : la soirée est ce qui est achevé. « Se » n’est pas un COD ou un COI distinct ; le participe s’accorde avec le sujet « la soirée d’adieu », féminin singulier, d’où « achevée ». En 4, « s’apercevoir de » signifie prendre conscience de : c’est un pronominal autonome, dont « se » n’a pas de fonction COD ou COI distincte. L’accord se fait avec « ils », masculin pluriel, d’où « aperçus ».\nDonc : les quatre phrases sont correctement écrites ; la réponse est T.",
     "why": {
-      "1": "Correcte : téléphoner À quelqu'un → « se » est COI, participe invariable.",
-      "2": "Correcte : le COD « nos notes » suit le participe → invariable (prêté).",
-      "3": "Correcte : « s'achever » s'accorde avec le sujet « la soirée » (achevée).",
-      "4": "Correcte : « s'apercevoir de » (pronominal autonome) s'accorde avec le sujet (aperçus).",
-      "A": "Les quatre phrases sont correctes.",
-      "T": "Correct : chaque participe suit exactement sa règle, accordé ou invariable selon le cas."
+      "1": "« Se » représente les destinataires de l’appel : téléphoner à qui ? Les unes aux autres. Ce pronom est COI et aucun COD n’est présent ; l’invariabilité de « téléphoné » est donc justifiée.",
+      "2": "« Nos notes » répond à « prêté quoi ? » et vient après le participe. Le second « nous » répond à « à qui ? ». Ce COI ne commande pas l’accord, et le COD postérieur justifie « prêté » sans terminaison plurielle.",
+      "3": "La soirée est ce qui s’est achevé : l’emploi pronominal est de sens passif et commande l’accord avec le sujet. « La soirée d’adieu », féminin singulier, donne les marques de « achevée ».",
+      "4": "Dans « s’apercevoir de leur erreur », le verbe signifie prendre conscience de l’erreur. Cet emploi pronominal autonome s’accorde avec « ils », masculin pluriel : « aperçus » porte l’accord attendu.",
+      "A": "Le nombre de phrases correctes est quatre, et non zéro.",
+      "T": "Les options 1 et 2 respectent l’invariabilité : COI sans COD pour « téléphoné », COI avec COD placé après pour « prêté ». Les options 3 et 4 respectent l’accord avec le sujet : féminin singulier pour le pronominal passif « achevée », masculin pluriel pour le pronominal autonome « aperçus ». Les quatre options conviennent."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -61598,8 +61858,18 @@ const QUESTIONS = [
           "detail_id": "autonome",
           "tense_id": "passe_compose"
         }
-      ]
-    }
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T05:35:13Z"
+        }
+      }
+    },
+    "progress_revision": 1
   },
   {
     "id": "mode-L38-4",
@@ -62280,14 +62550,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "« À moins que » exige le subjonctif : il faudrait « ne fonde », qui n'est pas proposé.",
+    "explanation": "Règle : Vérifie le régime de chaque locution : à supposer que, à moins que et pourvu que demandent le subjonctif. Après à condition que, le subjonctif est courant, mais l’indicatif futur est également admis ; ce futur peut être transposé au conditionnel dans un repère passé. N’étends pas un régime exclusif à toutes les locutions de condition.\nMéthode : 1. Repère la construction qui introduit la proposition. 2. Vérifie le sens et le mode réellement imposé ou permis par cette construction. 3. Choisis l’indicatif lorsque la construction présente ici le fait comme constaté, ou le subjonctif lorsqu’elle l’exige pour un fait voulu, évalué ou non affirmé. 4. Conjugue ensuite le verbe au temps et à la personne demandés.\nDans cette phrase : repère « À moins que », qui introduit la circonstance pouvant modifier le lieu du tournoi : la fonte de la neige d’ici vendredi. Cette locution exige le subjonctif. Le sujet « la neige » correspond à « elle » ; le présent du subjonctif de fondre est « fonde ». Il faut donc lire « À moins que la neige ne fonde d’ici vendredi ». Examine ensuite chaque proposition : « fond » est un présent de l’indicatif ; « fondra », un futur de l’indicatif ; « fondait », un imparfait de l’indicatif ; « fondrait », un conditionnel présent. Aucune de ces quatre formes n’est le subjonctif attendu.\nDonc : choisis A, « Aucune », car « fonde » n’est proposé dans aucune option chiffrée.",
     "why": {
-      "1": "« fond » est l'indicatif présent : « à moins que » exige le subjonctif.",
-      "2": "« fondra » (futur) présente comme certain ce que la locution donne pour hypothétique.",
-      "3": "« fondait » (imparfait) ne convient pas davantage après « à moins que ».",
-      "4": "« fondrait » : le conditionnel ne remplace pas le subjonctif exigé.",
-      "A": "Correct : la forme attendue « fonde » (subjonctif) ne figure dans aucune option.",
-      "T": "Aucune option ne porte le mode exigé par la locution."
+      "1": "« `fond` » est le présent de l’indicatif de fondre. Après « À moins que », il faut le présent du subjonctif « fonde », avec un e final.",
+      "2": "« `fondra` » est un futur de l’indicatif. Le repère « d’ici vendredi » ne permet pas de remplacer le subjonctif exigé par « À moins que » : il faut « fonde ».",
+      "3": "« `fondait` » est un imparfait de l’indicatif. Il ne satisfait pas le mode exigé par « À moins que » ; dans ce contexte à venir, la forme attendue est « fonde ».",
+      "4": "« `fondrait` » est un conditionnel présent. La circonstance est envisagée, mais « À moins que » exige le subjonctif : il faut « fonde ».",
+      "A": "La comparaison des quatre formes laisse zéro option chiffrée correcte : aucune ne donne « fonde », le subjonctif demandé après « À moins que ». Il faut donc sélectionner « Aucune ».",
+      "T": "Zéro option chiffrée convient, au lieu des quatre nécessaires pour « Toutes »."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -62300,8 +62570,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:57:00Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "mode-L39-5",
@@ -63074,7 +63354,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "Chaque parti promet de désengorger la ligne ; ___ rien n'a changé pour les pendulaires depuis un an.",
+    "stem": "Reliez les deux propositions par une concession : admettez les promesses tout en constatant que l’amélioration attendue ne se produit pas. Chaque parti promet de désengorger la ligne ; ___ rien n’a changé pour les pendulaires depuis un an.",
     "options": [
       {
         "key": "1",
@@ -63102,14 +63382,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : Le connecteur doit opposer un fait admis à une conséquence inattendue et respecter le mode qu’il régit.\nMéthode : 1. Détermine le lien logique entre les deux idées. 2. Nomme ce lien simplement : cause, conséquence, opposition, concession, addition ou explication. 3. Essaie le connecteur dans la phrase et vérifie qu’il exprime bien ce lien. 4. Contrôle aussi la construction et la ponctuation qui l’accompagnent.\nDans cette phrase : Les promesses laissent attendre une amélioration, mais aucun changement n'est constaté depuis un an. « Toujours est-il que » signifie ici « quoi qu'il en soit » et ramène à ce résultat contraire à l'attente. La proposition qui suit est à l'indicatif : « rien n'a changé ». Que est suivi directement de cette proposition, sans virgule en l'absence d'incise.\nDonc : La locution « toujours est-il que » convient : réponse 4.",
+    "explanation": "Règle : Le connecteur doit opposer un fait admis à une conséquence inattendue et respecter le mode qu’il régit.\nMéthode : 1. Détermine le lien logique entre les deux idées. 2. Nomme ce lien simplement : cause, conséquence, opposition, concession, addition ou explication. 3. Essaie le connecteur dans la phrase et vérifie qu’il exprime bien ce lien. 4. Contrôle aussi la construction et la ponctuation qui l’accompagnent.\nDans cette phrase : La concession est explicitement demandée : les promesses sont admises, mais l’amélioration qu’elles laissent attendre ne se produit pas. « Toujours est-il que », au sens de « quoi qu’il en soit », ramène ici au constat malgré les promesses et accepte l’indicatif « rien n’a changé ». Cette relation entre les propositions est concessive. « Si bien que » introduirait une conséquence, éventuellement ironique, plutôt que la concession demandée. « Afin que » introduirait un but et exigerait le subjonctif. « D’autant plus que » pourrait donner une raison renforçant les promesses, mais cette relation causale ne répond pas à la demande.\nDonc : La réponse est 4, « toujours est-il que ».",
     "why": {
-      "1": "« Si bien que » ferait de l'absence de changement une conséquence des promesses ; la phrase souligne au contraire que les promesses n'ont pas produit le résultat attendu.",
-      "2": "« Afin que » introduirait un but au subjonctif. L'absence de changement n'est pas présentée comme le but des promesses, et « n'a changé » est à l'indicatif.",
-      "3": "« D'autant plus que » ajouterait une raison renforçant la première assertion. L'absence de changement ne renforce pas la promesse d'amélioration.",
-      "4": "Correct : « toujours est-il que rien n'a changé » revient au constat malgré les promesses, avec l'indicatif et sans virgule après que.",
-      "A": "La locution 4 convient : « Aucune » est exclu.",
-      "T": "Les locutions 1, 2 et 3 ne rendent pas le lien voulu : « Toutes » est exclu."
+      "1": "« Si bien que » introduit une conséquence. Une lecture ironique où les promesses aboutissent à l’immobilisme est possible, mais elle ne réalise pas la relation concessive explicitement demandée.",
+      "2": "« Afin que » introduirait un but et demanderait le subjonctif ; « n’a changé » est à l’indicatif et la relation demandée est une concession.",
+      "3": "« D’autant plus que » peut présenter l’absence de changement comme une raison renforçant les promesses ; ce lien causal ne correspond pas à la concession demandée.",
+      "4": "« Toujours est-il que rien n’a changé » ramène au constat malgré les promesses admises et exprime ici la concession demandée, avec l’indicatif.",
+      "A": "« Aucune » est exclu : l’option 4 établit le lien concessif demandé et convient à la proposition qui suit.",
+      "T": "« Toutes » est exclu : l’option 1 exprime une conséquence, l’option 3 une raison renforcée et l’option 2 un but incompatible avec le mode présent."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -63124,7 +63404,7 @@ const QUESTIONS = [
         "4": null
       }
     },
-    "progress_revision": 1
+    "progress_revision": 2
   },
   {
     "id": "ponc-L40-8",
@@ -63974,7 +64254,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Le conseil des élèves a réécrit quatre articles du règlement du camp. Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -64002,14 +64282,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Quatre articles corrects : accords « ramassés/rendus », « avant que » + subjonctif, « sans que » + subjonctif (sans « ne »), et « quiconque » suivi du singulier. Réponse : Toutes.",
+    "explanation": "Règle : Dans les temps composés non pronominaux et les constructions passives avec être, le participe passé s’accorde en genre et en nombre avec le sujet. Les groupes intercalés ne changent pas le donneur d’accord. Pour un verbe pronominal, applique sa règle particulière.\nMéthode : 1. Repère la construction avec être : temps composé non pronominal ou voix passive ; si le verbe est pronominal, utilise sa règle particulière. 2. Trouve le sujet grammatical du verbe. 3. Détermine le genre et le nombre du sujet. 4. Reporte ces marques sur le participe passé.\nDans cette phrase : les quatre articles demandent des vérifications distinctes. 1. « Seront ramassés » et « rendus » sont deux constructions passives avec être ; l’auxiliaire « seront » sert aux deux participes. Qu’est-ce qui sera ramassé puis rendu ? « Les portables », sujet masculin pluriel. Les deux participes prennent donc le masculin pluriel : « ramassés » et « rendus ». 2. Dans « devront être rangées », la construction avec être est passive. Qu’est-ce qui devra être rangé ? « Les chambres », sujet féminin pluriel : on écrit « rangées ». « Avant qu’on parte » situe le rangement avant un départ encore à venir au moment considéré ; « parte » est la forme du subjonctif présent de partir avec « on ». 3. Dans « son moniteur en soit averti », la construction avec être est passive : le moniteur reçoit l’information. Le sujet « son moniteur », masculin singulier, commande « averti » ; « en » désigne ce dont il est informé et ne commande pas l’accord. « Sans que » introduit ici l’absence d’une information préalable et demande le subjonctif : avec ce sujet, être prend la forme « soit ». 4. « Quiconque » désigne toute personne qui perd sa clé, mais reste grammaticalement singulier. Il commande la troisième personne du singulier de « perd » et de « s’annonce ». « À l’intendance » indique à qui la personne s’annonce et ne change pas cet accord.\nDonc : les accords des constructions passives et les formes verbales des quatre articles sont ceux attendus. La réponse est T (« Toutes »).",
     "why": {
-      "1": "Correcte : les deux participes s'accordent avec « les portables ».",
-      "2": "Correcte : « avant que » appelle le subjonctif (parte).",
-      "3": "Correcte : « sans que » + subjonctif, sans « ne » explétif.",
-      "4": "Correcte : « quiconque » entraîne la 3e personne du singulier (perd… s'annonce).",
-      "A": "Les quatre phrases sont correctes.",
-      "T": "Correct : chaque article applique exactement la règle qui le concerne."
+      "1": "Les portables subissent les deux actions : « seront ramassés » et « seront rendus » sont des constructions passives avec être. Leur sujet masculin pluriel « les portables » commande les deux terminaisons en « -és ».",
+      "2": "Dans la construction passive « devront être rangées », « les chambres » est le sujet féminin pluriel : il commande « rangées ». Le départ est introduit par « avant que », qui demande le subjonctif ; « on parte » fournit cette forme.",
+      "3": "« Sans que » demande ici le subjonctif, d’où « soit ». Dans « soit averti », le participe passif s’accorde avec « son moniteur », masculin singulier ; le pronom « en » n’est pas le donneur d’accord.",
+      "4": "« Quiconque » a une valeur générale, mais une forme grammaticale singulière. Les deux verbes dont il est sujet, « perd » et « s’annonce », sont donc à la troisième personne du singulier.",
+      "A": "Les quatre articles sont correctement écrits ; A ne correspond pas au nombre obtenu.",
+      "T": "L’article 1 accorde deux participes passifs avec « portables » ; le 2 associe l’accord avec « chambres » au subjonctif après « avant que » ; le 3 associe « soit » à « sans que » et « averti » à « moniteur » ; le 4 conserve le singulier de « quiconque ». Les quatre articles satisfont ces vérifications."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -64036,8 +64316,18 @@ const QUESTIONS = [
           "detail_id": "core",
           "tense_id": null
         }
-      ]
-    }
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T05:25:43Z"
+        }
+      }
+    },
+    "progress_revision": 1
   },
   {
     "id": "eleves-L42-2",
@@ -65338,7 +65628,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quatre petites annonces affichées au panneau des élèves. Quelle annonce est correctement écrite ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -65366,14 +65656,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "« Cédées à moitié prix » s'accorde avec « raquettes ». Ailleurs : « j'ai déménagé » (avoir, pas de COD), « bienvenues » (filles) et « rendu » (service singulier).",
+    "explanation": "Règle : Employé sans auxiliaire, le participe passé fonctionne comme un adjectif et s’accorde avec le nom ou le pronom auquel il se rapporte.\nMéthode : 1. Vérifie que le participe passé est employé sans auxiliaire. 2. Trouve le nom ou le pronom qu’il décrit. 3. Relève le genre et le nombre de ce mot. 4. Accorde le participe comme un adjectif.\nDans cette phrase : 1. « Utilisées » et « cédées » sont deux participes passés employés sans auxiliaire. Tous deux décrivent les raquettes : elles ont été peu utilisées et sont proposées à la vente. Raquettes est féminin pluriel ; chaque participe prend donc les marques -ées. Peu précise le degré d’utilisation et ne change pas cet accord.\n2. Dans `j’ai déménagée`, le participe est employé avec avoir. La personne a déménagé, sans COD dans cet emploi. Le sujet je ne commande donc aucun accord : il faut déménagé, même si la personne qui écrit est une femme.\n3. Dans `filles bienvenus`, l’adjectif `bienvenus` décrit les filles, féminin pluriel. Il doit porter ces mêmes marques : bienvenues.\n4. Dans `un service rendus`, le participe rendu est employé sans auxiliaire et décrit service. Ce nom est masculin singulier, comme l’indique aussi un : il faut rendu, sans -s.\nDonc : seule l’annonce 1 est correctement écrite. La réponse est 1.",
     "why": {
-      "1": "Correcte : « utilisées » et « cédées » s'accordent avec « raquettes ».",
-      "2": "« j'ai déménagée » : avec avoir et sans COD antéposé, le participe reste « déménagé ».",
-      "3": "« filles bienvenus » : l'attribut s'accorde → bienvenues.",
-      "4": "« un service rendus » : le participe s'accorde avec « service », singulier → rendu.",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Les options 2, 3 et 4 contiennent chacune une erreur d'accord."
+      "1": "Les deux participes sans auxiliaire, « utilisées » et « cédées », se rapportent au même nom féminin pluriel, raquettes. Chacun porte donc l’accord -ées attendu.",
+      "2": "`j’ai déménagée` ajoute une marque féminine à un participe employé avec avoir sans COD. Le sujet je ne commande pas cet accord ; la forme attendue est « j’ai déménagé ».",
+      "3": "`filles bienvenus` donne à l’adjectif une forme masculine plurielle. Puisqu’il décrit filles, féminin pluriel, il faut « filles bienvenues ».",
+      "4": "`un service rendus` ajoute un -s au participe sans auxiliaire malgré le nom masculin singulier service. Il faut « un service rendu ».",
+      "A": "L’annonce 1 est correcte. Il y a donc une annonce correcte sur quatre, ce qui exclut « Aucune ».",
+      "T": "Les annonces 2, 3 et 4 comportent une faute d’accord. Une seule annonce est correcte ; « Toutes » ne convient pas."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -65400,8 +65690,18 @@ const QUESTIONS = [
           "detail_id": "core",
           "tense_id": null
         }
-      ]
-    }
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T14:05:57Z"
+        }
+      }
+    },
+    "progress_revision": 1
   },
   {
     "id": "mode-L44-6",
@@ -66124,14 +66424,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : les deux blancs s'analysent séparément. Premier blanc, « un dossier ___ » : la forme suit le nom « dossier », ne commande aucun complément et exprime une qualité ; le test du féminin fonctionne (« une candidature excellente »), donc adjectif verbal en -ent, accordé au masculin singulier : « excellent ». Second blanc, « ___ dans la négociation, la candidate a même obtenu un délai » : la forme se rapporte à l'action de la candidate et commande le complément « dans la négociation », ce qui est le fonctionnement du verbe exceller ; le participe présent reste invariable et s'écrit -ant : « excellant ».\nDonc : la suite attendue est « excellent / excellant », soit l'option 3.",
+    "explanation": "Règle : Distingue l’emploi adjectival du fonctionnement verbal par la syntaxe et des tests concordants. L’adjectif verbal s’accorde ; le participe présent reste invariable. Le seul sens d’action ou la présence d’un complément prépositionnel ne suffit pas à choisir.\nMéthode : 1. Observe la forme à distinguer dans toute la phrase. 2. Vérifie si elle fonctionne comme un adjectif ou comme un verbe, notamment dans un gérondif ou une proposition participiale. 3. Croise les indices : variation au féminin, négation verbale et construction des compléments. Le seul sens d’action ou un complément prépositionnel ne suffit pas. 4. Accorde l’adjectif verbal avec le nom auquel il se rapporte ; garde le participe présent invariable et vérifie la graphie.\nDans cette phrase : au premier blanc, le mot caractérise « dossier ». On peut dire « un dossier remarquable » et, au féminin, « une candidature excellente ». Ces tests montrent un adjectif : avec « dossier », masculin singulier, la forme est « excellent ». Au second blanc, le groupe détaché se rapporte à « la candidate » et développe le verbe « exceller dans » : on peut lire « comme la candidate excelle dans la négociation ». Le test de l’accord départage aussi les formes : un adjectif qualifiant « la candidate » serait féminin, « excellente », et non « excellent ». La construction verbale retient donc le participe présent « excellant », invariable. Le complément prépositionnel seul ne suffirait pas à établir cette analyse.\nDonc : la combinaison attendue est « excellent / excellant », soit l’option 3.",
     "why": {
-      "1": "Le second blanc est bien traité, mais au premier `excellant` reste invariable alors que la forme qualifie le nom « dossier » sans commander de complément. Cette valeur de qualité impose l'adjectif verbal accordé « un dossier excellent ».",
-      "2": "Le premier blanc est bien traité, mais au second `excellent` emploie la graphie adjectivale alors que la forme commande le complément « dans la négociation » et décrit ce que fait la candidate. Le participe présent invariable « excellant » est attendu.",
-      "3": "Au premier blanc, la forme qualifie le dossier sans complément : l'adjectif verbal en -ent est accordé, « excellent ». Au second, la forme commande le complément « dans la négociation » et se rapporte à l'action de la candidate : le participe présent reste invariable, « excellant ». Les deux analyses sont respectées.",
-      "4": "Les deux formes sont interverties. `excellant` qualifie le dossier sans complément et doit devenir l'adjectif accordé « excellent » ; `excellent` commande le complément « dans la négociation » et doit devenir le participe présent invariable « excellant ».",
-      "A": "Une combinaison sur quatre est entièrement correcte, donc le nombre de combinaisons correctes n'est pas nul et « Aucune » est écarté.",
-      "T": "Le compte donne une combinaison correcte sur quatre, et non quatre, donc « Toutes » est écarté."
+      "1": "Le second « excellant » fournit le participe présent attendu, mais `un dossier excellant` utilise la graphie verbale pour caractériser le dossier. L’emploi adjectival établi par « une candidature excellente » demande « un dossier excellent ».",
+      "2": "« Excellent » convient avec « dossier ». Au second blanc, `excellent` ne fournit pas le participe présent d’« exceller » ; il ne pourrait pas non plus être un adjectif accordé avec « la candidate ». La forme attendue est « excellant ».",
+      "3": "Le premier « excellent » est l’adjectif masculin singulier lié à « dossier ». Le second « excellant » se développe en « la candidate excelle dans la négociation » et reste invariable comme participe présent.",
+      "4": "Les formes sont inversées : `un dossier excellant` doit devenir « un dossier excellent », tandis que `excellent dans la négociation` doit devenir « excellant dans la négociation » pour conserver la construction du verbe « exceller ».",
+      "A": "La combinaison 3 traite correctement les deux blancs ; une réponse convient.",
+      "T": "Le total est d’une combinaison correcte sur quatre, et non de quatre."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -66146,15 +66446,16 @@ const QUESTIONS = [
         "4": "UNK"
       },
       "remediation": {
-        "batch_id": "hep-rem-20260805-7980",
+        "batch_id": "hep-rem-20261002-6872",
         "feedback_provenance": {
-          "model": "claude-opus-5",
+          "model": "gpt-6.1-sol",
           "reasoning": "high",
           "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
-          "generated_at": "2026-08-05T05:34:29Z"
+          "generated_at": "2026-10-03T05:39:18Z"
         }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "sv-L45-8",
@@ -67340,7 +67641,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quatre réponses d'élèves au quiz d'histoire locale. Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -67368,14 +67669,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Quatre phrases correctes : « ont fermé » (pas de COD antéposé), « huitante » (usuel en Suisse romande), « s'est développée » (accord sujet), « ont émigré » (invariable) et « l'a reconstruit » (l' = le pont). Réponse : Toutes.",
+    "explanation": "Règle : Avec l’auxiliaire avoir, le sujet ne commande pas l’accord. Le participe passé s’accorde seulement avec un COD placé avant lui ; si le COD est placé après ou s’il n’y en a pas, le participe reste invariable.\nMéthode : 1. Repère l’auxiliaire et vérifie qu’il s’agit bien de l’auxiliaire avoir. 2. Cherche le COD en posant la question qui ? ou quoi ? après le verbe. 3. Regarde si ce COD est placé avant le participe passé. 4. Accorde seulement avec un COD placé avant ; sinon, garde le participe invariable.\nDans cette phrase : les quatre propositions présentent des constructions différentes. 1. Dans « ont fermé », l’auxiliaire est avoir. Les usines ont fermé quoi ? Aucun COD n’est exprimé : « dans les années huitante » indique le moment. Le participe reste donc « fermé », malgré le sujet pluriel. « Huitante » est une forme usuelle en Suisse romande. 2. « S’est développée » est un emploi pronominal autonome : « se développer » signifie ici prendre de l’ampleur, et « se » n’a pas de fonction COD ou COI distincte. L’accord se fait avec « la commune », féminin singulier : « développée ». 3. Dans « ont émigré », l’auxiliaire est avoir. « En France voisine » indique la destination et « après 1880 » le moment ; aucun de ces groupes n’est COD. On conserve donc « émigré ». 4. Dans « l’a reconstruit », l’auxiliaire est avoir. On a reconstruit quoi ? Le pont, repris par « l’ ». Ce COD précède le participe et reprend un nom masculin singulier : l’accord donne « reconstruit ».\nDonc : chaque participe porte la forme exigée par sa construction. Les quatre propositions sont correctement écrites ; la réponse est T (« Toutes »).",
     "why": {
-      "1": "Correcte : « fermé » reste invariable (pas de COD antéposé) et « huitante » est reçu en Suisse romande.",
-      "2": "Correcte : « se développer » s'accorde avec le sujet (développée).",
-      "3": "Correcte : « émigré » sans COD reste invariable.",
-      "4": "Correcte : « l' » (= le pont, masculin) antéposé → « reconstruit » au masculin.",
-      "A": "Les quatre phrases sont correctes.",
-      "T": "Correct : chaque accord, malgré son allure, suit exactement sa règle."
+      "1": "« Ont fermé » emploie l’auxiliaire avoir sans COD : le groupe « dans les années huitante » indique le moment et ne commande aucun accord. « Fermé » reste donc invariable ; « huitante » appartient à l’usage suisse romand.",
+      "2": "Dans cet emploi pronominal autonome de « se développer », « se » n’est pas un COD ou un COI distinct. Le sujet « la commune » est féminin singulier, ce qui donne « s’est développée ».",
+      "3": "« Ont émigré » ne comporte aucun COD : « en France voisine » est un complément de destination. Avec l’auxiliaire avoir, le pluriel de « plusieurs familles » ne se reporte donc pas sur « émigré ».",
+      "4": "Dans « l’a reconstruit », « l’ » répond à « on a reconstruit quoi ? » et reprend « le pont ». Ce COD masculin singulier est placé avant le participe, qui prend donc la forme « reconstruit ».",
+      "A": "Quatre propositions sur quatre sont correctes ; le nombre de propositions correctes n’est donc pas zéro.",
+      "T": "La vérification couvre les quatre propositions : absence de COD pour « fermé » et « émigré », accord du pronominal avec « la commune », puis accord avec « l’ » reprenant « le pont ». Les quatre satisfont leur règle : T est la réponse attendue."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -67402,8 +67703,18 @@ const QUESTIONS = [
           "detail_id": "nominal",
           "tense_id": "passe_compose"
         }
-      ]
-    }
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T05:25:43Z"
+        }
+      }
+    },
+    "progress_revision": 1
   },
   {
     "id": "conj-L47-9",
@@ -68053,14 +68364,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "« Chacun » impose le singulier, même suivi d'un complément pluriel : chacun des membres a reçu.",
+    "explanation": "Règle : Des sujets comme chacun, plus d’un, tout le monde ou aucun restent grammaticalement singuliers.\nMéthode : 1. Repère le verbe conjugué. 2. Trouve son sujet, même s’il est éloigné ou placé après le verbe. 3. Relève la personne et le nombre du sujet. 4. Choisis la forme verbale qui porte les mêmes marques.\nDans cette phrase : le blanc précède « reçu » et doit fournir un auxiliaire conjugué pour former le verbe « recevoir ». Le sujet complet est « Chacun des membres du jury ». Son noyau est le pronom « chacun », à la troisième personne du singulier : on considère chaque membre séparément. « Des membres du jury » précise les personnes concernées, mais son pluriel ne change pas le nombre de « chacun ». L’auxiliaire doit donc être singulier. « A » permet de construire « Chacun des membres du jury a reçu la grille d’évaluation et les consignes de confidentialité ».\nDonc : la réponse attendue est l’option 1, « a ».",
     "why": {
-      "1": "Correct : chacun (singulier) → a reçu.",
-      "2": "« ont » cède à l'attraction du pluriel « des membres » : le sujet est « chacun ».",
-      "3": "« ayant » : le participe laisserait la phrase sans verbe conjugué.",
-      "4": "« auront » cumule le pluriel fautif et un futur que rien n'appelle.",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Les options 2, 3 et 4 fautent sur l'accord ou le mode."
+      "1": "« A » est l’auxiliaire avoir à la troisième personne du singulier. Il s’accorde avec « chacun » et forme le passé composé « a reçu ».",
+      "2": "`ont` s’accorde comme si « membres » était le noyau du sujet. Le noyau est « chacun », singulier : il faut « a reçu ».",
+      "3": "`ayant` est un participe présent, pas un auxiliaire conjugué. La phrase resterait sans verbe conjugué ; « a reçu » fournit la forme attendue.",
+      "4": "`auront` est au futur pluriel, incompatible avec le nombre de « chacun ». Au futur antérieur, l’accord avec ce sujet donnerait « aura reçu ».",
+      "A": "L’option 1 convient ; le total des réponses correctes est donc un.",
+      "T": "Les options 2, 3 et 4 échouent ; les quatre propositions ne conviennent pas."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -68073,8 +68384,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T05:39:18Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "prep-L48-10",
@@ -68932,14 +69253,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "« Souhaiter que » (volonté) impose le subjonctif : que chaque famille reçoive.",
+    "explanation": "Règle : Une construction telle que souhaiter que, vouloir que ou ordonner que appelle le subjonctif. Vérifie le verbe précis : espérer que au sens d’attendre un événement appelle normalement l’indicatif. Le sens général de souhait ne suffit donc pas à imposer un mode unique.\nMéthode : 1. Repère la construction qui introduit la proposition. 2. Vérifie le sens et le mode réellement imposé ou permis par cette construction. 3. Choisis l’indicatif lorsque la construction présente ici le fait comme constaté, ou le subjonctif lorsqu’elle l’exige pour un fait voulu, évalué ou non affirmé. 4. Conjugue ensuite le verbe au temps et à la personne demandés.\nDans cette phrase : La proposition contenant le blanc est introduite par « souhaite que ». Le comité exprime sa volonté que l’information parvienne à chaque famille ; il ne constate pas sa réception. La construction précise « souhaiter que » appelle le subjonctif : c’est elle qui détermine le mode du verbe à compléter. Le sujet de ce verbe est « chaque famille », à la troisième personne du singulier, et non « le comité d’organisation », sujet de « souhaite ». Au présent du subjonctif, « recevoir » prend la forme « reçoive » avec ce sujet. « Recevra » et « reçoit » appartiennent à l’indicatif, tandis que « recevrait » est au conditionnel : aucune de ces trois formes ne satisfait le mode demandé par « souhaite que ».\nDonc : La réponse est 3 : « Le comité d’organisation souhaite que chaque famille reçoive l’information dans les deux langues. »",
     "why": {
-      "1": "« recevra » : le futur présente comme acquis ce qui n'est que souhaité.",
-      "2": "« reçoit » : l'indicatif ne suit pas un verbe de volonté.",
-      "3": "Correct : souhaiter que + subjonctif (reçoive).",
-      "4": "« recevrait » : le conditionnel ne remplace pas le subjonctif.",
-      "A": "L'option 3 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 3 explique la règle à appliquer.",
-      "T": "Les options 1, 2 et 4 emploient un mode que le verbe de volonté n'admet pas."
+      "1": "`Recevra` est le futur de l’indicatif. Même si la réception est envisagée pour plus tard, « souhaite que » appelle ici le subjonctif. La forme attendue est « reçoive ».",
+      "2": "`Reçoit` est le présent de l’indicatif. Cette forme convient avec un sujet singulier, mais son mode ne satisfait pas la construction « souhaite que ». Il faut le présent du subjonctif : « reçoive ».",
+      "3": "« Reçoive » est le présent du subjonctif de « recevoir » à la troisième personne du singulier. Cette forme respecte à la fois le mode appelé par « souhaite que » et le sujet « chaque famille ».",
+      "4": "`Recevrait` est le présent du conditionnel. Le caractère souhaité de la réception ne permet pas de remplacer le subjonctif exigé par « souhaite que » par ce mode. La forme attendue est « reçoive ».",
+      "A": "L’option 3 est la seule option chiffrée qui convient : « Aucune » ne convient donc pas.",
+      "T": "Les options 1, 2 et 4 ne conviennent pas ; une seule option sur quatre satisfait la construction. « Toutes » ne convient donc pas."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -68952,8 +69273,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T11:00:31Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "rel-L50-5",
@@ -69317,14 +69648,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "« Descendre À la cave » : le lieu de destination se reprend par « y » (on n'y descend plus).",
+    "explanation": "Règle : Y reprend généralement un lieu ou un complément de chose introduit par à.\nMéthode : 1. Repère le mot ou le groupe repris par le pronom. 2. Trouve la fonction du pronom dans la nouvelle phrase. 3. Choisis la forme correspondant à cette fonction et à la préposition éventuelle. 4. Vérifie sa place et les accords nécessaires.\nDans cette phrase : « La cave d'archives » est le lieu dont on parle. La suite précise qu'on n'y descend plus, sauf lorsqu'on est accompagné du concierge : il s'agit donc de se rendre dans cette cave. En rétablissant le groupe complet, on obtient « on ne descend plus à la cave d'archives ». Le groupe repris indique la destination, et non le lieu d'où l'on vient. On choisit donc « y », placé devant le verbe conjugué, après « n' » : « on n'y descend plus ».\nDonc : La réponse attendue est « y », option 1.",
     "why": {
-      "1": "Correct : destination → y (descendre à la cave → y descendre).",
-      "2": "« en descendre » signifierait en sortir (descendre DE la cave), contresens ici.",
-      "3": "« on ne la descend plus » ferait de la cave un COD que l'on transporte.",
-      "4": "« lui » se réserve aux personnes en fonction de COI.",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Une seule option reprend correctement le lieu de destination."
+      "1": "« Y » reprend la cave comme destination du déplacement. On peut remplacer ce pronom par « à la cave d'archives » et retrouver le sens de l'accès à ce lieu : « on n'y descend plus ».",
+      "2": "Le choix `en` indiquerait un lieu de provenance, comme dans « descendre de cet endroit ». Ici, la cave est le lieu où l'on se rend : le pronom attendu est « y ».",
+      "3": "Le choix `la` ferait de la cave un COD/CVD de « descendre », comme un objet que l'on fait descendre. Pour reprendre la cave comme lieu de destination, il faut « y ».",
+      "4": "Le choix `lui` ne reprend pas un complément de lieu. Le groupe à remplacer désigne ici la cave où l'on descend : la forme attendue est « y ».",
+      "A": "Une réponse est correcte, l'option 1 : « Aucune » est exclu.",
+      "T": "Seule l'option 1 convient, soit une option sur quatre : « Toutes » est exclu."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -69337,8 +69668,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:23:16Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "orth-L51-1",
@@ -69886,14 +70227,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Le sujet est « le classeur » (singulier) : les pluriels voisins « procès-verbaux signés » n'attirent pas l'accord.",
+    "explanation": "Règle : Le noyau singulier commande le verbe ; le nom pluriel du complément n’est pas donneur.\nMéthode : 1. Repère le verbe conjugué. 2. Trouve son sujet, même s’il est éloigné ou placé après le verbe. 3. Relève la personne et le nombre du sujet. 4. Choisis la forme verbale qui porte les mêmes marques.\nDans cette phrase : le blanc accueille l’auxiliaire conjugué de « a été égaré ». Qu’est-ce qui a été égaré ? « Le classeur des procès-verbaux signés ». Dans ce groupe sujet, le nom principal est « classeur », au singulier. « Des procès-verbaux signés » précise le contenu du classeur : son pluriel ne commande pas l’auxiliaire. On peut remplacer tout le groupe sujet par « il » : « Il a été égaré ». Il faut donc une troisième personne du singulier. « A » porte ces marques, tandis que « ont », « aient » et « avaient » sont tous des formes de troisième personne du pluriel. Le point décisif est de rattacher l’auxiliaire au classeur plutôt qu’aux procès-verbaux.\nDonc : la forme attendue est « a », option 1.",
     "why": {
-      "1": "Correct : le classeur (noyau singulier) a été égaré.",
-      "2": "« ont » cède à l'attraction du complément pluriel « des procès-verbaux ».",
-      "3": "« aient » : le subjonctif n'a rien à faire dans cette principale.",
-      "4": "« avaient » cumule le pluriel fautif et un temps que rien n'appelle.",
-      "A": "L'option 1 donne une réponse correcte ; « Aucune » ne convient donc pas. La justification de l'option 1 explique la règle à appliquer.",
-      "T": "Les options 2, 3 et 4 fautent sur l'accord, le mode ou le temps."
+      "1": "« A » est la troisième personne du singulier de l’auxiliaire avoir. Cette forme correspond au nom principal du sujet, « le classeur », que l’on peut remplacer par « il ».",
+      "2": "La forme `ont` est au pluriel, comme le complément « procès-verbaux », alors que le sujet est construit autour de « classeur », singulier. La forme attendue est « a ».",
+      "3": "La forme `aient`, au subjonctif, porte la troisième personne du pluriel. Elle ne correspond pas au sujet singulier « le classeur » ; la forme attendue dans la phrase est « a ».",
+      "4": "La forme `avaient`, à l’imparfait, porte un sujet pluriel. Le complément « des procès-verbaux signés » ne transforme pas « le classeur » en sujet pluriel : la forme attendue est « a ».",
+      "A": "Une option sur quatre correspond au sujet : la 1. Il existe donc une réponse correcte.",
+      "T": "Les options 2, 3 et 4 portent le pluriel ; seule la 1 convient au sujet singulier."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -69906,8 +70247,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T05:35:13Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "prep-L51-10",
@@ -71459,14 +71810,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Règle : les mots qui dépendent d'un nom (déterminants, adjectifs, participes) prennent le genre (masculin/féminin) et le nombre (singulier/pluriel) de ce nom ; et le verbe prend le nombre de son sujet. Dans ces phrases : phrase 1, « empruntés » et « rendus » s'accordent avec « les documents » (masculin pluriel) — tout est juste. Phrase 2, « perte » est féminin : il faudrait « toute perte… signalée ». Phrase 3, le sujet « les revues » est pluriel : il faudrait « ne se prêtent pas ». Phrase 4, « place » est au singulier : il faudrait « à leur place ». Donc : seule la phrase 1 est correcte.",
+    "explanation": "Règle : Dans les temps composés non pronominaux et les constructions passives avec être, le participe passé s’accorde en genre et en nombre avec le sujet. Les groupes intercalés ne changent pas le donneur d’accord. Pour un verbe pronominal, applique sa règle particulière.\nMéthode : 1. Repère la construction avec être : temps composé non pronominal ou voix passive ; si le verbe est pronominal, utilise sa règle particulière. 2. Trouve le sujet grammatical du verbe. 3. Détermine le genre et le nombre du sujet. 4. Reporte ces marques sur le participe passé.\nDans cette phrase : 1. « Empruntés », participe employé sans auxiliaire, s’accorde avec le nom masculin pluriel « documents ». Dans la construction passive « doivent être rendus », « rendus » s’accorde avec le sujet « les documents empruntés » ; « doivent » porte également le pluriel du sujet. 2. Dans `Tout perte`, « tout » est employé comme déterminant du nom féminin singulier « perte » : il faut « Toute perte ». Dans `doit être signalé`, le participe passif doit s’accorder avec ce sujet féminin singulier : « doit être signalée ». 3. Dans `ne se prête pas`, le verbe est au singulier alors que le sujet « les revues de la salle de lecture » a pour noyau « revues », pluriel. Il faut « ne se prêtent pas » ; « salle » et « lecture » ne commandent pas l’accord. 4. Dans `à leurs place`, le déterminant `leurs` ne s’accorde pas avec le nom singulier « place » : il faut « à leur place ». « Consultés », employé sans auxiliaire, s’accorde correctement avec « ouvrages », masculin pluriel.\nDonc : seul l’article 1 est correctement écrit. La réponse est 1.",
     "why": {
-      "1": "Correcte : « empruntés » et « rendus » portent le masculin pluriel de « les documents », et le verbe « doivent » est au pluriel comme son sujet.",
-      "2": "« Tout perte… signalé » : « perte » est un nom féminin ; le déterminant et le participe doivent le suivre → « toute perte doit être signalée ».",
-      "3": "« ne se prête pas » : le sujet est « les revues », au pluriel ; le verbe doit donc être au pluriel → « ne se prêtent pas ».",
-      "4": "« à leurs place » : le nom « place » est au singulier ; le déterminant doit l'être aussi → « à leur place ».",
-      "A": "Il existe bien une phrase correcte : la 1, dont tous les accords sont vérifiables un par un.",
-      "T": "Les phrases 2, 3 et 4 contiennent chacune un accord fautif (genre du nom, nombre du verbe, nombre du déterminant)."
+      "1": "« Empruntés », employé sans auxiliaire, s’accorde avec « documents », masculin pluriel. Dans la construction passive, « rendus » s’accorde avec ce même groupe sujet ; « doivent » est également au pluriel.",
+      "2": "Dans `Tout perte`, le déterminant doit prendre le féminin du nom « perte » : « Toute perte ». Dans `être signalé`, le participe passif doit s’accorder avec le sujet féminin singulier : « être signalée ». Il faut donc « Toute perte doit être signalée sans délai au guichet ».",
+      "3": "Dans `ne se prête pas`, le verbe est au singulier alors que le sujet a pour noyau « revues », pluriel. Le complément « de la salle de lecture » ne commande pas l’accord : il faut « ne se prêtent pas ».",
+      "4": "Dans `à leurs place`, le déterminant `leurs` porte un pluriel incompatible avec le nom singulier « place ». Il faut « à leur place ». Le déterminant s’accorde avec « place », et non avec « ouvrages ».",
+      "A": "L’article 1 est correctement écrit : « Aucune » ne convient donc pas.",
+      "T": "L’article 2 comporte deux erreurs de genre, le 3 une erreur de nombre du verbe et le 4 une erreur de nombre du déterminant. « Toutes » ne convient donc pas."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -71500,7 +71851,8 @@ const QUESTIONS = [
           "tense_id": null
         }
       ]
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "mode-L54-6",
@@ -72276,14 +72628,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : avec « la plupart de + nom au pluriel », le verbe s'accorde avec ce nom au pluriel, pas avec « la plupart » : la plupart des élèves SONT venus. C'est une exception à l'accord habituel avec le mot principal. Dans cette phrase : « la plupart des inscriptions ___ été validées » — le nom qui suit est « des inscriptions », au pluriel → verbe au pluriel. Donc : ont — option 4.",
+    "explanation": "Règle : La plupart des élèves, bien des élèves, nombre d’élèves et moins de deux élèves commandent normalement le pluriel, mais leur structure diffère. Dans bien des élèves, élèves est le nom noyau du sujet. Dans combien ou peu d’entre eux, eux appartient au complément partitif et n’est pas le noyau. Identifie la construction précise avant de justifier l’accord.\nMéthode : 1. Repère le verbe conjugué. 2. Trouve son sujet, même s’il est éloigné ou placé après le verbe. 3. Relève la personne et le nombre du sujet. 4. Choisis la forme verbale qui porte les mêmes marques.\nDans cette phrase : le blanc accueille l’auxiliaire conjugué de la construction passive « ont été validées ». Qu’est-ce qui a été validé ? « La plupart des inscriptions au camp de ski ». Il faut reconnaître la construction « la plupart de » suivie d’un nom pluriel : elle vise ici plusieurs inscriptions et commande un verbe à la troisième personne du pluriel. Le singulier apparent de « la plupart » ne suffit donc pas à déterminer l’accord. « Au camp de ski » précise les inscriptions et « par les répondants légaux » indique qui les a validées ; ces groupes ne changent pas le sujet. Le groupe sujet peut être repris par « elles » : « Elles ont déjà été validées ». « Ont » est la seule forme proposée à la troisième personne du pluriel ; « a », « aura » et « ait » sont toutes au singulier.\nDonc : la réponse attendue est « ont », option 4.",
     "why": {
-      "1": "« a » accorde avec « la plupart » au singulier : or la règle veut l'accord avec le nom pluriel qui suit (les inscriptions).",
-      "2": "« aura » est au singulier ; avec « la plupart des inscriptions », il faudrait le pluriel « auront ». De plus, aucun repère futur n'est donné ici.",
-      "3": "« ait » est un subjonctif : rien dans la phrase ne l'appelle — c'est une affirmation simple.",
-      "4": "Correct : la plupart des inscriptions (pluriel) → ont été validées.",
-      "A": "Il existe bien une option correcte : la 4 applique l'accord avec le complément pluriel.",
-      "T": "Les options 1, 2 et 3 fautent sur le nombre, le temps ou le mode."
+      "1": "La forme `a` est au singulier. La construction « la plupart des inscriptions » commande ici le pluriel, malgré « la » devant « plupart » : il faut « ont ».",
+      "2": "La forme `aura` est une troisième personne du singulier au futur. Son nombre ne correspond pas à « la plupart des inscriptions », qui commande le pluriel ; la forme attendue dans cette phrase est « ont ».",
+      "3": "La forme `ait`, au subjonctif, reste à la troisième personne du singulier. Elle ne réalise pas l’accord pluriel exigé par « la plupart des inscriptions » ; la réponse attendue est « ont ».",
+      "4": "« Ont » porte la troisième personne du pluriel. Cet accord correspond à la construction « la plupart des inscriptions », que l’on peut reprendre par « elles » dans « elles ont été validées ».",
+      "A": "Une option sur quatre réalise l’accord attendu : la 4. Il y a donc une réponse correcte.",
+      "T": "Les options 1, 2 et 3 sont au singulier ; seule la 4 convient à cette construction plurielle."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -72296,8 +72648,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T05:35:13Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "prep-L55-9",
@@ -72668,7 +73030,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quatre annonces du secrétariat recopiées au tableau par les élèves de service. Quelle annonce est correctement écrite ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -72696,14 +73058,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Règle : le verbe s'accorde avec son sujet, et les noms de mesure comme « heures » prennent un s dès que le nombre dépasse un. Cas particulier : « frais » (les coûts) n'existe qu'au pluriel — on écrit donc « aucuns frais », et le verbe qui suit reste au pluriel. Dans ces phrases : phrase 1, « seront distribués » s'accorde avec « les carnets » — correcte. Phrase 2, « treize heure » : treize > 1 → « heures ». Phrase 3, « aucuns frais » est juste, mais « ne sera facturé » devrait suivre au pluriel : « ne seront facturés ». Phrase 4, « le photographe passeras » : sujet à la 3e personne → « passera ». Donc : seule la phrase 1 est correcte.",
+    "explanation": "Règle : Dans les temps composés non pronominaux et les constructions passives avec être, le participe passé s’accorde en genre et en nombre avec le sujet. Les groupes intercalés ne changent pas le donneur d’accord. Pour un verbe pronominal, applique sa règle particulière.\nMéthode : 1. Repère la construction avec être : temps composé non pronominal ou voix passive ; si le verbe est pronominal, utilise sa règle particulière. 2. Trouve le sujet grammatical du verbe. 3. Détermine le genre et le nombre du sujet. 4. Reporte ces marques sur le participe passé.\nDans cette phrase : 1. « Seront distribués » est une construction passive avec le verbe être : les carnets recevront l’action de distribuer. Le sujet « les carnets de correspondance » a pour nom principal « carnets », masculin pluriel. Il commande « seront » et l’accord de « distribués » au masculin pluriel.\n2. Dans `treize heure`, le nombre treize impose le pluriel au nom : il faut « treize heures ».\n3. « Frais », au sens de coûts, est un nom pluriel. Le sujet « aucuns frais » commande donc « seront ». Dans cette construction passive avec être, le participe doit également porter le masculin pluriel : `ne sera facturé` doit devenir « ne seront facturés », soit « aucuns frais ne seront facturés ».\n4. « Le photographe scolaire » correspond à il, troisième personne du singulier. Au futur, on écrit « passera » ; `passeras` correspond à tu.\nDonc : seule l’annonce 1 est correctement écrite. La réponse est 1.",
     "why": {
-      "1": "Correcte : accord du verbe et du participe avec « les carnets », pluriel.",
-      "2": "« treize heure » : au-delà d'une heure, le nom prend le s → treize heures.",
-      "3": "« aucuns frais ne sera facturé » : « aucuns frais » est bien au pluriel (frais n'a pas de singulier), mais le verbe doit suivre → « ne seront facturés ».",
-      "4": "« passeras » est la 2e personne (tu passeras) : avec « le photographe », il faut la 3e → passera.",
-      "A": "Il existe bien une phrase correcte : la 1, vérifiable accord par accord.",
-      "T": "Les phrases 2, 3 et 4 fautent sur le pluriel de mesure, l'accord du verbe ou la personne."
+      "1": "Dans la construction passive « seront distribués », le sujet « les carnets de correspondance » est masculin pluriel : « seront » porte le pluriel et « distribués » porte les marques -és attendues.",
+      "2": "Dans `treize heure`, le nom reste au singulier alors que treize désigne plusieurs heures. La forme attendue est « treize heures ».",
+      "3": "Dans `ne sera facturé`, le verbe et le participe sont au singulier malgré le sujet pluriel « aucuns frais ». Il faut « ne seront facturés » : être et le participe de cette construction passive suivent le sujet.",
+      "4": "`passeras` est une forme du futur à la deuxième personne du singulier. Avec « le photographe scolaire », sujet à la troisième personne du singulier, il faut « passera ».",
+      "A": "Une annonce sur quatre est correcte : la 1. Le nombre d’annonces correctes n’est donc pas zéro.",
+      "T": "Trois annonces sur quatre comportent une faute : les 2, 3 et 4. Les quatre annonces ne sont donc pas toutes correctes."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -72730,8 +73092,18 @@ const QUESTIONS = [
           "detail_id": "core",
           "tense_id": null
         }
-      ]
-    }
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T14:05:57Z"
+        }
+      }
+    },
+    "progress_revision": 1
   },
   {
     "id": "mode-L56-6",
@@ -73455,14 +73827,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Règle : une interrogation indirecte ne conserve ni « est-ce que » ni l'inversion avec un pronom comme « aurait-elle ». Toutefois, lorsque le sujet est un groupe nominal complet, l'inversion nominale reste possible : « quelles conséquences aurait cette décision ». Comme la question est rapportée après un verbe au passé, le futur « aura » devient le conditionnel « aurait ». Dans cette phrase : le sujet complet est « cette décision » ; il peut suivre le verbe sans qu'un pronom « elle » soit ajouté. Donc : option 2.",
+    "explanation": "Règle : L’interrogation indirecte exclut est-ce que et l’inversion interrogative du pronom sujet. L’ordre sujet-verbe convient généralement ; certaines constructions admettent aussi un sujet nominal placé après le verbe, comme dans Je me demande où se trouve la sortie.\nMéthode : 1. Repère le verbe qui introduit la question rapportée. 2. Choisis la forme interrogative nécessaire à la subordonnée. 3. Supprime est-ce que et l’inversion interrogative du pronom sujet ; un sujet nominal peut être placé après le verbe selon la construction. 4. Vérifie les repères temporels, le mode et la ponctuation de la phrase complète.\nDans cette phrase : « voulait savoir » introduit la question rapportée. Celle-ci porte sur les conséquences : on conserve donc le groupe interrogatif « quelles conséquences ». Pour retrouver les fonctions, on peut reconstruire « cette décision aurait quelles conséquences sur le budget ». « Cette décision » est le sujet ; « quelles conséquences » est le COD. L’action était future depuis le moment où le conseil s’interrogeait : « aura » devient « aurait » dans cette transposition au passé. Il faut ensuite retirer « est-ce que » et l’inversion interrogative du pronom « elle ». En revanche, dans cette construction, le sujet nominal complet « cette décision » peut suivre le verbe : « quelles conséquences aurait cette décision ». C’est la présence du nom sujet, sans reprise par « elle », qui permet de retenir cette formulation.\nDonc : la réponse est 2, « Le conseil voulait savoir quelles conséquences aurait cette décision sur le budget. »",
     "why": {
-      "1": "« aurait-elle » conserve l'inversion pronominale de la question directe ; elle disparaît dans l'interrogation indirecte.",
-      "2": "Correct : conditionnel du futur rapporté et inversion admise du sujet nominal complet « cette décision ».",
-      "3": "« est-ce que » est une marque de question directe ; elle ne se conserve pas après « voulait savoir ».",
-      "4": "« aurait-elle, cette décision » ajoute une reprise pronominale de la question directe ; il faut garder seulement le sujet nominal.",
-      "A": "L'option 2 est une interrogation indirecte correctement construite ; « Aucune » ne convient pas.",
-      "T": "Les options 1, 3 et 4 conservent une construction propre à la question directe."
+      "1": "Dans `cette décision aurait-elle`, le sujet nominal est repris par le pronom « elle » inversé après le verbe, comme dans la question directe. L’interrogation indirecte demande ici « quelles conséquences cette décision aurait sur le budget ».",
+      "2": "« Cette décision » est un sujet nominal complet, dont la place après « aurait » est admise dans cette construction. Aucun pronom sujet n’est inversé ; « aurait » situe les conséquences dans l’avenir vu depuis l’interrogation passée.",
+      "3": "La suite `quelles conséquences est-ce que` conserve « est-ce que », qui appartient à l’interrogation directe. Après « voulait savoir », il faut « quelles conséquences cette décision aurait sur le budget ».",
+      "4": "La suite `aurait-elle, cette décision` conserve le pronom sujet inversé, puis détache le nom qu’il reprend. La question rapportée doit garder le sujet nominal sans cette reprise : « quelles conséquences aurait cette décision sur le budget ».",
+      "A": "La formulation 2 convient : il y a une option chiffrée correcte.",
+      "T": "Les formulations 1, 3 et 4 conservent une marque de question directe : seule une option sur quatre convient."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -73475,9 +73847,19 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:07:54Z"
+        }
       }
     },
-    "stem": "Le conseil s'est demandé : « Quelles conséquences cette décision aura-t-elle sur le budget ? » Rapportez fidèlement cette question."
+    "stem": "Le conseil s'est demandé : « Quelles conséquences cette décision aura-t-elle sur le budget ? » Rapportez fidèlement cette question.",
+    "progress_revision": 1
   },
   {
     "id": "con-L57-8",
@@ -74656,14 +75038,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Règle : « il se pourrait que » présente un fait comme une simple possibilité, pas comme une réalité : la subordonnée se met au subjonctif — le mode de ce qui n'est pas affirmé. Dans cette phrase : la fermeture n'est qu'envisagée → subjonctif « soit ». Donc : option 1.",
+    "explanation": "Règle : Vérifie le régime de l’expression précise. Douter que à l’affirmatif admet le subjonctif et le conditionnel lorsque le fait est envisagé comme une hypothèse ; il se pourrait que demande le subjonctif. Douter que à la négation admet plusieurs modes, tandis que se douter que à l’affirmatif appelle l’indicatif. Le seul caractère incertain du fait ne détermine pas le mode.\nMéthode : 1. Repère la construction qui introduit la proposition. 2. Vérifie le sens et le mode réellement imposé ou permis par cette construction. 3. Choisis l’indicatif lorsque la construction présente ici le fait comme constaté, ou le subjonctif lorsqu’elle l’exige pour un fait voulu, évalué ou non affirmé. 4. Conjugue ensuite le verbe au temps et à la personne demandés.\nDans cette phrase : repère la construction complète « il se pourrait que ». L’état de la chaudière conduit à envisager une fermeture de la piscine pendant tout l’hiver. C’est cette construction précise qui exige le subjonctif dans la proposition introduite par « que ». Le conditionnel « pourrait » appartient à la proposition principale : il ne faut pas le reproduire dans la subordonnée. Le sujet « la piscine couverte » correspond à « elle » ; le présent du subjonctif du verbe être est donc « soit », dans « que la piscine couverte soit fermée ».\nDonc : choisis l’option 1, « soit ».",
     "why": {
-      "1": "Correct : il se pourrait que + subjonctif (soit fermée).",
-      "2": "« sera » est le futur de l'indicatif : il affirmerait la fermeture comme certaine.",
-      "3": "« est » est le présent de l'indicatif : même défaut.",
-      "4": "« serait » est le conditionnel : après « il se pourrait que », c'est le subjonctif qui s'impose, pas un second conditionnel.",
-      "A": "Il existe bien une option correcte : la 1.",
-      "T": "Les options 2, 3 et 4 présentent la fermeture comme un fait ou doublent le conditionnel."
+      "1": "« soit » met le verbe être au présent du subjonctif, à la troisième personne du singulier. Cette forme suit le régime de « il se pourrait que » et correspond à « la piscine couverte ».",
+      "2": "« `sera` » est un futur de l’indicatif. La durée future « tout l’hiver » ne supprime pas le subjonctif exigé par « il se pourrait que » : il faut « soit ».",
+      "3": "« `est` » est un présent de l’indicatif. La proposition dépend de « il se pourrait que », qui demande ici le subjonctif : la forme attendue est « soit ».",
+      "4": "« `serait` » est un conditionnel présent. Le conditionnel de « pourrait » ne se reporte pas dans la subordonnée : après « il se pourrait que », il faut « soit ».",
+      "A": "Une réponse chiffrée convient, la 1. « Aucune » est donc exclue.",
+      "T": "Seule l’option 1 convient ; les options 2, 3 et 4 échouent. « Toutes » est donc exclue."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -74676,8 +75058,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:57:00Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "dis-L59-7",
@@ -75124,7 +75516,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "stem": "Je doute que la subvention cantonale ___ versée avant la fin de l'exercice comptable.",
+    "stem": "Il se pourrait que la subvention cantonale ___ versée avant la fin de l'exercice comptable.",
     "options": [
       {
         "key": "1",
@@ -75152,14 +75544,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Règle : « douter que » exprime une incertitude : la subordonnée se met au subjonctif, le mode de ce qui n'est pas tenu pour sûr. Dans cette phrase : « je doute que la subvention ___ versée » → subjonctif « soit ». Donc : option 3.",
+    "explanation": "Règle : il se pourrait que demande le subjonctif. Méthode : Repère la construction qui introduit la proposition. Vérifie le sens et le mode réellement imposé ou permis par cette construction. Choisis l’indicatif lorsque la construction présente ici le fait comme constaté, ou le subjonctif lorsqu’elle l’exige pour un fait voulu, évalué ou non affirmé. Conjugue ensuite le verbe au temps et à la personne demandés. Dans cette phrase : « il se pourrait que » exige le subjonctif. Le sujet « la subvention cantonale » est à la troisième personne du singulier : « soit versée » (3) convient. « sera » (1) est un futur de l’indicatif, « est » (2) un présent de l’indicatif et « serait » (4) un conditionnel présent ; aucune de ces trois formes ne satisfait cette construction. Donc : option 3 ; ni Aucune ni Toutes.",
     "why": {
-      "1": "« sera » (futur) affirmerait le versement comme certain, alors que le doute le remet en cause.",
-      "2": "« est » (indicatif présent) présente aussi un fait sûr : incompatible avec le doute.",
-      "3": "Correct : douter que + subjonctif → soit versée.",
-      "4": "« serait » (conditionnel) exprimerait une hypothèse, pas le doute qu'appelle « douter que ».",
-      "A": "Il existe bien une option correcte : la 3.",
-      "T": "Les options 1, 2 et 4 emploient un mode que « douter que » n'admet pas."
+      "1": "« sera » est le futur simple de l’indicatif. La construction « il se pourrait que » demande ici une forme au subjonctif.",
+      "2": "« est » est le présent de l’indicatif. Ce mode ne convient pas après « il se pourrait que », indépendamment de la réalisation effective du versement.",
+      "3": "« soit » est le subjonctif présent d’« être » à la troisième personne du singulier : « il se pourrait que la subvention soit versée ».",
+      "4": "« serait » est un conditionnel présent. Sa valeur hypothétique ne suffit pas à l’autoriser après « il se pourrait que », construction qui demande le subjonctif.",
+      "A": "Aucune est exclu : l’option 3 fournit la forme exigée avec le sujet singulier « la subvention cantonale ».",
+      "T": "Toutes est exclu : seule « soit » est au subjonctif ; « sera », « est » et « serait » ne satisfont pas le régime de « il se pourrait que »."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -75173,7 +75565,8 @@ const QUESTIONS = [
         "3": null,
         "4": "UNK"
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "rel-L60-5",
@@ -76077,20 +76470,20 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Règle : au discours rapporté au passé, le futur devient conditionnel (transmettra → transmettrait), le présent devient imparfait (est → était), un ordre devient « de + infinitif », et « ce jour-là » remplace « aujourd'hui ». Dans ces phrases : 1) futur → conditionnel (transmettrait). 2) présent → imparfait (était) + déictique recalculé (ce jour-là). 3) ordre nié → « de ne pas stationner ». 4) futur → conditionnel (présiderait) après un introducteur au passé. Donc : les quatre sont correctes — réponse T (Toutes).",
+    "explanation": "Règle : L’interrogation indirecte exclut est-ce que et l’inversion interrogative du pronom sujet. L’ordre sujet-verbe convient généralement ; certaines constructions admettent aussi un sujet nominal placé après le verbe, comme dans Je me demande où se trouve la sortie. Méthode : Repère le verbe qui introduit la question rapportée. Choisis la forme interrogative nécessaire à la subordonnée. Supprime est-ce que et l’inversion interrogative du pronom sujet ; un sujet nominal peut être placé après le verbe selon la construction. Vérifie les repères temporels, le mode et la ponctuation de la phrase complète. Dans cette phrase : les quatre propositions sont grammaticalement correctes. En 1, « a expliqué que » introduit une proposition rapportée ; « transmettrait » peut exprimer un futur vu depuis un repère passé. En 2, « a demandé si » introduit une question à réponse oui ou non ; « le badge visiteur était » présente un ordre admis et « ce jour-là » est un repère temporel grammatical. En 3, « a rappelé de ne pas stationner » rapporte une consigne, avec la négation devant l’infinitif. En 4, « voulait savoir qui présiderait » introduit une question indirecte dont « qui » est le sujet ; le conditionnel peut exprimer le futur du passé. Les deux interrogations indirectes se terminent correctement par un point dans ces phrases déclaratives. Donc : réponse T, Toutes, et non Aucune.",
     "why": {
-      "1": "Correcte : le futur du discours direct devient conditionnel (transmettrait).",
-      "2": "Correcte : présent → imparfait (était) et « aujourd'hui » → « ce jour-là ».",
-      "3": "Correcte : ordre négatif rapporté par « de ne pas + infinitif ».",
-      "4": "Correcte : après « voulait savoir » (passé), le futur devient conditionnel (présiderait).",
-      "A": "Impossible : chaque transposition respecte les règles de temps, de mode et de repère.",
-      "T": "Correct : quatre transpositions justes, chacune illustrant une règle différente."
+      "1": "« Il a expliqué que » introduit correctement une proposition rapportée. « Transmettrait » peut situer la transmission après un repère passé ; « dès son retour de congé » précise le moment de cette transmission.",
+      "2": "« Elle a demandé si » introduit correctement une question indirecte à réponse oui ou non. Le sujet « le badge visiteur » précède « était », sans est-ce que ni inversion interrogative. « Ce jour-là » est un repère temporel grammatical et la phrase déclarative se termine par un point.",
+      "3": "« On leur a rappelé de ne pas stationner » rapporte correctement une consigne adressée aux personnes désignées par « leur ». La négation « ne pas » précède l’infinitif « stationner ».",
+      "4": "« Il voulait savoir » introduit une question indirecte. « Qui » est le sujet de « présiderait » ; le conditionnel peut exprimer une postériorité depuis le passé et le point convient à la phrase déclarative.",
+      "A": "Aucune est exclu : les constructions « a expliqué que », « a demandé si », « a rappelé de ne pas » et « voulait savoir qui » sont toutes grammaticalement correctes dans les phrases proposées.",
+      "T": "Toutes convient : les deux interrogations indirectes sont correctement construites, la proposition rapportée de 1 est grammaticale et la consigne à l’infinitif de 3 l’est également."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
-      "family": "discours_indirect",
-      "mechanism_id": "deictiques_ancres",
-      "detail_id": "temps",
+      "family": "interrogation_indirecte",
+      "mechanism_id": "ordre_declaratif",
+      "detail_id": "core",
       "tense_id": null,
       "option_misconceptions": {
         "1": null,
@@ -76098,7 +76491,8 @@ const QUESTIONS = [
         "3": null,
         "4": null
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "pro-L61-10",
@@ -76397,14 +76791,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : « à supposer que » pose une hypothèse ; on emploie donc le subjonctif, le mode de ce qui n'est pas donné pour réel. Dans cette phrase : « à supposer que la salle ___ libre » → subjonctif « soit ». Donc : option 4.",
+    "explanation": "Règle : Vérifie le régime de chaque locution : à supposer que, à moins que et pourvu que demandent le subjonctif. Après à condition que, le subjonctif est courant, mais l’indicatif futur est également admis ; ce futur peut être transposé au conditionnel dans un repère passé. N’étends pas un régime exclusif à toutes les locutions de condition.\nMéthode : 1. Repère la construction qui introduit la proposition. 2. Vérifie le sens et le mode réellement imposé ou permis par cette construction. 3. Choisis l’indicatif lorsque la construction présente ici le fait comme constaté, ou le subjonctif lorsqu’elle l’exige pour un fait voulu, évalué ou non affirmé. 4. Conjugue ensuite le verbe au temps et à la personne demandés.\nDans cette phrase : repère « À supposer que ». La disponibilité de la salle est posée comme une hypothèse dont dépend la possibilité d’y tenir la réunion. La locution précise « à supposer que » demande le subjonctif ; il ne suffit donc pas de choisir une forme exprimant généralement une éventualité. Le sujet « la salle polyvalente » correspond à « elle ». Le présent du subjonctif du verbe être à cette personne est « soit ». Le futur « pourra » appartient à la proposition principale et ne change pas ce choix.\nDonc : choisis l’option 4, « soit ».",
     "why": {
-      "1": "« est » (indicatif présent) affirmerait la disponibilité comme un fait, alors qu'elle est seulement supposée.",
-      "2": "« sera » (futur) présente aussi un fait certain : incompatible avec l'hypothèse.",
-      "3": "« serait » (conditionnel) exprimerait une éventualité, mais « à supposer que » réclame le subjonctif.",
-      "4": "Correct : à supposer que + subjonctif → soit.",
-      "A": "Il existe bien une option correcte : la 4.",
-      "T": "Les options 1, 2 et 3 emploient un mode que la locution n'admet pas."
+      "1": "« `est` » est un présent de l’indicatif. La disponibilité de la salle dépend ici de « À supposer que », qui demande le subjonctif : il faut « soit ».",
+      "2": "« `sera` » est un futur de l’indicatif. Le futur « pourra » et l’heure prévue pour la réunion ne changent pas le régime de « À supposer que » : il faut « soit ».",
+      "3": "« `serait` » est un conditionnel présent. Exprimer une éventualité ne suffit pas : la locution « À supposer que » exige le subjonctif « soit ».",
+      "4": "« soit » est le présent du subjonctif du verbe être, à la personne de « la salle polyvalente ». Il satisfait le mode demandé par « À supposer que ».",
+      "A": "L’option 4 fournit une réponse correcte. « Aucune » est exclue.",
+      "T": "Une seule option convient, la 4 ; les trois autres échouent. « Toutes » est exclue."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -76417,8 +76811,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:57:00Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "rel-L62-5",
@@ -77644,14 +78048,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Règle : « afin que » exprime un but, c'est-à-dire un résultat qu'on cherche à atteindre mais qui n'est pas encore réalisé : on emploie le subjonctif. Dans cette phrase : « afin que la délégation ___ installée » → subjonctif « soit ». Donc : option 3.",
+    "explanation": "Règle : Pour que, afin que, de peur que et de crainte que introduisent un but ou une crainte et commandent le subjonctif.\nMéthode : 1. Repère la construction qui introduit la proposition. 2. Vérifie le sens et le mode réellement imposé ou permis par cette construction. 3. Choisis l’indicatif lorsque la construction présente ici le fait comme constaté, ou le subjonctif lorsqu’elle l’exige pour un fait voulu, évalué ou non affirmé. 4. Conjugue ensuite le verbe au temps et à la personne demandés.\nDans cette phrase : La proposition à compléter commence par « afin que ». Le départ du car à 7 h est organisé dans un but précis : permettre l'installation de la délégation avant l'ouverture des portes. C'est la construction de but « afin que » qui exige le subjonctif dans cette proposition ; le futur « partira » de la proposition principale ne détermine pas le mode du second verbe. Le verbe à conjuguer est « être », avec le sujet singulier « la délégation », donc à la troisième personne du singulier. Au subjonctif présent, on obtient « qu'elle soit » : « afin que la délégation soit installée ».\nDonc : On complète par « soit », réponse 3.",
     "why": {
-      "1": "« sera » (futur) présenterait l'installation comme certaine, alors qu'elle n'est que visée.",
-      "2": "« est » (indicatif présent) décrirait un fait accompli, pas un but.",
-      "3": "Correct : afin que + subjonctif → soit installée.",
-      "4": "« serait » (conditionnel) exprimerait une hypothèse, pas le but voulu par « afin que ».",
-      "A": "Il existe bien une option correcte : la 3.",
-      "T": "Les options 1, 2 et 4 emploient un mode que la locution de but n'admet pas."
+      "1": "La forme `sera` est au futur de l'indicatif. Le futur de « partira » ne se transmet pas à la proposition introduite par « afin que », qui exige le subjonctif : il faut « soit ».",
+      "2": "La forme `est` est au présent de l'indicatif. Même si l'installation est prévue avant l'ouverture, « afin que » impose ici le subjonctif : la forme attendue est « soit ».",
+      "3": "« Soit » est le subjonctif présent de « être » à la troisième personne du singulier. Cette forme répond à la fois au mode exigé par « afin que » et au sujet « la délégation ».",
+      "4": "La forme `serait` est au conditionnel présent. Envisager l'installation comme un résultat recherché n'autorise pas à remplacer le subjonctif exigé par « afin que » : il faut « soit ».",
+      "A": "L'option 3 est correcte : une réponse convient, donc pas « Aucune ».",
+      "T": "Une seule option emploie la forme attendue : « Toutes » ne convient pas."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -77664,8 +78068,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:23:16Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "rel-L64-5",
@@ -77884,14 +78298,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Règle : quand le sujet est placé APRÈS le verbe (sujet inversé), le verbe s'accorde quand même avec lui. Ici le sujet est « les casiers » (pluriel) ; « le long du couloir » n'est qu'un complément de lieu. Il faudrait donc « s'alignent », au pluriel. Dans cette phrase : aucune des quatre formes n'est ce pluriel. Donc : réponse A (Aucune).",
+    "explanation": "Règle : Le sujet postposé reste le donneur de personne et de nombre du verbe.\nMéthode : 1. Repère le verbe conjugué. 2. Trouve son sujet, même s’il est éloigné ou placé après le verbe. 3. Relève la personne et le nombre du sujet. 4. Choisis la forme verbale qui porte les mêmes marques.\nDans cette phrase : le groupe « Le long du couloir fraîchement rénové » indique le lieu. Pour trouver le sujet du verbe à compléter, on demande ce qui s’aligne : « les casiers des nouvelles volées ». Le sujet est placé après le verbe, mais son noyau « casiers » commande toujours la troisième personne du pluriel. L’option 1, « s’aligne », est conjuguée au singulier ; l’option 2, « s’alignant », est un participe présent ; l’option 3, « alignés », est un participe passé employé seul ; l’option 4, « s’alignera », est conjuguée au singulier. Aucune ne fournit un verbe conjugué au pluriel. Au présent, la construction demande « s’alignent ».\nDonc : aucune des quatre options chiffrées ne convient ; la réponse attendue est A.",
     "why": {
-      "1": "« s'aligne » (singulier) cède à l'attraction de « couloir » : le sujet est « les casiers », pluriel.",
-      "2": "« s'alignant » (participe présent) laisserait la phrase sans verbe conjugué.",
-      "3": "« alignés » (participe seul) laisserait aussi la phrase sans verbe.",
-      "4": "« s'alignera » cumule le singulier fautif et un futur que rien n'appelle.",
-      "A": "Correct : la forme attendue « s'alignent » (pluriel du sujet inversé) ne figure dans aucune option.",
-      "T": "Impossible : aucune option ne porte l'accord exigé."
+      "1": "`s’aligne` est singulier et ne peut pas s’accorder avec « les casiers ». Au présent, la forme attendue est « s’alignent ».",
+      "2": "`s’alignant` est un participe présent : il ne fournit pas le verbe conjugué nécessaire. Il faut ici une forme conjuguée au pluriel, « s’alignent » au présent.",
+      "3": "`alignés` porte le pluriel, mais reste un participe passé sans auxiliaire. L’accord du participe ne remplace pas un verbe conjugué : le blanc peut être rempli par « s’alignent ».",
+      "4": "`s’alignera` est à la troisième personne du singulier. Le sujet placé après le verbe étant pluriel, la forme correspondante au futur serait « s’aligneront ».",
+      "A": "Les options 1 et 4 sont singulières ; les options 2 et 3 ne sont pas conjuguées. Aucune ne satisfait les deux exigences : un verbe conjugué et l’accord pluriel avec « les casiers ».",
+      "T": "Le nombre d’options chiffrées correctes est zéro, et non quatre."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -77904,8 +78318,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T05:39:18Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "conj-L64-9",
@@ -78439,14 +78863,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Règle : « s'absenter » est un verbe essentiellement pronominal — il n'existe pas sans « se » (on ne peut pas « absenter quelqu'un »). Pour ces verbes, le participe passé s'accorde toujours avec le sujet. Dans cette phrase : le sujet « les deux déléguées » est féminin pluriel (le stem l'écrit avec -ées) → absentées. Donc : option 2.",
+    "explanation": "Règle : Les emplois pronominaux autonomes ou passifs relevant de cette règle, ainsi que la plupart des essentiellement pronominaux, accordent leur participe avec le sujet. Vérifie l’emploi précis et les exceptions : s’arroger s’accorde avec son COD placé avant, non automatiquement avec le sujet.\nMéthode : 1. Identifie l’emploi pronominal précis et vérifie qu’il relève de l’accord avec le sujet. 2. Dans les emplois autonomes ou passifs relevant de cette règle, se n’est pas un COD ou un COI donneur d’accord. 3. Pour les essentiellement pronominaux, vérifie les exceptions : s’arroger suit l’accord avec le COD placé avant. 4. Lorsque l’accord avec le sujet s’applique, relève son genre et son nombre et accorde le participe.\nDans cette phrase : le verbe est « s’absenter », dans son emploi essentiellement pronominal, c’est-à-dire construit avec le pronom réfléchi comme partie du verbe. Cet emploi relève de l’accord du participe avec le sujet ; « se » ne se traite pas ici comme un COI qui empêcherait cet accord. Qui s’est absenté ? « Les deux déléguées de classe ». Le nom qui commande l’accord est « déléguées », féminin pluriel. « De classe » précise ce nom et « une heure » indique la durée de l’absence : aucun de ces groupes ne remplace le sujet comme donneur d’accord. Le participe doit donc porter le féminin et le pluriel : « absentées ».\nDonc : la réponse attendue est « absentées », option 2.",
     "why": {
-      "1": "« absenté » (invariable) traiterait « se » comme un complément indirect : or s'absenter n'existe qu'en bloc → accord avec le sujet.",
-      "2": "Correct : verbe essentiellement pronominal → accord avec « les deux déléguées » (fém. plur.) → absentées.",
-      "3": "« absentés » se trompe de genre : le sujet « les deux déléguées » est explicitement féminin.",
-      "4": "« absentée » se trompe de nombre : le sujet est pluriel.",
-      "A": "Il existe bien une option correcte : la 2.",
-      "T": "Les options 1, 3 et 4 fautent sur le principe d'accord, le genre ou le nombre."
+      "1": "La forme `absenté` laisse le participe sans les marques du sujet. L’emploi essentiellement pronominal « s’absenter » s’accorde ici avec « les deux déléguées » : il faut « absentées ».",
+      "2": "« Absentées » reçoit le féminin du nom « déléguées » et le pluriel indiqué par « les deux ». Ces deux marques réalisent l’accord avec le sujet de « s’absenter ».",
+      "3": "La forme `absentés` porte le pluriel, mais pas le féminin de « déléguées ». L’accord complet avec le sujet exige « absentées ».",
+      "4": "La forme `absentée` porte le féminin, mais décrit grammaticalement un seul sujet. « Les deux déléguées » étant pluriel, il faut « absentées ».",
+      "A": "Une option sur quatre convient : la 2. Le nombre de réponses correctes n’est pas zéro.",
+      "T": "Les options 1, 3 et 4 présentent un accord incomplet ; seule la 2 convient."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -78459,8 +78883,18 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T05:35:13Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "con-L65-8",
@@ -78771,7 +79205,7 @@ const QUESTIONS = [
       "thinking": "standard",
       "tracked": true
     },
-    "instruction": "Quatre phrases du carnet de bord du séjour à la ferme. Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -78799,14 +79233,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Règle : avec « avoir », le participe s'accorde avec le complément d'objet direct (COD) placé avant (trait quoi ? « que » = les vaches → traites) et reste invariable sinon (« montré » : le COD « comment fabriquer » suit) ; « se lever » s'accorde avec le sujet (levés) ; l'épithète s'accorde avec son nom (ramassés). Dans ces phrases : chacune applique correctement sa règle — y compris « traites », qui surprend mais est le féminin pluriel régulier de « trait ». Donc : les quatre sont correctes — réponse T (Toutes).",
+    "explanation": "Règle : Avec avoir, identifie le COD antéposé et accorde le participe avec son genre et son nombre.\nMéthode : 1. Repère l’auxiliaire avoir et le participe passé. 2. Trouve le COD en posant la question qui ? ou quoi ? après le verbe. 3. Vérifie que ce COD est placé avant le participe passé. 4. Accorde le participe avec le genre et le nombre de ce COD.\nDans cette phrase : les quatre propositions se vérifient séparément. 1. « Avons traites » est construit avec l’auxiliaire avoir. Nous avons trait quoi ? Les vaches, reprises par « que ». Ce COD féminin pluriel précède le participe. Le participe de traire est « trait » : avec les marques du féminin et du pluriel, il devient « traites ». 2. « Nous nous sommes levés » est un pronominal réfléchi. Nous avons levé qui ? Nous-mêmes : le second « nous » est COD placé avant le participe. Il reprend le groupe désigné par le sujet « nous », ici au masculin pluriel ; l’accord donne « levés ». 3. Dans « nous a montré », l’auxiliaire est avoir. La fermière a montré à qui ? À nous : « nous » est COI. Elle a montré quoi ? « Comment fabriquer le beurre », complément placé après le participe. Aucun COD placé avant ne commande d’accord : on écrit « montré ». 4. « Ramassés » est employé sans auxiliaire et décrit « les œufs », masculin pluriel : il prend donc les mêmes marques. Dans « ont servi au déjeuner », l’auxiliaire est avoir et « au déjeuner » n’est pas COD. Aucun COD placé avant ne commande l’accord de « servi ».\nDonc : chaque proposition applique la construction qui lui correspond. Les quatre sont correctement écrites ; la réponse est T (« Toutes »).",
     "why": {
-      "1": "Correcte : le COD « que » (= les vaches) précède → « traites », féminin pluriel du participe de traire.",
-      "2": "Correcte : « se lever » s'accorde avec le sujet « nous » → levés ; « cinq heures et demie » est la graphie attendue.",
-      "3": "Correcte : le COD (« comment fabriquer le beurre ») suit le participe → « montré » invariable.",
-      "4": "Correcte : « ramassés » s'accorde avec « les œufs », et « ont servi » n'a pas de COD antéposé.",
-      "A": "Impossible : chacune des quatre phrases résiste à la vérification.",
-      "T": "Correct : quatre accords justes, dont le surprenant « traites »."
+      "1": "« Que » répond à « nous avons trait quoi ? » et reprend « les vaches ». Ce COD féminin pluriel précède le participe employé avec avoir : « trait », participe de traire, devient donc « traites ».",
+      "2": "Dans le pronominal réfléchi « nous nous sommes levés », le second « nous » désigne les personnes que l’on a levées : c’est le COD placé avant. Il impose ici le masculin pluriel de « levés ».",
+      "3": "« Nous » répond à « la fermière a montré à qui ? » : il est COI. Ce qui a été montré, « comment fabriquer le beurre », vient après « montré » ; le participe employé avec avoir reste donc invariable.",
+      "4": "Sans auxiliaire, « ramassés » décrit « les œufs » et prend leur masculin pluriel. Dans « ont servi au déjeuner », aucun COD n’est placé avant le participe : le sujet pluriel ne fait donc pas varier « servi ».",
+      "A": "Les quatre propositions sont correctes ; il y en a donc quatre, et non aucune.",
+      "T": "La proposition 1 accorde « traites » avec le COD précédent ; la 2 accorde le pronominal réfléchi avec son COD ; la 3 garde « montré » invariable ; la 4 distingue l’accord adjectival de « ramassés » et l’invariabilité de « servi ». T couvre ces quatre résultats."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -78833,8 +79267,18 @@ const QUESTIONS = [
           "detail_id": "core",
           "tense_id": null
         }
-      ]
-    }
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T05:25:43Z"
+        }
+      }
+    },
+    "progress_revision": 1
   },
   {
     "id": "mode-L66-4",
@@ -80137,14 +80581,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Règle : « il faut que » exprime une nécessité : la subordonnée se met au subjonctif. Le subjonctif présent d'« aller » est « que j'aille, qu'elle aille ». Dans cette phrase : « il faut que la déléguée ___ » → aille. Donc : option 2.",
+    "explanation": "Règle : Une obligation, une nécessité ou un jugement d’importance suivi de que appelle normalement le subjonctif.\nMéthode : 1. Repère la construction qui introduit la proposition. 2. Vérifie le sens et le mode réellement imposé ou permis par cette construction. 3. Choisis l’indicatif lorsque la construction présente ici le fait comme constaté, ou le subjonctif lorsqu’elle l’exige pour un fait voulu, évalué ou non affirmé. 4. Conjugue ensuite le verbe au temps et à la personne demandés.\nDans cette phrase : repère « Il faut que ». La présence de la déléguée à la séance est présentée comme nécessaire pour éviter le report. Cette construction demande le subjonctif dans la proposition introduite par « que ». Le sujet du verbe à compléter est « la déléguée de quartier », que l’on peut remplacer par « elle ». Le verbe aller a ici une forme différente de son indicatif : au présent du subjonctif, on écrit « qu’elle aille ». La conséquence « tout sera reporté » reste au futur dans sa propre proposition ; elle ne détermine pas le mode après « Il faut que ».\nDonc : choisis l’option 2, « aille ».",
     "why": {
-      "1": "« ira » (futur de l'indicatif) présenterait la venue comme certaine, alors qu'elle est exigée.",
-      "2": "Correct : il faut que + subjonctif → aille.",
-      "3": "« va » (indicatif présent) ne suit pas un verbe de nécessité.",
-      "4": "« irait » (conditionnel) ne remplace pas le subjonctif exigé.",
-      "A": "Il existe bien une option correcte : la 2.",
-      "T": "Les options 1, 3 et 4 emploient un mode que la nécessité n'admet pas."
+      "1": "« `ira` » est un futur de l’indicatif. Même si la séance est à venir, « Il faut que » demande le subjonctif : il faut « aille ».",
+      "2": "« aille » est le présent du subjonctif du verbe aller à la troisième personne du singulier. Il correspond à « la déléguée » et au mode demandé par « Il faut que ».",
+      "3": "« `va` » est la forme de l’indicatif présent pour « elle ». Après « Il faut que », la forme du subjonctif est différente : il faut « aille ».",
+      "4": "« `irait` » est un conditionnel présent. Cette forme ne répond pas au subjonctif demandé pour la présence nécessaire de la déléguée : il faut « aille ».",
+      "A": "Une option chiffrée convient : la 2. « Aucune » est donc exclue.",
+      "T": "Les options 1, 3 et 4 échouent ; seule la 2 convient. « Toutes » est donc exclue."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -80157,8 +80601,18 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:57:00Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "rel-L68-5",
@@ -81987,14 +82441,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : « attendre que » vise un résultat encore à venir, non réalisé : la subordonnée se met au subjonctif. Dans cette phrase : « attendrons que la voie ___ dégagée » → soit. Donc : option 4.",
+    "explanation": "Règle : Le mode dépend d’abord de la construction introductrice et du sens qu’elle prend dans la phrase. Certaines constructions présentent le fait comme constaté et appellent l’indicatif ; d’autres exigent le subjonctif pour un fait voulu, évalué ou non affirmé.\nMéthode : 1. Repère la construction qui introduit chaque proposition. 2. Vérifie le sens qu’elle prend ici et le mode qu’elle impose ou permet. 3. Choisis l’indicatif si cette construction présente le fait comme constaté, ou le subjonctif si elle l’exige pour un fait voulu, évalué ou non affirmé. 4. Vérifie ensuite la forme verbale au temps et à la personne demandés.\nDans cette phrase : repère « Nous attendrons que ». Ce qui est attendu est le dégagement complet de la voie d’accès, préalable à la réouverture du parking. La construction « attendre que » exige ici le subjonctif ; le futur « attendrons » dans la proposition principale ne commande pas un futur dans la subordonnée. Le sujet du verbe à compléter est « la voie d’accès », que l’on peut remplacer par « elle ». Le présent du subjonctif du verbe être à cette personne est « soit » : « que la voie d’accès soit entièrement dégagée ».\nDonc : choisis l’option 4, « soit ».",
     "why": {
-      "1": "« sera » (futur) présenterait le dégagement comme certain : il n'est qu'attendu.",
-      "2": "« est » (indicatif présent) décrirait un fait déjà acquis.",
-      "3": "« serait » (conditionnel) ne remplace pas le subjonctif exigé par l'attente.",
-      "4": "Correct : attendre que + subjonctif → soit dégagée.",
-      "A": "Il existe bien une option correcte : la 4.",
-      "T": "Les options 1, 2 et 3 emploient un mode que « attendre que » n'admet pas."
+      "1": "« `sera` » est un futur de l’indicatif. Le futur « attendrons » ne change pas le mode exigé par « attendre que » : il faut « soit ».",
+      "2": "« `est` » est un présent de l’indicatif. Dans « attendrons que la voie d’accès… », le dégagement est attendu et la construction exige le subjonctif « soit ».",
+      "3": "« `serait` » est un conditionnel présent. Même pour un résultat envisagé, cette forme ne satisfait pas le régime de « attendre que » : il faut « soit ».",
+      "4": "« soit » est le présent du subjonctif du verbe être à la troisième personne du singulier. Il correspond au sujet « la voie d’accès » et au mode exigé par « attendrons que ».",
+      "A": "L’option 4 convient : il y a une réponse chiffrée correcte. « Aucune » est exclue.",
+      "T": "Les options 1, 2 et 3 échouent ; seule la 4 convient. « Toutes » est exclue."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -82007,8 +82461,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:57:00Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "rel-L71-5",
@@ -82550,14 +83014,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Règle : « il est temps que » exprime une urgence, quelque chose qui devrait se faire : la subordonnée se met au subjonctif. Dans cette phrase : « il est temps que la commission ___ » → rende. Donc : option 2.",
+    "explanation": "Règle : Une obligation, une nécessité ou un jugement d’importance suivi de que appelle normalement le subjonctif.\nMéthode : 1. Repère la construction qui introduit la proposition. 2. Vérifie le sens et le mode réellement imposé ou permis par cette construction. 3. Choisis l’indicatif lorsque la construction présente ici le fait comme constaté, ou le subjonctif lorsqu’elle l’exige pour un fait voulu, évalué ou non affirmé. 4. Conjugue ensuite le verbe au temps et à la personne demandés.\nDans cette phrase : repère « Il est temps que ». Le conseil siège dans dix jours : cette échéance motive la demande de remise des conclusions. La construction « il est temps que » présente cette remise comme devant maintenant avoir lieu et exige le subjonctif. Le sujet « la commission » correspond à « elle » ; pour rendre, le présent du subjonctif à cette personne est « rende », avec un e final. Le présent « siège », après les deux-points, appartient à une autre proposition et ne détermine pas le mode du verbe à compléter.\nDonc : choisis l’option 2, « rende ».",
     "why": {
-      "1": "« rendra » (futur) présenterait la remise comme certaine, alors qu'elle est réclamée.",
-      "2": "Correct : il est temps que + subjonctif → rende.",
-      "3": "« rend » (indicatif présent) décrirait un fait en cours, pas une urgence.",
-      "4": "« rendrait » (conditionnel) ne remplace pas le subjonctif exigé.",
-      "A": "Il existe bien une option correcte : la 2.",
-      "T": "Les options 1, 3 et 4 emploient un mode que la locution n'admet pas."
+      "1": "« `rendra` » est un futur de l’indicatif. L’échéance dans dix jours ne change pas le mode exigé par « Il est temps que » : il faut « rende ».",
+      "2": "« rende » est le présent du subjonctif de rendre à la troisième personne du singulier. Il correspond au sujet « la commission » et à la construction « Il est temps que ».",
+      "3": "« `rend` » est le présent de l’indicatif. Après « Il est temps que », il faut le subjonctif « rende » : le e final distingue ici les deux formes.",
+      "4": "« `rendrait` » est un conditionnel présent. La remise des conclusions est réclamée par « Il est temps que », construction qui exige le subjonctif « rende ».",
+      "A": "L’option 2 convient : il y a une réponse chiffrée correcte. « Aucune » est exclue.",
+      "T": "Seule l’option 2 convient ; les options 1, 3 et 4 échouent. « Toutes » est exclue."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -82570,8 +83034,18 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:57:00Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "rel-L72-5",
@@ -84210,7 +84684,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Quatre phrases du message de la classe verte aux parents, publié sur le blog de l'école. Quelle phrase est correctement écrite ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -84238,14 +84712,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Règle : « nous sommes » prend un s ; le verbe s'accorde avec son sujet pluriel (les enfants se couchent) ; et le lieu s'écrit « où » avec accent (la fromagerie où…). Dans ces phrases : « nous somme » → sommes ; « se couche » → se couchent ; « ou est fabriqué » → où. La phrase 1 n'a aucune faute (« pris » reste invariable : le COD « trois heures » exprime une durée). Donc : option 1.",
+    "explanation": "Règle : Un complément de mesure, de durée ou de prix d’un verbe employé intransitivement ne commande pas l’accord du participe. Mais une quantité peut être COD : il faut vérifier le sens et la construction du verbe, puis appliquer l’accord avec avoir si ce COD est placé avant.\nMéthode : 1. Repère le groupe associé au participe et le sens précis du verbe. 2. Vérifie si le verbe est employé avec une simple mesure ou avec un COD : peser trois kilos exprime un poids, tandis que peser des caisses porte sur les objets pesés. 3. Si le verbe est intransitif et que le groupe exprime seulement sa mesure, sa durée ou son prix, garde le participe invariable. 4. Si le groupe est un COD, applique la règle de l’accord avec avoir : accorde seulement lorsqu’il est placé avant. Une quantité peut être COD, notamment avec perdre, dépenser ou passer.\nDans cette phrase : 1. Dans « la montée au chalet nous a pris trois heures », le participe pris est employé avec l’auxiliaire avoir. La montée a pris quoi ? Trois heures : ce groupe est le COD, placé après pris. Nous indique à qui la montée a pris ce temps ; il ne commande aucun accord. Ici, l’invariabilité résulte de la position du COD après le participe. Le fait que ce COD exprime une durée ne suffit pas, à lui seul, à décider de l’accord.\n2. Dans `nous somme bien arrivés`, nous exige la première personne du pluriel du verbe être : sommes. Arrivés est bien une forme plurielle du participe employé avec être, mais la forme de l’auxiliaire doit être corrigée.\n3. Le sujet « les enfants » correspond à ils. Le verbe pronominal se coucher est ici au présent et doit prendre la troisième personne du pluriel : `se couche` doit devenir « se couchent ».\n4. Dans `la fromagerie ou est fabriqué le gruyère`, le mot attendu reprend le lieu : on fabrique le gruyère dans la fromagerie. Il faut le relatif où, avec accent. Ou, sans accent, sert à présenter une alternative.\nDonc : seule la phrase 1 est correctement écrite. La réponse est 1.",
     "why": {
-      "1": "Correcte : « nous a pris trois heures » — durée placée après, participe invariable, rien n'accroche.",
-      "2": "« nous somme » : la 1re personne du pluriel s'écrit sommes.",
-      "3": "« les enfants se couche » : le sujet pluriel exige couchent.",
-      "4": "« la fromagerie ou est fabriqué » : le lieu s'écrit où, avec accent.",
-      "A": "Il existe bien une phrase correcte : la 1.",
-      "T": "Les phrases 2, 3 et 4 contiennent chacune une faute."
+      "1": "Pris est employé avec avoir. À la question « la montée a pris quoi ? », la réponse « trois heures » vient après le participe ; nous est un complément indirect. Aucun COD placé avant ne commande donc d’accord.",
+      "2": "`nous somme` ne porte pas la forme de l’auxiliaire à la première personne du pluriel. Il faut « nous sommes bien arrivés ».",
+      "3": "`les enfants se couche` emploie une forme singulière avec un sujet pluriel. Au présent, « les enfants » correspond à ils : il faut « les enfants se couchent ».",
+      "4": "`ou est fabriqué` emploie la conjonction ou alors que le mot reprend un lieu. La forme attendue est « où est fabriqué le gruyère ».",
+      "A": "Une phrase est correcte : la 1. Le comptage ne permet donc pas de choisir « Aucune ».",
+      "T": "Les phrases 2, 3 et 4 comportent chacune une faute ; seule la 1 est correcte. « Toutes » exigerait quatre phrases correctes."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -84278,8 +84752,18 @@ const QUESTIONS = [
           "detail_id": "core",
           "tense_id": null
         }
-      ]
-    }
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T14:05:57Z"
+        }
+      }
+    },
+    "progress_revision": 1
   },
   {
     "id": "mode-L75-4",
@@ -85269,7 +85753,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Quatre phrases de la chronique du tournoi de jass intergénérationnel. Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -85297,14 +85781,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Règle : avec « avoir », le participe reste invariable quand le complément d'objet direct (COD) est placé après (ont affronté LES élèves ; avait prévu UNE finale ; ont reçu UN panier) ; « s'enchaîner » s'accorde avec le sujet (les parties enchaînées). Dans ces phrases : chaque accord est correct. Donc : les quatre sont correctes — réponse T (Toutes).",
+    "explanation": "Règle : Avec l’auxiliaire avoir, le sujet ne commande pas l’accord. Le participe passé s’accorde seulement avec un COD placé avant lui ; si le COD est placé après ou s’il n’y en a pas, le participe reste invariable.\nMéthode : 1. Repère l’auxiliaire et vérifie qu’il s’agit bien de l’auxiliaire avoir. 2. Cherche le COD en posant la question qui ? ou quoi ? après le verbe. 3. Regarde si ce COD est placé avant le participe passé. 4. Accorde seulement avec un COD placé avant ; sinon, garde le participe invariable.\nDans cette phrase : on examine séparément les quatre propositions. 1. « Ont affronté » est construit avec l’auxiliaire avoir. Les aînés ont affronté qui ? « Les élèves de 11e ». Ce COD est placé après le participe : « affronté » reste invariable. 2. « Se sont enchaînées » est un emploi pronominal autonome : les parties se sont succédé, et « se » n’a pas de fonction COD ou COI distincte. Le sujet « les parties » est féminin pluriel ; le participe prend donc la forme « enchaînées ». 3. Dans « n’avait prévu », l’auxiliaire est avoir. Personne n’avait prévu quoi ? « Une finale aussi disputée ». Le COD suit le participe, d’où « prévu » sans accord. « Disputée », employé comme adjectif sans auxiliaire, décrit « une finale », féminin singulier. 4. Dans « ont reçu », les gagnants ont reçu quoi ? « Un panier garni de produits du terroir ». Ce COD suit le participe employé avec avoir, qui reste « reçu ». Le participe « garni », sans auxiliaire, décrit « un panier », masculin singulier ; « de produits du terroir » ne change pas ce donneur d’accord.\nDonc : les quatre propositions respectent les accords attendus. La réponse est T (« Toutes »).",
     "why": {
-      "1": "Correcte : COD « les élèves » après le verbe → affronté invariable.",
-      "2": "Correcte : « s'enchaîner » s'accorde avec « les parties » → enchaînées.",
-      "3": "Correcte : « personne ne » + singulier, COD après → prévu invariable.",
-      "4": "Correcte : COD « un panier » après → reçu invariable ; « garni » s'accorde avec panier.",
-      "A": "Impossible : chacune des quatre phrases résiste à la vérification.",
-      "T": "Correct : quatre accords justes, entre invariabilité et accord au sujet."
+      "1": "Le COD de « ont affronté » est « les élèves de 11e », placé après le participe. Avec l’auxiliaire avoir, cette position impose « affronté » sans marque de pluriel.",
+      "2": "« S’enchaîner » signifie ici se succéder : c’est un emploi pronominal autonome. L’accord avec le sujet féminin pluriel « les parties » explique la terminaison de « enchaînées ».",
+      "3": "« Une finale aussi disputée » répond à « personne n’avait prévu quoi ? » et suit le participe : « prévu » reste invariable. À l’intérieur de ce groupe, « disputée » décrit le nom féminin singulier « finale ».",
+      "4": "« Un panier » est le COD placé après « ont reçu », d’où « reçu » invariable. « Garni » est employé sans auxiliaire et se rapporte à « panier », masculin singulier, même si « produits » est pluriel.",
+      "A": "Les quatre propositions sont correctes ; A supposerait qu’aucune ne le soit.",
+      "T": "Les propositions 1, 3 et 4 placent leur COD après le participe employé avec avoir ; la proposition 2 accorde le pronominal avec « les parties ». Les participes adjectivaux suivent également leur nom : les quatre propositions sont correctes."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -85325,8 +85809,18 @@ const QUESTIONS = [
           "detail_id": "core",
           "tense_id": null
         }
-      ]
-    }
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T05:25:43Z"
+        }
+      }
+    },
+    "progress_revision": 1
   },
   {
     "id": "mode-L77-4",
@@ -85365,14 +85859,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Règle : « il suffit que » présente une condition minimale envisagée, pas un fait : la subordonnée se met au subjonctif. Le subjonctif de « faire » est « que je fasse, qu'il fasse ». Dans cette phrase : « il suffit qu'un seul répondant ___ opposition » → fasse. Donc : option 1.",
+    "explanation": "Règle : Une obligation, une nécessité ou un jugement d’importance suivi de que appelle normalement le subjonctif.\nMéthode : 1. Repère la construction qui introduit la proposition. 2. Vérifie le sens et le mode réellement imposé ou permis par cette construction. 3. Choisis l’indicatif lorsque la construction présente ici le fait comme constaté, ou le subjonctif lorsqu’elle l’exige pour un fait voulu, évalué ou non affirmé. 4. Conjugue ensuite le verbe au temps et à la personne demandés.\nDans cette phrase : distingue les deux constructions introduisant une proposition. D’abord, « Il suffit qu’un seul répondant légal… » présente une seule opposition comme suffisante pour empêcher la publication ; « il suffit que » demande le subjonctif. Le sujet « un seul répondant légal » correspond à « il ». Le présent du subjonctif de faire à cette personne est « fasse » : « qu’un seul répondant légal fasse opposition ». Ensuite, dans la construction « il suffit que… pour que… », la proposition introduite par « pour que » exprime la conséquence de cette condition suffisante : l’opposition d’un seul répondant légal entraîne la non-publication de la photo. Elle n’exprime pas un but recherché. La forme déjà donnée « ne soit pas publiée » est au subjonctif : « soit » est le présent du subjonctif du verbe être à la troisième personne du singulier, avec pour sujet « la photo de classe ». Chaque proposition reçoit ainsi le mode demandé par sa propre construction.\nDonc : choisis l’option 1, « fasse ».",
     "why": {
-      "1": "Correct : il suffit que + subjonctif → fasse.",
-      "2": "« fera » (futur) présenterait l'opposition comme certaine, alors qu'elle n'est qu'envisagée.",
-      "3": "« fait » (indicatif présent) décrirait un fait réel, pas une éventualité suffisante.",
-      "4": "« ferait » (conditionnel) ne remplace pas le subjonctif exigé.",
-      "A": "Il existe bien une option correcte : la 1.",
-      "T": "Les options 2, 3 et 4 emploient un mode que la tournure n'admet pas."
+      "1": "« fasse » est le présent du subjonctif de faire à la troisième personne du singulier. Il correspond à « un seul répondant légal » et au mode demandé par « Il suffit que ».",
+      "2": "« `fera` » est un futur de l’indicatif. Une opposition éventuellement à venir reste soumise au régime de « Il suffit que » : il faut « fasse ».",
+      "3": "« `fait` » est le présent de l’indicatif pour « il ». La construction « Il suffit que » exige ici la forme du subjonctif, « fasse ».",
+      "4": "« `ferait` » est un conditionnel présent. Le caractère envisagé de l’opposition ne permet pas de remplacer le subjonctif demandé par « Il suffit que » : il faut « fasse ».",
+      "A": "Une réponse chiffrée convient, la 1. « Aucune » est donc exclue.",
+      "T": "L’option 1 est la seule qui convient ; les trois autres échouent. « Toutes » est donc exclue."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -85385,8 +85879,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T14:12:03Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "rel-L77-5",
@@ -85887,7 +86391,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Quatre phrases du bilan de la semaine théâtre rédigé par la classe. Quelle phrase est correctement écrite ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -85915,14 +86419,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : le COD antéposé commande l'accord (les décors que nous avons peints) ; l'attribut s'accorde avec le sujet (costumes magnifiques) ; « chacun » commande le singulier (chacun a appris). Dans ces phrases : « peint » → peints ; « magnifique » → magnifiques ; « chacun ont » → chacun a. La phrase 4 n'a aucune faute. Donc : option 4.",
+    "explanation": "Règle : Les emplois pronominaux autonomes ou passifs relevant de cette règle, ainsi que la plupart des essentiellement pronominaux, accordent leur participe avec le sujet. Vérifie l’emploi précis et les exceptions : s’arroger s’accorde avec son COD placé avant, non automatiquement avec le sujet.\nMéthode : 1. Identifie l’emploi pronominal précis et vérifie qu’il relève de l’accord avec le sujet. 2. Dans les emplois autonomes ou passifs relevant de cette règle, se n’est pas un COD ou un COI donneur d’accord. 3. Pour les essentiellement pronominaux, vérifie les exceptions : s’arroger suit l’accord avec le COD placé avant. 4. Lorsque l’accord avec le sujet s’applique, relève son genre et son nombre et accorde le participe.\nDans cette phrase : les quatre propositions demandent des analyses différentes. En 1, `avons peint` contient l’auxiliaire avoir. Nous avons peint quoi ? Les décors, repris par le COD « que », placé avant le participe. « Décors » est masculin pluriel : il faut « peints ». En 2, l’adjectif `magnifique` décrit « les costumes », masculin pluriel, par l’intermédiaire du verbe être : il faut « magnifiques ». En 3, le sujet de `ont appris` est « chacun », grammaticalement singulier : l’auxiliaire doit être « a ». En 4, « s’est produite » est un pronominal autonome : « se produire » signifie ici présenter un spectacle, et « se » n’a pas de fonction COD ou COI distincte. Cet emploi commande l’accord avec le sujet « la troupe », féminin singulier. La terminaison de « produite » correspond donc au sujet.\nDonc : la phrase 4 est la seule correctement écrite.",
     "why": {
-      "1": "« avons peint » : le COD « que » (= les décors) précède le verbe → peints.",
-      "2": "« étaient magnifique » : l'attribut s'accorde avec « les costumes » → magnifiques.",
-      "3": "« chacun ont appris » : « chacun » exige le singulier → a appris.",
-      "4": "Correcte : « se produire » s'accorde avec « la troupe » ; le reste est sans faute.",
-      "A": "Il existe bien une phrase correcte : la 4.",
-      "T": "Les phrases 1, 2 et 3 fautent sur l'accord du participe, de l'attribut ou du verbe."
+      "1": "Le participe `peint` ne porte pas le pluriel du COD placé avant lui : « que » reprend « les décors ». Avec l’auxiliaire avoir, ce COD masculin pluriel impose « avons peints ».",
+      "2": "L’adjectif `magnifique` se rapporte à « les costumes », et non à « budget ». Ce nom masculin pluriel exige « étaient magnifiques ».",
+      "3": "Dans `Chacun ont appris`, l’auxiliaire est au pluriel alors que « chacun » commande la troisième personne du singulier. La forme attendue est « Chacun a appris ».",
+      "4": "« Se produire » désigne ici la prestation de la troupe : c’est un emploi pronominal autonome qui s’accorde avec le sujet. « La troupe » étant féminin singulier, « s’est produite » porte les marques attendues.",
+      "A": "Une phrase sur quatre est correcte : la 4. Le nombre de phrases correctes n’est donc pas zéro.",
+      "T": "Trois phrases sur quatre comportent une erreur : les 1, 2 et 3. Les quatre phrases ne sont donc pas toutes correctes."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -85949,8 +86453,18 @@ const QUESTIONS = [
           "detail_id": "core",
           "tense_id": null
         }
-      ]
-    }
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T14:09:01Z"
+        }
+      }
+    },
+    "progress_revision": 1
   },
   {
     "id": "mode-L78-4",
@@ -87108,14 +87622,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Règle : « de manière à ce que » exprime un but : la subordonnée se met au subjonctif. Le subjonctif de « pouvoir » est « qu'il puisse ». Dans cette phrase : « de manière à ce que chacun ___ le lire » → puisse. Donc : option 2.",
+    "explanation": "Règle : Pour que, afin que, de peur que et de crainte que introduisent un but ou une crainte et commandent le subjonctif.\nMéthode : 1. Repère la construction qui introduit la proposition. 2. Vérifie le sens et le mode réellement imposé ou permis par cette construction. 3. Choisis l’indicatif lorsque la construction présente ici le fait comme constaté, ou le subjonctif lorsqu’elle l’exige pour un fait voulu, évalué ou non affirmé. 4. Conjugue ensuite le verbe au temps et à la personne demandés.\nDans cette phrase : La construction « de manière à ce que » introduit le but de l'affichage en grand format : permettre la lecture depuis le fond de la salle. Cette construction demande ici le subjonctif. Le présent « est affiché » décrit le règlement dans la proposition principale ; il ne commande pas un présent de l'indicatif dans la proposition de but. Le verbe à compléter est « pouvoir », suivi de « le lire ». Son sujet, « chacun », est singulier et demande la troisième personne du singulier. Au subjonctif présent, « pouvoir » donne « qu'il puisse » : « de manière à ce que chacun puisse le lire ».\nDonc : La forme à retenir est « puisse », réponse 2.",
     "why": {
-      "1": "« pourra » (futur) présenterait la lecture comme certaine, non comme un but visé.",
-      "2": "Correct : de manière à ce que + subjonctif → puisse.",
-      "3": "« peut » (indicatif présent) décrirait un fait, pas un but.",
-      "4": "« pourrait » (conditionnel) ne remplace pas le subjonctif exigé.",
-      "A": "Il existe bien une option correcte : la 2.",
-      "T": "Les options 1, 3 et 4 emploient un mode que la locution de but n'admet pas."
+      "1": "La forme `pourra` est au futur de l'indicatif. Situer la lecture après l'affichage ne suffit pas à choisir ce temps : la construction de but demande ici le subjonctif, donc « puisse ».",
+      "2": "« Puisse » est le subjonctif présent de « pouvoir » à la troisième personne du singulier. Il convient à la construction de but et au sujet singulier « chacun », puis se combine avec l'infinitif « lire ».",
+      "3": "La forme `peut` est au présent de l'indicatif. Le présent de « est affiché » ne détermine pas le mode de la proposition introduite par « de manière à ce que » : il faut « puisse ».",
+      "4": "La forme `pourrait` est au conditionnel présent. La possibilité de lire exprimée par « pouvoir » ne dispense pas de respecter le subjonctif demandé par la construction de but : la forme attendue est « puisse ».",
+      "A": "Une option est correcte, la 2 : « Aucune » ne convient pas.",
+      "T": "Trois formes ne conviennent pas et une seule convient : « Toutes » est exclu."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -87128,8 +87642,18 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:23:16Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "rel-L80-5",
@@ -87502,7 +88026,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Quatre phrases du compte rendu de la sortie au marché rédigé par la classe. Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -87530,14 +88054,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Règle : après « faire/expliquer », le complément suit sans accord (expliqué comment…) ; le COD antéposé commande l'accord (que… avons remplis) ; « se régaler » s'accorde avec le sujet (régalés) ; « chacun » commande le singulier (est reparti). Dans ces phrases : chaque forme est correcte. Donc : les quatre sont correctes — réponse T (Toutes).",
+    "explanation": "Règle : Avec avoir, identifie le COD antéposé et accorde le participe avec son genre et son nombre.\nMéthode : 1. Repère l’auxiliaire avoir et le participe passé. 2. Trouve le COD en posant la question qui ? ou quoi ? après le verbe. 3. Vérifie que ce COD est placé avant le participe passé. 4. Accorde le participe avec le genre et le nombre de ce COD.\nDans cette phrase : on distingue les quatre constructions. 1. Dans « nous a expliqué », l’auxiliaire est avoir. La marchande a expliqué à qui ? À nous : « nous » est COI. Elle a expliqué quoi ? « Comment reconnaître un fruit mûr ». Ce complément suit le participe ; aucun COD ne le précède, donc « expliqué » reste invariable. 2. Dans « que nous avons remplis », l’auxiliaire est avoir. Nous avons rempli quoi ? Les paniers, repris par « que ». Ce COD masculin pluriel est placé avant le participe : « rempli » devient « remplis ». 3. « Nous nous sommes régalés » est un emploi pronominal autonome : « se régaler » signifie ici prendre plaisir à manger, et le second « nous » n’a pas de fonction COD ou COI distincte. L’accord se fait avec le sujet « nous », ici au masculin pluriel : « régalés ». 4. « Est reparti » est un temps composé non pronominal construit avec l’auxiliaire être. Qui est reparti ? « Chacun », sujet masculin singulier. Le participe prend donc le masculin singulier : « reparti ». « Avec un sachet de graines » ne change pas le sujet donneur d’accord.\nDonc : les quatre propositions présentent les formes attendues. La réponse est T (« Toutes »).",
     "why": {
-      "1": "Correcte : le COD (« comment reconnaître… ») suit le verbe → expliqué invariable.",
-      "2": "Correcte : COD « que » (= les paniers) antéposé → remplis.",
-      "3": "Correcte : « se régaler » s'accorde avec le sujet « nous » → régalés.",
-      "4": "Correcte : « chacun » + singulier (est reparti), et « à planter » à l'infinitif.",
-      "A": "Impossible : chacune des quatre phrases résiste à la vérification.",
-      "T": "Correct : quatre points différents, tous bien traités."
+      "1": "« Nous » est COI dans « nous a expliqué », puisqu’il signifie « à nous ». Le contenu expliqué, « comment reconnaître un fruit mûr », est placé après le participe employé avec avoir : « expliqué » reste invariable.",
+      "2": "Le COD « que » reprend « les paniers » et précède « avons remplis ». Le masculin pluriel de ce COD commande la forme « remplis ».",
+      "3": "« Se régaler » est ici un emploi pronominal autonome, avec le sens de prendre plaisir à manger. Son participe s’accorde avec le sujet « nous », au masculin pluriel dans la phrase : « régalés ».",
+      "4": "« Est reparti » emploie l’auxiliaire être dans un temps composé non pronominal. Son sujet « chacun » est masculin singulier : cette combinaison explique « est » au singulier et « reparti » sans marque de féminin ou de pluriel.",
+      "A": "Quatre propositions sont correctes ; A ne correspond pas à ce total.",
+      "T": "La proposition 1 ne présente aucun COD avant « expliqué » ; la 2 en présente un avant « remplis » ; la 3 relève de l’accord du pronominal autonome ; la 4 relève de l’accord avec le sujet après être. Chacune satisfait sa construction : la réponse est T."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -87570,8 +88094,18 @@ const QUESTIONS = [
           "detail_id": "core",
           "tense_id": null
         }
-      ]
-    }
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T05:25:43Z"
+        }
+      }
+    },
+    "progress_revision": 1
   },
   {
     "id": "mode-L81-4",
@@ -87610,14 +88144,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : « encore faut-il que » exprime une condition nécessaire, présentée comme non encore réalisée : la subordonnée se met au subjonctif. Dans cette phrase : « encore faut-il que le local ___ vidé » → soit. Donc : option 4.",
+    "explanation": "Règle : Une obligation, une nécessité ou un jugement d’importance suivi de que appelle normalement le subjonctif.\nMéthode : 1. Repère la construction qui introduit la proposition. 2. Vérifie le sens et le mode réellement imposé ou permis par cette construction. 3. Choisis l’indicatif lorsque la construction présente ici le fait comme constaté, ou le subjonctif lorsqu’elle l’exige pour un fait voulu, évalué ou non affirmé. 4. Conjugue ensuite le verbe au temps et à la personne demandés.\nDans cette phrase : repère « Encore faut-il que », qui reprend la construction « il faut que » en plaçant « il » après le verbe. Le vidage du local est présenté comme une condition nécessaire avant l’arrivée des nouveaux pupitres. Cette construction exige le subjonctif dans la proposition introduite par « que ». Le sujet « le local de rangement » correspond à « il » ; le présent du subjonctif du verbe être est donc « soit ». On obtient « que le local de rangement soit vidé ». Le repère « avant l’arrivée des nouveaux pupitres » précise le délai sans changer le mode demandé.\nDonc : choisis l’option 4, « soit ».",
     "why": {
-      "1": "« sera » (futur) présenterait le vidage comme certain, alors qu'il est posé en condition.",
-      "2": "« est » (indicatif présent) décrirait un état acquis.",
-      "3": "« serait » (conditionnel) ne remplace pas le subjonctif exigé.",
-      "4": "Correct : encore faut-il que + subjonctif → soit vidé.",
-      "A": "Il existe bien une option correcte : la 4.",
-      "T": "Les options 1, 2 et 3 emploient un mode que la tournure n'admet pas."
+      "1": "« `sera` » est un futur de l’indicatif. Le délai fixé avant l’arrivée des pupitres ne remplace pas le subjonctif exigé par « Encore faut-il que » : il faut « soit ».",
+      "2": "« `est` » est un présent de l’indicatif. La construction reste « il faut que », malgré l’ordre « faut-il », et demande ici le subjonctif « soit ».",
+      "3": "« `serait` » est un conditionnel présent. Présenter le vidage comme une condition nécessaire avec « Encore faut-il que » impose ici le subjonctif : il faut « soit ».",
+      "4": "« soit » est le présent du subjonctif du verbe être à la troisième personne du singulier. Il correspond au sujet « le local de rangement » et au régime de « Encore faut-il que ».",
+      "A": "L’option 4 donne une réponse correcte. « Aucune » est exclue.",
+      "T": "Une seule option chiffrée convient, la 4 ; les trois autres échouent. « Toutes » est exclue."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -87630,8 +88164,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:57:00Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "rel-L81-5",
@@ -87739,14 +88283,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Règle : « tenir À quelque chose » (= y être attaché) se construit avec « à » ; la chose se reprend par « y » : elle y tient. Dans cette phrase : tenir À cette photo → elle y tient plus qu'à tout. Donc : option 1.",
+    "explanation": "Règle : Y reprend généralement un lieu ou un complément de chose introduit par à.\nMéthode : 1. Repère le mot ou le groupe repris par le pronom. 2. Trouve la fonction du pronom dans la nouvelle phrase. 3. Choisis la forme correspondant à cette fonction et à la préposition éventuelle. 4. Vérifie sa place et les accords nécessaires.\nDans cette phrase : Le pronom à choisir reprend « cette vieille photo de classe ». La comparaison « plus qu'à tout » indique le sens de « tenir » : la retraitée est attachée à cette photo. On reconstruit donc « la retraitée tient à cette vieille photo de classe », et non une phrase où elle la tient dans ses mains. Le complément de chose introduit par « à » se reprend par « y », devant « tient ». Le second « y », dans « elle y reconnaît sa première volée », renvoie aussi à la photo, mais signifie cette fois « sur cette photo » ; chaque pronom a sa fonction dans sa propre proposition.\nDonc : On écrit « la retraitée y tient plus qu'à tout », réponse 1.",
     "why": {
-      "1": "Correct : tenir à → elle y tient (reprise du complément en « à »).",
-      "2": "« en tient » : « en » reprend un complément en « de », or « tenir » exige ici « à ».",
-      "3": "« la tient » : « la » serait un complément direct (tenir la photo dans la main), pas « y être attaché ».",
-      "4": "« lui tient » : « lui » désigne une personne destinataire, pas une chose à laquelle on tient.",
-      "A": "Il existe bien une option correcte : la 1.",
-      "T": "Une seule option reprend le complément en « à »."
+      "1": "« Y » reprend « à cette vieille photo de classe ». Il conserve le sens d'attachement de « tenir à », confirmé par la comparaison « plus qu'à tout ».",
+      "2": "Le choix `en` ferait chercher un complément en « de ». « De classe » précise le nom « photo », mais le verbe se construit ici avec « à cette photo » : il faut « y ».",
+      "3": "Le choix `la` donnerait à « tenir » un COD/CVD et évoquerait le fait de tenir la photo matériellement. La comparaison « plus qu'à tout » demande ici le sens d'attachement, construit avec « à » : la forme attendue est « y ».",
+      "4": "Le choix `lui` ne reprend pas cette photo dans la construction « tenir à quelque chose ». Le référent est une chose à laquelle la retraitée est attachée : il faut « y ».",
+      "A": "L'option 1 convient : il existe une réponse correcte.",
+      "T": "Une seule des quatre reprises convient dans ce sens : « Toutes » ne convient pas."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -87759,8 +88303,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:23:16Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "part-L81-7",
@@ -87892,7 +88446,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "stem": "La direction s'est montrée résolue ___ maintenir la course d'école malgré les prévisions incertaines.",
+    "stem": "Complétez avec la préposition qui relie l’adjectif « résolue », au sens de « décidée », à l’infinitif précisant la décision prise : la direction s’est montrée résolue ___ maintenir la course d’école malgré les prévisions incertaines.",
     "options": [
       {
         "key": "1",
@@ -87920,14 +88474,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : l'adjectif « résolu » (au sens de décidé) se construit avec « à » : résolu À faire quelque chose. Dans cette phrase : résolue ___ maintenir la course → à. Donc : option 4.",
+    "explanation": "Règle : Repère l’adjectif recteur, puis conserve la préposition imposée par sa construction.\nMéthode : 1. Repère le mot qui commande le complément. 2. Reconstitue sa construction habituelle avec ce complément. 3. Choisis la préposition exigée par cette construction. 4. Applique la contraction nécessaire, puis relis l’ensemble.\nDans cette phrase : L’infinitif « maintenir la course d’école » doit compléter l’adjectif « résolue », au sens de « décidée », et préciser la décision prise. Cette construction est « résolue à maintenir ». « De » et « en » ne restituent pas ce régime. « Pour maintenir » pourrait exprimer le but de l’action de se montrer résolue, mais ne fournirait pas le complément de l’adjectif demandé. Aucune contraction n’est nécessaire devant l’infinitif.\nDonc : La réponse est 4, « à ».",
     "why": {
-      "1": "« résolue de maintenir » : l'adjectif « résolu » régit « à » (le verbe « se résoudre » prend « à » aussi).",
-      "2": "« résolue pour maintenir » : « pour » exprimerait un but externe, pas le régime de l'adjectif.",
-      "3": "« résolue en maintenir » : construction inexistante.",
-      "4": "Correct : résolu À → résolue à maintenir la course.",
-      "A": "Il existe bien une option correcte : la 4.",
-      "T": "Une seule option restitue le régime de l'adjectif."
+      "1": "« De maintenir » ne restitue pas la construction de l’adjectif « résolue » au sens de « décidée à faire quelque chose ».",
+      "2": "« Pour maintenir » peut exprimer le but de l’action de se montrer résolue ; l’énoncé demande toutefois la préposition du complément de l’adjectif.",
+      "3": "« En maintenir » ne constitue pas le complément infinitif de « résolue » dans le sens demandé.",
+      "4": "« Résolue à maintenir » précise la décision prise et respecte la construction de l’adjectif.",
+      "A": "« Aucune » est exclu : l’option 4 fournit la préposition exigée pour le complément demandé.",
+      "T": "« Toutes » est exclu : « de » et « en » ne restituent pas le régime demandé, et « pour » introduirait un but de la proposition."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -87941,7 +88495,8 @@ const QUESTIONS = [
         "3": "UNK",
         "4": null
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "adv-L81-10",
@@ -87980,14 +88535,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Règle : l'adjectif verbal décrit une caractéristique et s'accorde avec le nom : « un montant équivalent ». Le participe présent exprime l'action du verbe, garde son complément et reste invariable : « équivalant presque au budget ». Donc : « équivalent / équivalant », option 3.",
+    "explanation": "Règle : Lorsque la syntaxe établit que la forme conserve le fonctionnement du verbe, elle est un participe présent et reste invariable. Un complément prépositionnel peut aussi dépendre d’un adjectif : sa seule présence ne suffit pas.\nMéthode : 1. Observe la forme à distinguer dans toute la phrase. 2. Vérifie si elle fonctionne comme un adjectif ou comme un verbe, notamment dans un gérondif ou une proposition participiale. 3. Croise les indices : variation au féminin, négation verbale et construction des compléments. Le seul sens d’action ou un complément prépositionnel ne suffit pas. 4. Accorde l’adjectif verbal avec le nom auquel il se rapporte ; garde le participe présent invariable et vérifie la graphie.\nDans cette phrase : au premier blanc, la forme caractérise « montant », et non « offres ». Le remplacement par « comparable » et le test féminin « une somme équivalente » établissent l’emploi adjectival. Avec « montant », masculin singulier, on écrit « équivalent ». Au second blanc, le groupe détaché se rapporte aux deux offres, reprises par « elles ». On peut le développer en « comme elles équivalent presque au budget disponible » : « au budget disponible » complète alors le verbe « équivaloir à ». Le test d’accord confirme le choix entre les formes proposées : un adjectif lié à « elles » serait féminin pluriel, « équivalentes », et ne pourrait pas rester « équivalent ». La construction verbale demande donc le participe présent invariable « équivalant ». La présence de « à » seule ne suffirait pas à trancher.\nDonc : la réponse attendue est l’option 3, « équivalent / équivalant ».",
     "why": {
-      "1": "Les deux formes sont inversées : l'adjectif en -ent, le participe en -ant.",
-      "2": "« un montant équivalant » emploie le participe à la place de l'adjectif : il faut « un montant équivalent ».",
-      "3": "Correct : adjectif « équivalent » avec « montant », puis participe présent invariable « équivalant » avec son complément.",
-      "4": "« équivalent presque au budget » emploie l'adjectif là où le verbe « équivaloir à » appelle le participe présent « équivalant ».",
-      "A": "Il existe bien une option correcte : la 3.",
-      "T": "Les options 1, 2 et 4 confondent l'adjectif et le participe."
+      "1": "Les deux blancs échouent : `d’un montant équivalant` demande l’adjectif masculin singulier « équivalent » ; au second blanc, `équivalent presque au budget` ne fournit pas le participe présent attendu, « équivalant ».",
+      "2": "Le second « équivalant » conserve la construction du verbe et son invariabilité. Au premier blanc, `d’un montant équivalant` utilise toutefois la graphie verbale pour caractériser le nom : il faut « d’un montant équivalent ».",
+      "3": "« Équivalent » s’accorde avec « montant », masculin singulier. « Équivalant » correspond ensuite à « elles équivalent presque au budget disponible » et reste invariable comme participe présent.",
+      "4": "Le premier « équivalent » convient. Au second blanc, `équivalent` ne peut pas être l’adjectif accordé avec les offres, qui serait « équivalentes » ; la construction verbale attendue exige le participe présent « équivalant ».",
+      "A": "Une combinaison est entièrement correcte, la 3 ; « Aucune » est écarté.",
+      "T": "Une combinaison sur quatre convient aux deux blancs ; trois comportent une erreur."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -88000,8 +88555,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T05:39:18Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "orth-L82-2",
@@ -88234,14 +88799,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "A",
-    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : remettons l’antécédent dans la proposition relative : « les deux services se sont adressés au médiateur ». La construction est `s’adresser à quelqu’un` : elle impose donc la préposition `à`. Avec l’antécédent masculin singulier `le médiateur`, `à` + `lequel` donne `auquel`. Or aucune des quatre options ne propose `auquel`.\nDonc : la réponse attendue est A, « Aucune ».",
+    "explanation": "Règle : Le pronom relatif se choisit d’après sa fonction, son antécédent et la préposition exigée par la construction. Avec un antécédent non humain, si l’on emploie une forme de lequel après à, on choisit auquel, à laquelle, auxquels ou auxquelles.\nMéthode : 1. Remets l’antécédent dans une phrase simple. 2. Relève la préposition exigée par la construction. 3. Vérifie qu’une forme de lequel convient à cet antécédent. 4. Accorde lequel avec l’antécédent et applique, si nécessaire, la contraction à + lequel = auquel.\nDans cette phrase : « le médiateur » est l’antécédent à reprendre. On reconstruit la relative : « Les deux services se sont adressés au médiateur. » Le verbe se construit avec « à » : les services se sont adressés à cette personne. Comme l’antécédent désigne une personne, « à qui » convient ; on peut également employer « auquel », formé de « à » et de « lequel » au masculin singulier. Examinons les propositions : « dont » et « duquel » introduisent « de » ; « que » reprendrait un COD sans préposition ; « pour lequel » introduit « pour ». Aucune ne conserve le « à » nécessaire dans cette phrase.\nDonc : la réponse est A, « Aucune » ; il faudrait « à qui » ou « auquel ».",
     "why": {
-      "1": "`dont` reprendrait un complément introduit par `de`, mais on dit `s’adresser au médiateur`, avec `à` ; il faudrait `auquel`.",
-      "2": "`que` ferait de `le médiateur` un COD, alors que `s’adresser` exige un complément introduit par `à` ; il faudrait `auquel`.",
-      "3": "`duquel` contient la contraction `de` + `lequel`, incompatible avec `s’adresser à` ; il faudrait `auquel`.",
-      "4": "`pour lequel` introduit `pour`, que la construction `s’adresser à quelqu’un` n’autorise pas ici ; il faudrait `auquel`.",
-      "A": "Aucune option ne convient : les options 1 et 3 introduisent `de`, l’option 2 supprime la préposition et l’option 4 introduit `pour`, alors que la phrase exige `auquel`.",
-      "T": "Zéro option sur quatre est correcte ; « Toutes » ne peut donc pas être la réponse."
+      "1": "Dans `dont les deux services se sont adressés`, « dont » représente un complément en « de ». Les services se sont adressés à cette personne : il faut « à qui les deux services se sont adressés » ou « auquel les deux services se sont adressés ».",
+      "2": "Dans `que les deux services se sont adressés`, « que » donnerait au médiateur la fonction de COD. Or « s’adresser à quelqu’un » exige la préposition « à » : la forme attendue est « à qui » ou « auquel ».",
+      "3": "Dans `duquel les deux services se sont adressés`, « duquel » contient « de » suivi de « lequel ». La construction exige « à », ce qui donne « auquel » ; « à qui » convient aussi pour cette personne.",
+      "4": "Dans `pour lequel les deux services se sont adressés`, « pour » ne marque pas le destinataire exigé par « s’adresser à ». Pour reprendre le médiateur auquel les services ont parlé, il faut « à qui » ou « auquel ».",
+      "A": "Aucune des quatre options ne conserve la construction « s’adresser à » : les options 1 et 3 introduisent « de », la 2 ne porte aucune préposition et la 4 introduit « pour ». Les formes attendues, « à qui » et « auquel », ne sont pas proposées.",
+      "T": "Zéro option sur quatre convient ; « Toutes » demanderait que les quatre conviennent."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -88256,15 +88821,16 @@ const QUESTIONS = [
         "4": "UNK"
       },
       "remediation": {
-        "batch_id": "hep-rem-20260812-0001",
+        "batch_id": "hep-rem-20261002-6872",
         "feedback_provenance": {
-          "model": "gpt-5.6-sol",
+          "model": "gpt-6.1-sol",
           "reasoning": "high",
           "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
-          "generated_at": "2026-08-12T07:52:04Z"
+          "generated_at": "2026-10-03T10:11:47Z"
         }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "pro-L82-6",
@@ -89147,7 +89713,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Quatre phrases du mot de remerciement de la classe à la commune. Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -89175,14 +89741,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Règle : le COD antéposé commande l'accord (les efforts que… a fournis) ; « chaque membre » + singulier ; « se sentir » s'accorde avec le sujet (sentis) ; l'épithète s'accorde (moments partagés). Dans ces phrases : chaque forme est correcte. Donc : les quatre sont correctes — réponse T (Toutes).",
+    "explanation": "Règle : Avec avoir, identifie le COD antéposé et accorde le participe avec son genre et son nombre.\nMéthode : 1. Repère l’auxiliaire avoir et le participe passé. 2. Trouve le COD en posant la question qui ? ou quoi ? après le verbe. 3. Vérifie que ce COD est placé avant le participe passé. 4. Accorde le participe avec le genre et le nombre de ce COD.\nDans cette phrase : il faut examiner tous les participes, même lorsqu’une proposition en contient plusieurs. 1. Dans « a fournis », l’auxiliaire est avoir. La voirie a fourni quoi ? Les efforts, repris par « que », COD placé avant le participe. Leur masculin pluriel donne « fournis ». Dans « nous ont beaucoup facilité la tâche », on a facilité quoi ? « La tâche », COD placé après. « Nous » répond à « à qui ? » et est COI : « facilité » reste donc invariable. 2. Dans « a reçu », l’auxiliaire est avoir. Chaque membre a reçu quoi ? « Une carte signée de notre main », COD placé après : « reçu » ne varie pas. « Signée », sans auxiliaire, décrit « une carte », féminin singulier, et s’accorde avec ce nom. 3. « Nous nous sommes sentis soutenus » est un pronominal réfléchi : nous avons senti qui dans cet état ? Nous-mêmes. Le second « nous » est COD placé avant le participe et impose ici le masculin pluriel de « sentis ». « Soutenus », employé comme adjectif pour décrire l’état de ces mêmes personnes, prend également le masculin pluriel. 4. « Partagés » est un participe sans auxiliaire qui décrit « les moments », masculin pluriel. « Gravés » décrit aussi ces moments, après « resteront » : ce verbe n’est pas un auxiliaire de temps composé, et le participe fonctionne comme un adjectif accordé avec le sujet masculin pluriel.\nDonc : les participes des quatre propositions portent tous les marques attendues, ou restent invariables lorsque la construction l’exige. La réponse est T (« Toutes »).",
     "why": {
-      "1": "Correcte : COD « que » (= les efforts) antéposé → fournis.",
-      "2": "Correcte : « chaque membre » + verbe au singulier (a reçu).",
-      "3": "Correcte : « se sentir » s'accorde avec « nous » → sentis.",
-      "4": "Correcte : « partagés » s'accorde avec « les moments ».",
-      "A": "Impossible : chacune des quatre phrases résiste à la vérification.",
-      "T": "Correct : COD antéposé, chaque + singulier, pronominal et épithète, tous justes."
+      "1": "« Que », COD de « a fournis », reprend « les efforts » et impose le masculin pluriel au participe placé après lui. Pour « ont facilité », le COD est au contraire « la tâche », placé après ; « nous » est COI. Les formes « fournis » et « facilité » suivent donc deux positions différentes du COD.",
+      "2": "Le COD « une carte » suit « a reçu » : avec l’auxiliaire avoir, « reçu » reste invariable. Le participe sans auxiliaire « signée » décrit cette carte et prend son féminin singulier.",
+      "3": "Dans ce pronominal réfléchi, le second « nous » est COD placé avant et reprend les personnes du sujet : il commande « sentis » au masculin pluriel. « Soutenus » décrit l’état de ces mêmes personnes et porte les mêmes marques.",
+      "4": "Les deux participes « partagés » et « gravés » fonctionnent comme des adjectifs décrivant « les moments ». Ce nom masculin pluriel commande leurs terminaisons ; « notre mémoire » ne commande pas l’accord de « gravés ».",
+      "A": "Les quatre propositions sont correctes ; aucune ne doit être écartée.",
+      "T": "La proposition 1 distingue deux positions du COD ; la 2 distingue le participe avec avoir du participe adjectival ; la 3 accorde le pronominal réfléchi et le mot décrivant les personnes ; la 4 accorde les deux participes avec « moments ». Ces quatre vérifications conduisent à T."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -89209,8 +89775,18 @@ const QUESTIONS = [
           "detail_id": "core",
           "tense_id": null
         }
-      ]
-    }
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T05:25:43Z"
+        }
+      }
+    },
+    "progress_revision": 1
   },
   {
     "id": "mode-L84-4",
@@ -92988,14 +93564,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "3",
-    "explanation": "Règle : « combien d'entre eux » a pour noyau un pluriel (eux) : le verbe se met au pluriel. Dans cette phrase : « Combien d'entre eux ___ répondu » → ont. Donc : option 3.",
+    "explanation": "Règle : La plupart des élèves, bien des élèves, nombre d’élèves et moins de deux élèves commandent normalement le pluriel, mais leur structure diffère. Dans bien des élèves, élèves est le nom noyau du sujet. Dans combien ou peu d’entre eux, eux appartient au complément partitif et n’est pas le noyau. Identifie la construction précise avant de justifier l’accord.\nMéthode : 1. Repère le verbe conjugué. 2. Trouve son sujet, même s’il est éloigné ou placé après le verbe. 3. Relève la personne et le nombre du sujet. 4. Choisis la forme verbale qui porte les mêmes marques.\nDans cette phrase : le blanc contient l’auxiliaire du verbe « répondre », dont le participe passé « répondu » est déjà écrit. Le sujet complet est « Combien d’entre eux » : on demande combien de personnes, parmi celles désignées par « eux », ont répondu. « D’entre eux » précise l’ensemble dans lequel on compte ces personnes ; « eux » n’est donc pas le noyau du sujet. Cette construction commande la troisième personne du pluriel. Parmi les auxiliaires proposés, seul « ont » porte ces marques : « Combien d’entre eux ont vraiment répondu correctement… ».\nDonc : la réponse attendue est l’option 3, « ont ».",
     "why": {
-      "1": "« a » : le sujet « combien d'entre eux » est pluriel → ont.",
-      "2": "Avait est singulier ; combien d'entre eux commande avaient au plus-que-parfait.",
-      "3": "Correct : combien d'entre eux → ont répondu.",
-      "4": "Aurait est singulier ; combien d'entre eux commande auraient au conditionnel passé.",
-      "A": "Il existe bien une option correcte : la 3.",
-      "T": "Les options 1, 2 et 4 laissent le verbe au singulier malgré « d'entre eux »."
+      "1": "`a` est à la troisième personne du singulier, alors que « Combien d’entre eux » commande ici le pluriel. Au passé composé, il faut « ont répondu ».",
+      "2": "`avait` est un auxiliaire à l’imparfait singulier. Avec ce sujet, la forme correspondante au pluriel serait « avaient répondu ».",
+      "3": "« Ont » est l’auxiliaire avoir à la troisième personne du pluriel : il s’accorde avec « Combien d’entre eux » et forme « ont répondu » avec le participe passé déjà présent.",
+      "4": "`aurait` porte les marques du conditionnel singulier. Cette construction exige le pluriel : au conditionnel passé, il faudrait « auraient répondu ».",
+      "A": "Une option chiffrée convient, la 3 ; le nombre de réponses correctes n’est donc pas nul.",
+      "T": "Trois options sur quatre sont fautives ; une seule convient."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -93008,8 +93584,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": null,
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T05:39:18Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "prep-L90-10",
@@ -93469,14 +94055,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : « bien des » signifie « beaucoup de » et commande le pluriel : c'est le complément (les difficultés) qui fait l'accord. Dans cette phrase : « Bien des difficultés ___ à résoudre » → restent. Donc : option 4.",
+    "explanation": "Règle : La plupart des élèves, bien des élèves, nombre d’élèves et moins de deux élèves commandent normalement le pluriel, mais leur structure diffère. Dans bien des élèves, élèves est le nom noyau du sujet. Dans combien ou peu d’entre eux, eux appartient au complément partitif et n’est pas le noyau. Identifie la construction précise avant de justifier l’accord.\nMéthode : 1. Repère le verbe conjugué. 2. Trouve son sujet, même s’il est éloigné ou placé après le verbe. 3. Relève la personne et le nombre du sujet. 4. Choisis la forme verbale qui porte les mêmes marques.\nDans cette phrase : le verbe à compléter est « rester ». Pour trouver son sujet, on demande ce qui reste à résoudre : « Bien des difficultés d’organisation ». Dans cette construction, « bien des » indique une quantité importante et « difficultés » est le nom noyau du sujet, au pluriel. « D’organisation » précise la nature de ces difficultés et ne commande pas le verbe. Le sujet peut être repris par « elles » : le verbe doit donc être à la troisième personne du pluriel. « Restent » donne « Bien des difficultés d’organisation restent encore à résoudre ».\nDonc : la réponse attendue est l’option 4, « restent ».",
     "why": {
-      "1": "« reste » : « bien des difficultés » est pluriel → restent.",
-      "2": "« restait » : singulier, et un imparfait là où le présent convient.",
-      "3": "« a resté » : « rester » se conjugue avec « être », et le singulier est fautif.",
-      "4": "Correct : bien des difficultés → restent à résoudre.",
-      "A": "Il existe bien une option correcte : la 4.",
-      "T": "Les options 1, 2 et 3 laissent le verbe au singulier ou fautent d'auxiliaire."
+      "1": "`reste` est au singulier. Le nom noyau « difficultés » étant pluriel, la forme attendue au présent est « restent ».",
+      "2": "`restait` ne porte pas le pluriel du sujet « Bien des difficultés d’organisation ». À l’imparfait, l’accord donnerait « restaient ».",
+      "3": "`a resté` ne convient pas à ce sujet pluriel. Au passé composé, « rester » se construit ici avec l’auxiliaire être : on écrirait « sont restées ».",
+      "4": "« Restent » est à la troisième personne du pluriel, comme le sujet dont le noyau est « difficultés ». « Bien des » conserve ici ce nombre pluriel.",
+      "A": "La proposition 4 convient ; il y a donc une réponse correcte.",
+      "T": "Le compte est d’une option correcte et de trois options fautives."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -93489,8 +94075,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T05:39:18Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "adv-L91-9",
@@ -95049,7 +95645,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "stem": "Nous accepterons volontiers ce report de la sortie à condition que chacun ___ prévenu la veille au plus tard.",
+    "stem": "Nous accepterons volontiers ce report de la sortie pourvu que chacun ___ prévenu la veille au plus tard.",
     "options": [
       {
         "key": "1",
@@ -95077,14 +95673,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Règle : « à condition que » pose une condition et commande le subjonctif : il faut « soit ». Dans cette phrase : « à condition que chacun ___ prévenu » → soit. Donc : option 1.",
+    "explanation": "Règle : Vérifie le régime de chaque locution : à supposer que, à moins que et pourvu que demandent le subjonctif. Après à condition que, le subjonctif est courant, mais l’indicatif futur est également admis ; ce futur peut être transposé au conditionnel dans un repère passé. N’étends pas un régime exclusif à toutes les locutions de condition.\nMéthode : 1. Repère la construction qui introduit la proposition. 2. Vérifie le sens et le mode réellement imposé ou permis par cette construction. 3. Choisis l’indicatif lorsque la construction présente ici le fait comme constaté, ou le subjonctif lorsqu’elle l’exige pour un fait voulu, évalué ou non affirmé. 4. Conjugue ensuite le verbe au temps et à la personne demandés.\nDans cette phrase : « Pourvu que » exige le subjonctif. Le sujet « chacun » est singulier ; être au subjonctif présent donne « soit » dans la construction passive « chacun soit prévenu ». « Est » et « sera » sont respectivement au présent et au futur de l’indicatif ; « serait » est au conditionnel présent.\nDonc : La réponse est 1, « soit ».",
     "why": {
-      "1": "Correct : « à condition que » + subjonctif → soit prévenu.",
-      "2": "« est » (indicatif) : la condition exprimée appelle le subjonctif.",
-      "3": "« sera » (futur) : l'indicatif est exclu après « à condition que ».",
-      "4": "« serait » (conditionnel) : mode exclu ici.",
-      "A": "Il existe bien une option correcte : la 1.",
-      "T": "Les options 2, 3 et 4 emploient un mode que « à condition que » n'admet pas."
+      "1": "« Soit » est le subjonctif présent d’être avec le sujet singulier « chacun » : « pourvu que chacun soit prévenu ».",
+      "2": "« Est » est le présent de l’indicatif ; « pourvu que » exige le subjonctif.",
+      "3": "« Sera » est un futur de l’indicatif ; il ne satisfait pas le régime de « pourvu que », qui introduit la condition.",
+      "4": "« Serait » est un conditionnel présent ; ce n’est pas le subjonctif exigé après « pourvu que ».",
+      "A": "« Aucune » est exclu : l’option 1 fournit le subjonctif exigé avec le sujet singulier.",
+      "T": "« Toutes » est exclu : les options 2, 3 et 4 donnent le présent de l’indicatif, le futur de l’indicatif et le conditionnel."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -95098,7 +95694,8 @@ const QUESTIONS = [
         "3": "UNK",
         "4": "UNK"
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "eleves-L94-5",
@@ -95211,14 +95808,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : « songer À quelque chose » : le complément introduit par « à » se reprend par le pronom « y ». Dans cette phrase : elle n'avait pas songé À cette réaction → elle n'y avait pas songé. Donc : option 4.",
+    "explanation": "Règle : Y reprend généralement un lieu ou un complément de chose introduit par à.\nMéthode : 1. Repère le mot ou le groupe repris par le pronom. 2. Trouve la fonction du pronom dans la nouvelle phrase. 3. Choisis la forme correspondant à cette fonction et à la préposition éventuelle. 4. Vérifie sa place et les accords nécessaires.\nDans cette phrase : Le groupe à reprendre est « une réaction aussi vive des parents », pas « les parents » seuls. On retrouve la construction du verbe en rétablissant « la jeune directrice n'avait pas songé à une réaction aussi vive des parents ». Le groupe est donc un COI/CVI introduit par « à » et désigne une chose, la réaction envisagée. Il se reprend par « y ». Avec le temps composé « avait songé », le pronom se place devant l'auxiliaire « avait » : « n'y avait pourtant même pas songé ».\nDonc : La forme attendue est « y », réponse 4.",
     "why": {
-      "1": "« en » reprend un complément en « de » : « songer » se construit avec « à » → y.",
-      "2": "« lui » reprend une personne au datif : il s'agit d'une chose (une réaction).",
-      "3": "« les » reprendrait un COD : « songer à » a un complément indirect.",
-      "4": "Correct : songer à → elle n'y avait pas songé.",
-      "A": "Il existe bien une option correcte : la 4.",
-      "T": "Une seule option reprend un complément introduit par « à »."
+      "1": "Le choix `en` suppose un complément en « de ». « Des parents » précise l'origine de la réaction, mais le complément du verbe est « à une réaction » : il faut « y ».",
+      "2": "Le choix `lui` ne reprend pas la réaction avec « songer à ». Les parents ne sont pas le groupe directement repris ; le référent est ici une chose : la forme attendue est « y ».",
+      "3": "Le choix `les` traiterait le complément comme un COD/CVD pluriel, éventuellement en prenant « les parents » pour référent. « Songer » porte ici sur « à une réaction » : il faut « y ».",
+      "4": "« Y » remplace « à une réaction aussi vive des parents ». Sa place devant l'auxiliaire du temps composé donne « n'y avait pourtant même pas songé », en conservant la construction « songer à ».",
+      "A": "La réponse 4 est correcte : « Aucune » ne correspond pas au comptage.",
+      "T": "Il y a une réponse correcte et trois incorrectes : « Toutes » est exclu."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -95231,8 +95828,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:23:16Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "part-L94-7",
@@ -95933,14 +96540,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Règle : « peu d'entre eux » a pour noyau un pluriel (eux) : le verbe se met au pluriel. Dans cette phrase : « peu d'entre eux ___ conscients » → sont. Donc : option 2.",
+    "explanation": "Règle : La plupart des élèves, bien des élèves, nombre d’élèves et moins de deux élèves commandent normalement le pluriel, mais leur structure diffère. Dans bien des élèves, élèves est le nom noyau du sujet. Dans combien ou peu d’entre eux, eux appartient au complément partitif et n’est pas le noyau. Identifie la construction précise avant de justifier l’accord.\nMéthode : 1. Repère le verbe conjugué. 2. Trouve son sujet, même s’il est éloigné ou placé après le verbe. 3. Relève la personne et le nombre du sujet. 4. Choisis la forme verbale qui porte les mêmes marques.\nDans cette phrase : le blanc appelle une forme conjuguée du verbe être devant « réellement conscients ». Le sujet est « peu d’entre eux » ; le groupe initial « Malgré les nombreuses réunions d’information » donne une circonstance et n’est pas le sujet. « Peu » désigne ici un petit nombre de personnes parmi celles indiquées par « d’entre eux ». Ce dernier groupe précise l’ensemble concerné : le pronom « eux » n’est pas à lui seul le sujet. La construction « peu d’entre eux » commande ici la troisième personne du pluriel. On obtient « peu d’entre eux sont réellement conscients », avec « conscients » également au pluriel.\nDonc : la réponse attendue est l’option 2, « sont ».",
     "why": {
-      "1": "« est » : le sujet « peu d'entre eux » est pluriel → sont.",
-      "2": "Correct : peu d'entre eux → sont conscients.",
-      "3": "« était » : singulier, et un imparfait là où le présent convient.",
-      "4": "« a été » : singulier, l'accord se fait avec « eux » (pluriel).",
-      "A": "Il existe bien une option correcte : la 2.",
-      "T": "Les options 1, 3 et 4 laissent le verbe au singulier malgré « d'entre eux »."
+      "1": "`est` est singulier, alors que « peu d’entre eux » désigne ici plusieurs personnes et commande le pluriel. Au présent, il faut « sont ».",
+      "2": "« Sont » porte la troisième personne du pluriel exigée par « peu d’entre eux » et relie ce sujet à « réellement conscients ».",
+      "3": "`était` est à l’imparfait singulier. Avec ce sujet, la forme correspondante serait « étaient réellement conscients ».",
+      "4": "`a été` comporte un auxiliaire singulier. Au passé composé, le sujet « peu d’entre eux » exigerait « ont été ».",
+      "A": "Une réponse chiffrée satisfait l’accord, la 2 ; « Aucune » est donc écarté.",
+      "T": "Seule une des quatre formes convient ; les trois autres restent au singulier."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -95953,8 +96560,18 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T05:39:18Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "adv-L95-9",
@@ -96423,14 +97040,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Règle : « renoncer À quelque chose » : le complément introduit par « à » se reprend par le pronom « y ». Dans cette phrase : renoncer À ce projet → l'équipe a fini par y renoncer. Donc : option 2.",
+    "explanation": "Règle : Y reprend généralement un lieu ou un complément de chose introduit par à.\nMéthode : 1. Repère le mot ou le groupe repris par le pronom. 2. Trouve la fonction du pronom dans la nouvelle phrase. 3. Choisis la forme correspondant à cette fonction et à la préposition éventuelle. 4. Vérifie sa place et les accords nécessaires.\nDans cette phrase : Le pronom reprend « ce vieux projet de jardin pédagogique ». Pour déterminer sa fonction, on reconstruit « l'équipe a fini par renoncer à ce vieux projet ». « Par » introduit l'infinitif après « finir », tandis que « à » introduit le complément de « renoncer ». C'est ce complément de chose en « à » que l'on remplace par « y ». Le pronom doit rester auprès du verbe qu'il complète, devant l'infinitif : « a fini par y renoncer à contrecœur ».\nDonc : On choisit « y », réponse 2.",
     "why": {
-      "1": "« en » reprend un complément en « de » : « renoncer » se construit avec « à » → y.",
-      "2": "Correct : renoncer à → l'équipe a fini par y renoncer.",
-      "3": "« les renoncer » : « renoncer à » a un complément indirect, pas direct.",
-      "4": "« lui » reprend une personne au datif : il s'agit d'une chose (un projet).",
-      "A": "Il existe bien une option correcte : la 2.",
-      "T": "Une seule option reprend un complément introduit par « à »."
+      "1": "Le choix `en` conviendrait à la reprise d'un complément en « de ». Le groupe « de jardin pédagogique » précise le projet, mais le verbe demande « renoncer à ce projet » : il faut « y ».",
+      "2": "« Y » reprend « à ce vieux projet de jardin pédagogique ». Placé après « par » et devant « renoncer », il complète bien cet infinitif dans « a fini par y renoncer ».",
+      "3": "Le choix `les` suppose un COD/CVD pluriel. Ici, le projet est singulier et surtout introduit par « à » après « renoncer » : la reprise attendue est « y ».",
+      "4": "Le choix `lui` ne convient pas à ce projet dans la construction « renoncer à quelque chose ». Comme le complément désigne une chose, on emploie « y ».",
+      "A": "Il existe une option correcte, la 2 : « Aucune » ne convient pas.",
+      "T": "Une option sur quatre convient : on ne peut pas retenir « Toutes »."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -96443,8 +97060,18 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:23:16Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "part-L96-7",
@@ -97066,7 +97693,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "stem": "___ on le lui répéterait dix fois de suite, cet élève distrait n'écouterait sans doute pas davantage la consigne.",
+    "stem": "Complétez avec une locution exprimant une concession hypothétique, au sens de « même si » : ___ on le lui répéterait dix fois de suite, cet élève distrait n'écouterait sans doute pas davantage la consigne.",
     "options": [
       {
         "key": "1",
@@ -97094,14 +97721,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "1",
-    "explanation": "Règle : « quand bien même » introduit une concession hypothétique et se construit avec le conditionnel (= même si). Dans cette phrase : « ___ on le lui répéterait… il n'écouterait pas » → Quand bien même. Donc : option 1.",
+    "explanation": "Règle : Le connecteur doit opposer un fait admis à une conséquence inattendue et respecter le mode qu’il régit. Méthode : Détermine le lien logique entre les deux idées. Nomme ce lien simplement : cause, conséquence, opposition, concession, addition ou explication. Essaie le connecteur dans la phrase et vérifie qu’il exprime bien ce lien. Contrôle aussi la construction et la ponctuation qui l’accompagnent. Dans cette phrase : la consigne demande une concession hypothétique au sens de « même si ». Dix répétitions devraient favoriser l’écoute, mais l’élève n’écouterait pas davantage : l’amélioration attendue ne se produirait pas. « Quand bien même » (1) exprime cette concession et convient avec « répéterait ». « Pour peu que » (2) pose une condition et demande le subjonctif. « Dès lors que » (3) peut exprimer le temps, la cause ou une condition, mais ne fournit pas la concession demandée. « À condition que » (4) fixe une condition, sans signifier « même si ». La virgule sépare correctement la proposition introduite par la locution de la proposition principale. Donc : option 1 ; ni Aucune ni Toutes.",
     "why": {
-      "1": "Correct : « Quand bien même on le lui répéterait » = même si (concession + conditionnel).",
-      "2": "« Pour peu que » exige le subjonctif : or « répéterait » est au conditionnel.",
-      "3": "« Dès lors que » (= puisque, une fois que) se construit avec l'indicatif et pose un fait, non une hypothèse concédée.",
-      "4": "« À condition que » exige le subjonctif et pose une condition, non une concession.",
-      "A": "Il existe bien une option correcte : la 1.",
-      "T": "Une seule locution introduit une concession hypothétique avec le conditionnel."
+      "1": "« Quand bien même » signifie ici « même si ». Les dix répétitions devraient favoriser l’écoute, mais cette amélioration attendue ne se produirait pas : l’élève n’écouterait pas davantage. La locution exprime cette concession hypothétique et convient avec « répéterait ».",
+      "2": "« Pour peu que » exprime une condition minimale, non la concession demandée. Il exige en outre le subjonctif, par exemple « pour peu qu’on le lui répète », et non « répéterait ».",
+      "3": "« Dès lors que » possède des valeurs temporelle, causale et conditionnelle, mais ne répond pas à la demande de concession au sens de « même si ». Son exclusion ici ne repose pas sur une interdiction universelle du conditionnel.",
+      "4": "« À condition que » fixe une condition et n’exprime pas la concession demandée. Le subjonctif est courant après cette locution, mais le futur est également admis et peut être transposé au conditionnel depuis un repère passé ; c’est le lien logique demandé qui l’exclut ici.",
+      "A": "Aucune est exclu : « Quand bien même on le lui répéterait dix fois de suite » exprime précisément la concession hypothétique demandée.",
+      "T": "Toutes est exclu : les options 2, 3 et 4 ne fournissent pas la concession requise ; l’option 2 présente aussi une incompatibilité avec « répéterait »."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -97115,7 +97742,8 @@ const QUESTIONS = [
         "3": "UNK",
         "4": "UNK"
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "sv-L97-8",
@@ -97509,7 +98137,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Quatre phrases du journal de classe. Quelle(s) phrase(s) est (sont) correctement écrite(s) ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -97537,14 +98165,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "T",
-    "explanation": "Règle : le COD antéposé commande l'accord (les copies que… corrigées ; les fournitures que… offertes) ; « chaque groupe » + singulier ; dans « se laver les mains », le COD « les mains » est placé après, donc « lavé » reste invariable. Dans ces phrases : chacune est correcte. Donc : les quatre — réponse T (Toutes).",
+    "explanation": "Règle : Avec avoir, identifie le COD antéposé et accorde le participe avec son genre et son nombre.\nMéthode : 1. Repère l’auxiliaire avoir et le participe passé. 2. Trouve le COD en posant la question qui ? ou quoi ? après le verbe. 3. Vérifie que ce COD est placé avant le participe passé. 4. Accorde le participe avec le genre et le nombre de ce COD.\nDans cette phrase : chaque proposition se vérifie selon sa construction. 1. Dans « a corrigées », l’auxiliaire est avoir. L’assistant a corrigé quoi ? Les copies, reprises par « que », COD féminin pluriel placé avant le participe : on obtient « corrigées ». « Seront rendues » est une construction passive avec être : ce sont les copies qui seront rendues. Le sujet féminin pluriel commande donc « rendues ». 2. Pour « présente », on cherche le sujet : « chaque groupe ». Son noyau, « groupe », est singulier ; « chaque » considère les groupes un par un. Le verbe prend donc la troisième personne du singulier, « présente ». 3. « Se sont lavé les mains » est un pronominal réfléchi où « se » est COI. Elles ont lavé quoi ? « Les mains », COD placé après le participe. Elles ont lavé les mains à qui ? À elles-mêmes, ce qui explique la fonction de « se ». Ni le COI placé avant ni le COD placé après ne commandent l’accord : « lavé » reste invariable. 4. Dans « a offertes », l’auxiliaire est avoir. La commune a offert quoi ? Les fournitures, reprises par « que », COD féminin pluriel placé avant. Elle les a offertes à qui ? À nous : « nous » est COI. L’accord est donc commandé par « que », et donne « offertes ». Enfin, « sont arrivées » est un temps composé non pronominal avec être ; le sujet « les fournitures », féminin pluriel, commande « arrivées ».\nDonc : les quatre propositions respectent leur règle, y compris « lavé », dont l’invariabilité dépend de la fonction COI de « se » et de la position du COD. La réponse est T (« Toutes »).",
     "why": {
-      "1": "Correcte : « que » (= les copies) COD antéposé → corrigées.",
-      "2": "Correcte : « chaque groupe » + verbe au singulier (présente).",
-      "3": "Correcte : « les mains » est placé après → « lavé » invariable.",
-      "4": "Correcte : « que » (= les fournitures) COD antéposé → offertes.",
-      "A": "Impossible : chacune des quatre phrases résiste à la vérification.",
-      "T": "Correct : COD antéposés, chaque + singulier et mains postposées, tous justes."
+      "1": "« Que » reprend « les copies », COD féminin pluriel placé avant « a corrigées » : il commande cet accord. Dans la construction passive « seront rendues », le même groupe est sujet et commande également le féminin pluriel.",
+      "2": "Le sujet de « présente » est « chaque groupe ». Le nom noyau « groupe » est singulier, même si plusieurs groupes sont concernés dans la situation ; la forme verbale « présente » correspond à ce sujet.",
+      "3": "Dans ce pronominal réfléchi, « se » signifie « à elles-mêmes » et est COI. Le COD « les mains » suit le participe : aucun COD placé avant ne commande d’accord, ce qui explique « lavé » malgré le sujet féminin pluriel.",
+      "4": "« Que » reprend « les fournitures » et est COD placé avant « a offertes » ; « nous » est seulement COI. Le féminin pluriel donne « offertes ». Pour « sont arrivées », l’auxiliaire être impose l’accord avec le sujet « les fournitures ».",
+      "A": "Quatre propositions sur quatre sont correctes ; A supposerait un total de zéro.",
+      "T": "Les propositions 1 et 4 accordent leurs participes avec les COD précédents puis avec les sujets des constructions avec être ; la 2 conserve le singulier de « chaque groupe » ; la 3 garde le participe invariable car « se » est COI et le COD suit. Toutes les vérifications aboutissent à une forme conforme."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -97571,8 +98199,18 @@ const QUESTIONS = [
           "detail_id": "cod_apres",
           "tense_id": "passe_compose"
         }
-      ]
-    }
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T05:25:43Z"
+        }
+      }
+    },
+    "progress_revision": 1
   },
   {
     "id": "pro-L98-6",
@@ -97611,14 +98249,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : « faire face À quelque chose » : le complément introduit par « à » se reprend par le pronom « y ». Dans cette phrase : faire face À ces urgences → elle doit y faire face. Donc : option 4.",
+    "explanation": "Règle : Y reprend généralement un lieu ou un complément de chose introduit par à.\nMéthode : 1. Repère le mot ou le groupe repris par le pronom. 2. Trouve la fonction du pronom dans la nouvelle phrase. 3. Choisis la forme correspondant à cette fonction et à la préposition éventuelle. 4. Vérifie sa place et les accords nécessaires.\nDans cette phrase : Le groupe repris est « toutes ces urgences administratives qui s'accumulent ». On rétablit la construction complète : « la nouvelle directrice doit souvent faire face à toutes ces urgences administratives ». Le groupe dépend de l'expression « faire face à » ; il n'est pas un COD/CVD de « faire ». Comme les urgences sont des choses et que leur complément est introduit par « à », on choisit « y ». Ce pronom garde la même forme malgré le pluriel du groupe repris et se place devant l'infinitif « faire » : « doit souvent y faire face ».\nDonc : La réponse est « y », option 4.",
     "why": {
-      "1": "« en » reprend un complément en « de » : « faire face » se construit avec « à » → y.",
-      "2": "« les faire face » : « faire face à » a un complément indirect, pas direct.",
-      "3": "« lui » reprend une personne au datif : il s'agit de choses (des urgences).",
-      "4": "Correct : faire face à → elle doit y faire face.",
-      "A": "Il existe bien une option correcte : la 4.",
-      "T": "Une seule option reprend un complément introduit par « à »."
+      "1": "Le choix `en` ferait reprendre un complément en « de ». Or l'expression complète est « faire face à ces urgences » : la préposition « à » conduit ici à « y ».",
+      "2": "Le choix `les` suit le pluriel des urgences mais en ferait un COD/CVD. Leur fonction est celle d'un complément introduit par « à » après « faire face » : il faut « y ».",
+      "3": "Le choix `lui` ne reprend pas ces urgences dans « faire face à ». Le groupe désigne des choses ; sa reprise est « y », qui ne varie pas selon leur nombre.",
+      "4": "« Y » remplace tout le groupe « à toutes ces urgences administratives qui s'accumulent ». Devant « faire », il conserve l'expression « faire face à » sous la forme « y faire face ».",
+      "A": "Une option convient, la 4 : la réponse « Aucune » est exclue.",
+      "T": "Le comptage donne une option correcte sur quatre : « Toutes » est exclu."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -97631,8 +98269,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:23:16Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "part-L98-7",
@@ -98812,14 +99460,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Règle : « rire DE quelque chose » : le complément introduit par « de » se reprend par le pronom « en ». Dans cette phrase : rire DE ce malentendu → elles ont fini par en rire. Donc : option 2.",
+    "explanation": "Règle : Un complément de chose introduit par de se reprend généralement par en.\nMéthode : 1. Repère le mot ou le groupe repris par le pronom. 2. Trouve la fonction du pronom dans la nouvelle phrase. 3. Choisis la forme correspondant à cette fonction et à la préposition éventuelle. 4. Vérifie sa place et les accords nécessaires.\nDans cette phrase : le groupe annoncé au début est « de ce petit malentendu du matin ». On le replace auprès du verbe qu’il complète : « Les deux collègues ont heureusement fini par rire de ce petit malentendu du matin ensemble à la pause. » Le malentendu est une chose, et « rire » introduit ici son complément par « de ». Cette construction demande la reprise « en ». Comme le pronom complète l’infinitif « rire », il se place immédiatement devant celui-ci, après « par » : « ont heureusement fini par en rire ensemble à la pause ».\nDonc : la réponse est 2, « en ».",
     "why": {
-      "1": "« y » reprend un complément en « à » : ici le complément est en « de » → en.",
-      "2": "Correct : rire de → elles ont fini par en rire.",
-      "3": "« le rire » reprendrait un COD : « rire de » a un complément indirect.",
-      "4": "« lui » reprend une personne au datif : il s'agit d'une chose (le malentendu).",
-      "A": "Il existe bien une option correcte : la 2.",
-      "T": "Une seule option reprend un complément introduit par « de »."
+      "1": "Dans `par y rire`, « y » ne reprend pas le complément « de ce petit malentendu » : il conviendrait à un lieu ou à un complément de chose en « à ». Ici, « rire de ce malentendu » devient « en rire ».",
+      "2": "« En » représente « de ce petit malentendu du matin », complément de « rire ». Sa place devant cet infinitif donne bien « ont heureusement fini par en rire ».",
+      "3": "Dans `par le rire`, « le » traiterait « ce petit malentendu » comme un COD de « rire ». Le verbe se construit ici avec « de » ; il faut « par en rire ».",
+      "4": "Dans `par lui rire`, « lui » ne correspond ni à la préposition « de » ni à la chose reprise, le malentendu. Pour « rire de ce malentendu », la forme attendue est « par en rire ».",
+      "A": "L’option 2 est correcte ; le nombre de réponses correctes est donc un, et non zéro.",
+      "T": "Une seule des quatre options convient ; « Toutes » en demanderait quatre."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -98832,8 +99480,18 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:11:47Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "part-L100-7",
@@ -99994,14 +100652,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : « recourir À quelque chose » : le complément introduit par « à » se reprend par le pronom « y ». Dans cette phrase : recourir À cette méthode → ils osent y recourir. Donc : option 4.",
+    "explanation": "Règle : Y reprend généralement un lieu ou un complément de chose introduit par à.\nMéthode : 1. Repère le mot ou le groupe repris par le pronom. 2. Trouve la fonction du pronom dans la nouvelle phrase. 3. Choisis la forme correspondant à cette fonction et à la préposition éventuelle. 4. Vérifie sa place et les accords nécessaires.\nDans cette phrase : Le groupe à reprendre est « cette méthode d'un autre âge », et non « enseignants ». Pour trouver sa fonction, on reconstruit : « bien peu d'enseignants osent encore recourir à cette méthode ». Le complément dépend donc de « recourir », qui se construit ici avec « à ». Comme il désigne une chose, sa reprise est « y ». Ce pronom se place devant l'infinitif dont il complète le sens : « osent encore y recourir ».\nDonc : On complète par « y », réponse 4.",
     "why": {
-      "1": "« en » reprend un complément en « de » : « recourir » se construit avec « à » → y.",
-      "2": "« les recourir » : « recourir à » a un complément indirect, pas direct.",
-      "3": "« lui » reprend une personne au datif : il s'agit d'une chose (une méthode).",
-      "4": "Correct : recourir à → ils osent y recourir.",
-      "A": "Il existe bien une option correcte : la 4.",
-      "T": "Une seule option reprend un complément introduit par « à »."
+      "1": "Le choix `en` suppose un complément introduit par « de ». Or le groupe à remplacer est « à cette méthode », complément de « recourir » : la forme attendue est « y ».",
+      "2": "Le choix `les` traite le groupe repris comme un COD/CVD pluriel. Ici, on ne reprend pas les enseignants, mais la méthode, complément introduit par « à » : il faut « y ».",
+      "3": "Le choix `lui` ne convient pas à la reprise de cette méthode avec « recourir à ». Le référent est une chose, et le complément attendu est « à cette méthode » : on emploie « y ».",
+      "4": "« Y » remplace tout le complément « à cette méthode d'un autre âge ». Placé devant « recourir », il conserve la construction du verbe et donne « osent encore y recourir ».",
+      "A": "Une option est correcte, la 4 : « Aucune » ne convient pas.",
+      "T": "Une seule option sur quatre est correcte : « Toutes » ne convient pas."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -100014,8 +100672,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:23:16Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "part-L102-7",
@@ -101094,14 +101762,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Règle : « garder un souvenir DE quelque chose » : le complément introduit par « de » se reprend par le pronom « en ». Dans cette phrase : garder un souvenir DE ces lectures → la classe en garde un excellent souvenir. Donc : option 2.",
+    "explanation": "Règle : Un complément de chose introduit par de se reprend généralement par en.\nMéthode : 1. Repère le mot ou le groupe repris par le pronom. 2. Trouve la fonction du pronom dans la nouvelle phrase. 3. Choisis la forme correspondant à cette fonction et à la préposition éventuelle. 4. Vérifie sa place et les accords nécessaires.\nDans cette phrase : le groupe à reprendre est « de ses lectures partagées de tout l’été ». On reconstruit « la classe garde manifestement un excellent souvenir commun de ses lectures partagées de tout l’été ». Le COD de « garde » est « un excellent souvenir commun ». Les lectures complètent le nom « souvenir » par l’intermédiaire de « de » : un souvenir de ces lectures. Ce complément désigne des choses et se reprend par « en ». Le COD reste exprimé, tandis que « en » se place devant « garde » : « la classe en garde manifestement un excellent souvenir commun ».\nDonc : la réponse est 2, « en ».",
     "why": {
-      "1": "« y » reprend un complément en « à » : ici le complément est en « de » → en.",
-      "2": "Correct : un souvenir de ces lectures → elle en garde un souvenir.",
-      "3": "« les garde » reprendrait un COD : le complément est « de ces lectures » → en.",
-      "4": "« lui » reprend une personne au datif : il s'agit d'une chose (des lectures).",
-      "A": "Il existe bien une option correcte : la 2.",
-      "T": "Une seule option reprend un complément introduit par « de »."
+      "1": "Dans `la classe y garde`, « y » suggérerait notamment un lieu où le souvenir serait gardé. Le groupe donné exprime ce dont la classe garde un souvenir, avec « de » : il faut « la classe en garde ».",
+      "2": "« En » reprend « de ses lectures partagées de tout l’été », qui complète « souvenir ». Il laisse intact le COD « un excellent souvenir commun » et se place devant « garde ».",
+      "3": "Dans `la classe les garde manifestement un excellent souvenir commun`, « les » ferait des lectures le COD de « garde », alors que ce COD est déjà « un excellent souvenir commun ». Pour reprendre « de ses lectures », il faut « en ».",
+      "4": "Dans `la classe lui garde`, « lui » ne reprend pas le complément de chose introduit par « de » qui précise le souvenir. La construction « garder un souvenir de ses lectures » demande « en garde un souvenir ».",
+      "A": "Une option, la 2, réalise la reprise attendue ; « Aucune » ne convient pas.",
+      "T": "Les options 1, 3 et 4 ne conviennent pas ; une seule option est correcte, ce qui exclut « Toutes »."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -101114,8 +101782,18 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:11:47Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "part-L104-7",
@@ -101878,14 +102556,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Règle : Une propriété du nom signale l’adjectif accordé ; une action verbale signale le participe présent invariable.\nMéthode : 1. Observe la forme en -ant dans toute la phrase. 2. Vérifie si elle décrit un nom ou si elle garde le fonctionnement d’un verbe. 3. Si elle décrit un nom, accorde l’adjectif verbal ; si elle exprime une action, garde le participe présent invariable. 4. Vérifie enfin la graphie propre à la forme choisie.\nDans cette phrase : il faut examiner chaque blanc à part. Premier blanc, « Des résultats ___ ont été salués par tout le jury » : la forme suit le nom « résultats » et en dit la qualité ; on peut la remplacer par un adjectif ordinaire (« des résultats remarquables ») et faire le test du féminin (« des notes excellentes »). C'est l'adjectif verbal : il s'écrit en -ent et s'accorde au masculin pluriel, « excellents ». Second blanc, « en ___ dans absolument toutes les matières » : la forme est précédée de « en » et suivie du complément « dans absolument toutes les matières » ; elle exprime la manière dont l'élève a impressionné et garde donc son fonctionnement verbal. C'est le participe présent au gérondif : invariable et écrit en -ant, « excellant ». Le complément prépositionnel après le second blanc est le point décisif.\nDonc : il faut « des résultats excellents » puis « en excellant dans absolument toutes les matières », c'est-à-dire l'option 2.",
+    "explanation": "Règle : Distingue l’emploi adjectival du fonctionnement verbal par la syntaxe et des tests concordants. L’adjectif verbal s’accorde ; le participe présent reste invariable. Le seul sens d’action ou la présence d’un complément prépositionnel ne suffit pas à choisir.\nMéthode : 1. Observe la forme à distinguer dans toute la phrase. 2. Vérifie si elle fonctionne comme un adjectif ou comme un verbe, notamment dans un gérondif ou une proposition participiale. 3. Croise les indices : variation au féminin, négation verbale et construction des compléments. Le seul sens d’action ou un complément prépositionnel ne suffit pas. 4. Accorde l’adjectif verbal avec le nom auquel il se rapporte ; garde le participe présent invariable et vérifie la graphie.\nDans cette phrase : au premier blanc, la forme caractérise le nom « résultats ». Le remplacement par « remarquables » conserve la construction ; au féminin, on aurait « des performances excellentes ». Ces deux tests établissent l’emploi adjectival. Avec « résultats », masculin pluriel, on écrit donc « excellents », avec la graphie en -ent et la marque du pluriel. Au second blanc, « en » introduit un gérondif, c’est-à-dire la construction « en + participe présent ». L’élève est celle qui excelle dans toutes les matières et qui a impressionné. Le point décisif est cette construction avec « en », pas la seule présence du complément « dans absolument toutes les matières ». Le participe présent d’« exceller » s’écrit « excellant » et reste invariable.\nDonc : il faut « excellents / excellant », soit l’option 2.",
     "why": {
-      "1": "Les deux formes sont permutées. Au premier blanc, `des résultats excellant` emploie la graphie verbale pour un mot qui qualifie le nom et doit s'accorder : « excellents ». Au second, `en excellents dans toutes les matières` accorde une forme qui garde son complément : « excellant ».",
-      "2": "Le premier mot qualifie « résultats » et supporte le remplacement par un adjectif : il satisfait la règle de l'adjectif verbal, en -ent et accordé au masculin pluriel, « excellents ». Le second, précédé de « en » et suivi de « dans absolument toutes les matières », satisfait la règle du participe présent, en -ant et invariable, « excellant ».",
-      "3": "Le premier blanc est correct, mais au second `en excellents dans absolument toutes les matières` accorde une forme qui exprime la manière et commande un complément : le participe présent reste invariable, « excellant ».",
-      "4": "Le second blanc est correct, mais au premier `des résultats excellant` laisse sans accord un mot qui dit la qualité du nom « résultats » : l'adjectif verbal s'écrit « excellents ».",
-      "A": "La réponse « Aucune » supposerait quatre options chiffrées fautives, alors que la 2 est correcte.",
-      "T": "Trois options chiffrées comportent une forme fautive, ce qui interdit « Toutes »."
+      "1": "Les deux blancs sont fautifs : `des résultats excellant` demande l’adjectif masculin pluriel « excellents » ; `en excellents` demande le participe présent invariable « excellant », puisque « en » introduit un gérondif.",
+      "2": "« Excellents » qualifie « résultats » et porte son masculin pluriel. « Excellant » conserve la graphie verbale en -ant et l’invariabilité exigées dans « en excellant ».",
+      "3": "« Excellents » convient au premier blanc, mais `en excellents` emploie une forme adjectivale dans un gérondif. Le second blanc exige « excellant », invariable.",
+      "4": "« En excellant » respecte la construction verbale du second blanc. En revanche, `des résultats excellant` ne respecte ni la graphie adjectivale ni l’accord pluriel attendus : il faut « des résultats excellents ».",
+      "A": "Une combinaison, la 2, satisfait les deux blancs ; le compte n’est pas nul.",
+      "T": "Trois combinaisons comportent au moins une erreur ; une seule est entièrement correcte."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -101900,15 +102578,16 @@ const QUESTIONS = [
         "4": "UNK"
       },
       "remediation": {
-        "batch_id": "hep-rem-20260805-0447",
+        "batch_id": "hep-rem-20261002-6872",
         "feedback_provenance": {
-          "model": "claude-opus-5",
+          "model": "gpt-6.1-sol",
           "reasoning": "high",
           "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
-          "generated_at": "2026-08-05T05:42:12Z"
+          "generated_at": "2026-10-03T05:39:18Z"
         }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "eleves-L105-10",
@@ -102335,14 +103014,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : « remédier À quelque chose » : le complément introduit par « à » se reprend par le pronom « y ». Dans cette phrase : remédier À ce manque → la direction s'engage à y remédier. Donc : option 4.",
+    "explanation": "Règle : Y reprend généralement un lieu ou un complément de chose introduit par à.\nMéthode : 1. Repère le mot ou le groupe repris par le pronom. 2. Trouve la fonction du pronom dans la nouvelle phrase. 3. Choisis la forme correspondant à cette fonction et à la préposition éventuelle. 4. Vérifie sa place et les accords nécessaires.\nDans cette phrase : Le pronom doit reprendre « ce manque criant de matériel scientifique ». La construction complète serait « la direction s'est engagée à remédier à ce manque ». Les deux « à » ont des rôles distincts : le premier introduit l'action promise, « remédier » ; le second introduit le complément de ce verbe, « à ce manque ». C'est ce second groupe, qui désigne une chose, que remplace « y ». Le pronom se place devant « remédier » : « s'est engagée devant le conseil à y remédier au plus vite ».\nDonc : La reprise attendue est « y », réponse 4.",
     "why": {
-      "1": "« en » reprend un complément en « de » : « remédier » se construit avec « à » → y.",
-      "2": "« les remédier » : « remédier à » a un complément indirect, pas direct.",
-      "3": "« lui » reprend une personne au datif : il s'agit d'une chose (un manque).",
-      "4": "Correct : remédier à → s'engager à y remédier.",
-      "A": "Il existe bien une option correcte : la 4.",
-      "T": "Une seule option reprend un complément introduit par « à »."
+      "1": "Le choix `en` reprendrait un complément en « de ». La présence de « de matériel scientifique » à l'intérieur du groupe ne change pas sa construction avec le verbe : « remédier à ce manque ». Il faut donc « y ».",
+      "2": "Le choix `les` exigerait un COD/CVD pluriel. Le groupe repris est « ce manque », et « remédier » l'introduit par « à » : la forme attendue est « y ».",
+      "3": "Le choix `lui` ne reprend pas ici le manque de matériel, qui est une chose. Avec « remédier à ce manque », le pronom attendu est « y ».",
+      "4": "« Y » remplace « à ce manque criant de matériel scientifique » et complète l'infinitif « remédier ». La suite « à y remédier » conserve aussi le « à » demandé par « s'engager à ».",
+      "A": "La réponse 4 convient : il y a une option correcte, donc pas « Aucune ».",
+      "T": "Trois options échouent et une seule convient : « Toutes » est exclu."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -102355,8 +103034,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:23:16Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "part-L106-7",
@@ -103007,14 +103696,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Règle : le sujet « lui seul » est un singulier de 3e personne : le verbe se met au singulier. « Seul » ne change pas le nombre du pronom « lui ». Dans cette phrase : « Lui seul ___ la réponse » → connaît. Donc : option 2.",
+    "explanation": "Règle : Dans vous seuls, eux seuls ou vous tous, le renforcement ne change ni la personne ni le nombre du pronom.\nMéthode : 1. Repère le verbe conjugué. 2. Trouve son sujet, même s’il est éloigné ou placé après le verbe. 3. Relève la personne et le nombre du sujet. 4. Choisis la forme verbale qui porte les mêmes marques.\nDans cette phrase : le blanc correspond au verbe connaître. Qui connaît la réponse ? « Lui seul ». Le pronom « lui » désigne une personne à la troisième personne du singulier ; « seul » insiste sur cette personne sans changer sa personne grammaticale ni son nombre. La phrase peut donc se ramener, pour cet accord, à « Il connaît la réponse ». La relative « que se transmettent les classes depuis des années » contient un autre verbe, « se transmettent », dont le sujet est « les classes ». Ce pluriel appartient à la relative et ne commande pas le verbe du blanc. Parmi les formes proposées, « connaissent » et « connaîtront » sont au pluriel ; « connais » correspond à la première ou à la deuxième personne du singulier. « Connaît » est la troisième personne du singulier attendue.\nDonc : il faut « connaît », option 2.",
     "why": {
-      "1": "« connaissent » (pluriel) : le sujet « lui seul » est singulier.",
-      "2": "Correct : « lui seul » (3e personne du singulier) → connaît.",
-      "3": "« connais » (1re/2e personne) : « lui » est 3e personne du singulier.",
-      "4": "« connaîtront » (pluriel, futur) : le sujet est singulier et l'énoncé est au présent.",
-      "A": "Il existe bien une option correcte : la 2.",
-      "T": "Les options 1, 3 et 4 fautent sur le nombre, la personne ou le temps."
+      "1": "La forme `connaissent` est à la troisième personne du pluriel. « Lui seul » désigne un sujet singulier ; « les classes » est le sujet de l’autre verbe. La forme attendue est « connaît ».",
+      "2": "« Connaît » porte la troisième personne du singulier, comme « lui ». Le renforcement par « seul » conserve ces marques, ce qui justifie cet accord.",
+      "3": "La forme `connais` convient à « je » ou à « tu », mais pas à « lui », troisième personne. Le singulier ne suffit pas : il faut aussi la bonne personne, soit « connaît ».",
+      "4": "La forme `connaîtront` est une troisième personne du pluriel au futur. Elle ne peut pas s’accorder avec le sujet singulier « lui seul » ; la réponse attendue est « connaît ».",
+      "A": "Une forme sur quatre correspond au sujet : la 2. Le total de réponses correctes est donc un.",
+      "T": "Les formes 1, 3 et 4 ne correspondent pas à la personne ou au nombre du sujet ; seule la 2 convient."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -103027,8 +103716,18 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T05:35:13Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "adv-L107-9",
@@ -103444,14 +104143,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "2",
-    "explanation": "Règle : « profiter DE quelque chose » : le complément introduit par « de » se reprend par le pronom « en ». Dans cette phrase : profiter DE cette pause → les élèves en ont profité. Donc : option 2.",
+    "explanation": "Règle : Un complément de chose introduit par de se reprend généralement par en.\nMéthode : 1. Repère le mot ou le groupe repris par le pronom. 2. Trouve la fonction du pronom dans la nouvelle phrase. 3. Choisis la forme correspondant à cette fonction et à la préposition éventuelle. 4. Vérifie sa place et les accords nécessaires.\nDans cette phrase : « de cette pause imprévue au grand air » annonce le groupe à reprendre. En le remettant après le verbe, on obtient « les élèves déjà fatigués ont visiblement bien profité de cette pause imprévue au grand air pour se dégourdir ». Ils ont profité de quoi ? De cette pause : le complément est introduit par « de » et désigne une chose. Il se reprend donc par « en ». Le groupe « au grand air » précise la pause ; il ne transforme pas le complément de « profiter » en complément de lieu. Dans ce temps composé, « en » se place devant l’auxiliaire « ont » : « les élèves déjà fatigués en ont visiblement bien profité pour se dégourdir ».\nDonc : la réponse est 2, « en ».",
     "why": {
-      "1": "« y » reprend un complément en « à » : ici le complément est en « de » → en.",
-      "2": "Correct : profiter de → les élèves en ont profité.",
-      "3": "« les profiter » : « profiter de » a un complément indirect, pas direct.",
-      "4": "« lui » reprend une personne au datif : il s'agit d'une chose (une pause).",
-      "A": "Il existe bien une option correcte : la 2.",
-      "T": "Une seule option reprend un complément introduit par « de »."
+      "1": "Dans `les élèves déjà fatigués y ont visiblement bien profité`, « y » ne reprend pas « de cette pause ». Même si la pause se déroule « au grand air », le complément de « profiter » reste introduit par « de ». Il faut « en ont visiblement bien profité ».",
+      "2": "« En » reprend « de cette pause imprévue au grand air », conformément à « profiter de cette pause ». Placé devant « ont », il donne « en ont visiblement bien profité ».",
+      "3": "Dans `les élèves déjà fatigués les ont visiblement bien profité`, « les » supposerait un COD pluriel. Le groupe repris est au singulier et, surtout, se construit avec « de » après « profiter ». Il faut « en ont visiblement bien profité ».",
+      "4": "Dans `les élèves déjà fatigués lui ont visiblement bien profité`, « lui » ne représente pas le complément « de cette pause » : les élèves ont profité de la pause. La reprise attendue est « en ont visiblement bien profité ».",
+      "A": "L’option 2 convient ; il existe donc une réponse correcte parmi les quatre.",
+      "T": "Une option sur quatre convient et les trois autres sont fautives ; « Toutes » est exclue."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -103464,8 +104163,18 @@ const QUESTIONS = [
         "2": null,
         "3": "UNK",
         "4": "UNK"
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:11:47Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "part-L108-7",
@@ -104503,14 +105212,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : « veiller À quelque chose » : le complément introduit par « à » se reprend par le pronom « y ». Dans cette phrase : veiller À la tenue des cahiers → elle tient à y veiller. Donc : option 4.",
+    "explanation": "Règle : Y reprend généralement un lieu ou un complément de chose introduit par à.\nMéthode : 1. Repère le mot ou le groupe repris par le pronom. 2. Trouve la fonction du pronom dans la nouvelle phrase. 3. Choisis la forme correspondant à cette fonction et à la préposition éventuelle. 4. Vérifie sa place et les accords nécessaires.\nDans cette phrase : Le groupe repris est « la bonne tenue quotidienne des cahiers de ses élèves ». On retrouve sa fonction en rétablissant « veiller à la bonne tenue quotidienne des cahiers de ses élèves ». Le pronom complète donc « veiller », et non « tenir ». Dans « tient à veiller à la bonne tenue », le premier « à » introduit l'infinitif ; le second appartient au complément que l'on remplace. Ce complément de chose en « à » devient « y », placé devant « veiller » : « tient absolument à y veiller elle-même ».\nDonc : Il faut choisir « y », réponse 4.",
     "why": {
-      "1": "« en » reprend un complément en « de » : « veiller » se construit ici avec « à » → y.",
-      "2": "« les veiller » : « veiller à » a un complément indirect, pas direct.",
-      "3": "« lui » reprend une personne au datif : il s'agit d'une chose (la tenue des cahiers).",
-      "4": "Correct : veiller à → elle tient à y veiller.",
-      "A": "Il existe bien une option correcte : la 4.",
-      "T": "Une seule option reprend un complément introduit par « à »."
+      "1": "Le choix `en` correspondrait à un complément en « de ». Les groupes « des cahiers » et « de ses élèves » sont internes au groupe repris ; le verbe demande ici « veiller à la bonne tenue ». La reprise attendue est « y ».",
+      "2": "Le choix `les` ferait reprendre directement un groupe pluriel, comme « les cahiers ». Or le complément visé est l'ensemble « à la bonne tenue quotidienne des cahiers de ses élèves » : il faut « y ».",
+      "3": "Le choix `lui` ne convient pas pour reprendre la bonne tenue des cahiers avec « veiller à ». Ce complément désigne une chose et se reprend ici par « y ».",
+      "4": "« Y » remplace le complément de « veiller » introduit par « à ». Sa place devant cet infinitif donne « à y veiller », tout en conservant la construction « tenir à faire quelque chose ».",
+      "A": "L'option 4 est correcte : le nombre d'options correctes n'est pas zéro.",
+      "T": "Il y a une option correcte sur quatre, donc la réponse « Toutes » ne convient pas."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -104523,8 +105232,18 @@ const QUESTIONS = [
         "2": "UNK",
         "3": "UNK",
         "4": null
+      },
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T10:23:16Z"
+        }
       }
-    }
+    },
+    "progress_revision": 1
   },
   {
     "id": "part-L110-7",
@@ -108572,7 +109291,7 @@ const QUESTIONS = [
       "thinking": "high",
       "tracked": true
     },
-    "instruction": "Quelle production d’élève est correctement écrite ?",
+    "instruction": "Examinez les propositions puis choisissez votre réponse.",
     "options": [
       {
         "key": "1",
@@ -108600,14 +109319,14 @@ const QUESTIONS = [
       }
     ],
     "answer": "4",
-    "explanation": "Règle : avec avoir suivi d’un infinitif, le participe s’accorde avec le complément direct placé avant seulement si ce complément accomplit l’action de l’infinitif. « Fait » suivi d’un infinitif reste invariable. Dans un pronominal comme « se permettre quelque chose », « se » est indirect, donc « permis » reste invariable. Dans cette phrase : les remarques de l’option 4 subissent l’action de « formuler »; elles ne la font pas, donc « entendu » reste invariable. Donc : la réponse correcte est 4.",
+    "explanation": "Règle : Vérifie la construction particulière, puis distingue le COD du participe des compléments de l’infinitif. Dans le cas relevant de cette règle, le participe s’accorde avec son COD placé avant lorsque celui-ci est sujet de l’infinitif ; cela n’exige pas une action volontaire. Un groupe seulement COD de l’infinitif ne commande pas cet accord. Fait + infinitif conserve sa règle d’invariabilité.\nMéthode : 1. Repère le participe suivi d’un infinitif et vérifie les règles particulières, notamment l’invariabilité de fait + infinitif. 2. Reconstitue la phrase pour distinguer le COD du participe des compléments de l’infinitif. 3. Dans la construction relevant de cette règle, vérifie si le COD placé avant le participe est aussi sujet de l’infinitif. 4. Accorde avec ce COD lorsqu’il est sujet de l’infinitif ; un groupe seulement COD de l’infinitif ne commande pas l’accord du participe.\nDans cette phrase : 1. `Envoyé` est employé avec avoir et suivi de convaincre. La reconstruction donne « il a envoyé les lettres convaincre le lecteur ». Il a envoyé quoi ? Les lettres, COD repris par que avant le participe. Ce sont aussi les lettres qui doivent convaincre le lecteur ; elles sont donc le sujet de l’infinitif, même si elles n’agissent pas volontairement. Ce double rattachement commande l’accord au féminin pluriel : envoyées.\n2. `L’autrice s’est permise d’écarter` est un pronominal réfléchi avec se COI : elle permet quoi ? D’écarter les remarques ; à qui ? À elle-même. Le COD suit le participe, donc il faut permis. Pour « les remarques qu’elle avait mal comprises », avoir s’applique avec un COD placé avant : elle avait compris quoi ? Les remarques, repris par que. Comprises porte bien leur féminin pluriel.\n3. Dans `a faites rencontrer`, le participe fait est immédiatement suivi de l’infinitif rencontrer. C’est le cas particulier fait + infinitif : fait reste invariable, même devant un COD féminin pluriel placé avant. Il faut « a fait rencontrer ».\n4. Entendu est employé avec avoir et suivi de formuler. La reconstruction est « l’enseignante a entendu quelqu’un formuler les remarques ». Les remarques, repris par que, sont COD de formuler ; quelqu’un d’autre les formule. Elles ne sont donc pas le sujet de l’infinitif et ne commandent pas l’accord d’entendu, qui reste invariable.\nDonc : seule la production 4 est correctement écrite. La réponse est 4.",
     "why": {
-      "1": "`les lettres qu’il a envoyé convaincre` exige « envoyées » : les lettres, complément placé avant, accomplissent ici l’action de convaincre.",
-      "2": "`s’est permise` est fautif : on permet quelque chose à soi-même; « se » est indirect et on écrit « s’est permis ».",
-      "3": "`a faites rencontrer` est fautif : « fait » suivi de l’infinitif « rencontrer » reste invariable.",
-      "4": "« A entendu formuler » est correct : les remarques sont formulées par d’autres; elles n’accomplissent pas l’action, donc « entendu » reste invariable.",
-      "A": "L’option 4 est correcte; Aucune ne convient pas.",
-      "T": "Les trois premières options sont fautives; Toutes ne convient pas."
+      "1": "`a envoyé convaincre` exige « a envoyées convaincre » : que reprend les lettres, COD d’envoyer placé avant et sujet de convaincre. Le participe doit donc porter leur féminin pluriel.",
+      "2": "`s’est permise` doit devenir « s’est permis » : se signifie à elle-même, donc est COI, et le COD d’écarter les remarques suit. En revanche, comprises s’accorde bien avec que, qui reprend les remarques avant le participe.",
+      "3": "`faites rencontrer` applique un accord interdit dans le cas fait + infinitif. Puisque rencontrer suit immédiatement le participe, la forme attendue est « fait rencontrer ».",
+      "4": "Les remarques sont ce que quelqu’un formule, non ce qui formule : que est COD de l’infinitif formuler. Ce complément placé avant ne commande donc pas l’accord d’« entendu », qui conserve sa forme invariable.",
+      "A": "La production 4 est correcte. Il y a une option correcte sur quatre, et non zéro.",
+      "T": "Les productions 1, 2 et 3 comportent chacune un accord fautif. Une seule production est correcte ; « Toutes » ne convient pas."
     },
     "hep": {
       "metadata_schema_version": "hep-question/2.1",
@@ -108643,8 +109362,18 @@ const QUESTIONS = [
           "detail_id": "core",
           "tense_id": null
         }
-      ]
-    }
+      ],
+      "remediation": {
+        "batch_id": "hep-rem-20261002-6872",
+        "feedback_provenance": {
+          "model": "gpt-6.1-sol",
+          "reasoning": "high",
+          "prompt_file": "prompts_pipeline_HEP/11_REMEDIATION_CORRIGE_GROUPEE.md",
+          "generated_at": "2026-10-03T14:05:57Z"
+        }
+      }
+    },
+    "progress_revision": 1
   },
   {
     "id": "solh50-036",

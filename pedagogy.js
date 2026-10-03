@@ -52,7 +52,7 @@
     accord_adjectif_nom: 'Retrouve le nom donneur, puis accorde l’adjectif avec lui en genre et en nombre.',
     accord_participe_passe: 'Identifie l’auxiliaire et la fonction du complément direct avant de décider l’accord.',
     accord_sujet_verbe: 'Repère le noyau du sujet, puis reporte sa personne et son nombre sur le verbe.',
-    adjectif_verbal_participe_present: 'Détermine si la forme décrit un nom ou exprime une action avant de l’accorder ou de la laisser invariable.',
+    adjectif_verbal_participe_present: "Vérifie dans toute la phrase si la forme fonctionne comme un adjectif ou comme un verbe ; le sens d’action ou un complément seul ne suffit pas.",
     concordance_temps: 'Place les actions sur une ligne du temps et choisis le temps qui exprime leur ordre.',
     conjugaison: 'Identifie le temps, le radical et la personne avant d’ajouter la terminaison.',
     connecteurs_logiques: 'Nomme la relation entre les deux idées avant de choisir le connecteur.',
@@ -60,7 +60,7 @@
     formes_de_phrase: 'Pars de la phrase neutre, puis choisis qui pour mettre le sujet en évidence et que pour un autre élément.',
     gentiles_majuscules: 'Distingue le nom de personne, l’adjectif et la langue avant de choisir la majuscule.',
     homophones_grammaticaux: 'Identifie la catégorie et la fonction du mot, puis utilise un test de remplacement.',
-    interrogation_indirecte: 'Après le verbe introducteur, conserve une subordonnée à l’ordre déclaratif.',
+    interrogation_indirecte: "Dans la question rapportée, retire est-ce que et l’inversion du pronom sujet ; un nom sujet peut parfois suivre le verbe.",
     negation: 'Dans un écrit scolaire ou formel, vérifie que la négation entoure correctement le verbe conjugué.',
     nombres_traits_union: 'Décompose le nombre et applique séparément la règle de chaque élément.',
     orthographe_lexicale: 'Compare la forme attendue au sens et à la construction de la phrase.',
@@ -69,8 +69,8 @@
     pronoms_relatifs: 'Détermine la fonction du relatif et la préposition exigée dans sa proposition.',
     pronoms_reprise: 'Identifie le groupe repris, sa fonction et son nombre avant de choisir le pronom.',
     revision_transversale: 'Isole la difficulté de chaque zone et vérifie les règles l’une après l’autre.',
-    rupture_syntaxique: 'Vérifie que le groupe détaché se rattache bien au sujet de la proposition principale.',
-    subjonctif_indicatif: 'Repère le déclencheur et demande si le fait est affirmé ou seulement envisagé.',
+    rupture_syntaxique: "Vérifie d’abord si le groupe détaché possède son propre sujet ; sinon, contrôle son rattachement au sujet principal lorsque la construction l’exige.",
+    subjonctif_indicatif: "Repère l’expression exacte et vérifie les modes qu’elle demande ou permet ; la réalité ou l’incertitude du fait ne suffit pas.",
     vocabulaire_contexte: 'Teste le sens, le registre et la construction de chaque mot dans la phrase complète.',
   };
 
@@ -125,19 +125,19 @@
       ['Repère l’auxiliaire « avoir ».', 'Trouve le COD et vérifie s’il est placé avant le participe.', 'S’il est avant, accorde le participe avec le mot qu’il reprend.']
     ),
     avoir_en_invariable: learnerGuide(
-      'Avec « en » : le participe change rarement',
-      'Exemple : « Des lettres, j’en ai écrit trois. » Quand « en » reprend ce qui est compté, le participe passé employé avec « avoir » reste généralement inchangé.',
-      ['Repère le pronom « en ».', 'Vérifie qu’il reprend le complément lié au participe.', 'Dans ce cas, laisse généralement le participe au masculin singulier.']
+      "Vérifier le rôle de « en » avant l’accord",
+      "Exemple : « Des lettres, j’en ai écrit » garde généralement « écrit » inchangé. Lorsque « en » est lui-même COD, le participe passé employé avec « avoir » reste généralement invariable. Mais « les lettres que j’en ai reçues » s’accorde avec « les lettres » : « en » indique ici d’où elles viennent.",
+      ["Repère « en » et ce qu’il remplace.","Vérifie si « en » est lui-même COD ou s’il complète un autre groupe, par exemple en indiquant une provenance.","Si « en » est lui-même COD, garde généralement le participe invariable ; s’il existe un autre COD, accorde avec celui-ci s’il est placé avant."]
     ),
     participe_suivi_infinitif: learnerGuide(
-      'Participe passé suivi d’un infinitif',
-      'Exemple : « Les élèves que j’ai entendus chanter » s’accorde, car les élèves chantent. Dans « les chansons que j’ai entendu chanter », les chansons ne chantent pas : pas d’accord.',
-      ['Trouve le COD placé avant le participe.', 'Demande si ce COD fait lui-même l’action de l’infinitif.', 'Accorde seulement si le COD accomplit cette action.']
+      "Participe passé suivi d’un infinitif",
+      "Exemple : « Les branches que j’ai vues tomber » s’accorde : j’ai vu les branches, et les branches tombent. Dans « les chansons que j’ai entendu chanter », on chante les chansons : « entendu » reste inchangé. Le COD du participe doit être placé avant et être aussi le sujet de l’infinitif pour commander l’accord. « Fait » devant un infinitif reste inchangé.",
+      ["Repère le participe et l’infinitif : « fait » devant un infinitif reste inchangé.","Sinon, trouve le COD du participe et le sujet de l’infinitif ; conjugue l’infinitif pour vérifier le sujet.","Accorde avec le COD du participe seulement s’il est placé avant et s’il est aussi sujet de l’infinitif. Sinon, garde le participe inchangé."]
     ),
     etre_accord_sujet: learnerGuide(
-      'Avec « être » : accord avec le sujet',
-      'Exemple : « Elles sont parties. » Avec l’auxiliaire « être », le participe passé s’accorde avec le sujet.',
-      ['Repère l’auxiliaire « être ».', 'Trouve le sujet du verbe.', 'Accorde le participe au genre et au nombre du sujet.']
+      "Accorder avec le sujet dans les emplois de « être » concernés",
+      "Exemple : « Elles sont parties » et « les lettres seront distribuées » s’accordent avec leur sujet. Pour un verbe avec « se », il faut vérifier sa règle : on écrit « elles se sont parlé ».",
+      ["Repère « être » et vérifie si le verbe comporte « se ».","Avec « se », applique la règle de ce verbe ; sinon, trouve le sujet.","Dans l’emploi concerné, accorde le participe avec le sujet."]
     ),
     fait_suivi_infinitif: learnerGuide(
       '« Fait » suivi d’un infinitif',
@@ -165,9 +165,9 @@
       ['Lis une seule phrase à la fois.', 'Identifie son cas précis : pronominal, mesure, tournure impersonnelle ou forme spéciale.', 'Applique la règle de ce cas avant de passer à la phrase suivante.']
     ),
     mesure_duree_prix: learnerGuide(
-      'Participe avec une mesure, une durée ou un prix',
-      'Exemple : « Les cent francs que ce meuble a coûté. » « Cent francs » répond à « combien ? », pas à « quoi ? » : il exprime un prix et ne commande pas l’accord.',
-      ['Repère le groupe placé avant le participe.', 'Demande s’il répond à « combien ? » en indiquant un prix, une durée, un poids ou une distance.', 'Si oui, laisse le participe inchangé.']
+      "Vérifier l’accord avec une mesure ou une durée",
+      "Exemple : « Les cent francs que ce meuble a coûté » reste inchangé. Mais on écrit « les trois heures que cela a prises » : avec « prendre », la durée est un complément direct placé avant. Une quantité ne suffit pas à décider.",
+      ["Repère la quantité et le sens du verbe.","Vérifie si le verbe reçoit un complément direct ou indique seulement une mesure.","Accorde avec le complément direct placé avant ; une simple mesure ne commande pas l’accord."]
     ),
     participe_adjectival_selon_position: learnerGuide(
       'Accorder « ci-joint », « excepté » ou « mis à part »',
@@ -185,9 +185,9 @@
       ['Repère le pronom « se ».', 'Pose la question « elles ont lavé qui ou quoi ? ».', 'Si la réponse est « se », accorde le participe avec le sujet.']
     ),
     pronominal_accord_sujet: learnerGuide(
-      'Pronominal : le sujet commande l’accord',
-      'Exemple : « Elles se sont évanouies. » Dans un emploi essentiellement pronominal, autonome ou de sens passif, le participe s’accorde avec le sujet.',
-      ['Identifie l’emploi pronominal précis.', 'Vérifie que « se » n’est pas un COD à analyser.', 'Accorde le participe avec le sujet.']
+      "Vérifier l’accord avec le sujet",
+      "Exemple : « Elles se sont évanouies » s’accorde avec « elles ». Mais on écrit « elles se sont arrogé des droits » et « les droits qu’elles se sont arrogés » : ce verbe suit la règle du complément direct.",
+      ["Repère le verbe et son emploi dans la phrase.","Vérifie sa règle d’accord et ses exceptions.","Accorde avec le sujet seulement si cette règle s’applique."]
     ),
     pronominal_se_coi: learnerGuide(
       'Verbe pronominal : « se » est COI',
@@ -284,9 +284,9 @@
 
     // Adjectif verbal ou participe présent
     accord_adjectif_invariabilite_participe: learnerGuide(
-      'Distinguer adjectif verbal et participe présent',
-      'Exemple : « des enfants fatigants » décrit les enfants, mais « des enfants fatiguant leurs parents » exprime une action. L’adjectif s’accorde ; le participe présent ne change pas.',
-      ['Repère la forme en « -ant ».', 'Demande si elle décrit un nom ou si elle garde une action de verbe.', 'Accorde la description ; laisse la forme d’action inchangée.']
+      "Distinguer adjectif verbal et participe présent",
+      "Exemple : « une élève excellente dans ce domaine » contient un adjectif, mais « une élève excellant dans ce domaine » contient un participe présent. Le même complément peut suivre les deux formes : il faut examiner toute la phrase.",
+      ["Lis toute la phrase autour de la forme.","Essaie le féminin et vérifie comment la forme se construit.","Accorde l’adjectif ; garde le participe présent inchangé."]
     ),
     convaincant_convainquant: learnerGuide(
       'Écrire « convaincant » ou « convainquant »',
@@ -299,9 +299,9 @@
       ['Demande si la forme décrit un nom ou exprime l’action de fatiguer.', 'Description : choisis « fatigant » et accorde-le.', 'Action : choisis « fatiguant » et ne l’accorde pas.']
     ),
     participe_present_avec_complement: learnerGuide(
-      'Forme en « -ant » suivie d’un complément',
-      'Exemple : « des élèves préparant leur examen ». « Préparant » garde le complément « leur examen » : il exprime une action et ne s’accorde pas.',
-      ['Repère la forme en « -ant ».', 'Vérifie si elle garde un complément ou un autre élément demandé par le verbe.', 'Si oui, traite-la comme une action et ne l’accorde pas.']
+      "Reconnaître un participe présent avec complément",
+      "Exemple : « des élèves préparant leur examen » reprend « les élèves préparent leur examen » : « préparant » reste inchangé. Mais « excellentes dans ce domaine » est un adjectif : un complément ne suffit pas à décider.",
+      ["Lis la forme et son complément dans toute la phrase.","Vérifie que la forme fonctionne comme le verbe conjugué.","Garde le participe présent inchangé."]
     ),
 
     // Concordance des temps
@@ -378,9 +378,9 @@
       ['Repère si l’ordre est affirmatif ou négatif.', 'Affirmatif : place les pronoms après le verbe dans l’ordre attendu.', 'Négatif : replace-les avant le verbe et encadre le groupe avec « ne… pas ».']
     ),
     infinitif_participe: learnerGuide(
-      'Choisir entre infinitif et participe passé',
-      'Exemple : « Je vais manger », mais « j’ai mangé ». Après un verbe conjugué ou une préposition, on attend souvent l’infinitif ; après « avoir » ou « être », on attend le participe passé.',
-      ['Repère le mot placé juste avant la forme hésitante.', 'Remplace par « prendre/pris » : « prendre » signale l’infinitif, « pris » le participe.', 'Écris la terminaison correspondant au test.']
+      "Choisir entre infinitif et participe passé",
+      "Exemple : « Il faut fermer » se vérifie avec « il faut mordre », et « il a fermé » avec « il a mordu ». Fais le remplacement dans toute la construction : le seul mot placé juste avant ne suffit pas.",
+      ["Relis toute la construction autour du verbe.","Essaie le remplacement par « mordre » ou « mordu ».","Choisis l’infinitif ou le participe selon la forme qui convient."]
     ),
     participe_passe_irregulier: learnerGuide(
       'Écrire un participe passé irrégulier',
@@ -487,9 +487,9 @@
       ['Repère le moment et le lieu des paroles originales.', 'Repère le nouveau moment et le nouveau lieu du récit.', 'Adapte chaque mot de temps ou de lieu à ce nouveau point de vue.']
     ),
     futur_vers_conditionnel: learnerGuide(
-      'Transformer le futur dans un récit au passé',
-      'Exemple : « Je viendrai » devient « il a dit qu’il viendrait ». Après un verbe introducteur au passé, le futur devient normalement un conditionnel.',
-      ['Repère le verbe introducteur au passé.', 'Trouve le verbe qui était au futur dans les paroles directes.', 'Transpose ce verbe au conditionnel.']
+      "Adapter le futur au discours indirect depuis un repère passé",
+      "Exemple : « Il a dit qu’il viendrait » situe la venue après ses paroles passées. « Il a dit qu’il viendra demain » est aussi possible si demain est encore à venir quand on raconte.",
+      ["Repère le moment des paroles et celui du récit.","Vérifie depuis quel moment la venue est annoncée.","Choisis le conditionnel depuis le passé, ou le futur encore actuel si le contexte le permet."]
     ),
     imperatif_vers_de_infinitif: learnerGuide(
       'Rapporter un ordre avec « de » + infinitif',
@@ -722,9 +722,9 @@
       ['Repère le verbe qui introduit les questions.', 'Sépare les deux questions reliées par « et » ou « ou ».', 'Vérifie dans chacune le mot interrogatif et l’ordre sujet-verbe.']
     ),
     ordre_declaratif: learnerGuide(
-      'Garder l’ordre sujet-verbe dans une question rapportée',
-      'Exemple : « Je demande où Paul va », pas « où va Paul ». Dans une interrogation indirecte, les mots suivent l’ordre normal d’une phrase déclarative.',
-      ['Repère le verbe comme « demander » ou « savoir ».', 'Repère le mot interrogatif.', 'Place ensuite le sujet avant le verbe.']
+      "Choisir l’ordre des mots dans une question rapportée",
+      "Exemple : « Je me demande où il se trouve » est correct, et « je me demande où se trouve la sortie » aussi. Le nom peut parfois suivre le verbe, mais on n’écrit pas « où se trouve-t-il » dans cette question rapportée.",
+      ["Repère le verbe qui introduit la question.","Retire « est-ce que » et garde le pronom sujet avant le verbe.","Avec un nom sujet, vérifie si sa place après le verbe est admise."]
     ),
     si_sans_est_ce_que: learnerGuide(
       'Rapporter une question par « si »',
@@ -989,9 +989,9 @@
 
     // Pronoms de reprise
     coi_lui_leur: learnerGuide(
-      'Choisir « lui » ou « leur » pour une personne',
-      'Exemple : « Je parle à Léa » devient « je lui parle » ; « je parle aux élèves » devient « je leur parle ». « Lui » reprend une personne, « leur » plusieurs.',
-      ['Repère le complément de personne introduit par « à ».', 'Vérifie s’il est singulier ou pluriel.', 'Choisis « lui » au singulier et « leur » au pluriel.']
+      "Choisir « lui » ou « leur » selon le verbe",
+      "Exemple : « Je parle à Léa » devient « je lui parle », et « je donne à manger au chat » devient « je lui donne à manger ». Mais on dit « je pense à elle » : la présence de « à » ne suffit pas.",
+      ["Repère le complément et le verbe.","Vérifie que ce verbe permet le remplacement par « lui » ou « leur ».","Choisis « lui » pour un seul élément et « leur » pour plusieurs."]
     ),
     complement_de_en: learnerGuide(
       'Remplacer un complément en « de » par « en »',
@@ -1130,9 +1130,9 @@
       ['Repère « pour que », « afin que », « de peur que » ou une expression voisine.', 'Vérifie qu’elle introduit un but ou une crainte.', 'Conjugue le verbe qui suit au subjonctif.']
     ),
     certitude_indicatif: learnerGuide(
-      'Indicatif pour un fait affirmé',
-      'Exemple : « Il est certain qu’elle vient. » Quand le locuteur présente le fait comme certain, probable ou constaté, il emploie l’indicatif.',
-      ['Repère l’expression avant « que ».', 'Demande si elle affirme le fait comme réel ou probable.', 'Si oui, conjugue le verbe à l’indicatif.']
+      "Choisir l’indicatif selon l’expression",
+      "Exemple : « Il est certain qu’elle vient » demande l’indicatif. Mais « je suis heureux qu’elle soit arrivée » contient un subjonctif, même si elle est arrivée : c’est l’expression employée qui guide le choix.",
+      ["Repère l’expression exacte avant « que ».","Vérifie le mode qu’elle demande dans cette phrase.","Choisis l’indicatif lorsque cette construction l’appelle."]
     ),
     concession_bien_que: learnerGuide(
       'Subjonctif après « bien que »',
@@ -1155,14 +1155,14 @@
       ['Sépare les deux propositions introduites par « que ».', 'Analyse dans chacune l’expression qui précède et le sens donné au fait.', 'Choisis indépendamment l’indicatif ou le subjonctif pour chaque verbe.']
     ),
     doute_possibilite: learnerGuide(
-      'Subjonctif pour le doute ou la possibilité',
-      'Exemple : « Je doute qu’il vienne. » Quand un fait est présenté comme douteux, possible ou peu probable, le subjonctif marque qu’il n’est pas affirmé.',
-      ['Repère l’expression de doute ou de possibilité.', 'Vérifie que le fait n’est pas présenté comme certain.', 'Conjugue le verbe après « que » au subjonctif.']
+      "Choisir le mode après une expression de doute",
+      "Exemple : « Je doute qu’il vienne » emploie le subjonctif. « Je doute qu’il accepterait si on l’invitait » admet le conditionnel pour une hypothèse. Mais « il se pourrait qu’il vienne » demande le subjonctif.",
+      ["Repère l’expression exacte de doute ou de possibilité.","Vérifie les modes qu’elle accepte et le sens de la phrase.","Choisis le subjonctif ou le conditionnel hypothétique lorsque l’expression le permet."]
     ),
     hypothese_condition_subjonctif: learnerGuide(
-      'Subjonctif après certaines conditions',
-      'Exemple : « Je viendrai à condition que tu sois là. » « À condition que », « à moins que » et « à supposer que » introduisent une condition envisagée et demandent le subjonctif.',
-      ['Repère la locution de condition.', 'Vérifie qu’elle est suivie de « que ».', 'Conjugue le verbe de cette condition au subjonctif.']
+      "Choisir le mode après une condition",
+      "Exemple : « Je viendrai à condition que tu sois là » est courant ; « à condition que tu seras là » est aussi admis. Ce futur peut devenir un conditionnel dans un récit au passé. Avec « pourvu que tu sois là », le subjonctif est exigé.",
+      ["Repère l’expression exacte de condition.","Vérifie les formes qu’elle accepte.","Choisis une forme admise qui convient au moment du récit."]
     ),
     locution_subjonctive_figee: learnerGuide(
       'Reconnaître une locution figée au subjonctif',
@@ -1180,9 +1180,9 @@
       ['Repère la première condition introduite par « si ».', 'Vérifie que « et que » ajoute une seconde condition sans répéter « si ».', 'Conjugue le verbe après « et que » au subjonctif.']
     ),
     souhait_volonte: learnerGuide(
-      'Subjonctif après un souhait ou une volonté',
-      'Exemple : « Je veux que tu viennes. » Après un verbe de souhait, de volonté ou d’ordre, la proposition introduite par « que » se met au subjonctif.',
-      ['Repère le verbe de souhait, de volonté ou d’ordre.', 'Trouve l’action voulue après « que ».', 'Conjugue cette action au subjonctif.']
+      "Subjonctif après « souhaiter » ou « vouloir »",
+      "Exemple : « Je souhaite qu’elle reçoive la lettre » demande le subjonctif. Mais « j’espère qu’elle recevra la lettre » emploie normalement l’indicatif : des verbes de sens proche peuvent demander des formes différentes.",
+      ["Repère le verbe exact avant « que ».","Vérifie le mode demandé par ce verbe.","Après « souhaiter que » ou « vouloir que », choisis le subjonctif."]
     ),
 
     // Vocabulaire en contexte
@@ -1316,16 +1316,16 @@
     donneur_eloigne: ['nom donneur éloigné de l’adjectif', 'Retrouve le nom que l’adjectif décrit, même s’ils sont séparés, puis accorde en genre et en nombre.'],
     avoir_cvd_apres: ['avoir + COD placé après', 'Avec avoir, si le COD vient après le participe, le participe reste invariable.', ['forme composée', 'auxiliaire avoir', 'COD après', 'participe invariable']],
     avoir_cvd_avant: ['avoir + COD placé avant', 'Avec avoir, trouve le COD : s’il est placé avant le participe, accorde le participe avec lui.', ['forme composée', 'auxiliaire avoir', 'COD avant', 'accord avec le COD']],
-    etre_accord_sujet: ['être : accord avec le sujet', 'Avec être, le participe s’accorde avec le sujet en genre et en nombre.', ['forme composée', 'auxiliaire être', 'accord avec le sujet']],
+    etre_accord_sujet: ["être : accord avec le sujet","Dans les temps composés non pronominaux et les constructions passives avec être, le participe passé s’accorde en genre et en nombre avec le sujet. Les groupes intercalés ne changent pas le donneur d’accord. Pour un verbe pronominal, applique sa règle particulière."],
     fait_suivi_infinitif: ['fait + infinitif', 'Dans fait suivi d’un infinitif, fait reste toujours invariable.', ['participe passé', 'fait + infinitif', 'fait invariable']],
     matrice_avoir_etre: ['choisir la règle de avoir ou de être', 'Identifie d’abord l’auxiliaire, puis applique la règle propre à avoir ou à être.', ['forme composée', 'identifier avoir ou être', 'appliquer la règle de l’auxiliaire']],
     pronominal_cvd_avant: ['verbe pronominal : se COD placé avant', 'Demande qui ou quoi subit l’action : si se est COD placé avant, le participe s’accorde avec ce COD.', ['verbe pronominal', 'fonction de se', 'se COD avant', 'accord avec le COD']],
-    pronominal_se_coi: ['verbe pronominal : se COI', 'Cherche la fonction de se : s’il signifie à l’un l’autre et est COI, il ne commande pas l’accord.', ['verbe pronominal', 'fonction de se', 'se COI', 'chercher un autre COD']],
+    pronominal_se_coi: ["verbe pronominal : se COI","Dans un emploi pronominal où se est COI, se ne commande pas l’accord. Cherche un éventuel autre COD et sa position : accorde avec ce COD s’il précède, sinon garde le participe invariable. L’absence de COD ne suffit pas à classer un pronominal dans ce mécanisme."],
     // Identifiants prêts pour les futures métadonnées de la banque. Leur présence
     // ici ne classe aucune question tant qu'un q.hep.mechanism_id ne les emploie pas.
-    participe_suivi_infinitif: ['participe passé suivi d’un infinitif', 'Repère si le COD placé avant accomplit lui-même l’action de l’infinitif avant de décider l’accord.', ['participe passé', 'COD placé avant', 'infinitif après', 'identifier l’auteur de l’infinitif']],
+    participe_suivi_infinitif: ["participe passé suivi d’un infinitif","Vérifie la construction particulière, puis distingue le COD du participe des compléments de l’infinitif. Dans le cas relevant de cette règle, le participe s’accorde avec son COD placé avant lorsque celui-ci est sujet de l’infinitif ; cela n’exige pas une action volontaire. Un groupe seulement COD de l’infinitif ne commande pas cet accord. Fait + infinitif conserve sa règle d’invariabilité."],
     laisse_suivi_infinitif: ['laissé + infinitif', 'Dans la norme rectifiée actuelle, laissé suivi immédiatement d’un infinitif reste invariable.', ['participe passé', 'laissé + infinitif', 'laissé invariable']],
-    pronominal_accord_sujet: ['pronominal : accord avec le sujet', 'Dans un emploi essentiellement pronominal, autonome ou de sens passif, le participe s’accorde avec le sujet.', ['verbe pronominal', 'emploi à identifier', 'sujet donneur', 'accord avec le sujet']],
+    pronominal_accord_sujet: ["pronominal : accord avec le sujet","Les emplois pronominaux autonomes ou passifs relevant de cette règle, ainsi que la plupart des essentiellement pronominaux, accordent leur participe avec le sujet. Vérifie l’emploi précis et les exceptions : s’arroger s’accorde avec son COD placé avant, non automatiquement avec le sujet."],
     participe_sans_auxiliaire: ['participe passé sans auxiliaire', 'Employé sans auxiliaire, le participe fonctionne comme un adjectif et s’accorde avec le nom ou le pronom qu’il qualifie.', ['participe sans auxiliaire', 'donneur à identifier', 'accord avec le donneur']],
     avoir_pronom_l: ['avoir avec le pronom l’', 'Détermine si « l’ » reprend une idée entière, qui laisse le participe au masculin singulier, ou un nom qui commande l’accord.', ['auxiliaire avoir', 'référent de l’', 'idée neutre ou nom', 'invariabilité ou accord']],
     participe_attribut_cod: ['participe suivi d’un attribut du COD', 'L’accord peut varier selon l’analyse et l’usage ; ce cas exige une validation normative indépendante.', ['participe passé', 'COD et attribut', 'analyse normative', 'variante à établir']],
@@ -1334,10 +1334,10 @@
     relative_qui_antecedent: ['qui sujet : accord avec l’antécédent', 'Dans la relative, qui est sujet ; le verbe prend la personne et le nombre de son antécédent.'],
     relative_qui_antecedent_personne: ['qui sujet : personne de l’antécédent', 'Remplace qui par son antécédent : je impose la 1re personne, tu la 2e, etc.'],
     sujet_inverse: ['sujet placé après le verbe', 'Même placé après le verbe, le sujet reste le donneur de personne et de nombre.'],
-    accord_adjectif_invariabilite_participe: ['adjectif verbal accordé ou participe présent invariable', 'Vérifie si la forme décrit un nom ou exprime une action : adjectif, elle s’accorde ; participe présent, elle reste invariable.'],
+    accord_adjectif_invariabilite_participe: ["adjectif verbal accordé ou participe présent invariable","Distingue l’emploi adjectival du fonctionnement verbal par la syntaxe et des tests concordants. L’adjectif verbal s’accorde ; le participe présent reste invariable. Le seul sens d’action ou la présence d’un complément prépositionnel ne suffit pas à choisir."],
     convaincant_convainquant: ['convaincant / convainquant', 'Écris convaincant pour l’adjectif ; convainquant avec qu pour le participe présent du verbe convaincre.'],
     fatigant_fatiguant: ['fatigant / fatiguant', 'Écris fatigant sans u pour l’adjectif ; fatiguant avec u pour le participe présent du verbe fatiguer.'],
-    participe_present_avec_complement: ['participe présent avec complément', 'Une forme qui garde un complément de verbe exprime une action : c’est un participe présent, donc elle est invariable.'],
+    participe_present_avec_complement: ["participe présent avec complément","Lorsque la syntaxe établit que la forme conserve le fonctionnement du verbe, elle est un participe présent et reste invariable. Un complément prépositionnel peut aussi dépendre d’un adjectif : sa seule présence ne suffit pas."],
     anteriorite_plus_que_parfait: ['antériorité au plus-que-parfait', 'Pour une action achevée avant une autre action passée, emploie le plus-que-parfait.'],
     futur_dans_le_passe: ['futur vu depuis le passé', 'Quand le point de départ est au passé, le futur devient généralement un conditionnel présent.'],
     hypothese_si_imparfait_conditionnel: ['si + imparfait, conditionnel', 'Dans une hypothèse présente irréelle : si + imparfait dans la condition, conditionnel présent dans le résultat.'],
@@ -1351,7 +1351,7 @@
     correlation: ['deux éléments corrélatifs', 'Une locution corrélative fonctionne par paire : vérifie la présence et le parallélisme des deux éléments.'],
     opposition: ['relation d’opposition', 'Choisis un connecteur qui met deux faits en contraste, sans exprimer une cause ou une conséquence.'],
     deictiques_ancres: ['repères de temps et de lieu au discours indirect', 'Recalcule les mots comme ici, demain ou hier depuis le nouveau point de vue du narrateur.'],
-    futur_vers_conditionnel: ['futur transformé en conditionnel', 'Après un verbe introducteur au passé, transforme le futur du discours direct en conditionnel.'],
+    futur_vers_conditionnel: ["futur transformé en conditionnel","Dans une transposition ancrée au moment passé des paroles, le conditionnel exprime le futur vu depuis ce repère. Le passé de l’introducteur ne rend pas toujours cette transposition obligatoire : après un passé composé, notamment, un futur encore actuel pour le narrateur peut être conservé selon le contexte."],
     imperatif_vers_de_infinitif: ['impératif transformé en de + infinitif', 'Pour rapporter un ordre, emploie demander/ordonner de suivi de l’infinitif.'],
     mise_en_evidence_c_est_qui_que: ['phrase emphatique : mise en évidence avec c’est… que', 'Dans une phrase emphatique, choisis qui pour mettre le sujet en évidence et que pour mettre en évidence un autre élément.'],
     toponyme_et_derive: ['nom de pays ou forme dérivée', 'Un nom propre de pays prend une majuscule ; l’adjectif qui en dérive garde la minuscule.'],
@@ -1375,7 +1375,7 @@
     redondance_relative_pronom: ['éviter la reprise après un relatif', 'Le pronom relatif occupe déjà une fonction dans la relative : ne la remplis pas une seconde fois avec un autre pronom.'],
     regime_a_auquel: ['construction avec à et forme de lequel', 'Avec un antécédent non humain, si la construction exige à et qu’une forme de lequel convient, choisis auquel, à laquelle, auxquels ou auxquelles.'],
     regime_de_dont: ['verbe construit avec de : dont', 'Si le mot de la relative exige de, dont reprend ce complément sans ajouter un autre de.'],
-    coi_lui_leur: ['COI de personne : lui / leur', 'Demande à qui : lui reprend une personne, leur plusieurs, sans accord en genre.'],
+    coi_lui_leur: ["COI compatible avec lui / leur","Dans une construction qui admet la reprise du COI par un pronom personnel atone, choisis lui au singulier ou leur au pluriel. Ces pronoms peuvent aussi reprendre un animal ou une chose. La présence de à et le caractère humain du référent ne suffisent pas : vérifie la construction du verbe."],
     complement_de_en: ['complément introduit par de : en', 'Le pronom en remplace généralement un complément de chose introduit par de.'],
     reprise_proposition_le: ['reprendre une proposition par le', 'Pour reprendre une idée ou une proposition entière, emploie le pronom neutre le.'],
     revision_homophones_et_accords: ['homophones et accords combinés', 'Traite chaque zone séparément : identifie d’abord la nature du mot, puis cherche son donneur d’accord.'],
@@ -1415,6 +1415,14 @@
     ou_ou: ['ou ou où', 'Ou sans accent exprime généralement un choix ; où avec accent indique un lieu ou un moment.'],
     t_euphonique_inversion: ['t euphonique dans l’inversion', 'Le t ajouté entre le verbe et il, elle ou on est encadré par deux traits d’union, sans apostrophe.'],
     genre_change_sens: ['genre du nom qui change le sens', 'Certains noms ont une forme identique mais un sens différent au masculin et au féminin ; l’article permet d’identifier le sens attendu.'],
+    hypothese_condition_subjonctif: ["hypothèse ou condition envisagée + subjonctif","Vérifie le régime de chaque locution : à supposer que, à moins que et pourvu que demandent le subjonctif. Après à condition que, le subjonctif est courant, mais l’indicatif futur est également admis ; ce futur peut être transposé au conditionnel dans un repère passé. N’étends pas un régime exclusif à toutes les locutions de condition."],
+    avoir_en_invariable: ["avoir + pronom en : participe généralement invariable","Lorsque en est lui-même le COD, le participe passé employé avec avoir reste généralement invariable. Si en complète un autre groupe ou si un autre COD est présent, identifie ce COD et sa position avant de conclure."],
+    quantifieur_pluriel: ["quantifieur qui commande le pluriel","La plupart des élèves, bien des élèves, nombre d’élèves et moins de deux élèves commandent normalement le pluriel, mais leur structure diffère. Dans bien des élèves, élèves est le nom noyau du sujet. Dans combien ou peu d’entre eux, eux appartient au complément partitif et n’est pas le noyau. Identifie la construction précise avant de justifier l’accord."],
+    ordre_declaratif: ["ordre déclaratif dans l’interrogation indirecte","L’interrogation indirecte exclut est-ce que et l’inversion interrogative du pronom sujet. L’ordre sujet-verbe convient généralement ; certaines constructions admettent aussi un sujet nominal placé après le verbe, comme dans Je me demande où se trouve la sortie."],
+    infinitif_participe: ["infinitif ou participe passé","Reconstitue la construction entière pour déterminer si elle demande un infinitif ou un participe passé. Vérifie par un remplacement non homophone, par exemple mordre ou mordu, sans décider d’après le seul mot précédent."],
+    certitude_indicatif: ["certitude ou fait affirmé + indicatif","Une construction telle que il est certain que à l’affirmatif appelle l’indicatif. Vérifie le régime de l’expression précise : la réalité ou la certitude du fait ne suffit pas à déterminer le mode, et l’indicatif ne garantit pas sa réalisation."],
+    doute_possibilite: ["doute ou possibilité + subjonctif","Vérifie le régime de l’expression précise. Douter que à l’affirmatif admet le subjonctif et le conditionnel lorsque le fait est envisagé comme une hypothèse ; il se pourrait que demande le subjonctif. Douter que à la négation admet plusieurs modes, tandis que se douter que à l’affirmatif appelle l’indicatif. Le seul caractère incertain du fait ne détermine pas le mode."],
+    souhait_volonte: ["souhait ou volonté + subjonctif","Une construction telle que souhaiter que, vouloir que ou ordonner que appelle le subjonctif. Vérifie le verbe précis : espérer que au sens d’attendre un événement appelle normalement l’indicatif. Le sens général de souhait ne suffit donc pas à imposer un mode unique."],
   };
 
   // Copie générée des chemins par défaut de pedagogy_HEP.json. Les questions
@@ -1424,12 +1432,12 @@
     donneur_eloigne: ['adjectif qualificatif', 'nom donneur éloigné', 'genre et nombre du nom', 'accord de l’adjectif'],
     avoir_cvd_apres: ['temps composé non précisé', 'auxiliaire avoir', 'aucun COD antéposé', 'participe passé invariable'],
     avoir_cvd_avant: ['temps composé non précisé', 'auxiliaire avoir', 'COD placé avant', 'accord avec le COD'],
-    etre_accord_sujet: ['temps composé non précisé', 'auxiliaire être', 'sujet donneur', 'accord avec le sujet'],
+    etre_accord_sujet: ["temps composé non pronominal ou construction passive","construction avec être","sujet donneur","accord avec le sujet"],
     fait_suivi_infinitif: ['participe passé', 'construction factitive', 'fait + infinitif', 'fait invariable'],
     matrice_avoir_etre: ['temps composé non précisé', 'auxiliaire à identifier dans chaque phrase', 'donneur d’accord à identifier', 'règle de l’auxiliaire'],
     pronominal_cvd_avant: ['verbe pronominal', 'fonction de se', 'se COD placé avant', 'accord avec le COD'],
     pronominal_se_coi: ['verbe pronominal', 'fonction de se', 'se COI', 'accord selon l’éventuel COD'],
-    participe_suivi_infinitif: ['participe passé', 'COD placé avant', 'infinitif après', 'auteur de l’infinitif à établir', 'accord seulement si le COD agit'],
+    participe_suivi_infinitif: ["participe passé dans une construction sans règle particulière d’invariabilité","rattachement du COD placé avant à établir","infinitif après","sujet de l’infinitif à établir","accord si le COD du participe placé avant est sujet de l’infinitif"],
     laisse_suivi_infinitif: ['participe passé', 'laissé + infinitif', 'deux normes admises', 'cas non discriminant'],
     pronominal_accord_sujet: ['verbe pronominal', 'emploi à identifier', 'sujet donneur', 'accord avec le sujet'],
     deux_sujets_deux_verbes: ['propositions coordonnées', 'deux couples sujet-verbe', 'personne et nombre de chaque sujet', 'deux accords distincts'],
@@ -1440,7 +1448,7 @@
     accord_adjectif_invariabilite_participe: ['forme en -ant', 'nature non précisée', 'fonction à établir', 'accord ou invariabilité'],
     convaincant_convainquant: ['opposition lexicale exacte', 'adjectif convaincant', 'participe présent convainquant', 'nature dictée par la syntaxe'],
     fatigant_fatiguant: ['opposition lexicale exacte', 'adjectif fatigant', 'participe présent fatiguant', 'nature dictée par la syntaxe'],
-    participe_present_avec_complement: ['forme en -ant', 'complément du verbe conservé', 'participe présent', 'forme invariable'],
+    participe_present_avec_complement: ["forme en -ant","fonctionnement verbal établi par la syntaxe","complément effectivement régi par le verbe","participe présent invariable"],
     anteriorite_plus_que_parfait: ['deux actions passées', 'action antérieure', 'antériorité accomplie', 'plus-que-parfait'],
     futur_dans_le_passe: ['repère principal au passé', 'action postérieure', 'futur dans le passé', 'conditionnel présent'],
     hypothese_si_imparfait_conditionnel: ['hypothèse présente irréelle', 'si + imparfait', 'résultat envisagé', 'conditionnel présent'],
@@ -1454,7 +1462,7 @@
     correlation: ['relation corrélative', 'premier marqueur', 'structure parallèle', 'second marqueur'],
     opposition: ['relation d’opposition', 'deux faits contrastés', 'absence de causalité', 'connecteur oppositif'],
     deictiques_ancres: ['discours indirect', 'nouvelle ancre énonciative', 'repère non précisé', 'déictique transposé'],
-    futur_vers_conditionnel: ['introducteur au passé', 'futur du discours direct', 'transposition des temps', 'conditionnel au discours indirect'],
+    futur_vers_conditionnel: ["introducteur au passé","futur du discours direct","transposition depuis le repère des paroles passées","conditionnel exprimant le futur du passé"],
     imperatif_vers_de_infinitif: ['ordre au discours direct', 'verbe introducteur de demande', 'suppression de l’impératif', 'de + infinitif'],
     mise_en_evidence_c_est_qui_que: ['phrase neutre', 'élément mis en évidence', 'fonction sujet ou autre', 'c’est… qui ou c’est… que'],
     toponyme_et_derive: ['toponyme', 'nom propre de pays', 'casse uniquement', 'majuscule'],
@@ -1478,7 +1486,7 @@
     redondance_relative_pronom: ['antécédent', 'pronom relatif déjà fonctionnel', 'fonction remplie dans la relative', 'absence de pronom redondant'],
     regime_a_auquel: ['antécédent nominal non humain', 'construction avec à', 'forme de lequel appropriée', 'auquel / à laquelle / auxquels / auxquelles'],
     regime_de_dont: ['antécédent', 'recteur construit avec de', 'complément en de', 'pronom relatif dont'],
-    coi_lui_leur: ['référent humain', 'COI introduit par à', 'nombre non précisé', 'lui ou leur'],
+    coi_lui_leur: ["COI à identifier","construction admettant lui / leur atones","nombre du référent à établir","lui ou leur"],
     complement_de_en: ['référent non humain', 'complément introduit par de', 'reprise pronominale', 'pronom en'],
     reprise_proposition_le: ['proposition référente', 'contenu propositionnel', 'reprise neutre', 'pronom le'],
     revision_homophones_et_accords: ['révision multizone', 'opposition homophonique exacte', 'donneur d’accord distinct', 'deux validations indépendantes'],
@@ -1500,8 +1508,8 @@
   // analyse_gpt/pedagogy_HEP.json. Le test Python impose une copie exacte afin
   // que l'application et le pipeline expliquent toujours la même règle.
   Object.assign(PATHS, {
-    avoir_en_invariable: ['auxiliaire avoir', 'complément repris par en', 'absence d’accord avec en', 'participe invariable'],
-    mesure_duree_prix: ['verbe de mesure', 'complément de durée, prix, poids ou distance', 'pas de COD accordable', 'participe invariable'],
+    avoir_en_invariable: ["auxiliaire avoir","en identifié comme COD","aucun autre COD placé avant commandant l’accord","participe généralement invariable"],
+    mesure_duree_prix: ["verbe employé intransitivement","complément de mesure, durée, prix, poids ou distance","complément sans fonction COD","participe invariable"],
     participe_adjectival_selon_position: ['forme participiale spéciale', 'position et fonction à établir', 'valeur prépositive ou adjectivale', 'invariabilité ou accord'],
     infinitif_sous_entendu_invariable: ['auxiliaire avoir', 'infinitif exprimé ou sous-entendu', 'complément rattaché à l’infinitif', 'participe invariable'],
     impersonnel_participe_invariable: ['tournure impersonnelle', 'il sans référent', 'absence de COD accordable', 'participe invariable'],
@@ -1510,7 +1518,7 @@
     avoir_pronom_l: ['auxiliaire avoir', 'pronom l’', 'antécédent à identifier', 'accord selon le référent'],
     participe_attribut_cod: ['participe avec avoir ou pronominal', 'COD placé avant', 'attribut du COD', 'cas à norme variable'],
     quantifieur_singulier: ['sujet quantifié', 'noyau singulier', 'sens parfois collectif', 'verbe au singulier'],
-    quantifieur_pluriel: ['sujet quantifié', 'complément pluriel', 'accord selon la construction', 'verbe au pluriel'],
+    quantifieur_pluriel: ["sujet quantifié","structure du groupe sujet à identifier","accord selon la construction et le nombre visé","verbe au pluriel dans le cas ciblé"],
     priorite_personnes_coordonnees: ['plusieurs sujets', 'personnes différentes', 'hiérarchie 1re puis 2e puis 3e', 'accord à la personne résultante'],
     coordination_comparative_incise: ['sujet principal', 'groupe comparatif entre virgules', 'pas de coordination additive', 'accord avec le sujet principal'],
     sujet_infinitif: ['groupe infinitif', 'fonction sujet', 'noyau non nominal', 'verbe au singulier'],
@@ -1520,8 +1528,8 @@
     sujet_eloigne: ['groupe sujet complexe', 'éléments intercalés', 'noyau du sujet', 'accord du verbe'],
     obligation_necessite: ['expression d’obligation ou nécessité', 'subordonnée en que', 'fait envisagé', 'mode subjonctif'],
     souhait_volonte: ['souhait, volonté ou ordre', 'subordonnée en que', 'action voulue', 'mode subjonctif'],
-    doute_possibilite: ['doute ou possibilité', 'fait non affirmé', 'subordonnée en que', 'mode subjonctif'],
-    certitude_indicatif: ['certitude ou constat', 'fait affirmé', 'subordonnée en que', 'mode indicatif'],
+    doute_possibilite: ["expression de doute ou de possibilité","régime de la construction précise à vérifier","subordonnée en que","subjonctif dans le cas ciblé ; conditionnel hypothétique également admis après douter que à l’affirmatif"],
+    certitude_indicatif: ["expression de certitude ou de constat","construction précise appelant l’indicatif","subordonnée en que","mode indicatif dans le cas ciblé"],
     anteriorite_avant_que: ['construction avant que', 'événement attendu', 'antériorité visée', 'mode subjonctif'],
     but_crainte_subjonctif: ['but ou crainte', 'subordonnée en que', 'résultat recherché ou redouté', 'mode subjonctif'],
     restriction_superlatif_subjonctif: ['antécédent restreint', 'unicité ou superlatif', 'référent évalué', 'mode subjonctif'],
@@ -1568,7 +1576,7 @@
     si_sans_est_ce_que: ['verbe interrogatif introducteur', 'question totale', 'subordonnant si', 'absence de est-ce que'],
     suppression_point_interrogation: ['interrogation intégrée', 'phrase principale déclarative', 'fin d’assertion', 'point ordinaire'],
     suppression_inversion: ['question indirecte', 'ordre sujet-verbe', 'marque directe supprimée', 'ordre déclaratif'],
-    ordre_declaratif: ['verbe introducteur', 'mot interrogatif', 'ordre sujet-verbe', 'subordonnée déclarative'],
+    ordre_declaratif: ["verbe introducteur","forme interrogative indirecte","absence d’inversion interrogative du pronom sujet","ordre syntaxique admis pour la construction"],
     present_vers_imparfait: ['introducteur au passé', 'présent du discours direct', 'recul du repère', 'imparfait'],
     passe_compose_vers_plus_que_parfait: ['introducteur au passé', 'passé composé source', 'antériorité', 'plus-que-parfait'],
     pronoms_et_possessifs: ['changement d’énonciateur', 'personnes du discours', 'pronoms et possessifs', 'formes adaptées'],
@@ -1631,7 +1639,7 @@
     genre_change_sens: ['nom à deux genres', 'article masculin ou féminin', 'sens lié au genre', 'forme compatible'],
     hypothese_si_plus_que_parfait_conditionnel_passe: ['hypothèse passée irréelle', 'si + plus-que-parfait', 'conséquence non réalisée', 'conditionnel passé'],
     au_cas_ou_conditionnel: ['locution au cas où', 'éventualité', 'mode conditionnel', 'temps selon le repère'],
-    hypothese_condition_subjonctif: ['locution hypothétique ou conditionnelle', 'fait envisagé', 'subordonnée en que', 'mode subjonctif'],
+    hypothese_condition_subjonctif: ["locution hypothétique ou conditionnelle","régime de la locution précise à vérifier","subordonnée en que","subjonctif dans le cas ciblé ; futur et conditionnel de transposition également admis après à condition que"],
     locution_subjonctive_figee: ['locution figée', 'valeur non assertive', 'forme verbale stabilisée', 'subjonctif'],
     si_coordonne_que_subjonctif: ['première condition en si', 'coordination par et que', 'reprise de la condition', 'subjonctif'],
     dont_partitif: ['ensemble antécédent', 'sous-ensemble', 'valeur partitive', 'pronom dont'],
@@ -1649,16 +1657,16 @@
       sans_cod: ['temps composé non précisé', 'auxiliaire avoir', 'aucun COD', 'participe passé invariable'],
     },
     pronominal_se_coi: {
-      sans_cod: ['verbe pronominal', 'construction indirecte ou sans COD', 'aucun COD accordable', 'participe invariable'],
-      cod_apres: ['verbe pronominal', 'se COI', 'COD placé après', 'participe invariable'],
-      cod_avant: ['verbe pronominal', 'se COI', 'autre COD placé avant', 'accord avec cet autre COD'],
-      contraste_place_cod: ['verbe pronominal', 'se COI', 'COD à chercher avant ou après', 'accord selon la place du COD'],
-      rendre_compte: ['verbe pronominal', 'locution se rendre compte', 'compte COD placé après', 'rendu invariable'],
+      sans_cod: ["verbe pronominal","se COI dans l’emploi analysé","aucun COD","participe invariable"],
+      cod_apres: ["verbe pronominal","se COI","COD placé après","participe invariable"],
+      cod_avant: ["verbe pronominal","se COI","autre COD placé avant","accord avec cet autre COD"],
+      contraste_place_cod: ["verbe pronominal","se COI","COD à chercher avant ou après","accord selon la place du COD"],
+      rendre_compte: ["verbe pronominal","locution se rendre compte","compte COD placé après","rendu invariable"],
     },
     pronominal_accord_sujet: {
-      essentiellement: ['verbe essentiellement pronominal', 'se sans fonction COD ou COI', 'sujet donneur', 'accord avec le sujet'],
-      sens_passif: ['verbe pronominal', 'sujet qui subit l’action', 'sens passif', 'accord avec le sujet'],
-      autonome: ['verbe pronominal autonome', 'se sans fonction COD ou COI', 'sujet donneur', 'accord avec le sujet'],
+      essentiellement: ["verbe essentiellement pronominal","emploi relevant de l’accord avec le sujet, exceptions vérifiées","sujet donneur","accord avec le sujet"],
+      sens_passif: ["verbe pronominal","sujet qui subit l’action","sens passif","accord avec le sujet"],
+      autonome: ["verbe pronominal autonome","se sans fonction COD ou COI","sujet donneur","accord avec le sujet"],
     },
     participe_adjectival_selon_position: {
       avant_stable: ['forme participiale spéciale', 'placée avant le nom sans déterminant introducteur', 'valeur prépositive stable', 'forme invariable'],
@@ -1676,8 +1684,8 @@
       contraste: ['participe suivi d’un attribut', 'deux constructions à comparer', 'analyse propre à chaque segment', 'cas à soumettre à revue normative'],
     },
     accord_adjectif_invariabilite_participe: {
-      adjectif: ['forme en -ant', 'propriété d’un nom', 'adjectif verbal', 'accord avec le nom'],
-      participe: ['forme en -ant', 'action verbale', 'participe présent', 'forme invariable'],
+      adjectif: ["forme à distinguer","emploi adjectival établi par des tests concordants","adjectif verbal","accord avec le nom"],
+      participe: ["forme en -ant","fonctionnement verbal établi par la syntaxe","participe présent","forme invariable"],
     },
     reperage_temporel: {
       anterieur: ['repère temporel', 'action antérieure', 'accomplissement à vérifier', 'temps d’antériorité'],
@@ -1728,8 +1736,8 @@
       ent: ['adjectif en -ent', 'base morphologique', 'dérivation adverbiale', 'adverbe en -emment'],
     },
     coi_lui_leur: {
-      singulier: ['référent humain singulier', 'COI introduit par à', 'remplacement indirect', 'pronom lui'],
-      pluriel: ['référent humain pluriel', 'COI introduit par à', 'remplacement indirect', 'pronom leur'],
+      singulier: ["référent singulier","COI dans une construction admettant lui atone","remplacement indirect vérifié","pronom lui"],
+      pluriel: ["référent pluriel","COI dans une construction admettant leur atone","remplacement indirect vérifié","pronom leur"],
     },
     concession_et_constat: {
       concession: ['construction concessive', 'fait admis malgré un obstacle', 'mode subjonctif', 'temps selon le repère'],

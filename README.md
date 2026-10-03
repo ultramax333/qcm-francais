@@ -1,5 +1,20 @@
 # QCM Français — OP001 (HEP Vaud)
 
+Version **1.41**, du 03.10.2026, cache `qcm-op001-v141` :
+clôture des constats du scan pédagogique : 82 corrigés réparés et neuf dossiers
+d'audit corrigés, soit 91 questions modifiées. Deux autres constats étaient déjà
+résolus dans la version publiée et ne sont pas rejoués. Les modèles pédagogiques
+partagés sont corrigés et synchronisés avant la rédaction ; les corrections passent
+par résolution vierge, auteur et contre-revue indépendants, avec reprises ciblées.
+Les 1 782 identifiants et toutes les clés sont conservés ; release
+`questions-20261003-788c7daa`. Les 1 689 KEEP et la carte protégée restent intacts.
+Aucun nouveau quiz ; le progrès est réinitialisé uniquement pour les 91 questions
+révisées, sans effacer les archives. Les tests ne certifient pas l'ensemble des clés.
+Préparation de publication : `2026-10-03T14:37:49Z`, soit le 03.10.2026 à 16:37 en heure suisse.
+Validation après application : 393 tests Python et neuf suites JavaScript réussis,
+contrôles syntaxiques et intégrité exacte des objets non ciblés.
+Preuves : `../analyse_gpt/audit_banque/corrections_scan_pedagogique_20261002/`.
+
 Version **1.40**, du 02.10.2026, cache `qcm-op001-v140` :
 21 réparations du scan et neuf corrigés supplémentaires acceptés indépendamment,
 soit 30 questions modifiées et 29 corrigés enrichis. Les 1 782 identifiants et toutes
@@ -182,7 +197,7 @@ ni la fin exacte du déploiement Pages. À chaque publication autorisée, rensei
 avec `APP_VERSION` et le nouveau `CACHE` de `sw.js`, puis vérifier les fichiers servis.
 Pour une version locale non publiée, conserver `APP_PUBLISHED_AT: null` : l'interface indique
 « Version locale — non publiée ». Une valeur absente, invalide ou sans fuseau utilise aussi
-ce repli, sans inventer de date. La version 1.40 utilise l'instant fixe indiqué en tête.
+ce repli, sans inventer de date. La version 1.41 utilise l'instant fixe indiqué en tête.
 
 ## Google Drive (facultatif)
 Pour l'envoi automatique des mémos/stats vers Google Drive, renseigne `GOOGLE_CLIENT_ID`
